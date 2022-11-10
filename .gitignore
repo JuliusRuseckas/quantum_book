@@ -1,3 +1,9 @@
+Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+QuantumComputers.Rproj
+
 # Book build output
 _book
 
@@ -5,3 +11,4 @@ _book
 *.epub
 *.mobi
 *.pdf
+.Rproj.user

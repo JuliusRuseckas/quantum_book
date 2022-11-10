@@ -1,1 +1,3 @@
-# quantum_book
+# README
+
+Kvantinė kompiuterija

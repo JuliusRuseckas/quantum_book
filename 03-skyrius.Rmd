@@ -1,0 +1,1031 @@
+# Kvantinės mechanikos pagrindai
+
+## Kvantinės mechanikos postulatai
+
+Kvantinė mechanika yra šiuo metu bendriausia fizikinė teorija ir iš
+principo pritaikoma nuo subatominio lygio iki kasdieninių daiktų skalės.
+Siekiant paaiškinti kvantinius reiškinius ši teorija buvo suformuluota
+naudojant tiesinės algebros matematinę struktūrą, kurios elementus
+pristatėme ankstesniame skyriuje. Šiame skyriuje pateikiame kvantinės
+mechanikos postulatus. Postulatai yra taikomi siekiant sujungti
+abstraktų šios teorijos matematinį formalizmą su stebimu fiziniu
+pasauliu ir suteikia pagrindines taisykles, kuriomis remiantis
+perteikiami skaičiavimai kvantiniame kompiuteryje.
+
+**I postulatas -- kvantinės būsenos.** Uždaros kvantinės sistemos būsena
+yra visiškai nusakoma normuotuoju vektoriumi
+$|\psi\rangle$ Hilberto vektorių erdvėje.
+
+Kvantinė būsena, aprašyta $|\psi\rangle$ vektoriumi,
+atspindi visą informaciją, kurią galima sužinoti apie kvantinę sistemą.
+Hilberto erdvė $(\mathcal{H})$ -- tai kompleksinių vektorių erdvė su
+matematiškai apibrėžta vidine sandauga
+$\langle\psi|\psi\rangle$. Reikalavimas,
+kad vektorius $|\psi\rangle$ būtų normuotasis,
+išreiškiamas $\langle\psi|\psi\rangle = 1$.
+Kiekvienai fizinei sistemai priskiriame atskirą $\mathcal{H}$ erdvę,
+kurioje galime aprašyti jos visas būsenas. Kvantinė mechanika nenurodo,
+kokia yra specifinės kvantinės sistemos Hilberto erdvė, tai bendrai gali
+būti nelengva užduotis sudėtingose sistemose. Tačiau kubito
+$\mathcal{H}$ erdvė yra viena iš paprasčiausių: tai 2 dimensijų
+kompleksinė vektorių erdvė. Jeigu $|\psi\rangle$,
+$|\phi\rangle$ yra du vektoriai, priklausantys tai
+pačiai $\mathcal{H}$ erdvei, tada
+$|u\rangle = a|\psi\rangle + b|\phi\rangle$
+yra kita galima tos pačios sistemos būsena, vadinamoji superpozicija.
+Būsenų normuotumas naudojant amplitudes išreiškiamas
+$\langle u|u\rangle = |a|^2 + |b|^2 + 2\mathrm{Re}(a^{*}b\langle\psi|\phi\rangle) = 1$.
+Jeigu $|\psi\rangle$ ir $|\phi\rangle$
+yra ortogonalieji vektoriai, tada trečiasis narys, nusakantis
+interferenciją tarp būsenų
+$2\mathrm{Re}(a^{*}b\langle\psi |\phi\rangle) = 0$,
+iškrenta iš lygybės ir randame
+$\langle u|u\rangle = |a|^2 + |b|^2$.
+
+Pirmąjį postulatą galima matematiškai tiksliau perfrazuoti sakant, kad
+kvantinės būsenos yra nusakomos **spinduliu** (angl. *ray*). Spindulys
+čia reiškia klasę vektorių, kurie vienas nuo kito skiriasi tik globalia
+faze $\mathrm{e}^{\mathrm{i}\theta}$. Kadangi globali fazė nėra stebima matavimuose, visos
+kvantinės būsenos, besiskiriančios tik fazės nariu, yra tarpusavyje
+ekvivalenčios. Pavyzdžiui, vektoriai $|\psi\rangle$ ir
+$\mathrm{e}^{\mathrm{i}\theta}|\psi\rangle$ nusako identišką būseną.
+Matome, kad dėl kompleksinės jungties naudojimo vidinėje sandaugoje
+globalios fazės narys pradingsta:
+\begin{equation}
+\langle\psi |\mathrm{e}^{-\mathrm{i}\theta}\mathrm{e}^{\mathrm{i}\theta}|\psi\rangle
+= \mathrm{e}^{0}\langle\psi |\psi\rangle = 1\,.
+\end{equation}
+Atitinkamai ir matavimų metu jis nėra stebimas. Tačiau svarbu pabrėžti
+skirtumą tarp globalios ir santykinės fazės. Santykinė fazė yra fiziškai
+svarbi ir jos įtaka stebima matavimų rezultatuose. Matematiškai, globali
+fazė superpozicijos būsenoje daugina abu narius kartu, pavyzdžiui,
+$|\psi\rangle = \mathrm{e}^{\mathrm{i}\theta}\big(a|0\rangle + b|1\rangle\big)$.
+O štai santykinė fazė atrodytų bendrai taip:
+$|\psi\rangle = a|0\rangle + \mathrm{e}^{\mathrm{i}\theta}b|1\rangle$.
+Kaip pavyzdį imkime Pauli-$X$ bazinių vektorių būsenas
+$|0_x\rangle$ ir $|1_x\rangle$,
+kurios nusako $|0\rangle$ ir $|1\rangle$
+superpozicijas bei skiriasi santykine faze:
+\begin{equation}
+|0_x\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}\,,\quad
+|1_x\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}\,.
+\end{equation}
+Akivaizdu, kad šios dvi būsenos yra skirtingos, o tiksliau --
+ortogonalios, nes
+$\langle 0_x |1_x \rangle = 0$.
+
+**II(a) postulatas -- būsenų evoliucija laike.** Kvantinės sistemos,
+izoliuotos nuo išorinių sąveikų, evoliucija laike yra nusakoma unitarine
+transformacija. Sistemos būsena $|\psi(t_0)\rangle$
+laiku $t_0$ yra susiejama su būsena
+$|\psi(t_1)\rangle$ vėlesniu laiku $t_1$ unitarine
+transformacija $U(t_0, t_1)$:
+\begin{equation}
+|\psi(t_1)\rangle = U(t_0, t_1)|\psi(t_0)\rangle\,.
+\end{equation}
+Antrasis postulatas nusako, kad žinant pradinę uždaros sistemos būseną
+laiku $t_0$, galima tiksliai ir unikaliai pasakyti, kokia bus sistemos
+būsena laiku $t_1$, $|\psi(t_1)\rangle$. Matematiškai
+tai yra sandauga tarp unitariojo operatoriaus $U(t_0, t_1)$,
+nulemiančio laiko evoliuciją, ir būseną laiku $t_0$ nusakančio
+vektoriaus $|\psi(t_0)\rangle$. Kitaip tariant, uždarų
+kvantinių sistemų, kaip ir klasikinių, evoliucija laike yra
+deterministinė. Unitarinėse evoliucijose nėra tikimybėmis nusakomų
+būsenų kitimų. Toliau pateikiame antrojo postulato versiją, naudojančią
+Šriodingerio lygtį (angl. *Schrodinger equation*), kuri yra labiau
+tinkama apibūdinti fizikinėms sąveikoms.
+
+**II(b) postulatas --** Uždaros kvantinės sistemos būsena laike yra
+nusakoma Šriodingerio lygtimi:
+\begin{equation}
+\mathrm{i}\hbar\frac{d|\psi(t)\rangle}{dt} = H|\psi(t)\rangle\,.
+\end{equation}
+Šriodingerio diferencialinėje lygtyje $\hbar$ yra Planko konstanta,
+$\mathrm{i}$ -- menamasis vienetas, $H$ -- uždaros sistemos hamiltonianas (deja,
+čia vartojame tą pačia raidę, kaip ir Hadamardo transformacijai).
+Hamiltonianas -- ermitinis operatorius, kurio tikrinės vertės yra
+sistemos energijos lygmenys. Pavyzdžiui, jeigu
+$|k\rangle$ yra $H$ operatoriaus tikrinis vektorius,
+tada yra tenkinama lygybė
+$H|k\rangle = \lambda_k|k\rangle$,
+kurioje tikrinė vertė $\lambda_k$ nusako būsenos
+$|k\rangle$ energiją.
+
+Sąryšis tarp antrojo postulato dviejų versijų slypi Šriodingerio lygties
+integracijoje laiko intervale nuo $t_0$ iki $t_1$. Neprarasdami
+bendrumo darome prielaidą, kad šiuo laiko intervalu hamiltonianas
+nekinta. Tada, atlikę integraciją laike, gauname:
+\begin{equation}
+|\psi(t_1)\rangle = \mathrm{e}^{-\frac{\mathrm{i}H(t_1 - t_0)}{\hbar}}
+|\psi(t_0)\rangle\,.
+\end{equation}
+Palyginę su unitarinės evoliucijos laike forma, matome jos bendrą
+išraišką:
+\begin{equation}
+U(t_0, t_1) = \mathrm{e}^{-\frac{\mathrm{i}H(t_1 - t_0)}{\hbar}}\,.
+\end{equation}
+Kadangi hamiltonianas yra ermitinis operatorius, ši operatoriaus
+eksponentė nusako unitarųjį operatorių. Kvantiniame kompiuteryje be
+išorinių sąveikų kubito bendra būsena
+$|\psi\rangle = a|0\rangle + b|1\rangle$
+laike nekinta, tad $U(t) = I$ efektyviai nusako vienetinį operatorių.
+Kvantiniai loginiai vartai fiziniame lygmenyje yra laike atliekama
+kubito būsenos transformacija. Hamiltonianas tuo laiko intervalu yra
+„įjungiamas" pridedant sąveikas, nusakančius narius, vadinamąsias
+sistemos perturbacijas. Algoritmas nusako seką sistemos perturbacijų,
+trunkančių tam tikrus laiko intervalus $\Delta t$. Pavyzdžiui,
+laiko intervale $\Delta t= t_1 - t_0$ gali būti
+atliekama kubito sąveika su elektromagnetinio lauko pulsu, toliau gali
+sekti kitas pulsas, taip atliekant seką skirtingų unitarinių
+transformacijų
+$\cdots U(t_1, t_2 )U(t_0, t_1 )|\psi(t_0)\rangle$.
+Analizuojant algoritmus loginiu lygmeniu laiko kintamųjų (svarbių
+fiziniame lygmenyje) neberašome, kadangi $U(t)$ yra perteikiamas jo
+suminį efektą baziniams vektoriams išreiškiančiu efektyviu unitariniu
+operatoriumi $U(t) \rightarrow U$.
+
+Be loginius vartus nusakančių sąveikų kvantiniame kompiuteryje galima
+išskirti dar dviejų tipų sąveikas, kuriose sistema traktuojama kaip
+nebeuždara. Pirmasis tipas -- tai nepageidaujamos ir nekontroliuojamos
+sąveikos su išorinėmis kvantinėmis sistemomis. Jos įveda nežinomas
+unitarines transformacijas ir nenuspėjamai paveikia kubitų būsenas.
+Vienintelė tikra uždara kvantinė sistema yra (veikiausiai) pati visata.
+Kai sakoma, kad kubitai apibūdina uždaras kvantines sistemas, turima
+omenyje, kad išorinės sąveikos yra itin retos ir todėl galima gerai
+aproksimuoti jas esant uždaras. Antrojo tipo sąveika yra su
+makroskopiniais įrenginiais, naudojamais pamatuoti kvantinei būsenai.
+Pastaruoju atveju sistemos evoliucijos laike negalime nusakyti taikydami
+antrąjį postulatą (net ir išplėtus tai, ką vadiname uždara sistema), nes
+jos dinamika tampa nedeterministinė. Trečiasis postulatas nusako, kaip
+kvantinė sistema keičiasi atlikus jos būsenos matavimą.
+
+**III postulatas -- būsenų matavimas.** Kiekvienam stebimam kvantinės
+sistemos fizikiniam dydžiui egzistuoja ermitinis operatorius $P$,
+veikiantis tos sistemos Hilberto erdvėje. Atlikus fizikinio dydžio
+matavimą galimi rezultatai yra viena iš $P$ operatoriaus tikrinių verčių
+$\lambda_k$. Tikimybė $p(\lambda_k)$ gauti $\lambda_k$ pamatavus
+sistemą esančią būsenoje $|\psi\rangle$ randama
+$p(\lambda_k) = \langle\psi|P_k |\psi\rangle =
+\big|\langle k |\psi\rangle\big|^2$;
+čia $P_k$ yra projekcinis operatorius
+$P_k = |k\rangle\langle k|$. Kvantinės
+sistemos būsena iš karto po matavimo yra $P$ operatoriaus tikrinis
+vektorius $|k\rangle$, susietas su rasta tikrine verte
+$\lambda_k$.
+
+Šiame postulate nurodomas būdas apskaičiuoti tikimybes yra dar žinomas
+kvantinėje mechanikoje kaip **Borno taisyklė** (angl. *Born rule*).
+Kvantinė mechanika nepasako, kokie ermitiniai operatoriai susieti su
+fizikiniais dydžiais. Analizuojant fizinės sistemos savybes ir matavimo
+konfigūraciją vis dėlto galima tokius operatorius aprašyti. Selektyvus
+matavimas, naudojantis projekcinius operatorius, yra dažniausiai
+aptinkamas būsenų matavimo būdas kvantinėje kompiuterijoje. Kaip
+minėjome antrame skyriuje, ermitinis operatorius gali būti išreikštas
+spektrine dekompozicija:
+\begin{equation}
+P = \sum_k \lambda_k P_k\,.
+\end{equation}
+Projekcinis operatorius $P_k$ atlieka vektoriaus projekciją į
+ortogonalų poerdvį, asocijuotą su tikrine verte $\lambda_k$. Kubito
+būsenos $|\psi\rangle$ selektyvusis matavimas
+pasitelkiant $P_k$ nusako tikimybę gauti būtent $\lambda_k$
+rezultatą. Būseną po $P_k$ projekcinio matavimo, vadinsime ją bendrai
+$|\varphi\rangle$, galima formaliai rasti:
+\begin{equation}
+|\varphi\rangle =
+\frac{P_k|\psi\rangle}{\sqrt{\langle\psi |P|\psi\rangle}}
+= \frac{|k\rangle\langle k|\psi\rangle}{\sqrt{p(\lambda_k)}} =
+\frac{a_k |k\rangle}{\sqrt{p(\lambda_k)}}\,.
+\end{equation}
+Skaitiklyje, $P_k|\psi\rangle$ atlieka
+$|\psi\rangle$ būsenos projekciją į
+$|k\rangle$ vektoriaus poerdvį, o vidinė sandauga
+$\langle k|\psi\rangle= a_k$ nusako
+šių vektorių persiklojimą. Vardiklyje esantis narys,
+$\sqrt{p(\lambda_k)} = \sqrt{|a_k|^2} = |a_k|$,
+atlieka užduotį sunormuoti vektorių $a_k|k\rangle$.
+
+Dažniausiai susidursime su projekciniais matavimais į ortogonalias
+kubitų $|0\rangle$ arba $|1\rangle$
+būsenų poerdvius (1 dimensijos poerdviai), susietus su tikrinėmis
+vertėmis $\lambda_0 = 1$ ir $\lambda_1 = -1$, atitinkamai. Tai
+atlieka Pauli-$Z$ operatorius, kurį galima išreikšti:
+\begin{equation}
+Z = \sum_k \lambda_k P_k =
+\lambda_0 |0\rangle\langle 0| + \lambda_1 |1\rangle\langle 1|
+= |0\rangle\langle 0| - |1\rangle\langle 1|\,.
+\end{equation}
+Projekcinį matavimą, naudojant Pauli-$Z$, čia vadinsime pakaitomis
+„standartiniu", „Pauli-$Z$ operatoriaus matavimu", arba „matavimu vektorių
+$\big\{|0\rangle, |1\rangle\big\}$ bazėje".
+Be Pauli-$Z$ taip pat kvantinių ryšių protokoluose galima
+aptikti Pauli-$X$ operatoriaus matavimą. Projekciniais operatoriais jį
+išreiškiame:
+\begin{equation}
+X = \sum_k \lambda_k P_k =
+\lambda_0|0_x\rangle\langle 0_x| + \lambda_1 |1_x\rangle\langle 1_x|
+= |0_x \rangle\langle 0_x| - |0_x \rangle\langle 0_x|\,.
+\end{equation}
+Čia $\big\{|0_x \rangle, |1_x \rangle\big\}$
+yra Pauli-$X$ tikriniai vektoriai, į kurių dengiamą poerdvį atliekama
+$|\psi\rangle$ būsenos projekcija.
+
+Grįžtant prie standartinių Pauli-$Z$ matavimų, jeigu kubitas yra
+$|0\rangle$ arba $|1\rangle$ būsenoje,
+bet ne jų superpozicijoje, tada projekcinis matavimas užtikrina, kad šią
+būseną ir rasime, o pats matavimas būsenos nepakeičia. Pavyzdžiui, jeigu
+$|\psi\rangle = |1\rangle$, tada
+tikimybė rasti $|1\rangle$ yra $p(-1)$:
+\begin{equation}
+p(-1) = \langle 1|1\rangle\langle 1|1\rangle = \big|\langle 1|1\rangle\big|^2 = 1\,,
+\end{equation}
+ir būsena iškart po matavimo $|\varphi\rangle$:
+\begin{equation}
+|\varphi\rangle =
+\frac{|1\rangle\langle 1|1\rangle}{\sqrt{\big|\langle 1|1\rangle\big|^2}} =
+|1\rangle\,,
+\end{equation}
+Pakartoję tą patį kubito būsenos matavimą esame užtikrinti, kad rasime
+vėl tą pačią būseną kaip ir po pirmojo matavimo. Mat formaliai
+projekcinis operatorius šiuo atveju nepakeičia būsenos
+$P_k|k\rangle = |k\rangle$, $k \in \{ 0, 1\}$.
+
+Panagrinėkime, kaip matavimas veikia bendrą normuotą kubito būseną,
+esančią superpozicijoje
+$|\psi\rangle = a|0\rangle + b|1\rangle$.
+Jeigu norime sužinoti, kokia tikimybė rasti kubitą būsenoje
+$|1\rangle$, tam vėl renkamės
+$P_1 = |1\rangle\langle 1|$ projekcinį
+operatorių. Trečiasis postulatas formaliai parodo, kaip vektorių
+amplitudės yra susietos su matavimo rezultatų tikimybėmis. Randame:
+\begin{equation}
+\begin{aligned}
+p(-1) = & \langle\psi |1\rangle\langle 1|\psi\rangle \\
+= & b^{*}b\langle 1|1\rangle\langle 1|1\rangle
++ a^{*}a\langle 0|1\rangle\langle 1|0\rangle
++ a^{*}b\langle 0|1\rangle\langle 1|1\rangle
++ b^{*}a\langle 1|1\rangle\langle 1|0\rangle \\
+= & b^{*}b = |b|^2\,.
+\end{aligned}
+\end{equation}
+Viršuje pritaikėme kubito būsenų ortogonalumą, tad nariai
+$\langle 1|0\rangle = \langle 0|1\rangle = 0$.
+Kaip ir tikėjomės, tikimybė rasti kubitą $|0\rangle$
+arba $|1\rangle$ būsenoje yra lygi tos būsenos
+amplitudės (kompleksiniam) kvadratui. Po šio matavimo, kubito būsena
+yra:
+\begin{equation}
+|\varphi\rangle = \frac{|1\rangle\langle 1|\psi\rangle}{\sqrt{|b|^{2}}}
+= \frac{b|1\rangle}{|b|}= \mathrm{e}^{\mathrm{i}\theta}|1\rangle
+= |1\rangle\,.
+\end{equation}
+Gavome $|1\rangle$ su koeficientu $b/|b|$ ir
+pasinaudojome sąlyga, kad kompleksinį skaičių $b$ galima išreikšti
+$b = |b|\mathrm{e}^{\mathrm{i}\theta}$. Kadangi kvantinių būsenų vektoriai yra nusakomi
+iki globalios fazės, narys $\mathrm{e}^{\mathrm{i}\theta}$ gali būti praleidžiamas
+galutinėje išraiškoje. Atitinkamai naudotume
+$P_0 = |0\rangle\langle 0|$ norint
+apskaičiuoti tikimybę rasti kubitą $|0\rangle$ būsenoje,
+o $p(1) = |a|^2$.
+
+Viršuje atliktas matavimas bendrai kubito būsenai, esančiai
+$|0\rangle$ ir $|1\rangle$
+superpozicijoje parodo, kad po matavimo ši superpozicija yra
+sugriaunama. Tai literatūroje dar vadinama **kvantinės būsenos kolapsu**
+(angl. *quantum state collapse*). Po superpozicijos kolapso būsena tampa
+$|0\rangle$ su tikimybe $|a|^2$, arba
+$|1\rangle$ su tikimybe $|b|^2$. Tai reiškia, kad
+jeigu daug kartų pakartosime šį eksperimentą atlikdami kubito paruošimą
+į identišką pradinę būseną bei matavimus, statistinis rezultatas bus
+nusakomas $p(\lambda_{k})$.
+
+Kvantinėje mechanikoje tik būsenos, kurios yra viena kitai ortogonalios,
+gali būti patikimai atskirtos. Jeigu dvi būsenos, nusakytos
+$|\psi\rangle$ ir $|\phi\rangle$
+vektoriais, yra skirtingos, bet ne ortogonalios
+$\langle\psi|\phi\rangle \neq 0$, tai
+reiškia, kad jos iš dalies persikloja. Kitaip tariant,
+$|\phi\rangle$ būsena turi savyje statmeną ir lygiagretų
+komponentą $|\psi\rangle$ vektoriaus atžvilgiu. Dėl
+esamo lygiagretaus komponento atsiranda tikimybė, kad
+$|\phi\rangle$ būsenos matavimo metu bus rasta
+$|\psi\rangle$ būsena. Tai yra viena iš priežasčių,
+kodėl kvantinėje kompiuterijoje naudojami ortogonalieji baziniai
+vektoriai bei projekciniai matavimai į ortogonaliuosius poerdvius.
+
+Viršuje pateikėme selektyvų matavimo būdą, kuris figūruoja kvantinėje
+kompiuterijoje. Be šio būdo, galima sutikti eksperimentinėje fizikoje
+labiau įprastą **neselektyvų būsenų matavimo metodą**
+(angl. *non-selective measurement*). Jis suteikia matuojamo fizikinio
+dydžio, nusakomo tikrinėmis vertėmis $\lambda_k$, **vidurkį**
+(angl. *expectation value*). Pavyzdžiui, 1 kubito atveju, atlikę jo
+bendros superpozicijos būsenos $|\psi\rangle$ Pauli-$Z$
+matavimus $n$ kartų, rastume $\lambda_1$ tikrinę vertę ir $m$ kartų
+$\lambda_{-1}$. Tad šių tikrinių verčių vidurkis
+$\langle\psi |Z|\psi\rangle$ yra:
+\begin{equation}
+$\langle\psi |Z|\psi\rangle = \frac{n\lambda_1 + m\lambda_{-1}}{n + m}
+= p(1)\lambda_1 + p(-1)\lambda_{-1}\,.
+\end{equation}
+Viršuje pateikta formulė, kurią taikytume atlikdami eksperimentą.
+Apibūdinsime, kaip formaliai apskaičiuojame
+$\langle\psi |Z|\psi\rangle$. Matuojamą
+fizikinį dydį nusako ermitinis operatorius $P$, turintis $\lambda_k$
+tikrines vertes, susietas su vektoriais $|k\rangle$.
+Viršuje naudojome Pauli-$Z$ operatorių, $P = Z$. Imkime normuotą,
+nebūtinai kubito, superpozicijos būseną $|\psi\rangle$:
+\begin{equation}
+|\psi\rangle = \sum_k a_k |k\rangle\,.
+\end{equation}
+Čia $|\psi\rangle$ yra išreikšta $P$ operatoriaus
+tikriniais vektoriais $|k\rangle$ su amplitudėmis
+$a_k$. Daug kartų atlikę operatoriaus $P$ neselektyvųjį matavimą,
+trumpai užrašant $\langle P\rangle$, identiškai paruoštai
+būsenai $|\psi\rangle$, randame:
+\begin{equation}
+\begin{aligned}
+\langle P\rangle = & n\langle\psi |P|\psi\rangle =
+\left(\sum_{k'} a_{k'}^{*}\langle k'|\right)
+\left(\sum_k \lambda_k P_k \right)
+\left(\sum_{k''} a_{k''}|k''\rangle\right) \\
+= & \sum_k |a_k |^2 \lambda_k\,.
+\end{aligned}
+\end{equation}
+Viršuje formaliai panaudojome
+$\langle k'|P_k |k''\rangle = \delta_{k'k}\delta_{kk''}$
+panaikindami du suminius indeksus. Tad vidurkis yra nulemtas tikimybių
+$p(\lambda_k)=|a_k |^2$, nusakančių
+rasti $|k\rangle$ būsenas, sietinas su atitinkamomis
+tikrinėmis vertėmis $\lambda_k$. Tai identiška išraiška tai, kurią
+naudojome aprašyti eksperimente apskaičiuojamą 1 kubito
+$\langle\psi |Z|\psi\rangle$.
+
+**IV postulatas -- sudėtinės sistemos.** Sudėtinės kvantinės sistemos
+būsenų erdvė yra nusakoma ją sudarančių individualių posistemės erdvių
+tenzorių sandauga,
+$\mathcal{H}^{\otimes n} =
+\mathcal{H}_1\otimes\mathcal{H}_2\otimes\cdots\mathcal{H}_n$,
+o sistemos būsena yra tenzorinė vektorių sandauga,
+$|\psi\rangle = |\phi_1 \rangle\otimes|\phi_2 \rangle\otimes\cdots\otimes
+|\phi_n \rangle$.
+Vektorių, išreikštų tenzorinėmis sandaugomis superpozicija, pavyzdžiui,
+$|\psi\rangle = a|\phi_1 \rangle\otimes\cdots\otimes|\phi_n \rangle
++ b|\phi_1 \rangle\otimes\cdots\otimes|\phi_n \rangle$,
+yra kita galima būsena $\mathcal{H}^{\otimes n}$ erdvėje.
+
+Ketvirtasis postulatas praplečia pirmąjį postulatą ir formaliai nusako,
+kaip matematiškai aprašyti sudėtinės sistemos būsenas. Sistemos,
+sudarytos iš $n$ kubitų būsenos, vektorius yra nusakomas $2^n$
+dimensijų Hilberto vektorių erdvėje. Ši erdvė yra formuojama iš
+individualių posistemės erdvių taikant tenzorių sandaugą, kuri žymima
+simboliu $\bigotimes$. Matematinį formulavimą bei sudėtinių sistemų
+transformacijas jau trumpai apibendrinome antrame skyriuje.
+
+Norint supaprastinti simboliką, vietoj
+$|\phi_1 \rangle\otimes|\phi_2 \rangle\otimes\cdots$
+galime rašyti $|\phi_1 \phi_2\cdots \rangle$. Kaip
+pavyzdį imkime 2 kubitų sistemą. Naudojant skaičiuojamąjį bazinių
+vektorių rinkinį, {$|00\rangle$,
+$|01\rangle$, $|10\rangle$,
+$|11\rangle$}, galima išreikšti bet kokią kubito
+$|\psi\rangle$ būseną 4 dimensijų Hilberto erdvėje
+pritaikius jų tiesinę sumą:
+\begin{equation}
+|\psi\rangle = a|00\rangle + b|01\rangle + c|10\rangle + d|11\rangle\,.
+\end{equation}
+Čia naudojame kubitų numeraciją $|k_1 k_2 \rangle$.
+Kadangi kvantinės būsenos yra nusakomos normuotais vektoriais,
+amplitudžių modulių kvadratų suma susideda į vienetą:
+\begin{equation}
+$|a|^2 + |b|^2 + |c|^2 + |d|^2 = 1\,.
+\end{equation}
+Atlikus 2 kubitų matavimus $|\psi\rangle$ būsenoje,
+tikimybę rasti bitų sekas, nurodytas baziniuose vektoriuose, galima
+nuskaityti tiesiogiai iš prie jų prišlietų amplitudžių. Rasime
+$|00\rangle$ su tikimybe $|a|^2$,
+$|01\rangle$ su $|b|^2$ ir kitas analogiškai. Norėdami
+apskaičiuoti tikimybę rasti, pavyzdžiui, vien tik pirmą kubitą būsenoje
+$|1\rangle$, formaliai pasitelkiame trečiąjį postulatą
+apskaičiuoti
+$\langle\psi |P_1^1 |\psi\rangle$.
+Dirbdami 2 kubitų erdvėje naudojame
+$P_1^1 = |1\rangle\langle 1|\otimes I$
+projekcinį operatorių, kuris per $\otimes$ ženklą nusako, kad
+projekcinis matavimas į poerdvį, dengiamą $|1\rangle$
+būsenos, bus atliekamas su pirmuoju kubitu:
+\begin{equation}
+\langle\psi |P_1^1 |\psi\rangle =
+\big(\langle 10| c^{*} + \langle 11|d^{*}\big)
+\big(c|10\rangle + d|11\rangle\big) = |c|^2 + |d|^2\,.
+\end{equation}
+Normuotą būseną $|\varphi\rangle$ po šio matavimo
+randame:
+\begin{equation}
+|\varphi\rangle = \frac{P_1^1 |\psi\rangle}{\sqrt{\langle\psi |P_1^1 |\psi\rangle}}
+= \frac{c|10\rangle + d|11\rangle}{\sqrt{|c|^2 + |d|^2}}\,.
+\end{equation}
+Norėdami nusakyti, kokia tikimybė rasti $|\psi\rangle$,
+pavyzdžiui, $|01\rangle$ būsenoje, naudotume
+$P_{0,1}^{1,2} = |0\rangle\langle 0|\otimes|1\rangle\langle 1| =
+|01\rangle\langle 01|$
+projekcinį operatorių.
+
+Kvantinės mechanikos postulatas, nusakantis sistemos evoliuciją laike,
+yra analogiškai taikomas ir sudėtinėse sistemose. Pavyzdžiui, jeigu
+unitarusis operatorius $U_1$ nusako pirmo kubito evoliuciją laike, o
+$U_2$ antro, tai $U = U_1 \otimes U_2$ formaliai aprašo
+sudėtinės 2 kubitų sistemos
+$|\chi\rangle = |\phi_1 \rangle\otimes|\phi_2 \rangle$
+unitarinę evoliuciją:
+\begin{equation}
+U|\chi\rangle = (U_1 \otimes U_2 )|\phi_1 \rangle\otimes|\phi_2 \rangle
+= U_1 |\phi_1 \rangle\otimes U_2|\phi_2 \rangle\,.
+\end{equation}
+Viršuje pateikti $U_1 \otimes U_2$ operatoriai yra vadinami
+lokaliaisiais, kadangi jie transformuoja individualius posistemės
+kubitus nepriklausomai nuo kitų būsenos. Bendresnio pobūdžio
+išplėstiniai operatoriai yra išreiškiami naudojant lokaliųjų operatorių
+sumas. Pavyzdžiui, 2 kubitų
+$U = U_1 \otimes U_2 + I\otimes U_1$:
+\begin{equation}
+U|\chi\rangle = U_1 |\phi_1 \rangle\otimes U_2 |\phi_2 \rangle +
+|\phi_1 \rangle\otimes U_1 |\phi_2 \rangle\,.
+\end{equation}
+Išplėstiniai operatoriai gali perteikti fizines sąveikas tarp atskirų
+kubitų ir yra svarbūs realizuojant universalius kvantinių loginių vartų
+rinkinius. Dėl sąveikų tarp kubitų gali atsirasti kvantinis supynimas,
+kuris aptariamas toliau.
+
+## Kvantinis supynimas
+
+Klasikinėje fizikoje sistemą galima išsamiai aprašyti nusakant, kokioje
+būsenoje yra jos atskiros posistemės. Kvantinėje fizikoje galimos ir
+tokios būsenos, kuriose atskiros posistemės praranda individualią
+reikšmę ir sistema elgiasi efektyviai kaip vienas darinys. Tokios
+kvantinės sistemos yra supintosios, jų neįmanoma išsamiai apibūdinti
+sužinant, kokioje būsenoje yra atskiros posistemės.
+
+Sudėtinės kubitų sistemos būseną galima klasifikuoti įvertinant, ar jos
+posistemės yra supintosios, ar vis tik galima aprašyti kiekvieną kubitą
+individualiai. Jeigu sudėtinės sistemos vektorių galima faktorizuoti į
+atskirus kubitus, pavyzdžiui,
+$|\kappa\rangle = |\phi_1 \rangle\otimes|\phi_2 \rangle$,
+tokia sistema nėra supintoji. Kad tai parodytume formaliau, imkime du
+kubitus būsenose:
+$|\phi_1 \rangle = e|0\rangle + f|1\rangle$
+ir
+$|\phi_2 \rangle = g|0\rangle + h|1\rangle$.
+Šių dviejų kubitų sudėtinė būsena yra nusakyta jų tenzorių sandauga:
+\begin{equation}
+\begin{aligned}
+|\phi_1 \phi_2 \rangle = & \big(e|0\rangle + f|1\rangle\big)\otimes
+\big(g|0\rangle + h|1\rangle\big) \\
+= & eg|00\rangle + eh|01\rangle + fg|10\rangle + fh|11\rangle\,.
+\end{aligned}
+\end{equation}
+Tokia būsena leidžia interpretaciją, nusakančią, kad pirmas kubitas yra
+$|\phi_1 \rangle$ būsenoje, o antras
+$|\phi_2 \rangle$. Tai yra dviejų klasikinių bitų
+būsenos kvantinis atitikmuo. Tolesnę būseną taip pat galima
+faktorizuoti:
+\begin{equation}
+|\tau\rangle = a|00\rangle + b|10\rangle\,,
+\end{equation}
+nes $|\phi_1 \phi_2 \rangle$ būsenoje galima rasti
+koeficientus $h = 0$, $a = eg$, $b = fg$. Vienas supintosios būsenos
+pavyzdys būtų:
+\begin{equation}
+|\chi\rangle = a|00\rangle + b|11\rangle\,.
+\end{equation}
+Atkreipiame dėmesį, kad neįmanoma rasti {$e$, $f$, $g$, $h$} koeficientų
+$|\phi_1 \phi_2 \rangle$ būsenoje, kuri leistų
+išreikšti $|\chi\rangle$. Šios būsenos neįmanoma
+faktorizuoti, ir todėl individualių kubitų būsenos yra neapibrėžtos.
+Supintuosiuose kubituose dalis informacijos yra laikoma kvantinėse
+koreliacijose tarp kubitų. Kadangi šios informacijos fundamentaliai
+negalime priskirti nei vienam, nei kitam kubitui, sakoma, kad ji yra
+delokalizuota.
+
+Kad iliustruotume koreliacijų vaidmenį, panagrinėkime sudėtinės 2 kubitų
+sistemos būsenų matavimus. Imkime viršuje minėtas dvi būsenas,
+faktorizuojamą $|\tau\rangle$ ir supintą
+$|\chi\rangle$. Atlikime pirmo kubito projekcinius
+matavimus naudodami
+$P_0^1 = |0\rangle\langle 0|\otimes I$
+ir
+$P_1^1 = |1\rangle\langle 1|\otimes I$.
+Pradėdami nuo faktorizuojamos būsenos $|\tau\rangle$,
+norime nusakyti, kokia yra tikimybė rasti pirmą kubitą
+$|0\rangle$ būsenoje:
+\begin{equation}
+\langle\tau |P_0^1 |\tau\rangle = |a|^2\,.
+\end{equation}
+Bendra 2 kubitų būsena, vadinsime ją $|\tau'\rangle$, po
+šio matavimo yra:
+\begin{equation}
+|\tau'\rangle = \frac{P_0^1 |\tau\rangle}{\sqrt{\langle\tau |P_0^1 |\tau\rangle}}
+= |0\rangle\otimes |0\rangle\,.
+\end{equation}
+Tą patį pakartokime nusakyti, kokia tikimybė rasti pirmą kubitą
+$|1\rangle$ būsenoje, bei galutinę 2 kubitų būseną:
+\begin{align}
+\langle\tau |P_1^1 |\tau\rangle = & |b|^2 \\
+|\tau'\rangle = & \frac{P_1^1 |\tau\rangle}{\sqrt{\langle\tau |P_1^1 |\tau\rangle}}
+= |1\rangle\otimes |0\rangle\,.
+\end{align}
+Akivaizdu, kad nepriklausomai nuo to, ar pirmas kubitas randamas
+$|0\rangle$, ar $|1\rangle$ būsenoje,
+tai nepaveikia antro kubito būsenos, kuri lieka visada
+$|0\rangle$. Tačiau atlikę tuos pačius matavimus su
+supintąja kubitų būsena $|\chi\rangle$ matome, kad radus
+pirmą kubitą $|0\rangle$ būsenoje ($|a|^2$ tikimybė),
+galutinė būsena yra
+$|0\rangle\otimes |0\rangle$; tai
+parodo, kad antras kubitas yra užtikrintai $|0\rangle$.
+O štai radus pirmą kubitą $|1\rangle$ būsenoje
+($|b|^2$ tikimybė), galutinė būsena yra
+$|1\rangle\otimes |1\rangle$, tad
+antras kubitas yra $|1\rangle$ būsenoje. Nesvarbu, kurį
+kubitą matuosime pirmą, supintojoje būsenoje po atlikto $P_0^1$ ar
+$P_1^1$ matavimo antrojo kubito būsena tampa tiksliai žinoma.
+
+Be viršuje pateikto 2 kubitų bazinių vektorių skaičiuojamojo rinkinio,
+**Belo 2 kubitų bazinių vektorių rinkinys** (angl. *Bell basis*) yra
+taip pat dažnai aptinkamas. Visos būsenos jame yra supintosios ir
+tarpusavyje ortogonalios:
+\begin{align}
+|\chi^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,,\quad
+|\chi^{-}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,; \\
+|\eta^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big)\,,\quad
+|\eta^{-}\rangle = \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big)\,.
+\end{align}
+Įsivaizduokime situaciją, kurioje Evelina paruošia vieną iš keturių Belo
+būsenų ir nusiunčia vieną kubitą Agnei, o kitą Benui, neatskleisdama,
+kokia tai Belo būsena. Ar Agnė ir Benas, turėdami galimybę atlikti
+matavimus su savo individualiais kubitais, gali pasakyti, kokia tai Belo
+būsena? Sakykime, kad Agnė ir Benas abu atlieka matavimus su kubitais ir
+perduoda vienas kitam savo rezultatus, rasdami
+$|00\rangle$ būseną. Tad jie gali spėti, kad tai buvo
+$|\chi^{+}\rangle$ arba
+$|\chi^{-}\rangle$, tačiau kuri iš šių dviejų -- žinoti
+tiksliai neįmanoma. Šis neapribrėžtumas atspindi faktą, kad supintojoje
+kubitų būsenoje dalis informacijos yra laikoma kvantinėse koreliacijose,
+kurios vien lokaliais atskirų sistemų matavimais pasiekti neįmanoma.
+
+Belo baziniai vektoriai yra visi supintieji -- tai akivaizdu iš jų
+būsenos išraiškų. Vis dėlto įvertinti, ar pateikta išraiška nusako
+supintus kubitus, ne visada paprasta net ir 2 kubitų būsenose. Kaip
+pavyzdį imkime šią būseną:
+\begin{equation}
+|\psi\rangle = \frac{1}{2}\big(|00\rangle + |01\rangle + |10\rangle - |11\rangle\big)\,.
+\end{equation}
+Ją galimą pergrupuoti taip:
+\begin{equation}
+|\psi\rangle = \frac{1}{2}\Big\lbrack\big(|0\rangle + |1\rangle)\otimes |0\rangle +
+\big(|0\rangle - |1\rangle\big)\otimes |1\rangle\Big\rbrack\,.
+\end{equation}
+Matome, kad atlikę antro kubito matavimą, rasime
+$|0\rangle$ arba $|1\rangle$ su lygiomis
+1/2 tikimybėmis. Tačiau pirmo kubito būsena lieka superpozicijoje
+$1/\sqrt{2}\big(|0\rangle + |1\rangle\big)$,
+jeigu antro būsena randama $|0\rangle$, arba
+$1/\sqrt{2}\big(|0\rangle - |1\rangle\big)$,
+jeigu antro kubito būsena $|1\rangle$. Kitaip nei Belo
+būsenose, šiuo atveju pirmas 2 kubitų būsenos
+$|\psi\rangle$ matavimas neleidžia tiksliai sužinoti,
+kokia bus rasta kito kubito būsena (vektorių
+{$|0\rangle$, $|1\rangle$} bazėje). Būsena $|\psi\rangle$ vis dėlto yra
+supintoji, ją gavome atlikę $|\chi^{+}\rangle$ lokalią
+unitariąją pirmo kubito transformaciją (Hadamardo transformaciją), kuri
+pakeičia {$|0\rangle$, $|1\rangle$}
+Pauli-$Z$ bazinius vektorius į Pauli-$X$ bazinius
+{$|0_x \rangle$, $|1_x \rangle$}. Šie
+yra išreikšti $|0\rangle$ ir $|1\rangle$
+superpozicijomis. Sakome, kad $|\psi\rangle$ ir
+$|\chi^{+}\rangle$ yra **lokaliai unitariškai
+ekvivalenčios** (angl. *local unitary equivalence*). Svarbu atsiminti,
+kad lokalios unitariosios transformacijos negali nei panaikinti, nei
+įvesti kvantinio supynimo tarp kubitų. Kvantinis supynimas išlieka
+sistemoje, nebent ji yra veikiama nelokalios unitariosios
+transformacijos arba atliekamas lokalus projekcinis matavimas.
+
+Nusakyti, ar pateikta kvantinė 2 kubitų būsena yra supintoji, galima
+taikant minėtą tenzorinę faktorizaciją bei vadinamąją Šmito
+dekompoziciją (angl. *Schmidt decomposition*). Tačiau, kitaip nei
+2 kubituose, $n$ kubitų registre ($n > 2$) galimos ir tokios būsenos,
+kuriose tik dalis kubitų yra tarpusavyje supinti. Vis dar nėra
+standartinio būdo, kaip tiksliai klasifikuoti supynimą didesnėse
+kvantinėse sistemose.
+
+## Tankio operatorius
+
+Praktikoje kvantinių sistemų pakartotinis būsenų paruošimas nėra itin
+tikslus dėl įrangos netikslumų ar kitų (klasikinių) atsitiktinių
+procesų. Pavyzdžiui, **termioninėje elektronų emisijoje**
+(angl.* thermionic electron emission*) volframo metalas yra pakaitinamas
+iki itin didelės temperatūros, kuri suteikia elektronams pakankamai
+kinetinės energijos, kad šie galėtų pasprukti iš medžiagos. Tačiau nėra
+tiksliai žinoma kiekvieno pasprukusio elektrono galutinė kinetinė
+energija, galime nusakyti tik jų statistinį pasiskirstymą. Šiuo atveju,
+mūsų informacija apie elektronų energijos būseną yra neišsami; galime
+tik pasakyti, kad su klasikine tikimybe $p_i$ (realusis skaičius,
+$0 \leq p_i \leq 1)$ elektronas bus rastas būsenoje
+$|\psi_i \rangle$.
+
+Jeigu užtikrintai žinoma, kad kvantinė sistema yra tam tikroje būsenoje
+$|\psi_k \rangle$, tokia būsena vadinama **grynąja**
+(angl. *pure state*). Remiantis klasikinėmis tikimybėmis, tai reiškia
+$p_{i = k} = 1$ ir $p_{i \neq k} = 0$. Visas galimų sistemos būsenų
+(nebūtinai ortogonaliųjų) rinkinys su atitinkamomis tikimybėmis rasti
+tam tikrą būseną, $\{ p_i, |\psi_i \rangle\}$, yra
+vadinamas **grynųjų būsenų ansambliu** (angl. *ensemble of pure
+states*). Reikalaujame, kad susumavus visas tikimybes $p_i$ jos
+susidėtų į vienetą, $\sum_i p_i = 1$. Žinant grynąsias būsenas
+$|\psi_i \rangle$ ir klasikines tikimybes $p_i$,
+kurias nustato atitinkamas eksperimentinis paruošimo metodas, vėl galima
+apskaičiuoti pavienių kvantinių sistemų būsenų matavimo tikimybes.
+
+Pavyzdžiui, jeigu norėtume atlikti selektyvų kinetinės energijos
+matavimą termioninių elektronų ansambliui
+$\{ p_i , |\psi_i \rangle\}$, tikimybė $p(E_k)$,
+kad rasime elektroną su energija $E_k$, yra:
+\begin{equation}
+p(E_k) = \sum_i p_i \langle \psi_i |P_k |\psi_i \rangle
+= \sum_i p_i p_i (E_k)\,.
+\end{equation}
+Čia $P_k$ atlieka projekciją į būsenų su energija $E_k$ poerdvį, o
+$\langle\psi_i |P_k |\psi_i \rangle = p_i (E_k)$
+nusako tikimybę, kad atlikus grynosios būsenos
+$|\psi_i \rangle$ energijos matavimą bus rasta energija
+$E_k$. Išraiškoje matome dvi tikimybes -- klasikinę tikimybę $p_i$
+bei grynai kvantinio pobūdžio tikimybę $p_i (E_k)$, kuri atsiranda
+dėl būsenos matavimo proceso. Kvantinei tikimybei negalime priskirti
+informacijos trūkumo interpretacijos, šis procesas yra fundamentaliai
+nenuspėjamas.
+
+Termioninių elektronų emisija yra vienas iš galimų kvantinių sistemos
+būsenų paruošimo būdų. Kadangi, kaip ir grynųjų būsenų atveju, galime
+tiksliai apibūdinti pavienių ansamblio kvantinių sistemų matavimo
+rezultatus, taip paruoštos kvantinės sistemos būseną formaliai vadiname
+**statistiniu grynųjų būsenų mišiniu** (angl. *mixed state*). Būsenų
+mišinio neįmanoma apibūdinti vektoriumi ar vidutiniu vektoriumi Hilberto
+erdvėje. Norint pilnai aprašyti tokią kvantinę sistemą -- apimti
+klasikines tikimybes bei kvantines amplitudes būsenų mišinyje, formaliai
+yra pasitelkiamas **tankio operatorius** (angl. *density operator*),
+arba jo realizacija tiesinėje algebroje -- **tankio matrica**
+(angl. *density matrix*). Visi kvantinės mechanikos postulatai gali būti
+paprastai performuluojami taikant tankio operatorius vietoj grynąsias
+būsenas nusakančių vektorių. Tai yra bendriausio pobūdžio kvantinės
+mechanikos formalizmas. Kadangi apibūdindami kvantinės kompiuterijos ir
+ryšių principus šioje knygoje daugiausia naudosime grynąsias būsenas,
+čia pateikiame tik pagrindines tankio operatorių savybes.
+
+Tankio operatorius, $\rho$, nusakantis bendriausią kvantinės sistemos
+būseną, turi šią matematinę išraišką:
+\begin{equation}
+\rho = \sum_i p_i |\psi_i \rangle\langle\psi_i|\,.
+\end{equation}
+Čia $|\psi_i \rangle\langle\psi_i |$
+yra projekcinis operatorius į normuotojo
+$|\psi_i \rangle$ vektoriaus dengiamą poerdvį, šalia
+prišlietos klasikinės tikimybės $p_i$ susideda
+$\sum_i p_i = 1$. Grynosios būsenos irgi aprašomos tankio
+operatoriumi, šiuo atveju $p_i = 1$ tam tikram
+$|\psi_i \rangle$ ir todėl:
+\begin{equation}
+\rho = |\psi_i \rangle\langle\psi_i|\,.
+\end{equation}
+Pavyzdžiui, kubito, esančio grynojoje superpozicijos būsenoje
+$|\psi\rangle = \big(|0\rangle + |1\rangle\big)/\sqrt{2}$,
+tankio operatorius ir jo realizacija matrica, naudojant
+$\{|0\rangle , |1\rangle\}$ bazinius
+vektorius, yra:
+\begin{equation}
+\rho = |\psi\rangle\langle \psi| = \frac{1}{2}\big(|0\rangle\langle 0|
++ |0\rangle\langle 1| + |1\rangle\langle 0| + |1\rangle\langle 1|\big) =
+\frac{1}{2}\begin{pmatrix}
+1 & 1 \\
+1 & 1 \\
+\end{pmatrix}\,.
+\end{equation}
+O štai kubito būsenų mišinio, kuriame yra lygios klasikinės tikimybės
+rasti $|0\rangle$ arba $|1\rangle$,
+tankio operatorius yra:
+\begin{equation}
+\rho = \frac{1}{2}|0\rangle\langle 0| + \frac{1}{2}|1\rangle\langle 1|
+= \frac{1}{2}\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix} = \frac{1}{2}I\,.
+\end{equation}
+Tankio operatorius $\rho = \frac{1}{2}I$ nusako **maksimaliai sumaišytą
+būseną** (angl. *maximally mixed state*). Kitaip tariant, turima
+informacija apie tokią sistemos būseną yra mažiausia, kokia tik gali
+būti.
+
+Tankio operatorius $\rho$ yra ermitinis operatorius
+($\rho = \rho^{\dagger}$), nes $p_i$ yra realieji skaičiai. Taip pat,
+$\rho$ yra neneigiamasis operatorius $\rho \geq 0$, nes panaudojus bet
+kokį vektorių $|\varphi\rangle$ Hilberto erdvėje,
+$\langle\varphi |\rho |\varphi\rangle \geq 0$:
+\begin{equation}
+\langle\varphi |\rho |\varphi\rangle =
+\langle\varphi| \left(\sum_i p_i |\psi_i \rangle\langle \psi_i|\right)|\varphi\rangle
+= \sum_i p_i \big|\langle\varphi |\psi_i \rangle\big|^{2} \geq 0\,.
+\end{equation}
+Kadangi $|\psi\rangle$ visada galime išreikšti
+pasirinktais baziniais vektoriais,
+$|\psi\rangle = \sum_k a_k |k\rangle$,
+nėra unikalaus būdo perteikti tankio matricai. Viršuje nurodytą grynąją
+būseną galėtume perteikti pasitelkdami patį
+$|\psi\rangle$ kaip vieną iš bazinių vektorių rinkinyje:
+{$|\psi\rangle = |0_x \rangle = \big(|0\rangle + |1\rangle\big)/\sqrt{2}$,
+$|1_x \rangle = \big(|0\rangle - |1\rangle\big)/\sqrt{2}$}.
+Šiuo atveju, tankio matrica turėtų išraišką:
+\begin{equation}
+\rho = |\psi\rangle\langle\psi| = |0_x \rangle\langle 0_x| = \begin{pmatrix}
+1 & 0 \\
+0 & 0 \\
+\end{pmatrix}\,.
+\end{equation}
+Iš tiesų, kadangi $\rho$ yra ermitinis operatorius, galima visada $\rho$
+išreikšti diagonaliąja matrica. Vis dėlto yra keletas būdų grynąsias
+būsenas matematiškai atskirti nuo mišriųjų. Vienas būdas -- pasitelkiant
+matricos pėdsaką. Tankio matricos pėdsakas yra:
+\begin{equation}
+\mathrm{Tr}(\rho) = \sum_i p_i \mathrm{Tr}\big(|\psi_i \rangle\langle \psi_i|\big)
+= \sum_i p_i = 1\,.
+\end{equation}
+O štai tankio matricos kvadrato pėdsakas:
+\begin{equation}
+\mathrm{Tr}(\rho^2 ) = \sum_{i,j} p_i p_j \mathrm{Tr}\big(|\psi_i \rangle
+\langle\psi_i |\psi_j \rangle\langle\psi_j |\big)
+= \sum_i p_i^2 \leq 1\,.
+\end{equation}
+Viršuje panaudojome
+$\langle\psi_i|\psi_j \rangle = \delta_{ij}$
+bei $0 \leq p_i \leq 1$. Lygybė tenkinama, jeigu $p_i = 1$ su tam
+tikru $i$ ir lygi nuliui su visais kitais. Todėl grynosios būsenos
+tenkina sąlygą: $\mathrm{Tr}(\rho^2 ) = \mathrm{Tr}(\rho) = 1$, na o
+mišriosios -- sąlygą: $\mathrm{Tr}(\rho) = 1$ ir $\mathrm{Tr}(\rho^2 ) < 1$.
+Toks būdas atskirti mišriąsias ir grynąsias būsenas yra paprastas, nes
+matricos pėdsakas nepriklauso nuo bazinių vektorių, kuriais išreiškiama
+matrica.
+
+Diagonaliojoje reprezentacijoje grynosios būsenos visada turi tik vieną
+matricos elementą, o štai mišrioji -- daugiau negu vieną. Dėl to dažnai
+sakoma, kad diagonalieji tankio matricos elementai įvardija statistinę
+būsenų populiaciją. Nediagonalieji elementai (angl. *off-diagonal*)
+suteikia informacijos apie koherencijos buvimą, nes jie yra kvantinių
+būsenų amplitudžių sandaugos, $a_k a_l^{*}$. Tai matėme anksčiau
+perteikdami superpozicijos būsenos
+$|\psi\rangle = \big(|0\rangle + |1\rangle\big)/\sqrt{2}$
+tankio matricą. Dekoherencijos procesas yra sietinas su nediagonaliųjų
+tankio matricos elementų sunykimu ir artėjimu prie maksimaliai
+sumaišytos būsenos.
+
+Toliau panagrinėsime, kaip formaliai apskaičiuoti kvantinės sistemos,
+apibūdintos tankio operatoriumi $\rho$, selektyvaus matavimo tikimybes.
+Grįžkime prie anksčiau pateikto selektyvaus matavimo termioninių
+elektronų ansambliui $\{p_{i}, |\psi_i \rangle\}$,
+nusakytam mišria būsena
+$\rho = \sum_i p_i |\psi_i \rangle\langle\psi_i|$.
+Įterpdami vienetinį operatorių
+$I = \sum_j |j\rangle\langle j|$
+tarp $\langle\psi_i|$ ir $P_k$ randame:
+\begin{equation}
+\begin{aligned}
+p(E_k) = & \sum_i p_i \langle\psi_i |P_k |\psi_i\rangle
+= \sum_{i,j} p_i \langle j|P_k |\psi_i \rangle\langle\psi_i|j\rangle
+= \sum_j \langle j|P_k \rho |j\rangle \\
+= & \mathrm{Tr}(P_k \rho)\,.
+\end{aligned}
+\end{equation}
+Tad tikimybė $p(E_k)$ randama atlikus projekcinės ir tankio matricų
+sandaugos pėdsaką. Įterpę $I$ tarp $P_k$ ir
+$|\psi_i \rangle$ matytume, kad
+$\mathrm{Tr}(P_k \rho) = \mathrm{Tr}(\rho P_k )$; tai dar
+kartą parodo matricų pėdsako cikliškumo savybę. Selektyvus matavimas,
+pavyzdžiui, norint nusakyti tikimybę $p(1)$ rasti kubitą
+$|0\rangle$ būsenoje, gali būti atliktas pasitelkiant
+$P_1 = |0\rangle\langle 0|$ projekcinį
+operatorių:
+\begin{equation}
+\begin{aligned}
+p(1) = & \mathrm{Tr}(\rho P_1 ) = \mathrm{Tr}\left(
+\sum_i p_i |\psi_i \rangle\langle\psi_i |P_1 \right)
+= \sum_i p_i \big|\langle 0 |\psi_i \rangle\big|^2 \\
+= & \sum_i p_i |a_{i,0}|^2\,.
+\end{aligned}
+\end{equation}
+Selektyvus būsenų mišinio matavimas, jeigu nėra būsenų išsigimimo,
+sukuria galutinę grynąją būseną. Tai išplaukia iš trečiojo kvantinės
+mechanikos postulato ir yra vienas būdas, kaip paruošti grynąsias
+būsenas. O štai neselektyvus *P* operatoriaus matavimas būsenų mišiniui
+apskaičiuojamas iš $\langle P\rangle = \mathrm{Tr}(\rho P)$ ir
+bendrai sukuria kitą būsenų mišinį.
+
+Kvantinių sistemų, aprašytų tankio operatoriumi, evoliucija laike nuo
+$t_0$ iki $t_1$ nusakoma unitariniu operatoriumi $U(t_0 ,t_1)$
+taip:
+\begin{equation}
+\rho (t_1 ) = U(t_0 ,t_1)\rho (t_0 )U^{\dagger}(t_0 ,t_1 )
+= \sum_i p_i U(t_0 ,t_1 )|\psi_i (t_0) \rangle\langle \psi_i (t_0 )|
+U^{\dagger}(t_0 ,t_1 )\,.
+\end{equation}
+Norint apibūdinti loginių vartų $U$ efektą pradinei būsenai, apibūdintai
+tankio matrica $\rho$, glaustai rašome:
+\begin{equation}
+\rho' = U\rho U^{\dagger}\,.
+\end{equation}
+II(b) postulatas, nusakantis sistemos evoliuciją Šriodingerio lygtimi,
+yra paprastai performuluojamas taikant fon Noimano--Luivilio (angl. *von
+Neumann--Liouville*) lygtį:
+\begin{equation}
+\mathrm{i}\hbar\frac{d\rho(t)}{dt} = \lbrack H,\rho(t) \rbrack\,.
+\end{equation}
+Lygtyje $H$ nusako sistemos hamiltonianą, skliausteliai indikuoja $H$ ir
+$\rho$ komutatorių.
+
+Sudėtinę kvantinę sistemą, kurios būsena yra faktorizuojama, galima
+išreikšti tenzorine tankio operatorių sandauga,
+$\rho = \rho_1\otimes\rho_2\otimes\rho_3\otimes\cdots$;
+čia $\rho_i$ nusako posistemės $i$ būseną. Jeigu tankio matricos
+išreikšti tenzorine posistemių sandauga neįmanoma,
+$\rho \neq \rho_1\otimes\rho_2$, tokia sistema yra supintoji.
+Imkime kaip pavyzdį 2 kubitų supintą grynąją būseną
+$|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)$.
+Jos tankio operatorius ir matrica, vektorių
+{$|0\rangle$, $|1\rangle$} bazėje yra:
+\begin{equation}
+\begin{aligned}
+\rho = & |\chi^{+}\rangle\langle\chi^{+}|
+= \frac{1}{2}\big(|00\rangle\langle 00| + |00\rangle\langle 11| +
+|11\rangle\langle 00| + |11\rangle\langle 11|\big) \\
+= & \frac{1}{2}\begin{pmatrix}
+1 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1
+\end{pmatrix}\,.
+\end{aligned}
+\end{equation}
+Tankio operatorių formalizmas suteikia būdą aprašyti posistemės būseną
+nepriklausomai nuo to, ar sudėtinė sistema yra supinta, ar
+faktorizuojama. Tam pasitelkiamas **dalinis matricų pėdsakas**
+(angl. *partial trace*), kuriame atliekamas pėdsakas tik vienai iš
+pasirinktų posistemių. Imkime, kad $\rho_{AB}$ nusako dviejų sistemų $A$
+ir $B$ tankio matricą, tada:
+\begin{equation}
+\mathrm{Tr}_A (\rho_{AB}) = \rho_{B}\,,\quad
+\mathrm{Tr}_B (\rho_{AB}) = \rho_{A}\,.
+\end{equation}
+Gautas darinys $\rho_A$ arba $\rho_B$ yra vadinamas **redukuota
+tankio matrica** (angl. *reduced density matrix*) ir nusako atitinkamos
+posistemės būseną. Formaliai tariant, dalinis pėdsakas yra operatorius,
+veikiantis tik vieną posistemę. Pavyzdžiui, jeigu
+$\rho_{AB} = |a_1 \rangle\langle a_2|\otimes |b_1\rangle\langle b_2|$,
+tada:
+\begin{equation}
+\mathrm{Tr}_A(\rho_{AB}) = \sum_j \big(\langle j|\otimes I\big)\rho_{AB}
+\big(|j\rangle\otimes I\big) = \mathrm{Tr}\big(|a_1 \rangle\langle a_2|\big)
+|b_1 \rangle\langle b_2|\,.
+\end{equation}
+Kaip ir tikėtasi, faktorizuojama būsenos $\rho_{AB}$ redukuota tankio
+matrica yra $|b_1\rangle\langle b_2|$
+(iki globalios konstantos). Grįžtant prie supintosios 2 kubitų grynosios
+būsenos
+$\rho = |\chi^{+}\rangle\langle\chi^{+}|$,
+įdomu įvertinti jos redukuotą tankio matricą $\rho_{1}$ arba $\rho_{2}$.
+Atlikdami dalinį pėdsaką pirmąjam kubitui randame:
+\begin{equation}
+\rho_2 = \mathrm{Tr}_1(\rho) =
+\sum_{j = 0,1} \big(\langle j|\otimes I\big)\rho\big(|j\rangle\otimes I\big) =
+\frac{1}{2}\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix} = \frac{1}{2}I\,.
+\end{equation}
+Matome, kad redukuota tankio matrica apibūdina maksimaliai sumaišytą
+būseną, nepaisant to, kad sudėtinės sistemos $\rho$ būsena yra grynoji
+(žinoma užtikrintai). Tai -- dar vienas supintųjų kvantinių būsenų
+skiriamasis ženklas.
+
+## EPR paradoksas
+
+Į kvantinių koreliacijų įtaką supintųjų būsenų matavimui atkreipė dėmesį
+ir A. Einšteinas, su kolegomis 1935 metais publikavęs žinomą darbą,
+dabar vadinamą **EPR paradoksu** (angl. *Einstein-Podolsky-Rosen
+paradox*). Čia pateikiame jų įsivaizduojamo eksperimento versiją,
+pasiūlytą Davido Bohmo ir naudojančią dviejų lygių kvantinę sistemą
+(kubitus). Įsivaizduokime, kad yra paruošiama supintoji 2 kubitų būsena,
+pavyzdžiui, ši:
+\begin{equation}
+|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,.
+\end{equation}
+Pirmas fizinis kubitas paliekamas Žemėje, o antras nusiunčiamas į tolimą
+planetą pavadinimu $Y$. Nors šių supintųjų kubitų būsena yra grynoji ir
+tiksliai žinoma, tačiau pavienių kubitų būsenos neapibrėžtos. Atlikus
+matavimą yra lygios tikimybės rasti pirmą kubitą
+$|0\rangle$ arba $|1\rangle$ būsenoje.
+Tačiau pamatavus pirmą kubitą Žemėje ir radus, pavyzdžiui,
+$|1\rangle$ būseną, antro kubito būsena planetoje $Y$
+bus taip pat užtikrintai rasta $|1\rangle$,
+($|\chi^{+}\rangle \rightarrow |11\rangle$).
+Einšteinas su kolegomis čia įžvelgė potencialų prieštaravimą reliatyvumo
+teorijai, kadangi vienos sistemos būsenos matavimas akimirksniu paveikia
+kitos sistemos būseną, nepaisant atstumo tarp jų. Kvantinė mechanika,
+EPR kompanijos požiūriu, negali būti išsami teorija, apibūdinanti gamtą.
+Nors jų argumentai neįtikino fizikų bendruomenės, tačiau tai buvo
+svarbus darbas, atkreipiantis dėmesį į kvantinės mechanikos įvariuose
+kontekstuose pasikartojančias keistąsias savybes.
+
+Norėdami iliustruoti EPR paradoksui artimą gyvenimišką pavyzdį imkime,
+kad Benas turi dvi identiškas dėžutes ir vienoje iš jų paslepia raudoną
+kamuolį, o kitoje -- mėlyną. Agnė ir Benas žino, kad dėžutėse yra dviejų
+skirtingų spalvų kamuoliai, tačiau tik Benas žino, kuriose jie paslėpti.
+Agnės požiūriu, tikimybė atidarius pasirinktą dėžutę rasti vieną ar kitą
+kamuolį yra 0.5. Tačiau atidariusi vieną dėžutę ji automatiškai žinos,
+kokios spalvos kamuolys yra kitoje. Šiuo atveju Agnės nežinojimas apie
+išankstinį Beno kamuolių išdėstymą jai suteikė koreliacijos pagrindą,
+panašų į atsirandantį dėl kubitų supynimo.
+
+Sekant Pagal šį klasikinį pavyzdį vienas argumentas paaiškinti EPR
+paradoksą būtų agituojant, kad kubitai kažkaip susimokė nuo pat pradžių
+ir jų būsena vis dėlto buvo $|00\rangle$ arba
+$|11\rangle$, tačiau mes šios informacijos neturėjome.
+Norėdami patikrinti tokį argumentą, galime žvelgti į EPR paradoksą kitu
+būdu. Kaip pamename, kvantinę būseną visada galima išreikšti bet kuriais
+kitais pageidaujamais baziniais vektoriais, nieko ypatingo nėra
+išraiškoje $\{|0\rangle , |1\rangle\}$.
+Vietoj anksčiau naudotų Pauli-$Z$, imkime Pauli-$X$ bazinius vektorius
+$\{|0_x\rangle , |1_x\rangle\}$.
+Perteikę jais $|\chi^{+}\rangle$ randame:
+\begin{equation}
+|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|0_x \rangle\otimes |0_x\rangle +
+|1_x \rangle\otimes|1_x \rangle\big)\,.
+\end{equation}
+Šiuo atveju, $|\chi^{+}\rangle$ turi identišką formą,
+kaip ir naudojant Pauli-$Z$ bazinius vektorius. Taip pat galime
+pasirinkti skirtingą matavimo būdą. Su pirmu kubitu būsenoje
+$|\chi^{+}\rangle$ galime atlikti ne standartinius
+Pauli-$Z$ operatoriaus matavimus:
+$P_0^1 = |0\rangle\langle 0|\otimes I$
+ir
+$P_1^1 = |1\rangle\langle 1|\otimes I$,
+bet pasirinkti Pauli-$X$:
+$P_{0x}^1 = |0_x \rangle\langle 0_x|\otimes I$
+ir
+$P_{1x}^1 = |1_x \rangle\langle 1_x|\otimes I$.
+Fiziškai tai galėtų reikšti, kad fotono poliarizacijos būseną matuojame
+ne išilgai su horizontaliąja--vertikaliąja poliarizacijos ašimis, tačiau
+pasukę šias abi matavimo kryptis $45^{\circ}$ kampu (įstrižoji poliarizacija).
+Vėlgi matome, kad atlikus $P_{0x}^1$ ir $P_{1x}^1$ būsenai
+$|\chi^{+}\rangle$ yra lygios tikimybės rasti pirmą
+kubitą $|0_x \rangle$ arba
+$|1_x \rangle$ būsenoje. Galutinės dviejų kubitų
+būsenos po tokio matavimo tampa:
+\begin{equation}
+|\chi^{+}\rangle \rightarrow \frac{P_{0x}^1|\chi^{+}\rangle}{\sqrt{
+\langle\chi^{+}|P_{0x}^1 |\chi^{+}\rangle}}
+= |0_x \rangle\otimes |0_x \rangle\,.
+\end{equation}
+Arba:
+\begin{equation}
+|\chi^{+}\rangle \rightarrow \frac{P_{1x}^1|\chi^{+}\rangle}{\sqrt{
+\langle\chi^{+}|P_{1x}^1 |\chi^{+}\rangle}}
+= |1_{x} \rangle\otimes|1_x \rangle\,.
+\end{equation}
+Tai, kokį matavimo būdą pasirinksime pirmam kubitui Žemėje, nulems,
+kokia bus antro kubito būsena planetoje $Y$. Jeigu renkamės Pauli-$Z$
+operatoriaus matavimus, tada antro kubito būsenos galimi variantai bus
+$|0\rangle$ arba $|1\rangle$, o jeigu
+renkamės Pauli-$X$, jie bus $|0_x \rangle$ arba
+$|1_x \rangle$. Tačiau kubitas negali būti apibrėžtoje
+Pauli-$X$ ir Pauli-$Z$ bazinių vektorių būsenoje vienu metu, nes šie
+operatoriai yra nekomutatyvūs ir todėl neturi bendrų bazinių vektorių.
+Tad, jeigu kubitai buvo $|00\rangle$ arba
+$|11\rangle$ būsenoje nuo pat pradžių (bet mes to
+nežinojome), pirmo kubito matavimo būdo pasirinkimas negali turėti
+įtakos antram kubitui. Antraip matavimo krypties pasirinkimas turėtų
+būti komunikuojamas akimirksniu, greičiau už šviesos greitį.
+
+EPR paradoksas jau buvo patvirtintas ne kartą eksperimentuose naudojant
+supintąsias fotonų būsenas. Atstumai tarp dviejų lokacijų, kuriose
+susinchronizuotai tuo pačiu metu buvo matuojamos supintųjų fotonų
+būsenos, buvo tokie, kad šviesai neužtektų laiko komunikuoti matavimo
+rezultatus, kažkaip juos paveikiant. Pagal kvantinės mechanikos
+standartinę (ortodoksinę) interpretaciją, neįmanoma žinoti, kuris
+kvantinis „kamuolys" yra kurioje dėžutėje. Būsena
+$|\chi^{+}\rangle$ nusako, kad jie yra abiejuose
+dėžutėse vienu metu. Tad pagal standartinę interpretaciją, EPR
+paradoksas neprieštarauja reliatyvumo teorijai, nes neįmanoma nuspėti,
+kokie bus pirmo kubito individualių matavimų rezultatai, žinomos tik
+tikimybės rasti $|0\rangle$ arba
+$|1\rangle$. Todėl nusiųsti informaciją, užkoduotą
+kubitų būsenose, greičiau už šviesos greitį į planetą $Y$ neįmanoma, nes
+tiesiog negalime suformuluoti žinutės -- jos turinys bus atsitiktinis.
+Tik patikrinę Žemėje ir planetoje $Y$ atliktų rezultatų statistiką
+matysime koreliaciją tarp matavimo rezultatų. Na, o norint palyginti
+rezultatus, tektų komunikuoti šviesos greičiu arba lėčiau, jeigu
+keliautume į planetą $Y$.

@@ -1,0 +1,31 @@
+--- 
+title: "Kvantinė kompiuterija"
+subtitle: "Įvadas"
+author:
+  - name: "Tadas Paulauskas"
+    affiliation: Fizinių ir technologijos mokslų centras
+    affiliation_url: https://www.ftmc.lt/
+  - name:  "Julius Ruseckas"
+    url: https://juliusruseckas.github.io/
+    affiliation: Baltijos pažangių technologijų institutas (BPTI)
+    affiliation_url: https://www.bpti.eu/
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: "Kvantinė kompiuterija"
+link-citations: yes
+nocite: |
+  @*
+github-repo: rstudio/bookdown-demo
+---
+
+# Apie knygą {-}
+
+Įvadas į kvantinę kompiuteriją.
+
+![](media/by-nc-sa.png)
+
+Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją [Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)

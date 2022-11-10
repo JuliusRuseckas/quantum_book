@@ -1,0 +1,7 @@
+delete_merged_file: true
+language:
+  label:
+    fig: !expr function(i) paste(i, 'pav. ')
+    tab: !expr function(i) paste(i, 'lentelė.')
+  ui:
+    chapter_name: !expr function(i) paste(i, 'skyrius.')
