@@ -54,6 +54,7 @@ globalios fazės narys pradingsta:
 \begin{equation}
 \langle\psi |\mathrm{e}^{-\mathrm{i}\theta}\mathrm{e}^{\mathrm{i}\theta}|\psi\rangle
 = \mathrm{e}^{0}\langle\psi |\psi\rangle = 1\,.
+(\#eq:globali-faze-dingsta)
 \end{equation}
 Atitinkamai ir matavimų metu jis nėra stebimas. Tačiau svarbu pabrėžti
 skirtumą tarp globalios ir santykinės fazės. Santykinė fazė yra fiziškai
@@ -69,6 +70,7 @@ superpozicijas bei skiriasi santykine faze:
 \begin{equation}
 |0_x\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}\,,\quad
 |1_x\rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}}\,.
+(\#eq:santykines-fazes-skirtumas)
 \end{equation}
 Akivaizdu, kad šios dvi būsenos yra skirtingos, o tiksliau --
 ortogonalios, nes
@@ -82,6 +84,7 @@ $|\psi(t_1)\rangle$ vėlesniu laiku $t_1$ unitarine
 transformacija $U(t_0, t_1)$:
 \begin{equation}
 |\psi(t_1)\rangle = U(t_0, t_1)|\psi(t_0)\rangle\,.
+(\#eq:evoliucija-laike)
 \end{equation}
 Antrasis postulatas nusako, kad žinant pradinę uždaros sistemos būseną
 laiku $t_0$, galima tiksliai ir unikaliai pasakyti, kokia bus sistemos
@@ -99,6 +102,7 @@ tinkama apibūdinti fizikinėms sąveikoms.
 nusakoma Šriodingerio lygtimi:
 \begin{equation}
 \mathrm{i}\hbar\frac{d|\psi(t)\rangle}{dt} = H|\psi(t)\rangle\,.
+(\#eq:schroedingerio-lygtis)
 \end{equation}
 Šriodingerio diferencialinėje lygtyje $\hbar$ yra Planko konstanta,
 $\mathrm{i}$ -- menamasis vienetas, $H$ -- uždaros sistemos hamiltonianas (deja,
@@ -118,11 +122,13 @@ nekinta. Tada, atlikę integraciją laike, gauname:
 \begin{equation}
 |\psi(t_1)\rangle = \mathrm{e}^{-\frac{\mathrm{i}H(t_1 - t_0)}{\hbar}}
 |\psi(t_0)\rangle\,.
+(\#eq:shroedinger-unitarus)
 \end{equation}
 Palyginę su unitarinės evoliucijos laike forma, matome jos bendrą
 išraišką:
 \begin{equation}
 U(t_0, t_1) = \mathrm{e}^{-\frac{\mathrm{i}H(t_1 - t_0)}{\hbar}}\,.
+(\#eq:unitarus-laike)
 \end{equation}
 Kadangi hamiltonianas yra ermitinis operatorius, ši operatoriaus
 eksponentė nusako unitarųjį operatorių. Kvantiniame kompiuteryje be
@@ -184,6 +190,7 @@ minėjome antrame skyriuje, ermitinis operatorius gali būti išreikštas
 spektrine dekompozicija:
 \begin{equation}
 P = \sum_k \lambda_k P_k\,.
+(\#eq:spektrine-dekompozija-4)
 \end{equation}
 Projekcinis operatorius $P_k$ atlieka vektoriaus projekciją į
 ortogonalų poerdvį, asocijuotą su tikrine verte $\lambda_k$. Kubito
@@ -196,6 +203,7 @@ $|\varphi\rangle$, galima formaliai rasti:
 \frac{P_k|\psi\rangle}{\sqrt{\langle\psi |P|\psi\rangle}}
 = \frac{|k\rangle\langle k|\psi\rangle}{\sqrt{p(\lambda_k)}} =
 \frac{a_k |k\rangle}{\sqrt{p(\lambda_k)}}\,.
+(\#eq:busena-po-matavimo)
 \end{equation}
 Skaitiklyje, $P_k|\psi\rangle$ atlieka
 $|\psi\rangle$ būsenos projekciją į
@@ -214,6 +222,7 @@ atlieka Pauli-$Z$ operatorius, kurį galima išreikšti:
 Z = \sum_k \lambda_k P_k =
 \lambda_0 |0\rangle\langle 0| + \lambda_1 |1\rangle\langle 1|
 = |0\rangle\langle 0| - |1\rangle\langle 1|\,.
+(\#eq:pauli-z-4)
 \end{equation}
 Projekcinį matavimą, naudojant Pauli-$Z$, čia vadinsime pakaitomis
 „standartiniu", „Pauli-$Z$ operatoriaus matavimu", arba „matavimu vektorių
@@ -225,6 +234,7 @@ išreiškiame:
 X = \sum_k \lambda_k P_k =
 \lambda_0|0_x\rangle\langle 0_x| + \lambda_1 |1_x\rangle\langle 1_x|
 = |0_x \rangle\langle 0_x| - |0_x \rangle\langle 0_x|\,.
+(\#eq:pauli-x-4)
 \end{equation}
 Čia $\big\{|0_x \rangle, |1_x \rangle\big\}$
 yra Pauli-$X$ tikriniai vektoriai, į kurių dengiamą poerdvį atliekama
@@ -238,12 +248,14 @@ $|\psi\rangle = |1\rangle$, tada
 tikimybė rasti $|1\rangle$ yra $p(-1)$:
 \begin{equation}
 p(-1) = \langle 1|1\rangle\langle 1|1\rangle = \big|\langle 1|1\rangle\big|^2 = 1\,,
+(\#eq:tikimybe-1-z)
 \end{equation}
 ir būsena iškart po matavimo $|\varphi\rangle$:
 \begin{equation}
 |\varphi\rangle =
 \frac{|1\rangle\langle 1|1\rangle}{\sqrt{\big|\langle 1|1\rangle\big|^2}} =
 |1\rangle\,,
+(\#eq:busena-1-z)
 \end{equation}
 Pakartoję tą patį kubito būsenos matavimą esame užtikrinti, kad rasime
 vėl tą pačią būseną kaip ir po pirmojo matavimo. Mat formaliai
@@ -267,6 +279,7 @@ p(-1) = & \langle\psi |1\rangle\langle 1|\psi\rangle \\
 + b^{*}a\langle 1|1\rangle\langle 1|0\rangle \\
 = & b^{*}b = |b|^2\,.
 \end{aligned}
+(\#eq:tikimybes-amplitudes)
 \end{equation}
 Viršuje pritaikėme kubito būsenų ortogonalumą, tad nariai
 $\langle 1|0\rangle = \langle 0|1\rangle = 0$.
@@ -278,6 +291,7 @@ yra:
 |\varphi\rangle = \frac{|1\rangle\langle 1|\psi\rangle}{\sqrt{|b|^{2}}}
 = \frac{b|1\rangle}{|b|}= \mathrm{e}^{\mathrm{i}\theta}|1\rangle
 = |1\rangle\,.
+(\#eq:busena-po-matavimo-2)
 \end{equation}
 Gavome $|1\rangle$ su koeficientu $b/|b|$ ir
 pasinaudojome sąlyga, kad kompleksinį skaičių $b$ galima išreikšti
@@ -326,6 +340,7 @@ $\langle\psi |Z|\psi\rangle$ yra:
 \begin{equation}
 $\langle\psi |Z|\psi\rangle = \frac{n\lambda_1 + m\lambda_{-1}}{n + m}
 = p(1)\lambda_1 + p(-1)\lambda_{-1}\,.
+(\#eq:vidurkio-matavimas)
 \end{equation}
 Viršuje pateikta formulė, kurią taikytume atlikdami eksperimentą.
 Apibūdinsime, kaip formaliai apskaičiuojame
@@ -336,6 +351,7 @@ Viršuje naudojome Pauli-$Z$ operatorių, $P = Z$. Imkime normuotą,
 nebūtinai kubito, superpozicijos būseną $|\psi\rangle$:
 \begin{equation}
 |\psi\rangle = \sum_k a_k |k\rangle\,.
+(\#eq:superpozicijos-busenos-pvz)
 \end{equation}
 Čia $|\psi\rangle$ yra išreikšta $P$ operatoriaus
 tikriniais vektoriais $|k\rangle$ su amplitudėmis
@@ -350,6 +366,7 @@ būsenai $|\psi\rangle$, randame:
 \left(\sum_{k''} a_{k''}|k''\rangle\right) \\
 = & \sum_k |a_k |^2 \lambda_k\,.
 \end{aligned}
+(\#eq:operatoriaus-vidurkio-matavimas)
 \end{equation}
 Viršuje formaliai panaudojome
 $\langle k'|P_k |k''\rangle = \delta_{k'k}\delta_{kk''}$
@@ -378,7 +395,7 @@ kaip matematiškai aprašyti sudėtinės sistemos būsenas. Sistemos,
 sudarytos iš $n$ kubitų būsenos, vektorius yra nusakomas $2^n$
 dimensijų Hilberto vektorių erdvėje. Ši erdvė yra formuojama iš
 individualių posistemės erdvių taikant tenzorių sandaugą, kuri žymima
-simboliu $\bigotimes$. Matematinį formulavimą bei sudėtinių sistemų
+simboliu $\otimes$. Matematinį formulavimą bei sudėtinių sistemų
 transformacijas jau trumpai apibendrinome antrame skyriuje.
 
 Norint supaprastinti simboliką, vietoj
@@ -392,12 +409,14 @@ $|\psi\rangle$ būseną 4 dimensijų Hilberto erdvėje
 pritaikius jų tiesinę sumą:
 \begin{equation}
 |\psi\rangle = a|00\rangle + b|01\rangle + c|10\rangle + d|11\rangle\,.
+(\#eq:busena-2-kubitu-sistemoje)
 \end{equation}
 Čia naudojame kubitų numeraciją $|k_1 k_2 \rangle$.
 Kadangi kvantinės būsenos yra nusakomos normuotais vektoriais,
 amplitudžių modulių kvadratų suma susideda į vienetą:
 \begin{equation}
 $|a|^2 + |b|^2 + |c|^2 + |d|^2 = 1\,.
+(\#eq:koeficientu-normavimas-4)
 \end{equation}
 Atlikus 2 kubitų matavimus $|\psi\rangle$ būsenoje,
 tikimybę rasti bitų sekas, nurodytas baziniuose vektoriuose, galima
@@ -417,12 +436,14 @@ būsenos, bus atliekamas su pirmuoju kubitu:
 \langle\psi |P_1^1 |\psi\rangle =
 \big(\langle 10| c^{*} + \langle 11|d^{*}\big)
 \big(c|10\rangle + d|11\rangle\big) = |c|^2 + |d|^2\,.
+(\#eq:projekcinis-matavimas-poerdvis)
 \end{equation}
 Normuotą būseną $|\varphi\rangle$ po šio matavimo
 randame:
 \begin{equation}
 |\varphi\rangle = \frac{P_1^1 |\psi\rangle}{\sqrt{\langle\psi |P_1^1 |\psi\rangle}}
 = \frac{c|10\rangle + d|11\rangle}{\sqrt{|c|^2 + |d|^2}}\,.
+(\#eq:busena-po-matavimo-5)
 \end{equation}
 Norėdami nusakyti, kokia tikimybė rasti $|\psi\rangle$,
 pavyzdžiui, $|01\rangle$ būsenoje, naudotume
@@ -440,6 +461,7 @@ unitarinę evoliuciją:
 \begin{equation}
 U|\chi\rangle = (U_1 \otimes U_2 )|\phi_1 \rangle\otimes|\phi_2 \rangle
 = U_1 |\phi_1 \rangle\otimes U_2|\phi_2 \rangle\,.
+(\#eq:evoliucija-sudetine-sistema)
 \end{equation}
 Viršuje pateikti $U_1 \otimes U_2$ operatoriai yra vadinami
 lokaliaisiais, kadangi jie transformuoja individualius posistemės
@@ -450,6 +472,7 @@ $U = U_1 \otimes U_2 + I\otimes U_1$:
 \begin{equation}
 U|\chi\rangle = U_1 |\phi_1 \rangle\otimes U_2 |\phi_2 \rangle +
 |\phi_1 \rangle\otimes U_1 |\phi_2 \rangle\,.
+(\#eq:lokali-evoliucija)
 \end{equation}
 Išplėstiniai operatoriai gali perteikti fizines sąveikas tarp atskirų
 kubitų ir yra svarbūs realizuojant universalius kvantinių loginių vartų
@@ -482,6 +505,7 @@ $|\phi_2 \rangle = g|0\rangle + h|1\rangle$.
 \big(g|0\rangle + h|1\rangle\big) \\
 = & eg|00\rangle + eh|01\rangle + fg|10\rangle + fh|11\rangle\,.
 \end{aligned}
+(\#eq:kubitu-tenzorine-sandauga-4)
 \end{equation}
 Tokia būsena leidžia interpretaciją, nusakančią, kad pirmas kubitas yra
 $|\phi_1 \rangle$ būsenoje, o antras
@@ -490,12 +514,14 @@ būsenos kvantinis atitikmuo. Tolesnę būseną taip pat galima
 faktorizuoti:
 \begin{equation}
 |\tau\rangle = a|00\rangle + b|10\rangle\,,
+(\#eq:faktorizuojama-busena)
 \end{equation}
 nes $|\phi_1 \phi_2 \rangle$ būsenoje galima rasti
 koeficientus $h = 0$, $a = eg$, $b = fg$. Vienas supintosios būsenos
 pavyzdys būtų:
 \begin{equation}
 |\chi\rangle = a|00\rangle + b|11\rangle\,.
+(\#eq:supintos-busenos-pvz)
 \end{equation}
 Atkreipiame dėmesį, kad neįmanoma rasti {$e$, $f$, $g$, $h$} koeficientų
 $|\phi_1 \phi_2 \rangle$ būsenoje, kuri leistų
@@ -519,19 +545,21 @@ norime nusakyti, kokia yra tikimybė rasti pirmą kubitą
 $|0\rangle$ būsenoje:
 \begin{equation}
 \langle\tau |P_0^1 |\tau\rangle = |a|^2\,.
+(\#eq:tikimybe-1-1)
 \end{equation}
 Bendra 2 kubitų būsena, vadinsime ją $|\tau'\rangle$, po
 šio matavimo yra:
 \begin{equation}
 |\tau'\rangle = \frac{P_0^1 |\tau\rangle}{\sqrt{\langle\tau |P_0^1 |\tau\rangle}}
 = |0\rangle\otimes |0\rangle\,.
+(\#eq:busena-po-matavimo-6)
 \end{equation}
 Tą patį pakartokime nusakyti, kokia tikimybė rasti pirmą kubitą
 $|1\rangle$ būsenoje, bei galutinę 2 kubitų būseną:
 \begin{align}
-\langle\tau |P_1^1 |\tau\rangle = & |b|^2 \\
+\langle\tau |P_1^1 |\tau\rangle = & |b|^2 (\#eq:tikimybe-1-2) \\
 |\tau'\rangle = & \frac{P_1^1 |\tau\rangle}{\sqrt{\langle\tau |P_1^1 |\tau\rangle}}
-= |1\rangle\otimes |0\rangle\,.
+= |1\rangle\otimes |0\rangle\,. (\#eq:busena-po-matavimo-7)
 \end{align}
 Akivaizdu, kad nepriklausomai nuo to, ar pirmas kubitas randamas
 $|0\rangle$, ar $|1\rangle$ būsenoje,
@@ -555,9 +583,9 @@ taip pat dažnai aptinkamas. Visos būsenos jame yra supintosios ir
 tarpusavyje ortogonalios:
 \begin{align}
 |\chi^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,,\quad
-|\chi^{-}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,; \\
+|\chi^{-}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,; (\#eq:belo-busenos-1)\\
 |\eta^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big)\,,\quad
-|\eta^{-}\rangle = \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big)\,.
+|\eta^{-}\rangle = \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big)\,.(\#eq:belo-busenos-2)
 \end{align}
 Įsivaizduokime situaciją, kurioje Evelina paruošia vieną iš keturių Belo
 būsenų ir nusiunčia vieną kubitą Agnei, o kitą Benui, neatskleisdama,
@@ -578,11 +606,13 @@ supintus kubitus, ne visada paprasta net ir 2 kubitų būsenose. Kaip
 pavyzdį imkime šią būseną:
 \begin{equation}
 |\psi\rangle = \frac{1}{2}\big(|00\rangle + |01\rangle + |10\rangle - |11\rangle\big)\,.
+(\#eq:dvieju-kubitu-busena-pvz)
 \end{equation}
 Ją galimą pergrupuoti taip:
 \begin{equation}
 |\psi\rangle = \frac{1}{2}\Big\lbrack\big(|0\rangle + |1\rangle)\otimes |0\rangle +
 \big(|0\rangle - |1\rangle\big)\otimes |1\rangle\Big\rbrack\,.
+(\#eq:busenos-pergrupavimas)
 \end{equation}
 Matome, kad atlikę antro kubito matavimą, rasime
 $|0\rangle$ arba $|1\rangle$ su lygiomis
@@ -652,6 +682,7 @@ kad rasime elektroną su energija $E_k$, yra:
 \begin{equation}
 p(E_k) = \sum_i p_i \langle \psi_i |P_k |\psi_i \rangle
 = \sum_i p_i p_i (E_k)\,.
+(\#eq:tikimybe-su-energija)
 \end{equation}
 Čia $P_k$ atlieka projekciją į būsenų su energija $E_k$ poerdvį, o
 $\langle\psi_i |P_k |\psi_i \rangle = p_i (E_k)$
@@ -684,6 +715,7 @@ Tankio operatorius, $\rho$, nusakantis bendriausią kvantinės sistemos
 būseną, turi šią matematinę išraišką:
 \begin{equation}
 \rho = \sum_i p_i |\psi_i \rangle\langle\psi_i|\,.
+(\#eq:tankio-operatoriaus-apibrezimas)
 \end{equation}
 Čia $|\psi_i \rangle\langle\psi_i |$
 yra projekcinis operatorius į normuotojo
@@ -694,6 +726,7 @@ operatoriumi, šiuo atveju $p_i = 1$ tam tikram
 $|\psi_i \rangle$ ir todėl:
 \begin{equation}
 \rho = |\psi_i \rangle\langle\psi_i|\,.
+(\#eq:grynosios-busenos-tankio-operatorius)
 \end{equation}
 Pavyzdžiui, kubito, esančio grynojoje superpozicijos būsenoje
 $|\psi\rangle = \big(|0\rangle + |1\rangle\big)/\sqrt{2}$,
@@ -707,6 +740,7 @@ vektorius, yra:
 1 & 1 \\
 1 & 1 \\
 \end{pmatrix}\,.
+(\#eq:superpozicijos-tankio-operatorius)
 \end{equation}
 O štai kubito būsenų mišinio, kuriame yra lygios klasikinės tikimybės
 rasti $|0\rangle$ arba $|1\rangle$,
@@ -717,6 +751,7 @@ tankio operatorius yra:
 1 & 0 \\
 0 & 1 \\
 \end{pmatrix} = \frac{1}{2}I\,.
+(\#eq:busenu-misinio-tankio-operatorius)
 \end{equation}
 Tankio operatorius $\rho = \frac{1}{2}I$ nusako **maksimaliai sumaišytą
 būseną** (angl. *maximally mixed state*). Kitaip tariant, turima
@@ -732,6 +767,7 @@ $\langle\varphi |\rho |\varphi\rangle \geq 0$:
 \langle\varphi |\rho |\varphi\rangle =
 \langle\varphi| \left(\sum_i p_i |\psi_i \rangle\langle \psi_i|\right)|\varphi\rangle
 = \sum_i p_i \big|\langle\varphi |\psi_i \rangle\big|^{2} \geq 0\,.
+(\#eq:tankio-operatorius-neneigiamas)
 \end{equation}
 Kadangi $|\psi\rangle$ visada galime išreikšti
 pasirinktais baziniais vektoriais,
@@ -747,6 +783,7 @@ $|1_x \rangle = \big(|0\rangle - |1\rangle\big)/\sqrt{2}$}.
 1 & 0 \\
 0 & 0 \\
 \end{pmatrix}\,.
+(\#eq:tankio-matricos-neunikalumas)
 \end{equation}
 Iš tiesų, kadangi $\rho$ yra ermitinis operatorius, galima visada $\rho$
 išreikšti diagonaliąja matrica. Vis dėlto yra keletas būdų grynąsias
@@ -755,12 +792,14 @@ matricos pėdsaką. Tankio matricos pėdsakas yra:
 \begin{equation}
 \mathrm{Tr}(\rho) = \sum_i p_i \mathrm{Tr}\big(|\psi_i \rangle\langle \psi_i|\big)
 = \sum_i p_i = 1\,.
+(\#eq:tankio-matricos-pedsakas)
 \end{equation}
 O štai tankio matricos kvadrato pėdsakas:
 \begin{equation}
 \mathrm{Tr}(\rho^2 ) = \sum_{i,j} p_i p_j \mathrm{Tr}\big(|\psi_i \rangle
 \langle\psi_i |\psi_j \rangle\langle\psi_j |\big)
 = \sum_i p_i^2 \leq 1\,.
+(\#eq:tankio-matricos-kvadrato-pedsakas)
 \end{equation}
 Viršuje panaudojome
 $\langle\psi_i|\psi_j \rangle = \delta_{ij}$
@@ -800,6 +839,7 @@ p(E_k) = & \sum_i p_i \langle\psi_i |P_k |\psi_i\rangle
 = \sum_j \langle j|P_k \rho |j\rangle \\
 = & \mathrm{Tr}(P_k \rho)\,.
 \end{aligned}
+(\#eq:energijos-tikimybes-apskaiciavimas)
 \end{equation}
 Tad tikimybė $p(E_k)$ randama atlikus projekcinės ir tankio matricų
 sandaugos pėdsaką. Įterpę $I$ tarp $P_k$ ir
@@ -817,6 +857,7 @@ p(1) = & \mathrm{Tr}(\rho P_1 ) = \mathrm{Tr}\left(
 = \sum_i p_i \big|\langle 0 |\psi_i \rangle\big|^2 \\
 = & \sum_i p_i |a_{i,0}|^2\,.
 \end{aligned}
+(\#eq:tikimybes-1-1-apskaiciavimas)
 \end{equation}
 Selektyvus būsenų mišinio matavimas, jeigu nėra būsenų išsigimimo,
 sukuria galutinę grynąją būseną. Tai išplaukia iš trečiojo kvantinės
@@ -832,17 +873,20 @@ taip:
 \rho (t_1 ) = U(t_0 ,t_1)\rho (t_0 )U^{\dagger}(t_0 ,t_1 )
 = \sum_i p_i U(t_0 ,t_1 )|\psi_i (t_0) \rangle\langle \psi_i (t_0 )|
 U^{\dagger}(t_0 ,t_1 )\,.
+(\#eq:tankio-matricos-evoliucija)
 \end{equation}
 Norint apibūdinti loginių vartų $U$ efektą pradinei būsenai, apibūdintai
 tankio matrica $\rho$, glaustai rašome:
 \begin{equation}
 \rho' = U\rho U^{\dagger}\,.
+(\#eq:loginiu-vartu-efektas-tankio-matricai)
 \end{equation}
 II(b) postulatas, nusakantis sistemos evoliuciją Šriodingerio lygtimi,
 yra paprastai performuluojamas taikant fon Noimano--Luivilio (angl. *von
 Neumann--Liouville*) lygtį:
 \begin{equation}
 \mathrm{i}\hbar\frac{d\rho(t)}{dt} = \lbrack H,\rho(t) \rbrack\,.
+(\#eq:von-neumann-liouville)
 \end{equation}
 Lygtyje $H$ nusako sistemos hamiltonianą, skliausteliai indikuoja $H$ ir
 $\rho$ komutatorių.
@@ -869,6 +913,7 @@ Jos tankio operatorius ir matrica, vektorių
 1 & 0 & 0 & 1
 \end{pmatrix}\,.
 \end{aligned}
+(\#eq:supintos-busenos-tankio-matrica)
 \end{equation}
 Tankio operatorių formalizmas suteikia būdą aprašyti posistemės būseną
 nepriklausomai nuo to, ar sudėtinė sistema yra supinta, ar
@@ -879,6 +924,7 @@ ir $B$ tankio matricą, tada:
 \begin{equation}
 \mathrm{Tr}_A (\rho_{AB}) = \rho_{B}\,,\quad
 \mathrm{Tr}_B (\rho_{AB}) = \rho_{A}\,.
+(\#eq:dalinis-pedsakas)
 \end{equation}
 Gautas darinys $\rho_A$ arba $\rho_B$ yra vadinamas **redukuota
 tankio matrica** (angl. *reduced density matrix*) ir nusako atitinkamos
@@ -890,6 +936,7 @@ tada:
 \mathrm{Tr}_A(\rho_{AB}) = \sum_j \big(\langle j|\otimes I\big)\rho_{AB}
 \big(|j\rangle\otimes I\big) = \mathrm{Tr}\big(|a_1 \rangle\langle a_2|\big)
 |b_1 \rangle\langle b_2|\,.
+(\#eq:dalinis-pedsakas-2)
 \end{equation}
 Kaip ir tikėtasi, faktorizuojama būsenos $\rho_{AB}$ redukuota tankio
 matrica yra $|b_1\rangle\langle b_2|$
@@ -905,6 +952,7 @@ Atlikdami dalinį pėdsaką pirmąjam kubitui randame:
 1 & 0 \\
 0 & 1 \\
 \end{pmatrix} = \frac{1}{2}I\,.
+(\#eq:dalinis-pedsakas-3)
 \end{equation}
 Matome, kad redukuota tankio matrica apibūdina maksimaliai sumaišytą
 būseną, nepaisant to, kad sudėtinės sistemos $\rho$ būsena yra grynoji
@@ -922,6 +970,7 @@ pasiūlytą Davido Bohmo ir naudojančią dviejų lygių kvantinę sistemą
 pavyzdžiui, ši:
 \begin{equation}
 |\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,.
+(\#eq:supinta-busena-6)
 \end{equation}
 Pirmas fizinis kubitas paliekamas Žemėje, o antras nusiunčiamas į tolimą
 planetą pavadinimu $Y$. Nors šių supintųjų kubitų būsena yra grynoji ir
@@ -964,6 +1013,7 @@ Perteikę jais $|\chi^{+}\rangle$ randame:
 \begin{equation}
 |\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|0_x \rangle\otimes |0_x\rangle +
 |1_x \rangle\otimes|1_x \rangle\big)\,.
+(\#eq:supinta-busena-x)
 \end{equation}
 Šiuo atveju, $|\chi^{+}\rangle$ turi identišką formą,
 kaip ir naudojant Pauli-$Z$ bazinius vektorius. Taip pat galime
@@ -989,12 +1039,14 @@ būsenos po tokio matavimo tampa:
 |\chi^{+}\rangle \rightarrow \frac{P_{0x}^1|\chi^{+}\rangle}{\sqrt{
 \langle\chi^{+}|P_{0x}^1 |\chi^{+}\rangle}}
 = |0_x \rangle\otimes |0_x \rangle\,.
+(\#eq:galutine-busena-po-matavimo)
 \end{equation}
 Arba:
 \begin{equation}
 |\chi^{+}\rangle \rightarrow \frac{P_{1x}^1|\chi^{+}\rangle}{\sqrt{
 \langle\chi^{+}|P_{1x}^1 |\chi^{+}\rangle}}
 = |1_{x} \rangle\otimes|1_x \rangle\,.
+(\#eq:galutine-busena-po-matavimo-2)
 \end{equation}
 Tai, kokį matavimo būdą pasirinksime pirmam kubitui Žemėje, nulems,
 kokia bus antro kubito būsena planetoje $Y$. Jeigu renkamės Pauli-$Z$
