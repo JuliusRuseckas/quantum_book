@@ -26,6 +26,22 @@ github-repo: rstudio/bookdown-demo
 
 Įvadas į kvantinę kompiuteriją.
 
+Ši knyga buvo parašyta remiantis keletu svarbiausių knygų apie kvantinę kompiuteriją, įskaitant šios srities „biblija“
+tapusia autorių Chuang and Nielsen „Quantum Computation and Quantum Information“, taip pat
+Nakahara ir Ohmi „Quantum Computing – From Linear Algebra to Physical Realizations“,
+Audretsch „Entangled Systems“, Guliani .. . „ „.
+Dalis medžiagos buvo panaudota iš T. Paulausko doktorantūros metu klausyto kurso „Quantum Computing“
+dėstyto Prof. Friedland Shmuel Ilinojaus Universitete Čikagoje. Naujasni knygoje paminėti pasiekimai kvantinėje
+kompiuterijoje remiasi mokslinėmis publikacijomis. Pilnas literatūros sąrašas yra pateiktas knygos pabaigoje.
+
+## Apie autorius {-}
+
+Tadas Paulauskas įgijo fizikos mokslų daktaro laipsnį Ilinojaus universitete Čikagoje, vėliau atliko postdoktorines
+studijas Monašo Universitete Melburne. Šios knygos rašymo metu dirba Fizinių ir Technologijos Mokslų Centre Vilniuje,
+Optoelektronikos skyriuje. Jo mokslinių tyrimų sritis apima kietųjų kūnų fiziką, nanotechnologijas, medžiagų inžineriją.
+
+Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete. Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto Teorinės fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis yra kvantinė optika bei labai šaltos atomų dujos. Šios knygos rašymo metu driba Baltijos pažangių technologijų institute (BPTI).
+
 ![](media/by-nc-sa.png)
 
 Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją [Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)
