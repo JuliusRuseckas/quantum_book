@@ -31,16 +31,16 @@ tapusia autorių Chuang and Nielsen „Quantum Computation and Quantum Informati
 Nakahara ir Ohmi „Quantum Computing – From Linear Algebra to Physical Realizations“,
 Audretsch „Entangled Systems“, Guliani .. . „ „.
 Dalis medžiagos buvo panaudota iš T. Paulausko doktorantūros metu klausyto kurso „Quantum Computing“
-dėstyto Prof. Friedland Shmuel Ilinojaus Universitete Čikagoje. Naujasni knygoje paminėti pasiekimai kvantinėje
+dėstyto Prof. Friedland Shmuel. Naujasni knygoje paminėti pasiekimai kvantinėje
 kompiuterijoje remiasi mokslinėmis publikacijomis. Pilnas literatūros sąrašas yra pateiktas knygos pabaigoje.
 
 ## Apie autorius {-}
 
 Tadas Paulauskas įgijo fizikos mokslų daktaro laipsnį Ilinojaus universitete Čikagoje, vėliau atliko postdoktorines
-studijas Monašo Universitete Melburne. Šios knygos rašymo metu dirba Fizinių ir Technologijos Mokslų Centre Vilniuje,
+studijas Monašo Universitete Melburne. Šios knygos rašymo metu dirba Fizinių ir Technologijos Mokslų Centre,
 Optoelektronikos skyriuje. Jo mokslinių tyrimų sritis apima kietųjų kūnų fiziką, nanotechnologijas, medžiagų inžineriją.
 
-Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete. Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto Teorinės fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis yra kvantinė optika bei labai šaltos atomų dujos. Šios knygos rašymo metu driba Baltijos pažangių technologijų institute (BPTI).
+Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete. Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto Teorinės fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis yra kvantinė optika bei labai šaltos atomų dujos. Šios knygos rašymo metu dirba Baltijos pažangių technologijų institute (BPTI).
 
 ![](media/by-nc-sa.png)
 
