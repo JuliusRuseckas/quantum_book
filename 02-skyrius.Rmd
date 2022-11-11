@@ -56,6 +56,7 @@ z_2 \\
 \vdots \\
 z_n \\
 \end{bmatrix}\,.
+(\#eq:vektorius-stulpelis)
 \end{equation}
 Skliausteliai, turintys formą $|\ldots \rangle$ yra
 naudojami įvardyti kad šis objektas yra vektorius stulpelis. Skaičius
@@ -74,10 +75,12 @@ tenkinančios šias savybes:
 1.
 \begin{equation}
 |v_1 \rangle + |v_2 \rangle = |v_2 \rangle + |v_1 \rangle\,;
+(\#eq:sudeties-savybe-1)
 \end{equation}
 2.
 \begin{equation}
 |v_1 \rangle + \big( |v_2\rangle + |v_3 \rangle \big) = \big( |v_1 \rangle + |v_2 \rangle \big) + |v_3\rangle\,.
+(\#eq:sudeties-savybe-2)
 \end{equation}
 
 Tai bendrai parodo, kad eiliškumas vektorių sudėčiai nėra svarbus.
@@ -94,14 +97,17 @@ savybes:
 3.
 \begin{equation}
 z\big( |v_1 \rangle + |v_2 \rangle \big) = z |v_1\rangle + z |v_2\rangle\,;
+(\#eq:daugybos-savybe-1)
 \end{equation}
 4.
 \begin{equation}
 ( z_1 + z_2 ) |v \rangle = z_1 |v \rangle + z_2 |v \rangle\,;
+(\#eq:daugybos-savybe-2)
 \end{equation}
 5.
 \begin{equation}
 ( z_1 z_2 ) |v \rangle = z_1 \big(z_2 |v \rangle\big)\,.
+(\#eq:daugybos-savybe-3)
 \end{equation}
 
 Atkreipiame dėmesį, kad sandaugose praleidžiame daugybos simbolį, tad du
@@ -133,6 +139,7 @@ z_1 + z_4 \\
 z_2 + z_5 \\
 z_3 + z_6 \\
 \end{bmatrix}\,.
+(\#eq:triju-elementu-sudetis)
 \end{equation}
 Čia kiekvienas elementas $z_i$ yra kompleksinis skaičius. Vektoriaus
 ir skaičiaus $g$ sandauga:
@@ -146,6 +153,7 @@ g z_1 \\
 g z_2 \\
 g z_3 \\
 \end{bmatrix}\,.
+(\#eq:vektoriaus-skaiciaus-sandauga)
 \end{equation}
 Kiti du svarbūs konceptai yra vektorių erdvę dengiantis vektorių
 rinkinys (angl. *spanning set*) ir vektorių **tiesinė nepriklausomybė**
@@ -156,6 +164,7 @@ išreikšti bet kokį vektorių $|v\rangle$, esantį $V$. Tai
 yra:
 \begin{equation}
 |v \rangle = \sum_i z_i |v_i\rangle\,.
+(\#eq:dengiantis-rinkinys)
 \end{equation}
 Tiesinė vektorių nepriklausomybė leidžia formaliai nusakyti vektorių
 erdvės dimensiją ir tuo pačiu rasti mažiausią skaičių vektorių,
@@ -166,12 +175,14 @@ sakysime $|v_2 \rangle$, gali būti išreikštas likusių
 $n-1$ vektorių tiesinėmis kombinacijomis:
 \begin{equation}
 z_1 |v_1\rangle + z_3 |v_2 \rangle + \cdots + z_n |v_n \rangle = |v_2\rangle\,.
+(\#eq:tiesiskai-priklausomi)
 \end{equation}
 Tiesiškai nepriklausomų vektorių rinkinyje nė vieno iš jų neįmanoma
 išreikšti kitų likusiųjų suma. Formaliai, tiesiškai priklausomas
 vektorių rinkinys tenkina šią lygybę:
 \begin{equation}
 z_1 |v_1 \rangle + z_2 |v_2\rangle + \cdots + z_n |v_n \rangle = 0\,.
+(\#eq:tiesiskai-priklausomi-2)
 \end{equation}
 Čia suma lygi nuliniam vektoriui ir joje egzistuoja skaičiai $z_i$,
 kurie ne visi lygūs nuliui $z_i \neq 0$. O štai tiesiškai
@@ -198,6 +209,7 @@ imkime 3 dimensijų erdvės bazinių vektorių rinkinį:
 0 \\
 1 \\
 \end{bmatrix}\,.
+(\#eq:baziniai-vektoriai-3d)
 \end{equation}
 Matome, kad bet kokį vektorių $|v\rangle$ šioje erdvėje
 galime išreikšti jų suma:
@@ -219,6 +231,7 @@ c \\
 0 \\
 1 \\
 \end{bmatrix}\,.
+(\#eq:isreiskimas-per-bazinius-3d)
 \end{equation}
 Taip pat akivaizdu, kad dviejų bazinių vektorių, pavyzdžiui
 $|v_1 \rangle$ ir $|v_3 \rangle$,
@@ -240,6 +253,7 @@ vektorių rinkinių. Pavyzdžiui, kitas rinkinys:
 1 \\
 1 \\
 \end{bmatrix}\,.
+(\#eq:kitas-baziniu-rinkinys)
 \end{equation}
 Siekdami patikrinti šių vektorių tiesinę nepriklausomybę išspręstume
 trijų lygčių sistemą:
@@ -249,6 +263,7 @@ trijų lygčių sistemą:
 -a + 5b + c =& 0\,,\\
 3b + c  =& 0\,. \\
 \end{aligned}
+(\#eq:vektoriu-nepriklausomybes-sistema)
 \end{equation}
 Sistemą išsprendę rastume, kad vieninteliai skaičiai, tenkinantys
 lygybę, yra $a = b = c = 0$. Vienas svarbus skirtumas tarp šio bazinio
@@ -262,10 +277,11 @@ $\langle v_m |v_n \rangle$. Jeigu du
 skaičius, lygus nuliui.
 
 Kvantinėje kompiuterijoje 2 dimensijų kompleksinių vektorių erdvės
-$V^{2}$ nusako individualių kubitų būsenų erdvę. Bendra vieno kubito
+$V^2$ nusako individualių kubitų būsenų erdvę. Bendra vieno kubito
 būsena yra vektorius:
 \begin{equation}
 |\psi\rangle = a|0\rangle + b|1\rangle\,.
+(\#eq:bendra-kubito-busena)
 \end{equation}
 Čia $|0\rangle$ ir $|1\rangle$ yra
 standartiškai naudojami baziniai vektoriai, dar vadinami
@@ -279,6 +295,7 @@ vektoriumi:
 0 \\
 1 \\
 \end{bmatrix}\,.
+(\#eq:baziniai-vektoriai-stulpeliais)
 \end{equation}
 Galima lengvai patikrinti, kad šis dviejų vektorių rinkinys
 $\big\{|0\rangle , |1\rangle\big\}$ yra tiesiškai
@@ -296,6 +313,7 @@ koeficientus $a$ ir $b$:
 a \\
 b \\
 \end{bmatrix}\,.
+(\#eq:bet-koks-vektorius-per-bazinius)
 \end{equation}
 Kvantinėje mechanikoje koeficientai turi tenkinti lygybę
 $|a|^2 + |b|^2 = 1$. Nors šis bazinių vektorių rinkinys kvantinėje
@@ -311,6 +329,7 @@ būsenas nusakantis rinkinys yra šis:
 1 \\
 -1 \\
 \end{bmatrix}\,.
+(\#eq:kitas-busenu-rinkinys)
 \end{equation}
 Palyginę su $\big\{|0\rangle, |1\rangle\big\}$
 matome, kad
@@ -320,6 +339,7 @@ elementus, atitinkamai, naudojant koeficientus $a = b = 1/\sqrt{2}$:
 \begin{equation}
 |0_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\,,\quad
 |1_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - |1\rangle\big)\,.
+(\#eq:isreiskimas-per-pirmuosius-bazinius)
 \end{equation}
 Dviejų bazinių vektorių suma kvantinėje kompiuterijoje yra vadinama
 būsenų superpozicija. Tiesinės algebros požiūriu, tai tiesiog atspindi
@@ -342,14 +362,15 @@ nusakantį greitį 2 dimensijose (plokštumoje):
 2 \\
 3 \\
 \end{bmatrix}\,.
+(\#eq:greicio-pvz)
 \end{equation}
 Galime žvelgti į šiuos du skaičius stulpelyje, kaip suteikiančius
 koordinates $(x, y)$. Naudojant statmeną $x$--$y$ koordinačių sistemą, šis
-vektorius atrodo taip:
+vektorius pavaizduotas \@ref{fig:vektoriaus-pvz} pav.
 
-![](./media/image2_1.png)
-
-**2.1 pav.** Vektoriaus pavyzdys plokštumoje. Joje priskirta stačiakampė $x$--$y$ kordinačių sistema; vienetiniai vektoriai pažymėti žalia spalva
+```{r vektoriaus-pvz, echo=FALSE, fig.cap="Vektoriaus pavyzdys plokštumoje. Joje priskirta stačiakampė $x$--$y$ kordinačių sistema; vienetiniai vektoriai pažymėti žalia spalva", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image2_1.png")
+```
 
 Norėdami nubrėžti $|g\rangle$ vektorių, einame 2
 žingsnius $x$ ašimi į dešinę ir 3 $y$ ašimi į viršų. Šiuo atveju nėra
@@ -371,6 +392,7 @@ taip:
 0 \\
 1 \\
 \end{bmatrix}\,.
+(\#eq:greitis-per-bazinius)
 \end{equation}
 Visi įmanomi vektoriai šioje plokštumoje gali būti sukonstruoti
 naudojant šiuos bazinius vektorius bei keičiant koeficientus $a$ ir $b$.
@@ -390,6 +412,7 @@ dauginantis raide $\mathrm{i}$ žymimas narys yra menamasis vienetas, turintis
 savybę:
 \begin{equation}
 \mathrm{i}^2 = -1\,.
+(\#eq:i-kvadratas)
 \end{equation}
 Tad į realųjį skaičių galime žiūrėti kaip į kompleksinį skaičių, kuriame
 menamoji dalis $b = 0$. Atliekant dviejų kompleksinių skaičių arba
@@ -397,11 +420,13 @@ kompleksinio ir realiojo skaičiaus sudėtis, realiosios ir menamosios
 dalys yra sudedamos tarpusavyje atskirai:
 \begin{equation}
 (a + b\mathrm{i}) + (c + d\mathrm{i}) = (a + c) + (b + d)\mathrm{i}\,.
+(\#eq:kompleksiniu-sudetis)
 \end{equation}
 Taikydami menamojo vieneto savybę bei kompleksinių skaičių sudėtį,
 dviejų kompleksinių skaičių sandaugą randame:
 \begin{equation}
 (a + b\mathrm{i}) (c + d\mathrm{i}) = (ac - bd) + (ad + bc)\mathrm{i}\,.
+(\#eq:kompleksiniu-sandauga)
 \end{equation}
 Atliekant skaičiavimus kvantinėje kompiuterijoje dažnai naudojamas
 vadinamasis kompleksinis skaičiaus jungimas, dar įvardijamas kaip
@@ -410,12 +435,14 @@ tarp kompleksinio skaičiaus $z$ ir jo kompleksinės jungties, kuri yra
 žymima su žvaigždute $z^{*}$:
 \begin{equation}
 z = a + b\mathrm{i}  \rightarrow z^{*} = a - b\mathrm{i}\,.
+(\#eq:kompleksinis-jungtinumas)
 \end{equation}
 Kompleksinis jungimas apverčia menamosios dalies ženklą. Pavyzdžiui,
 kvantinės būsenos kompleksinės amplitudės $z$ kvadratas yra
 apskaičiuojamas naudojant kompleksinę jungtį:
 \begin{equation}
 |z|^2 = z z^{*} = (a + b\mathrm{i}) (a - b\mathrm{i}) = a^2 + b^2\,.
+(\#eq:kompleksinis-amplitudes-kvadratas)
 \end{equation}
 Čia $|z|$ reiškia šio skaičiaus modulį ir
 matome, kad $z z^{*}$ visada yra realusis skaičius. Kompleksinius
@@ -423,10 +450,9 @@ skaičius galime išreikšti grafiškai plokštumoje, kurioje horizontalioji
 ir vertikalioji ašys nusako realiąją (Re) ir menamąją (Im) dalis,
 atitinkamai.
 
-![](./media/image2_2.png)
-
-**2.2 pav.** Kompleksinio skaičiaus pavaizdavimas stačiakampėje Re--Im koordinačių sistemoje pateikiant koordinates $(a, b)$.
-Naudojant polines koordinates, pateikiamas spindulio ilgis ir kampas ($|z|$, $\theta$)
+```{r kompleksinio-vaizdavimas, echo=FALSE, fig.cap="Kompleksinio skaičiaus pavaizdavimas stačiakampėje Re--Im koordinačių sistemoje pateikiant koordinates $(a, b)$. Naudojant polines koordinates, pateikiamas spindulio ilgis ir kampas ($|z|$, $\\theta$)", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image2_2.png")
+```
 
 Viršuje parodyti du būdai išreikšti kompleksiniam skaičiui. Galime
 nusakyti kompleksinį skaičių $(a, b)$ koordinatėmis Re--Im koordinačių
@@ -441,6 +467,7 @@ Jeigu imsime kompleksinį skaičių, kurio spindulio ilgis $|z| = 1$,
 Oilerio formulė (angl. *Euler formula*) mums rodo:
 \begin{equation}
 \mathrm{e}^{\mathrm{i}\theta} = \cos(\theta) + \mathrm{i}\sin(\theta)\,.
+(\#eq:oilerio-formule)
 \end{equation}
 Oilerio formulėje $\mathrm{e}$ yra natūraliojo logaritmo pagrindas, kurio reikšmė
 $\mathrm{e}\sim 2.718\ldots$ . Akivaizdu, kad Oilerio funkcijos modulis
@@ -448,12 +475,13 @@ $\big|\mathrm{e}^{\mathrm{i}\theta}\big| = 1$. Bet kokį kompleksinį skaičių 
 taip:
 \begin{equation}
 z = |z|\mathrm{e}^{\mathrm{i}\theta}\,.
+(\#eq:kompleksinio-eksponentine-israiska)
 \end{equation}
 Taip išreikšto skaičiaus $z$ kompleksinė jungtis bei jo modulio
 kvadratas, minėti viršuje, gaunami atliekant konjugaciją eksponentėje:
 \begin{align}
-z^{*} = & |z|\mathrm{e}^{-\mathrm{i}\theta}\,;\\
-|z|^2 = & |z| |z|\mathrm{e}^{-\mathrm{i}\theta}\mathrm{e}^{\mathrm{i}\theta}= |z|^2\,.
+z^{*} = & |z|\mathrm{e}^{-\mathrm{i}\theta}\,;(\#eq:kompleksinis-jungtinis-eksponente)\\
+|z|^2 = & |z| |z|\mathrm{e}^{-\mathrm{i}\theta}\mathrm{e}^{\mathrm{i}\theta}= |z|^2\,. (\#eq:kompleksinis-modulis-eksponente)
 \end{align}
 Viršuje pritaikėme eksponenčių daugybos formulę,
 $\mathrm{e}^{\mathrm{i}a}\mathrm{e}^{\mathrm{i}b} = \mathrm{e}^{\mathrm{i}(a + b)}$ bei $\mathrm{e}^0 = 1$.
@@ -476,6 +504,7 @@ a_2 \\
 a_3 \\
 a_4 \\
 \end{bmatrix}\,.
+(\#eq:ket-pvz)
 \end{equation}
 Visi $|\psi\rangle$ vektoriaus elementai yra bendrai
 kompleksiniai skaičiai. Pirmame žingsnyje vektorius eilutė yra gaunamas
@@ -485,6 +514,7 @@ stulpelyje iš viršaus į apačią yra pergrupuojami eilutėje iš kairės į
 dešinę:
 \begin{equation}
 |\psi\rangle^T = \lbrack a_1, a_2, a_3, a_4\rbrack\,.
+(\#eq:transpozicijos-pvz)
 \end{equation}
 Galiausiai, *bra* vektorius yra gaunamas atlikus transponuotajam
 vektoriui kiekvieno jo elemento kompleksinę jungtį
@@ -493,6 +523,7 @@ $\big(|\psi\rangle^T\big)^{*}= |\psi\rangle^{\dagger} = \langle\psi|$.
 vartojamas durklo formos ženklas $\dagger$. Tad galiausiai randame:
 \begin{equation}
 |\psi\rangle^{\dagger} = \langle\psi|  = \lbrack a_1^{*}, a_2^{*}, a_3^{*}, a_4^{*}\rbrack\,.
+(\#eq:ermitine-jungtis-pvz)
 \end{equation}
 *Bra* vektoriai yra **dualūs** *ket* vektoriams (angl. *dual vector*) --
 kiekvienas *bra* turi vieną sau atitinkantį *ket*. Formaliai, jeigu
@@ -520,6 +551,7 @@ a_4 \\
 = & a_1^{*} a_1 + a_2^{*} a_{2} + a_3^{*} a_{3} + a_4^{*} a_{4} \\
 = & |a_1|^2 + |a_2|^2 + |a_3|^2 + |a_4|^2\,.
 \end{aligned}
+(\#eq:vidine-sandauga-su-dualiu)
 \end{equation}
 Matome, kad atlikus vidinę vektoriaus sandaugą su sau dualiu vektoriumi
 rezultatas visada bus realusis neneigiamasis skaičius,
@@ -534,7 +566,8 @@ kurį vektorių padaryti normuotuoju, jeigu jis toks nėra, padalindami jį
 iš skaičiaus, nusakančio vektoriaus ilgį
 $\sqrt{\langle\psi |\psi\rangle}$:
 \begin{equation}
-|\widehat{\psi}\rangle = |\psi\rangle/\sqrt{\langle\psi |\psi\rangle}\,.
+|\hat{\psi}\rangle = |\psi\rangle/\sqrt{\langle\psi |\psi\rangle}\,.
+(\#eq:vektoriaus-sunormavimas)
 \end{equation}
 Dviejų skirtingų tos pačios vektorių erdvės vektorių
 $|\psi\rangle$ ir $|\phi\rangle$ vidinė
@@ -546,12 +579,14 @@ b_2 \\
 b_3 \\
 b_4 \\
 \end{bmatrix} = a_1^{*} b_1 +a_2^{*} b_2 + a_3^{*} b_3 + a_4^{*} b_{4}\,.
+(\#eq:skirtingu-vidine-sandauga)
 \end{equation}
 Dviejų vektorių, turinčių $n$ elementų, vidinė sandauga
 $\langle\psi |\phi\rangle$ yra glaustai
 užrašoma:
 \begin{equation}
 \langle\psi|\phi\rangle = \sum_{i = 1}^{n} a_i^{*} b_i\,.
+(\#eq:n-elementu-vidine-sandauga)
 \end{equation}
 *Ket* ir *bra* eiliškumas (kuris vektorius rašomas kairėje ir kuris --
 dešinėje) vidinėje sandaugoje gali būti svarbus, nes sudauginus
@@ -560,10 +595,12 @@ Skirtumas tarp jų eiliškumo slypi gauto skaičiaus kompleksiniame
 jungime. Šį principą galima išreikšti taip:
 \begin{equation}
 \langle\psi|\phi\rangle = \big(\langle\phi|\psi\rangle\big)^{*}\,.
+(\#eq:kompleksiskai-jungtine-vidine-sandauga)
 \end{equation}
 Skaičius vidinėje sandaugoje galime visada iškelti už jos:
 \begin{equation}
 \langle\psi|\big(z_1|\phi_1 \rangle + z_2|\phi_2\rangle\big) = z_1\langle\psi|\phi_1\rangle + z_2\langle\psi |\phi_2 \rangle\,.
+(\#eq:skaiciaus-iskelimas-is-vidines)
 \end{equation}
 Vidinės sandaugos modulio kvadratas,
 $\big|\langle\psi|\phi\rangle\big|^2$,
@@ -572,6 +609,7 @@ dar vadinamas kompleksiniu kvadratu, naudojant vektorių simboliką yra:
 \big|\langle\psi|\phi\rangle\big|^2 = \langle\psi |\phi\rangle\langle\psi |\phi\rangle^{*}
 = \langle\psi |\phi\rangle\langle\phi |\psi\rangle = \langle\phi |\psi\rangle\langle\psi |\phi\rangle =
 \big|\langle\phi |\psi\rangle\big|^2\,.
+(\#eq:vidines-sandaugos-modulio-kvadratas)
 \end{equation}
 Viršuje matome dviejų kompleksinių skaičių sandaugą, kuri yra gaunama iš
 dviejų vidinių vektorių sandaugų
@@ -592,12 +630,14 @@ vektoriais $\big\{|v_i \rangle\big\}$ su atitinkamais
 koeficientais $z_i$:
 \begin{equation}
 |v\rangle = \sum_i z_i |v_i \rangle\,.
+(\#eq:vektoriaus-isreikstas-baziniais-pvz)
 \end{equation}
 Naudodami $\delta_{ij}$, bet kurį $i$-tąjį koeficientą $z_i$ galime
 rasti atlikę vektoriaus $|v\rangle$ vidinę sandaugą su
 atitinkamu *bra* $\langle v_i|$:
 \begin{equation}
 z_i = \langle v_i |v \rangle\,.
+(\#eq:koeficiento-radimas)
 \end{equation}
 Vidinės sandaugos geometrinę interpretaciją galime lengviau pamatyti
 naudodami 2 dimensijų Euklido vektorių erdvę. Imkime
@@ -610,23 +650,24 @@ koeficientų pavyzdį:
 2 \\
 3 \\
 \end{bmatrix}\,.
+(\#eq:konkretus-koeficientai-pvz)
 \end{equation}
 Atlikę šio vektoriaus vidinę sandaugą su $|0\rangle$
 vektoriumi rasime:
 \begin{equation}
 \langle 0|\phi\rangle = \frac{2}{\sqrt{13}}\langle 0|0\rangle + \frac{3}{\sqrt{13}}\langle 0|1\rangle = \frac{2}{\sqrt{13}}\,.
+(\#eq:vidine-sandauga-koeficientas-pvz)
 \end{equation}
 Viršuje
 $\langle 0|0\rangle = 1$ ir
 $\langle 0|1\rangle = 0$, naudojant bazinių
 vektorių ortogonalumą ir normuotumą, apibendrinta minėta delta funkcija
 $\langle v_i |v_j \rangle = \delta_{ij}$.
-Galime šią vidinę sandaugą iliustruoti taip:
+Galime šią vidinę sandaugą iliustruoti \@ref(fig:vektoriaus-dekompozicija-pvz) pav.
 
-![](./media/image2_3.png)
-
-**2.3 pav.** Vektoriaus $|\phi\rangle$ dekompozicija santykinai su statmenais vienetiniais (baziniais) vektoriais
-$|0\rangle$ ir $|1\rangle$. Vidinės sandaugos čia nusako $|\phi\rangle$ vektoriaus projekcijas (arba persiklojimą) į atitinkamus bazinius vektorius
+```{r vektoriaus-dekompozicija-pvz, echo=FALSE, fig.cap="Vektoriaus $|\\phi\\rangle$ dekompozicija į statmenus vienetinius (bazinius) vektorius $|0\\rangle$ ir $|1\\rangle$. Vidinės sandaugos čia nusako $|\\phi\\rangle$ vektoriaus projekcijas (arba persiklojimą) į atitinkamus bazinius vektorius", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image2_3.png")
+```
 
 Nubrėžę brūkšniuotą statmeną liniją matome, kad vidinė sandauga
 $\langle 0|\phi\rangle$ indikuoja
@@ -646,6 +687,7 @@ persikloja, galime apskaičiuoti vidinės sandaugos modulį
 \begin{equation}
 \big|\langle\psi |\phi \rangle \big| =
 \sqrt{\langle\psi |\phi\rangle\langle\phi |\psi\rangle} = \cos(\theta)\,;
+(\#eq:vektoriu-persiklojimo-nustatymas)
 \end{equation}
 $\theta$ nusako kampą tarp vektorių $|\phi\rangle$ ir
 $|\psi\rangle$. Verta atkreipti dėmesį, kad kampas čia
@@ -665,6 +707,7 @@ kubito būsenos pavaizdavimą galime rasti pirmiausiai išreiškę
 kompleksinius skaičius $a$ ir $b$ Oilerio formule:
 \begin{equation}
 |\psi\rangle = |a|\mathrm{e}^{\mathrm{i}\phi_1}|0\rangle + |b|\mathrm{e}^{\mathrm{i}\phi_2}|1\rangle\,.
+(\#eq:koeficientai-oilerio-formule)
 \end{equation}
 Kadangi $\mathrm{e}^{\mathrm{i}\phi}$ narių modulis yra $|\mathrm{e}^{\mathrm{i}\phi}| = 1$ ir
 amplitudės susideda $|a|^2 + |b|^2 = 1$, galime atlikti keitimą
@@ -679,12 +722,14 @@ narį ir pervadindami $\phi_2 - \phi_1 \equiv \phi$, gauname:
 \begin{equation}
 |\psi\rangle = \mathrm{e}^{\mathrm{i}\phi_1}\big(\cos(\theta/2)|0\rangle
 + \sin(\theta/2)\mathrm{e}^{\mathrm{i}\phi}|1\rangle\big)\,.
+(\#eq:koeficientu-pertvarkymas-1)
 \end{equation}
 Kadangi globali kvantinės būsenos fazė neturi fizinės įtakos, galime
-panaikinti narį $e^{i\phi_{1}}$. Taip prieiname prie kubito būsenos
+panaikinti narį $\mathrm{e}^{\mathrm{i}\phi_1}$. Taip prieiname prie kubito būsenos
 Blocho reprezentacijos:
 \begin{equation}
 |\psi\rangle = \cos(\theta/2)|0\rangle + \sin(\theta/2)\mathrm{e}^{\mathrm{i}\phi}|1\rangle\,.
+(\#eq:koeficientu-pertvarkymas-2)
 \end{equation}
 Iš pirmo žvilgsnio atrodytų, kad turint dvi kompleksines amplitudes $a$
 ir $b$ reikia bendrai keturių realiųjų skaičių nusakyti bendrai kubito
@@ -698,11 +743,9 @@ plokštumoje (sferos pusiaujyje) skaičiuojant nuo teigiamosios $x$ ašies.
 Blocho vektorius, tolydžiai keičiant šiuos du parametrus, apibūdina
 visus įmanomus taškus Blocho sferos paviršiuje.
 
-![](./media/image2_4.png)
-
-**2.4 pav.** Bendra kubito būsena $|\psi\rangle$ nusakoma Blocho vektoriumi,
-pažymėtu nuo Blocho sferos centro iki jos paviršiaus. Išilgai $x$, $y$ ir $z$ ašių
-pažymėtos dažnai algoritmuose pasitelkiamos būsenos
+```{r blocho-sfera-2, echo=FALSE, fig.cap="Bendra kubito būsena $|\\psi\\rangle$ nusakoma Blocho vektoriumi, pažymėtu nuo Blocho sferos centro iki jos paviršiaus. Išilgai $x$, $y$ ir $z$ ašių pažymėtos dažnai algoritmuose pasitelkiamos būsenos", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image2_4.png")
+```
 
 Patikrinkime keletą orientacijų, kad pamatytume, kaip Blocho sferoje
 pavaizduojamos skirtingos kubito būsenos. Jeigu imsime kampą
@@ -726,6 +769,7 @@ $|0_x \rangle$ ir $|1_x \rangle$:
 \begin{equation}
 |0_x \rangle = \frac{1}{\sqrt{2}}\big( |0\rangle + |1\rangle\big)\,,\quad
 |1_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - |1\rangle\big)\,.
+(\#eq:busenos-isilgai-x)
 \end{equation}
 Išilgai $y$ ašies $\theta = \pi/2$ bei $\phi = \ \pi/2$ ir
 $\phi = 3\pi/2$, randame $|0_y \rangle$ ir
@@ -733,6 +777,7 @@ $|1_y \rangle$:
 \begin{equation}
 |0_y \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + \mathrm{i}|1\rangle\big)\,,\quad
 |1_y \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - \mathrm{i}|1\rangle)\,.
+(\#eq:busenos-isilgai-y)
 \end{equation}
 Šios būsenos, kaip ir visos kitos $x$--$y$ plokštumoje, yra lygios
 $|0\rangle$ ir $|1\rangle$ būsenų
@@ -751,7 +796,7 @@ erdvėje, kurias apibūdina operatoriai, priklausantys **SO(3) grupei**
 (angl. *special orthogonal group*). Tarp šių grupių yra atsitiktinė
 sąsaja, ledžianti atlikti SU(2) elemento vizualizaciją, tačiau SU(2)
 grupė dvigubai dengia SO(3) grupę. Tai reiškia, kad du SU(2) elementus,
-besiskiriančius tik *π* faze, galime perteikti tuo pačiu elementu SO(3)
+besiskiriančius tik $\pi$ faze, galime perteikti tuo pačiu elementu SO(3)
 grupėje, išsaugodami visą likusią grupės struktūrą. Dėl to rotacija
 $\theta$ kampu Blocho sferoje nusako $\theta/2$ rotaciją kompleksinėje
 vektorių erdvėje. Turime apeiti Blocho sferą aplink du kartus
@@ -771,6 +816,7 @@ $|u\rangle$, priklausantį tai pačiai vektorių erdvei,
 $|u\rangle \in V$:
 \begin{equation}
 A|v\rangle = |u\rangle\,.
+(\#eq:tiesinio-operatoriaus-apibrezimas)
 \end{equation}
 Operatoriaus veiksmas *ket* vektoriui yra užrašomas panašiai kaip jų
 tarpusavio sandauga, kurioje operatorius stovi kairėje *ket* pusėje.
@@ -781,12 +827,14 @@ Skaičių, dauginantį vektorių, galima visada iškelti už operatoriaus ir
 vektoriaus:
 \begin{equation}
 A\big(z|v\rangle\big) = zA|v\rangle\,.
+(\#eq:skaiciaus-iskelimas-pries-operatoriu)
 \end{equation}
 Visi loginiai vartai kvantinėje kompiuterijoje yra tiesiniai
 operatoriai. Operatoriaus tiesiškumo savybė jam veikiant bet kokius du
 (ar daugiau) vektorius:
 \begin{equation}
 A\big(|v\rangle + |u\rangle\big) = A|v\rangle + A|u\rangle\,.
+(\#eq:operatoriaus-tiesiskumo-savybe)
 \end{equation}
 Tai parodo, kad operatorius $A$ veikia atskirai kiekvieną vektorių
 sumoje tiesiniu būdu. Kadangi bet kokį vektorių $V$ erdvėje galima
@@ -800,6 +848,7 @@ $A|v\rangle = B|v\rangle$. Dviejų
 tiesinių operatorių suma nusako kitą tiesinį operatorių $A + B = C$:
 \begin{equation}
 C|v\rangle = (A + B)|v\rangle = A|v\rangle + B|v\rangle\,.
+(\#eq:operatoriu-sumos-apibrezimas)
 \end{equation}
 Operatorių sudėtyje eiliškumas nėra svarbus, $A + B = B + A$. Vienas iš
 paprasčiausių operatorių yra **identitetas** (angl.* identity*), žymimas
@@ -811,6 +860,7 @@ nulinis operatorius, vadinsime jį $N$, $N|v\rangle = 0$.
 Dviejų operatorių sandauga $AB = D$ nusako kitą operatorių:
 \begin{equation}
 AB|v\rangle = D|v\rangle\,.
+(\#eq:operatoriu-sandaugos-apibrezimas)
 \end{equation}
 Kairėje lygties dalyje operatorius $B$ veikia vektorių
 $|v\rangle$, toliau operatorius $A$ veikia gautą vektorių
@@ -825,6 +875,7 @@ standartiškai užrašomas įdedant juos į skliaustelius, kurios forma
 išskleidus reiškia:
 \begin{equation}
 \lbrack A,B\rbrack = AB - BA\,.
+(\#eq:operatoriu-komutatorius)
 \end{equation}
 Operatoriai $A$ ir $B$ yra komutatyvūs, jeigu $\lbrack A,B\rbrack = 0$
 ir nekomutatyvūs, jeigu $\lbrack A,B\rbrack \neq 0$. Kita savybė, dviejų
@@ -832,6 +883,7 @@ operatorių **antikomutatyvumas** (angl. *anticommutative*), yra
 operacija, apibrėžta lenktiniais skliausteliais:
 \begin{equation}
 \big\{ A,B \big\} = AB + BA\,.
+(\#eq:operatoriu-antikomutatorius)
 \end{equation}
 Du operatoriai yra antikomutatyvieji, jeigu $\big\{ A,B \big\} = 0$.
 Sukeitus antikomutatyviuosius operatorius vietomis skliausteliuose, jų
@@ -845,8 +897,8 @@ lentele. Tai yra vadinama operatoriaus **vaizdavimas matrica**
 (angl. *matrix representation*). Abstrakti operatoriaus forma ir
 matricos forma yra ekvivalentiškos, tad šiuos terminus dažnai vartosime
 pakaitomis. Verta atsiminti, kad jei norime realizuoti operatorių
-matricos forma, reikia pasirinkti tam tikrą vektorių erdvės *V*, kuriame
-veikia operatorius *A*, bazinių vektorių rinkinį. Mat operatorius gali
+matricos forma, reikia pasirinkti tam tikrą vektorių erdvės $V$, kuriame
+veikia operatorius $A$, bazinių vektorių rinkinį. Mat operatorius gali
 būti išreikštas su skirtingais bazinių vektorių rinkiniais. Jeigu nėra
 nurodoma kitaip, operatoriai standartiškai išreiškiami skaičiuojamųjų
 vektorių bazėje
@@ -883,6 +935,7 @@ a_{21} + b_{21} & a_{22} + b_{22} & a_{23} + b_{23} \\
 a_{31} + b_{31} & a_{32} + b_{32} & a_{33} + b_{33} \\
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:operatoriai-matricu-sudetis)
 \end{equation}
 Matricų elementus, kurie yra bendrai kompleksiniai skaičiai, čia
 vadiname $a_{ij}$ ir $b_{ij}$. Pirmasis simbolis $i$ padeda įvardyti
@@ -903,6 +956,7 @@ za_{11} & za_{12} & za_{13} \\
 za_{21} & za_{22} & za_{23} \\
 za_{31} & za_{32} & za_{33} \\
 \end{bmatrix}\,.
+(\#eq:skaiciaus-matricos-sandauga)
 \end{equation}
 Dviejų matricų sandauga tarpusavyje galima, jeigu pirmosios matricos
 stulpelių skaičius yra lygus antrosios matricos eilučių skaičiui.
@@ -924,6 +978,7 @@ c_{11} & c_{12} & c_{13} \\
 c_{21} & c_{22} & c_{23} \\
 c_{31} & c_{32} & c_{33} \\
 \end{bmatrix}\,.
+(\#eq:matricu-sandauga-1)
 \end{equation}
 Kiekvienas elementas $c_{ij}$ yra atitinkamos $A$ eilutės ir $B$
 stulpelio elementų sandaugų suma:
@@ -933,10 +988,11 @@ a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{11}b_{12} + a_{12}b_{22} + a_{13
 a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31} & a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32} & a_{21}b_{13} + a_{22}b_{23} + a_{23}b_{33} \\
 a_{31}b_{11} + a_{12}b_{21} + a_{13}b_{31} & a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32} & a_{31}b_{13} + a_{32}b_{23} + a_{33}b_{33} \\
 \end{bmatrix}\,.
+(\#eq:matricu-sandauga-2)
 \end{equation}
 Matricų daugyba yra asociatyvi, pavyzdžiui, trijų operatorių sandaugoje
-$ABC = A(BC) = (AB)C$. Galime pasirinkdami sudauginti pirmiausiai *BC*
-arba *AB* tarpusavyje. Šiame skyriuje minėtos vektorių operacijos:
+$ABC = A(BC) = (AB)C$. Galime pasirinkdami sudauginti pirmiausiai $BC$
+arba $AB$ tarpusavyje. Šiame skyriuje minėtos vektorių operacijos:
 vektoriaus transpozicija, kompleksinė bei ermitinė jungtys yra taip pat
 naudojamos matricoms. Matricos transpozicija $A^T$ sukeičia eilučių ir
 stulpelių elementus vietomis taip:
@@ -950,12 +1006,13 @@ a_{11} & a_{21} & a_{31} \\
 a_{12} & a_{22} & a_{32} \\
 a_{13} & a_{23} & a_{33} \\
 \end{bmatrix}\,.
+(\#eq:matricos-transpozicija)
 \end{equation}
 Matricų sandaugoje transpozicija sukeičia operatorių eiliškumą,
-$(AB)^{T} = B^{T}A^{T}$. Matricos kompleksinė jungtis $A^{*}$
+$(AB)^T = B^T A^T$. Matricos kompleksinė jungtis $A^{*}$
 kiekvienam jo elementui atlieka kompleksinę jungtį $a_{ij}^{*}$.
 Ermitinė matricos jungtis taip pat yra kartu atliekama transpozicija ir
-elementų kompleksinė jungtis $A^{\dagger} = \big(A^{T}\big)^{*}$:
+elementų kompleksinė jungtis $A^{\dagger} = \big(A^T\big)^{*}$:
 \begin{equation}
 A^{\dagger} = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
@@ -966,6 +1023,7 @@ a_{11}^{*} & a_{21}^{*} & a_{31}^{*} \\
 a_{12}^{*} & a_{22}^{*} & a_{32}^{*} \\
 a_{13}^{*} & a_{23}^{*} & a_{33}^{*} \\
 \end{bmatrix}\,.
+(\#eq:matricos-ermitine-jungtis)
 \end{equation}
 Matricų sandaugoje tai sukeičia eiliškumą
 $(AB)^{\dagger} = B^{\dagger}A^{\dagger}$. Taip pat galima parodyti,
@@ -991,14 +1049,15 @@ i & 0 \\
 1 & 0 \\
 0 & - 1 \\
 \end{bmatrix}\,.
+(\#eq:daznai-naudojami-operatoriai)
 \end{equation}
 Šios matricos vadinamos fiziko **Pauli vardu** (angl. *Wolfgang Pauli*)
 ir sudaro vadinamąjį Pauli bazinių matricų rinkinį $\{ I, X, Y, Z\}$.
 Trys Pauli matricos $X$, $Y$, $Z$ yra tarpusavyje nekomutatyvios, bet
 kurių dviejų Pauli matricų sandauga gražina trečiąją:
 \begin{align}
-XY = & \mathrm{i}Z\,,\quad XZ = -\mathrm{i}Y\,,\quad YZ = \mathrm{i}X\,; \\
-YX = & -\mathrm{i}Z\,,\quad ZX = \mathrm{i}Y\,,\quad ZZ = - \mathrm{i}X\,.
+XY = & \mathrm{i}Z\,,\quad XZ = -\mathrm{i}Y\,,\quad YZ = \mathrm{i}X\,; (\#eq:pauli-x-y-z)\\
+YX = & -\mathrm{i}Z\,,\quad ZX = \mathrm{i}Y\,,\quad ZZ = - \mathrm{i}X\,. (\#eq:pauli-y-x-z)
 \end{align}
 Tai galime lengvai patikrinti, pavyzdžiui $XY$ ir $YX$:
 \begin{align}
@@ -1014,7 +1073,7 @@ XY = & \begin{bmatrix}
 \end{bmatrix} = i\begin{bmatrix}
 1 & 0 \\
 0 & - 1 \\
-\end{bmatrix} = \mathrm{i}Z\,; \\
+\end{bmatrix} = \mathrm{i}Z\,; (\#eq:pauli-x-y)\\
 YX = & \begin{bmatrix}
 0 & -\mathrm{i} \\
 \mathrm{i} & 0 \\
@@ -1027,7 +1086,7 @@ YX = & \begin{bmatrix}
 \end{bmatrix} = \mathrm{i}\begin{bmatrix}
 -1 & 0 \\
 0 & 1 \\
-\end{bmatrix} = -\mathrm{i}Z\,.
+\end{bmatrix} = -\mathrm{i}Z\,. (\#eq:pauli-y-x)
 \end{align}
 Akivaizdu, kad $X$, $Y$, $Z$ Pauli operatoriai yra tarpusavyje
 antikomutatyvūs.
@@ -1036,10 +1095,10 @@ Grįžkime prie vektorių veikimo operatoriumi, norėdami parodyti, kokios
 operacijos yra matematiškai apibrėžtos. Tą galime pavaizduoti matricų
 reprezentacija, nes vektorius gali būti taip pat formaliai vadinamas
 matrica. Pavyzdžiui, vieno kubito *ket* vektorius
-$|v\rangle$ yra išreiškiamas ($2\times 1$) dydžio matrica
+$|v\rangle$ yra išreiškiamas $(2\times 1)$ dydžio matrica
 (vektorius stulpelis), tiesinėje algebroje turinčia dvi eilutes ir vieną
 stulpelį. O štai *bra* vektorius $\langle v|$ yra
-išreiškiamas ($1\times 2$) matrica (vektorius eilutė), turinčia vieną eilutę
+išreiškiamas $(1\times 2)$ matrica (vektorius eilutė), turinčia vieną eilutę
 ir du stulpelius.
 
 Prisimenant matricų daugybą, leidžiama dauginti dvi $(n\times n)$, $(n\times 1)$
@@ -1069,11 +1128,12 @@ X|0\rangle = & \begin{bmatrix}
 \end{bmatrix} = \begin{bmatrix}
 0 \\
 1 \\
-\end{bmatrix} = |1\rangle\,;\\
+\end{bmatrix} = |1\rangle\,;(\#eq:x-0-pvz)\\
 \langle 0| X = & \lbrack 1, 0 \rbrack\begin{bmatrix}
 0 & 1 \\
 1 & 0 \\
 \end{bmatrix} = \lbrack 1 \cdot 0 + 0 \cdot 1,  1 \cdot 1 + 0 \cdot 0  \rbrack = \lbrack 0, 1 \rbrack = \langle 1|\,.
+(\#eq:0-x-pvz)
 \end{align}
 Pamename, kad
 $|v\rangle^{\dagger} = \langle v|$ bei
@@ -1088,6 +1148,7 @@ pačiam, tad $X = X^{\dagger}$.
 Taip pat atkreipiame dėmesį į tokio tipo operaciją:
 \begin{equation}
 \langle u | A | v \rangle = a_{uv}\,.
+(\#eq:op-matricinis-elementas)
 \end{equation}
 Dėl daugybos asociatyvumo šią operaciją galime atlikti dviem būdais:
 $\langle u|A|v\rangle = \langle u|\big(A|v\rangle\big) = \big(\langle u|A\big)|v\rangle$.
@@ -1107,9 +1168,10 @@ $|v\rangle$.
 naudojama ir aptinkama operatorių klasė kvantinėje kompiuterijoje. Šie
 operatoriai matematiškai apibūdina kvantinių loginių vartų efektą -- jie
 transformuoja vektoriais nusakomas kubitų būsenas į kitas būsenas.
-Unitarinis operatorius *U* pasižymi savybe šia savybe:
+Unitarinis operatorius $U$ pasižymi savybe šia savybe:
 \begin{equation}
 U^{\dagger}U = UU^{\dagger} = I\,.
+(\#eq:unitarinio-apibrezimas)
 \end{equation}
 Tai parodo, kad unitarinio operatoriaus sandauga su jo ermitine jungtimi
 $U^{\dagger}$ yra lygi vienetiniam operatoriui. Vadinasi, $U^{\dagger}$ yra
@@ -1125,6 +1187,7 @@ $|v\rangle$ ir $|u\rangle$. Minėtas $U$
 savybes galime paprastai parodyti:
 \begin{equation}
 \langle u|U^{\dagger}U|v\rangle = \langle u|I|v\rangle = \langle u|v\rangle\,.
+(\#eq:unitarinio-savybes)
 \end{equation}
 Jeigu $|v\rangle$ yra
 normuotasis vektorius, $U$ išlaiko normuotumą
@@ -1140,10 +1203,11 @@ vektorių** (angl. *eigenvector*) ir **tikrinių verčių**
 (angl. *eigenvalue*) konceptai leidžia geriau suprasti ermitinių ir
 unitarinių operatorių savybes bei jų vartojimą. Vektorius
 $|\lambda\rangle$ yra vadinamas tiesinio operatoriaus
-$K$ tikriniu vektoriumi, o $\lambda$ yra su šiuo vektoriumi asocijuota
+$K$ tikriniu vektoriumi, o $\lambda$ yra su šiuo vektoriumi susieta
 tikrinė vertė (skaičius), jeigu tenkinama lygybė:
 \begin{equation}
 K|\lambda\rangle = \lambda |\lambda\rangle\,.
+(\#eq:tikrines-vertes-apibrezimas)
 \end{equation}
 Atkreipiame dėmesį, kad bendroje situacijoje operatorius, veikdamas
 vektorių, pakeičia jį į kitą vektorių. Tačiau jeigu
@@ -1170,6 +1234,7 @@ $\big(K|\lambda\rangle\big)^{\dagger} = \langle\lambda|K^{\dagger} = \langle\lam
 Tad:
 \begin{equation}
 \langle\lambda |K|\lambda\rangle = \lambda^{*}\langle\lambda |\lambda\rangle = \lambda\langle\lambda |\lambda\rangle\,.
+(\#eq:ermitinio-tikrines-vetes-realumas)
 \end{equation}
 Matome, kad $\lambda^{*} = \lambda$, ir todėl $\lambda$ gali būti tik
 realusis skaičius. Su skirtingomis tikrinėmis vertėmis $\lambda_i$
@@ -1178,11 +1243,12 @@ ortogonalieji,
 $\langle\lambda_i |\lambda_j \rangle = 0$ (jeigu
 $i \neq j$). Imdami operatoriaus $K$ du tikrinius vektorius
 $|\lambda_1 \rangle$ ir
-$|\lambda_2 \rangle$ bei su jais asocijuotas vertes
+$|\lambda_2 \rangle$ bei su jais susietas vertes
 $\lambda_1$ ir $\lambda_2$, galime paprastai parodyti ortogonalumą:
 \begin{equation}
 \langle\lambda_2 |K|\lambda_1 \rangle = \lambda_1 \langle\lambda_2 |\lambda_1 \rangle =
 \lambda_2 \langle\lambda_2 |\lambda_1 \rangle \rightarrow (\lambda_1 - \lambda_2 )\langle\lambda_2 |\lambda_1\rangle = 0\,.
+(\#eq:tikriniu-vektoriu-ortogonalumas)
 \end{equation}
 Matome, kad jeigu $\lambda_2 \neq \lambda_1$, tada
 $\langle\lambda_2 |\lambda_1 \rangle = 0$.
@@ -1230,11 +1296,12 @@ stebimas savybes. Vieno kubito baziniai vektoriai
 $|0\rangle$ ir $|1\rangle$ buvo
 pasirinkti neatsitiktinai, jie yra Pauli-$Z$ operatoriaus tikriniai
 vektoriai. Pauli-$Z$ operatoriaus tikrines vertes $\lambda_0$ ir
-$\lambda_1$, asocijuotas su $|0\rangle$ ir
+$\lambda_1$, susietas su $|0\rangle$ ir
 $|1\rangle$, galime patikrinti taip:
 \begin{equation}
 \lambda_0 = \langle 0|Z|0 \rangle = 1\langle 0|0\rangle = 1\,,\quad
 \lambda_1 = \langle 1|Z|1 \rangle = -1\langle 1|1\rangle = -1\,.
+(\#eq:pauli-z-tikrines)
 \end{equation}
 Akivaizdu, kad Pauli-$Z$ tikriniai vektoriai $|0\rangle$
 ir $|1\rangle$ nėra $X$ ir $Y$ operatorių tikriniai
@@ -1253,7 +1320,7 @@ vektoriai yra jau minėti:
 |1_x \rangle = \frac{1}{\sqrt{2}}\begin{bmatrix}
 1 \\
 -1 \\
-\end{bmatrix}\,; \\
+\end{bmatrix}\,; (\#eq:pauli-x-tikriniai-2)\\
 |0_y \rangle = & \frac{1}{\sqrt{2}}\begin{bmatrix}
 1 \\
 \mathrm{i} \\
@@ -1261,7 +1328,7 @@ vektoriai yra jau minėti:
 |1_y \rangle = \frac{1}{\sqrt{2}}\begin{bmatrix}
 1 \\
 -\mathrm{i} \\
-\end{bmatrix}\,.
+\end{bmatrix}\,. (\#eq:pauli-y-tikriniai-2)
 \end{align}
 Pauli-$X$ ir $Y$ operatorių tikrinės vertės yra taip pat 1 ir -1,
 pavyzdžiui,
@@ -1280,11 +1347,13 @@ matricos $U$ gali būti išreikštos Pauli matricų $\{I, X, Y, Z\}$ suma su
 atitinkamais koeficientais:
 \begin{equation}
 U = c_I I + c_x X + c_y Y + c_z Z\,.
+(\#eq:2-2-unitarinio-dekompozicija)
 \end{equation}
 Čia $c_I$ yra realusis skaičius, $(c_x$, $c_y$, $c_z$ --
 kompleksiniai skaičiai, kurie kartu tenkina lygybę:
 \begin{equation}
 |c_I|^2 + |c_x|^2 + |c_y|^2 + |c_z|^2 = 1\,.
+(\#eq:dekompozicijos-koeficientu-normuotums)
 \end{equation}
 Unitariniai ir ermitiniai operatoriai priklauso platesnei operatorių
 grupei, vadinamai **normaliaisiais operatoriais** (angl. *normal
@@ -1322,6 +1391,7 @@ c & d \\
 0 & 0 \\
 0 & 1 \\
 \end{bmatrix}\,.
+(\#eq:matrica-kaip-suma)
 \end{equation}
 Kiekviena iš keturių $(2\times 2)$ matricų yra vektoriaus stulpelio ir
 vektoriaus eilutės, vadinamosios išorinės sandaugos, rezultatas,
@@ -1338,6 +1408,7 @@ yra antra matrica:
 0 & 1 \\
 0 & 0 \\
 \end{bmatrix} = |1\rangle\langle 0|\,.
+(\#eq:isorine-sandauga-pvz)
 \end{equation}
 Tai priešinga vidinei vektorių sandaugai, kuri gaunama sudauginus eilutę
 ir stulpelį, o jos rezultatas yra skaičius. Prisiminę, kad vektorius
@@ -1353,6 +1424,7 @@ a & b \\
 c & d \\
 \end{bmatrix} = a|0\rangle\langle 0| + b|1\rangle\langle 0| + c|0\rangle\langle 1|
 + d|1\rangle\langle 1|\,.
+(\#eq:2-2-diadine-dekompozicija)
 \end{equation}
 Apžvelkime diadų bendruosius principus ir jų taikymą. Imkime du
 vektorius $|\nu\rangle$ ir
@@ -1369,6 +1441,7 @@ a|\nu\rangle\langle\omega|\psi\rangle + b|\nu\rangle\langle\omega|\phi\rangle =
 az|\nu\rangle + bc|\nu\rangle \\
 = & (az + bc)|\nu\rangle\,.
 \end{aligned}
+(\#eq:diados-tiesiskumas)
 \end{equation}
 Diada veikiant vektorių yra gaunamas kitas vektorius, analogiškai kaip
 veikiant vektorių operatoriumi. Matome, kad diada
@@ -1398,15 +1471,17 @@ $D = |\nu\rangle\langle\omega|$ ermitinė
 jungtis yra:
 \begin{equation}
 D^{\dagger} = |\omega\rangle\langle\nu|\,.
+(\#eq:diados-ermitine-jungtis)
 \end{equation}
 Vienetinis $V$ vektorių erdvės operatorius $I$ yra išreiškiamas diadomis
 naudojant šios erdvės bazinių vektorių $\big\{|m\rangle\big\}$
 rinkinį ir visus juos susumuojant:
 \begin{equation}
 I = \sum_m |m\rangle\langle m|\,.
+(\#eq:vienetinio-isskaidymas-diadomis)
 \end{equation}
 Atkreipiame dėmesį, kad vienodi *bra* ir *ket* simboliai diadoje
-indikuoja matricos pagrindinės įstrižainės elementus $a_{mm}$. Visi
+nurodo matricos pagrindinės įstrižainės elementus $a_{mm}$. Visi
 tiesiniai operatoriai turi diadinę dekompoziciją. Šią dekompoziciją
 galime formaliai išreikšti įterpę $A$ operatorių tarp vienetinių
 operatorių ir panaudodami vienetinio operatoriaus diadines
@@ -1417,6 +1492,7 @@ A = & IAI = \sum_{m,n} |m\rangle\langle m|A|n\rangle\langle n| =
 \sum_{m,n} \langle m|A|n\rangle |m\rangle\langle n| \\
 = & \sum_{m,n} a_{mn}|m\rangle\langle n|\,.
 \end{aligned}
+(\#eq:tiesinio-operatoriaus-diadine-dekompozicija)
 \end{equation}
 Čia $a_{mn} = \langle m|A|n\rangle$ yra
 jau matyta operacija. Ji įvardija matricos elementą $a_{mn}$, $m$
@@ -1428,32 +1504,34 @@ $\big\{|0\rangle , |1\rangle\big\}$ bazėje:
 X = & \begin{bmatrix}
 0 & 1 \\
 1 & 0 \\
-\end{bmatrix} = |0\rangle\langle 1| + |1\rangle\langle 0|\,; \\
+\end{bmatrix} = |0\rangle\langle 1| + |1\rangle\langle 0|\,; (\#eq:x-diadomis) \\
 Y = & \begin{bmatrix}
 0 & -\mathrm{i} \\
 \mathrm{i} & 0 \\
-\end{bmatrix} = - \mathrm{i}|0\rangle\langle 1| + \mathrm{i}|1\rangle\langle 0|\,; \\
+\end{bmatrix} = - \mathrm{i}|0\rangle\langle 1| + \mathrm{i}|1\rangle\langle 0|\,; (\#eq:y-diadomis)\\
 Z = & \begin{bmatrix}
 1 & 0 \\
 0 & - 1 \\
-\end{bmatrix} = |0\rangle\langle 0| - |1\rangle\langle 1|\,; \\
+\end{bmatrix} = |0\rangle\langle 0| - |1\rangle\langle 1|\,; (\#eq:z-diadomis)\\
 I = & \begin{bmatrix}
 1 & 0 \\
 0 & 1 \\
-\end{bmatrix} = |0 \rangle\langle 0| + |1\rangle\langle 1|\,; \\
+\end{bmatrix} = |0 \rangle\langle 0| + |1\rangle\langle 1|\,; (\#eq:vienetinis-diadomis)\\
 H = & \frac{1}{\sqrt{2}}\begin{bmatrix}
 1 & 1 \\
 1 & - 1 \\
 \end{bmatrix} = \frac{1}{\sqrt{2}}\big(|0\rangle\langle 0| + |1\rangle\langle 0|
-+ |0\rangle\langle 1| - |1\rangle\langle 1|\big) \,.
++ |0\rangle\langle 1| - |1\rangle\langle 1|\big) \,. (\#eq:h-diadomis)
 \end{align}
 Pavyzdžiui, Hadamardo matricos elementai $h_{01} = 1$, $h_{11} = -1$.
 Iliustruodami diadų naudojimą, pateikiame $X|1\rangle$
 bei $YX|0\rangle$:
 \begin{align}
-X|1\rangle = & |1\rangle\langle 0|1\rangle + |0\rangle\langle 1|1\rangle = |0\rangle\,; \\
-YX|0\rangle = & \big( -\mathrm{i}|0\rangle\langle 1| + \mathrm{i}|1\rangle\langle 0|\big)\big(|0\rangle\langle 1| + |1\rangle\langle 0|\big)|0\rangle\nonumber \\
+X|1\rangle = & |1\rangle\langle 0|1\rangle + |0\rangle\langle 1|1\rangle = |0\rangle\,; (\#eq:x-1-diadomis) \\
+YX|0\rangle = & \big( -\mathrm{i}|0\rangle\langle 1| + \mathrm{i}|1\rangle\langle 0|\big)\big(|0\rangle\langle 1|
++ |1\rangle\langle 0|\big)|0\rangle\nonumber \\
 = & -\mathrm{i}|0\rangle\langle 0|0\rangle + \mathrm{i}|1\rangle\langle 1|0\rangle = - \mathrm{i}|0\rangle\,.
+(\#eq:xy-0-diadomis)
 \end{align}
 Taikant bazinių vektorių ortogonalumą, vidinės sandaugos
 $\langle 0|0\rangle = 1$,
@@ -1466,17 +1544,19 @@ ir ermitiniai operatoriai, galima visada išreikšti vadinamąja
 **spektrine dekompozicija** (angl. *spectral operator decomposition*):
 \begin{equation}
 A = \sum_k \lambda_k |k\rangle\langle k| = \sum_k \lambda_k P_k\,.
+(\#eq:spektrine-dekompozicija)
 \end{equation}
 Skaičius $\lambda_k$ yra operatoriaus $A$ tikrinė vertė, asocijuota su
 tikriniu vektoriumi $|k\rangle$. Tikrinių verčių
 rinkinys $\{\lambda_k\}$ yra operatoriaus $A$ spektras. Čia
 $P_k = |k\rangle\langle k|$ nusako
 svarbią, vadinamąją **projekcinių operatorių** (angl. *projection
-operator*) klasę. Jie atlieka projekciją į poerdvį, asocijuotą su
-tikrine verte $\lambda_k$, kurį dengia su ja asocijuoti tikriniai
+operator*) klasę. Jie atlieka projekciją į poerdvį, susietą su
+tikrine verte $\lambda_k$, kurį dengia su ja susieti tikriniai
 vektoriai $|k\rangle$. Tai matome iš išraiškos:
 \begin{equation}
 P_k |v\rangle = |k\rangle\langle k|v\rangle = \langle k|v\rangle |k\rangle = a|k\rangle\,.
+(\#eq:projekcinis-v)
 \end{equation}
 Čia $a = \langle k|v\rangle$ nusako
 persiklojimą $|v\rangle$ vektoriaus išilgai
@@ -1486,8 +1566,8 @@ tada šis poerdvis yra 1 dimensijos, dengiamas
 $|k\rangle$ vektoriaus. Kitos projekcinių operatorių
 savybės yra:
 \begin{align}
-\sum_k P_k = & I\,; \\
-P_i P_j = & P_i \delta_{ij}\,.
+\sum_k P_k = & I\,; (\#eq:projekciniu-pilnumas)\\
+P_i P_j = & P_i \delta_{ij}\,. (\#eq:projekciniu-ortogonalumas)
 \end{align}
 Pirmoji savybė, vadinamoji **pilnumo lygtis** (angl. *completenes
 equation*) teigia, kad susumavę visus vektorių erdvės projekcinius
@@ -1501,6 +1581,7 @@ Verta paminėti, kad unitariniai operatoriai $U$ turi spektrinę
 dekompoziciją, kurios forma yra:
 \begin{equation}
 U = \sum_k \mathrm{e}^{\mathrm{i}\varphi_k}|k\rangle\langle k|\,.
+(\#eq:unitariniu-spektrine-dekompozicija)
 \end{equation}
 Čia $\varphi_k$ yra realusis skaičius ir, kaip minėta, tikrinės vertės
 yra fazės faktoriai $\lambda_k = \mathrm{e}^{\mathrm{i}\varphi_k}$.
@@ -1513,8 +1594,8 @@ $\big\{|0\rangle , |1\rangle\big\}$. Identiškai
 atrodytų ir Pauli-$X$ bei $Y$ operatoriai, jeigu operatorių diadinėje
 dekompozicijoje išreikštume juos su jų tikriniais vektoriais:
 \begin{align}
-X = & |0_x\rangle\langle 0_x| - |1_x\rangle\langle 1_x|\,; \\
-Y = & |0_y\rangle\langle 0_y| - |1_y\rangle\langle 1_y|\,.
+X = & |0_x\rangle\langle 0_x| - |1_x\rangle\langle 1_x|\,; (\#eq:pauli-x-diadom-3)\\
+Y = & |0_y\rangle\langle 0_y| - |1_y\rangle\langle 1_y|\,. (\#eq:pauli-y-diadom-3)
 \end{align}
 
 ## Matricos pėdsakas
@@ -1524,6 +1605,7 @@ matricos pagrindinės įstrižainės elementus
 $a_{mm} = \langle m|A|m\rangle$:
 \begin{equation}
 \mathrm{Tr}(A) = \sum_m \langle m|A|m\rangle = \sum_m a_{mm}\,.
+(\#eq:pedsako-apibrezimas)
 \end{equation}
 Operatoriaus pėdsakas yra apibrėžtas kaip šio operatoriaus matricos
 reprezentacijos pėdsakas. Matricos pėdsakas nepriklauso nuo to, su
@@ -1537,6 +1619,7 @@ viršuje gauname:
 \mathrm{Tr}(A) = & \sum_m \langle m|A|m\rangle = \sum_{m,i} \langle m|i\rangle\langle i|A|m\rangle \\
 = & \sum_{m,i} \langle i|A|m\rangle\langle m|i\rangle = \sum_i \langle i|A|i\rangle\,.
 \end{aligned}
+(\#eq:pedsakas-skirtingose-bazese)
 \end{equation}
 Visi trys Pauli operatoriai $X$, $Y$, $Z$ turi nulinį pėdsaką.
 Pavyzdžiui:
@@ -1544,17 +1627,17 @@ Pavyzdžiui:
 \mathrm{Tr}(Y) = & \mathrm{Tr}\left( \begin{bmatrix}
 0 & -\mathrm{i} \\
 \mathrm{i} & 0 \\
-\end{bmatrix} \right) = 0 + 0 = 0\,; \\
+\end{bmatrix} \right) = 0 + 0 = 0\,; (\#eq:y-pedsakas-0)\\
 \mathrm{Tr}(Z) = & \mathrm{Tr}\left( \begin{bmatrix}
 1 & 0 \\
 0 & - 1 \\
-\end{bmatrix} \right) = 1 + ( -1) = 0\,.
+\end{bmatrix} \right) = 1 + ( -1) = 0\,.(\#eq:z-pedsakas-0)
 \end{align}
 Matricos pėdsakas turi šias savybes:
 \begin{align}
-\mathrm{Tr}(A + B) = & \mathrm{Tr}(A) + \mathrm{Tr}(B)\,;\\
-\mathrm{Tr}(zA) = & z\mathrm{Tr}(A)\,;\\
-\mathrm{Tr}(AB) = & \mathrm{Tr}(BA)\,.
+\mathrm{Tr}(A + B) = & \mathrm{Tr}(A) + \mathrm{Tr}(B)\,;(\#eq:pedsako-savybe-1)\\
+\mathrm{Tr}(zA) = & z\mathrm{Tr}(A)\,;(\#eq:pedsako-savybe-2)\\
+\mathrm{Tr}(AB) = & \mathrm{Tr}(BA)\,.(\#eq:pedsako-savybe-3)
 \end{align}
 Pirmoje eilutėje užrašyta savybė yra vadinamasis tiesiškumas; antroje
 eilutėje $z$ -- skaičius. Trečia savybė nusako matricos pėdsako
@@ -1588,6 +1671,7 @@ b \\
 c \\
 d \\
 \end{bmatrix}\,.
+(\#eq:du-kubitai)
 \end{equation}
 Tada jų tenzorinė sandauga
 $|v\rangle\otimes|u\rangle$ yra:
@@ -1613,6 +1697,7 @@ ad \\
 bc \\
 bd \\
 \end{bmatrix}\,.
+(\#eq:dvieju-kubitu-tenzorine-sandauga)
 \end{equation}
 Gautas vektorius stulpelis yra sudarytas iš keturių elementų. Naudodami
 $V$ ir $U$ vektorių erdvių bazinius vektorius galime iš jų suformuoti
@@ -1650,6 +1735,7 @@ $|1\rangle\otimes|1\rangle$:
 1 \\
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:baziniu-vektoriu-tenzorines-sandaugos)
 \end{equation}
 Skaičiuojamasis $n$ kubitų bazinių vektorių rinkinys analogiškai bus
 sudarytas iš visų skirtingų $2^n$ tenzorinių 1 kubito bazinių vektorių
@@ -1674,15 +1760,18 @@ tenzorinėmis sandaugomis. Sandauga su skaičiumi:
 \begin{equation}
 z\big(|\psi\rangle\otimes|\phi\rangle\big) = \big(z|\psi\rangle\big)\otimes|\phi\rangle
 = |\psi\rangle\otimes\big(z|\phi\rangle\big)\,.
+(\#eq:tenzorine-sandauga-su-skaiciumi)
 \end{equation}
 Tenzorinė dviejų vektorių sandauga, kai vienas vektorius yra išreikštas
 kitų dviejų sudėtimi (superpozicijoje):
 \begin{equation}
 \big(|\psi\rangle + |u\rangle\big)\otimes |\phi\rangle = |\psi\rangle\otimes|\phi\rangle + |u\rangle\otimes|\phi\rangle\,.
+(\#eq:tenzorine-sandauga-superpozicija)
 \end{equation}
 Dualusis tenzorinis vektorius (*bra*) yra formuojamas taip:
 \begin{equation}
 \big(|\psi\rangle\otimes|\phi\rangle\big)^{\dagger} = \langle\psi|\otimes \langle\phi|\,.
+(\#eq:tenzorine-sandauga-dualus)
 \end{equation}
 Naudojame susitarimą, kuriame išlaikomas simbolių
 $(\phi, \psi, u\ldots)$ eiliškumas ir tik pakeičiama skliaustelių forma
@@ -1698,6 +1787,7 @@ sandauga atliekama tarp vektorių, priklausančių tai pačiai posistemei:
 \begin{equation}
 \big(\langle u|\otimes\langle\omega|\big)\big(|\psi\rangle\otimes|\phi\rangle\big) =
 \langle u|\psi\rangle\langle\omega |\phi\rangle\,.
+(\#eq:tenzorine-vidine)
 \end{equation}
 Rezultatas bus vėlgi bendrai kompleksinis skaičius, kuris yra dviejų
 skaičių sandauga
@@ -1738,6 +1828,7 @@ de & df \\
 dg & dh \\
 \end{matrix} \\
 \end{bmatrix}\,.
+(\#eq:tenzorine-operatoriu-sandauga)
 \end{equation}
 Atkreipiame dėmesį į blokinę struktūrą bei $(4\times 4)$ matricos dydį. Tokio
 matricos dydžio ir tikimės iš operatoriaus, veikiančio 4 dimensijų
@@ -1747,19 +1838,22 @@ unitarusis. Tai galima parodyti formaliai prisimenant, kad unitariojo
 operatoriaus ir jo ermitinės jungties sandauga yra vienetinis
 operatorius:
 \begin{equation}
-$(A\otimes B)(A\otimes B)^{\dagger} = (A\otimes B)(A^{\dagger}\otimes B^{\dagger}) = AA^{\dagger}\otimes BB^{\dagger} = I\otimes I = I\,.
+(A\otimes B)(A\otimes B)^{\dagger} = (A\otimes B)(A^{\dagger}\otimes B^{\dagger})
+= AA^{\dagger}\otimes BB^{\dagger} = I\otimes I = I\,.
+(\#eq:unitariu-operatoriu-tenzorine-sandauga)
 \end{equation}
 Kitos operatorių, išreikštų tenzorinėmis sandaugomis, savybės:
 \begin{align}
-A\otimes(B + C) = & A\otimes B + A\otimes C\,;\\
-(A\otimes B)(C\otimes D) = & (AC\otimes BD)\,;\\
-\mathrm{Tr}(A\otimes B) = \mathrm{Tr}(A)\mathrm{Tr}(B)\,.
+A\otimes(B + C) = & A\otimes B + A\otimes C\,;(\#eq:tenzorines-sandaugos-savybe-1)\\
+(A\otimes B)(C\otimes D) = & (AC\otimes BD)\,;(\#eq:tenzorines-sandaugos-savybe-2)\\
+\mathrm{Tr}(A\otimes B) = \mathrm{Tr}(A)\mathrm{Tr}(B)\,.(\#eq:tenzorines-sandaugos-savybe-3)
 \end{align}
 Iliustruodami tenzorinės operatorių sandaugos naudojimą, imkime dviejų
 kubitų sistemą, kuriai atliekama pirmam kubitui Pauli-$X$, o antram
 Pauli-$Z$ transformacijos:
 \begin{equation}
 X\otimes Z\big(|v\rangle\otimes|u\rangle\big) = X|v\rangle\otimes Z|u\rangle\,.
+(\#eq:tenzorines-sandaugos-pvz-1)
 \end{equation}
 Tai yra tiesinis operatorius, o $X$ ir $Z$ veikia atitinkamo kubito
 vektorių erdvėje. Šią operaciją galime perteikti ir naudodami tiesinę
@@ -1792,6 +1886,7 @@ X\otimes Z\big(|0\rangle\otimes|1\rangle\big) = & \begin{bmatrix}
 -1 \\
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:tenzorines-sandaugos-pvz-matricos)
 \end{equation}
 Arba, pirmiau išskleidę tenzorines sandaugas, randame tą patį:
 \begin{equation}
@@ -1822,6 +1917,7 @@ X\otimes Z\big(|0\rangle\otimes|1\rangle\big) = & \begin{bmatrix}
 -1 \\
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:tenzorines-sandaugos-pvz-3)
 \end{equation}
 Galime parodyti, kad operatorių $A\otimes B$, veikiančių
 $V\otimes U$ erdvėje, tikrinės vertės yra individualių operatorių $A$
@@ -1835,6 +1931,7 @@ $|k\rangle$ bei $|l\rangle$. Tada:
 (A\otimes B)\big(|k\rangle\otimes |l\rangle\big) =
 A|k\rangle\otimes B|l\rangle = \lambda_k |k\rangle\otimes\lambda_l |l\rangle
 = \lambda_k\lambda_l \big(|k\rangle\otimes |l\rangle\big)\,.
+(\#eq:tenzorines-sandaugos-tikrines-vertes)
 \end{equation}
 Matome, kad $A\otimes B$ operatoriaus tikriniai vektoriai yra
 $\big\{|k\rangle\otimes |l\rangle\big\}$
@@ -1846,11 +1943,13 @@ rinkinys pateikia juos visus. Šie vektoriai yra tarpusavyje ortogonalūs:
 \begin{equation}
 \big(\langle k'|\otimes\langle l'|\big)\big(|k\rangle\otimes|l \rangle\big)
 = \langle k'|k\rangle\langle l'|l\rangle = \delta_{k'k}\delta_{l'l}\,.
+(\#eq:tenzorines-sandaugos-tikriniu-verciu-ortogonalumas)
 \end{equation}
 Ir todėl gali būti naudojami kaip bazinių vektorių rinkinys. Toliau
 imkime normalųjį operatorių $A$, išreikštą spektrine dekompozicija:
 \begin{equation}
 A = \sum_k \lambda_k |k\rangle\langle k| = \sum_k \lambda_k P_k\,.
+(\#eq:operatoriaus-spektrine-dekompozicija-2)
 \end{equation}
 Tenzorinė dviejų normaliųjų operatorių sandauga $A\otimes B$ taip pat
 gali būti išreiškiama naudojant šių dviejų operatorių projekcinius
@@ -1861,6 +1960,7 @@ A\otimes B = & \sum_k \lambda_k |k\rangle\langle k|\otimes \sum_l \lambda_l |l\r
 = \sum_{k,l} \lambda_k \lambda_l |k\rangle\langle k|\otimes |l\rangle\langle l| \\
 \equiv & \sum_m \lambda_m |m\rangle\langle m|\,.
 \end{aligned}
+(\#eq:tenzorine-per-projekcinius)
 \end{equation}
 Tai nusako diagonaliąją matricą, o
 $\big\{|kl\rangle \equiv |k\rangle\otimes |l\rangle \equiv |m\rangle\big\}$
@@ -1885,6 +1985,7 @@ Z\otimes Z = & |0\rangle\langle 0|\otimes |0\rangle\langle 0| -
 0 & 0 & 0 & 1
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:pauli-z-tenzorine-sandauga)
 \end{equation}
 Matome, kad yra tik dvi skirtingos operatoriaus $Z\otimes Z$ tikrinės
 vertės, $\lambda_k \lambda_l \in (1, -1)$, ir keturi tikriniai
@@ -1893,7 +1994,7 @@ $|0\rangle\otimes |0\rangle$,
 $|1\rangle\otimes |0\rangle$,
 $|0\rangle\otimes |1\rangle$,
 $|1\rangle\otimes |1\rangle$. Tad su
-šiomis tikrinėmis vertėmis asocijuoti poerdviai yra dvigubai išsigimę.
+šiomis tikrinėmis vertėmis susieti poerdviai yra dvigubai išsigimę.
 
 Kvantinėje kompiuterijoje dažnai aptinkami operatoriai, kurie vienu metu
 keičia tik vieno kubito būseną. Pavyzdžiui, operatorius trečiam kubitui
@@ -1916,11 +2017,13 @@ būsenų transformacijoms, priklauso normaliųjų operatorių klasei. Šiuos
 operatorius galime perteikti spektrine dekompozicija:
 \begin{equation}
 A = \sum_k \lambda_k |k \rangle\langle k| = \sum_k \lambda_k P_k\,.
+(\#eq:spektrine-dekompozicija-4)
 \end{equation}
 Analitinės normaliųjų operatorių funkcijos $f(A)$ tada randamos paprasta
 žinoma formule:
 \begin{equation}
 f(A) = \sum_k f(\lambda_k)P_k\,.
+(\#eq:analitine-operatoriaus-funkcija)
 \end{equation}
 Operatoriaus funkcija $f$ yra įvertinama imant operatoriaus $A$ tikrines
 vertes $\lambda_k$, kaip jos reikšmes, kurios daugina atitinkamus
@@ -1929,6 +2032,7 @@ aptinkama ermitinio operatoriaus $A$ eksponentė,
 $f(\alpha A) = \mathrm{e}^{\mathrm{i}\alpha A}$, kai $\alpha$ -- realusis skaičius:
 \begin{equation}
 \mathrm{e}^{\mathrm{i}\alpha A} = \sum_k \mathrm{e}^{\mathrm{i}\alpha\lambda_k}P_k\,.
+(\#eq:operatoriaus-eksponente)
 \end{equation}
 Šiuo principu galime rasti, pavyzdžiui, Pauli-$Z$ operatoriaus
 ($\lambda_0 = 1$, $\lambda_1 = -1$) eksponentę
@@ -1939,11 +2043,13 @@ $f(\alpha A) = \mathrm{e}^{\mathrm{i}\alpha Z}$:
 \mathrm{e}^{\mathrm{i}\alpha} & 0 \\
 0 & \mathrm{e}^{-\mathrm{i}\alpha} \\
 \end{bmatrix}\,.
+(\#eq:pauli-z-eksponente)
 \end{equation}
 Kitas būdas rasti matricos eksponentę yra taikant **Teiloro eilutę**
 (angl. *Taylor series*):
 \begin{equation}
 \mathrm{e}^{\mathrm{i}\alpha Z} = \sum_{j = 0}^{\infty} \frac{(\mathrm{i}\alpha Z)^j}{j!}\,.
+(\#eq:eksponente-teiloro-eilute)
 \end{equation}
 Atkreipiame dėmesį, kad Pauli operatoriai pasižymi savybe $Z^j = Z$,
 kai $j$ -- nelyginis skaičius, ir $Z^j = I$, kai $j$ -- lyginis
@@ -1955,6 +2061,7 @@ kosinusų bei sinusų Teiloro eilutes randame:
 + \left( \mathrm{i}\alpha Z - \frac{\mathrm{i}\alpha^{3}Z}{3!} + \frac{\mathrm{i}\alpha^{5}Z}{5!} - \cdots \right) \\
 = & \cos(\alpha)I + \mathrm{i}\sin(a)Z\,.
 \end{aligned}
+(\#eq:teiloro-eilutes-susumavimas)
 \end{equation}
 Perteikdami $I$ ir $Z$ matricų forma bei taikydami Oilerio formulę
 prieiname prie tos pačios išraiškos:
@@ -1969,12 +2076,14 @@ prieiname prie tos pačios išraiškos:
 0 & \mathrm{e}^{-\mathrm{i}\alpha} \\
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:eksponente-matrica-2)
 \end{equation}
 Taikydami spektrinę dekompoziciją galime taip pat rasti ir normaliųjų
 operatorių tenzorinės sandaugos funkcijas. Jos turi turi identiškas
 formas, pavyzdžiui, dviejų operatorių $A\otimes B$ funkcija:
 \begin{equation}
 f(A\otimes B) = \sum_{k,l} f(\lambda_k \lambda_l )P_k \otimes P_l\,.
+(\#eq:tenzorines-sandaugos-funkcija)
 \end{equation}
 Funkcijos $f$ argumentai yra $P_k$ ir $P_l$ operatorius atitinkančių tikrinių
 verčių sandaugos $\lambda_k \lambda_l$. Imkime Pauli-$Z$
@@ -1993,4 +2102,5 @@ operatorių eksponentę $f(A\otimes B) = \mathrm{e}^{\mathrm{i}\alpha Z\otimes Z
 0 & 0 & 0 & \mathrm{e}^{\mathrm{i}\alpha} 
 \end{bmatrix}\,.
 \end{aligned}
+(\#eq:pauli-z-sandaugos-eksponente)
 \end{equation}
