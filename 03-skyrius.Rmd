@@ -338,7 +338,7 @@ matavimus $n$ kartų, rastume $\lambda_1$ tikrinę vertę ir $m$ kartų
 $\lambda_{-1}$. Tad šių tikrinių verčių vidurkis
 $\langle\psi |Z|\psi\rangle$ yra:
 \begin{equation}
-$\langle\psi |Z|\psi\rangle = \frac{n\lambda_1 + m\lambda_{-1}}{n + m}
+\langle\psi |Z|\psi\rangle = \frac{n\lambda_1 + m\lambda_{-1}}{n + m}
 = p(1)\lambda_1 + p(-1)\lambda_{-1}\,.
 (\#eq:vidurkio-matavimas)
 \end{equation}
@@ -415,7 +415,7 @@ pritaikius jų tiesinę sumą:
 Kadangi kvantinės būsenos yra nusakomos normuotais vektoriais,
 amplitudžių modulių kvadratų suma susideda į vienetą:
 \begin{equation}
-$|a|^2 + |b|^2 + |c|^2 + |d|^2 = 1\,.
+|a|^2 + |b|^2 + |c|^2 + |d|^2 = 1\,.
 (\#eq:koeficientu-normavimas-4)
 \end{equation}
 Atlikus 2 kubitų matavimus $|\psi\rangle$ būsenoje,
