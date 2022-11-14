@@ -8,21 +8,19 @@ algoritmai. Matysime, kaip loginės registro būsenų operacijos yra
 pavaizduojamos grafiškai ir kaip iš jų sekų formuojamos kvantinės
 grandinės.
 
-![](./media/image4_1.png)
-
-**4.1 pav.** Loginių vartų *U* veiksmas kubito būsenai $|\psi\rangle$
+```{r loginiu-vartu-veikimas-kubita, echo=FALSE, fig.cap="Loginių vartų $U$ veiksmas kubito būsenai $|\\psi\\rangle$.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_1.png")
+```
 
 Pradėkime nuo paprasčiausių loginių
 elementų, atliekančių 1 kubito būsenų transformacijas. Kaip pamename,
 kvantiniai loginiai vartai yra nusakomi unitariniais operatoriais. Tokio
 operatoriaus veiksmas būsenai $|\psi\rangle$ yra
-pavaizduojamas grafiškai (žr. 4.1 pav.).
+pavaizduojamas grafiškai (žr. \@ref(fig:loginiu-vartu-veikimas-kubita) pav.).
 
-![](./media/image4_2.png)
-
-**4.2 pav.** 2 kubitų registro kvantinė grandinė. Matomi individualius
-kubitus veikiantys loginiai vartai ir abu kubitus vienu metu veikiantys $U_3$
-
+```{r dvieju-kubitu-grandine, echo=FALSE, fig.cap="2 kubitų registro kvantinė grandinė. Matomi individualius kubitus veikiantys loginiai vartai ir abu kubitus vienu metu veikiantys $U_3$", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_2.png")
+```
 Kiekvienam kubitui yra priskiriama atskira
 grandis -- horizontali linija. Kvantinė grandis pati nedaro įtakos
 kubito būsenai ir nusako jo laisvą evoliuciją laike. Grandys yra
@@ -32,7 +30,7 @@ $|\psi\rangle$, jai atliekami loginiai vartai $U$ ir
 dešinėje išvedama pakitusi būsena $U|\psi\rangle$. Visi
 1 kubito loginiai vartai turi vieną įvedimą ir vieną išvedimą, o bendras
 kubitų skaičius algoritmo metu nesikeičia. Žinoma, ne visi kubitai
-registre turi būti panaudojami. 4.2 pav. matome dviejų kubitų registro
+registre turi būti panaudojami. \@ref(fig:dvieju-kubitu-grandine) pav. matome dviejų kubitų registro
 kvantinės grandinės pavyzdį.
 
 Standartiškai algoritmo pradžioje kubitai yra inicijuojami į
@@ -65,6 +63,7 @@ $|0\rangle$ ir $|1\rangle$ atskirai, nes
 operatoriai veikia tiesiniu būdu kiekvieną vektorių superpozicijoje:
 \begin{equation}
 U\big(|0\rangle + |1\rangle\big) = U|0\rangle + U|1\rangle\,.
+(\#eq:loginiai-vartai-superpozicija)
 \end{equation}
 Skaičiavimuose galima atlikti bazinių vektorių transformaciją ir naudoti
 kitų bazinių vektorių rinkinį, pavyzdžiui Pauli-$X$ tikrinius vektorius
@@ -75,37 +74,37 @@ vektoriams, bus bendrai kitoks, jeigu tie patys vartai pritaikomi,
 pavyzdžiui, $|0_x\rangle$ ir
 $|1_x\rangle$ ir jais išreikštoms būsenoms.
 
-![](./media/image4_3.png)
-
-**4.3 pav.** Pauli-*X* loginių vartų efektas skaičiuojamiesiems baziniams vektoriams
+```{r pauli-x-vartai, echo=FALSE, fig.cap="Pauli-$X$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_3.png")
+```
 
 Pradėsime nuo Pauli-$X$, $Y$ ir $Z$
 loginių vartų, kurių matematinės išraiškos ir savybės buvo pristatytos
 II skyriuje. Pauli-$X$ loginiai vartai yra klasikinių NE loginių vartų
-atitikmuo, jie sukeičia 0 ir 1 vertes (žr. 4.3 pav.)
+atitikmuo, jie sukeičia 0 ir 1 vertes (žr. \@ref(fig:pauli-x-vartai) pav.)
 
-![](./media/image4_4.png)
-
-**4.4 pav.** Pauli-$Y$ loginių vartų efektas
+```{r pauli-y-vartai, echo=FALSE, fig.cap="Pauli-$Y$ loginių vartų efektas.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_4.png")
+```
 
 Pauli-$Y$ vartai taip pat sukeičia 0 ir 1
 vertes, tačiau dar prideda $\pm \pi/2$ fazę
 ($\mathrm{e}^{\pm\mathrm{i}\pi/2} = \pm\mathrm{i}$), nusakomą menamuoju skaičiumi
-$\mathrm{i}$ (žr. 4.4 pav.)
+$\mathrm{i}$ (žr. \@ref(fig:pauli-y-vartai) pav.)
 
-![](./media/image4_5.png)
+```{r pauli-z-vartai, echo=FALSE, fig.cap="Pauli-$Z$ loginių vartų efektas.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_5.png")
+```
 
-**4.5 pav.** Pauli-$Z$ loginių vartų efektas
-
-Pauli-$Z$ vartai (žr. 4.5 pav.) nekeičia
+Pauli-$Z$ vartai (žr. \@ref(fig:pauli-z-vartai) pav.) nekeičia
 įvedamos $|0\rangle$ būsenos, tačiau prideda $\pi$ fazę
 $|1\rangle$ būsenai ($\mathrm{e}^{\mathrm{i}\pi} = -1$).
 
-![](./media/image4_6.png)
+```{r hadamardo-vartai, echo=FALSE, fig.cap="Hadamardo loginių vartų efektas skaičiuojamiesiems baziniams vektoriams.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_6.png")
+```
 
-**4.6 pav.** Hadamardo loginių vartų efektas skaičiuojamiesiems baziniams vektoriams
-
-Hadamardo vartai (žr. 4.6 pav.) suformuoja
+Hadamardo vartai (žr. \@ref(fig:hadamardo-vartai) pav.) suformuoja
 lygią $|0\rangle$ ir $|1\rangle$ bazinių
 vektorių superpoziciją.
 
@@ -123,35 +122,35 @@ R_{x}(\theta) \equiv & \mathrm{e}^{-\frac{\mathrm{i}\theta X}{2}} =
 \cos\left(\frac{\theta}{2}\right)I - \mathrm{i}\sin\left(\frac{\theta}{2}\right)X = \begin{bmatrix}
 \cos(\theta/2) & -\mathrm{i}\sin(\theta/2) \\
 -\mathrm{i}\sin(\theta/2) & \cos(\theta/2) \\
-\end{bmatrix}\,;\\
+\end{bmatrix}\,;(\#eq:posukis-x)\\
 R_y(\theta) \equiv & \mathrm{e}^{-\frac{\mathrm{i}\theta Y}{2}} =
 \cos\left(\frac{\theta}{2}\right)I - \mathrm{i}\sin\left(\frac{\theta}{2}\right)Y =
 \begin{bmatrix}
 \cos(\theta/2) & -\sin(\theta/2) \\
 \sin(\theta/2) & \cos(\theta/2) \\
-\end{bmatrix}\,;\\
+\end{bmatrix}\,;(\#eq:posukis-y)\\
 R_z(\theta) \equiv & \mathrm{e}^{-\frac{\mathrm{i}\theta Z}{2}} =
 \cos\left(\frac{\theta}{2}\right)I - \mathrm{i}\sin\left(\frac{\theta}{2}\right)Z =
 \begin{bmatrix}
 \mathrm{e}^{-\frac{\mathrm{i}\theta}{2}} & 0 \\
 0 & \mathrm{e}^{\frac{\mathrm{i}\theta}{2}} \\
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:posukis-z)
 \end{align}
 
-![](./media/image4_7.png)
-
-**4.7 pav.** Posūkio apie Blocho sferos $z$ ašį $R_z(\theta)$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams.
+```{r posukis-blocho-z, echo=FALSE, fig.cap="Posūkio apie Blocho sferos $z$ ašį $R_z(\\theta)$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_7.png")
+```
 
 Panagrinėkime šiek tiek plačiau
-$R_z(\theta)$ loginius vartus (žr. 4.7 pav.), kuriuos kvantinėje
+$R_z(\theta)$ loginius vartus (žr. \@ref(fig:posukis-blocho-z) pav.), kuriuos kvantinėje
 grandinėje ir supaprastinta matricos bei diadų forma išreiškiame:
 \begin{align}
 R_z(\theta) \equiv & \begin{bmatrix}
 1 & 0 \\
 0 & \mathrm{e}^{\mathrm{i}\theta} \\
-\end{bmatrix}\,;\\
+\end{bmatrix}\,;(\#eq:r-z-matrica)\\
 R_z(\theta) = & |0\rangle\langle 0| +
-\mathrm{e}^{\mathrm{i}\theta}|1\rangle\langle 1|\,.
+\mathrm{e}^{\mathrm{i}\theta}|1\rangle\langle 1|\,.(\#eq:r-z-diada)
 \end{align}
 Supaprastinome $R_z(\theta)$ išraišką iškeldami bendrą
 $\mathrm{e}^{-\mathrm{i}\theta/2}$ narį, kurį toliau ištrynėme. Šį narį 1 kubito
@@ -177,14 +176,14 @@ standartiškai yra nurodomi raidėmis $T$ ir $S$, atitinkamai:
 T = & \begin{bmatrix}
 1 & 0 \\
 0 & e^{i\pi/4} \\
-\end{bmatrix}\,; \\
+\end{bmatrix}\,;(\#eq:t-posukis) \\
 S = & \begin{bmatrix}
 1 & 0 \\
 0 & e^{i\pi/2} \\
 \end{bmatrix} = \begin{bmatrix}
 1 & 0 \\
 0 & i \\
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:s-posukis)
 \end{align}
 Loginiai vartai $S$ yra dar vadinami $\sqrt{Z}$, kadangi $S^2 = Z$.
 
@@ -205,6 +204,7 @@ R_z(\theta)R_y(\gamma)R_z(\varphi) =
 \mathrm{e}^{\mathrm{i}(\theta - \varphi)/2}\sin(\gamma/2) &
 \mathrm{e}^{\mathrm{i}(\theta + \varphi)/2}\cos(\gamma/2) \\
 \end{bmatrix}\,.
+(\#eq:z-y-z-dekompozicija)
 \end{equation}
 
 ## Kvantinių grandinių lygybės ir atvirkštiniai loginiai vartai
@@ -214,22 +214,20 @@ naudojant skirtingus loginius vartus. Pavyzdžiui, Hadamardo
 transformacija gali būti išreikšta rotacijų seka apie $x$, $y$, $z$ ašis.
 Keletas būdų tai atlikti:
 \begin{align}
-H = & R_x(\pi)R_y\left(-\frac{\pi}{2}\right)\,; \\
-H = & R_x\left(-\frac{\pi}{2}\right)R_z\left(-\frac{\pi}{2}\right)\,.
+H = & R_x(\pi)R_y\left(-\frac{\pi}{2}\right)\,; (\#eq:hadamard-1)\\
+H = & R_x\left(-\frac{\pi}{2}\right)R_z\left(-\frac{\pi}{2}\right)\,.(\#eq:hadamard-2)
 \end{align}
-Antrąją išraišką iliustruojame 4.8 pav., kaip trajektoriją Blocho sferos
+Antrąją išraišką iliustruojame \@ref(fig:ekvivalentinis-h-realizavimas) pav., kaip trajektoriją Blocho sferos
 paviršiuje, pradedant nuo $|0\rangle$ būsenos iki
 galutinės $|0_x\rangle$. Atkreipiame dėmesį, kad
 žvelgiant į teigiamą $x$, $y$, ar $z$ ašį nuo sferos centro į jos išorę,
 posūkis teigiamu kampu $+\theta$ apibūdinamas prieš laikrodžio rodyklę,
 o neigiamas $-\theta$ pagal laikrodžio rodyklę.
 
-![](./media/image4_8.png)
 
-**4.8 pav.** Ekvivalentinis $H$ loginės operacijos realizavimas naudojant
-rotacijos loginius vartus $R_x$ ir $R_z$ pavaizduojant kubito $|0\rangle$
-vektoriaus sukimo trajektoriją Blocho sferoje. Šalia $x, y, z$ ašių pažymėti
-atitinkami posūkio operatoriai ir nurodytos teigiamos $+\theta$ sukimo kryptys
+```{r ekvivalentinis-h-realizavimas, echo=FALSE, fig.cap="Ekvivalentinis $H$ loginės operacijos realizavimas naudojant rotacijos loginius vartus $R_x$ ir $R_z$ pavaizduojant kubito $|0\\rangle$ vektoriaus sukimo trajektoriją Blocho sferoje. Šalia $x, y, z$ ašių pažymėti atitinkami posūkio operatoriai ir nurodytos teigiamos $+\\theta$ sukimo kryptys.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_8.png")
+```
 
 Skirtingose kvantinių procesorių architektūrose gali būti apribotas tam
 tikrų 1 kubito loginių vartų naudojimas. Todėl gali atsirasti poreikis
