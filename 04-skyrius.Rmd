@@ -35,7 +35,7 @@ kvantinės grandinės pavyzdį.
 
 Standartiškai algoritmo pradžioje kubitai yra inicijuojami į
 $|0\rangle$ būsenas (nurodome *ket* juodame fone), o
-atskiri kubitai sunumeruojami simboliais $k_1, k_2$,\ldots$ . Viršuje
+atskiri kubitai sunumeruojami simboliais $k_1, k_2,\ldots$ . Viršuje
 kubitui $k_1$ yra atliekama 1 kubito loginių vartų seka $U_1$,
 $U_2$, abu kubitus veikiantis $U_3$ ir galiausiai $U_4$.
 Atkreipiame dėmesį, kad tiesinėje algebroje pirmo kubito loginių vartų
@@ -235,9 +235,9 @@ sukompiliuoti kvantinę grandinę kitomis loginių vartų sekomis ar ją
 supaprastinti sumažinant bendrą loginių vartų skaičių. Pateikiame keletą
 svarbesnių 1 kubito loginių vartų lygybių pavyzdžių:
 \begin{align}
-HXH = & Z\,,\quad HYH = -Y\,,\quad HZH = X\,; \\
-ZXZ = & -X\,,\quad ZYZ = -Y\,,\quad ZZZ = Z\,; \\
-SXS^{\dagger} = & Y\,,\quad SYS^{\dagger} = -X\,,\quad SZS^{\dagger} = Z\,.
+HXH = & Z\,,\quad HYH = -Y\,,\quad HZH = X\,; (\#eq:1-kubito-lygybes-1)\\
+ZXZ = & -X\,,\quad ZYZ = -Y\,,\quad ZZZ = Z\,;(\#eq:1-kubito-lygybes-2) \\
+SXS^{\dagger} = & Y\,,\quad SYS^{\dagger} = -X\,,\quad SZS^{\dagger} = Z\,.(\#eq:1-kubito-lygybes-3)
 \end{align}
 Kaip galime pastebėti, viršuje pateikiamos tokios operatorių sekos:
 $KPK^{\dagger} = P'$. Čia $P$ ir $P'$ yra Pauli operatoriai {$X$, $Y$, $Z$},
@@ -252,6 +252,7 @@ Atkreipiame dėmesį, kad vien Klifordo vartais $H$ ir $S$ galima
 realizuoti Pauli operatorius {$X$, $Y$, $Z$}:
 \begin{equation}
 HSSH = X\,,\quad SXS^{\dagger} = Y\,,\quad SS = Z\,.
+(\#eq:pauli-per-h-s)
 \end{equation}
 Norėdami patikrinti, ar lygybės egzistuoja tarp skirtingų vartų sekų,
 galime jas nusakančias matricas papračiausiai sudauginti ir palyginti,
@@ -270,11 +271,13 @@ HXH = \frac{1}{2}\begin{bmatrix}
 1 & 0 \\
 0 & - 1 \\
 \end{bmatrix} = Z\,.
+(\#eq:patikrinimas-hxh)
 \end{equation}
 Klifordo vartais taip pat galima tarpusavyje transformuoti tolydžiai
 parametrizuotus loginius vartus $R_z(\theta)$ ir $R_x(\theta)$:
 \begin{equation}
 HR_z(\theta)H = R_x(\theta)\,.
+(\#eq:hrzh)
 \end{equation}
 Naudodami matricų funkcijos $R_z(\theta)$ išraišką, lygybę viršuje
 patikriname:
@@ -284,6 +287,7 @@ H\big\lbrack \cos(\theta/2)I - \mathrm{i}\sin(\theta/2)Z \big\rbrack H
 = & \cos(\theta/2)HIH - \mathrm{i}\sin(\theta/2)HZH \\
 = & \cos(\theta/2)I - \mathrm{i}\sin(\theta/2)X = R_x(\theta)\,.
 \end{aligned}
+(\#eq:patikrinimas-hrzh)
 \end{equation}
 Trys Pauli bei Hadamardo loginiai vartai yra ermitiniai operatoriai
 ($U=U^{\dagger}$) ir todėl patys sau atvirkštiniai. Atliekant du ermitinius
@@ -296,17 +300,17 @@ ir visi unitariniai operatoriai, jie turi sau atvirkštinius operatorius.
 Tai yra jų ermitinės jungties operatoriai, žymimi su durklu, pavyzdžiui
 $T^{\dagger}$ ir $S^{\dagger}$:
 \begin{align}
-$T^{\dagger} = & \begin{bmatrix}
+T^{\dagger} = & \begin{bmatrix}
 1 & 0 \\
 0 & \mathrm{e}^{-\mathrm{i}\pi/4} \\
-\end{bmatrix}\,; \\
+\end{bmatrix}\,; (\#eq:t-inverse)\\
 S^{\dagger} = & \begin{bmatrix}
 1 & 0 \\
 0 & \mathrm{e}^{-\mathrm{i}\pi/2} \\
 \end{bmatrix} = \begin{bmatrix}
 1 & 0 \\
 0 & -\mathrm{i} \\
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:s-inverse)
 \end{align}
 Matome, kad ermitinėje jungtyje atsiranda minuso ženklas prie nario,
 nusakančio kampą. Atvirkštinių vartų efektą galima interpretuoti kaip
@@ -337,22 +341,23 @@ tikrinė vertė yra -1. Tai nusako vieną klasikinį bitą informacijos, o
 atlikus matavimą gautas rezultatas yra įrašomas klaisikiniame bitų
 registre.
 
-![](./media/image4_9.png)
+```{r grandine-bito-matavimas, echo=FALSE, fig.cap="Loginė grandinė sukuria kubito $k_1$ lygią superpoziciją ir atlieka jo būsenos matavimą. Rezultatas įrašomas klasikiniame registre $c$", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_9.png")
+```
 
-**4.9 pav.** Loginė grandinė sukuria kubito $k_1$ lygią superpoziciją ir atlieka
-jo būsenos matavimą. Rezultatas įrašomas klasikiniame registre $c$
-
-Grandinėje 4.9 pav. yra pateiktas vienas iš paprasčiausių praktinės
+Grandinėje \@ref(fig:grandine-bito-matavimas) pav. yra pateiktas vienas iš paprasčiausių praktinės
 svarbos kvantinių algoritmų, kuris atlieka atsitiktinių skaičių
 generavimą (angl. *random number generator*). Atlikę Hadamardo
 transformaciją gauname lygią superpoziciją:
 \begin{equation}
 H|0\rangle = \frac{1}{\sqrt{2}}\big( |0\rangle + |1\rangle \big)\,.
+(\#eq:hadamard-superpozicija)
 \end{equation}
 Pamatavus šią būseną tikimybės rasti $|0\rangle$ arba
 $|1\rangle$ yra lygios:
 \begin{equation}
 \big|\langle 0|\psi\rangle\big|^2 = \big|\langle 1|\psi\rangle\big|^2 = \frac{1}{2}\,.
+(\#eq:matavimas-lygios-tikimybes)
 \end{equation}
 Tad po kiekvieno šio algoritmo įvykdymo yra sugeneruojama atsitiktinė
 dvejetainė 0 ir 1 skaičių seka. Dėl kvantinio atsitiktinumo matavimo
@@ -370,21 +375,21 @@ transformacija. Vienas iš plačiausiai naudojamų 2 kubitų vartų yra
 vadinsime $cX$. Pasirinktas pirmas kubitas yra naudojamas kaip
 **kontrolinis** (angl. *control*), nuo kurio būsenos priklauso ar
 antram, adresatiniam kubitui, bus taikomi Pauli-$X$ loginiai vartai.
-Vartai $cX$ yra iliustruojami 4.10 pav.
+Vartai $cX$ yra iliustruojami \@ref(fig:cnot-vartai) pav.
 
-![](./media/image4_10.png)
-
-**4.10 pav.** 2 kubitų sąlyginiai loginiai vartai $cX$ (arba *CNOT*)
+```{r cnot-vartai, echo=FALSE, fig.cap="2 kubitų sąlyginiai loginiai vartai $cX$ (arba *CNOT*).", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_10.png")
+```
 
 *CNOT* vartus galime išreikšti diadomis ir matricos forma:
 \begin{align}
-cX = &|0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes X\,;\\
+cX = &|0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes X\,;(\#eq:cnot-diada)\\
 cX = & \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:cnot-matrica)
 \end{align}
 Kaip pavyzdį imkime $cX$, kuriame pirmas kubitas yra kontrolinis, ir
 pritaikykime jį
@@ -393,7 +398,7 @@ $|1\rangle\otimes|0\rangle$ būsenai:
 cX|1\rangle\otimes|0\rangle = &
 |0\rangle\langle 0|1\rangle\otimes I|0\rangle +
 |1\rangle\langle 1|1\rangle\otimes X|0\rangle =
-|1\rangle\otimes X|0\rangle = |1\rangle\otimes|1\rangle\,;\\
+|1\rangle\otimes X|0\rangle = |1\rangle\otimes|1\rangle\,;(\#eq:cx-0-diadom)\\
 cX|1\rangle\otimes|0\rangle = & \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
@@ -409,15 +414,15 @@ cX|1\rangle\otimes|0\rangle = & \begin{bmatrix}
 0 \\
 0 \\
 1 \\
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:cx-0-matrica)
 \end{align}
 Apibendrinus, $cX$ vartų efektas 2 kubitų skaičiuojamiesiems baziniams
 vektoriams:
 \begin{align}
-cX|0\rangle\otimes|0\rangle = & |0\rangle\otimes|0\rangle\,; \\
-cX|0\rangle\otimes|1\rangle = & |0\rangle\otimes|1\rangle\,; \\
-cX|1\rangle\otimes|0\rangle = & |1\rangle\otimes|1\rangle\,; \\
-cX|1\rangle\otimes|1\rangle = & |1\rangle\otimes|0\rangle\,.
+cX|0\rangle\otimes|0\rangle = & |0\rangle\otimes|0\rangle\,;(\#eq:cx-efektas-00) \\
+cX|0\rangle\otimes|1\rangle = & |0\rangle\otimes|1\rangle\,;(\#eq:cx-efektas-01) \\
+cX|1\rangle\otimes|0\rangle = & |1\rangle\otimes|1\rangle\,;(\#eq:cx-efektas-11) \\
+cX|1\rangle\otimes|1\rangle = & |1\rangle\otimes|0\rangle\,.(\#eq:cx-efektas-10)
 \end{align}
 Matome, kad kai kontrolinis kubitas yra $|0\rangle$,
 antro kubito būsena nesikeičia, o jeigu kontrolinis kubitas yra
@@ -431,6 +436,7 @@ yra bet kuri iš 0 ir 1 kombinacijų, tada mod(2) sudėtis yra užrašoma
 antro kubito būsenoje:
 \begin{equation}
 cX|k_1 \rangle\otimes |k_2 \rangle = |k_1 \rangle\otimes |k_1 \oplus k_2 \rangle\,.
+(\#eq:cx-mod2)
 \end{equation}
 Galima atsakymą užrašyti ir pirmo kubito būsenoje naudojant $cX$ vartus,
 kuriuose antras kubitas yra kontrolinis, o pirmas adresatinis.
@@ -439,28 +445,28 @@ Norint aiškiau pateikti matematines lygtis gali būti pravartu indikuoti
 operatoriuose kontrolinį ir adresatinį kubitus. Šioje knygoje, kai bus
 tą pravartu daryti, *CNOT* vartuose nurodysime kaip pirmą skaičių
 kontrolinį kubitą, kaip antrą adresatinį, pavyzdžiui $cX_{12}$.
-Formulėse ?--? pateikėme diadų ir matricų formas $cX_{12}$,
+Formulėse \@ref(eq:cnot-diada)--\@ref(eq:cnot-matrica) pateikėme diadų ir matricų formas $cX_{12}$,
 sukeitus juos vietomis, $cX_{21}$, atitinkamai pasikeistų ir matematinės
 išraiškos:
 \begin{align}
-cX_{21} = & I\otimes|0\rangle\langle 0| + X\otimes|1\rangle\langle 1|\,; \\
+cX_{21} = & I\otimes|0\rangle\langle 0| + X\otimes|1\rangle\langle 1|\,;(\#eq:cx-21-diada)\\
 cX_{21} = & \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 0 & 0 & 1 \\
 0 & 0 & 1 & 0 \\
 0 & 1 & 0 & 0
-\end{bmatrix}\,.
+\end{bmatrix}\,.(\#eq:cx-21-matrica)
 \end{align}
 Matėme, kaip 2 kubitų būsena keičiasi pritaikius $cX$, kai kubitai yra
 viename iš bazinių vektorių. Gauti rezultatai yra identiški klasikiniams
 $cX$ vartams. Tačiau kvantinėje kompiuterijoje kontrolinio kubito būsena
 gali būti $|0\rangle$ ir $|1\rangle$
 superpozicijoje. Koks yra $cX$ efektas, šiuo atveju panagrinėsime
-žvelgdami į 4.11 pav. grandinę.
+žvelgdami į \@ref(fig:dvieju-kubitu-supynimo-grandine) pav. grandinę.
 
-![](./media/image4_11.png)
-
-**4.11 pav.** Kvantinį 2 kubitų supynimą atliekanti grandinė
+```{r dvieju-kubitu-supynimo-grandine, echo=FALSE, fig.cap="Kvantinį 2 kubitų supynimą atliekanti grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_11.png")
+```
 
 Po Hadamardo transformacijos kontrolinis $k_1$ kubitas yra lygioje
 superpozicijoje. Toliau yra $cX$ vartai, kurie veikia tiesiškai
@@ -471,6 +477,7 @@ cX\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle = &
 \frac{1}{\sqrt{2}}\big(cX|0\rangle\otimes|0\rangle + cX|1\rangle\otimes|0\rangle\big) \\
 = & \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|0\rangle + |1\rangle\otimes|1\rangle\big)\,.
 \end{aligned}
+(\#eq:cx-nuo-superpozicijos)
 \end{equation}
 Matome, kad po šių dviejų loginių vartų sekos gavome supintą 2 kubitų
 būseną $|\chi^{+}\rangle$ Belo bazinį vektorių.
@@ -482,6 +489,7 @@ bazinius vektorius:
 |10 \rangle \rightarrow |\chi^{-}\rangle\,,\quad
 |01 \rangle \rightarrow |\eta^{+}\rangle\,,\quad
 |11 \rangle \rightarrow |\eta^{-}\rangle\,.
+(\#eq:skaiciuojamieji-i-belo)
 \end{equation}
 Pavyzdžiui, norėdami paruošti Belo $|\eta^{-}\rangle$
 būseną, pirmiausia pakeičiame $k_1$ ir $k_2$ pradines būsenas į
@@ -497,17 +505,19 @@ panaikinamas ir grįžtame į faktorizuojamąją būseną:
 \begin{equation}
 cX|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes
 |0\rangle\,.
+(\#eq:cx-belo)
 \end{equation}
 
-![](./media/image4_12.png)
-
-**4.12 pav.** Supintąją 3 kubitų GHZ būseną realizuojanti grandinė
+```{r ghz-grandine, echo=FALSE, fig.cap="Kvantinį 2 kubitų supynimą atliekanti grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_12.png")
+```
 
 Kita gerai žinoma visiškai supinta
 3 kubitų GHZ būseną (angl. *Greenberger-Horne-Zeilinger*) galima gauti
-atlikę 4.12 pav. parodytą grandinę:
+atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę:
 \begin{equation}
 |\mathrm{GHZ}\rangle = \frac{1}{\sqrt{2}}\big(|000\rangle +|111\rangle\big)\,.
+(\#eq:ghz-busena)
 \end{equation}
 
 Užbaigdami šį poskyrį paminėsime naudingą $cX$ loginių vartų variaciją,
@@ -517,17 +527,17 @@ $|1\rangle$. Šio operatoriaus, vadinsime jį
 $cX_0$, išraiška yra:
 \begin{equation}
 cX_0 = |0\rangle\langle 0|\otimes X + |1\rangle\langle 1|\otimes I\,.
+(\#eq:cx0-israiska)
 \end{equation}
 
-![](./media/image4_13.png)
+```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_13.png")
+```
 
-**4.13 pav.** 2 kubitų salyginių loginių vartų $cX$ variacija, kurioje
-antro kubito būsena keičiama, jeigu pirmojo būsena $|0\rangle$
-
-Kvantinėje grandinėje $cX_{0}$ vartai yra
+Kvantinėje grandinėje $cX_0$ vartai yra
 žymimi su tuščiu apskritimu kontroliniame kubite, bei gali būti
 paprastai konvertuojami iš standartinio $cX$ pasitelkiant dvejus Pauli-$X$
-vartus (žr. 4.13 pav.).
+vartus (žr. \@ref(fig:cx0-grandine) pav.).
 
 Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
 $|0\rangle \leftrightarrow |1\rangle$,
@@ -535,16 +545,16 @@ o antrieji atstato jas atgal po atliktų standartinių $cX$.
 
 ## Tofoli loginiai vartai
 
-![](./media/image4_14.png)
-
-**4.14 pav.** Toffoli loginiai vartai
+```{r toffoli-vartai, echo=FALSE, fig.cap="Toffoli loginiai vartai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_14.png")
+```
 
 Trijų kubitų sąlyginiai loginiai vartai,
 kuriuose du kubitai naudojami kaip kontroliniai, yra vadinami
 ***CCNOT*** (angl. *controlled controlled NOT*, trumpinys *CCNOT*) ir
 yra geriau žinomi, kaip **Tofoli vartai** (angl. *Toffoli*). Grandinėse
 juos žymėsime $ccX$. Kubito vertė yra apverčiama, jeigu abu kontroliniai
-kubitai yra $|1\rangle$ būsenose. 4.14 pav.
+kubitai yra $|1\rangle$ būsenose. \@ref(fig:toffoli-vartai) pav.
 iliustruojame šiuos vartus, veikiančius būseną
 $|k_1\rangle\otimes|k_2\rangle\otimes|k_3\rangle$
 su $k_1$ ir $k_2$ kontroliniais bei $k_3$ adresatiniu kubitu.
@@ -553,6 +563,7 @@ Išreiškus $ccX$ vartus diadomis:
 \begin{equation}
 ccX = \big(|00\rangle\langle 00| +|01\rangle\langle 10| + |10\rangle\langle 01|\big)
 \otimes I + |11\rangle\langle 11|\otimes X\,.
+(\#eq:tofoli-vartai-diadom)
 \end{equation}
 Kvantiniuose kompiuteriuose $ccX$ vartai paprastai nėra elementarūs,
 tačiau sukompiliuojami iš 1 kubito ir 2 kubitų loginių vartų sekų.
@@ -563,6 +574,7 @@ Loginiai vartai SWAP, grandinėse žymimi sutrumpintai $W$, veikdami tarp
 dviejų kubitų $k_1$ ir $k_2$ sukeičia jų būsenas vietomis:
 \begin{equation}
 W|\psi_1\rangle\otimes |\psi_2\rangle = |\psi_2\rangle\otimes |\psi_1\rangle\,.
+(\#eq:swap-vartai)
 \end{equation}
 Šie loginiai vartai efektyviai sukeičia kubitus vietomis ir todėl gali
 būti naudojami pergrupuoti kubitus registre. Tai yra itin naudinga
@@ -578,7 +590,7 @@ W = & |0\rangle\otimes|0\rangle\langle 0|\otimes\langle 0| +
 |1\rangle\otimes|0\rangle\langle 0|\otimes\langle 1| +
 |1\rangle\otimes|1\rangle\langle 1|\otimes\langle 1| \nonumber\\
 = & |00\rangle\langle 00| + |01\rangle\langle 10| + |10\rangle\langle 01|
-+ |11\rangle\langle 11|\,;\\
++ |11\rangle\langle 11|\,; (\#eq:swap-diadom) \\
 W = &\begin{bmatrix}
 \begin{matrix}
 1 & 0 \\
@@ -594,44 +606,43 @@ W = &\begin{bmatrix}
 0 & 0 \\
 0 & 1 \\
 \end{matrix} \\
-\end{bmatrix}\,.
+\end{bmatrix}\,. (\#eq:swap-matrica)
 \end{align}
-SWAP vartai iliustruojami 4.15 pav.:
+SWAP vartai iliustruojami \@ref(fig:swap-vartai) pav.
 
-![](./media/image4_15.png)
-
-**4.15 pav.** SWAP loginiai vartai.
+```{r swap-vartai, echo=FALSE, fig.cap="SWAP loginiai vartai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_15.png")
+```
 
 SWAP taip pat galima įkomponuoti į sąlyginius loginius vartus, kurie yra
-vadinami *Fredkin* vartais. Lygtyse juos žymėsime $cW$. 4.16 pav.
+vadinami *Fredkin* vartais. Lygtyse juos žymėsime $cW$. \@ref(fig:fredkin-vartai) pav.
 pavaizduoti *Fredkin* vartai sukeičia kubitų $k_2$ ir $k_3$ būsenas,
 jeigu kontrolinis kubitas $k_1$ yra būsenoje
 $|1\rangle$.
 \begin{equation}
 cW = |0\rangle\langle 0|\otimes I\otimes I + |1\rangle\langle 1|\otimes W\,.
+(\#eq:fredkin-vartai)
 \end{equation}
 
-![](./media/image4_16.png)
-
-**4.16 pav.** *Fredkin*, arba kontroliuojami SWAP, loginiai vartai
+```{r fredkin-vartai, echo=FALSE, fig.cap="*Fredkin*, arba kontroliuojami SWAP, loginiai vartai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_16.png")
+```
 
 Kaip ir Tofoli loginiai vartai, SWAP bei
 *Fredkin* paprastai nėra elementarios kubitų transformacijos fiziniame
 lygmenyje, tačiau yra konstruojami iš 1 kubito ir 2 kubitų loginių vartų
 sekų. Vienas būdas atlikti SWAP 2 kubitų būsenai naudojant $cX$ vartus
-parodytas 4.17 pav.:
+parodytas \@ref(fig:swap-realizavimas) pav.:
 
-![](./media/image4_17.png)
+```{r swap-realizavimas, echo=FALSE, fig.cap="SWAP loginių vartų realizavimas pasitelkiant tris *cX* loginius vartus.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_17.png")
+```
 
-**4.17 pav.** SWAP loginių vartų realizavimas pasitelkiant tris *cX* loginius vartus.
+## Bendro tipo sąlyginiai loginiai vartai $\boldsymbol{cU}$
 
-## Bendro tipo sąlyginiai loginiai vartai $\mathbf{cU}$
-
-![](./media/image4_18.png)
-
-**4.18 pav.** Bendro tipo 2 kubitų loginiai vartai $cU$,
-kuriuose antram kubitui pritaikomi bendro tipo 1 kubito loginiai vartai $U$,
-kontroliuojant pirmu kubitu
+```{r bendro-tipo-salyginiai-vartai, echo=FALSE, fig.cap="Bendro tipo 2 kubitų loginiai vartai $cU$, kuriuose antram kubitui pritaikomi bendro tipo 1 kubito loginiai vartai $U$, kontroliuojant pirmu kubitu.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_18.png")
+```
 
 Bendro tipo 2 kubitų sąlyginiuose vartuose
 $cU$ adresatiniam kubitui pritaikoma bet kokia 1 kubito unitarinė
@@ -639,9 +650,10 @@ transformacija $U$, jeigu pirmas kubitas yra $|1\rangle$
 būsenoje. Šiuos vartus grandinėje ir diadų forma išreiškiame:
 \begin{equation}
 cU = |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes U\,.
+(\#eq:bendri-salyginiai-diadom)
 \end{equation}
 Prieš pereidami prie kitų temų, atkreipsime dėmesį į 1 kubito globalios
-fazės svarbą 2 kubitų (ir bendrai *n* kubitų) loginiuose vartuose.
+fazės svarbą 2 kubitų (ir bendrai $n$ kubitų) loginiuose vartuose.
 Bendro tipo 2 kubitų transformacijose $cU$ globali pavienių kubitų fazė
 tampa svarbi santykinė fazė tarp atskirų kubitų. Kaip matėme šio
 skyriaus pirmoje dalyje, bendriausio tipo 1-kubito loginius vartus
@@ -651,6 +663,7 @@ U_3 = \begin{bmatrix}
 a & - b^{*} \\
 b & a^{*}
 \end{bmatrix}\,.
+(\#eq:bendro-tipo-1-kubito-vartai)
 \end{equation}
 Čia $a$ ir $b$ yra kompleksiniai skaičiai, o matricos $U_3$
 determinantas $\det U_3 = |a|^{2} + |b|^{2} = 1$. Visos unitarinės
@@ -671,22 +684,23 @@ $U \in \mathrm{SU}(2)$ grupei. Pabrėždami šį aspektą toliau pateikiame sąl
 posūkio apie $z$ ašį vartus $cR_z(\theta)$ bei fazės vartus
 $\mathbf{cP(\theta)}$ (angl. *controlled phase gate*).
 
-![](./media/image4_19.png)
-
-**4.19 pav.** Salyginiai 2 kubitų loginiai vartai $cR_z(\theta)$
+```{r salyginia-2-kubitu-vartai, echo=FALSE, fig.cap="Salyginiai 2 kubitų loginiai vartai $cR_z(\\theta)$.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_19.png")
+```
 
 Vartai $cR_z(\theta)$ pritaiko antram
 kubitui posūkio operatorių $R_z(\theta)$, jeigu pirmojo būsena yra
 $|1\rangle$. Grandinėje, diadų ir matricos formoje
-$cR_{z}(\theta)$ atrodo taip (žr. 4.19 pav.):
+$cR_{z}(\theta)$ atrodo taip (žr. \@ref(fig:salyginia-2-kubitu-vartai) pav.):
 \begin{align}
-cR_z(\theta) = & |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes R_z(\theta)\,; \\
+cR_z(\theta) = & |0\rangle\langle 0|\otimes I
++ |1\rangle\langle 1|\otimes R_z(\theta)\,; (\#eq:salyginiai-z-diadom) \\
 cR_{z}(\theta) = & \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & \mathrm{e}^{-\mathrm{i}\theta/2} & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & \mathrm{e}^{\mathrm{i}\theta/2} \\
-\end{bmatrix}\,.
+\end{bmatrix}\,.  (\#eq:salyginiai-z-matrica)
 \end{align}
 Pritaikę $cR_z(\theta)$ 2 kubitų bazinių vektorių superpozicijos
 būsenai
@@ -700,6 +714,7 @@ cR_z(\theta)|\psi\rangle = &
 = & \frac{1}{2}\left\lbrack |00\rangle + \mathrm{e}^{-\mathrm{i}\theta/2}|10\rangle
 + |01\rangle + \mathrm{e}^{\mathrm{i}\theta/2}|11\rangle \right\rbrack\,.
 \end{aligned}
+(\#eq:salyginiai-z-superpozicija)
 \end{equation}
 Šio skyriaus pirmoje dalyje analizuodami 1 kubito vartus $R_z(\theta)$
 iškėlėme fazės narį $\mathrm{e}^{-\mathrm{i}\theta/2}$. Tačiau šioje situacijoje
@@ -717,6 +732,7 @@ cP(\theta) = \begin{bmatrix}
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & \mathrm{e}^{\mathrm{i}\theta} \\
 \end{bmatrix}\,.
+(\#eq:salyginiai-fazes)
 \end{equation}
 Pritaikę juos tai pačiai visų 2 kubitų bazinių vektorių superpozicijos
 būsenai $|\psi\rangle$ randame, kad fazė suteikiama tik
@@ -724,6 +740,7 @@ $|11\rangle$ baziniam vektoriui:
 \begin{equation}
 cP(\theta)|\psi\rangle = \frac{1}{2}\big\lbrack |00\rangle + |10\rangle +
 |01\rangle + \mathrm{e}^{\mathrm{i}\theta}|11\rangle\big\rbrack\,.
+(\#eq:salyginiai-fazes-superpozicija)
 \end{equation}
 Vartų $cP(\theta)$ efektas skiriasi nuo $cR_z(\theta)$ santykine
 2 kubitų faze, kuri yra „globali" antrojo kubito fazė. Norėdami
@@ -737,6 +754,7 @@ formaliau perteikti 1 kubito „globalią" fazę $\mathrm{e}^{\mathrm{i}\eta}$,
 1 & 0 \\
 0 & 1 \\
 \end{bmatrix} = \mathrm{e}^{\mathrm{i}\eta}I\,.
+(\#eq:vieno-kubito-fazes-vartai)
 \end{equation}
 Sąlyginiai $c\Phi(\eta)$ vartai, kurie perteikia „globalią" $\mathrm{e}^{\mathrm{i}\eta}$
 fazę adresatinio kubito $|0\rangle$ ir
@@ -748,10 +766,11 @@ c\Phi(\eta) = & \begin{bmatrix}
 0 & \mathrm{e}^{\mathrm{i}\eta} & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & \mathrm{e}^{\mathrm{i}\eta}
-\end{bmatrix}\,;\\
+\end{bmatrix}\,; (\#eq:salyginiai-globali-faze) \\
 c\Phi(\eta) = & |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes\Phi(\eta)
 = \big( |0\rangle\langle 0| +
 \mathrm{e}^{\mathrm{i}\eta}|1\rangle\langle 1| \big)\otimes I\,.
+(\#eq:salygine-globali-dekompozicija)
 \end{align}
 Iš diadinės $c\Phi(\eta)$ dekompozicijos galima atkreipti dėmesį, kad iš
 tiesų nereikia vykdyti 2 kubitų sąlyginių vartų. Šie loginiai vartai
@@ -765,19 +784,22 @@ kubitą, su identitetu $\otimes I$ adresatiniam kubitui:
 \mathrm{e}^{\mathrm{i}\eta/2}|1\rangle\langle 1|\big) \\
 = & |0\rangle\langle 0| + \mathrm{e}^{\mathrm{i}\eta}|1\rangle\langle 1|\,.
 \end{aligned}
+(\#eq:salyginiai-glbali-supaprastinimas)
 \end{equation}
 Tad sąlyginius 2 kubitų fazės vartus $c\Phi(\eta)$ galime perteikti
 1 kubito vartais, $\Phi(\eta/2)R_z(\eta) \equiv D$:
 \begin{equation}
 c\Phi(\eta) = D\otimes I\,.
+(\#eq:salyginiai-D)
 \end{equation}
 Dabar akivaizdu, kad sąlyginius 2 kubitų santykinės fazės vartus
 $cP(\theta)$ galime realizuoti pasitelkdami $cR_z(\theta)$ ir
-$c\Phi(\eta)$. 4.54 lygtyje gautai būsenai
+$c\Phi(\eta)$. \@ref(eq:salyginiai-z-superpozicija) lygtyje gautai būsenai
 $cR_z(\theta)|\psi\rangle$ pritaikome $c\Phi(\eta)$ su
 faze $\eta = \theta/2$:
 \begin{equation}
 c\Phi(\theta/2)cR_z(\theta)|\psi\rangle = cP(\theta)|\psi\rangle\,.
+(\#eq:salyginiai-faze-realizavimas)
 \end{equation}
 Realiame kvantiniame kompiuteryje 2 kubitų sąlyginių loginių vartų
 asortimentas gali būti itin ribotas, o bendro tipo sąlyginiai vartai
@@ -785,27 +807,28 @@ $cU$ yra veikiau aukštesnio lygio loginių operacijų abstrakcija. Šios
 operacijos bus sudarytos iš kvantiniame kompiuteryje prieinamų
 elementariųjų loginių vartų. Dažnai daroma prielaida, kad iš 2 kubitų
 vartų yra prieinami tik $cX$. Tad norint įvykdyti visas įmanomas
-*n *kubitų registro transformacijas universaliame kompiuteryje
+$n$ kubitų registro transformacijas universaliame kompiuteryje
 reikalingas būdas, kaip perteikti $cU$ naudojant tik 1 kubito bendrus
 loginius vartus bei $cX$.
 
 Pirma dekompozicija, realizuojanti $cU$, yra:
 \begin{equation}
 cU = AcXBcXC\,.
+(\#eq:dekompozicija-realizuojanti-cu)
 \end{equation}
 Čia $A$, $B$ ir $C$ yra 1 kubito loginiai vartai, kurie veikdami būseną
 $|\psi\rangle$ tenkina lygybę
 $ABC|\psi\rangle = I|\psi\rangle$. Ši
 dekompozicija yra pagrįsta teiginiu, kad bet kokį 1 kubito operatorių
-$U \in \mathrm{SU}(2) galima išreikšti $U = AXBXC$. Operatoriai $A$, $B$, $C$
+$U \in \mathrm{SU}(2)$ galima išreikšti $U = AXBXC$. Operatoriai $A$, $B$, $C$
 turi būti rasti kiekvienam norimam $U$ ir yra bendrai sudaryti iš posūkio
 operatorių $R_x(\theta)$, $R_y(\theta)$, $R_z(\theta)$.
 
-![](./media/image4_20.png)
+```{r abc-dekompozicija, echo=FALSE, fig.cap="Sąlyginių loginių vartų $cU$ realizavimas naudojant ABC dekompoziciją.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_20.png")
+```
 
-**4.20 pav.** Sąlyginių loginių vartų $cU$ realizavimas naudojant ABC dekompoziciją
-
-4.20 pav. grandinėje matome, kad jeigu kontrolinis kubitas yra
+\@ref(fig:abc-dekompozicija) pav. grandinėje matome, kad jeigu kontrolinis kubitas yra
 $|0\rangle$ būsenoje, tada adresatiniam kubitui
 pritaikomi paeiliui trys operatoriai,
 $ABC|\psi\rangle = I|\psi\rangle$ ir
@@ -821,28 +844,28 @@ Papildomi fazės vartai $D$, veikiantys kontrolinį kubitą šios grandinės
 pabaigoje, leidžia teisingai perteikti norimą santykinę 2 kubitų būsenos
 fazę.
 
-![](./media/image4_21.png)
-
-**4.21 pav.** 3 kubitų sąlyginių loginių vartų $ccU$ realizavimas
+```{r ccu-realizavimas, echo=FALSE, fig.cap="3 kubitų sąlyginių loginių vartų $ccU$ realizavimas.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_21.png")
+```
 
 Loginiuose vartuose gali būti daugiau nei
 vienas kontrolinis kubitas. Ši aukštesnio lygio operacijų abstrakcija
 yra itin pravarti konstruojant logines grandines, tačiau praktikoje taip
 pat reikia dekompozicijos į elementarius loginius vartus jai realizuoti.
-4.21 pav. pateikti 3 kubitų bendro tipo $ccU$ ir jų dekompozicija
+\@ref(fig:ccu-realizavimas) pav. pateikti 3 kubitų bendro tipo $ccU$ ir jų dekompozicija
 naudojant elementarius $cX$, 1 kubito loginius vartus $V$ ir
 atvirkštinius $V^{\dagger}$, $V^{\dagger}V = I$. Jie yra parenkami, kad
 tenkintų lygybę $VV = U$.
 
-![](./media/image4_22.png)
-
-**4.22 pav.** 3-kubitų sąlyginių loginių vartų *ccU* realizavimas pasitelkiant Tofoli loginius vartus
+```{r ccu-realizavimas-tofoli, echo=FALSE, fig.cap="3-kubitų sąlyginių loginių vartų *ccU* realizavimas pasitelkiant Tofoli loginius vartus.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_22.png")
+```
 
 Pavyzdžiui, Tofoli loginiai vartai gali
 būti išreikšti šia dekompozicija pasirinkus $V = (1 - \mathrm{i})(I + \mathrm{i}X)/2$, nes
 $VV = X$. Tofoli loginiai vartai $ccX$ yra plačiai naudojami kvantinėse
 grandinėse ir juos pasitelkus galima lengvai išreikšti $k$ skaičiumi
-kubitais kontroliuojamus $c^{k}U$ loginius vartus. 4.22 pav. parodyta
+kubitais kontroliuojamus $c^{k}U$ loginius vartus. \@ref(fig:ccu-realizavimas-tofoli) pav. parodyta
 $ccU$ dekompozicija, naudojanti Tofoli sekas.
 
 Tofoli vartais pagrįstu metodu naudojami papildomi kubitai, vadinami
@@ -867,6 +890,7 @@ yra:
 |\psi\rangle = \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle +
 |011\rangle + |100\rangle + |101\rangle + |110\rangle + |111\rangle\big)\otimes
 |00\rangle\,.
+(\#eq:3-lygi-superpozicija)
 \end{equation}
 Paskutiniai du kubitai yra minėtos ancilos, atskirtos tenzorių daugybos
 ženklu dėl aiškumo. Tolesniuose žingsniuose pritaikysime dvejus Tofoli
@@ -878,6 +902,7 @@ ccX_1|\psi\rangle =
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle + |011\rangle +
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
 + \frac{1}{\sqrt{8}}\big(|110\rangle + |111\rangle\big)\otimes|10\rangle\,.
+(\#eq:tofoli-3-superpozicija)
 \end{multline}
 Šie vartai parenka būsenas $|11k_3\rangle$ ir jas
 supina su pirmu ancila kubitu, kuriam būsena pakeičiama į
@@ -890,6 +915,7 @@ adresatinis yra antrasis ancila kubitas $a_2$:
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
 + \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
 + \frac{1}{\sqrt{8}}|111\rangle\otimes|11\rangle\,.
+(\#eq:2-tofoli-3-superpozicija)
 \end{multline}
 Šie vartai supina $|111\rangle$ būseną su ancilų
 $|11\rangle$ būsena. Trečiame žingsnyje pritaikome
@@ -902,6 +928,7 @@ cP(\theta)(ccX_2)(ccX_1)|\psi\rangle =
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
 + \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
 + \frac{\mathrm{e}^{\mathrm{i}\theta}}{\sqrt{8}}|111\rangle\otimes|11\rangle\,.
+(\#eq:faze-tofoli-tofoli-superpozicija)
 \end{multline}
 Šie trys loginiai žingsniai efektyviai pritaikė fazę $\mathrm{e}^{\mathrm{i}\theta}$
 būsenai $|111\rangle$. Tolesniuose dviejuose žingsniuose
@@ -909,10 +936,11 @@ pritaikome Tofoli vartus atbuline tvarka siekdami atstatyti abiejų
 ancila kubitų būsenas atgal į $|00\rangle$, taip
 paruošiant jas potencialiai tolimesniems skaičiavimams:
 \begin{multline}
-(ccX_1)(ccX_2)(cR_z(\theta))(ccX_2)(ccX_1)|\psi\rangle =
+(ccX_1)(ccX_2)(cP(\theta))(ccX_2)(ccX_1)|\psi\rangle =
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle \\
 + |011\rangle + |100\rangle + |101\rangle + |110\rangle +
 \mathrm{e}^{\mathrm{i}\theta}|111\rangle\big)\otimes|00\rangle\,.
+(\#eq:tofoli-atbuline-tvarka)
 \end{multline}
 Bet kokia ­$k$ kontroliuojamų sąlyginių loginių vartų $c^{k}U$
 dekompozicija, pagrįsta Tofoli vartais $ccX$, paremta iliustruotu
@@ -921,18 +949,19 @@ vartų ir papildomų $k - 1$ ancila kubitų.
 
 Kvantinių ryšių protokoluose, klaidų
 taisymo ir kituose algoritmuose galima aptikti mišrių
-kvantinių-klasikinių loginių operacijų. 4.23 pav. parodytas grandinės
+kvantinių-klasikinių loginių operacijų. \@ref(fig:misri-grandine) pav. parodytas grandinės
 pavyzdys, kuriame $cU = cX$ yra kontroliuojami klasikinio registro
 būsenos.
 
-![](./media/image4_23.png)
-
-**4.23 pav.** Mišri kvantinė-klasikinė loginė grandinė, kurioje $k_2$ kubitui pritaikomi Pauli-$X$, kontroliuojami klasikiniu registru
+```{r misri-grandine, echo=FALSE, fig.cap="Mišri kvantinė-klasikinė loginė grandinė, kurioje $k_2$ kubitui pritaikomi Pauli-$X$, kontroliuojami klasikiniu registru.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_23.png")
+```
 
 Šioje grandinėje po Hadamardo vartų kubitas $k_1$ yra lygioje būsenų
 superpozicijoje, o bendra būsena:
 \begin{equation}
 |\psi\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle\,.
+(\#eq:busena-pries-matavima)
 \end{equation}
 Atlikus būsenos matavimą su $k_1$ kubitu, yra lygi tikimybė rasti jį
 $|0\rangle$ arba $|1\rangle$ būsenoje.
@@ -948,6 +977,7 @@ Grandinė generuoja mišrią kvantinę būseną, kurią galima užrašyti tankio
 operatoriumi:
 \begin{equation}
 \rho = \frac{1}{2}|00\rangle\langle 00| + \frac{1}{2}|11\rangle\langle 11|\,.
+(\#eq:generuota-misri-busena)
 \end{equation}
 Atkreipiame dėmesį, kad $\rho$ yra nekoherentinė būsena, nes $1/2$
 nusako klasikines tikimybes, o ne kvantines amplitudes. Tačiau, jeigu
@@ -982,6 +1012,7 @@ projekcinius matavimus Pauli-X tikrinių vektorių bazėje:
 \begin{equation}
 |0_x\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\,,\quad
 |1_x\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - |1\rangle\big)\,.
+(\#eq:pauli-x-tikrines-4)
 \end{equation}
 Hadamardo loginiai vartai atlieka norimą transformaciją tarp šių bazinių
 vektorių: $H|0\rangle = |0_x\rangle$,
@@ -1006,11 +1037,11 @@ vieną Hadamardo transformaciją gautai būsenai po matavimo. Tokiu atveju,
 gavus bitą 0 arba 1, galutinė būsena bus deterministiškai pakeičiama į
 $|0_x \rangle$ arba $|1_x \rangle$,
 atitinkamai. Grandinė, atliekanti Pauli-$X$ matavimą
-$|0\rangle$ būsenai, iliustruota 4.24 pav.:
+$|0\rangle$ būsenai, iliustruota \@ref(fig:grandine-pauli-x-matavimas) pav.
 
-![](./media/image4_24.png)
-
-**4.24 pav.** Grandinė, atliekanti Pauli-*X* matavimą $|0\rangle$ būsenai.
+```{r grandine-pauli-x-matavimas, echo=FALSE, fig.cap="Grandinė, atliekanti Pauli-$X$ matavimą $|0\\rangle$ būsenai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_24.png")
+```
 
 Atkreipiame dėmesį į praktikoje pasitaikančius iš eilės atliekamus
 skirtingo tipo matavimus. Pavyzdžiui, jeigu pirmiausiai
@@ -1044,17 +1075,17 @@ su ja asocijuotą 2 kubitų skaičiuojamąjį bazinį vektorių:
 |\chi^{-}\rangle \rightarrow |10\rangle\,,\quad
 |\eta^{+}\rangle \rightarrow |01\rangle\,,\quad
 |\eta^{-}\rangle \rightarrow |11\rangle\,.
+(\#eq:belo-matavimas)
 \end{equation}
 Po šios transformacijos, atlikus Pauli-$Z$
 projekcinius matavimus su abiem kubitais galima užtikrintai sužinoti,
 kokia tai Belo būsena. Tai yra nedestruktyvus matavimo būdas, nes po
 matavimo galime vėl deterministiškai atstatyti pradinę Belo būseną.
-Kvantinė grandinė, atliekanti Belo matavimą, yra parodyta 4.25 pav.
+Kvantinė grandinė, atliekanti Belo matavimą, yra parodyta \@ref(fig:2-belo-matavimas) pav.
 
-![](./media/image4_25.png)
-
-**4.25 pav.** 2 kubitų Belo matavimas 
-
+```{r 2-belo-matavimas, echo=FALSE, fig.cap="2 kubitų Belo matavimas.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image4_25.png")
+```
 Užbaigdami šį poskyrį sugrįžtame palyginti, kokie yra Belo matavimo
 rezultatai šio skyriaus ankstesniame poskyryje minėtai mišriai būsenai
 $\rho$, kuri pasižymi klasikinėmis, o ne kvantinėmis koreliacijomis kaip
@@ -1067,6 +1098,7 @@ aptinkamą $cX$ ir $H$ transformacijų seką randame:
 = & \frac{1}{2}\big(|0\rangle + |1\rangle\big)\big(\langle 0| + \langle 1|\big)\otimes
 |0\rangle\langle 0|\,.
 \end{aligned}
+(\#eq:belo-matavimas-misriai)
 \end{equation}
 Akivaizdu, kad šis tankio operatorius yra faktorizuojamas
 $\rho = \rho_1\otimes\rho_2$. Atlikus Pauli-$Z$ matavimą, antras
@@ -1130,6 +1162,6 @@ klasikiniu kompiuteriu su polinominiu laiko kompleksiškumu. Nors
 Klifordo grupe pagrįsti kvantiniai algoritmai gali sukurti daug įvairių
 supintųjų registro būsenų, tačiau šie algoritmai nesuteikia pranašumo
 prieš klasikinius algoritmus. Yra gerai žinoma, kad Klifordo grupė
-nesudaro universalaus loginių vartų rinkinio. Būtent *T* loginiai
+nesudaro universalaus loginių vartų rinkinio. Būtent $T$ loginiai
 vartai, įtraukti Klifordo-*T* grupėje, negali būti pageidaujamai
 tiksliai išreikšti vien su {$H$, $S$, $cX$}.
