@@ -19,7 +19,7 @@ description: "Kvantinė kompiuterija"
 link-citations: yes
 nocite: |
   @*
-github-repo: rstudio/bookdown-demo
+github-repo: JuliusRuseckas/quantum_book
 ---
 
 # Apie knygą {-}
