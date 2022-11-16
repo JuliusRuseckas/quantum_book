@@ -21,6 +21,7 @@ kopijuojamos kvantinės sistemos. Pagal kopijavimo apibūdinimą, $U$
 formaliai atlieka:
 \begin{equation}
 U|\psi\rangle\otimes |\phi\rangle = |\psi\rangle\otimes |\psi\rangle\,.
+(\#eq:kopijavimo-apibrezimas)
 \end{equation}
 Kitaip tariant, antrojo registro būsena yra pakeičiama į identišką
 pirmojo registro $|\psi\rangle$ būsenos kopiją,
@@ -32,6 +33,7 @@ transformacijos efektas šioms būsenoms individualiai yra:
 \begin{equation}
 U|\kappa\rangle\otimes |\phi\rangle = |\kappa\rangle\otimes |\kappa\rangle\,,\quad
 U|\tau\rangle\otimes |\phi\rangle = |\tau\rangle\otimes |\tau \rangle\,.
+(\#eq:kopijavimo-efektas)
 \end{equation}
 Tolesniame žingsnyje įvertinkime
 $|\kappa\rangle\otimes|\kappa\rangle$
@@ -43,6 +45,7 @@ būsenų vidinę sandaugą:
 \langle\kappa |\tau\rangle^2 = \langle\phi|\otimes\langle\kappa |U^{\dagger}U|\tau\rangle\otimes |\phi\rangle \\
 = & \langle\kappa |\tau\rangle\langle\phi |\phi\rangle = \langle\kappa |\tau\rangle\,.
 \end{aligned}
+(\#eq:kopijavimas-vidine-sandauga)
 \end{equation}
 Viršuje, neprarasdami bendrumo, panaudojome unitarumą $U^{\dagger}U = I$
 bei registro būsenos normuotumą
@@ -50,6 +53,7 @@ $\langle\phi |\phi\rangle = 1$. Tad randame šią
 lygtį:
 \begin{equation}
 \langle\kappa | \tau\rangle^2 = \langle\kappa | \tau\rangle\,.
+(\#eq:lygtis-vidinei-sandaugai)
 \end{equation}
 Tai yra formaliai kvadratinė lygtis, $x^2 = x$, kuri turi du
 sprendinius: $x = 0$ ir $x = 1$. Pirmasis sprendinys ($x = 0$) nusako,
@@ -79,12 +83,14 @@ $|0\rangle$ būsenoje. Randame:
 \begin{equation}
 cX\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes |0\rangle =
 \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle)\,.
+(\#eq:cx-superpozicija-2)
 \end{equation}
 Šiuo atveju gauname supintąją Belo būseną. Tačiau, jeigu $cX$ iš tiesų
 atliktų kopijavimą į antrojo kubito vietą, mes turėtume gauti:
 \begin{equation}
 \frac{1}{2}\big(|0\rangle + |1\rangle\big)\otimes\big(|0\rangle + |1\rangle\big) =
 \frac{1}{2}\big(|00\rangle + |01\rangle + |10\rangle + |11\rangle\big)\,.
+(\#eq:tikro-kopijavimo-rezultatas)
 \end{equation}
 Be unitariųjų transformacijų taip pat yra matavimų tipo
 nedeterministinės transformacijos. Jos irgi nėra tinkamos atlikti
@@ -150,12 +156,12 @@ energijos tvermė ir kad niekas negali keliauti greičiau už šviesos
 greitį. Fizinės sistemos akimirksniu nepradingsta ir kitur
 neatsiranda -- tik pakeičia savo būsenas.
 
-![](./media/image5_1.png)
-
-**5.1 pav.** Kvantinė $k_1$ kubito būsenos $|\psi\rangle$ teleportacija į $k_3$ kubitą
+```{r kvantine-teleportacija, echo=FALSE, fig.cap="Kvantinė $k_1$ kubito būsenos $|\\psi\\rangle$ teleportacija į $k_3$ kubitą.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_1.png")
+```
 
 Standartiniame teleportacijos scenarijuje
-(žr. 5.1 pav.) Agnė turi kubitą $k_1$ būsenoje
+(žr. \@ref(fig:kvantine-teleportacija) pav.) Agnė turi kubitą $k_1$ būsenoje
 $|\psi\rangle = a|0\rangle + b|1\rangle$,
 $|a|^2 + |b|^2 = 1$, kurio amplitudžių $a$ ir $b$ ji nežino, tačiau
 nori $|\psi\rangle$ nusiųsti Benui. Agnė ir Benas turi
@@ -177,6 +183,7 @@ Bendrą pradinę šių trijų kubitų būseną galime užrašyti taip:
 = & \frac{1}{\sqrt{2}}\Big\lbrack a\big(|000\rangle + |011\rangle\big)
 + b\big(|100\rangle + |111\rangle\big)\Big\rbrack\,.
 \end{aligned}
+(\#eq:bendra-pradine-3-busena)
 \end{equation}
 Superpozicijos būsenose kubitai yra sunumeruoti taip:
 $|k_1 k_2 k_3 \rangle$. Pradinėje būsenoje
@@ -191,6 +198,7 @@ būseną $|\Psi'\rangle$:
 |\Psi'\rangle = (cX_{12}\otimes I)|\Psi\rangle =
 \frac{1}{\sqrt{2}}\Big\lbrack a\big(|000\rangle + |011\rangle\big)
 + b\big(|110\rangle + |101\rangle\big)\Big\rbrack\,.
+(\#eq:busena-po-cx)
 \end{equation}
 Kitame žingsnyje ji atlieka norimam nusiųsti
 $|\psi\rangle$ kubitui Hadamardo transformaciją:
@@ -200,6 +208,7 @@ $|\psi\rangle$ kubitui Hadamardo transformaciją:
 = & \frac{1}{2}\Big\lbrack a\big(|000\rangle + |011\rangle + |100\rangle + |111\rangle\big) \\
 & + b\big(|010\rangle + |001\rangle - |110\rangle - |101\rangle\big)\Big\rbrack\,.
 \end{aligned}
+(\#eq:busena-po-h-cx)
 \end{equation}
 Nedarant jokių kitų transformacijų, šią būseną galima pergrupuoti
 atskiriant Agnės ir Beno kubitus tenzorių ženklu:
@@ -208,6 +217,7 @@ atskiriant Agnės ir Beno kubitus tenzorių ženklu:
 + |10\rangle\otimes\big(a|0\rangle - b|1\rangle\big) \\
 + |01\rangle\otimes\big(b|0\rangle + a|1\rangle\big)
 + |11\rangle\otimes\big( -b|0\rangle + a|1\rangle\big)\Big\rbrack\,.
+(\#eq:busena-pergrupavimas)
 \end{multline}
 Tai leidžia lengviau pamatyti, kad Agnei atlikus dvi minėtas
 transformacijas Beno kubito $k_3$ būsena šioje trijų kubitų
@@ -218,10 +228,10 @@ Pagal tai, kurią kombinaciją Agnė aptiks savo kubituose
 $|k_1 k_2 \rangle$, tai automatiškai turės įtakos,
 kokia bus galutinė Beno kubito $|k_3 \rangle$ būsena:
 \begin{align}
-|k_1 k_2\rangle = & |00\rangle\rightarrow |k_3 \rangle = a|0\rangle + b|1\rangle\,; \\
-|k_1 k_2\rangle = & |10\rangle\rightarrow |k_3 \rangle = a|0\rangle - b|1\rangle\,; \\
-|k_1 k_2\rangle = & |01\rangle\rightarrow |k_3 \rangle = b|0\rangle + a|1\rangle\,; \\
-|k_1 k_2\rangle = & |11\rangle\rightarrow |k_3\rangle = - b|0\rangle + a|1\rangle\,.
+|k_1 k_2\rangle = & |00\rangle\rightarrow |k_3 \rangle = a|0\rangle + b|1\rangle\,;(\#eq:busna-po-matavimo-1) \\
+|k_1 k_2\rangle = & |10\rangle\rightarrow |k_3 \rangle = a|0\rangle - b|1\rangle\,;(\#eq:busna-po-matavimo-2) \\
+|k_1 k_2\rangle = & |01\rangle\rightarrow |k_3 \rangle = b|0\rangle + a|1\rangle\,;(\#eq:busna-po-matavimo-3) \\
+|k_1 k_2\rangle = & |11\rangle\rightarrow |k_3\rangle = - b|0\rangle + a|1\rangle\,.(\#eq:busna-po-matavimo-4)
 \end{align}
 Norėdama užbaigti teleportaciją, Agnė klasikiniu kanalu nusiunčia du
 bitus informacijos Benui pranešti, kokį rezultatą gavo. Jeigu ji rado
@@ -274,15 +284,13 @@ ir klasikinių ryšių kanalo. Teleportacijos metodas gali būti naudojamas
 persiųsti ne vien pavienių kubitų būsenoms, bet ir sudėtinėms kubitų
 supintosioms kvantinėms būsenoms.
 
-![](./media/image5_2.png)
-
-**5.2 pav.** Loginė grandinė, realizuojanti kvantinę teleportaciją.
-Paskutiniame žingsnyje kubitui $k_3$ pritaikomi sąlyginiai Pauli loginiai vartai,
-kontroliuojami klasikinio registro, kurio būseną nulemia pirmų dviejų kubitų matavimo rezultatai
+```{r kvantine-teleportacija-2, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti kvantinę teleportaciją.  Paskutiniame žingsnyje kubitui $k_3$ pritaikomi sąlyginiai Pauli loginiai vartai, kontroliuojami klasikinio registro, kurio būseną nulemia pirmų dviejų kubitų matavimo rezultatai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_2.png")
+```
 
 Teleportaciją galime atlikti ir
 kvantiniame procesoriuje tarp kubitų. Vienas būdas tai užrašyti
-loginiais vartais yra parodytas 5.2 pav. Matome Agnės kubitą $k_1$
+loginiais vartais yra parodytas \@ref(fig:kvantine-teleportacija-2) pav. Matome Agnės kubitą $k_1$
 pradinėje $|\psi\rangle$ būsenoje,
 $|\chi^{+}\rangle$ Belo būsenos generavimą tarp $k_2$
 ir $k_3$, bei Belo matavimą. Pagal 2 bitų kombinaciją, gautą atlikus
@@ -301,12 +309,9 @@ Belo būsenos, atliekančios svarbią rolę kvantiniuose ryšiuose, jų
 generatorius įprasta vadinti EPR šaltiniais (angl. *EPR source*,
 trumpinys nuo *Einstein-Podolsky-Rosen*).
 
-![](./media/image5_3.png)
-
-**5.3 pav.** Kvantinio supynimo sukeitimo protokolo iliustracija.
-Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$ ir $(k_3 , k_4)$
-yra panaudojamos sukurti Belo būsenai tarp potencialiai nutolusių kubitų
-$(k_1 , k_4)$ pasitelkiant tarpinį kubitų $(k_2 , k_3 )$ Belo matavimą
+```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_3.png")
+```
 
 Kvantinio supynimo sukeitimas praktiškai
 pritaikomas kvantiniuose tinkluose, nes gali atlikti **signalo kartotuvo
@@ -314,7 +319,7 @@ funkciją** (angl. *quantum repeater*). Norint išvengti signalo sumenkimo
 nuostolių ir padidinti atstumą tarp kvantinės komunikacijos galutinių
 taškų, viena išeitis yra pastatyti tarpinius signalo kartotuvus. Gavę
 supintus kubitus iš nutolusių EPR šaltinių kartotuvai atlieka supynimo
-sukeitimą (žr. 5.3 pav.). Tai leidžia efektyviai padidinti kvantinio
+sukeitimą (žr. \@ref(fig:kvantinio-supynimo-sukeitimas) pav.). Tai leidžia efektyviai padidinti kvantinio
 ryšio atstumą ir realizuoti teleportaciją ar kitus protokolus,
 naudojančius supintąsias būsenas.
 
@@ -332,6 +337,7 @@ Bendrą pradinę 4 kubitų būseną galime užrašyti taip:
 = \frac{1}{\sqrt{2}}\Big\lbrack\big(|00\rangle + |11\rangle\big)\otimes\big(|00\rangle + |11\rangle\big)\Big\rbrack \\
 = & \frac{1}{2}\big\lbrack |0000\rangle + |0011\rangle + |1100\rangle + |1111\rangle\big\rbrack\,.
 \end{aligned}
+(\#eq:pradine-4-busena)
 \end{equation}
 Superpozicijos būsenose kubitai sunumeruoti
 $|k_1 k_2 k_3 k_4 \rangle$. Agnės kubitas $k_1$ yra
@@ -343,11 +349,13 @@ būseną $|\Psi'\rangle$:
 \begin{equation}
 |\Psi'\rangle = (I\otimes cX_{23}\otimes I)|\Psi\rangle =
 \frac{1}{2}\big\lbrack |0000\rangle + |0011\rangle + |1110\rangle + |1101\rangle\big\rbrack\,.
+(\#eq:cx-2-3-busena)
 \end{equation}
 Kitame žingsnyje Benas atlieka Hadamardo transformaciją savo kubitui
 $k_2$:
 \begin{equation}
 |\Psi''\rangle = (I\otimes I\otimes H\otimes I)|\Psi'\rangle\,.
+(\#eq:h-k2-busena)
 \end{equation}
 Norėdami lengviau pamatyti rezultatą, sugrupuosime narius
 $|\Psi''\rangle$ skliausteliuose:
@@ -360,6 +368,7 @@ $|\Psi''\rangle$ skliausteliuose:
 - |1\rangle\otimes |10\rangle\otimes |1\rangle\big) \\
 + \big(|0\rangle\otimes |11\rangle\otimes |1\rangle
 - |1\rangle\otimes |11\rangle\otimes |0\rangle\big)\Big\rbrack\,.
+(\#eq:busena-sugrupavimas-4)
 \end{multline}
 Kiekvienoje šios superpozicijos būsenoje 4 kubitai yra užrašyti šia
 forma
@@ -370,10 +379,10 @@ lygiomis 0.25 tikimybėmis. Matome, kad pagal jo rastą kubitų būseną
 galutinė Agnės ir Citos kubitų būsena
 $|k_1 k_4 \rangle$ pasikeičia:
 \begin{align}
-|k_2 k_3 \rangle = & |00\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big) = |\chi^{+}\rangle\,;\\
-|k_2 k_3 \rangle = & |01\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big) = |\eta^{+}\rangle\,;\\
-|k_2 k_3 \rangle = & |10\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big) = |\chi^{-}\rangle\,;\\
-|k_2 k_3 \rangle = & |11\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big) = |\eta^{-}\rangle\,.\\
+|k_2 k_3 \rangle = & |00\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big) = |\chi^{+}\rangle\,;(\#eq:k1k4-pasikeitimas-1)\\
+|k_2 k_3 \rangle = & |01\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big) = |\eta^{+}\rangle\,;(\#eq:k1k4-pasikeitimas-2)\\
+|k_2 k_3 \rangle = & |10\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big) = |\chi^{-}\rangle\,;(\#eq:k1k4-pasikeitimas-3)\\
+|k_2 k_3 \rangle = & |11\rangle\rightarrow |k_1 k_4 \rangle = \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big) = |\eta^{-}\rangle\,.(\#eq:k1k4-pasikeitimas-4)
 \end{align}
 Agnės ir Citos kubitai $|k_1 k_4 \rangle$ visais
 atvejais lieka vienoje iš supintųjų Belo būsenų. Benas matavimo
@@ -385,12 +394,12 @@ Atkreipiame dėmesį, kad šio proceso metu kvantiniai supynimai tarp Agnės
 ir Beno kubitų poros $k_1$ ir $k_2$, taip pat Beno ir Citos kubitų
 $k_3$ ir $k_4$ yra panaikinami.
 
-![](./media/image5_4.png)
-
-**5.4 pav.** Kvantinio supynimo sukeitimo realizacija loginėje grandinėje
+```{r kvantinio-supynimo-sukeitimas-2, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo realizacija loginėje grandinėje.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_4.png")
+```
 
 Kvantinė grandinė, atliekanti supynimo sukeitimo algoritmą, yra
-pavaizduota 5.4 pav. Grandinės pabaigoje įdėti klasiškai kontroliuojami
+pavaizduota \@ref(fig:kvantinio-supynimo-sukeitimas-2) pav. Grandinės pabaigoje įdėti klasiškai kontroliuojami
 loginiai vartai, atliekantys $k_4$ kubito transformaciją. Ši
 transformacija leidžia pakeisti Agnės ir Citos supintąją būseną į bet
 kurią kitą Belo būseną. Kaip matysime vėliau šiame skyriuje, pakanka
@@ -484,10 +493,10 @@ $|1_x \rangle$}. Taip Agnė nusiunčia Benui $4n$ kubitų
 $|\psi_{ab}\rangle$, kurių kiekvienas yra vienoje iš šių
 būsenų:
 \begin{align}
-|\psi_{00}\rangle = & |0\rangle\,; \\
-|\psi_{10}\rangle = & |1\rangle\,; \\
-|\psi_{01}\rangle = & |0_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\,; \\
-|\psi_{11}\rangle = & |1_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - |1\rangle\big)\,.
+|\psi_{00}\rangle = & |0\rangle\,;(\#eq:psi-00-bb84) \\
+|\psi_{10}\rangle = & |1\rangle\,;(\#eq:psi-10-bb84) \\
+|\psi_{01}\rangle = & |0_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\,;(\#eq:psi-01-bb84) \\
+|\psi_{11}\rangle = & |1_x \rangle = \frac{1}{\sqrt{2}}\big(|0\rangle - |1\rangle\big)\,.(\#eq:psi-11-bb84)
 \end{align}
 Gavęs kubitus Benas neturi informacijos, kokiose būsenose jie yra. Benas
 imasi atlikti kubitų būsenų matavimus ir atsitiktiniu būdu pasirenka
@@ -536,11 +545,11 @@ palygina, ar jie sutampa. Jeigu priimtinas bitų skaičius sutampa, jiedu
 užbaigia rakto apsikeitimo protokolą ir gali saugiai naudoti likusius
 $n$ bitų šifruoti ryšių turiniui.
 
-![](./media/image5_5.png)
+```{r bb84-iliustracija, echo=FALSE, fig.cap="BB84 protokolo iliustracija.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_5.png")
+```
 
-**5.5 pav.** BB84 protokolo iliustracija
-
-Panagrinėkime BB84 protokolo (žr. 5.5 pav.) saugumą. Pirmiausia,
+Panagrinėkime BB84 protokolo (žr. \@ref(fig:bb84-iliustracija) pav.) saugumą. Pirmiausia,
 uždraustojo kvantinių būsenų kopijavimo teorema garantuoja, kad Evelina
 negali patikimai kopijuoti Agnės siunčiamų kubitų. Jeigu tai būtų
 įmanoma, turėdama siunčiamų kubitų būsenų kopijas ir perėmus $b_A$ ir
@@ -550,10 +559,10 @@ kubitų kopijavimą naudodama $cX$ vartus. Jos pradinės kubitų būsenos yra
 $|0\rangle$, o po $cX$ vartų ji toliau persiunčia Agnės
 kubitus Benui. Po šios transformacijos 2-kubitų būsenos yra:
 \begin{align}
-cX|\psi_{00}\rangle = & |00\rangle\,; \\
-cX|\psi_{10}\rangle = & |11\rangle\,; \\
-cX|\psi_{01}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,; \\
-cX|\psi_{11}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,.
+cX|\psi_{00}\rangle = & |00\rangle\,;(\#eq:cx-psi-00-bb84) \\
+cX|\psi_{10}\rangle = & |11\rangle\,;(\#eq:cx-psi-10-bb84) \\
+cX|\psi_{01}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,;(\#eq:cx-psi-01-bb84) \\
+cX|\psi_{11}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,.(\#eq:cx-psi-11-bb84)
 \end{align}
 Evelina laukia, kol Benas atliks kubitų matavimą, galiausiai tai
 paveikia ir jos kubitų būseną. Toliau ji perima Agnės ir Beno klasikinę
@@ -578,6 +587,7 @@ transformaciją:
 = & \frac{1}{\sqrt{2}}\Big\lbrack |0\rangle\otimes\big(|0\rangle + |1\rangle)
 + |1\rangle\otimes\big(|0\rangle - |1\rangle\big)\Big\rbrack\,.
 \end{aligned}
+(\#eq:h-psi01-bb84)
 \end{equation}
 Antroje eilutėje pergrupavome narius, norėdami parodyti, kad yra 0.5
 tikimybė, jog Benas atlikdamas matavimus ras
@@ -615,11 +625,11 @@ dideliam bitų nesutapimui.
 
 ### EPR kvantinis rakto pasidalijimo protokolas
 
-![](./media/image5_6.png)
+```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image5_6.png")
+```
 
-**5.6 pav.** EPR protokolo iliustracija 
-
-EPR protokolas (žr. 5.6 pav.) yra dauguma aspektų panašus į BB84, tačiau
+EPR protokolas (žr. \@ref(fig:epr-rakto-iliustracija) pav.) yra dauguma aspektų panašus į BB84, tačiau
 tarp Agnės ir Beno nėra tiesioginio kvantinio ryšio kanalo. Vietoj jo
 naudojamas EPR šaltinis, paskirstantis tarp jų supintuosius kubitus. EPR
 protokole šis šaltinis paruošia $4n$ supintąsias
@@ -628,11 +638,12 @@ nusiunčia po vieną kubitą Agnei ir Benui. Pradžioje jie abu turi po $4n$
 supintųjų kubitų, kurių kiekvienas yra būsenoje:
 \begin{equation}
 |\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,.
+(\#eq:chi-plus-epr)
 \end{equation}
 Agnė ir Benas atsitiktiniu būdu pasirenka išmatuoti savo visus turimus
 kubitus santykinai su Pauli-$Z$ arba Pauli-$X$ baziniais vektoriais.
 Taip jie sugeneruoja bitų sekas {$a_A$, $b_A$} ir {$a_B$, $b_B$};
-čia *b* bitas nusako, ar buvo pasirinktas Pauli-$Z$ (0) ar Pauli-$X$ (1)
+čia $b$ bitas nusako, ar buvo pasirinktas Pauli-$Z$ (0) ar Pauli-$X$ (1)
 matavimas, o $a$ bitas nusako gautą rezultatą (0 arba 1). Iš to matome,
 kad jeigu Agnės ir Beno atsitiktiniai matavimo būdo pasirinkimai sutapo,
 šių kubitų porų būsenas jie visada ras vienodas, ir todėl jų atitinkami
@@ -649,6 +660,7 @@ H\otimes H|\chi^{+}\rangle
 = & \frac{1}{\sqrt{2}}\big\lbrack|0\rangle\otimes |0\rangle
 + |1\rangle\otimes |1\rangle\big\rbrack\,.
 \end{aligned}
+(\#eq:h-h-chi-plus)
 \end{equation}
 Matome, kad Pauli-$X$ matavimuose taip pat yra ideali
 koreliacija tarp dviejų kubitų būsenų, tad atlikus norimus matavimus jų
@@ -658,7 +670,6 @@ ir pasilieka tuos $2n$ rakto bitų, kuriems šifravimo bitai sutapo,
 $a_A = a_B$. Galiausiai jiedu atsitiktinai pasirenka iš turimų $2n$
 rakto bitų $n$ bitų ir palygina, ar jie sutampa, siekdami įvertinti, ar
 ryšys patikimas.
-
 
 Šiuo atveju Evelina gali pabandyti įsiterpti perimdama abu kubitus
 poroje, skirtus Agnei ir Benui. Evelina atlieka kubitų būsenų matavimą
@@ -691,6 +702,7 @@ Belo būsena $|\psi\rangle$, kuri, tikimasi, turėtų būti
 ir EPR šaltinio sugeneruota. Vienas būdas tai apskaičiuoti:
 \begin{equation}
 F\lbrack\rho ,|\psi\rangle\rbrack = \sqrt{\langle\psi |\rho |\psi\rangle}\,.
+(\#eq:fidelity-apibrezimas)
 \end{equation}
 Tikslumas $F$ nusako būsenų persiklojimą ir yra apibrėžtas intervale
 $0 \leq F \leq 1$. $F = 0$ reiškia, kad būsenos yra ortogonaliosios
@@ -720,9 +732,9 @@ trumpinys LOCC). Toliau aptarkime, kokias LOCC operacijas Agnė ir Benas
 gali atlikti norėdami patikrinti keturias Belo būsenas:
 \begin{align}
 |\chi^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\,,\quad
-|\chi^{-}\rangle =   \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,;\\
+|\chi^{-}\rangle =   \frac{1}{\sqrt{2}}\big(|00\rangle - |11\rangle\big)\,;(\#eq:loc-belo-1)\\
 |\eta^{+}\rangle = & \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big)\,,\quad
-|\eta^{-}\rangle =   \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big)\,.
+|\eta^{-}\rangle =   \frac{1}{\sqrt{2}}\big(|01\rangle - |10\rangle\big)\,.(\#eq:loc-belo-2)
 \end{align}
 Kaip ir skaičiuojamieji 2 kubitų baziniai vektoriai
 {$|00\rangle$, $|01\rangle$,
@@ -981,14 +993,12 @@ kurios yra $A_1 , A_2 , B_1 , B_2$ sistemos savybių atitikmuo.
 dideli, užtikrinant, kad gauti poliarizacijos rezultatai negali paveikti
 vienas kito. Kiekvienam bandymui Agnė savo detektoriuje atsitiktiniu
 būdu pasirenka kampą $\alpha_1$ arba $\alpha_2$, o Benas $\beta_1$
-arba $\beta_2$. 5.7 pav. iliustruojame dvi tokias detektorių
+arba $\beta_2$. \@ref(fig:pasukti-detektoriai) pav. iliustruojame dvi tokias detektorių
 konfigūracijas, pasuktas kampu $\alpha$ ir $\beta$:
 
-![](./media/image5_7.png)
-
-**5.7 pav.** Koordinačių sistemos pasukimas kampais $\alpha$ ir $\beta$
-pradinės koordinačių sistemos atžvilgiu.
-Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis
+```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis.", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image5_7.png")
+```
 
 Matome, kad poliarizacijos matavimai Agnės ir Beno detektoriuose yra
 pasukami pagal laikrodžio rodyklę nurodytais kampais vertikalios ašies
