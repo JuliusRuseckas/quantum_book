@@ -780,9 +780,9 @@ lyginumo ir fazės bitus kartu. Apačioje pateikiame lyginumo ir fazės
 bitų keitimo transformacijas pirmam kubitui
 $|\chi^{+}\rangle$ būsenoje:
 \begin{align}
-(X\otimes I)|\chi^{+}\rangle = &            |\eta^{+}\rangle\,; \\
-(Y\otimes I)|\chi^{+}\rangle = & -\mathrm{i}|\eta^{-}\rangle\,; \\
-(Z\otimes I)|\chi^{+}\rangle = &            |\chi^{-}\rangle\,.
+(X\otimes I)|\chi^{+}\rangle = &            |\eta^{+}\rangle\,;(\#eq:keitmas-pirmam-kubitui-1) \\
+(Y\otimes I)|\chi^{+}\rangle = & -\mathrm{i}|\eta^{-}\rangle\,;(\#eq:keitmas-pirmam-kubitui-2) \\
+(Z\otimes I)|\chi^{+}\rangle = &            |\chi^{-}\rangle\,.(\#eq:keitmas-pirmam-kubitui-3)
 \end{align}
 Primename, kad globali būsenos fazė nėra svarbi, tad
 $-\mathrm{i}|\eta^{-}\rangle$ ir
@@ -830,9 +830,9 @@ būsenas. Pauli-$X$ matavimas atliekamas pirmiausia pritaikius abiems
 kubitams Hadamardo vartus:
 \begin{align}
 (H\otimes H)|\chi^{+}\rangle = & \frac{1}{\sqrt{2}}\big\lbrack|0\rangle\otimes |0\rangle
-+ |1\rangle\otimes |1\rangle\big\rbrack\,;\\
++ |1\rangle\otimes |1\rangle\big\rbrack\,;(\#eq:h-abiems-kubitams-1)\\
 (H\otimes H)|\chi^{-}\rangle = & \frac{1}{\sqrt{2}}\big\lbrack|0\rangle\otimes |1\rangle
-+ |1\rangle\otimes |0\rangle\big\rbrack\,.
++ |1\rangle\otimes |0\rangle\big\rbrack\,.(\#eq:h-abiems-kubitams-2)
 \end{align}
 Tada atlikę įprastą Pauli-$Z$ matavimą matome, kad
 $|\chi^{+}\rangle$ ir $|\chi^{-}\rangle$
@@ -862,10 +862,10 @@ tikriniai vektoriai:
 \begin{align}
 \bar{X}|\chi^{\pm}\rangle = & \pm |\chi^{\pm}\rangle\,,\quad
 \bar{Y}|\chi^{\pm}\rangle =   \mp |\chi^{\pm}\rangle\,,\quad
-\bar{Z}|\chi^{\pm}\rangle =       |\chi^{\pm}\rangle\,; \\
+\bar{Z}|\chi^{\pm}\rangle =       |\chi^{\pm}\rangle\,;(\#eq:belo-busenos-kaip-tikriniai-1)\\
 \bar{X}|\eta^{\pm}\rangle = & \pm |\eta^{\pm}\rangle\,,\quad
 \bar{Y}|\eta^{\pm}\rangle =   \pm |\eta^{\pm}\rangle\,,\quad
-\bar{Z}|\eta^{\pm}\rangle =      -|\eta^{\pm}\rangle\,.
+\bar{Z}|\eta^{\pm}\rangle =      -|\eta^{\pm}\rangle\,.(\#eq:belo-busenos-kaip-tikriniai-2)
 \end{align}
 Trys operatoriai $\bar{X}, \bar{Y}$ ir $\bar{Z}$ yra
 tarpusavyje komutatyvūs, todėl atlikus $\bar{X}$ ir $\bar{Z}$
@@ -939,6 +939,7 @@ paruoštos vienos atskiros serijos galimus atsakymus. Tam sudėsime tris
 pirmus narius bei atimsime paskutinįjį:
 \begin{equation}
 C = A_1 B_1 + A_2 B_1 + A_1 B_2 - A_2 B_2 = (A_1 + A_2)B_1 + (A_1 - A_2)B_2\,.
+(\#eq:belo-nelygybe-c)
 \end{equation}
 Matome, kad jeigu $A_1$ ir $A_2$ vertės yra skirtingos, gausime
 $A_1 + A_2 = 0$ ir $A_1 - A_2 = \pm 2$. Tačiau, jeigu jos yra
@@ -953,6 +954,7 @@ $\langle C\rangle = \langle A_1 B_1 \rangle + \langle A_2 B_1 \rangle
 gauname CHSH nelygybę:
 \begin{equation}
 |\langle A_1 B_1 \rangle + \langle A_2 B_1 \rangle + \langle A_1 B_2 \rangle - \langle A_2 B_2 \rangle| \leq 2\,.
+(\#eq:chsh-nelygybe)
 \end{equation}
 Agnė ir Benas, po daugelio matavimų radę individualius vidurkius
 $\langle A_i B_j \rangle,$ gali įvertinti, ar koreliacijos
@@ -985,6 +987,7 @@ $|0\rangle\rightarrow |V\rangle$,
 $|1\rangle\rightarrow |H\rangle$:
 \begin{equation}
 |\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|VV\rangle + |HH\rangle\big)\,.
+(\#eq:poliarizaciju-superpozicija)
 \end{equation}
 Siekdami patikrinti CHSH nelygybę, Agnė ir
 Benas taiko keturias detektorių poliarizacijos matavimo konfigūracijas,
@@ -1009,16 +1012,17 @@ poliarizacijos būsenos, pasuktos kampu $\alpha$ pradinių būsenų
 $|V\rangle$ ir $|H\rangle$ atžvilgiu yra
 lengvai randamos:
 \begin{align}
-|V^{\alpha}\rangle = &  \cos(\alpha)|V\rangle + \sin(\alpha)|H\rangle\,; \\
-|H^{\alpha}\rangle = & -\sin(\alpha)|V\rangle + \cos(\alpha)|H\rangle\,.
+|V^{\alpha}\rangle = &  \cos(\alpha)|V\rangle + \sin(\alpha)|H\rangle\,;(\#eq:vertikali-alpha) \\
+|H^{\alpha}\rangle = & -\sin(\alpha)|V\rangle + \cos(\alpha)|H\rangle\,.(\#eq:horizontali-alpha)
 \end{align}
 Tada ermitinis operatorius $P(\alpha)$, nusakantis poliarizacijos
 dydžius išilgai naujų, pasuktų kampu $\alpha$ ašių, išreikštas
 spektrinėje dekompozicijoje, yra:
 \begin{equation}
 P(\alpha) = |V^{\alpha}\rangle\langle V^{\alpha}| - |H^{\alpha}\rangle\langle H^{\alpha}|\,.
+(\#eq:p-alpha)
 \end{equation}
-Lygtyje 5.49
+Lygtyje \@ref(eq:p-alpha)
 $|V^{\alpha}\rangle\langle V^{\alpha}|$
 ir
 $|H^{\alpha}\rangle\langle H^{\alpha}|$
@@ -1037,12 +1041,14 @@ $\langle AB\rangle$ koreliacijų koeficientus skirtingose
 fotonų matavimo konfigūracijose apskaičiuojame:
 \begin{equation}
 \langle\alpha\beta\rangle = \langle\chi^{+}|P(\alpha)\otimes P(\beta)|\chi^{+}\rangle\,.
+(\#eq:alpha-beta-koreliacija)
 \end{equation}
 Panaudoję viršuje išreikštus $P(\alpha)$ ir atlikę šiek tiek algebros
 veiksmų randame, kad dviejų matavimų tikrinių verčių sandaugos vidurkis
 priklauso tik nuo skirtumo tarp detektorių pasukimo kampų:
 \begin{equation}
 \langle\alpha\beta\rangle = \cos\lbrack 2(\alpha - \beta)\rbrack\,.
+(\#eq:alpha-beta-koreliacija-2)
 \end{equation}
 Fotoninėse Belo būsenose CHSH nelygybė yra pažeidžiama didžiausia verte,
 kai skirtumai tarp kampų keturiose konfigūracijose skiriasi $22.5^{\circ}$
@@ -1055,6 +1061,7 @@ randame $|\langle C \rangle$\|:
 \begin{equation}
 |\langle\alpha_1 \beta_1 \rangle + \langle\alpha_2 \beta_1 \rangle
 + \langle\alpha_1 \beta_2 \rangle - \langle\alpha_2 \beta_2 \rangle | = 2\sqrt{2}\,.
+(\#eq:alpha-beta-koreliacija-max)
 \end{equation}
 Akivaizdu, kad CHSH nelygybė, $|\langle C\rangle| \leq 2$,
 nėra tenkinama supintosiose kvantinėse sistemose. Tai parodo, kad CHSH
