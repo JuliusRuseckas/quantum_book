@@ -1,4 +1,4 @@
-# Kvantiniai loginiai vartai ir grandinės
+# Kvantiniai loginiai vartai ir grandinės {#kvantiniai-loginiai-vartai-grandines}
 
 ## Vieno kubito loginiai vartai
 
