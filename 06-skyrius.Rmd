@@ -617,6 +617,7 @@ skaičiuojamaisias baziniais vektoriais, bet kitomis amplitudėmis
 $c_x$:
 \begin{equation}
 |\phi\rangle = \sum_{x = 0}^{2^{n - 1}} c_x|x\rangle\,.
+(\#eq:phi-busena-grover)
 \end{equation}
 Kadangi pradinėje $|\psi\rangle$ būsenoje visos
 amplitudės yra realieji skaičiai, o $V$ ir $G$ operacijos jas tokias
@@ -628,6 +629,7 @@ $\langle\psi |\phi\rangle$:
 \begin{equation}
 \langle\psi |\phi\rangle = \frac{1}{\sqrt{2^n}}\sum_{x',x = 0}^{2^{n - 1}} c_x\langle x'|x\rangle
 = \frac{\sqrt{2^n}}{2^n}\sum_{x = 0}^{2^{n - 1}} c_x = \sqrt{2^n} \bar{c}_x\,.
+(\#eq:vidine-sandauga-psi-phi)
 \end{equation}
 Pirmoje eilutėje vidinių sandaugų suma yra atliekama su
 $|\psi\rangle$ ir $|\phi\rangle$
@@ -640,11 +642,13 @@ panaikinamas vienas suminis indeksas. Antroje dalyje identifikavome
 $\bar{c}_x$, nusakantį visų $2^n$ amplitudžių $c_x$ vidurkį:
 \begin{equation}
 \bar{c}_x = \frac{1}{2^n}\sum_{x = 0}^{2^{n - 1}} c_x\,.
+(\#eq:bar-cx-israiska)
 \end{equation}
 Dabar galima rasti $G|\phi\rangle$:
 \begin{equation}
 G|\phi\rangle = 2\left(\sum_{x = 0}^{2^{n - 1}}|x\rangle\right)\bar{c}_x - \sum_{x = 0}^{2^{n - 1}} c_x|x\rangle
 = \sum_{x = 0}^{2^{n - 1}} (2\bar{c}_x - c_x)|x\rangle\,.
+(\#eq:G-phi-grover)
 \end{equation}
 Palyginę su $|\phi \rangle$ būsena matome, kad jai
 pritaikius $G$ operatorių visos amplitudės pakeičiamos
@@ -663,13 +667,11 @@ pridedamas vidurkis, padaugintas iš dviejų,
 $2\bar{c}_x + 1/\sqrt{2^n}$. Tačiau visų likusių būsenų
 amplitudės sumažėja, nes jų amplitudės yra atimamos iš sumažėjusio
 vidurkio (padauginto iš dviejų). Pirmos iteracijos žingsniai iliustruoti
-6.4 pav.
+\@ref(fig:busenu-amplitudziu-pokytis) pav.
 
-![](./media/image6_4.png)
-
-**6.4 pav.** Būsenų $|x\rangle$ amplitudžių $c_x$ pokytis pirmos Groverio iteracijos $GV$ metu.
-Ieškomosios būsenos $|d\rangle$ amplitudė žymima $d$, visų būsenų amplitudžių vidurkis
-$\bar{c}_x$ nurodytas brūkšniuota linija
+```{r busenu-amplitudziu-pokytis, echo=FALSE, fig.cap="Būsenų $|x\\rangle$ amplitudžių $c_x$ pokytis pirmos Groverio iteracijos $GV$ metu.  Ieškomosios būsenos $|d\\rangle$ amplitudė žymima $d$, visų būsenų amplitudžių vidurkis $\\bar{c}_x$ nurodytas brūkšniuota linija.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_4.png")
+```
 
 Antrosios iteracijos pirmame žingsnyje
 $VGV|\psi\rangle$, būsenos $|d\rangle$
@@ -693,13 +695,13 @@ tai pamatyti, transformaciją $V$ pradinei būsenai
 $|\psi\rangle$ bei ieškomajai
 $|d\rangle$ perteikiame taip:
 \begin{align}
-V|\psi\rangle = & |\psi\rangle - \frac{2}{\sqrt{2^n}}|d\rangle\,; \\
-V|d\rangle = & -|d\rangle\,.
+V|\psi\rangle = & |\psi\rangle - \frac{2}{\sqrt{2^n}}|d\rangle\,;(\#eq:v-psi-grover) \\
+V|d\rangle = & -|d\rangle\,.(\#eq:v-d-grover)
 \end{align}
 Operatoriaus $G$ efektas:
 \begin{align}
-G|\psi\rangle = & |\psi\rangle\,; \\
-G|d\rangle = & \frac{2}{\sqrt{2^n}}|\psi\rangle - |d\rangle\,.
+G|\psi\rangle = & |\psi\rangle\,;(\#eq:g-psi-grover) \\
+G|d\rangle = & \frac{2}{\sqrt{2^n}}|\psi\rangle - |d\rangle\,.(\#eq:g-d-grover)
 \end{align}
 Matome, kad individualūs $V$ ir $G$ (todėl ir bendra $GV$), veikdami
 $|\psi\rangle$ ir $|d\rangle$, sukuria
@@ -721,6 +723,7 @@ Taigi bendrą būseną $|\phi\rangle$ šioje 2 dimensijų
 plokštumoje galima išreikšti ir taip:
 \begin{equation}
 |\phi\rangle = \sin(\theta)|d\rangle + \cos(\theta)|d_{\bot}\rangle\,.
+(\#eq:busena-plokstumoje-grover)
 \end{equation}
 Groverio algoritme $GV$ iteracijos atlieka registro būseną nusakančio
 vektoriaus $|\phi\rangle$ posūkį link
@@ -786,6 +789,7 @@ komponentus:
 = 2|\psi\rangle\langle\psi |\phi\rangle - |\phi\rangle \\
 = & \big(2|\psi\rangle\langle\psi| - I\big)|\phi\rangle\,.
 \end{aligned}
+(\#eq:atimti-statmeni-komponentai)
 \end{equation}
 Paskutinėje eilutėje atpažįstame skliausteliuose $G$ operatorių, tai
 patvirtina atspindžio efektą. Tad $GV$ iteracija pritaiko du atspindžius
@@ -793,18 +797,13 @@ arba, kitaip tariant, du vektorių pasukimus, vieną apie
 $|d_{\bot}\rangle$ ašį ir kitą apie
 $|\psi\rangle$.
 
-![](./media/image6_5.png)
-
-**6.5 pav.** Geometrinė Groverio algoritmo iliustracija.
-Pradinės registro būsenos (vektoriaus) $|\psi\rangle$ pasukimas vienos
-iteracijos *GV* metu link ieškomosios būsenos $|d\rangle$.
-Ieškomoji būsena, kartu su jai statmena $|d_{\bot}\rangle$, apibūdina
-2 dimensijų realų poerdvį (plokštumą) visoje $2^n$ dimensijų kubitų
-registro būsenų erdvėje
+```{r geometrine-grover-iliustracija, echo=FALSE, fig.cap="Geometrinė Groverio algoritmo iliustracija.  Pradinės registro būsenos (vektoriaus) $|\\psi\\rangle$ pasukimas vienos iteracijos $GV$ metu link ieškomosios būsenos $|d\\rangle$.  Ieškomoji būsena, kartu su jai statmena $|d_{\\bot}\\rangle$, apibūdina 2 dimensijų realų poerdvį (plokštumą) visoje $2^n$ dimensijų kubitų registro būsenų erdvėje.", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image6_5.png")
+```
 
 Pradedant algoritmą ir atlikus
 $V|\psi\rangle$, $|\psi\rangle$ yra
-pasukamas $2\theta$ kampu pagal laikrodžio rodyklę (žr. 6.5 pav.).
+pasukamas $2\theta$ kampu pagal laikrodžio rodyklę (žr. \@ref(fig:geometrine-grover-iliustracija) pav.).
 Toliau pritaikius $G$ šiai būsenai, ji yra dar kartą atspindima, šį
 kartą apie $|\psi\rangle$, todėl vektorius pasukamas
 prieš laikrodžio rodyklę. Kadangi kampas tarp
@@ -842,6 +841,7 @@ V = \begin{bmatrix}
 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
 \end{bmatrix}\,.
+(\#eq:orakulo-funkcija-8)
 \end{equation}
 Naudosime dvejetainę sistemą siekdami aiškiau iliustruoti orakulo
 funkcijos efektą. Tiesiogiai pritaikę orakulo funkciją
@@ -850,21 +850,21 @@ pakeičiančią ieškomosios būsenos
 $|d\rangle\  = |101\rangle$ fazę,
 randame:
 \begin{equation}
-V|\psi\rangle = \frac{|000\rangle + |001\rangle + |010\rangle + |011\rangle + |100\rangle - |101\rangle + |110\rangle + |111\rangle}{\sqrt{8}}\,.
+V|\psi\rangle = \frac{|000\rangle + |001\rangle + |010\rangle
++ |011\rangle + |100\rangle - |101\rangle
++ |110\rangle + |111\rangle}{\sqrt{8}}\,.
+(\#eq:v-psi-8)
 \end{equation}
 
-![](./media/image6_6.png)
-
-**6.6 pav.** Visos galimos 3 kubitų registro orakulo funkcijas ($V$ operatorių)
-realizuojančios loginės grandinės, atskirtos viena nuo kitos brūkšniuota linija.
-Viršuje pažymėtos būsenos, kurioms atitinkama grandinė pritaiko santykinę fazę
+```{r orakulo-funkcijas-realizuojancios-grandines, echo=FALSE, fig.cap="Visos galimos 3 kubitų registro orakulo funkcijas ($V$ operatorių) realizuojančios loginės grandinės, atskirtos viena nuo kitos brūkšniuota linija.  Viršuje pažymėtos būsenos, kurioms atitinkama grandinė pritaiko santykinę fazę.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_6.png")
+```
 
 Visos įmanomos 3 kubitų orakulo funkcijos,
 atliekančios diagonaliąją transformaciją ir pažyminčios vieną
-skaičiuojamąjį bazinį vektorių iš 8 skirtingų, yra iliustruotos 6.6 pav.
+skaičiuojamąjį bazinį vektorių iš 8 skirtingų, yra iliustruotos \@ref(fig:orakulo-funkcijas-realizuojancios-grandines) pav.
 loginiais vartais. Juose 3 kubitų loginiai vartai gali būti perteikti,
-pavyzdžiui, Tofoli vartų dekompozicijos metodu, parodytu IV skyriuje.
-
+pavyzdžiui, Tofoli vartų dekompozicijos metodu, parodytu \@ref(kvantiniai-loginiai-vartai-grandines) skyriuje.
 
 Operatoriaus
 $G = 2|\psi\rangle\langle \psi| - I$
@@ -874,6 +874,7 @@ tad $G$, veikiantis 3 kubitų registrą, užrašomas taip:
 \begin{equation}
 G = 2H^{\otimes 3}|000\rangle\langle 000|H^{\otimes 3} - I
 = H^{\otimes 3}\big(2|000\rangle\langle 000| - I\big)H^{\otimes 3}\,.
+(\#eq:g-3-kubitai)
 \end{equation}
 6.45 eilutėje panaudojome
 $(H^{\otimes 3})^{\dagger} = H^{\otimes 3}$ ir
@@ -888,17 +889,18 @@ $(2|000\rangle\langle 000| - I ) \rightarrow - (I - 2|000\rangle\langle 000|)$,
 faktorizuojant globalią (neturinčią įtakos) fazę. Šioje formoje minuso
 ženklas priskiriamas $|000\rangle$ būsenai, o ne visoms
 likusioms būsenoms. Kvantinėje grandinėje $G$ operatorius 3 kubitų
-registrui yra perteikiamas 6.7 pav.:
+registrui yra perteikiamas \@ref(fig:grover-3-g-grandine) pav.:
 
-![](./media/image6_7.png)
-
-**6.7 pav.** Groverio 3 kubitų paieškos algoritme $G$ operatorių realizuojanti loginė grandinė.
+```{r grover-3-g-grandine, echo=FALSE, fig.cap="Groverio 3 kubitų paieškos algoritme $G$ operatorių realizuojanti loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_7.png")
+```
 
 Turime visus ingredientus atlikti Groverio paiešką. Norint rasti
 reikiamą $GV$ iteracijų skaičių, pirmiausiai nustatome pradinį kampą
 $\theta$:
 \begin{equation}
 \langle\psi |d\rangle = \cos\left(\frac{\pi}{2} - \theta\right) = \sin(\theta) = 1/\sqrt{8}\,.
+(\#eq:grover-pradinis-kampas)
 \end{equation}
 Randame
 $\theta = \arcsin\left(\frac{1}{\sqrt{8}}\right) \approx 20.7^{\circ}$
@@ -933,9 +935,10 @@ $|\langle\phi |\psi\rangle |^2$.
 
 ### Hadamardo testas
 
-![](./media/image6_8.png)
 
-**6.8 pav.** Hadamardo testą atliekanti loginė grandinė
+```{r hadamard-test-grandine, echo=FALSE, fig.cap="Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_8.png")
+```
 
 Kvantinės grandinės, realizuojančios Hadamardo,
 modifikuotą Hadamardo ir SWAP testus panaudoja ancila 1 kubito registrą
@@ -944,7 +947,7 @@ atžvilgiu apskaičiuojami minėti nariai. Šios grandinės pasižymi
 identiška loginių vartų seka: Hadamardo vartai yra pritaikomi ancila
 kubitui prieš ir po sąlyginių loginių vartų $cU$, kontroliuojamų ancila
 kubito būsenų, taip pat išmatuojama ancila kubito būsena. Hadamardo
-testą realizuojanti grandinė yra iliustruota 6.8 pav.
+testą realizuojanti grandinė yra iliustruota \@ref(fig:hadamard-test-grandine) pav.
 
 Matome ancila kubitą pradinėje $|0\rangle$ būsenoje ir
 antrą kubitas bendroje $|\psi\rangle$ būsenoje, tad
@@ -956,24 +959,28 @@ ancilai randame:
 \begin{equation}
 H\otimes I\big(|0\rangle\otimes|\psi\rangle\big)
 = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|\psi\rangle\,.
+(\#eq:hadamard-ancilai)
 \end{equation}
 Toliau atliekami kontroliuojami $U$ antrajam kubitui, vadinkime juos
 $cU$:
 \begin{equation}
 cU\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|\psi\rangle
 = \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle + |1\rangle\otimes U|\psi\rangle\big)\,.
+(\#eq:cu-antram-kubitui-h)
 \end{equation}
 Ir dar vieni $H$ ancila kubitui:
-\begin{equation}
-H\otimes I\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle + |1\rangle\otimes U|\psi\rangle\big)
-= \frac{1}{2}\Big(\big(|0\rangle + |1\rangle\big)\otimes|\psi\rangle
+\begin{multline}
+H\otimes I\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle + |1\rangle\otimes U|\psi\rangle\big) = \\
+\frac{1}{2}\Big(\big(|0\rangle + |1\rangle\big)\otimes|\psi\rangle
 + \big(|0\rangle - |1\rangle\big)\otimes U|\psi\rangle\Big)\,.
-\end{equation}
+(\#eq:dar-vieni-h)
+\end{multline}
 Šią būseną, vadinkime ją $|\chi\rangle$, galime
 pergrupuoti taip:
 \begin{equation}
 |\chi\rangle = |0\rangle\otimes\left(\frac{I + U}{2}\right)|\psi\rangle +
 |1\rangle\otimes\left(\frac{I - U}{2}\right)|\psi\rangle\,.
+(\#eq:busenos-pergrupavimas-h)
 \end{equation}
 Sekant parodytą kvantinę grandinę, išmatuojame ancila kubito būseną.
 Toliau apskaičiuosime neselektyvaus būsenų matavimo rezultatą,
@@ -987,6 +994,7 @@ Z\otimes I = \sum_k \lambda_k P_k \otimes I
 = \lambda_0|0\rangle\langle 0|\otimes I
 + \lambda_1|1\rangle\langle 1|\otimes I
 = |0\rangle\langle 0|\otimes I - |1\rangle\langle 1|\otimes I\,.
+(\#eq:z-i-dekompozicija)
 \end{equation}
 Randame
 $\langle\chi |Z\otimes I |\chi\rangle$:
@@ -997,12 +1005,14 @@ $\langle\chi |Z\otimes I |\chi\rangle$:
 (Z\otimes I)\\
 \times\left\lbrack |0\rangle\otimes\left(\frac{I + U}{2}\right)|\psi\rangle
 + |1\rangle\otimes\left(\frac{I - U}{2}\right)|\psi\rangle\right\rbrack\,.
+(\#eq:chi-z-i-chi)
 \end{multline}
 Atlikus vidines sandaugas:
 \begin{equation}
 \langle\chi |Z\otimes I|\chi\rangle
 = \frac{1}{2}\langle\psi |\psi\rangle + \frac{1}{2}\langle\psi |U + U^{\dagger}|\psi\rangle
 = \frac{1}{2}\langle\psi |\psi\rangle + \mathrm{Re}\big\lbrack\langle\psi |U|\psi\rangle\big\rbrack\,.
+(\#eq:chi-z-i-chi-2)
 \end{equation}
 Primename, kad unitariojo operatoriaus $U$ tikrinės vertės $\lambda_k$
 yra kompleksiniai skaičiai su vienetiniu moduliu ir forma
@@ -1030,6 +1040,7 @@ S^{\dagger} = \begin{bmatrix}
 1 & 0 \\
 0 & -\mathrm{i}
 \end{bmatrix}\,.
+(\#eq:s-dagger)
 \end{equation}
 Tada vėl atliekami vartai $cU$ ir $H\otimes I$:
 \begin{equation}
@@ -1038,13 +1049,15 @@ Tada vėl atliekami vartai $cU$ ir $H\otimes I$:
 = & (H\otimes I)\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle - \mathrm{i}|1\rangle\otimes U|\psi\rangle\big) \\
 = & |0\rangle\otimes\left(\frac{I - iU}{2}\right)|\psi\rangle + |1\rangle\otimes\left(\frac{I + iU}{2}\right)|\psi\rangle\,.
 \end{aligned}
+(\#eq:h-i-cu-2)
 \end{equation}
 Vadindami šią būseną $|\chi\rangle$, apskaičiuojame
 $\langle\chi |Z\otimes I |\chi\rangle$:
 \begin{equation}
 \langle\chi |Z\otimes I|\chi\rangle
-= \frac{1}{2}\langle\psi |\psi\rangle + \frac{i}{2}\langle\psi |U^{\dagger} - U|\psi\rangle
+= \frac{1}{2}\langle\psi |\psi\rangle + \frac{\mathrm{i}}{2}\langle\psi |U^{\dagger} - U|\psi\rangle
 = \frac{1}{2}\langle\psi |\psi\rangle + \mathrm{Im}\big\lbrack\langle\psi |U|\psi\rangle\big\rbrack\,.
+(\#eq:chi-z-i-ch-3)
 \end{equation}
 Viršuje irgi pritaikėme kompleksinių skaičių aritmetiką,
 $\mathrm{i}(z^{*} - z) = \mathrm{i}(-2\mathrm{i}b) = 2b$, taip rasdami menamąją dalį
@@ -1069,9 +1082,9 @@ būsenų vidinės sandaugos reikšmė yra bendrai kompleksinis skaičius, o
 modulis
 $|\langle\psi |\phi\rangle |\leq 1$.
 
-![](./media/image6_9.png)
-
-**6.9 pav.** Modifikuotą Hadamardo testą atliekanti loginė grandinė
+```{r modifikuoto-hadamard-grandine, echo=FALSE, fig.cap="Modifikuotą Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_9.png")
+```
 
 Turime du registrus, kurių pradinė būsena
 yra $|0\rangle\otimes|0\rangle$.
@@ -1085,11 +1098,12 @@ būsenas: $A|0\rangle = |\psi\rangle$ ir
 $B|0\rangle = |\phi\rangle$. Šis
 algoritmas skiriasi nuo Hadamardo testo tuo, kad $cU$ tarp Hadamardo
 vartų yra pakeičiamas dvejais sąlyginiais loginiais vartais $cA$ ir $cB$
-(žr. 6.9 pav.).
+(žr. \@ref(fig:modifikuoto-hadamard-grandine) pav.).
 
 Pirmiausiai atliekame Hadamardo vartus ancila kubitui:
 \begin{equation}
 (H\otimes I)|0\rangle\otimes|0\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle\,.
+(\#eq:hadamard-ancila-3)
 \end{equation}
 Toliau atliekami dveji sąlyginiai vartai $cA$ ir $cB$ antrajam
 registrui, tačiau kontroliuojame skirtingose ancilos būsenose.
@@ -1100,6 +1114,7 @@ randame:
 \begin{equation}
 cBcA\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle
 = \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle + |1\rangle\otimes|\phi\rangle\big)\,.
+(\#eq:cb-ca)
 \end{equation}
 Atliekame $H$ ancilai:
 \begin{equation}
@@ -1109,12 +1124,14 @@ Atliekame $H$ ancilai:
 + \frac{1}{2}|1\rangle\otimes\big(|\psi\rangle - |\phi \rangle\big) \\
 \equiv & |\chi\rangle\,.
 \end{aligned}
+(\#eq:h-ancila-mh)
 \end{equation}
 Galiausiai išmatuojame ancilos būseną, apskaičiuodami tikrinių verčių
 vidurkį
 $\langle\chi |Z\otimes I |\chi\rangle$:
 \begin{equation}
 \langle\chi |Z\otimes I|\chi\rangle = \mathrm{Re}\big\lbrack\langle\psi |\phi\rangle\big\rbrack\,.
+(\#eq:chi-z-i-chi-mh)
 \end{equation}
 Šis modifikuotas Hadamardo testas suteikia realiąją vidinės sandaugos
 $\langle\psi |\phi\rangle$ dalį. Menamąją dalį
@@ -1124,11 +1141,11 @@ kubitui papildomus vartus $S^{\dagger}$.
 
 ###  SWAP testas
 
-![](./media/image6_10.png)
+```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_10.png")
+```
 
-**6.10 pav.** SWAP testo loginė grandinė
-
-Šis testas (žr. 6.10 pav.) leidžia apskaičiuoti dviejų $n$ kubitų
+Šis testas (žr. \@ref(fig:swap-testo-grandine) pav.) leidžia apskaičiuoti dviejų $n$ kubitų
 kvantinių būsenų,
 $\{|\psi\rangle , |\phi\rangle\} \in V$,
 vidinės sandaugos kompleksinį kvadratą
@@ -1150,24 +1167,32 @@ Pirmiausiai, atlikę Hadamardo vartus ancila kubitui, turime:
 \begin{equation}
 \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle
 + |1\rangle\otimes|\phi\rangle\otimes|\psi\rangle\big)\,.
+(\#eq:h-ancilla-swap)
 \end{equation}
 Toliau atliekami *Fredkin* loginiai vartai, sukeičiantys antrojo ir
 trečiojo registro būsenas vietomis:
-\begin{equation}
-cW\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle + |1\rangle\otimes|\phi\rangle\otimes|\psi\rangle\big)
-= \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\phi\rangle\otimes|\psi\rangle + |1\rangle\otimes|\psi\rangle\otimes|\phi\rangle\big)\,.
-\end{equation}
+\begin{multline}
+cW\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle
++ |1\rangle\otimes|\phi\rangle\otimes|\psi\rangle\big) = \\
+\frac{1}{\sqrt{2}}\big(|0\rangle\otimes|\phi\rangle\otimes|\psi\rangle
++ |1\rangle\otimes|\psi\rangle\otimes|\phi\rangle\big)\,.
+(\#eq:fredkin-swap)
+\end{multline}
 Pritaikius antrus Hadamardo loginius vartus ancila kubitui
 $H\otimes I\otimes I$, galutinė būsena
 $|\chi\rangle$ yra:
 \begin{equation}
-|\chi\rangle = \frac{1}{2}|0\rangle\otimes\big(|\psi\rangle\otimes|\phi\rangle + |\phi\rangle\otimes|\psi\rangle\big)
-+ \frac{1}{2}|1\rangle\otimes\big(|\psi\rangle\otimes|\phi\rangle - |\phi\rangle\otimes|\psi\rangle\big)\,.
+|\chi\rangle = \frac{1}{2}|0\rangle\otimes\big(|\psi\rangle\otimes|\phi\rangle
++ |\phi\rangle\otimes|\psi\rangle\big)
++ \frac{1}{2}|1\rangle\otimes\big(|\psi\rangle\otimes|\phi\rangle
+- |\phi\rangle\otimes|\psi\rangle\big)\,.
+(\#eq:galutine-busena-swap)
 \end{equation}
 Išmatuojame ancilos būseną, apskaičiuodami tikrinių verčių vidurkį
 $\langle\chi |Z\otimes I|\chi\rangle$:
 \begin{equation}
 \langle\chi |Z\otimes I|\chi\rangle = |\langle\phi|\psi\rangle |^2\,.
+(\#eq:chi-z-i-chi-swap)
 \end{equation}
 Tai tiesiogiai suteikia norimą reikšmę. Jos tikslumas gali būti
 pasiektas pageidaujamo dydžio didinant SWAP testo skaičių pateikiamoms
