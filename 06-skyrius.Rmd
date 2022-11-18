@@ -33,10 +33,12 @@ knygoje iki šiol. Norint perteikti tokią būseną dešimtaine forma
 $|x\rangle$, $x \in \mathbb{N}$:
 \begin{equation}
 |x\rangle = |k_1 k_2 \cdots k_{n - 1}k_n \rangle
+(\#eq:busena-desimtaine-forma)
 \end{equation}
 taikome formulę, konvertuojančią dešimtainį skaičių į dvejetainį:
 \begin{equation}
 x = k_1 2^{n - 1} + k_2 2^{n - 2} + \cdots + k_{n - 1}2^1 + k_n 2^0 = \sum_{i = 1}^n k_i 2^{n - i}
+(\#eq:konversija-is-dvejetaines)
 \end{equation}
 Pavyzdžiui, dvejetainis skaičius 011 paverčiamas į dešimtainį
 $x = 0\cdot 2^2 + 1\cdot 2^1 + 1\cdot 2^0 = 3$.
@@ -54,10 +56,12 @@ paskutiniuoju $k_{n - 1}$ kairėje. Dešimtaine forma išreiškę vektorių
 $|x\rangle$:
 \begin{equation}
 |x\rangle = |k_{n - 1} k_{n - 2}\cdots k_1 k_0 \rangle
+(\#eq:desimtaine-busena-2)
 \end{equation}
 taikytume šią formulę:
 \begin{equation}
 x = k_0 2^0 + k_1 2^1 + \cdots + k_{n - 2}2^{n - 2} + k_{n - 1}2^{n - 1} = \sum_{i = 0}^{n - 1} k_i 2^i\,.
+(\#eq:konversija-is-dvejetaines-2)
 \end{equation}
 Nepriklausomai nuo to, kuris būdas taikomas dvejetainę formą paverčiant
 dešimtaine, rezultatas yra vienodas. Pavyzdžiui, skaičius 011
@@ -81,9 +85,11 @@ dešimtaine forma yra $\{|0\rangle , |1\rangle , |2\rangle , \cdots ,|2^{n} - 1\
 $|\psi \rangle$, normavimo sąlyga ir ortogonalumas yra
 išreiškiami:
 \begin{gather}
-|\psi\rangle = c_0|0\rangle + c_1|1\rangle + c_2|2\rangle + \cdots + c_{2^{n} - 1}|2^n - 1\rangle = \sum_{x = 0}^{2^{n} - 1} c_x|x\rangle\,;\\
-\langle x'|x\rangle = \delta_{x',x}\,;\\
-|c_0|^2 + |c_1|^2 + |c_2|^2 + \cdots + |c_{2^{n} - 1}|^2 = \sum_{x = 0}^{2^{n} - 1} |c_x|^2 = 1\,.
+|\psi\rangle = c_0|0\rangle + c_1|1\rangle + c_2|2\rangle + \cdots + c_{2^{n} - 1}|2^n - 1\rangle
+= \sum_{x = 0}^{2^{n} - 1} c_x|x\rangle\,;(\#eq:bendra-busena-n-kubitu)\\
+\langle x'|x\rangle = \delta_{x',x}\,;(\#eq:ortogonalumas-desimtaine-busena)\\
+|c_0|^2 + |c_1|^2 + |c_2|^2 + \cdots + |c_{2^{n} - 1}|^2
+= \sum_{x = 0}^{2^{n} - 1} |c_x|^2 = 1\,.(\#eq:normavimas-desimtaine-busena)
 \end{gather}
 
 ## Funkcinis skaičiavimas
@@ -116,8 +122,9 @@ vadinami **įvesties** (angl. *input register*) ir **išvesties**
 du registrus, dažnai turi tokią formą:
 \begin{equation}
 U_f|x\rangle\otimes|0\rangle = |x\rangle\otimes|f(x)\rangle\,.
+(\#eq:skaiciavimas-du-registrai)
 \end{equation}
-Unitarinė transformacija $U_{f}$ čia veikia abu registrus. Kiekvienas
+Unitarinė transformacija $U_f$ čia veikia abu registrus. Kiekvienas
 bazinis vektorius $|x\rangle$ įvesties registre atlieka
 funkcijos argumento rolę $x$, o funkcijos reikšmė $f(x)$ yra užrašoma
 išvesties registro būsenoje $|f(x)\rangle$. Jeigu
@@ -125,18 +132,18 @@ išvesties registras yra ne $|0\rangle$, o kitoje
 pradinėje būsenoje $|y\rangle$, tada:
 \begin{equation}
 U_f|x\rangle\otimes|y\rangle = |x\rangle\otimes|y\oplus f(x)\rangle\,.
+(\#eq:skaiciavimas-du-registrai-y)
 \end{equation}
 
-![](./media/image6_1.png)
-
-**6.1 pav.** Kvantinė grandinė, realizuojanti funkcinį skaičiavimą
-$U_f|x\rangle\otimes|y\rangle = |x\rangle\otimes|y\oplus f(x)\rangle$.
+```{r kvantine-grandine-u-f, echo=FALSE, fig.cap="Kvantinė grandinė, realizuojanti funkcinį skaičiavimą $U_f|x\\rangle\\otimes|y\\rangle = |x\\rangle\\otimes|y\\oplus f(x)\\rangle$.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_1.png")
+```
 
 Šiuo atveju naudojame dvejetainę formą, tad išvesties
 registre yra atliekama $y$ ir $f(x)$ mod(2) bitų sudėtis, žymima ženklu
 $\oplus$. Paprasčiausią funkcinio skaičiavimo pavyzdį matėme
 IV skyriuje naudojant $U_f = cX$, kuris atlieka mod(2) bitų sudėtį.
-6.1 pav. iliustruojame šį bendrą skaičiavimo principą kvantine grandine.
+\@ref(fig:kvantine-grandine-u-f) pav. iliustruojame šį bendrą skaičiavimo principą kvantine grandine.
 
 
 ## Kvantinis paralelizmas
@@ -152,6 +159,7 @@ operatorius $U_f$ atlieka funkcijos $f$ įvertinimą, randame:
 \begin{equation}
 U_f\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle
 = \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|f(0)\rangle + |1\rangle\otimes|f(1)\rangle\big)\,
+(\#eq:u-f-superpozicija)
 \end{equation}
 Matome, kad jeigu įvesties registras yra paruoštas į
 $|0\rangle$ ir $|1\rangle$
@@ -169,6 +177,7 @@ $H\otimes H|00\rangle$:
 = & \frac{|00\rangle + |01\rangle + |10\rangle + |11\rangle}{2} \\
 = & \frac{|0\rangle + |1\rangle + |2\rangle + |3\rangle}{2}\,.
 \end{aligned}
+(\#eq:2-kubitu-superpozicija)
 \end{equation}
 Lokaliomis $H$ transformacijomis paruoštos būsenos superpozicijoje yra
 faktorizuojamos, tad galime išmatuoti kiekvieną kubitą nepaveikdami kitų
@@ -179,6 +188,7 @@ pradinė būsena dešimtainėje sistemoje yra $|0\rangle$,
 tada gausime lygią visų $2^n$ būsenų superpoziciją:
 \begin{equation}
 H^{\otimes n}|0\rangle = \frac{1}{\sqrt{2^{n}}}\sum_{x = 0}^{2^{n} - 1}|x\rangle\,.
+(\#eq:n-kubitu-superpozicija)
 \end{equation}
 Atkreipiame dėmesį, kad eksponentiškai didelės $2^{n}$ bazinių vektorių
 superpozicijos sukūrimas reikalauja tik tiesinio *n *skaičiaus Hadamardo
@@ -190,6 +200,7 @@ superpozicijai pritaikome $U_f$:
 \begin{equation}
 U_{f}\frac{1}{\sqrt{2^{n}}}\sum_{x = 0}^{2^{n} - 1}|x\rangle\otimes|0\rangle
 = \frac{1}{\sqrt{2^{n}}}\sum_{x = 0}^{2^{n} - 1}|x\rangle\otimes|f(x)\rangle\,.
+(\#eq:u-f-n-kubitu)
 \end{equation}
 Šis įspūdingas rezultatas yra vadinamasis kvantinis paralelizmas.
 Pavyzdžiui, jeigu turime 100 kubitų kiekviename registre, sukūrus jų
@@ -272,6 +283,7 @@ $b^{(l)} \rightarrow |b^{(l)}\rangle$ lygia
 superpozicija:
 \begin{equation}
 |D\rangle = \frac{1}{\sqrt{L}} \sum_{l = 1}^L |b^{(l)}\rangle\,.
+(\#eq:amplitudziu-kodavimas)
 \end{equation}
 Čia $L$ nusako įrašų skaičių ir todėl naudojamų bazinių vektorių skaičių duomenų
 bazėje $|D\rangle$. Kubitų skaičius $n$ turi būti ne
@@ -282,6 +294,7 @@ vektorių amplitudės lygios nuliui. Pavyzdžiui, duomenų bazę, turinčią du
 $|D \rangle$:
 \begin{equation}
 |D\rangle = \frac{|00110\rangle + |10100\rangle}{\sqrt{2}}\,.
+(\#eq:baziniu-vektoriu-kodavimas)
 \end{equation}
 Čia vėl naudojame įprastą fizikoje kubitų numeraciją perteikti
 dvejetainiams skaičiams. Šis kodavimo būdas nėra itin efektyvus kubitų
@@ -302,6 +315,7 @@ $x^{(l)}$ yra perteikiamas skaičiuojamųjų bazinių vektorių
 $|i\rangle$ superpozicijos amplitudėse $x_i$:
 \begin{equation}
 |x^{(l)}\rangle = \sum_{i = 1}^N x_i |i\rangle\,.
+(\#eq:amplitudziu-kodavimas-2)
 \end{equation}
 Šis kodavimo būdas yra kubitų skaičiaus atžvilgiu efektyvus, nes
 $N$ elementų įrašas reikalauja tik $\log_2 (N)$ kubitų. Duomenų bazę
@@ -310,6 +324,7 @@ $D = (x^{(1)} , x^{(2)} , \ldots , x^{(M)})$, galima
 perteikti $(M\times N)$ dimensijų vektoriumi kubitų registre:
 \begin{equation}
 |D\rangle = \sum_{i = 1}^{MN} x_i |i\rangle\,.
+(\#eq:m-n-dydzio-registras)
 \end{equation}
 Tai reikalauja $n \geq \log_2 (MN)$ kubitų skaičiaus. Kitaip tariant,
 norint koduoti visus $MN$ įrašus bazinių vektorių skaičius $2^n$ turi
@@ -322,7 +337,7 @@ būdas panaudoti juose koduojamą informaciją, pavyzdžiui, apskaičiuojant
 tam tikrą amplitudžių funkciją $f(x_i)$, išreikštą kvantiniu
 operatoriumi $U$ taip realizuojant
 $f(x_i ) = \langle x_i |U| x_i \rangle$.
-Hadamardo testas (žr. 6.7 poskyrį) leidžia efektyviai apskaičiuoti šiuos
+Hadamardo testas (žr. \@ref(hadamardo-swap-testai) poskyrį) leidžia efektyviai apskaičiuoti šiuos
 narius.
 
 ## Doičo algoritmas
@@ -337,8 +352,8 @@ apskaičiuoja funkciją $f$, kuriai pateikus bitą su verte 0 arba 1, ji
 išveda kitą bitą, taip pat 0 arba 1. Egzistuoja iš viso keturios
 skirtingos 1 bito funkcijos $f:\{0, 1\}\rightarrow\{0, 1\}$:
 \begin{align}
-f_1(0) = & f_1(1) = 0\,,\quad f_2(0) = f_2(1) = 1\,; \\
-f_3(0) = & 0\,,\quad f_3(1) = 1\,,\quad f_4(0) = 1\,,\quad f_4(1) = 0\,.
+f_1(0) = & f_1(1) = 0\,,\quad f_2(0) = f_2(1) = 1\,;(\#eq:vieno-bito-func-1) \\
+f_3(0) = & 0\,,\quad f_3(1) = 1\,,\quad f_4(0) = 1\,,\quad f_4(1) = 0\,.(\#eq:vieno-bito-func-2)
 \end{align}
 Matome, kad pirmose dviejose funkcijose $f_1$ ir $f_2$ reikšmės
 nepriklauso nuo pateiktų argumentų, $f(0) = f(1)$. Šias dvi funkcijos
@@ -365,6 +380,7 @@ pritaikius $U_f$ gaunama:
 \begin{equation}
 U_f|x\rangle\otimes\left(\frac{|0\rangle - |1\rangle}{\sqrt{2}}\right)
 = (-1)^{f(x)}|x\rangle\otimes\left(\frac{|0\rangle - |1\rangle}{\sqrt{2}}\right)\,.
+(\#eq:u-f-abiem-registram)
 \end{equation}
 Matome, kad fazės atatrankoje išvesties registro būsena nepakinta,
 tačiau bendrai būsenai
@@ -384,12 +400,14 @@ transformacijas:
 \begin{equation}
 |\psi\rangle = (H\otimes H)|0\rangle\otimes|1\rangle
 = \frac{1}{2}\big(|0\rangle + |1\rangle\big)\otimes\big(|0\rangle - |1\rangle\big)\,.
+(\#eq:h-ivesties-isvesties-deutsch)
 \end{equation}
 Toliau panaudojame juodosios dėžės funkciją $f$, nusakančią unitariąją
 transformaciją $U_f$:
 \begin{equation}
 U_f|\psi\rangle = \frac{1}{2}\big\lbrack (-1)^{f(0)}|0\rangle + (-1)^{f(1)}|1\rangle\big\rbrack\otimes
 \big(|0\rangle - |1\rangle\big)\,.
+(\#eq:u-f-deutsch)
 \end{equation}
 Skliausteliuose matome fazės atatrankos efektą įvesties registro
 kubitams, esantiems superpozicijoje. Kadangi išvesties registro būsena
@@ -400,11 +418,12 @@ Hadamardo transformaciją $H\otimes I$:
 (H\otimes I)U_f|\psi\rangle
 = \frac{1}{2}\big\{ \lbrack (-1)^{f(0)} + (-1)^{f(1)}\rbrack|0\rangle
 + \lbrack (-1)^{f(0)} - (-1)^{f(1)}\rbrack|1\rangle\big\}\,.
+(\#eq:h-gale-deutsch)
 \end{equation}
 
-![](./media/image6_2.png)
-
-**6.2 pav.** Doičo algoritmo loginė grandinė
+```{r deutsch-logine-grandine, echo=FALSE, fig.cap="Doičo algoritmo loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_2.png")
+```
 
 Jeigu juodosios dėžės funkcija yra
 pastovioji $f(0) = f(1)$, tada $(-1)^{f(0)} - (-1)^{f(1)} = 0$, ir
@@ -415,8 +434,7 @@ $|1\rangle$ būsena (iki nesvarbios globalios fazės).
 užrašyti $|f(0)\oplus f(1)\rangle$. Matavimo
 rezultatas užtikrintai klasifikuoja šią funkciją, o procese juodoji dėžė
 panaudojama tik vieną kartą. Doičo algoritmą nusakanti kvantinė grandinė
-yra pateikta 6.2 pav.
-
+yra pateikta \@ref(fig:deutsch-logine-grandine) pav.
 
 Doičo algoritmas leidžia palyginti, ar funkcijos vertė skirtinguose
 argumentuose yra vienoda, ar skirtinga, neatskleidžiant, kokios yra tos
@@ -470,6 +488,7 @@ f(x)=\begin{cases}
 1\,, & x=d\,,\\
 0\,, & x\neq d\,.
 \end{cases}
+(\#eq:paieskos-orakulas)
 \end{equation}
 Tokio tipo funkcijos yra vadinamos **orakulu** (angl. *oracle*).
 Orakulas savaime negali pasakyti ieškomo įrašo, tačiau atpažįsta, kai
@@ -485,6 +504,7 @@ būsenomis $|x\rangle$ dešimtainėje sistemoje sukuriant
 lygią superpoziciją:
 \begin{equation}
 |\psi\rangle = H^{\otimes n}|0\rangle = \frac{1}{\sqrt{2^{n}}}\sum_{x = 0}^{2^n - 1}|x\rangle\,.
+(\#eq:lygi-superpozicija-grover)
 \end{equation}
 Išvesties registras yra sudarytas iš vieno kubito ir inicijuojamas į
 $H|1\rangle$ būseną siekiant panaudoti fazės atatrankos
@@ -492,6 +512,7 @@ metodą. Orakulo funkcijos, vadinsime ją $U_f$, efektas vienai tokiai
 būsenai yra:
 \begin{equation}
 U_f|x\rangle\otimes H|1\rangle = (-1)^{f(x)}|x\rangle\otimes H|1\rangle\,.
+(\#eq:orakulo-efektas-grover)
 \end{equation}
 Tad jeigu orakului pateikiama neteisinga būsena
 $|x\rangle \neq |d\rangle$, tada
@@ -517,6 +538,7 @@ V|x\rangle = (-1)^{f(x)}|x\rangle =
 -|x\rangle\,, & x=d\,,\\
 |x\rangle\,, & x\neq d\,.
 \end{cases}
+(\#eq:V-transformacija-grover)
 \end{equation}
 Nors matricos forma $V$ operatoriaus čia tiesiogiai nenaudosime, tačiau
 verta atkreipti dėmesį, kad tai yra diagonalioji transformacija:
@@ -526,6 +548,7 @@ V = \begin{bmatrix}
  \vdots & \ddots & \vdots \\
 0 & \cdots & (-1)^{f(2^n - 1)}
 \end{bmatrix}\,.
+(\#eq:V-matrica-grover)
 \end{equation}
 Nenuliniai skaičiai yra tik išilgai pagrindinės įstrižainės. Jeigu
 ieškoma tik viena būsena, tada vienas atitinkamas skaičius įstrižainėje
@@ -533,12 +556,14 @@ yra -1, o visi kiti 1. Pritaikę operatorių $V$ visam įvesties registrui
 pradinėje būsenoje randame:
 \begin{equation}
 V|\psi\rangle = -\frac{1}{\sqrt{2^n}}|d\rangle + \frac{1}{\sqrt{2^n}}\sum_{x \neq d}^{2^{n - 1} - 1}|x\rangle\,.
+(\#eq:V-ivesties-registrui)
 \end{equation}
 Antrame naryje matome visų būsenų išskyrus $|d\rangle$
 sumą, tad sumuojama $2^{n - 1} - 1$ narių. Šiek tiek ilgėliau pažiūrėjus
-į išraišką 6.29 tampa aišku, kad $V$ transformacija turi šią formą:
+į išraišką \@ref(eq:V-ivesties-registrui) tampa aišku, kad $V$ transformacija turi šią formą:
 \begin{equation}
 V = - 2|d\rangle\langle d| + I\,.
+(\#eq:V-diadom)
 \end{equation}
 Čia $I$ -- vienetinis operatorius, o
 $|d\rangle\langle d|$ yra projekcinis
@@ -553,21 +578,22 @@ Jos išraiška nepriklauso ir nuo paieškomo $|d\rangle$
 vektoriaus bei turi šią formą:
 \begin{equation}
 G = 2|\psi\rangle\langle\psi| - I\,.
+(\#eq:g-grover)
 \end{equation}
 
-![](./media/image6_3.png)
+```{r grover-grandine, echo=FALSE, fig.cap="Groverio algoritmo bendrą principą nusakanti loginė grandinė.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image6_3.png")
+```
 
-**6.3 pav.** Groverio algoritmo bendrą principą nusakanti loginė grandinė
-
-Čia
-$|\psi\rangle\langle\psi |$ yra
+Čia $|\psi\rangle\langle\psi |$ yra
 projekcinis operatorius į pradinės būsenos
 $|\psi\rangle$ poerdvį. Groverio algoritmas
-(žr. 6.3 pav.) pakartotinai pritaiko, arba iteruoja, $GV$ operatorius, o
+(žr. \@ref(fig:grover-grandine) pav.) pakartotinai pritaiko, arba iteruoja, $GV$ operatorius, o
 tai lemia $|d \rangle$ būsenos amplitudės amplifikaciją
 likusių būsenų sąskaita:
 \begin{equation}
 |d\rangle\approx GVGV\cdots GV|\psi\rangle\,.
+(\#eq:amplitudes-stiprinimas-grover)
 \end{equation}
 Toliau parodysime, kaip ši iteracija atlieka paieškos užduotį
 amplifikuojant ieškomosios būsenos amplitudę ir kiek kartų reikia
@@ -892,7 +918,7 @@ pasuka vektorių $2\theta$ kampu, mažesnis pradinis kampas $\theta$
 leidžia tiksliau priartinti $|\phi\rangle$ prie
 ieškomosios $|d\rangle$ būsenos ir ją amplifikuoti.
 
-## Hadamardo ir SWAP testai
+## Hadamardo ir SWAP testai {#hadamardo-swap-testai}
 
 Šioje dalyje pristatome plačiai žinomus ir algoritmuose aptinkamus
 Hadamardo ir *SWAP* testus (angl. *Hadamard, SWAP tests*). Jie yra
