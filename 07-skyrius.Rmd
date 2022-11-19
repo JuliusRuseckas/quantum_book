@@ -163,6 +163,7 @@ U_{\mathrm{FT}}|k_1 k_2\cdots k_n\rangle =\big(|0\rangle + \mathrm{e}^{\mathrm{i
 ```{r 3-kubitu-ft-grandine, echo=FALSE, fig.cap="3 kubitų registrui kvantinę Furjė transformaciją atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
 knitr::include_graphics("media/image7_1.svg")
 ```
+
 Kvantinė Furjė transformacija yra
 efektyviai realizuojama kvantinėje grandinėje naudojant 1 kubito ir
 2 kubitų loginius vartus. Pirmiausiai pateikiame kaip pavyzdį 3 kubitų
