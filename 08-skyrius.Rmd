@@ -1,4 +1,4 @@
-# Kvantinių sistemų modeliavimas ir mašininis mokymasis
+# Kvantinių sistemų modeliavimas ir mašininis mokymasis {#sistemu-modeliavimas-ir-qml}
 
 ## Dinaminių sistemų modeliavimas
 
