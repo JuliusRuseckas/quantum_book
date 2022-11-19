@@ -99,6 +99,6 @@ mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės fizikos ir as
 institute. Pagrindinė mokslinių tyrimų sritis yra kvantinė optika bei labai šaltos atomų
 dujos. Šios knygos rašymo metu dirba Baltijos Pažangių Technologijų Institute (BPTI).
 
-![](media/by-nc-sa.png)
+![](media/cc-by-nc-sa.svg)
 
 Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją [Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)
