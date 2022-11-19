@@ -369,7 +369,7 @@ koordinates $(x, y)$. Naudojant statmeną $x$--$y$ koordinačių sistemą, šis
 vektorius pavaizduotas \@ref{fig:vektoriaus-pvz} pav.
 
 ```{r vektoriaus-pvz, echo=FALSE, fig.cap="Vektoriaus pavyzdys plokštumoje. Joje priskirta stačiakampė $x$--$y$ kordinačių sistema; vienetiniai vektoriai pažymėti žalia spalva", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image2_1.png")
+knitr::include_graphics("media/image2_1.svg")
 ```
 
 Norėdami nubrėžti $|g\rangle$ vektorių, einame 2
@@ -451,7 +451,7 @@ ir vertikalioji ašys nusako realiąją (Re) ir menamąją (Im) dalis,
 atitinkamai.
 
 ```{r kompleksinio-vaizdavimas, echo=FALSE, fig.cap="Kompleksinio skaičiaus pavaizdavimas stačiakampėje Re--Im koordinačių sistemoje pateikiant koordinates $(a, b)$. Naudojant polines koordinates, pateikiamas spindulio ilgis ir kampas ($|z|$, $\\theta$)", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image2_2.png")
+knitr::include_graphics("media/image2_2.svg")
 ```
 
 Viršuje parodyti du būdai išreikšti kompleksiniam skaičiui. Galime
@@ -666,7 +666,7 @@ $\langle v_i |v_j \rangle = \delta_{ij}$.
 Galime šią vidinę sandaugą iliustruoti \@ref(fig:vektoriaus-dekompozicija-pvz) pav.
 
 ```{r vektoriaus-dekompozicija-pvz, echo=FALSE, fig.cap="Vektoriaus $|\\phi\\rangle$ dekompozicija į statmenus vienetinius (bazinius) vektorius $|0\\rangle$ ir $|1\\rangle$. Vidinės sandaugos čia nusako $|\\phi\\rangle$ vektoriaus projekcijas (arba persiklojimą) į atitinkamus bazinius vektorius", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image2_3.png")
+knitr::include_graphics("media/image2_3.svg")
 ```
 
 Nubrėžę brūkšniuotą statmeną liniją matome, kad vidinė sandauga
@@ -744,7 +744,7 @@ Blocho vektorius, tolydžiai keičiant šiuos du parametrus, apibūdina
 visus įmanomus taškus Blocho sferos paviršiuje.
 
 ```{r blocho-sfera-2, echo=FALSE, fig.cap="Bendra kubito būsena $|\\psi\\rangle$ nusakoma Blocho vektoriumi, pažymėtu nuo Blocho sferos centro iki jos paviršiaus. Išilgai $x$, $y$ ir $z$ ašių pažymėtos dažnai algoritmuose pasitelkiamos būsenos", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image2_4.png")
+knitr::include_graphics("media/image2_4.svg")
 ```
 
 Patikrinkime keletą orientacijų, kad pamatytume, kaip Blocho sferoje

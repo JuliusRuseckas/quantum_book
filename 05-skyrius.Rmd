@@ -157,7 +157,7 @@ greitį. Fizinės sistemos akimirksniu nepradingsta ir kitur
 neatsiranda -- tik pakeičia savo būsenas.
 
 ```{r kvantine-teleportacija, echo=FALSE, fig.cap="Kvantinė $k_1$ kubito būsenos $|\\psi\\rangle$ teleportacija į $k_3$ kubitą.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_1.png")
+knitr::include_graphics("media/image5_1.svg")
 ```
 
 Standartiniame teleportacijos scenarijuje
@@ -285,7 +285,7 @@ persiųsti ne vien pavienių kubitų būsenoms, bet ir sudėtinėms kubitų
 supintosioms kvantinėms būsenoms.
 
 ```{r kvantine-teleportacija-2, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti kvantinę teleportaciją.  Paskutiniame žingsnyje kubitui $k_3$ pritaikomi sąlyginiai Pauli loginiai vartai, kontroliuojami klasikinio registro, kurio būseną nulemia pirmų dviejų kubitų matavimo rezultatai.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_2.png")
+knitr::include_graphics("media/image5_2.svg")
 ```
 
 Teleportaciją galime atlikti ir
@@ -310,7 +310,7 @@ generatorius įprasta vadinti EPR šaltiniais (angl. *EPR source*,
 trumpinys nuo *Einstein-Podolsky-Rosen*).
 
 ```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_3.png")
+knitr::include_graphics("media/image5_3.svg")
 ```
 
 Kvantinio supynimo sukeitimas praktiškai
@@ -395,7 +395,7 @@ ir Beno kubitų poros $k_1$ ir $k_2$, taip pat Beno ir Citos kubitų
 $k_3$ ir $k_4$ yra panaikinami.
 
 ```{r kvantinio-supynimo-sukeitimas-2, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo realizacija loginėje grandinėje.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_4.png")
+knitr::include_graphics("media/image5_4.svg")
 ```
 
 Kvantinė grandinė, atliekanti supynimo sukeitimo algoritmą, yra
@@ -546,7 +546,7 @@ užbaigia rakto apsikeitimo protokolą ir gali saugiai naudoti likusius
 $n$ bitų šifruoti ryšių turiniui.
 
 ```{r bb84-iliustracija, echo=FALSE, fig.cap="BB84 protokolo iliustracija.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_5.png")
+knitr::include_graphics("media/image5_5.svg")
 ```
 
 Panagrinėkime BB84 protokolo (žr. \@ref(fig:bb84-iliustracija) pav.) saugumą. Pirmiausia,
@@ -626,7 +626,7 @@ dideliam bitų nesutapimui.
 ### EPR kvantinis rakto pasidalijimo protokolas
 
 ```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_6.png")
+knitr::include_graphics("media/image5_6.svg")
 ```
 
 EPR protokolas (žr. \@ref(fig:epr-rakto-iliustracija) pav.) yra dauguma aspektų panašus į BB84, tačiau
@@ -1000,7 +1000,7 @@ arba $\beta_2$. \@ref(fig:pasukti-detektoriai) pav. iliustruojame dvi tokias de
 konfigūracijas, pasuktas kampu $\alpha$ ir $\beta$:
 
 ```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis.", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image5_7.png")
+knitr::include_graphics("media/image5_7.svg")
 ```
 
 Matome, kad poliarizacijos matavimai Agnės ir Beno detektoriuose yra

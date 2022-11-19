@@ -136,7 +136,7 @@ U_f|x\rangle\otimes|y\rangle = |x\rangle\otimes|y\oplus f(x)\rangle\,.
 \end{equation}
 
 ```{r kvantine-grandine-u-f, echo=FALSE, fig.cap="Kvantinė grandinė, realizuojanti funkcinį skaičiavimą $U_f|x\\rangle\\otimes|y\\rangle = |x\\rangle\\otimes|y\\oplus f(x)\\rangle$.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_1.png")
+knitr::include_graphics("media/image6_1.svg")
 ```
 
 Šiuo atveju naudojame dvejetainę formą, tad išvesties
@@ -422,7 +422,7 @@ Hadamardo transformaciją $H\otimes I$:
 \end{equation}
 
 ```{r deutsch-logine-grandine, echo=FALSE, fig.cap="Doičo algoritmo loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_2.png")
+knitr::include_graphics("media/image6_2.svg")
 ```
 
 Jeigu juodosios dėžės funkcija yra
@@ -582,7 +582,7 @@ G = 2|\psi\rangle\langle\psi| - I\,.
 \end{equation}
 
 ```{r grover-grandine, echo=FALSE, fig.cap="Groverio algoritmo bendrą principą nusakanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_3.png")
+knitr::include_graphics("media/image6_3.svg")
 ```
 
 Čia $|\psi\rangle\langle\psi |$ yra
@@ -670,7 +670,7 @@ vidurkio (padauginto iš dviejų). Pirmos iteracijos žingsniai iliustruoti
 \@ref(fig:busenu-amplitudziu-pokytis) pav.
 
 ```{r busenu-amplitudziu-pokytis, echo=FALSE, fig.cap="Būsenų $|x\\rangle$ amplitudžių $c_x$ pokytis pirmos Groverio iteracijos $GV$ metu.  Ieškomosios būsenos $|d\\rangle$ amplitudė žymima $d$, visų būsenų amplitudžių vidurkis $\\bar{c}_x$ nurodytas brūkšniuota linija.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_4.png")
+knitr::include_graphics("media/image6_4.svg")
 ```
 
 Antrosios iteracijos pirmame žingsnyje
@@ -798,7 +798,7 @@ $|d_{\bot}\rangle$ ašį ir kitą apie
 $|\psi\rangle$.
 
 ```{r geometrine-grover-iliustracija, echo=FALSE, fig.cap="Geometrinė Groverio algoritmo iliustracija.  Pradinės registro būsenos (vektoriaus) $|\\psi\\rangle$ pasukimas vienos iteracijos $GV$ metu link ieškomosios būsenos $|d\\rangle$.  Ieškomoji būsena, kartu su jai statmena $|d_{\\bot}\\rangle$, apibūdina 2 dimensijų realų poerdvį (plokštumą) visoje $2^n$ dimensijų kubitų registro būsenų erdvėje.", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image6_5.png")
+knitr::include_graphics("media/image6_5.svg")
 ```
 
 Pradedant algoritmą ir atlikus
@@ -857,7 +857,7 @@ V|\psi\rangle = \frac{|000\rangle + |001\rangle + |010\rangle
 \end{equation}
 
 ```{r orakulo-funkcijas-realizuojancios-grandines, echo=FALSE, fig.cap="Visos galimos 3 kubitų registro orakulo funkcijas ($V$ operatorių) realizuojančios loginės grandinės, atskirtos viena nuo kitos brūkšniuota linija.  Viršuje pažymėtos būsenos, kurioms atitinkama grandinė pritaiko santykinę fazę.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_6.png")
+knitr::include_graphics("media/image6_6.svg")
 ```
 
 Visos įmanomos 3 kubitų orakulo funkcijos,
@@ -892,7 +892,7 @@ likusioms būsenoms. Kvantinėje grandinėje $G$ operatorius 3 kubitų
 registrui yra perteikiamas \@ref(fig:grover-3-g-grandine) pav.:
 
 ```{r grover-3-g-grandine, echo=FALSE, fig.cap="Groverio 3 kubitų paieškos algoritme $G$ operatorių realizuojanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_7.png")
+knitr::include_graphics("media/image6_7.svg")
 ```
 
 Turime visus ingredientus atlikti Groverio paiešką. Norint rasti
@@ -937,7 +937,7 @@ $|\langle\phi |\psi\rangle |^2$.
 
 
 ```{r hadamard-test-grandine, echo=FALSE, fig.cap="Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_8.png")
+knitr::include_graphics("media/image6_8.svg")
 ```
 
 Kvantinės grandinės, realizuojančios Hadamardo,
@@ -1083,7 +1083,7 @@ modulis
 $|\langle\psi |\phi\rangle |\leq 1$.
 
 ```{r modifikuoto-hadamard-grandine, echo=FALSE, fig.cap="Modifikuotą Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_9.png")
+knitr::include_graphics("media/image6_9.svg")
 ```
 
 Turime du registrus, kurių pradinė būsena
@@ -1142,7 +1142,7 @@ kubitui papildomus vartus $S^{\dagger}$.
 ###  SWAP testas
 
 ```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_10.png")
+knitr::include_graphics("media/image6_10.svg")
 ```
 
 Šis testas (žr. \@ref(fig:swap-testo-grandine) pav.) leidžia apskaičiuoti dviejų $n$ kubitų

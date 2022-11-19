@@ -180,7 +180,7 @@ kontroliuoti vieno pasirinkto kubito būseną norint akimirksniu pakeisti
 jų bendrą būseną į bet kurią iš analogiškai keturių skirtingų.
 
 ```{r dvieju-kubitu-supynimas, echo=FALSE, fig.cap="Dviejų kubitų kvantinis supynimas.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_1.png")
+knitr::include_graphics("media/image1_1.svg")
 ```
 
 Supintosiose sistemose (žr. \@ref(fig:dvieju-kubitu-supynimas) pav.)
@@ -513,7 +513,7 @@ $O(n)$ elgsena yra akivaizdžiai efektyvesnis, kai
 $n\rightarrow \infty$, nepaisant didelio koeficiento šalia $n$.
 
 ```{r algoritmu-sudetingumas, echo=FALSE, fig.cap="Keletas algoritmų sudėtingumo pavyzdžių. Nuo sparčiausiai iki lėčiausiai augančio operacijų skaičiaus: eksponentinė elgsena, polinominė, logtiesinė ir tiesinė", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_2.png")
+knitr::include_graphics("media/image1_2.svg")
 ```
 
 Vertinant laiko išteklius, riba yra standartiškai nubrėžiama tarp
@@ -709,7 +709,7 @@ kompiuterijoje tik būsenos, kurios yra ortogonalios, gali būti patikimai
 atskirtos viena nuo kitos.
 
 ```{r blocho-sfera, echo=FALSE, fig.cap="Blocho sfera.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_3.png")
+knitr::include_graphics("media/image1_3.svg")
 ```
 
 Koeficientai $a$ ir $b$, formaliai vadinami amplitudėmis, yra
@@ -1085,7 +1085,7 @@ diagramos yra vadinamos **kvantinėmis grandinėmis** (angl. *quantum
 circuits*).
 
 ```{r kvantine-grandine, echo=FALSE, fig.cap="Kvantinė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_4.png")
+knitr::include_graphics("media/image1_4.svg")
 ```
 
 \@ref(fig:kvantine-grandine) pav. kvantinėje grandinėje matome 1 kubito vadinamuosius Pauli-$X$
@@ -1164,7 +1164,7 @@ dualus analoginis--skaitmeninis įrenginys, ir galbūt tiksliausiai --
 tiesiog kvantinis.
 
 ```{r kvantinio-skaiciavimo-procesas, echo=FALSE, fig.cap="Kvantinio skaičiavimo procesas.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_5.png")
+knitr::include_graphics("media/image1_5.svg")
 ```
 
 Siekdami lengviau įsivaizduoti kvantinio skaičiavimo procesą, pateikiame
@@ -1287,7 +1287,7 @@ laikui $t = T_1$ tikimybė pamatavus kubitą vis dar jį rasti
 $|1\rangle$ būsenoje yra $p = 0.37$.
 
 ```{r fazes-amplitudes-slopinimas, echo=FALSE, fig.cap="Fazės ir amplitudės slopinimas. Parodytos kreivės nusako, kokia tikimybė rasti kubitą pradinėje nurodytoje būsenoje bėgant laikui. Iliustracijai panaudota $T_1 = T_2 = 300$ mikrosekundžių dekoherencijos trukmė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image1_6.png")
+knitr::include_graphics("media/image1_6.svg")
 ```
 
 Dekoherencijos trukmės konstanta $T_2$

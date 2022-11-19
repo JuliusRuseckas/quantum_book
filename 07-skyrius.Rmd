@@ -161,7 +161,7 @@ U_{\mathrm{FT}}|k_1 k_2\cdots k_n\rangle =\big(|0\rangle + \mathrm{e}^{\mathrm{i
 ## Furjė transformacijos realizavimas kvantinėje grandinėje
 
 ```{r 3-kubitu-ft-grandine, echo=FALSE, fig.cap="3 kubitų registrui kvantinę Furjė transformaciją atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_1.png")
+knitr::include_graphics("media/image7_1.svg")
 ```
 Kvantinė Furjė transformacija yra
 efektyviai realizuojama kvantinėje grandinėje naudojant 1 kubito ir
@@ -189,7 +189,7 @@ nebūtina to daryti, jeigu toliau atliekami loginiai vartai atsižvelgiant
 į indeksavimo pasikeitimą.
 
 ```{r atvirkstine-3-kubitu-ft, echo=FALSE, fig.cap="Atvirkštinė 3 kubitų kvantinė Furjė transformacija.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_2.png")
+knitr::include_graphics("media/image7_2.svg")
 ```
 
 Atvirkštinė Furjė transformacija $\mathrm{FT}^{\dagger}$ yra realizuojama atvirkštine
@@ -200,7 +200,7 @@ ${cP}_k^{\dagger}$. Atvirkštinę 3 kubitų transformaciją $\mathrm{FT}^{\dagg
 atliekanti grandinė yra pateikta \@ref(fig:atvirkstine-3-kubitu-ft) pav.
 
 ```{r kvantine-ft-grandine-n-kubitu, echo=FALSE, fig.cap="Loginė grandinė, atliekanti kvantinę Furjė transformaciją $n$ kubitų registrui.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_3.png")
+knitr::include_graphics("media/image7_3.svg")
 ```
 
 Furjė transformacija, atliekama $n$-kubitų registrui,
@@ -344,7 +344,7 @@ išlieka tik tų būsenų $|y\rangle$, kurios yra artimos
 $k2^n/P$ sveikajam skaičiui.
 
 ```{r periodiskuma-nustatanti-grandine, echo=FALSE, fig.cap="Funkcijos periodiškumą nustatanti loginė grandinė. Furjė transformacija $n$ kubitų registrui glaustai užrašyta kaip modulis FT.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_4.png")
+knitr::include_graphics("media/image7_4.svg")
 ```
 
 ## Kvantinis fazės nustatymo algoritmas
@@ -404,7 +404,7 @@ U^{2^n}|u\rangle = \mathrm{e}^{\mathrm{i}2\pi 2^n\theta_u}|u\rangle\,.
 Kvantinė grandinė, realizuojanti fazės nustatymą, yra parodyta \@ref(fig:grandine-fazes-nustatymui) pav.
 
 ```{r grandine-fazes-nustatymui, echo=FALSE, fig.cap="Bendra loginė grandinė, realizuojanti fazės nustatymo algoritmą.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_5.png")
+knitr::include_graphics("media/image7_5.svg")
 ```
 
 Pirmasis registras yra sudarytas iš $n$ kubitų, čia skaičius $n$ yra
@@ -631,7 +631,7 @@ Tęsiant algoritmo apibūdinimą, išreiškus $U$ spektrine dekompozicija:
 \end{equation}
 
 ```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_6.png")
+knitr::include_graphics("media/image7_6.svg")
 ```
 
 Operatoriaus tikrinės vertės $\mathrm{e}^{\mathrm{i}\lambda_k t}$ yra

@@ -337,7 +337,7 @@ $|00\rangle$ būsenoje atliekant dvejus $CNOT$ loginius
 vartus.
 
 ```{r loginio-kubito-paruosimas, echo=FALSE, fig.cap='Loginio kubito būsenos $|\\psi\\rangle_L$ paruošimas naudojant 3 fizinius kubitus.', out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image9_1.png")
+knitr::include_graphics("media/image9_1.svg")
 ```
 
 Visi trys fiziniai kubitai, formuojantys loginį kubitą, gali būti
@@ -390,7 +390,7 @@ grandinė \@ref(fig:bito-apvertimo-taisymo-grandine) pav. iliustruoja bito
 apvertimo klaidos aptikimą ir taisymą.
 
 ```{r bito-apvertimo-taisymo-grandine, echo=FALSE, fig.cap="Bito apvertimo klaidos aptikimą ir taisymą atliekanti grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image9_2.png")
+knitr::include_graphics("media/image9_2.svg")
 ```
 
 Siekdami atlikti $Z\otimes Z\otimes I$ ir
@@ -516,7 +516,7 @@ trijų kubitų:
 9.4 pav. pateikiame grandinę,
 iliustruojančią šio loginio kubito paruošimą.
 
-![](./media/image9_4.png)
+![](./media/image9_4.svg)
 
 **9.4 pav.** Loginė grandinė, paruošianti loginį kubitą, skirtą taisyti fazės
 klaidai.
@@ -786,7 +786,7 @@ blokus pervadinome atitinkamai $|+\rangle$ ir
 $|-\rangle$. Grandinė atliekant kodo paruošimą pateikta
 9.5 pav.
 
-![](./media/image9_5.png)
+![](./media/image9_5.svg)
 
 **9.5 pav.** Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą
 
@@ -1175,12 +1175,12 @@ loginiais elementais. Imkime kaip pavyzdį 9.6 pav. parodytą kvantinę
 grandinę, sudarytą iš klaidoms neatsparių loginių elementų, atliekančią
 2 kubitų supynimą ir jų matavimus.
 
-![](./media/image9_6.png)
+![](./media/image9_6.svg)
 
 **9.6 pav.** Klaidoms neatspari loginė grandinė, atliekanti kubitų supynimą ir
 jų matavimą
 
-![](./media/image9_7.png)
+![](./media/image9_7.svg)
 
 **9.7 pav.** Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti
 klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus
@@ -1203,7 +1203,7 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-![](./media/image9_8.png)
+![](./media/image9_8.svg)
 
 **9.8 pav.** Iliustracijoje 9.6 pav. parodytos loginės grandinės klaidoms
 atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau
@@ -1257,7 +1257,7 @@ principas nustatant galutinio matavimo rezultatą, klaidingo atsakymo
 tikimybė sumažėja nuo $p$ iki $O(p^2)$. Čia $p$ yra tikimybė, kad
 atsiras klaida bet kuriame grandinės elemente.
 
-![](./media/image9_9.png)
+![](./media/image9_9.svg)
 
 **9.9 pav.** Klaidoms atsparūs 3 kubitų loginio kubito būsenos $|\psi\rangle$
 bendrojo tipo matavimai
@@ -1270,7 +1270,7 @@ kodavimo metodo ir bendrai nusako skaičių skirtingų vietų loginiame
 atsparioje kvantinėje grandinėje įvykdomos sėkmingai su tikimybe
 $1 - cp^2$ ir toliau įgaunamas pranašumas mažėjant $p$.
 
-![](./media/image9_10.png)
+![](./media/image9_10.svg)
 
 **9.10 pav.** Kodų konkatenacijos schema. Nurodytos nepataisomos klaidos
 tikimybė kiekviename kodavimo lygyje
@@ -1380,7 +1380,7 @@ parinkimas yra analogiškas atsitiktiniam skaliarinio skaičiaus
 parinkimui iš lygiai pasiskirsčiusių skaičių rinkinio. Kvantinio tūrio
 protokolą atliekanti grandinė yra parodyta 9.11 pav.
 
-![](./media/image9_11.png)
+![](./media/image9_11.svg)
 
 **9.11 pav.** Kvadratinėmis $(d \times d)$ grandinėmis pagrįstas kvantinio tūrio
 nustatymo protokolas 
@@ -1442,9 +1442,9 @@ tokio tipo architektūra turi akivaizdų pranašumą prieš IBM *Falcon*, nes
 potencialiai sumažina reikalaujamą loginių vartų skaičių atlikti tam
 pačiam algoritmui.
 
-![](./media/image9_12.png)
+![](./media/image9_12.svg)
 
-![](./media/image9_13.png)
+![](./media/image9_13.svg)
 
 **9.12 pav.** Dvi kvantinio procesoriaus architektūros, pasitelkiančios
 skirtingą kubitų tarpusavio jungimą. Tai nulemia, tarp kurių kubitų galima

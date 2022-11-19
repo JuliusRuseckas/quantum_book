@@ -166,7 +166,7 @@ $|11\rangle$) yra pritaikoma fazė $\mathrm{e}^{\mathrm{i}\theta}$, o štai
 nelyginio lyginumo būsenos ($|01\rangle$ ir
 $|10\rangle$) įgauna $\mathrm{e}^{-\mathrm{i}\theta}$.
 
-![](./media/image8_1.png)
+![](./media/image8_1.svg)
 
 **8.1 pav.** Loginė grandinė, realizuojanti $\mathrm{e}^{\mathrm{i}\theta
 Z_1\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi
@@ -507,7 +507,7 @@ $\theta = \frac{V(x)\Delta t}{\hbar}$ fazes
 $\{|0\rangle , |3\rangle , |7\rangle\}$
 būsenoms, parodyta 8.2 pav.
 
-![](./media/image8_2.png)
+![](./media/image8_2.svg)
 
 **8.2 pav.** Loginė grandinė, atliekanti potencinės energijos funkcijos $V(x)$
 su trimis barjerais veiksmą banginei funkcijai $\psi(x)$ viename laiko
@@ -552,7 +552,7 @@ pavyzdį:
 + 2Z_1\otimes Z_2 + Z_1\otimes Z_3 + \frac{1}{2}Z_2\otimes Z_3\right)}\,.
 \end{equation}
 
-![](./media/image8_3.png)
+![](./media/image8_3.svg)
 
 **8.3 pav.** Gauso formos diskretizuota banginė funkcija, perteikta 16-os taškų
 gardelėje
@@ -613,7 +613,7 @@ kartoti algoritmą vos keletą kartų.
 
 ### Klasikinis mašininis mokymasis
 
-![](./media/image8_4.png)
+![](./media/image8_4.svg)
 
 **8.4 pav.** Klasikinio mašininio mokymosi metodai 
 
@@ -808,7 +808,7 @@ $b$,$y \in a,b$. Tam yra optimizuojamas modelio parametrų rinkinys $\theta$.
 Gerai apmokytas modelis $f(x, \theta)$ turėtų gebėti teisingai priskirti
 nematytus duomenis $x$ grupei $y \in a,b$.
 
-![](./media/image8_5.png)
+![](./media/image8_5.svg)
 
 **8.5 pav.** Kvantinėmis grandinėmis paremtas klasifikatorius. Loginių
 operacijų grandinė $A$ atlieka pradinės būsenos paruošimą; ji yra toliau
@@ -843,7 +843,7 @@ rezultatams apskaičiuoti, klasikinė -- parametrams $\theta$ atnaujinti.
 Nuodugnus mokymo procesas yra pavaizduotas 8.6 pav. Klasikinė modelio
 mokymo dalis pavaizduota brūkšnine linija.
 
-![](./media/image8_6.png)
+![](./media/image8_6.svg)
 
 **8.6 pav.** Hibridinis kvantinis-klasikinis mokymo algoritmas. Kvantinis
 įrenginys yra naudojamas išvesties ir gradientų suskaičiavimui; kvantinės
@@ -910,7 +910,7 @@ vartai yra bendriausio tipo $U_{3}(\alpha,\beta,\gamma) \equiv G$
 cG = |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes G\,.
 \end{equation}
 
-![](./media/image8_7.png)
+![](./media/image8_7.svg)
 
 **8.7 pav.** 3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$
 yra 1 kubito loginiai vartai
