@@ -159,7 +159,7 @@ iki globalios fazės galime išreikšti Pauli-$Y$ loginiais vartais:
 (\#eq:kombinuota-klaida)
 \end{equation}
 
-## Kvantinis supynimas su aplinka ir klaidų atsiradimas
+## Kvantinis supynimas su aplinka ir klaidų atsiradimas {#supynimas-ir-klaidu-atsiradimas}
 
 Loginių vartų netikslumai po kiekvieno jų pritaikymo gali įvesti
 tolydžiai kintančias klaidas. Sistemiškai atsirandančios vienodo tipo
@@ -871,8 +871,10 @@ $|-\rangle$ yra trijų Pauli-$X$ tenzorių sandaugos
 operatorių tikriniai vektoriai su tikrinėmis vertėmis $\lambda = 1$ ir
 $\lambda = -1$, atitinkamai:
 \begin{align}
-X_1\otimes X_2\otimes X_3\big(|000\rangle + |111\rangle\big ) = & |000\rangle + |111\rangle = |+\rangle\,;(\#eq:bloko-buena-p1)\\
-X_1\otimes X_2\otimes X_3\big(|000\rangle - |111\rangle\big ) = & -\big(|000\rangle - |111\rangle) = - |-\rangle\,.(\#eq:bloko-buena-m1)
+X_1\otimes X_2\otimes X_3\big(|000\rangle + |111\rangle\big )
+= & |000\rangle + |111\rangle = |+\rangle\,;(\#eq:bloko-busena-p1)\\
+X_1\otimes X_2\otimes X_3\big(|000\rangle - |111\rangle\big )
+= & -\big(|000\rangle - |111\rangle) = - |-\rangle\,.(\#eq:bloko-busena-m1)
 \end{align}
 Tad bet kurių dviejų blokų būsenų, nepaveiktų klaidos, tikrinių verčių
 sandauga yra visada +1.
@@ -925,7 +927,8 @@ $|-\rangle$ kodų formą, o ancilos grąžinamos į
 $|00 \rangle$.
 
 Šoro kodas gali ištaisyti bendriausio tipo klaidą. Tai išplaukia iš šio
-skyriaus 9.2 poskyryje pateikto įrodymo, kad visas klaidas galima
+skyriaus \@ref(supynimas-ir-klaidu-atsiradimas) poskyryje
+pateikto įrodymo, kad visas klaidas galima
 išreikšti Pauli operatorių $\{I, X, Y, Z\}$ ir jų tenzorinių sandaugų
 tiesinėmis kombinacijomis. Todėl gebant taisyti $X$ (bito apvertimo) ir
 $Z$ (fazės apvertimo) klaidas, Šoro kode automatiškai galima taisyti ir
@@ -941,7 +944,7 @@ itin mažas. Palyginus su pavieniu fizinio kubito siuntimu, nepataisomų
 klaidų tikimybės susilygina, kai $p \approx 0.032,$ ir Šoro kodas
 suteikia didėjantį pranašumą toliau mažėjant $p$.
 
-## Kodų stabilizatoriai 
+## Kodų stabilizatoriai {#kodu-stabilizatoriai-poskyris}
 
 Iki šiol analizavome klaidų taisymo kodus pradėdami nuo kodų būsenų.
 Idealiai, norėtume turėti sisteminį receptą, leidžiantį sugeneruoti kodą
@@ -965,6 +968,7 @@ $|\psi\rangle$ yra stabilizuojama operatoriaus $K$,
 jeigu ji yra šio operatoriaus tikrinis vektorius su +1 tikrine verte:
 \begin{equation}
 K|\psi \rangle = |\psi\rangle\,.
+(\#eq:busena-stabilizuojama-op-K)
 \end{equation}
 Pavyzdžiui, 1 kubito būsena $|0\rangle$ yra
 stabilizuojama Pauli-$Z$ operatoriaus, nes
@@ -983,6 +987,7 @@ pirmiausiai apibūdiname 1 kubito Pauli grupę $\mathcal{P}$, kuri yra
 sudaryta iš Pauli operatorių:
 \begin{equation}
 \mathcal{P} = \{\pm I\,, \pm \mathrm{i}I\,, \pm X\,, \pm \mathrm{i}X\,, \pm Y, \pm \mathrm{i}Y\,, \pm Z, \pm \mathrm{i}Z\, \}\,.
+(\#eq:pauli-grupe)
 \end{equation}
 Pauli elementų rinkinys (Pauli operatoriai kartu su juos dauginančiais
 skaičiais {$\pm 1$, $\pm \mathrm{i}$}) formuoja grupę operatorių sandaugos
@@ -1003,6 +1008,7 @@ $\mathcal{G}^{\otimes n}$ savybes galima glaustai užrašyti taip:
 \begin{equation}
 \mathcal{G}^{\otimes n} = \big\{K_i|\psi\rangle = |\psi\rangle\,,
 \lbrack K_i,K_j \rbrack = 0\,, \forall(i,j)\big\} \subset \mathcal{P}^{\otimes n}\,.
+(\#eq:op-pogrupio-savybes)
 \end{equation}
 Stabilizatorių tarpusavio komutatyvumas užtikrina, kad ir jų sandauga
 $K_1 K_2 K_3\cdots$ taip pat stabilizuoja
@@ -1026,6 +1032,7 @@ vieną loginį kubitą:
 |0\rangle_L = \frac{1}{\sqrt{2}}\big(|00\rangle + |11\rangle\big)\quad
 \mathrm{ir}\quad
 |1\rangle_L = \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big)\,.
+(\#eq:poerdvis-stabilizuotas-x-x)
 \end{equation}
 Taip 4 dimensijų erdvę sumažinome iki 2 dimensijų, kuri nusako vieno
 kubito būsenas. Šioje erdvėje operatorius $Z\otimes Z$ leidžia
@@ -1055,11 +1062,13 @@ stabilizatoriumi $K$ dominančioje $n$ kubitų erdvėje. Jeigu $E$ ir $K$
 yra komutatyvieji, tada:
 \begin{equation}
 KE|\psi\rangle = EK|\psi\rangle = E|\psi\rangle\,.
+(\#eq:e-komutuoja-su-k)
 \end{equation}
 Tad klaidos operatorius išsaugo $K$ stabilizatoriaus +1 tikrinę vertę.
 Tačiau, jeigu $E$ ir $K$ yra antikomutatyvieji:
 \begin{equation}
 KE|\psi\rangle = - EK|\psi\rangle = - E|\psi\rangle\,.
+(\#eq:e-antikomutuoja-su-k)
 \end{equation}
 Tai galime interpretuoti kaip stabilizatorių $K$, veikiantį klaidos
 paveiktą
@@ -1084,10 +1093,10 @@ Keturi stabilizatoriai identifikuoja $2^4= 16$ ortogonaliuosius
 2 dimensijų klaidų būsenų poerdvius ir todėl suteikia lygybę Hamingo
 riboje. Šio optimalaus 5 kubitų kodo stabilizatoriai yra:
 \begin{align}
-K_1 = & X\otimes Z\otimes Z\otimes X\otimes I\,; \\
-K_2 = & I\otimes X\otimes Z\otimes Z\otimes X\,; \\
-K_3 = & X\otimes I\otimes X\otimes Z\otimes Z\,; \\
-K_4 = & Z\otimes X\otimes I\otimes X\otimes Z\,.
+K_1 = & X\otimes Z\otimes Z\otimes X\otimes I\,;(\#eq:5-kubitu-stabilizatoriai-1) \\
+K_2 = & I\otimes X\otimes Z\otimes Z\otimes X\,;(\#eq:5-kubitu-stabilizatoriai-2) \\
+K_3 = & X\otimes I\otimes X\otimes Z\otimes Z\,;(\#eq:5-kubitu-stabilizatoriai-3) \\
+K_4 = & Z\otimes X\otimes I\otimes X\otimes Z\,.(\#eq:5-kubitu-stabilizatoriai-4)
 \end{align}
 Atkreipiame dėmesį, kad cikliškai pakeistas operatorius
 $K_5 = Z\otimes Z\otimes X\otimes I\otimes X$ nėra
@@ -1109,18 +1118,21 @@ vertes, +1 ir -1. Taikant spektrinę dekompoziciją, tokį $n$ kubitų
 būsenas veikiantį operatorių $K$ galima užrašyti:
 \begin{equation}
 K = \sum_{\lambda} \lambda P(\lambda) = P(1) - P(-1)\,.
+(\#eq:k-op-dekompozicija)
 \end{equation}
 Pasitelkdami projekcinius operatorius $P(1)$ ir $P(-1)$ į vektorių
 poerdvius, asocijuotus su +1 ir -1 tikrinėmis vertėmis, atitinkamai, bei
 jų pilnumo savybę $P(1) + P(-1) = I$, randame:
 \begin{equation}
 P(1) = \frac{I + K}{2}\,,\quad P(-1) = \frac{I - K}{2}\,.
+(\#eq:projekciniu-op-israiska-k)
 \end{equation}
 Neprarandant bendrumo, bet kokią $n$ kubitų būseną
 $|\psi\rangle$ galima išreikšti jos projekcijų į $\pm 1$
 stabilizatoriaus $K$ poerdvių būsenas superpozicija:
 \begin{equation}
 |\psi\rangle = P(1)|\psi\rangle + P(-1)|\psi\rangle\,.
+(\#eq:busena-kaip-k-poerdviu-superpozicija)
 \end{equation}
 Norint paruošti stabilizatorių rinkinio kodo būseną
 $|0\rangle_L$, užduotis yra atlikti pradinės registro
@@ -1139,10 +1151,10 @@ registro būsenų, kurios yra $\bar{Z}$ tikriniai vektoriai su
 $\pm 1$ tikrinėmis vertėmis, atitinkamai. Kodo būsenas (normuotąsias)
 randame atlikdami projekciją į bendrą keturių stabilizatorių +1 poerdvį:
 \begin{align}
-|0\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|00000\rangle\,;\\
-|1\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|11111\rangle\,.
+|0\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|00000\rangle\,;(\#eq:5-1-1-kodo-busena-0)\\
+|1\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|11111\rangle\,.(\#eq:5-1-1-kodo-busena-1)
 \end{align}
-Hadamardo testo kvantinė grandinė (žr. 6.7.1 poskyrį) su
+Hadamardo testo kvantinė grandinė (žr. \@ref(hadamard-testas-poskyris) poskyrį) su
 $U \rightarrow K$ gali atlikti norimą projekciją taikant anksčiau minėtą
 principą. Atkreipiame dėmesį, kad galutinė Hadamardo testo būsena
 $|\chi\rangle$ turi ieškomąją formą:
@@ -1152,6 +1164,7 @@ $|\chi\rangle$ turi ieškomąją formą:
 + |1\rangle\otimes\left(\frac{I - K}{2}\right)|\psi\rangle \\
 = & |0\rangle\otimes P(1)|\psi\rangle + |1\rangle\otimes P(-1)|\psi\rangle\,.
 \end{aligned}
+(\#eq:galutine-hadamard-testo-busena-k)
 \end{equation}
 Atlikus ancilos kubito (pirmasis registras) Pauli-$Z$ matavimą, pagal
 tai, ar bus rasta $|0\rangle,$ ar
@@ -1199,21 +1212,20 @@ loginiai vartai taisyti loginiam kubitui.
 
 Siekiant užkirsti kelią klaidų dauginimuisi ir sklidimui, kvantinės
 grandinės loginiai elementai yra pakeičiami klaidoms atspariais
-loginiais elementais. Imkime kaip pavyzdį 9.6 pav. parodytą kvantinę
+loginiais elementais. Imkime kaip
+pavyzdį \@ref(fig:klaidoms-neatspari-grandine) pav. parodytą kvantinę
 grandinę, sudarytą iš klaidoms neatsparių loginių elementų, atliekančią
 2 kubitų supynimą ir jų matavimus.
 
-![](./media/image9_6.svg)
+```{r klaidoms-neatspari-grandine, echo=FALSE, fig.cap="Klaidoms neatspari loginė grandinė, atliekanti kubitų supynimą ir jų matavimą.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_6.svg")
+```
 
-**9.6 pav.** Klaidoms neatspari loginė grandinė, atliekanti kubitų supynimą ir
-jų matavimą
+```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_7.svg")
+```
 
-![](./media/image9_7.svg)
-
-**9.7 pav.** Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti
-klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus
-
-9.7 pav. pateikiame klaidoms atsparius
+\@ref(fig:klaidoms-atsparus-loginiai-elementai) pav. pateikiame klaidoms atsparius
 $\bar{H}$ ir $\overline{CNOT}$ loginius elementus (žymimi su
 brūkšniuku) kodui, kuriame $k_1$ ir $k_2$ loginiai kubitai koduojami
 3 fiziniais kubitais. Šiuos tris fizinius kubitus, priklausančius
@@ -1231,14 +1243,9 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-![](./media/image9_8.svg)
-
-**9.8 pav.** Iliustracijoje 9.6 pav. parodytos loginės grandinės klaidoms
-atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau
-patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.
-Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du
-periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$;
-galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
+```{r klaidoms-atspari-versija, echo=FALSE, fig.cap="Iliustracijoje \\@ref(fig:klaidoms-neatspari-grandine) pav. parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai.", out.width='100%', fig.align='center'}
+knitr::include_graphics("media/image9_8.svg")
+```
 
 Klaidoms atspari kvantinė grandinė
 pakeičia loginius vartus $H$ ir $CNOT$, taip pat matavimų operacijas
@@ -1249,11 +1256,12 @@ būsenos yra periodiškai patikrinamos ir prireikus ištaisomos.
 
 Toliau aptarkime, kaip realizuoti klaidoms atsparų būsenų matavimą. Jam
 taikome Hadamardo testu pagrįstą minėtą kodo būsenų paruošimo metodą
-(žr. 9.9 poskyrį), kuris čia pritaikomas 3 kubitų būsenos
+(žr. \@ref(kodu-stabilizatoriai-poskyris) poskyrį), kuris čia pritaikomas 3 kubitų būsenos
 $|\psi\rangle$ matavimui. Šiuo metodu galima atlikti
 loginio Pauli-$Z$ ar bet kokio kito $n$ kubitų ermitinio operatoriaus
 $U$, išreiškiamo skersiniais loginiais vartais, projekcinį matavimą į jo
-+1 ir -1 poerdvius. Tai atliekanti kvantinė grandinė pateikta 9.9 pav.
++1 ir -1 poerdvius. Tai atliekanti kvantinė grandinė
+pateikta \@ref(fig:klaidoms-atsparus-matavimai) pav.
 
 Kiekvienam $|\psi\rangle$ būsenos kubitui yra
 pasitelkiamas papildomas ancilos kubitas. Šiuo atveju, trys fiziniai
@@ -1285,10 +1293,9 @@ principas nustatant galutinio matavimo rezultatą, klaidingo atsakymo
 tikimybė sumažėja nuo $p$ iki $O(p^2)$. Čia $p$ yra tikimybė, kad
 atsiras klaida bet kuriame grandinės elemente.
 
-![](./media/image9_9.svg)
-
-**9.9 pav.** Klaidoms atsparūs 3 kubitų loginio kubito būsenos $|\psi\rangle$
-bendrojo tipo matavimai
+```{r klaidoms-atsparus-matavimai, echo=FALSE, fig.cap="Klaidoms atsparūs 3 kubitų loginio kubito būsenos $|psi\\rangle$ bendrojo tipo matavimai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_9.svg")
+```
 
 Galima parodyti, kad tikimybė, jog klaidoms atspariose grandinėse
 atsiras daugiau nei viena klaida kubitų bloke, yra $cp^2$. Čia
@@ -1298,10 +1305,9 @@ kodavimo metodo ir bendrai nusako skaičių skirtingų vietų loginiame
 atsparioje kvantinėje grandinėje įvykdomos sėkmingai su tikimybe
 $1 - cp^2$ ir toliau įgaunamas pranašumas mažėjant $p$.
 
-![](./media/image9_10.svg)
-
-**9.10 pav.** Kodų konkatenacijos schema. Nurodytos nepataisomos klaidos
-tikimybė kiekviename kodavimo lygyje
+```{r kodu-konkatenacijos-schema, echo=FALSE, fig.cap="Kodų konkatenacijos schema. Nurodytos nepataisomos klaidos tikimybė kiekviename kodavimo lygyje.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_10.svg")
+```
 
 Kodų konkatenacijos metodas, taikomas kartu su klaidoms
 atspariomis loginėmis operacijomis, leidžia dar labiau sumažinti
@@ -1328,11 +1334,13 @@ Todėl mažiausias konkatenacijų skaičius $k$, reikalingas pasiekti šį
 tikslą, randamas iš nelygybės:
 \begin{equation}
 \frac{(cp)^{2^k}}{c} \leq \frac{\varepsilon}{p(n)}\,.
+(\#eq:nelygybe-maziausiam-konkatenaciju-skaiciui)
 \end{equation}
 Iš to išplaukia, kad konkatenacijų skaičius turi būti:
 \begin{equation}
 k \geq \left\{1 + \frac{\log\left\lbrack\frac{p(n)}{\varepsilon}\right\rbrack}{
 \log\left\lbrack\frac{1}{cp}\right\rbrack}\right\}\,.
+(\#eq:konkatenaciju-skaiciaus-ivertinimas)
 \end{equation}
 Iš anksčiau pateiktų argumentų matome, kad kvantinės grandinės ilgis ir
 fizinių kubitų skaičius auga tik polilogaritmiškai su
@@ -1376,10 +1384,11 @@ kubitus procesoriuje. Jeigu, pagal formaliai nustatytus rodiklius,
 grandinė atliekama sėkmingai, tada tęstume toliau: $3 \times 3, 4 \times 4, \ldots$,
 kol rastume didžiausią $m \times m$ dydžio kvadratinę grandinę
 ($m \leq n$), kurios procesorius nebegali sėkmingai įvykdyti. Taip
-randamas procesoriaus kvantinis tūris, jis žymimas simboliu $V_{Q}$, o
+randamas procesoriaus kvantinis tūris, jis žymimas simboliu $V_Q$, o
 jo formalus apibrėžimas yra:
 \begin{equation}
 \log_2 V_Q = \max_{m \leq n} \{\min(m, d(m))\}\,.
+(\#eq:kvantinio-turio-apibrezimas)
 \end{equation}
 Ši išraiška nusako, kad ieškomas didžiausias $m$ skaičius kubitų tarp
 visų procesoriaus $n$ kubitų, kurie sėkmingai įvykdo grandinę, $d(m)$
@@ -1406,12 +1415,12 @@ matricų, nusakančių bendro tipo unitariąsias 2 kubitų transformacijas.
 (angl. *special unitary group*). Haar-atsitiktinis SU(4) matricos
 parinkimas yra analogiškas atsitiktiniam skaliarinio skaičiaus
 parinkimui iš lygiai pasiskirsčiusių skaičių rinkinio. Kvantinio tūrio
-protokolą atliekanti grandinė yra parodyta 9.11 pav.
+protokolą atliekanti grandinė yra
+parodyta \@ref(fig:kvantinio-turio-protokolo-grandine) pav.
 
-![](./media/image9_11.svg)
-
-**9.11 pav.** Kvadratinėmis $(d \times d)$ grandinėmis pagrįstas kvantinio tūrio
-nustatymo protokolas 
+```{r kvantinio-turio-protokolo-grandine, echo=FALSE, fig.cap="Kvadratinėmis $(d \\times d)$ grandinėmis pagrįstas kvantinio tūrio nustatymo protokolas.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_11.svg")
+```
 
 Siekiant įvertinti, ar grandinė buvo įvykdyta sėkmingai, taikomas
 **sunkiųjų išvesties būsenų generavimas** (angl. *heavy output
@@ -1443,9 +1452,10 @@ optimaliai sukompiliuotos loginės operacijos. Kitu atveju siekiant
 skaičiaus, ir realus grandinės gylis įrenginyje bus didesnis, tad
 tikimybė ją sėkmingai įvykdyti mažės.
 
-Siekdami iliustruoti kubitų tarpusavio jungimo įtaką skaičiavimams, 9.12
-pav. pateikiame dvi skirtingas kvantinio procesoriaus kubitų jungčių
-schemas. Pirmoje (9.12 pav., a) pavaizduota IBM superlaidininkais
+Siekdami iliustruoti kubitų tarpusavio jungimo įtaką
+skaičiavimams, \@ref(fig:dvi-kv-procesoriaus-architekturos) pav. pateikiame dvi skirtingas kvantinio procesoriaus kubitų jungčių
+schemas. Pirmoje (\@ref(fig:dvi-kv-procesoriaus-architekturos) pav., a)
+pavaizduota IBM superlaidininkais
 pagrįstų grupės *Falcon* procesorių architektūra, kurioje kubitų
 išdėstymas paremtas heksagonine simetrija. Toks kubitų išdėstymas yra
 specialiai gamintojų pritaikytas atlikti jų parinktiems klaidų taisymo
@@ -1460,7 +1470,8 @@ neįmanoma. Tam būtina įvykdyti seką *SWAP* loginių operacijų tarp
 tarpinių kubitų, šitaip realizuojant norimą operaciją šiems dviem
 kubitams.
 
-Antroji (9.12 pav., b) pateikta kvantinio procesoriaus architektūra
+Antroji (\@ref(fig:dvi-kv-procesoriaus-architekturos) pav., b)
+pateikta kvantinio procesoriaus architektūra
 leidžia 2 kubitų loginius vartus atlikti tiesiogiai tarp bet kurių
 kubitų. Tai vadinamasis **„visų su visais" jungimasis**
 (angl. *all-to-all connectivity*). Jonų gardelėmis pagrįsti kvantiniai
@@ -1470,13 +1481,9 @@ tokio tipo architektūra turi akivaizdų pranašumą prieš IBM *Falcon*, nes
 potencialiai sumažina reikalaujamą loginių vartų skaičių atlikti tam
 pačiam algoritmui.
 
-![](./media/image9_12.svg)
-
-![](./media/image9_13.svg)
-
-**9.12 pav.** Dvi kvantinio procesoriaus architektūros, pasitelkiančios
-skirtingą kubitų tarpusavio jungimą. Tai nulemia, tarp kurių kubitų galima
-atlikti 2 ar daugiau kubitų sąlyginius loginius vartus
+```{r dvi-kv-procesoriaus-architekturos, echo=FALSE, fig.cap="Dvi kvantinio procesoriaus architektūros, pasitelkiančios skirtingą kubitų tarpusavio jungimą. Tai nulemia, tarp kurių kubitų galima atlikti 2 ar daugiau kubitų sąlyginius loginius vartus.", out.width='45%', fig.align='center', fig.show='hold'}
+knitr::include_graphics(c("media/image9_12.svg", "media/image9_13.svg"))
+```
 
 Kvantinis tūris leidžia patikimai įvertinti pagrindinius skaičiuojamąją
 galią nulemiančius faktorius, tačiau yra orientuotas į artimosios raidos
