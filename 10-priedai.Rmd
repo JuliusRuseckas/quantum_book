@@ -1,0 +1,13 @@
+# (APPENDIX) Priedai {-}
+
+# Debesyje pasiekiami kvantiniai kompiuteriai ir simuliatoriai
+
+- https://quantum-computing.ibm.com
+- https://ionq.com
+- https://www.xanadu.ai
+- https://www.rigetti.com
+- https://aws.amazon.com/braket/quantum-computers
+- https://azure.microsoft.com/en-us/products/quantum
+- https://quantumai.google
+- https://qiskit.org
+- https://pennylane.ai/
