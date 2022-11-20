@@ -933,7 +933,7 @@ $\langle\phi |\psi\rangle$, ir vidinės
 sandaugos kvadratą
 $|\langle\phi |\psi\rangle |^2$.
 
-### Hadamardo testas
+### Hadamardo testas {#hadamard-testas-poskyris}
 
 
 ```{r hadamard-test-grandine, echo=FALSE, fig.cap="Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
