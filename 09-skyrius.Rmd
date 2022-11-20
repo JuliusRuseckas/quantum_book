@@ -176,6 +176,7 @@ Siekdami iliustruoti supynimo įtaką imkime paprastą pavyzdį, kuriame
 kubitas yra paruoštas pradinėje superpozicijos būsenoje:
 \begin{equation}
 |\psi\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\,.
+(\#eq:superpozicija-klaidoms)
 \end{equation}
 Jeigu atliksime šiai būsenai (idealiai veikiančius) Hadamardo loginius
 vartus, ji taps
@@ -187,6 +188,7 @@ tai lėmė jų kvantinį supynimą ir bendrą būseną:
 \begin{equation}
 U|\psi\rangle\otimes|e\rangle
 = \frac{1}{\sqrt{2}}\big(|0\rangle\otimes|e_1\rangle + |1\rangle\otimes|e_2\rangle\big)\,.
+(\#eq:busena-saveika-aplinka)
 \end{equation}
 Čia $|e_0\rangle$ ir $|e_1\rangle$
 yra aplinkos sistemos būsenos. Nežinodami apie įvykusią sąveiką,
@@ -195,6 +197,7 @@ atliekame kubitui Hadamardo vartus:
 H\otimes I\big(U|\psi\rangle\otimes|e\rangle\big)
 = \frac{1}{2}\big(|0\rangle + |1\rangle )\otimes|e_1\rangle
 + \frac{1}{2}\big(|0\rangle - |1\rangle )\otimes|e_2\rangle\big)\,.
+(\#eq:h-po-saveikos)
 \end{equation}
 Matome, kad kvantinis supynimas neleidžia panaikinti kubito būsenos
 $|1\rangle$, kaip tai atsitinka dėl interferencijos
@@ -205,9 +208,9 @@ $|0\rangle$ ir $|1\rangle$ yra:
 p(0) = & \frac{1}{4}\big(\langle e_1 | e_1 \rangle + \langle e_2 | e_2 \rangle
 + \langle e_1 | e_2 \rangle + \langle e_2 | e_1 \rangle\big) \nonumber\\
 = & \frac{1}{4}\big(\langle e_1 | e_1 \rangle + \langle e_2 | e_2 \rangle
-+ 2\mathrm{Re}\lbrack \langle e_1 | e_2 \rangle\rbrack\big)\,;\\
++ 2\mathrm{Re}\lbrack \langle e_1 | e_2 \rangle\rbrack\big)\,;(\#eq:tikimybe-0-po-saveikos)\\
 p(1) = & \frac{1}{4}\big(\langle e_1 | e_1 \rangle + \langle e_2 | e_2 \rangle
-- 2\mathrm{Re}\lbrack \langle e_1 | e_2 \rangle\rbrack\big)\,.
+- 2\mathrm{Re}\lbrack \langle e_1 | e_2 \rangle\rbrack\big)\,.(\#eq:tikimybe-1-po-saveikos)
 \end{align}
 Norėdami įvertinti šias tikimybes, turime daugiau pasakyti apie išorinę
 sistemą. Darydami prielaidą, kad ji yra normuotoji, o būsenos
@@ -231,8 +234,8 @@ kubitai, bet gali turėti jų daug daugiau. Transformacijos įtaka kubito
 standartiniams baziniams vektoriams ir aplinkos pradinei būsenai
 $|e\rangle$ išreiškiama taip:
 \begin{align}
-U|0\rangle\otimes|e\rangle = & |0\rangle\otimes|e_1 \rangle + |1\rangle\otimes|e_2 \rangle\,; \\
-U|1\rangle\otimes|e\rangle = & |0\rangle\otimes|e_3 \rangle + |1\rangle\otimes|e_4 \rangle\,.
+U|0\rangle\otimes|e\rangle = & |0\rangle\otimes|e_1 \rangle + |1\rangle\otimes|e_2 \rangle\,;(\#eq:u-0-e) \\
+U|1\rangle\otimes|e\rangle = & |0\rangle\otimes|e_3 \rangle + |1\rangle\otimes|e_4 \rangle\,.(\#eq:u-1-e)
 \end{align}
 Bendroje situacijoje, aplinkos sistemos būsena, kuri dalyvavo sąveikoje,
 gali būti nenormuotoji ir skirtingi $|e_i \rangle$
@@ -255,6 +258,7 @@ U|\psi\rangle\otimes|e\rangle
 + \big(a|1\rangle - b|0\rangle\big)
 \otimes\big(|e_1 \rangle - |e_2 \rangle\big)\Big\rbrack\,.
 \end{aligned}
+(\#eq:bendra-situacija-saveika-su-aplinka)
 \end{equation}
 Antroje eilutėje pergrupavome būsenas siekdami parodyti, kad kubito
 sąveika su aplinka gali būti išreikšta Pauli operatoriais, veikiančiais
@@ -263,6 +267,7 @@ kubito superpozicijos būseną:
 U|\psi\rangle\otimes|e\rangle
 = I|\psi\rangle\otimes|e_I \rangle + X|\psi\rangle\otimes|e_x \rangle
 + Z|\psi\rangle\otimes|e_z \rangle + XZ|\psi\rangle\otimes|e_{xz}\rangle\,.
+(\#eq:saveika-su-aplinka-pauli)
 \end{equation}
 Aplinkos būsenas pervadinome taip:
 \begin{equation}
@@ -272,6 +277,7 @@ Aplinkos būsenas pervadinome taip:
 |e_z \rangle = & \frac{\big(|e_0 \rangle - |e_3 \rangle\big)}{2}\,,\quad
 |e_{xz}\rangle = \frac{\big(|e_1 \rangle - |e_2 \rangle\big)}{2}\,.
 \end{aligned}
+(\#eq:aplinkos-busenos)
 \end{equation}
 Matome, kad aplinkos ir kubito sistema tampa supintąja. Pirmoji
 superpozicijoje būsena
@@ -319,6 +325,7 @@ $|\psi\rangle_L$ taip:
 |\psi\rangle = a|0\rangle + b|1\rangle
 \rightarrow |\psi\rangle_L = a|0\rangle_L + b|1\rangle_L
 = a|000\rangle + b|111\rangle\,.
+(\#eq:loginis-kubitas-is-fiziniu)
 \end{equation}
 Būsenos yra normuotosios,
 $|a|^2 + |b|^2 = 1$, o 1 kubito baziniai vektoriai koduojami
@@ -351,6 +358,7 @@ klaidas. Sakykime, kad atsiranda klaida pirmajame kubite, kuri pakeičia
 $|\psi\rangle_L$ būseną taip:
 \begin{equation}
 |\psi\rangle_L \rightarrow a|100\rangle + b|011\rangle\,.
+(\#eq:bito-apvertimo-klaida-loginiame-kubite)
 \end{equation}
 Atlikę Pauli-$Z$ matavimus su visais 3 kubitais rastume
 $|100\rangle$ arba $|011\rangle$ būsenas
@@ -416,6 +424,7 @@ Užbaigiant aptikimo stadiją, bendra loginio kubito ir ancilų su klaida
 pirmajame fiziniame kubite būsena tampa:
 \begin{equation}
 |\psi\rangle_L \rightarrow \big(a|100\rangle + b|011\rangle\big)\otimes|11\rangle\,.
+(\#eq:bendra-loginio-ancilos-busena)
 \end{equation}
 Atkreipiame dėmesį, kad ancilos ir loginio kubito būsena yra
 faktorizuojamoji, todėl ancilų kubitų matavimo procesas neturi įtakos
@@ -482,7 +491,8 @@ triukšmingu kanalu, jeigu $p < 0.5$.
 ## Fazės apvertimo klaidos aptikimas ir taisymas
 
 Bito ir fazės klaidų aptikimas ir taisymas yra glaudžiai susijęs.
-Surinksime visą informaciją siekdami tai pademonstruoti. IV skyriuje
+Surinksime visą informaciją siekdami tai pademonstruoti.
+\@ref(kvantiniai-loginiai-vartai-grandines) skyriuje
 matėme, kad Pauli-$Z$ loginius vartus galima išreikšti dviejų Hadamardo
 ir Pauli-$X$ vartų sandauga, $Z = HXH$ bei $X = HZH$. Hadamardo vartai,
 veikdami Pauli-$Z$ bazinius vektorius transformuoja juos į Pauli-$X$
@@ -492,6 +502,7 @@ $H|1\rangle = |1_x \rangle$. O pritaikę
 šiems Pauli-$Z$ vartus randame:
 \begin{equation}
 Z|0_x \rangle = |1_x \rangle\,,\quad Z|1_x \rangle = |0_x \rangle\,.
+(\#eq:pauli-z-ant-x-busenu)
 \end{equation}
 Kitaip tariant, fazės apvertimo klaida
 $\{|0\rangle , |1\rangle\}$ baziniuose
@@ -506,25 +517,27 @@ fazės klaidos, kubito būseną $|\psi\rangle$ koduojame
 dviem žingsniais. Pirmiausia, vėl „patrigubiname" bazinius vektorius:
 \begin{equation}
 |\psi\rangle = a|0\rangle + b|1\rangle \rightarrow a|000\rangle + b|111\rangle\,.
+(\#eq:baziniu-vektoriu-trigubinimas)
 \end{equation}
 Tolesniame žingsnyje pritaikome Hadamardo transformacijas kiekvienam iš
 trijų kubitų:
 \begin{equation}
 |\psi\rangle_L = H^{\otimes 3}\big(a|000\rangle + b|111\rangle\big)
 = a|0_x 0_x 0_x \rangle + b|1_x 1_x 1_x \rangle\,.
+(\#eq:h-kiekvienam-is-3)
 \end{equation}
-9.4 pav. pateikiame grandinę,
+\@ref(fig:grandine-loginio-paruosimui) pav. pateikiame grandinę,
 iliustruojančią šio loginio kubito paruošimą.
 
-![](./media/image9_4.svg)
-
-**9.4 pav.** Loginė grandinė, paruošianti loginį kubitą, skirtą taisyti fazės
-klaidai.
+```{r grandine-loginio-paruosimui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti loginį kubitą, skirtą taisyti fazės klaidai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_4.svg")
+```
 
 Atsiradusi fazės klaida, pavyzdžiui, pirmajame kodo kubite, pakeis
 loginę būseną taip:
 \begin{equation}
 |\psi\rangle_L \rightarrow a|1_x 0_x 0_x \rangle + b|0_x 1_x 1_x \rangle\,.
+(\#eq:fazes-klaida-loginiame-kubite)
 \end{equation}
 Norėdami pritaikyti bito apvertimo klaidos aptikimo ir taisymo
 algoritmą, turime pirmiausiai šią būseną transformuoti atgal į
@@ -533,6 +546,7 @@ vektorius. Atlikę Hadamardo transformacijas pažeistai būsenai randame:
 \begin{equation}
 H^{\otimes 3}\big(a|1_x 0_x 0_x \rangle + b|0_x 1_x 1_x \rangle\big)
 = a|100\rangle + b|011\rangle\,.
+(\#eq:h-pazeistai-busenai)
 \end{equation}
 Akivaizdu, kad šis fazės klaidų taisymo kodas turi identiškas
 charakteristikas bito apvertimo kodui, tad anksčiau pateikta analizė
@@ -551,6 +565,7 @@ taisymo kode:
 R_{x}(\theta)\otimes I\otimes I|\psi \rangle_L
 = \cos(\theta/2)\big(a|000\rangle + b|111\rangle)
 - \mathrm{i}\sin(\theta/2)\big(a|100\rangle + b|011\rangle\big)\,.
+(\#eq:tolydi-bito-apvertimo-klaida)
 \end{equation}
 Matome loginio kubito būseną, kuri yra klaidos nepaveiktos ir paveiktos
 būsenos superpozicijoje. Kad aptiktume klaidą, vėl galime taikyti
@@ -560,6 +575,7 @@ atlikę randame:
 \begin{equation}
 \cos(\theta/2)\big(a|000\rangle + b|111\rangle\big)\otimes|00\rangle
 - \mathrm{i}\sin(\theta/2)\big(a|100\rangle + b|011\rangle\big)\otimes|11\rangle\,.
+(\#eq:tolydzios-klaidos-aptikimo-matavimas)
 \end{equation}
 Ancilų nusakyta sindromo būsena $|00 \rangle$ yra supinta
 su loginio kubito būsena, kuriai neįvyko klaida. O štai
@@ -610,6 +626,7 @@ operatoriai, veikiantys skirtingas kodų būsenas, pakeistų jas į kitas,
 ortogonaliąsias, klaidų būsenas. Tai galime užrašyti glaustai:
 \begin{equation}
 \langle i| E_a^{\dagger} E_b |j\rangle_L = 0\,,\,\mathrm{jeigu}\, i \neq j\,.
+(\#eq:klaidu-busenu-ortogonalumas)
 \end{equation}
 Jeigu skirtingų kodų būsenos $|i\rangle_L$ ir
 $|j\rangle_L$ klaidų operatoriais yra pakeičiamos į
@@ -625,6 +642,7 @@ atskleidimas bendrai paveikia kvantines būsenas ir atsitiktiniu būdu jas
 negrąžinamai pakeičia. Šią sąlygą galima glaustai užrašyti:
 \begin{equation}
 \langle i|E_a^{\dagger} E_b |i\rangle_L = c_{ab}\,.
+(\#eq:informacijos-neatskleidimo-salyga)
 \end{equation}
 Vertė $c_{ab}$ negali priklausyti nuo būsenos
 $|i\rangle_L$, nes tai atskleistų apie ją informaciją.
@@ -639,16 +657,18 @@ $\varepsilon \subseteq \{ I,X,Y,Z\}^{\otimes n}$.
 
 Siekdami iliustruoti bendrą klaidų taisymo principą, imkime išplėstinę
 sistemą, sudarytą iš $n$ kubitų registro $|\psi\rangle$,
-aplinkos sistemos būsenų $|e_i\rangle$ ir pradinio
+aplinkos sistemos būsenų $|e\rangle$ ir pradinio
 ancilos kubito būsenoje $|0\rangle$:
 \begin{equation}
-|\Psi\rangle = \sum_{E_i \in \varepsilon} E_i|\psi\rangle\otimes|e_i \rangle\otimes|0\rangle\,.
+|\Psi\rangle = |\psi\rangle\otimes|e\rangle\otimes|0\rangle\,.
+(\#eq:isplestines-sistemos-busena)
 \end{equation}
 Šioje stadijoje kubitų registras yra veikiamas klaidų operatoriaus
 $E_i$ ir supinamas su aplinkos būsenomis. Toliau atliekame unitariąją
 transformaciją $U$, supinančią ir ancilos kubitą:
 \begin{equation}
 U|\Psi\rangle = \sum_{E_i \in \varepsilon} E_i|\psi\rangle\otimes|e_i \rangle\otimes|a_i \rangle\,.
+(\#eq:registro-aplinkos-ancilos-supynimas)
 \end{equation}
 Siekiant identifikuoti ir atstatyti kodą, yra atliekama
 $U|\Psi\rangle$ būsenos projekcija į vieną iš
@@ -659,6 +679,7 @@ yra sugriaunama ir ši būsena, su tam tikra tikimybe, pasikeičia į vieną
 iš galimų:
 \begin{equation}
 E_i|\psi\rangle\otimes|e_i \rangle\otimes|a_i \rangle\,.
+(\#eq:galima-busena-po-matavimo)
 \end{equation}
 Atkreipiame dėmesį, kad šioje stadijoje kubitų registro būsena
 $E_i|\psi\rangle$ yra nebesupinta nei su aplinkos, nei
@@ -695,6 +716,7 @@ kubitui yra galimos trys skirtingos klaidos, nusakomos {$X$, $Y$, $Z$}
 operatoriais, tad skaičius $N(t)$ klaidų iš viso yra:
 \begin{equation}
 N(t) = \sum_{j = 0}^t 3^j\binom{n}{j}\,.
+(\#eq:bendras-klaidu-skaicius)
 \end{equation}
 Suma indeksuojama skaičiais $j$ ir kinta nuo 0 (nėra klaidų) iki
 didžiausio skaičiaus klaidų $t$, kai $t < n$. Pavyzdžiui,
@@ -725,11 +747,13 @@ dydžio. Tai nusako minimalų $n$ fizinių kubitų, koduojančių $k$ loginius
 kubitus, dimensijos dydį $2^n$. Hamingo riba randama:
 \begin{equation}
 \sum_{j = 0}^t 3^j \binom{n}{j}2^k \leq 2^n\,.
+(\#eq:hamingo-riba)
 \end{equation}
 Pavyzdžiui, $k$ loginių kubitų, kuriems leidžiama tik viena
 ($t = 1$) bendrojo tipo kvantinė klaida, ši nelygybė yra:
 \begin{equation}
 (1 + 3n)2^k \leq 2^n\,.
+(\#eq:hamingo-riba-vienai-klaidai)
 \end{equation}
 Galima patikrinti, kiek reikia minimaliai fizinių kubitų siekiant
 koduoti 1 loginį kubitą, kuriam leidžiama viena bendrojo tipo klaida.
@@ -745,6 +769,7 @@ kodų ribų apibrėžimų, pavyzdžiui, kvantinė Singltono riba
 įrodymo čia nepateiksime, tačiau nelygybė yra:
 \begin{equation}
 n - k \geq 4t\,.
+(\#eq:singleton-riba)
 \end{equation}
 Simboliai $n$ ir $k$ nusako fizinių ir loginių kubitų skaičių,
 atitinkamai, taip pat didžiausią klaidų paveiktų kubitų skaičių $t$.
@@ -767,6 +792,7 @@ Antrajame žingsnyje kiekvienas iš šių 3 kubitų yra toliau koduojamas dar
 \begin{equation}
 |0_x \rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} \rightarrow \frac{|000\rangle + |111\rangle}{\sqrt{2}}\,;\quad
 |1_x \rangle = \frac{|0\rangle - |1\rangle}{\sqrt{2}} \rightarrow \frac{|000\rangle - |111\rangle}{\sqrt{2}}\,.
+(\#eq:antras-soro-zingsnis)
 \end{equation}
 Bendroje loginio kubito būsenoje
 $|\psi\rangle_L = a|0\rangle_L + b|1\rangle_L$
@@ -775,20 +801,20 @@ baziniai vektoriai yra:
 |0\rangle_L = & \frac{1}{\sqrt{8}}\big(|000\rangle + |111\rangle\big)
 \otimes\big(|000\rangle + |111\rangle\big)
 \otimes\big(|000\rangle + |111\rangle\big)\nonumber\\
-\equiv & |+\rangle\otimes|+\rangle\otimes|+\rangle\,;\\
+\equiv & |+\rangle\otimes|+\rangle\otimes|+\rangle\,;(\#eq:shoro-loginis-0)\\
 |1\rangle_L = & \frac{1}{\sqrt{8}}\big(|000\rangle - |111\rangle\big)
 \otimes\big(|000\rangle - |111\rangle\big)
 \otimes\big(|000\rangle - |111\rangle\big)\nonumber\\
-\equiv & |-\rangle\otimes|-\rangle\otimes|-\rangle\,.
+\equiv & |-\rangle\otimes|-\rangle\otimes|-\rangle\,.(\#eq:shoro-loginis-1)
 \end{align}
 Kubitus sugrupavome į tris blokus ir, siekdami supaprastinti simboliką,
 blokus pervadinome atitinkamai $|+\rangle$ ir
 $|-\rangle$. Grandinė atliekant kodo paruošimą pateikta
-9.5 pav.
+\@ref(fig:grandine-shoro-loginiam-kubitui) pav.
 
-![](./media/image9_5.svg)
-
-**9.5 pav.** Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą
+```{r grandine-shoro-loginiam-kubitui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image9_5.svg")
+```
 
 Kaip ir 3 kubitų kode, aptikti atsirandančioms bito apvertimo klaidoms
 pasitelkiami nelokalūs matavimai. Sakykime, kad atsiranda bito apvertimo
@@ -811,8 +837,8 @@ ją ištaisyti pritaikius atitinkamam kubitui Pauli-$X$ loginius vartus.
 Jeigu atsiranda fazės klaida, pavyzdžiui, pirmojo bloko viename iš
 kubitų, šio bloko būsena pakinta taip:
 \begin{align}
-|0\rangle_L : & \quad |000\rangle + |111\rangle\rightarrow |000\rangle - |111\rangle\,;\\
-|1\rangle_L : & \quad |000\rangle - |111\rangle\rightarrow |000\rangle + |111\rangle\,.
+|0\rangle_L : & \quad |000\rangle + |111\rangle\rightarrow |000\rangle - |111\rangle\,;(\#eq:fazes-klaida-shoro-0)\\
+|1\rangle_L : & \quad |000\rangle - |111\rangle\rightarrow |000\rangle + |111\rangle\,.(\#eq:fazes-klaida-shoro-1)
 \end{align}
 Atkreipiame dėmesį, kad nesvarbu, kuris iš trijų kubitų bloke patiria
 fazės klaidą, to bloko būsena pasikeičia lygiai taip pat. Tad
@@ -822,6 +848,7 @@ $|\psi\rangle_L$ pasikeičia taip:
 \begin{equation}
 |\psi\rangle_L \rightarrow a|-\rangle\otimes|+\rangle\otimes|+\rangle
 + b|+\rangle\otimes|-\rangle\otimes|-\rangle\,.
+(\#eq:logine-busena-ivykus-klaidai)
 \end{equation}
 Vietoj pavienių kubitų bloke palyginimo, kaip daroma aptinkant bito
 apvertimo klaidą, fazės apvertimo klaidos aptikimui tarpusavyje
@@ -844,8 +871,8 @@ $|-\rangle$ yra trijų Pauli-$X$ tenzorių sandaugos
 operatorių tikriniai vektoriai su tikrinėmis vertėmis $\lambda = 1$ ir
 $\lambda = -1$, atitinkamai:
 \begin{align}
-X_1\otimes X_2\otimes X_3\big(|000\rangle + |111\rangle\big ) = & |000\rangle + |111\rangle = |+\rangle\,;\\
-X_1\otimes X_2\otimes X_3\big(|000\rangle - |111\rangle\big ) = & -\big(|000\rangle - |111\rangle) = - |-\rangle\,.
+X_1\otimes X_2\otimes X_3\big(|000\rangle + |111\rangle\big ) = & |000\rangle + |111\rangle = |+\rangle\,;(\#eq:bloko-buena-p1)\\
+X_1\otimes X_2\otimes X_3\big(|000\rangle - |111\rangle\big ) = & -\big(|000\rangle - |111\rangle) = - |-\rangle\,.(\#eq:bloko-buena-m1)
 \end{align}
 Tad bet kurių dviejų blokų būsenų, nepaveiktų klaidos, tikrinių verčių
 sandauga yra visada +1.
@@ -888,6 +915,7 @@ bendra būsena:
 \begin{equation}
 \big(a|-\rangle\otimes|+\rangle\otimes|+\rangle
 + b|+\rangle\otimes|-\rangle\otimes|-\rangle\big)\otimes|11\rangle\,.
+(\#eq:fazes-klaida-loginiame-kubite)
 \end{equation}
 Fazės klaida pirmajame bloke ištaisoma pritaikius
 $Z_1\otimes Z_2\otimes Z_3$ loginius vartus. Galiausiai
