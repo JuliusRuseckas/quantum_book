@@ -20,6 +20,7 @@ Pavienių ir sudėtinių kvantinių sistemų dinamiką apibūdina III skyriuje
 minėta Šriodingerio lygtis:
 \begin{equation}
 \mathrm{i}\hbar\frac{d|\psi(t)\rangle}{dt} = H|\psi(t)\rangle\,.
+(\#eq:schroedinger-8)
 \end{equation}
 Ši lygtis tinka kvantinėms sistemoms, kuriose reliatyvistiniai efektai
 yra nereikšmingi arba gali būti aproksimuojami efektyviu hamiltonianu
@@ -44,6 +45,7 @@ sudarytos iš $1/2$ sukinių, dinamiką. **Skersinio lauko Aizingo modelio**
 versija (angl. *transverse-field Ising model*) turi šią formą:
 \begin{equation}
 H = - j\sum_{i = 1}^n Z_i\otimes Z_{i + 1} - g\sum_{i = 1}^n X_i\,.
+(\#eq:transverse-field-Ising)
 \end{equation}
 Hamiltonianas apibūdina $n$ kubitų, išrikiuotų eilėje. Nariai pirmoje
 sumoje nusako magnetines sąveikas tarp vienas šalia kito ($i$, $i + 1$)
@@ -58,18 +60,20 @@ išraiškos, bendras kubitų elgesys šiame Aizingo modelyje pasižymi
 fenomenų gausa.
 
 Norėdami apskaičiuoti kubitų evoliuciją laike turime įvertinti
-unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą (žr. III
-skyrių):
+unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
+(žr. \@ref(kvantines-mechanikos-pagrindai) skyrių):
 \begin{equation}
 |\psi(t) \rangle = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}|\psi(0)\rangle
 = U|\psi(0)\rangle\,.
+(\#eq:evoliucija-8)
 \end{equation}
 Čia pradinė būsena $|\psi(0) \rangle$ laiku $t = 0$ yra
 bendrai $n$ kubitų superpozicija. Unitariojo operatoriaus formavimas iš
 ermitinio operatoriaus, šiuo atveju hamiltoniano $H$, kvantinėje
 kompiuterijoje vadinamas **hamiltoniano kodavimu** (angl. *hamiltonian
 encoding*). Mat iš bet kokio ermitinio operatoriaus $A$ galime
-suformuoti unitarųjį operatorių *U* imdami jo ekponentę $\mathrm{e}^{\mathrm{i}At}$, ir šį
+suformuoti unitarųjį operatorių $U$ imdami jo ekponentę
+$\mathrm{e}^{\mathrm{i}At}$, ir šį
 unitarųjį operatorių realizuoti loginiais vartais. Pavyzdžiui, mašininio
 mokymosi algoritmuose operatorių realizuojanti matrica $A$ gali nusakyti
 mokymosi duomenis, o hamiltoniano kodavimas suteikia vieną būdą duomenis
@@ -80,6 +84,7 @@ pateikti kvantiniam kompiuteriui.
 Daugeliu atvejų hamiltonianą $H$ galime išskaidyti suma:
 \begin{equation}
 H = \sum_{i = 1}^k H_i\,.
+(\#eq:h-kaip-suma)
 \end{equation}
 Minėtame Aizingo modelyje hamiltonianas yra sudarytas iš dviejų narių:
 $H_1 = - j\sum_{i = 1}^n Z_i\otimes Z_{i + 1}$ ir
@@ -92,6 +97,7 @@ laike, nes:
 \begin{equation}
 \mathrm{e}^{\frac{-\mathrm{i}H_1t}{\hbar}}\mathrm{e}^{\frac{-\mathrm{i}H_2t}{\hbar}}
 \neq \mathrm{e}^{\frac{-\mathrm{i}(H_1 + H_2)t}{\hbar}}\,.
+(\#eq:negalima-lygybe-8)
 \end{equation}
 Vadinamoji **troterizacija** (angl. *Suzuki-Trotter approximation*)
 leidžia apeiti iškilusią kliūtį ir apytikriai realizuoti norimą
@@ -102,6 +108,7 @@ $\Delta t = t/s$. Unitarusis operatorius tampa:
 U = \mathrm{e}^{\frac{-\mathrm{i}(H_1 + H_2)t}{\hbar}} \cong
 \left(\mathrm{e}^{\frac{-\mathrm{i}H_1\Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}H_2\Delta t}{\hbar}}\right)^s\,.
+(\#eq:laiko-diskretizacija-8)
 \end{equation}
 Naudodami pasirinktinai mažą žingsnį $\Delta t$ ir atlikdami
 iteraciją $s$ kartų, apskaičiuokime norimą sistemos laiko evoliuciją
@@ -118,6 +125,7 @@ $|\psi(t)\rangle \cong |\psi(s\Delta t)\rangle$:
 \mathrm{e}^{\frac{-\mathrm{i}H_2 \Delta t}{\hbar}}\cdots
 \mathrm{e}^{\frac{-\mathrm{i}H_1 \Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}H_2 \Delta t}{\hbar}}|\psi(0)\rangle\,.
+(\#eq:galutine-busena-trot)
 \end{equation}
 Troterizacija natūraliai tinka realizuoti ir hamiltonianus, kurie kinta
 laike. Tai gali nusakyti, pavyzdžiui, periodines sistemos
@@ -128,6 +136,7 @@ yra strobuojamas, taip pateikiant efektyvią seką:
 \begin{equation}
 |\psi(s\Delta t)\rangle
 = U_s(\Delta t)\cdots U_2(\Delta t)U_1(\Delta t)|\psi(0)\rangle\,.
+(\#eq:nuo-laiko-priklausantis-u-trot)
 \end{equation}
 
 ### Aizingo modelio realizavimas kvantinėje grandinėje
@@ -145,7 +154,8 @@ $\mathrm{e}^{\frac{-\mathrm{i}H_1 t}{\hbar}}
 $\theta = \frac{j\Delta t}{\hbar}$, o $Z_k\otimes Z_l$
 veikia $k$ ir $l$­kubitus kiekviename žingsnyje. Dėl paprastumo
 praleidžiame identitetus, $\otimes I$, kurie veikia likusius kubitus.
-Tam galime panaudoti II skyriuje pateiktą tenzorinės operatorių
+Tam galime panaudoti \@ref(matematikos-skyrius) skyriuje
+pateiktą tenzorinės operatorių
 sanudaugos funkcijos išraišką:
 \begin{equation}
 \mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}
@@ -156,8 +166,9 @@ sanudaugos funkcijos išraišką:
 0 & 0 & \mathrm{e}^{-\mathrm{i}\theta} & 0 \\
 0 & 0 & 0 & \mathrm{e}^{\mathrm{i}\theta}
 \end{bmatrix}\,.
+(\#eq:z-times-z-eksponente)
 \end{equation}
-8.9 lygybės tenzorinėje sandaugoje
+\@ref(eq:z-times-z-eksponente) lygybės tenzorinėje sandaugoje
 $P_{k,l} \in \big(|0\rangle\langle 0|, |1\rangle\langle 1|\big)$
 yra Pauli-$Z$ projekciniai operatoriai, o tikrinių verčių sandauga yra
 $\lambda_k\lambda_l \in (1, -1)$. Atkreipiame dėmesį, kad lyginį
@@ -166,13 +177,11 @@ $|11\rangle$) yra pritaikoma fazė $\mathrm{e}^{\mathrm{i}\theta}$, o štai
 nelyginio lyginumo būsenos ($|01\rangle$ ir
 $|10\rangle$) įgauna $\mathrm{e}^{-\mathrm{i}\theta}$.
 
-![](./media/image8_1.svg)
+```{r z-times-z-grandine, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti $\\mathrm{e}^{\\mathrm{i}\\theta Z_1\\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi $R_z$ posūkio loginiai vartai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_1.svg")
+```
 
-**8.1 pav.** Loginė grandinė, realizuojanti $\mathrm{e}^{\mathrm{i}\theta
-Z_1\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi
-$R_z$ posūkio loginiai vartai
-
-8.1 pav. parodyta kvantinė grandinė,
+\@ref(fig:z-times-z-grandine) pav. parodyta kvantinė grandinė,
 realizuojanti $\mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$ operatorių kubitams
 $k_1$ ir $k_2$ pasitelkiant ancilą $a_1$.
 
@@ -184,12 +193,14 @@ superpozicijoje. Tad bendra pradinė būsena forma
 $|\psi\rangle = |k_1 k_2\rangle\otimes|a_1\rangle$:
 \begin{equation}
 |\psi\rangle = \frac{1}{2}\big(|00\rangle + |10\rangle + |01\rangle + |11\rangle\big)\otimes|0\rangle\,.
+(\#eq:bendra-pradine-busena-ising)
 \end{equation}
 Pritaikius pirmus dvejus $cX$ vartus su ancila „rezultatiniu" kubitu
 $|a_1\rangle$ randame:
 \begin{equation}
 cXcX|\psi\rangle = \frac{1}{2}\big(|00\rangle + |11\rangle\big)\otimes|0\rangle
 + \frac{1}{2}\big(|10\rangle + |01\rangle\big)\otimes|1\rangle\,.
+(\#eq:busena-po-dvieju-cx)
 \end{equation}
 Matome, kad tai supina ancilos kubito būseną $|0\rangle$
 su lyginio lyginumo $k_1$ ir $k_2$ kubitų būsenomis, o
@@ -202,7 +213,7 @@ $\theta = -\varphi/2$. Dėl kvantinio supynimo $R_z(\varphi)$
 efektyviai suteikia skirtingas fazes skirtingo lyginumo būsenoms:
 \begin{equation}
 \begin{aligned}
-(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})cXcX|\psi\rangle
+(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})&cXcX|\psi\rangle \\
 = &\frac{1}{2}\big(|00\rangle + |11\rangle\big)
 \otimes\mathrm{e}^{\mathrm{i}\theta}|0\rangle
 + \frac{1}{2}\big(|10\rangle + |01\rangle\big)
@@ -212,6 +223,7 @@ efektyviai suteikia skirtingas fazes skirtingo lyginumo būsenoms:
 + \frac{1}{2}\big(\mathrm{e}^{-\mathrm{i}\theta}|10\rangle
 + \mathrm{e}^{-\mathrm{i}\theta}|01\rangle\big)\otimes|1\rangle\,.
 \end{aligned}
+(\#eq:skirtingos-fazes-skirtingo-lyginumo-busenoms)
 \end{equation}
 Ancilos kubito būseną atstatome atgal su dviem $cX$ vartais kartu
 panaikindami supynimą su $k_1$ ir $k_2$ kubitais. Gauname galutinę
@@ -224,6 +236,7 @@ cXcX(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})cXcX|\psi\rangle
 + \mathrm{e}^{-\mathrm{i}\theta}|10\rangle
 + \mathrm{e}^{-\mathrm{i}\theta}|01\rangle
 + \mathrm{e}^{\mathrm{i}\theta}|11\rangle)\otimes|0\rangle\,.
+(\#eq:galutine-busena-ising)
 \end{equation}
 Tad turime visus įrankius realizuoti Aizingo modeliui kvantiniame
 kompiuteryje.
@@ -249,9 +262,10 @@ $|\psi\rangle$, į erdvinį jos atvaizdavimą. Tam įvesime
 erdvinės pozicijos operatorių $\hat{x}$ ir jo tikrinius vektorius
 $|x\rangle$, kurie tenkina lygtį:
 \begin{equation}
-\hat{x}|x'\rangle = x'|x'\rangle
+\hat{x}|x'\rangle = x'|x'\rangle\,.
+(\#eq:pozicijos-operatorius)
 \end{equation}
-8.14 lygybėje $\hat{x}$ operatorius, veikiantis vieną iš tikrinių
+\@ref(eq:pozicijos-operatorius) lygybėje $\hat{x}$ operatorius, veikiantis vieną iš tikrinių
 vektorių $|x'\rangle$, grąžina jo sandaugą su tikrine
 verte $x'$. Tikriniai vektoriai $|x'\rangle$
 priskiriami kiekvienai erdvės pozicijai $x'$ ir kadangi yra tolydūs, jų
@@ -262,10 +276,11 @@ išreiškiamas **Dirako delta funkcija** (angl. *Dirac delta function*),
 $\langle x|x'\rangle = \delta(x - x')$. Kvantinės
 sistemos būsena $|\psi\rangle$, išreikšta erdviniais
 baziniais vektoriais $\{|x\rangle\}$ ir pasitelkiant
-pilnumo savybę (II skyrius), atrodo taip:
+pilnumo savybę (\@ref(matematikos-skyrius) skyrius), atrodo taip:
 \begin{equation}
 |\psi\rangle = \int_{-\infty}^{\infty} |x\rangle\langle x|\psi\rangle\,dx
 = \int_{-\infty}^{\infty}\psi(x)|x\rangle\,dx\,.
+(\#eq:busena-per-erdvinius-bazinius-vektorius)
 \end{equation}
 Pilnumo savybėje naudojame integralą, o ne sumą, kadangi $x$ kinta
 tolydžiai. Integrale matome $\psi(x)|x\rangle$ narius,
@@ -288,12 +303,14 @@ funkcijos $\psi(x)$ modulio kvadrato šioje pozicijoje ir intervalo $dx$
 sandauga:
 \begin{equation}
 |\langle x|\psi\rangle |^2 dx = \psi^{*}(x)\psi(x)dx = |\psi(x)|^2 dx\,.
+(\#eq:tikimybe-rasti-erdves-intervale)
 \end{equation}
 Susumavę (integravę) tokius narius visoje erdvėje reikalaujame, kad
 tikimybė $p$ susidėtų į 1, mat elektronas turi būti vis tiek rastas
 kažkur erdvėje:
 \begin{equation}
 \int_{-\infty}^{\infty}|\psi(x)|^2\,dx = 1\,.
+(\#eq:normavimo-salyga)
 \end{equation}
 Praktiniuose taikymuose, banginė kvantinės sistemos funkcija $\psi(x)$
 yra išplitusi tik tam tikroje erdvės dalyje ir nesitęsia iki begalybės.
@@ -335,16 +352,19 @@ vektoriais $|v\rangle$ ir pervadindami ją
 $x_v$ turime:
 \begin{equation}
 x_v = -\frac{L}{2} + v\Delta x\,.
+(\#eq:diskretizuota-pozicija)
 \end{equation}
 Diskretizuotąją kvantinę būseną $|\psi\rangle$ šioje
 erdvėje išreiškiame taip:
 \begin{equation}
 |\psi\rangle = \frac{1}{\sqrt{N}}\sum_{v = 0}^{2^n - 1}\psi(x_v)|v\rangle\,.
+(\#eq:diskretizuota-busena)
 \end{equation}
 Būsena $|\psi\rangle$ yra normuojama $L$-dydžio
 intervale faktoriumi $\sqrt{N}$:
 \begin{equation}
 N = \sum_{v = 0}^{2^n - 1} |\psi(x_v)|^2 \Delta x\,.
+(\#eq:diskretizuotos-busenos-normavimas)
 \end{equation}
 Siekdami supaprastinti simboliką, laikinai praleisime pozicijos $x$
 indeksaciją $v$ simboliais. Tolesniame žingsnyje perteikiame
@@ -353,6 +373,7 @@ kuri yra tinkama diskretizacijai. Naudojant
 $\psi(x,t) = \langle x|\psi(t)\rangle$:
 \begin{equation}
 \mathrm{i}\hbar\frac{d\psi(x,t)}{dt} = H\psi(x,t)\,.
+(\#eq:schroedingerio-lygtis-banginei-funkcijai)
 \end{equation}
 Ši lygtis nusako $\psi(x,t)$ banginės funkcijos (amplitudžių) kitimą
 erdvėje ir laike. Hamiltonianas bendrai susideda iš **kinetinės
@@ -360,6 +381,7 @@ energijos** (angl. *kinetic energy*) ir **potencinės energijos**
 (angl. *potential energy*) operatorių:
 \begin{equation}
 H = -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x) \equiv K + V\,.
+(\#eq:hamiltonianas-kinetine-potencine)
 \end{equation}
 Čia $d^2/dx^2$ atlieka banginės funkcijos antros eilės išvestinę,
 $m$ yra kvantinės sistemos masė. Potencinės energijos funkcija $V$
@@ -368,6 +390,7 @@ tik nuo erdvinės pozicijos $x$ ir nekinta laike. Pradinės banginės
 funkcijos $\psi(x,0)$ evoliucija po laiko intervalo $t$ randama:
 \begin{equation}
 \psi(x,t) = \mathrm{e}^{\frac{-\mathrm{i}(K + V)t}{\hbar}}\psi(x,0)\,.
+(\#eq:bangines-funkcijos-evoliucija)
 \end{equation}
 Atkreipiame dėmesį, kad
 $\mathrm{e}^{\frac{-\mathrm{i}(K + V)t}{\hbar}}
