@@ -26,7 +26,7 @@ minėta Šriodingerio lygtis:
 yra nereikšmingi arba gali būti aproksimuojami efektyviu hamiltonianu
 $H$. Tokio tipo sistemas čia ir aptarsime.
 
-### Aizingo modelis ir hamiltoniano kodavimas
+### Aizingo modelis ir hamiltoniano kodavimas {#ising-hamiltonian-coding}
 
 Pirmiausia pradėkime nuo teiginio, kad sudėtinės kvantinės sistemos,
 kurių būsenos matematiškai aprašomos identiškai kubitams, natūraliai
@@ -401,11 +401,11 @@ intervalą $t$ į $s$ skaičių žingsnių:
 \begin{align}
 \mathrm{e}^{\frac{-\mathrm{i}(K + V)t}{\hbar}}
 \cong & \left(\mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
-\mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\right)^s\,;\\
+\mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\right)^s\,;(\#eq:e-h-dt-approx)\\
 \psi(x,t) = & \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\cdots
 \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
-\mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\psi(x,0)\,.
+\mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\psi(x,0)\,.(\#eq:psi-x-t-approx)
 \end{align}
 Šioje stadijoje diskretizavome erdvės ir laiko kintamuosius, taip pat
 perteikėme banginę funkciją gardelėje. Toliau parodysime, kaip
@@ -429,6 +429,7 @@ $(2^n \times 2^n)$ dydžio diagonaliąja matrica:
 0 & 0 & \cdots & \mathrm{e}^{-\mathrm{i}\theta_{2^n - 2}} & 0 \\
 0 & 0 & \cdots & 0 & \mathrm{e}^{-\mathrm{i}\theta_{2^n - 1}}
 \end{bmatrix}\,.
+(\#eq:potencialo-matrica)
 \end{equation}
 Kinetinės energijos operatoriaus eksponentės
 $\mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}$ efektas banginei funkcijai
@@ -438,9 +439,9 @@ pozicijos $x$ ir judesio kiekio $p$ **konjuguojamumą**
 (angl. *conjugation*), banginės funkcijos Furjė transformacija
 konvertuoja ją tarp šių atvaizdavimų:
 \begin{align}
-U_{\mathrm{FT}}\psi(x) = & \psi(p)\,;\\
+U_{\mathrm{FT}}\psi(x) = & \psi(p)\,;(\#eq:bangine-funkcija-impulso-atvaizdavime)\\
 \psi(p) = & \frac{1}{\sqrt{2^n}}\sum_{x = 0}^{2^n - 1}
-\psi(x) \mathrm{e}^{\mathrm{i}2\pi xp/2^n}\,.
+\psi(x) \mathrm{e}^{\mathrm{i}2\pi xp/2^n}\,.(\#eq:bangine-funkcija-impulso-per-pozicijos)
 \end{align}
 Jeigu $\psi(x)$ yra normuotoji, tada ir $\psi(p)$ bus normuotoji dėl
 $U_{\mathrm{FT}}$ unitarumo. Judesio kiekio operatorius pozicijos atvaizdavime
@@ -453,6 +454,7 @@ kuris veikia $\psi(p)$ banginę funkciją:
 \begin{equation}
 \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}\psi(x)
 = U_{\mathrm{FT}}^{\dagger}\mathrm{e}^{\frac{-\mathrm{i}p^2\Delta t}{2m\hbar}}U_{\mathrm{FT}}\psi(x)\,.
+(\#eq:kinetines-energijos-veikimas)
 \end{equation}
 Atvirkštinė Furjė transformacija $U_{\mathrm{FT}}^{\dagger}$ grąžina banginę
 funkciją $\psi(p)$ atgal į pozicijos atvaizdavimą $\psi(x)$. Kinetinės
@@ -471,11 +473,13 @@ bazinių vektorių, gardelės taškus indeksuojame su
 $|j\rangle$:
 \begin{equation}
 |\psi\rangle = \frac{1}{\sqrt{N}}\sum_{j = 0}^{2^n - 1}\psi(p_j)|j\rangle\,.
+(\#eq:diskretizuota-impulso-bangine-funkcija)
 \end{equation}
 Normavimo faktorius vardiklyje $N$ išlieka nepakitęs:
 \begin{equation}
 N = \sum_{v = 0}^{2^n - 1}|\psi(x_v)|^2 \Delta x
 = \sum_{j = 0}^{2^n - 1}|\psi(p_j)|^2 \Delta p\,.
+(\#eq:normavimo-faktorius-2)
 \end{equation}
 Nustatę erdvinį intervalo dydį ir erdvinį atstumą tarp $2^n$ taškų,
 galime tiesiogiai susieti juos su judesio kiekio gardele (arba
@@ -485,6 +489,7 @@ $\Delta p = 2\pi/L$ dydžio intervalus. Judesio kiekio koordinatė
 $p_j$ gardelėje yra:
 \begin{equation}
 p_j = - \pi/\Delta x + j\Delta p\,.
+(\#eq:impulso-diskretizavimas)
 \end{equation}
 Judesio kiekio gardelė yra paprastai centruojama apie $p_j = 0$.
 
@@ -496,6 +501,7 @@ $t = s\Delta t$ randame iteraciniu algoritmu:
 U_{\mathrm{FT}}\mathrm{e}^{\frac{-\mathrm{i}V(x)\Delta t}{\hbar}}
 \cdots U_{\mathrm{FT}}^{\dagger}\mathrm{e}^{\frac{-\mathrm{i}p^2\Delta t}{2m\hbar}}
 U_{\mathrm{FT}}\mathrm{e}^{\frac{-\mathrm{i}V(x)\Delta t}{\hbar}}\psi(x,0)\,.
+(\#eq:evoliucijos-iteracinis-algoritmas)
 \end{equation}
 Erdvinės funkcijos diskretizacijos gardelė pasirenkama didesnė negu
 banginės funkcijos išsiplėtimas skaičiavimo metu, nes Furjė
@@ -524,25 +530,25 @@ a\,, & x = 0\,\mathrm{ir}\,7 \\
 b\,, & x = 3 \\
 0\,, & \mathrm{likusiems}\,x
 \end{cases}\,.
+(\#eq:energijos-barjeras)
 \end{equation}
 Kvantinė grandinė, perteikianti
 $\theta = \frac{V(x)\Delta t}{\hbar}$ fazes
 $\{|0\rangle , |3\rangle , |7\rangle\}$
-būsenoms, parodyta 8.2 pav.
+būsenoms, parodyta \@ref(fig:potencines-energijos-grandine) pav.
 
-![](./media/image8_2.svg)
-
-**8.2 pav.** Loginė grandinė, atliekanti potencinės energijos funkcijos $V(x)$
-su trimis barjerais veiksmą banginei funkcijai $\psi(x)$ viename laiko
-intervale
+```{r potencines-energijos-grandine, echo=FALSE, fig.cap="Loginė grandinė, atliekanti potencinės energijos funkcijos $V(x)$ su trimis barjerais veiksmą banginei funkcijai $\\psi(x)$ viename laiko intervale.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_2.svg")
+```
 
 Matome dvigubai kontroliuojamus 3 kubitų fazės $ccP(\theta)$ loginius
 vartus, kuriuose „kontrolinės" yra 1 kubito būsenos
 $|0\rangle$ (tušti apskritimai) arba
 $|1\rangle$ (užpildyti apskritimai). Šiuos aukštesnio
 lygio abstrakcijos loginius vartus, selektyviai suteikiančius fazę
-pasirinktai būsenai, galima realizuoti IV skyriuje parodytu Tofoli
-vartais pagrįstu metodu (žr. 4.7 poskyrį). Šitoks metodas yra bendro
+pasirinktai būsenai, galima realizuoti
+\@ref(kvantiniai-loginiai-vartai-grandines) skyriuje parodytu Tofoli
+vartais pagrįstu metodu (žr. \@ref(bendro-tipo-salyginiai-vartai) poskyrį). Šitoks metodas yra bendro
 pobūdžio, tačiau geriausiai tinka paprastoms potencinės energijos
 funkcijoms. Mat visoms skirtingoms $2^n$ būsenoms selektyviai parinkti
 reikėtų daug išteklių: papildomų $n - 1$ ancila kubitų; pritaikyti fazę
@@ -563,6 +569,7 @@ kvadratinę išraišką, pažiūrėsime jo perteikimą loginiais vartais:
 \mathrm{e}^{\frac{-\mathrm{i}p^2\Delta t}{2m\hbar}}
 = \mathrm{e}^{\frac{\mathrm{i}\theta}{2^{2n - 3}}{
 \left(1 + \sum_{k = 1}^n 2^{n - k} Z_k\right)}^2}\,.
+(\#eq:kinetine-energija-loginiais-vartais)
 \end{equation}
 Čia $\theta$ nusako efektinę fazę, suteikiamą kiekviename laiko
 žingsnyje $\Delta t$, $Z_k$ yra Pauli-$Z$ loginiai vartai,
@@ -573,12 +580,12 @@ pavyzdį:
 \mathrm{e}^{\frac{-\mathrm{i}p^2\Delta t}{2m\hbar}}
 = \mathrm{e}^{\mathrm{i}\theta\left(Z_1 + \frac{1}{2}Z_2 + \frac{1}{4}Z_3
 + 2Z_1\otimes Z_2 + Z_1\otimes Z_3 + \frac{1}{2}Z_2\otimes Z_3\right)}\,.
+(\#eq:kinetine-energija-3-kubitams)
 \end{equation}
 
-![](./media/image8_3.svg)
-
-**8.3 pav.** Gauso formos diskretizuota banginė funkcija, perteikta 16-os taškų
-gardelėje
+```{r gauso-diskretizuota-funkcija, echo=FALSE, fig.cap="Gauso formos diskretizuota banginė funkcija, perteikta 16-os taškų gardelėje.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_3.svg")
+```
 
 Jau žinome, kaip kvantinėje grandinėje
 loginiais vartais perteikti visus čia matomus narius. Šriodingerio
@@ -590,7 +597,7 @@ funkcija** (angl. *Gaussian* *function*) yra išreiškiama polinominiu
 skaičiumi loginių vartų $O(\mathrm{pol}(n+1/\Delta))$; čia $\Delta$ nusako erdvinę
 skiriamąją gebą. Diskretizuota Gauso funkcija
 $\psi(x_v)$, koduojama 4 kubitų registro 16-oje jų
-amplitudžių, yra pateikta 8.3 pav. Kitas galimas būdas -- pasitelkti
+amplitudžių, yra pateikta \@ref(fig:gauso-diskretizuota-funkcija) pav. Kitas galimas būdas -- pasitelkti
 banginės funkcijos transformaciją iš efektyviai koduojamos funkcijos.
 Pavyzdžiui, gan komplikuotą **Beselio $J_0$** (angl. *$0^{\mathrm{th}}$-order
 Bessel function of the $1^{\mathrm{st}}$ kind*) funkciją galima sukurti atliekant
@@ -636,9 +643,9 @@ kartoti algoritmą vos keletą kartų.
 
 ### Klasikinis mašininis mokymasis
 
-![](./media/image8_4.svg)
-
-**8.4 pav.** Klasikinio mašininio mokymosi metodai 
+```{r klasikinio-ml-metodai, echo=FALSE, fig.cap="Klasikinio mašininio mokymosi metodai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_4.svg")
+```
 
 Klasikinio mašininio mokymosi metodai gali
 būti sugrupuoti į tris sritis: **prižiūrimasis mokymasis**
@@ -649,7 +656,7 @@ prižiūrimojo mokymosi algoritmai yra labiausiai ištobulinti ir
 dažniausiai taikomi praktikoje. Tačiau prižiūrimasis mokymasis turi tą
 trūkumą, kad jam reikia sužymėtų duomenų, kuriuos gali būti brangu ar
 sunku gauti. Kai kurie dažniausiai taikomi mašininio mokymosi metodai
-pavaizduoti 8.4 pav.
+pavaizduoti \@ref(fig:klasikinio-ml-metodai) pav.
 
 Prižiūrimojo mokymosi atveju modelio kūrimui panaudojami duomenys,
 kuriuose kiekvienas pavyzdys yra pateikiamas kartu su norima išvestimi.
@@ -795,6 +802,7 @@ atmintimi, yra naudojamas iškviesti $l$-tajį įrašą iš duomenų bazės
 kvantinėje būsenoje:
 \begin{equation}
 O|l\rangle\otimes|0\rangle = |l\rangle\otimes|b^{(l)}\rangle\,.
+(\#eq:kvantines-atminties-orakulas)
 \end{equation}
 Toks vaizdavimas taikomas kvantinėse atraminių vektorių mašinose ir
 artimiausių kaimynų klasifikatoriuje. Bitų kodavimo privalumas yra tas,
@@ -831,15 +839,12 @@ $b$,$y \in a,b$. Tam yra optimizuojamas modelio parametrų rinkinys $\theta$.
 Gerai apmokytas modelis $f(x, \theta)$ turėtų gebėti teisingai priskirti
 nematytus duomenis $x$ grupei $y \in a,b$.
 
-![](./media/image8_5.svg)
+```{r kvantiniu-grandiniu-klasifikatorius, echo=FALSE, fig.cap="Kvantinėmis grandinėmis paremtas klasifikatorius. Loginių operacijų grandinė $A$ atlieka pradinės būsenos paruošimą; ji yra toliau apdorojama modelio $U(\\theta)$ grandinėje optimizuojant klasifikatorių. Galiausiai, atliekama binarinė klasifikacija išmatuojant pirmojo kubito būseną.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_5.svg")
+```
 
-**8.5 pav.** Kvantinėmis grandinėmis paremtas klasifikatorius. Loginių
-operacijų grandinė $A$ atlieka pradinės būsenos paruošimą; ji yra toliau
-apdorojama modelio $U(\theta)$ grandinėje optimizuojant klasifikatorių.
-Galiausiai, atliekama binarinė klasifikacija išmatuojant pirmojo kubito būseną.
-
-Kvantinėmis grandinėmis paremtas
-klasifikatorius yra pavaizduotas 8.5 pav.
+Kvantinėmis grandinėmis paremtas klasifikatorius yra
+pavaizduotas \@ref(fig:kvantiniu-grandiniu-klasifikatorius) pav.
 
 Kvantinė grandinė yra parametrizuota parametrų rinkiniu $\theta$. Pradinė
 $n$ kubitų būsena $|0\rangle^{\otimes n}$ naudojama
@@ -863,14 +868,13 @@ gradientinio nusileidimo algoritmas. Šiam algoritmui reikalingos
 unitariojo operatoriaus išvestinės $\partial_{\theta}U(\theta)$ parametrų $\theta$ atžvilgiu.
 Kvantinė algoritmo dalis yra naudojama gradientų ir $f(x, \theta)$
 rezultatams apskaičiuoti, klasikinė -- parametrams $\theta$ atnaujinti.
-Nuodugnus mokymo procesas yra pavaizduotas 8.6 pav. Klasikinė modelio
+Nuodugnus mokymo procesas yra
+pavaizduotas \@ref(fig:hibridinis-ml-algoritmas) pav. Klasikinė modelio
 mokymo dalis pavaizduota brūkšnine linija.
 
-![](./media/image8_6.svg)
-
-**8.6 pav.** Hibridinis kvantinis-klasikinis mokymo algoritmas. Kvantinis
-įrenginys yra naudojamas išvesties ir gradientų suskaičiavimui; kvantinės
-grandinės parametrai $\theta$ atnaujinami naudojantis klasikiniu algoritmu
+```{r hibridinis-ml-algoritmas, echo=FALSE, fig.cap="Hibridinis kvantinis-klasikinis mokymo algoritmas. Kvantinis įrenginys yra naudojamas išvesties ir gradientų suskaičiavimui; kvantinės grandinės parametrai $\\theta$ atnaujinami naudojantis klasikiniu algoritmu.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_6.svg")
+```
 
 Panagrinėkime algoritmą išsamiau. Įvesties duomenys $x$ yra
 pavaizduojami į ­$n$ kubitų pradinę būseną taiknt amplitudžių kodavimą.
@@ -880,10 +884,12 @@ bazinių vektorių $|i\rangle$ superpozicijos amplitudėse
 $x_i$:
 \begin{equation}
 |\varphi(x)\rangle = \frac{1}{\chi} \sum_{i = 1}^N x_i|i\rangle\,,
+(\#eq:duomenu-irasas-ml)
 \end{equation}
 kur
 \begin{equation}
 \chi = \sqrt{\sum_{i = 1}^N x_i^2}\,.
+(\#eq:normavimas-ml)
 \end{equation}
 Prognozuojamos žymos $\ell(x)=\lambda_1 , \lambda_2 ,\ldots$, atitinkančios
 duomenis $x$, yra nuskaitomos taikant išvesties būsenos matavimą. Šį
@@ -891,6 +897,7 @@ matavimą atitinka ermitinis operatorius $C$, kurio tikrinės vertės yra
 $\lambda_{1},\lambda_{2},\ldots$:
 \begin{equation}
 C = \sum_j \lambda_j P_j\,.
+(\#eq:matavimo-op-ml)
 \end{equation}
 Čia $P_j$ yra projekcinis operatorius, projektuojantis į atitinkamą
 poerdvį. Klasifikatoriaus mokymo tikslas yra teisingos žymos $y$
@@ -899,6 +906,7 @@ $\mathcal{L}(\theta)$:
 \begin{equation}
 \mathcal{L}(\theta)=\frac{1}{M}\sum_{\lambda_j}\sum_{x:\ell(x)=\lambda_j}
 \langle\varphi(x)|U^{\dagger}(\theta)P_{\lambda_j}U(\theta)|\varphi(x)\rangle\,,
+(\#eq:tikslo-funkcija)
 \end{equation}
 čia $M$ -- duomenų rinkinio dydis. Binariosios klasifikacijos atveju,
 kai yra dvi žymos $\lambda_1$ ir $\lambda_2$, tikslo funkciją galime
@@ -910,6 +918,7 @@ užrašyti taip:
 & - \frac{1}{M}\sum_{x:\ell(x) = \lambda_2}
 \langle\varphi(x)|U^{\dagger}(\theta)P_2 U(\theta)|\varphi(x)\rangle\,.
 \end{aligned}
+(\#eq:tikslo-funkcija-binary)
 \end{equation}
 Vidines sandaugas galima efektyviai apskaičiuoti pasitelkiant papildomą
 ancila kubitą, kaip aprašyta Hadamardo teste (žr. 6.7 poskyrį). Tikslo
@@ -922,28 +931,29 @@ didesnė tikimybė teisingai apmokyti klasifikatorių. Operatorių $U(\theta)$
 realizuojanti grandinė yra sudaroma iš blokų:
 \begin{equation}
 U(\theta)=G_{\mathrm{out}}(\theta_{\mathrm{out}})B_L(\theta_L)\cdots B_2(\theta_2)B_1(\theta_1)\,.
+(\#eq:ml-grandines-blokas)
 \end{equation}
 Kiekvienas blokas $B_j(\theta_j)$ yra sudarytas iš
 $n$ skaičiaus 1 kubito loginių vartų, $n$ skaičiaus sąlyginių 2 kubitų
 loginių vartų. Užbaigiama 1 kubito loginiais vartais $G_{\mathrm{out}}$
 matavimui, skirtam pirmajam grandinės kubitui. Vieno kubito loginiai
-vartai yra bendriausio tipo $U_{3}(\alpha,\beta,\gamma) \equiv G$
-(žr. 4.1 poskyrį). O štai 2 kubitų sąlyginius $cG$ galime užrašyti:
+vartai yra bendriausio tipo $U_3 (\alpha,\beta,\gamma) \equiv G$
+(žr. \@ref(vieno-kubito-vartai) poskyrį). O štai 2 kubitų sąlyginius $cG$ galime užrašyti:
 \begin{equation}
 cG = |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes G\,.
+(\#eq:salyginiai-diadomis-ml)
 \end{equation}
 
-![](./media/image8_7.svg)
-
-**8.7 pav.** 3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$
-yra 1 kubito loginiai vartai
+```{r triju-kubitu-blokas, echo=FALSE, fig.cap="3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$ yra 1 kubito loginiai vartai.", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_7.svg")
+```
 
 Sąlyginiai vartai čia sudaro ciklinį kodą,
 kuris yra charakterizuojamas artumo parametru $r$ ($0 < r < n$).
 Kiekvienam kubitui, kurio numeris $j$, pritaikomi sąlyginiai loginiai
 vartai, kuriuose $j$-tasis kubitas yra adresatas („target"), o
 $(j + r)\mod(n)$-tas kubitas kontroliuojantis („control"). Trijų kubitų
-atveju, kai $r = 1$, toks blokas pavaizduotas 8.7 pav.
+atveju, kai $r = 1$, toks blokas pavaizduotas \@ref(fig:triju-kubitu-blokas) pav.
 
 Tikslo funkcijos $\mathcal{L}(\theta)$ maksimizavimui taikant
 gradientinio nusileidimo metodą reikia operatorių $U(\theta)$ išvestinių
@@ -959,6 +969,7 @@ unitariųjų operatorių suma:
 \begin{equation}
 \partial_{\theta}(cG) = |1\rangle\langle 1|\otimes\partial_{\theta}G
 = \frac{1}{2}(I\otimes\partial_{\theta}G - Z\otimes\partial_{\theta}G)\,.
+(\#eq:salyginiu-vartu-isvestine)
 \end{equation}
 Kiekviena iš šių grandinių, turinčių $I\otimes\partial_{\theta}G$ bei
 $Z\otimes\partial_{\theta}G$ narius, yra įvykdoma atskirai, o jų
@@ -976,6 +987,7 @@ vektorius, atitinkančius didžiausias tikrines vertes. Tankio matrica
 $\rho$ yra išskaidoma tikriniais vektoriais:
 \begin{equation}
 \rho = \sum_{k = 1}^N \lambda_k|a_k\rangle\langle a_k|\,.
+(\#eq:tankio-matrica-tikriniais-vektoriais)
 \end{equation}
 čia $N$ -- erdvės dydis; $|a_k \rangle$ -- tikriniai
 vektoriai; $\lambda_k$ -- atitinkamos tikrinės vertės. Kvantinės
@@ -985,20 +997,23 @@ Kadangi tankio matrica $\rho$ yra ermitinė, operatorius
 $U = \mathrm{e}^{-\mathrm{i}\rho t}$
 yra unitarusis. Tikrinių vektorių nustatymui su kvantiniais
 kompiuteriais galima pritaikyti hamiltoniano kodavimą, aprašytą
-8.1.1 skyriuje. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ galima nustatyti
-panaudojant kvantinį fazės nustatymo algoritmą, aprašytą 7.3 poskyryje.
+\@ref(ising-hamiltonian-coding) skyriuje. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ galima nustatyti
+panaudojant kvantinį fazės nustatymo algoritmą,
+aprašytą \@ref(kvantinis-fazes-nustatymas) poskyryje.
 
 Šiuose alogritmuose reikia skaičiuoti matricos $\rho$ eksponentę. Šį skaičiavimą paspartina
 paprastas matematinis triukas. Tegu turime pagalbinę
 bet kokią tankio matricą $\sigma$. Laiką $t$ padalijame į $s$ dalių, $t =
 s\Delta t$, ir darome prielaidą, kad turime daug būsenos $\rho$ kopijų.
-Pasinaudojant lygybe:
+Galima pastebėti, kad galioja tokia lygybė:
 \begin{equation}
 \mathrm{Tr}_P\mathrm{e}^{-\mathrm{i}W\Delta t}\rho\otimes\sigma
 \mathrm{e}^{\mathrm{i}W\Delta t} = \sigma - \mathrm{i}\Delta t\lbrack\rho,\sigma\rbrack
 + O(\Delta t^2) = \mathrm{e}^{-\mathrm{i}\rho\Delta t}\sigma
-\mathrm{e}^{\mathrm{i}\rho\Delta t} + O(\Delta t^2)\,.
+\mathrm{e}^{\mathrm{i}\rho\Delta t} + O(\Delta t^2)\,,
+(\#eq:swap-eksponente-pca)
 \end{equation}
-čia $\mathrm{Tr}_P$ -- dalinis pėdsakas per pirmą kintamąjį; $W$ -- SWAP
+kur $\mathrm{Tr}_P$ -- dalinis pėdsakas per pirmą kintamąjį, o $W$ -- SWAP
 operatorius. SWAP operatoriaus eksponentė gali būti efektyviai realizuota
-kvantinėse grandinėse.
+kvantinėse grandinėse, todėl, naudojantis \@ref(eq:swap-eksponente-pca) lygtimi,
+galima efektyviai realizuoti ir tankio matricos eksponentės skaičiavimą.
