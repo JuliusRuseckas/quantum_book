@@ -348,9 +348,9 @@ $k2^n/P$ sveikajam skaičiui.
 knitr::include_graphics("media/image7_4.svg")
 ```
 
-## Kvantinis fazės nustatymo algoritmas
+## Kvantinis fazės nustatymo algoritmas {#kvantinis-fazes-nustatymas}
 
-Šis algoritmas (angl. *quantum* *phase estimation*) pasitelkia kvantinę
+Šis algoritmas (angl. *quantum phase estimation*) pasitelkia kvantinę
 Furjė transformaciją ir yra naudojamas kaip modulis kituose
 algoritmuose. Tarp jų yra kvantinis tiesinių lygčių sprendimo
 algoritmas, kurį pristatome kitame poskyryje. Fazės nustatymo algoritmo
