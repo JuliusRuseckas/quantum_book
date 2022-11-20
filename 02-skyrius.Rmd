@@ -1,4 +1,4 @@
-# Matematinių įrankių rinkinys
+# Matematinių įrankių rinkinys {#matematikos-skyrius}
 
 ## Tiesinė algebra
 
