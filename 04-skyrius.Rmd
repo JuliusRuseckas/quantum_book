@@ -1,6 +1,6 @@
 # Kvantiniai loginiai vartai ir grandinės {#kvantiniai-loginiai-vartai-grandines}
 
-## Vieno kubito loginiai vartai
+## Vieno kubito loginiai vartai {#vieno-kubito-vartai}
 
 Šiame skyriuje pateikiame įprastinių kvantinių loginių elementų
 arsenalą. Juos pasitelkus formuojami žemiausio loginio lygio kvantiniai
@@ -638,7 +638,7 @@ parodytas \@ref(fig:swap-realizavimas) pav.:
 knitr::include_graphics("media/image4_17.svg")
 ```
 
-## Bendro tipo sąlyginiai loginiai vartai $\boldsymbol{cU}$
+## Bendro tipo sąlyginiai loginiai vartai $\boldsymbol{cU}$ {#bendro-tipo-salyginiai-vartai}
 
 ```{r bendro-tipo-salyginiai-vartai, echo=FALSE, fig.cap="Bendro tipo 2 kubitų loginiai vartai $cU$, kuriuose antram kubitui pritaikomi bendro tipo 1 kubito loginiai vartai $U$, kontroliuojant pirmu kubitu.", out.width='80%', fig.align='center'}
 knitr::include_graphics("media/image4_18.svg")
