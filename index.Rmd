@@ -12,10 +12,11 @@ author:
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib]
+bibliography_books: books.bib
+bibliography_articles: articles.bib
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
-description: "Kvantinė kompiuterija"
+description: "Kvantinė kompiuterija: Įvadas"
 link-citations: yes
 nocite: |
   @*
@@ -41,9 +42,9 @@ kryptimi.
 
 Ši knyga buvo parašyta remiantis svarbiausiomis knygomis apie kvantinę kompiuteriją ir
 moksliniais straipsniais. Tarp naudotų knygų yra šios srities „biblija“ tapusia autorių
-Chuang and Nielsen „Quantum Computation and Quantum Information“, Nakahara ir
-Ohmi „Quantum Computing – From Linear Algebra to Physical Realizations“, ir kitos.
-Pilnas literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos buvo taip
+Chuang and Nielsen „Quantum Computation and Quantum Information“ [@Nielsen2000],
+Nakahara ir Ohmi „Quantum Computing – From Linear Algebra to Physical Realizations“ [@Nakahara2008],
+ir kitos. Pilnas literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos buvo taip
 pat naudota iš T. P. doktorantūros metu klausyto kurso „Quantum Computing“ užrašų
 dėstyto Prof. Friedland Shmuel.
 

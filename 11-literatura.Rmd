@@ -1,3 +1,13 @@
 `r if (knitr::is_html_output()) '
 # Literatūra {-}
 '`
+
+## Knygos {-}
+
+::: {#refs_books}
+:::
+
+## Moksliniai straipsniai {-}
+
+::: {#refs_articles}
+:::
