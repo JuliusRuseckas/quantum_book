@@ -1,6 +1,4 @@
-# README
-
-Įvadas į kvantinę kompiuteriją.
+# Įvadas į kvantinę kompiuteriją.
 
 Ši knyga yra skirta skaitytojams, kurie nėra anksčiau susipažinę su kvantine
 kompiuterija. Jos tikslas yra pristatyti šią sritį pradedant nuo elementariausių savokų
