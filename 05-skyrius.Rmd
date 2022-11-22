@@ -156,7 +156,7 @@ energijos tvermė ir kad niekas negali keliauti greičiau už šviesos
 greitį. Fizinės sistemos akimirksniu nepradingsta ir kitur
 neatsiranda -- tik pakeičia savo būsenas.
 
-```{r kvantine-teleportacija, echo=FALSE, fig.cap="Kvantinė $k_1$ kubito būsenos $|\\psi\\rangle$ teleportacija į $k_3$ kubitą.", out.width='80%', fig.align='center'}
+```{r kvantine-teleportacija, echo=FALSE, fig.cap="Kvantinė $k_1$ kubito būsenos $|\\psi\\rangle$ teleportacija į $k_3$ kubitą", out.width='65%', fig.align='center'}
 knitr::include_graphics("media/image5_1.svg")
 ```
 
@@ -284,7 +284,7 @@ ir klasikinių ryšių kanalo. Teleportacijos metodas gali būti naudojamas
 persiųsti ne vien pavienių kubitų būsenoms, bet ir sudėtinėms kubitų
 supintosioms kvantinėms būsenoms.
 
-```{r kvantine-teleportacija-2, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti kvantinę teleportaciją.  Paskutiniame žingsnyje kubitui $k_3$ pritaikomi sąlyginiai Pauli loginiai vartai, kontroliuojami klasikinio registro, kurio būseną nulemia pirmų dviejų kubitų matavimo rezultatai.", out.width='80%', fig.align='center'}
+```{r kvantine-teleportacija-2, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti kvantinę teleportaciją.  Paskutiniame žingsnyje kubitui $k_3$ pritaikomi sąlyginiai Pauli loginiai vartai, kontroliuojami klasikinio registro, kurio būseną nulemia pirmų dviejų kubitų matavimo rezultatai", out.width='86%', fig.align='center'}
 knitr::include_graphics("media/image5_2.svg")
 ```
 
@@ -309,7 +309,7 @@ Belo būsenos, atliekančios svarbią rolę kvantiniuose ryšiuose, jų
 generatorius įprasta vadinti EPR šaltiniais (angl. *EPR source*,
 trumpinys nuo *Einstein-Podolsky-Rosen*).
 
-```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$.", out.width='80%', fig.align='center'}
+```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$", out.width='55%', fig.align='center'}
 knitr::include_graphics("media/image5_3.svg")
 ```
 
@@ -394,7 +394,7 @@ Atkreipiame dėmesį, kad šio proceso metu kvantiniai supynimai tarp Agnės
 ir Beno kubitų poros $k_1$ ir $k_2$, taip pat Beno ir Citos kubitų
 $k_3$ ir $k_4$ yra panaikinami.
 
-```{r kvantinio-supynimo-sukeitimas-2, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo realizacija loginėje grandinėje.", out.width='80%', fig.align='center'}
+```{r kvantinio-supynimo-sukeitimas-2, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo realizacija loginėje grandinėje", out.width='86%', fig.align='center'}
 knitr::include_graphics("media/image5_4.svg")
 ```
 
@@ -501,8 +501,8 @@ būsenų:
 Gavęs kubitus Benas neturi informacijos, kokiose būsenose jie yra. Benas
 imasi atlikti kubitų būsenų matavimus ir atsitiktiniu būdu pasirenka
 atlikti Pauli-$Z$ arba Pauli-$X$ projekcinius matavimus. Kaip minėjome
-IV skyriuje, norint atlikti Pauli-$X$ projekcinį matavimą tereikia
-atlikti Hadamardo transformaciją su gautais kubitais ir toliau jiems
+4 skyriuje, norint atlikti Pauli-$X$ projekcinį matavimą tereikia
+atlikti gautiems kubitams Hadamardo transformaciją ir toliau jiems
 vykdyti standartinį (Pauli-$Z$) matavimą. Atkreipiame dėmesį, kad šios
 keturios kubitų būsenos nėra visos viena kitai ortogonalios, todėl
 negali būti patikimai atskirtos atliekant tik vieno tipo matavimą.
@@ -545,7 +545,7 @@ palygina, ar jie sutampa. Jeigu priimtinas bitų skaičius sutampa, jiedu
 užbaigia rakto apsikeitimo protokolą ir gali saugiai naudoti likusius
 $n$ bitų šifruoti ryšių turiniui.
 
-```{r bb84-iliustracija, echo=FALSE, fig.cap="BB84 protokolo iliustracija.", out.width='80%', fig.align='center'}
+```{r bb84-iliustracija, echo=FALSE, fig.cap="BB84 protokolo iliustracija", out.width='65%', fig.align='center'}
 knitr::include_graphics("media/image5_5.svg")
 ```
 
@@ -625,10 +625,6 @@ dideliam bitų nesutapimui.
 
 ### EPR kvantinis rakto pasidalijimo protokolas
 
-```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image5_6.svg")
-```
-
 EPR protokolas (žr. \@ref(fig:epr-rakto-iliustracija) pav.) yra dauguma aspektų panašus į BB84, tačiau
 tarp Agnės ir Beno nėra tiesioginio kvantinio ryšio kanalo. Vietoj jo
 naudojamas EPR šaltinis, paskirstantis tarp jų supintuosius kubitus. EPR
@@ -691,6 +687,10 @@ reikia būdo patikrinti supintosios kvantinės būsenos tikslumą. Kituose
 poskyriuose smulkiau panagrinėsime supintųjų kubitų savybes ir
 aptarsime, kaip įmanoma patikrinti būsenų tikslumą, taip pat ar jos
 pasižymi ryšiuose pageidaujamomis kvantinėmis koreliacijomis.
+
+```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija", out.width='65%', fig.align='center'}
+knitr::include_graphics("media/image5_6.svg")
+```
 
 ## Lokalios operacijos ir klasikiniai ryšiai
 
@@ -999,7 +999,7 @@ būdu pasirenka kampą $\alpha_1$ arba $\alpha_2$, o Benas $\beta_1$
 arba $\beta_2$. \@ref(fig:pasukti-detektoriai) pav. iliustruojame dvi tokias detektorių
 konfigūracijas, pasuktas kampu $\alpha$ ir $\beta$:
 
-```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis.", out.width='60%', fig.align='center'}
+```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis", out.width='38%', fig.align='center'}
 knitr::include_graphics("media/image5_7.svg")
 ```
 
