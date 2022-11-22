@@ -872,7 +872,7 @@ dimensijų vektorių erdvėje. Ši superpozicijos būsena glaustai užrašoma
 pasitelkiant suminį simbolį:
 \begin{equation}
 |\psi\rangle = \sum_{x = 0}^{2^n - 1}c_x |x\rangle\,.
-(\#eq:n-kubitu-superpozicija)
+(\#eq:n-kubitu-superpozicija-1)
 \end{equation}
 Čia $c_x$ yra $|x\rangle$ bazinio vektoriaus amplitudė,
 o amplitudžių kvadratų suma tenkina $\sum_x |c_x|^2 = 1$.

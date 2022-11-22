@@ -537,7 +537,7 @@ Atsiradusi fazės klaida, pavyzdžiui, pirmajame kodo kubite, pakeis
 loginę būseną taip:
 \begin{equation}
 |\psi\rangle_L \rightarrow a|1_x 0_x 0_x \rangle + b|0_x 1_x 1_x \rangle\,.
-(\#eq:fazes-klaida-loginiame-kubite)
+(\#eq:fazes-klaida-loginiame-kubite-1)
 \end{equation}
 Norėdami pritaikyti bito apvertimo klaidos aptikimo ir taisymo
 algoritmą, turime pirmiausiai šią būseną transformuoti atgal į
