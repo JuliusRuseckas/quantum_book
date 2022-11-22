@@ -360,7 +360,7 @@ trumpai užrašant $\langle P\rangle$, identiškai paruoštai
 būsenai $|\psi\rangle$, randame:
 \begin{equation}
 \begin{aligned}
-\langle P\rangle = & n\langle\psi |P|\psi\rangle =
+\langle P\rangle = & \langle\psi |P|\psi\rangle =
 \left(\sum_{k'} a_{k'}^{*}\langle k'|\right)
 \left(\sum_k \lambda_k P_k \right)
 \left(\sum_{k''} a_{k''}|k''\rangle\right) \\
