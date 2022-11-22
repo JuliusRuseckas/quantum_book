@@ -1,1 +1,22 @@
 \usepackage{booktabs}
+
+%% A4 paper
+\usepackage[a4paper]{geometry}
+
+%% Lithuanian language
+\usepackage[lithuanian]{babel}
+
+%% Roman chapter numbers
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+%% Custom chapter style
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\Huge\bfseries}{\thechapter\ \chaptername}{0.5ex}{\huge\bfseries\raggedright}
+
+%% Fix running heads
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter\ \chaptername.\ #1}}{}}
+
