@@ -179,7 +179,7 @@ individualaus bito būseną. Supintojoje 2 kubitų būsenoje pakanka
 kontroliuoti vieno pasirinkto kubito būseną norint akimirksniu pakeisti
 jų bendrą būseną į bet kurią iš analogiškai keturių skirtingų.
 
-```{r dvieju-kubitu-supynimas, echo=FALSE, fig.cap="Dviejų kubitų kvantinis supynimas.", out.width='80%', fig.align='center'}
+```{r dvieju-kubitu-supynimas, echo=FALSE, fig.cap="Dviejų kubitų kvantinis supynimas.", out.width='40%', fig.align='center'}
 knitr::include_graphics("media/image1_1.svg")
 ```
 
@@ -512,7 +512,7 @@ blogiausiam scenarijui. Algoritmas $g(n)$ su tiesine
 $O(n)$ elgsena yra akivaizdžiai efektyvesnis, kai
 $n\rightarrow \infty$, nepaisant didelio koeficiento šalia $n$.
 
-```{r algoritmu-sudetingumas, echo=FALSE, fig.cap="Keletas algoritmų sudėtingumo pavyzdžių. Nuo sparčiausiai iki lėčiausiai augančio operacijų skaičiaus: eksponentinė elgsena, polinominė, logtiesinė ir tiesinė", out.width='80%', fig.align='center'}
+```{r algoritmu-sudetingumas, echo=FALSE, fig.cap="Keletas algoritmų sudėtingumo pavyzdžių. Nuo sparčiausiai iki lėčiausiai augančio operacijų skaičiaus: eksponentinė elgsena, polinominė, logtiesinė ir tiesinė", out.width='50%', fig.align='center'}
 knitr::include_graphics("media/image1_2.svg")
 ```
 
@@ -708,7 +708,7 @@ kampas tarp bet kurių dviejų bazinių vektorių yra statusis. Kvantinėje
 kompiuterijoje tik būsenos, kurios yra ortogonalios, gali būti patikimai
 atskirtos viena nuo kitos.
 
-```{r blocho-sfera, echo=FALSE, fig.cap="Blocho sfera.", out.width='80%', fig.align='center'}
+```{r blocho-sfera, echo=FALSE, fig.cap="Blocho sfera.", out.width='40%', fig.align='center'}
 knitr::include_graphics("media/image1_3.svg")
 ```
 
@@ -1163,7 +1163,7 @@ skaitmeninis pavidalas rodo, kad kvantinis kompiuteris yra veikiau
 dualus analoginis--skaitmeninis įrenginys, ir galbūt tiksliausiai --
 tiesiog kvantinis.
 
-```{r kvantinio-skaiciavimo-procesas, echo=FALSE, fig.cap="Kvantinio skaičiavimo procesas.", out.width='80%', fig.align='center'}
+```{r kvantinio-skaiciavimo-procesas, echo=FALSE, fig.cap="Kvantinio skaičiavimo procesas.", out.width='70%', fig.align='center'}
 knitr::include_graphics("media/image1_5.svg")
 ```
 
@@ -1286,7 +1286,7 @@ stimuliuojama iš išorės sugrįžta į žemesnį lygį. Pavyzdžiui, praėjus
 laikui $t = T_1$ tikimybė pamatavus kubitą vis dar jį rasti
 $|1\rangle$ būsenoje yra $p = 0.37$.
 
-```{r fazes-amplitudes-slopinimas, echo=FALSE, fig.cap="Fazės ir amplitudės slopinimas. Parodytos kreivės nusako, kokia tikimybė rasti kubitą pradinėje nurodytoje būsenoje bėgant laikui. Iliustracijai panaudota $T_1 = T_2 = 300$ mikrosekundžių dekoherencijos trukmė.", out.width='80%', fig.align='center'}
+```{r fazes-amplitudes-slopinimas, echo=FALSE, fig.cap="Fazės ir amplitudės slopinimas. Parodytos kreivės nusako, kokia tikimybė rasti kubitą pradinėje nurodytoje būsenoje bėgant laikui. Iliustracijai panaudota $T_1 = T_2 = 300$ mikrosekundžių dekoherencijos trukmė.", out.width='60%', fig.align='center'}
 knitr::include_graphics("media/image1_6.svg")
 ```
 
