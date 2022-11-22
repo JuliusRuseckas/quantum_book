@@ -2,13 +2,8 @@
 title: "Kvantinė kompiuterija"
 subtitle: "Įvadas"
 author:
-  - name: "Tadas Paulauskas"
-    affiliation: Fizinių ir technologijos mokslų centras
-    affiliation_url: https://www.ftmc.lt/
-  - name:  "Julius Ruseckas"
-    url: https://juliusruseckas.github.io/
-    affiliation: Baltijos pažangių technologijų institutas (BPTI)
-    affiliation_url: https://www.bpti.eu/
+  - Tadas Paulauskas^[Fizinių ir technologijos mokslų centras]
+  - Julius Ruseckas^[Baltijos pažangių technologijų institutas (BPTI)]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -100,6 +95,10 @@ mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės fizikos ir as
 institute. Pagrindinė mokslinių tyrimų sritis yra kvantinė optika bei labai šaltos atomų
 dujos. Šios knygos rašymo metu dirba Baltijos Pažangių Technologijų Institute (BPTI).
 
+`r if (knitr::is_latex_output()) '
+![](media/cc-by-nc-sa.pdf)
+' else '
 ![](media/cc-by-nc-sa.svg)
+'`
 
 Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją [Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)
