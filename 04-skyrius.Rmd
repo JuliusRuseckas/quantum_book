@@ -537,11 +537,8 @@ knitr::include_graphics("media/image4_13.svg")
 Kvantinėje grandinėje $cX_0$ vartai yra
 žymimi su tuščiu apskritimu kontroliniame kubite, bei gali būti
 paprastai konvertuojami iš standartinio $cX$ pasitelkiant dvejus Pauli-$X$
-vartus (žr. \@ref(fig:cx0-grandine) pav.).
-
-Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
-$|0\rangle \leftrightarrow |1\rangle$,
-o antrieji atstato jas atgal po atliktų standartinių $cX$.
+vartus (žr. \@ref(fig:cx0-grandine) pav.). Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
+$|0\rangle \leftrightarrow |1\rangle$, o antrieji atstato jas atgal po atliktų standartinių $cX$.
 
 ## Tofoli loginiai vartai
 
@@ -553,9 +550,7 @@ juos žymėsime $ccX$. Kubito vertė yra apverčiama, jeigu abu kontroliniai
 kubitai yra $|1\rangle$ būsenose. \@ref(fig:toffoli-vartai) pav.
 iliustruojame šiuos vartus, veikiančius būseną
 $|k_1\rangle\otimes|k_2\rangle\otimes|k_3\rangle$
-su $k_1$ ir $k_2$ kontroliniais bei $k_3$ adresatiniu kubitu.
-
-Išreiškus $ccX$ vartus diadomis:
+su $k_1$ ir $k_2$ kontroliniais bei $k_3$ adresatiniu kubitu. Išreiškus $ccX$ vartus diadomis:
 \begin{equation}
 ccX = \big(|00\rangle\langle 00| +|01\rangle\langle 10| + |10\rangle\langle 01|\big)
 \otimes I + |11\rangle\langle 11|\otimes X\,.
