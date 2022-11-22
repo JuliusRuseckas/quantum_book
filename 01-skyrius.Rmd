@@ -575,7 +575,7 @@ tikslumo ir todėl formaliai begalinės informacijos kiekio. Tačiau
 praktiškai kvantiniame kompiuteryje tikslumas bus taip pat ribotas (dėl
 triukšmo, loginių vartų netikslumų), tad skaičiaus tikslumui
 apsiribosime **32 bitais** (angl. *single-precission floating-point
-number*). Nusakyti bendrai 50 kubitų sistemos būsenai reikia $2^50$
+number*). Nusakyti bendrai 50 kubitų sistemos būsenai reikia $2^{50}$
 kompleksinių amplitudžių, kiekvienai iš jų reikia 2 realiųjų skaičių,
 kurių kiekvienas užima 32 bitus. Tad iš viso reikalaujama 8 petabaitų
 atminties. Tai yra artima darbinei atminčiai, kurią vienas iš
@@ -1197,13 +1197,11 @@ architektūros ir galbūt specifinės skaičiavimo užduoties.
 
 Loginės operacijos yra toliau išreiškiamos
 mašinine kalba, kuri įvardija, kokie fiziniai veiksmai (lazerių
-impulsai, grandinės įtampos keitimai ir t. t.) yra atliekami
-kontroliuoti kvantiniam procesoriui. Ši dalis iš esmės apima patį
-fizinio kvantinio kompiuterio kūrimą ir priklauso nuo architektūros.
-Kvantiniame fiziniame lygmenyje yra fizinių kubitų sistema. Ji izoliuota
+impulsai, grandinės įtampos keitimai ir t.t.) yra atliekami
+kontroliuoti kvantiniam procesoriui. Kvantiniame fiziniame lygmenyje yra fizinių kubitų sistema. Ji izoliuota
 nuo išorinių sąveikų ir veikiama tik per klasikinę--kvantinę ribą
 atlikti unitarinėms kvantinių būsenų transformacijoms bei matavimams.
-Čia pasitelkiama klasikinė kompiuterija atlikti kvantinio procesoriaus
+Pasitelkiama klasikinė kompiuterija atlikti kvantinio procesoriaus
 veikimo diagnostikai, papildomiems sistemą stabilizuojantiems ir klaidas
 mažinantiems protokolams.
 
@@ -1231,7 +1229,7 @@ pavyzdį, galima įvertinti Šoro algoritmui reikalingus laiko išteklius
 siekiant įveikti $n = 1024$ bitų RSA kriptografija užšifruotą turinį.
 Teoriniai skaičiavimai rodo, kad tam reikia maždaug $2n$ loginių kubitų,
 o sudėtingumas yra nulemtas $O(n^3 \log n)$ skaičiumi Tofoli loginių
-vartų. Tad reikėtų maždaug 2050 kubitų ir bent maždaug $10^10$ loginių
+vartų. Tad reikėtų maždaug 2050 kubitų ir bent maždaug $10^{10}$ loginių
 vartų. Loginių vartų atlikimo trukmė skiriasi tarp fizinių kvantinio
 procesoriaus realizacijų, tačiau bendrai yra žymiai ilgesnė (veikia
 apytikriai MHz dažniu) nei klasikinių procesorių (veikiančių GHz
@@ -1243,7 +1241,7 @@ vartai atliekami žymiai lėčiau, apytikriai 200 mikrosekundžių per
 operaciją. Darant prielaidas, kad tiek užtrunka atlikti ir 3 kubitų
 Tofoli loginius vartus bei kad kvantinės grandinės gylis abiejose
 architektūrose yra toks pat kaip ir loginių vartų skaičius,
-apytikriai $10^10$ loginių vartų užtruktų apytikriai 1 ir apytikriai
+apytikriai $10^{10}$ loginių vartų užtruktų apytikriai 1 ir apytikriai
 $5\times 10^2$ valandų, atitinkamai.
 
 Aktreipiame dėmesį, kad čia naudojome loginių kubitų skaičių. Vienam
