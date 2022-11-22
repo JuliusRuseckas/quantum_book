@@ -72,12 +72,10 @@ pačiai vektorių erdvei. Apsistojant ties viena reprezentatyvia vektorių
 erdve $V$, joje yra apibrėžtos vektorių sudėties operacijos,
 tenkinančios šias savybes:
 
-1.
 \begin{equation}
 |v_1 \rangle + |v_2 \rangle = |v_2 \rangle + |v_1 \rangle\,;
 (\#eq:sudeties-savybe-1)
 \end{equation}
-2.
 \begin{equation}
 |v_1 \rangle + \big( |v_2\rangle + |v_3 \rangle \big) = \big( |v_1 \rangle + |v_2 \rangle \big) + |v_3\rangle\,.
 (\#eq:sudeties-savybe-2)
@@ -94,17 +92,14 @@ gauname $|v\rangle - |v\rangle = 0$.
 Kompleksinio skaičiaus $z_i$ daugyba su vektoriais tenkina šias
 savybes:
 
-3.
 \begin{equation}
 z\big( |v_1 \rangle + |v_2 \rangle \big) = z |v_1\rangle + z |v_2\rangle\,;
 (\#eq:daugybos-savybe-1)
 \end{equation}
-4.
 \begin{equation}
 ( z_1 + z_2 ) |v \rangle = z_1 |v \rangle + z_2 |v \rangle\,;
 (\#eq:daugybos-savybe-2)
 \end{equation}
-5.
 \begin{equation}
 ( z_1 z_2 ) |v \rangle = z_1 \big(z_2 |v \rangle\big)\,.
 (\#eq:daugybos-savybe-3)
@@ -686,7 +681,7 @@ Norėdami įvertinti, kiek du normuotieji kompleksiniai vektoriai
 persikloja, galime apskaičiuoti vidinės sandaugos modulį
 \begin{equation}
 \big|\langle\psi |\phi \rangle \big| =
-\sqrt{\langle\psi |\phi\rangle\langle\phi |\psi\rangle} = \cos(\theta)\,;
+\sqrt{\langle\psi |\phi\rangle\langle\phi |\psi\rangle} = \cos(\theta)\,.
 (\#eq:vektoriu-persiklojimo-nustatymas)
 \end{equation}
 $\theta$ nusako kampą tarp vektorių $|\phi\rangle$ ir
@@ -947,7 +942,7 @@ vienodas. Sudėties tvarka yra nesvarbi $A + B = B + A$, vadovaujantis
 minėta abstraktesne operatorių aritmetika. Skaičiaus ir matricos
 sandauga $zA = Az$ yra apibrėžta:
 \begin{equation}
-$z\begin{bmatrix}
+z\begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33} \\
@@ -1068,9 +1063,9 @@ XY = & \begin{bmatrix}
 0 & - \mathrm{i} \\
 \mathrm{i} & 0 \\
 \end{bmatrix} = \begin{bmatrix}
-0 \cdot 0 + 1\mathrm{i} & 0 \cdot 0 + 1 \cdot 0 \\
-1 \cdot 0 + 0\mathrm{i} & 1(-\mathrm{i}) + 0 \cdot 0 \\
-\end{bmatrix} = i\begin{bmatrix}
+0 \cdot 0 + 1 \cdot \mathrm{i} & 0 \cdot 0 + 1 \cdot 0 \\
+1 \cdot 0 + 0 \cdot \mathrm{i} & 1\cdot (-\mathrm{i}) + 0 \cdot 0 \\
+\end{bmatrix} = \mathrm{i}\begin{bmatrix}
 1 & 0 \\
 0 & - 1 \\
 \end{bmatrix} = \mathrm{i}Z\,; (\#eq:pauli-x-y)\\
@@ -1081,8 +1076,8 @@ YX = & \begin{bmatrix}
 0 & 1 \\
 1 & 0 \\
 \end{bmatrix} = \begin{bmatrix}
-0 \cdot 0 + 1(-\mathrm{i}) & 0 \cdot 1 + 0(-\mathrm{i}) \\
-\mathrm{i}0 + 0 \cdot 1 & \mathrm{i}1 + 0 \cdot 0 \\
+0 \cdot 0 + 1 \cdot (-\mathrm{i}) & 0 \cdot 1 + 0 \cdot (-\mathrm{i}) \\
+\mathrm{i}\cdot 0 + 0 \cdot 1 & \mathrm{i} \cdot 1 + 0 \cdot 0 \\
 \end{bmatrix} = \mathrm{i}\begin{bmatrix}
 -1 & 0 \\
 0 & 1 \\
