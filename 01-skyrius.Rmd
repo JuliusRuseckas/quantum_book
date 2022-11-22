@@ -512,10 +512,6 @@ blogiausiam scenarijui. Algoritmas $g(n)$ su tiesine
 $O(n)$ elgsena yra akivaizdžiai efektyvesnis, kai
 $n\rightarrow \infty$, nepaisant didelio koeficiento šalia $n$.
 
-```{r algoritmu-sudetingumas, echo=FALSE, fig.cap="Keletas algoritmų sudėtingumo pavyzdžių. Nuo sparčiausiai iki lėčiausiai augančio operacijų skaičiaus: eksponentinė elgsena, polinominė, logtiesinė ir tiesinė", out.width='50%', fig.align='center'}
-knitr::include_graphics("media/image1_2.svg")
-```
-
 Vertinant laiko išteklius, riba yra standartiškai nubrėžiama tarp
 algoritmų, kurių ištekliai auga: 1) kaip polinomas ir 2) kuriuose
 resursai auga greičiau nei bet koks polinomas (sakoma
@@ -535,6 +531,10 @@ esantys efektyvesni. \@ref(fig:algoritmu-sudetingumas) pav. pateikiame kreives 
 kompleksiškumo klasės funkcijų, palyginančių, kaip auga operacijų
 skaičius didėjant įvesties dydžiui. Atkreipiame dėmesį, kad čia
 vertikalioji ašis užsibaigia tik ties 2000.
+
+```{r algoritmu-sudetingumas, echo=FALSE, fig.cap="Keletas algoritmų sudėtingumo pavyzdžių. Nuo sparčiausiai iki lėčiausiai augančio operacijų skaičiaus: eksponentinė elgsena, polinominė, logtiesinė ir tiesinė", out.width='50%', fig.align='center'}
+knitr::include_graphics("media/image1_2.svg")
+```
 
 Galime palyginti laiko išteklius keletui kvantinių ir klasikinių
 algoritmų, skirtų atlikti tą pačią užduotį. Faktorizuojant pirminius
@@ -707,11 +707,6 @@ vektoriai turi svarbią savybę -- jie yra **tarpusavyje ortogonalūs**
 kampas tarp bet kurių dviejų bazinių vektorių yra statusis. Kvantinėje
 kompiuterijoje tik būsenos, kurios yra ortogonalios, gali būti patikimai
 atskirtos viena nuo kitos.
-
-```{r blocho-sfera, echo=FALSE, fig.cap="Blocho sfera", out.width='40%', fig.align='center'}
-knitr::include_graphics("media/image1_3.svg")
-```
-
 Koeficientai $a$ ir $b$, formaliai vadinami amplitudėmis, yra
 kompleksiniai skaičiai (turi realiąją ir menamąją dalis). Amplitudės
 gali kisti tolydžiai, tačiau yra tarpusavyje susietos taip, kad jų
@@ -744,6 +739,10 @@ $|1\rangle$ būsenų superpozicijas, kurios skiriasi viena
 nuo kitos tik santykiniu $\mathrm{e}^{\mathrm{i}\varphi}$ fazės nariu, parametrizuojamu
 azimutiniu kampu $\varphi$. Visi įmanomi vektoriai nuo centro iki bet
 kurio taško sferos paviršiuje įvardija visas galimas kubito būsenas.
+
+```{r blocho-sfera, echo=FALSE, fig.cap="Blocho sfera", out.width='40%', fig.align='center'}
+knitr::include_graphics("media/image1_3.svg")
+```
 
 Siekdami sužinoti kubito būseną mes turime jį **pamatuoti**
 (angl. *state measurement*). Būsenų amplitudžių kvadratas nusako galimus
@@ -1114,16 +1113,16 @@ $d = 13$.
 Apibendrinus, norint atlikti skaičiavimą kvantiniame procesoriuje
 reikalingi trys pagrindiniai elementai:
 
-Kvantinių bitų registras. Registras -- tai kubitų rinkinys, kuriame
+1. Kvantinių bitų registras. Registras -- tai kubitų rinkinys, kuriame
 koduojama ir apdorojama informacija. Registrą galima inicializuoti į
 mums žinomą pradinę būseną, standartiškai $|0\rangle$
 visiems kubitams.
 
-Universalių kvantinių loginių vartų rinkinys. Loginiai vartai atlieka
+2. Universalių kvantinių loginių vartų rinkinys. Loginiai vartai atlieka
 registro būsenų keitimo operacijas, leidžiančias koduoti ir apdoroti
 informaciją.
 
-Kubitų būsenų matavimai. Norint nuskaityti registre apdorotą
+3. Kubitų būsenų matavimai. Norint nuskaityti registre apdorotą
 informaciją, kubitų būsenos turi būti išmatuojamos.
 
 Šie trys elementai yra traktuojami, kaip esantys loginiame lygmenyje.
@@ -1286,10 +1285,6 @@ stimuliuojama iš išorės sugrįžta į žemesnį lygį. Pavyzdžiui, praėjus
 laikui $t = T_1$ tikimybė pamatavus kubitą vis dar jį rasti
 $|1\rangle$ būsenoje yra $p = 0.37$.
 
-```{r fazes-amplitudes-slopinimas, echo=FALSE, fig.cap="Fazės ir amplitudės slopinimas. Parodytos kreivės nusako, kokia tikimybė rasti kubitą pradinėje nurodytoje būsenoje bėgant laikui. Iliustracijai panaudota $T_1 = T_2 = 300$ mikrosekundžių dekoherencijos trukmė", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image1_6.svg")
-```
-
 Dekoherencijos trukmės konstanta $T_2$
 nusako **fazės slopinimo** (angl. *phase-damping*) trukmę, dar vadinamą
 **depoliarizacijos** trukme (angl. *depolarization*). Šis rodiklis
@@ -1310,6 +1305,10 @@ $\frac{\mathrm{e}^{-\frac{t}{T_2}} + 1}{2}$. Po pakankamai ilgo
 laiko $t \gg T_2$ tikimybės rasti $|0\rangle$ arba
 $|1\rangle$ būseną susivienodina. Abiejų minėtų procesų
 gesimo funkcijos yra parodytos \@ref(fig:fazes-amplitudes-slopinimas) pav.
+
+```{r fazes-amplitudes-slopinimas, echo=FALSE, fig.cap="Fazės ir amplitudės slopinimas. Parodytos kreivės nusako, kokia tikimybė rasti kubitą pradinėje nurodytoje būsenoje bėgant laikui. Iliustracijai panaudota $T_1 = T_2 = 300$ mikrosekundžių dekoherencijos trukmė", out.width='60%', fig.align='center'}
+knitr::include_graphics("media/image1_6.svg")
+```
 
 Individualių kvantinių loginių **vartų tikslumą** (angl. *gate
 fidelity*) galima įvertinti palyginus, kiek būsenos, kurioms buvo
