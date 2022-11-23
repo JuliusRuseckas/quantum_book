@@ -643,7 +643,7 @@ $\theta_k =\lambda_k t/2\pi$. Tai yra visi reikalingi matematiniai
 įrankiai, naudojami HHL algoritme. Toliau apibūdinkime jo žingsnius,
 parodytus kvantinėje grandinėje \@ref(fig:hhl-grandine) pav.
 
-```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje", out.width='93%', fig.align='center'}
+```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje", out.width='80%', fig.align='center'}
 knitr::include_graphics("media/image7_6.svg")
 ```
 
