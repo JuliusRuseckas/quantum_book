@@ -1,11 +1,23 @@
 # Kvantinių klaidų aptikimas ir taisymas
 
+Klaidų taisymas iš pirmo žvilgsnio neatrodo itin estetiškas ar įdomus
+užsiėmimas. Tačiau kvantinėje kompiuterijoje tai yra viena iš labiausiai
+apšviečiančių ir stebinančių sričių. Dekoherencija yra artimai susijusi
+su mus supančių klasikinių reiškinių atsiradimu iš pasaulio, kuris
+fundamentaliai vadovaujasi kvantinėmis taisyklėmis. Dekoherencija --
+pagrindinė priežastis, kuri neleidžia realizuoti makroskopinio dydžio
+objektų, esančių superpozicijos būsenose. Atliekant klaidų analizę ir
+taisymą taip pat geriau atsiskleidžia gili informacijos sąvokos reikšmė
+ir kvantinio supynimo svarba. Informacijos atskleidimas gali sugriauti
+sistemos superpozicijos būseną net ir tada, jeigu su šia sistema nėra
+tiesioginės sąveikos.
+
 ## Klasikinės ir kvantinės klaidos
 
 Kvantinė kompiuterija pasikliauja delikačiomis kubitų superpozicijos
 būsenomis. Praktikoje kubitai nėra idealiai izoliuoti nuo aplinkos, jų
 neišvengiama sąveika su išorinėmis sistemomis mažina gebėjimą išlikti
-superpozicijos būsenose ilgą laiką. I skyriuje minėtos $T_1$ ir $T_2$
+superpozicijos būsenose ilgą laiką. Pirmame skyriuje minėtos $T_1$ ir $T_2$
 dekoherencijos trukmės atspindi, kaip intensyviai išorinės sąveikos
 vyksta su kubitais, taip pat įvardija laiko skalę, pagal kurią galima
 spręsti, kiek loginių operacijų įmanoma atlikti iki tol, kol neatsiras
@@ -24,18 +36,6 @@ metu. Žinoma, kvantines būsenas norima apsaugoti ir statinėse
 situacijose -- siunčiant kubitus kvantiniais ryšiais ar saugant
 kvantinio kompiuterio atmintyje. Kaip matysime, panašūs principai yra
 taikomi abiem situacijoms.
-
-Klaidų taisymas iš pirmo žvilgsnio neatrodo itin estetiškas ar įdomus
-užsiėmimas. Tačiau kvantinėje kompiuterijoje tai yra viena iš labiausiai
-apšviečiančių ir stebinančių sričių. Dekoherencija yra artimai susijusi
-su mus supančių klasikinių reiškinių atsiradimu iš pasaulio, kuris
-fundamentaliai vadovaujasi kvantinėmis taisyklėmis. Dekoherencija --
-pagrindinė priežastis, kuri neleidžia realizuoti makroskopinio dydžio
-objektų, esančių superpozicijos būsenose. Atliekant klaidų analizę ir
-taisymą taip pat geriau atsiskleidžia gili informacijos sąvokos reikšmė
-ir kvantinio supynimo svarba. Informacijos atskleidimas gali sugriauti
-sistemos superpozicijos būseną net ir tada, jeigu su šia sistema nėra
-tiesioginės sąveikos.
 
 Šiuolaikiniai klasikiniai kompiuteriai yra itin atsparūs skaičiavimo
 klaidoms ir šiuo atžvilgiu gali būti traktuojami kaip esantys be
