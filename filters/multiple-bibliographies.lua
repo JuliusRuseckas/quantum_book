@@ -69,7 +69,7 @@ local function resolve_doc_citations (doc)
   -- combine all bibliographies
   local meta = doc.meta
   local orig_bib = meta.bibliography
-  meta.bibliography = pandoc.MetaList{orig_bib}
+  meta.bibliography = pandoc.MetaList{}
   for name, value in pairs(meta) do
     if name:match('^bibliography_') then
       table.insert(meta.bibliography, value)
