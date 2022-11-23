@@ -17,6 +17,10 @@
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 
+%% Fix width of roman chapte numbers in TOC
+\usepackage{tocbasic}
+\DeclareTOCStyleEntry[dynnumwidth]{tocline}{chapter}
+
 %% Custom chapter style
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\Huge\bfseries}{\thechapter\ \chaptername}{0.5ex}{\huge\bfseries\raggedright}
