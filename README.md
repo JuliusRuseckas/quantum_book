@@ -1,7 +1,7 @@
 # Įvadas į kvantinę kompiuteriją
 
 Ši knyga yra skirta skaitytojams, kurie nėra anksčiau susipažinę su kvantine
-kompiuterija. Jos tikslas yra pristatyti šią sritį pradedant nuo elementariausių savokų
+kompiuterija. Knygos tikslas yra pristatyti šią sritį pradedant nuo elementariausių savokų
 skiriant daugiau dėmesio konceptualiam supratimui. Nors knyga nebuvo specialiai
 orientuojama į vadovėlio formatą, tačiau skyrių seka turi progresiją, kuri gali būti
 panaudota vieno semestro bakalauro ar magistratūros studentų kursui.
@@ -17,8 +17,8 @@ Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons 
 
 Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą ir palaikymą realizuojant
 šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei, Karoliui
-Jankauskui, Artūrui Pupšiui už vertingus patarimus.
+Jankauskui ir Artūrui Pupšiui už vertingus patarimus.
 
 Iliustracijos - Jovita Jankauskienė
 
-Lietuvių kalbos redagavimas - KTU leidykla „Technologija“
+Kalbos redaktorė - Rozita Znamenskaitė (KTU leidykla „Technologija“)
