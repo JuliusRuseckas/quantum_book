@@ -52,7 +52,7 @@ eksponentės argumentuose $xy$ yra daugyba, pavyzdžiui, jeigu
 $|x\rangle = |5\rangle$ ir
 $|y\rangle = |3\rangle$, tada $xy = 15$.
 Operatorių $U_{\mathrm{FT}}$, žinoma, galima išreikšti ir $(2^n \times 2^n)$
-matricos dydžio forma. Jos $y$ stulpelio ir $x$ eilutės įrašai yra fazės
+dydžio matrica. Jos $y$ stulpelio ir $x$ eilutės įrašai yra fazės
 nariai $\mathrm{e}^{\mathrm{i}2\pi xy/2^n}/\sqrt{2^n}$.
 
 Būdama unitarioji transformacija, FT išlaiko vektorių normuotumą ir
@@ -160,14 +160,15 @@ U_{\mathrm{FT}}|k_1 k_2\cdots k_n\rangle =\big(|0\rangle + \mathrm{e}^{\mathrm{i
 
 ## Furjė transformacijos realizavimas kvantinėje grandinėje
 
-```{r 3-kubitu-ft-grandine, echo=FALSE, fig.cap="3 kubitų registrui kvantinę Furjė transformaciją atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_1.svg")
-```
-
 Kvantinė Furjė transformacija yra
 efektyviai realizuojama kvantinėje grandinėje naudojant 1 kubito ir
 2 kubitų loginius vartus. Pirmiausiai pateikiame kaip pavyzdį 3 kubitų
 registrui $U_{\mathrm{FT}}$ atliekančią kvantinę grandinę (žr. \@ref(fig:3-kubitu-ft-grandine) pav.):
+
+
+```{r 3-kubitu-ft-grandine, echo=FALSE, fig.cap="3 kubitų registrui kvantinę Furjė transformaciją atliekanti loginė grandinė", out.width='70%', fig.align='center'}
+knitr::include_graphics("media/image7_1.svg")
+```
 
 Čia matome Hadamardo, 2-kubitų $cP_k$ bei SWAP loginių vartų
 kombinaciją. Joje $cP_k$ yra \@ref(kvantiniai-loginiai-vartai-grandines) skyriuje minėti sąlyginiai fazės
@@ -189,7 +190,7 @@ atstato juos atgal į standartinę $\{k_1, k_2, k_3\}$ seką. Aišku,
 nebūtina to daryti, jeigu toliau atliekami loginiai vartai atsižvelgiant
 į indeksavimo pasikeitimą.
 
-```{r atvirkstine-3-kubitu-ft, echo=FALSE, fig.cap="Atvirkštinė 3 kubitų kvantinė Furjė transformacija.", out.width='80%', fig.align='center'}
+```{r atvirkstine-3-kubitu-ft, echo=FALSE, fig.cap="Atvirkštinė 3 kubitų kvantinė Furjė transformacija", out.width='73%', fig.align='center'}
 knitr::include_graphics("media/image7_2.svg")
 ```
 
@@ -200,7 +201,7 @@ atvirkštiniai $cP_k$ vartai yra jų ermitinė jungtis
 ${cP}_k^{\dagger}$. Atvirkštinę 3 kubitų transformaciją $\mathrm{FT}^{\dagger}$
 atliekanti grandinė yra pateikta \@ref(fig:atvirkstine-3-kubitu-ft) pav.
 
-```{r kvantine-ft-grandine-n-kubitu, echo=FALSE, fig.cap="Loginė grandinė, atliekanti kvantinę Furjė transformaciją $n$ kubitų registrui.", out.width='80%', fig.align='center'}
+```{r kvantine-ft-grandine-n-kubitu, echo=FALSE, fig.cap="Loginė grandinė, atliekanti kvantinę Furjė transformaciją $n$ kubitų registrui", out.width='94%', fig.align='center'}
 knitr::include_graphics("media/image7_3.svg")
 ```
 
@@ -344,7 +345,7 @@ kad jeigu $2^n/P$ ir nėra sveikasis skaičius, amplitudės vis tiek
 išlieka tik tų būsenų $|y\rangle$, kurios yra artimos
 $k2^n/P$ sveikajam skaičiui.
 
-```{r periodiskuma-nustatanti-grandine, echo=FALSE, fig.cap="Funkcijos periodiškumą nustatanti loginė grandinė. Furjė transformacija $n$ kubitų registrui glaustai užrašyta kaip modulis FT.", out.width='80%', fig.align='center'}
+```{r periodiskuma-nustatanti-grandine, echo=FALSE, fig.cap="Funkcijos periodiškumą nustatanti loginė grandinė. Furjė transformacija $n$ kubitų registrui glaustai užrašyta kaip modulis FT", out.width='60%', fig.align='center'}
 knitr::include_graphics("media/image7_4.svg")
 ```
 
@@ -404,7 +405,7 @@ U^{2^n}|u\rangle = \mathrm{e}^{\mathrm{i}2\pi 2^n\theta_u}|u\rangle\,.
 \end{equation}
 Kvantinė grandinė, realizuojanti fazės nustatymą, yra parodyta \@ref(fig:grandine-fazes-nustatymui) pav.
 
-```{r grandine-fazes-nustatymui, echo=FALSE, fig.cap="Bendra loginė grandinė, realizuojanti fazės nustatymo algoritmą.", out.width='80%', fig.align='center'}
+```{r grandine-fazes-nustatymui, echo=FALSE, fig.cap="Bendra loginė grandinė, realizuojanti fazės nustatymo algoritmą", out.width='94%', fig.align='center'}
 knitr::include_graphics("media/image7_5.svg")
 ```
 
@@ -631,10 +632,6 @@ Tęsiant algoritmo apibūdinimą, išreiškus $U$ spektrine dekompozicija:
 (\#eq:u-spektine-dekompozicija-hhl)
 \end{equation}
 
-```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image7_6.svg")
-```
-
 Operatoriaus tikrinės vertės $\mathrm{e}^{\mathrm{i}\lambda_k t}$ yra
 asocijuotos su $U$ tikriniais vektoriais
 $|a_k\rangle$, kurie čia taip pat yra ir $A$ tikriniai
@@ -645,6 +642,10 @@ ermitinio operatoriaus $A$ tikrinė vertė susieta su faze
 $\theta_k =\lambda_k t/2\pi$. Tai yra visi reikalingi matematiniai
 įrankiai, naudojami HHL algoritme. Toliau apibūdinkime jo žingsnius,
 parodytus kvantinėje grandinėje \@ref(fig:hhl-grandine) pav.
+
+```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje", out.width='93%', fig.align='center'}
+knitr::include_graphics("media/image7_6.svg")
+```
 
 HHL naudoja tris kubitų registrus. Pirmųjų dviejų registrų funkcijos čia
 yra iš esmės tokios pačios, kaip ir fazės nustatymo algoritme. Pirmasis
