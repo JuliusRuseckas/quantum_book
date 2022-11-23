@@ -102,7 +102,6 @@ dujos. Šios knygos rašymo metu dirba Baltijos Pažangių Technologijų Institu
 
 ## Licencija {-}
 
-
 `r if (knitr::is_latex_output()) '
 ![](media/cc-by-nc-sa.pdf)
 ' else '

@@ -1841,7 +1841,7 @@ Kitos operatorių, išreikštų tenzorinėmis sandaugomis, savybės:
 \begin{align}
 A\otimes(B + C) = & A\otimes B + A\otimes C\,;(\#eq:tenzorines-sandaugos-savybe-1)\\
 (A\otimes B)(C\otimes D) = & (AC\otimes BD)\,;(\#eq:tenzorines-sandaugos-savybe-2)\\
-\mathrm{Tr}(A\otimes B) = \mathrm{Tr}(A)\mathrm{Tr}(B)\,.(\#eq:tenzorines-sandaugos-savybe-3)
+\mathrm{Tr}(A\otimes B) = & \mathrm{Tr}(A)\mathrm{Tr}(B)\,.(\#eq:tenzorines-sandaugos-savybe-3)
 \end{align}
 Iliustruodami tenzorinės operatorių sandaugos naudojimą, imkime dviejų
 kubitų sistemą, kuriai atliekama pirmam kubitui Pauli-$X$, o antram
