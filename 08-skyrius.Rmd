@@ -177,13 +177,13 @@ $|11\rangle$) yra pritaikoma fazė $\mathrm{e}^{\mathrm{i}\theta}$, o štai
 nelyginio lyginumo būsenos ($|01\rangle$ ir
 $|10\rangle$) įgauna $\mathrm{e}^{-\mathrm{i}\theta}$.
 
-```{r z-times-z-grandine, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti $\\mathrm{e}^{\\mathrm{i}\\theta Z_1\\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi $R_z$ posūkio loginiai vartai.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image8_1.svg")
-```
-
-\@ref(fig:z-times-z-grandine) pav. parodyta kvantinė grandinė,
+\@ref(fig:z-times-z-grandine) pav. parodyta grandinė,
 realizuojanti $\mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$ operatorių kubitams
 $k_1$ ir $k_2$ pasitelkiant ancilą $a_1$.
+
+```{r z-times-z-grandine, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti $\\mathrm{e}^{\\mathrm{i}\\theta Z_1\\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi $R_z$ posūkio loginiai vartai", out.width='52%', fig.align='center'}
+knitr::include_graphics("media/image8_1.svg")
+```
 
 Pirma kvantinės grandinės užduotis yra atskirti būsenų lyginumą. Tam
 iškviečiami dveji $cX$ vartai, supinantys ancilą kubitą $a_1$ su $k_1$
@@ -537,7 +537,7 @@ $\theta = \frac{V(x)\Delta t}{\hbar}$ fazes
 $\{|0\rangle , |3\rangle , |7\rangle\}$
 būsenoms, parodyta \@ref(fig:potencines-energijos-grandine) pav.
 
-```{r potencines-energijos-grandine, echo=FALSE, fig.cap="Loginė grandinė, atliekanti potencinės energijos funkcijos $V(x)$ su trimis barjerais veiksmą banginei funkcijai $\\psi(x)$ viename laiko intervale.", out.width='80%', fig.align='center'}
+```{r potencines-energijos-grandine, echo=FALSE, fig.cap="Loginė grandinė, atliekanti potencinės energijos funkcijos $V(x)$ su trimis barjerais veiksmą banginei funkcijai $\\psi(x)$ viename laiko intervale", out.width='54%', fig.align='center'}
 knitr::include_graphics("media/image8_2.svg")
 ```
 
@@ -583,10 +583,6 @@ pavyzdį:
 (\#eq:kinetine-energija-3-kubitams)
 \end{equation}
 
-```{r gauso-diskretizuota-funkcija, echo=FALSE, fig.cap="Gauso formos diskretizuota banginė funkcija, perteikta 16-os taškų gardelėje.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image8_3.svg")
-```
-
 Jau žinome, kaip kvantinėje grandinėje
 loginiais vartais perteikti visus čia matomus narius. Šriodingerio
 lygties sprendime turime paruošti pradinę banginę funkciją $\psi(x,0)$.
@@ -607,6 +603,10 @@ aptinkama ir praktikoje, nes ji nusako apvalios apertūros sukurtą
 tolimojo lauko difrakcijos funkciją.
 
 
+```{r gauso-diskretizuota-funkcija, echo=FALSE, fig.cap="Gauso formos diskretizuota banginė funkcija, perteikta 16-os taškų gardelėje", out.width='86%', fig.align='center'}
+knitr::include_graphics("media/image8_3.svg")
+```
+
 Erdvinės Šriodingerio lygties algoritmo pabaigoje turime banginę
 funkciją $\psi(x,t)$ arba, ekvivalentiškai, jos judesio kiekio
 atvaizdavimą $\psi(p,t)$. Kadangi taikome amplitudžių kodavimo metodą
@@ -619,9 +619,9 @@ Dešimtainėje sistemoje rasime vieną iš galimų pozicijos būsenų
 $|x'\rangle$ su tikimybe
 $p(x') = \psi^{*}(x')\psi(x')dx = |\psi(x)|^2 dx$.
 Pakartoję algoritmą daug kartų ir atlikę tokį matavimą, apytikriai
-rasime visą **tikimybių tankio funciją** $|\psi(x)|^2$
+rasime visą **tikimybių tankio funkciją** $|\psi(x)|^2$
 (angl. *probability density function*), kuri nusako tikimybes rasti
-kvantinę sistemą kiekviename pozicijos intervale.
+kvantinę sistemą pozicijos intervale.
 
 Vietoj šio matavimo galima apskaičiuoti ir globalius banginės funkcijos
 parametrus, $\langle\psi |M|\psi\rangle$;
@@ -633,19 +633,15 @@ kartoti algoritmą vos keletą kartų.
 
 ##  Mašininis mokymasis
 
-> **Mašininis mokymasis** (angl. *machine learning,* ML) yra tyrimų
-> sritis, kurianti metodus, įgalinančius vis geriau atlikti nurodytas
-> užduotis panaudojant duomenis. Mašininio mokymosi algoritmai,
-> remiantis domenų pavyzdžiais, sukuria prognozę atliekantį ar
-> sprendimus priimantį modelį, tų užduočių neprogramuojant. Mašininis
-> mokymasis yra plačiai taikomas įvairiose srityse, įskaitant kalbos
-> atpažinimą, kompiuterinę regą, mašininį vertimą.
+**Mašininis mokymasis** (angl. *machine learning,* ML) yra tyrimų
+ sritis, kurianti metodus, įgalinančius vis geriau atlikti nurodytas
+ užduotis panaudojant duomenis. Mašininio mokymosi algoritmai,
+ remiantis duomenų pavyzdžiais, sukuria prognozę atliekantį ar
+ sprendimus priimantį modelį, tų užduočių neprogramuojant. Mašininis
+ mokymasis yra plačiai taikomas įvairiose srityse, įskaitant kalbos
+ atpažinimą, kompiuterinę regą, mašininį vertimą.
 
 ### Klasikinis mašininis mokymasis
-
-```{r klasikinio-ml-metodai, echo=FALSE, fig.cap="Klasikinio mašininio mokymosi metodai.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image8_4.svg")
-```
 
 Klasikinio mašininio mokymosi metodai gali
 būti sugrupuoti į tris sritis: **prižiūrimasis mokymasis**
@@ -657,6 +653,11 @@ dažniausiai taikomi praktikoje. Tačiau prižiūrimasis mokymasis turi tą
 trūkumą, kad jam reikia sužymėtų duomenų, kuriuos gali būti brangu ar
 sunku gauti. Kai kurie dažniausiai taikomi mašininio mokymosi metodai
 pavaizduoti \@ref(fig:klasikinio-ml-metodai) pav.
+
+
+```{r klasikinio-ml-metodai, echo=FALSE, fig.cap="Klasikinio mašininio mokymosi metodai", out.width='88%', fig.align='center'}
+knitr::include_graphics("media/image8_4.svg")
+```
 
 Prižiūrimojo mokymosi atveju modelio kūrimui panaudojami duomenys,
 kuriuose kiekvienas pavyzdys yra pateikiamas kartu su norima išvestimi.
@@ -838,13 +839,13 @@ Binariosios klasifikacijos atveju duomenys priklauso grupei $a$ arba
 $b$,$y \in a,b$. Tam yra optimizuojamas modelio parametrų rinkinys $\theta$.
 Gerai apmokytas modelis $f(x, \theta)$ turėtų gebėti teisingai priskirti
 nematytus duomenis $x$ grupei $y \in a,b$.
-
-```{r kvantiniu-grandiniu-klasifikatorius, echo=FALSE, fig.cap="Kvantinėmis grandinėmis paremtas klasifikatorius. Loginių operacijų grandinė $A$ atlieka pradinės būsenos paruošimą; ji yra toliau apdorojama modelio $U(\\theta)$ grandinėje optimizuojant klasifikatorių. Galiausiai, atliekama binarinė klasifikacija išmatuojant pirmojo kubito būseną.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image8_5.svg")
-```
-
 Kvantinėmis grandinėmis paremtas klasifikatorius yra
 pavaizduotas \@ref(fig:kvantiniu-grandiniu-klasifikatorius) pav.
+
+
+```{r kvantiniu-grandiniu-klasifikatorius, echo=FALSE, fig.cap="Kvantinėmis grandinėmis paremtas klasifikatorius. Loginių operacijų grandinė $A$ atlieka pradinės būsenos paruošimą; ji yra toliau apdorojama modelio $U(\\theta)$ grandinėje optimizuojant klasifikatorių. Galiausiai, atliekama binarinė klasifikacija išmatuojant pirmojo kubito būseną", out.width='46%', fig.align='center'}
+knitr::include_graphics("media/image8_5.svg")
+```
 
 Kvantinė grandinė yra parametrizuota parametrų rinkiniu $\theta$. Pradinė
 $n$ kubitų būsena $|0\rangle^{\otimes n}$ naudojama
@@ -872,7 +873,7 @@ Nuodugnus mokymo procesas yra
 pavaizduotas \@ref(fig:hibridinis-ml-algoritmas) pav. Klasikinė modelio
 mokymo dalis pavaizduota brūkšnine linija.
 
-```{r hibridinis-ml-algoritmas, echo=FALSE, fig.cap="Hibridinis kvantinis-klasikinis mokymo algoritmas. Kvantinis įrenginys yra naudojamas išvesties ir gradientų suskaičiavimui; kvantinės grandinės parametrai $\\theta$ atnaujinami naudojantis klasikiniu algoritmu.", out.width='80%', fig.align='center'}
+```{r hibridinis-ml-algoritmas, echo=FALSE, fig.cap="Hibridinis kvantinis-klasikinis mokymo algoritmas. Kvantinis įrenginys yra naudojamas išvesties ir gradientų suskaičiavimui; kvantinės grandinės parametrai $\\theta$ atnaujinami naudojantis klasikiniu algoritmu", out.width='61%', fig.align='center'}
 knitr::include_graphics("media/image8_6.svg")
 ```
 
@@ -944,16 +945,17 @@ cG = |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes G\,.
 (\#eq:salyginiai-diadomis-ml)
 \end{equation}
 
-```{r triju-kubitu-blokas, echo=FALSE, fig.cap="3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$ yra 1 kubito loginiai vartai.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image8_7.svg")
-```
-
 Sąlyginiai vartai čia sudaro ciklinį kodą,
 kuris yra charakterizuojamas artumo parametru $r$ ($0 < r < n$).
 Kiekvienam kubitui, kurio numeris $j$, pritaikomi sąlyginiai loginiai
 vartai, kuriuose $j$-tasis kubitas yra adresatas („target"), o
 $(j + r)\mod(n)$-tas kubitas kontroliuojantis („control"). Trijų kubitų
 atveju, kai $r = 1$, toks blokas pavaizduotas \@ref(fig:triju-kubitu-blokas) pav.
+
+
+```{r triju-kubitu-blokas, echo=FALSE, fig.cap="3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$ yra 1 kubito loginiai vartai", out.width='80%', fig.align='center'}
+knitr::include_graphics("media/image8_7.svg")
+```
 
 Tikslo funkcijos $\mathcal{L}(\theta)$ maksimizavimui taikant
 gradientinio nusileidimo metodą reikia operatorių $U(\theta)$ išvestinių
