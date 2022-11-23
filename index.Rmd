@@ -1,9 +1,8 @@
 --- 
 title: "Kvantinė kompiuterija"
-subtitle: "Įvadas"
 author:
-  - Tadas Paulauskas^[Fizinių ir technologijos mokslų centras]
-  - Julius Ruseckas^[Baltijos pažangių technologijų institutas (BPTI)]
+  - Tadas Paulauskas
+  - Julius Ruseckas
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -17,7 +16,7 @@ biblatexoptions:
   - sorting=ynt
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
-description: "Kvantinė kompiuterija: Įvadas"
+description: "Kvantinė kompiuterija"
 link-citations: yes
 nocite: '@*'
 github-repo: JuliusRuseckas/quantum_book
@@ -86,7 +85,7 @@ Jankauskui, Artūrui Pupšiui už vertingus patarimus.
 
 Iliustracijos - Jovita Jankauskienė
 
-Lietuvių kalbos redagavimas - KTU leidykla „Technologija“
+Kalbos redaktorė - Rozita Znamenskaitė (KTU leidykla „Technologija“)
 
 ## Apie autorius {-}
 
