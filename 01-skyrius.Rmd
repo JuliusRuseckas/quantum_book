@@ -754,7 +754,7 @@ $|0\rangle$ arba $|1\rangle$, o
 superpozicijos būsena yra negrįžtamai prarandama. Kartais dar sakoma,
 kad superpozicija suyra. Amplitudžių kvadratų vienetinė suma atspindi
 tai, kad tikimybė $p$ rasti $|0\rangle$ arba
-$|1\rangle$ būseną turi susidėti į 1, kitų variantų nėra.
+$|1\rangle$ būseną turi susidėti į 1.
 Čia naudojame trupmenas vietoj procentų nusakyti tikimybėms, pavyzdžiui,
 $p = 0.75$ nusako 75% tikimybę.
 
@@ -794,9 +794,9 @@ galime patikrinti, ar po sekos transformacijų matavimų tikimybės
 atitinka spėjimus, nusakomus $|a|^2$ ir
 $|b|^2$. **Kvantinių būsenų tomografija** (angl. *quantum
 state tomography*) yra vienas metodas, leidžiantis unikaliai nusakyti
-būseną. Šis metodas bendrai reikalauja paruošti identišką kvantinę
-būseną ir daugybę kartų atlikti sumaniai parinktus skirtingo tipo būsenų
-matavimus. Tad kvantinių būsenų tomografija nėra įprastai taikoma
+būseną. Šis metodas reikalauja paruošti identišką kvantinę
+būseną daugybę kartų ir atlikti sumaniai parinktus skirtingo tipo būsenų
+matavimus. Kvantinių būsenų tomografija nėra įprastai taikoma
 kvantinėje kompiuterijoje, tačiau leidžia atlikti diagnostines užduotis.
 Vis dėlto, turint tik vieną kubitą nežinomoje superpozicijos būsenoje,
 atskleisti amplitudžių $a$ ir $b$, kitaip tariant, pasakyti, kokia yra
@@ -817,7 +817,7 @@ mechanika ir turi interpretacinių klaustukų, tačiau gali tiksliau nei
 bet kuri kita teorija apibūdinti stebimą pasaulį. Tuo mes ir
 vadovaujamės kvantinės kompiuterijos taikymuose nesigilindami į
 filosofinius aspektus. Šis pragmatinis principas yra Davido N. Mermino
-vadinama **„tylėk ir skaičiuok"** (angl. *shut up and calculate*).
+vadinamas **„tylėk ir skaičiuok"** (angl. *shut up and calculate*).
 Gebėjimas beprecedentiškai tiksliai kontroliuoti kvantines sistemas ir
 besivystantis kvantinės informatikos mokslas galbūt ateityje leis geriau
 suprasti keistąsias šios teorijos savybes.
