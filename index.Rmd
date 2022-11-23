@@ -1,5 +1,6 @@
 --- 
 title: "Kvantinė kompiuterija"
+subtitle: ""
 author:
   - Tadas Paulauskas
   - Julius Ruseckas
