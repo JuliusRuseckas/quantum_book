@@ -135,16 +135,15 @@ U_f|x\rangle\otimes|y\rangle = |x\rangle\otimes|y\oplus f(x)\rangle\,.
 (\#eq:skaiciavimas-du-registrai-y)
 \end{equation}
 
-```{r kvantine-grandine-u-f, echo=FALSE, fig.cap="Kvantinė grandinė, realizuojanti funkcinį skaičiavimą $U_f|x\\rangle\\otimes|y\\rangle = |x\\rangle\\otimes|y\\oplus f(x)\\rangle$.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_1.svg")
-```
-
 Šiuo atveju naudojame dvejetainę formą, tad išvesties
 registre yra atliekama $y$ ir $f(x)$ mod(2) bitų sudėtis, žymima ženklu
 $\oplus$. Paprasčiausią funkcinio skaičiavimo pavyzdį matėme
 IV skyriuje naudojant $U_f = cX$, kuris atlieka mod(2) bitų sudėtį.
 \@ref(fig:kvantine-grandine-u-f) pav. iliustruojame šį bendrą skaičiavimo principą kvantine grandine.
 
+```{r kvantine-grandine-u-f, echo=FALSE, fig.cap="Kvantinė grandinė, realizuojanti funkcinį skaičiavimą $U_f|x\\rangle\\otimes|y\\rangle = |x\\rangle\\otimes|y\\oplus f(x)\\rangle$", out.width='45%', fig.align='center'}
+knitr::include_graphics("media/image6_1.svg")
+```
 
 ## Kvantinis paralelizmas
 
@@ -421,10 +420,6 @@ Hadamardo transformaciją $H\otimes I$:
 (\#eq:h-gale-deutsch)
 \end{equation}
 
-```{r deutsch-logine-grandine, echo=FALSE, fig.cap="Doičo algoritmo loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_2.svg")
-```
-
 Jeigu juodosios dėžės funkcija yra
 pastovioji $f(0) = f(1)$, tada $(-1)^{f(0)} - (-1)^{f(1)} = 0$, ir
 viršuje išlieka tik $|0\rangle$ būsena. Jeigu funkcija
@@ -435,6 +430,10 @@ užrašyti $|f(0)\oplus f(1)\rangle$. Matavimo
 rezultatas užtikrintai klasifikuoja šią funkciją, o procese juodoji dėžė
 panaudojama tik vieną kartą. Doičo algoritmą nusakanti kvantinė grandinė
 yra pateikta \@ref(fig:deutsch-logine-grandine) pav.
+
+```{r deutsch-logine-grandine, echo=FALSE, fig.cap="Doičo algoritmo loginė grandinė", out.width='45%', fig.align='center'}
+knitr::include_graphics("media/image6_2.svg")
+```
 
 Doičo algoritmas leidžia palyginti, ar funkcijos vertė skirtinguose
 argumentuose yra vienoda, ar skirtinga, neatskleidžiant, kokios yra tos
@@ -581,10 +580,6 @@ G = 2|\psi\rangle\langle\psi| - I\,.
 (\#eq:g-grover)
 \end{equation}
 
-```{r grover-grandine, echo=FALSE, fig.cap="Groverio algoritmo bendrą principą nusakanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_3.svg")
-```
-
 Čia $|\psi\rangle\langle\psi |$ yra
 projekcinis operatorius į pradinės būsenos
 $|\psi\rangle$ poerdvį. Groverio algoritmas
@@ -595,6 +590,12 @@ likusių būsenų sąskaita:
 |d\rangle\approx GVGV\cdots GV|\psi\rangle\,.
 (\#eq:amplitudes-stiprinimas-grover)
 \end{equation}
+
+
+```{r grover-grandine, echo=FALSE, fig.cap="Groverio algoritmo bendrą principą nusakanti loginė grandinė", out.width='70%', fig.align='center'}
+knitr::include_graphics("media/image6_3.svg")
+```
+
 Toliau parodysime, kaip ši iteracija atlieka paieškos užduotį
 amplifikuojant ieškomosios būsenos amplitudę ir kiek kartų reikia
 iteruoti norint užtikrinti, kad $|d \rangle$ bus rasta su
@@ -669,7 +670,7 @@ amplitudės sumažėja, nes jų amplitudės yra atimamos iš sumažėjusio
 vidurkio (padauginto iš dviejų). Pirmos iteracijos žingsniai iliustruoti
 \@ref(fig:busenu-amplitudziu-pokytis) pav.
 
-```{r busenu-amplitudziu-pokytis, echo=FALSE, fig.cap="Būsenų $|x\\rangle$ amplitudžių $c_x$ pokytis pirmos Groverio iteracijos $GV$ metu.  Ieškomosios būsenos $|d\\rangle$ amplitudė žymima $d$, visų būsenų amplitudžių vidurkis $\\bar{c}_x$ nurodytas brūkšniuota linija.", out.width='80%', fig.align='center'}
+```{r busenu-amplitudziu-pokytis, echo=FALSE, fig.cap="Būsenų $|x\\rangle$ amplitudžių $c_x$ pokytis pirmos Groverio iteracijos $GV$ metu.  Ieškomosios būsenos $|d\\rangle$ amplitudė žymima $d$, visų būsenų amplitudžių vidurkis $\\bar{c}_x$ nurodytas brūkšniuota linija", out.width='57%', fig.align='center'}
 knitr::include_graphics("media/image6_4.svg")
 ```
 
@@ -797,7 +798,7 @@ arba, kitaip tariant, du vektorių pasukimus, vieną apie
 $|d_{\bot}\rangle$ ašį ir kitą apie
 $|\psi\rangle$.
 
-```{r geometrine-grover-iliustracija, echo=FALSE, fig.cap="Geometrinė Groverio algoritmo iliustracija.  Pradinės registro būsenos (vektoriaus) $|\\psi\\rangle$ pasukimas vienos iteracijos $GV$ metu link ieškomosios būsenos $|d\\rangle$.  Ieškomoji būsena, kartu su jai statmena $|d_{\\bot}\\rangle$, apibūdina 2 dimensijų realų poerdvį (plokštumą) visoje $2^n$ dimensijų kubitų registro būsenų erdvėje.", out.width='60%', fig.align='center'}
+```{r geometrine-grover-iliustracija, echo=FALSE, fig.cap="Geometrinė Groverio algoritmo iliustracija.  Pradinės registro būsenos (vektoriaus) $|\\psi\\rangle$ pasukimas vienos iteracijos $GV$ metu link ieškomosios būsenos $|d\\rangle$.  Ieškomoji būsena, kartu su jai statmena $|d_{\\bot}\\rangle$, apibūdina 2 dimensijų realų poerdvį (plokštumą) visoje $2^n$ dimensijų kubitų registro būsenų erdvėje", out.width='38%', fig.align='center'}
 knitr::include_graphics("media/image6_5.svg")
 ```
 
@@ -856,15 +857,15 @@ V|\psi\rangle = \frac{|000\rangle + |001\rangle + |010\rangle
 (\#eq:v-psi-8)
 \end{equation}
 
-```{r orakulo-funkcijas-realizuojancios-grandines, echo=FALSE, fig.cap="Visos galimos 3 kubitų registro orakulo funkcijas ($V$ operatorių) realizuojančios loginės grandinės, atskirtos viena nuo kitos brūkšniuota linija.  Viršuje pažymėtos būsenos, kurioms atitinkama grandinė pritaiko santykinę fazę.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_6.svg")
-```
-
 Visos įmanomos 3 kubitų orakulo funkcijos,
 atliekančios diagonaliąją transformaciją ir pažyminčios vieną
 skaičiuojamąjį bazinį vektorių iš 8 skirtingų, yra iliustruotos \@ref(fig:orakulo-funkcijas-realizuojancios-grandines) pav.
 loginiais vartais. Juose 3 kubitų loginiai vartai gali būti perteikti,
 pavyzdžiui, Tofoli vartų dekompozicijos metodu, parodytu \@ref(kvantiniai-loginiai-vartai-grandines) skyriuje.
+
+```{r orakulo-funkcijas-realizuojancios-grandines, echo=FALSE, fig.cap="Visos galimos 3 kubitų registro orakulo funkcijas ($V$ operatorių) realizuojančios loginės grandinės, atskirtos viena nuo kitos brūkšniuota linija.  Viršuje pažymėtos būsenos, kurioms atitinkama grandinė pritaiko santykinę fazę", out.width='81%', fig.align='center'}
+knitr::include_graphics("media/image6_6.svg")
+```
 
 Operatoriaus
 $G = 2|\psi\rangle\langle \psi| - I$
@@ -891,7 +892,7 @@ faktorizuojant globalią (neturinčią įtakos) fazę. Šioje formoje minuso
 likusioms būsenoms. Kvantinėje grandinėje $G$ operatorius 3 kubitų
 registrui yra perteikiamas \@ref(fig:grover-3-g-grandine) pav.:
 
-```{r grover-3-g-grandine, echo=FALSE, fig.cap="Groverio 3 kubitų paieškos algoritme $G$ operatorių realizuojanti loginė grandinė.", out.width='80%', fig.align='center'}
+```{r grover-3-g-grandine, echo=FALSE, fig.cap="Groverio 3 kubitų paieškos algoritme $G$ operatorių realizuojanti loginė grandinė", out.width='60%', fig.align='center'}
 knitr::include_graphics("media/image6_7.svg")
 ```
 
@@ -935,11 +936,6 @@ $|\langle\phi |\psi\rangle |^2$.
 
 ### Hadamardo testas {#hadamard-testas-poskyris}
 
-
-```{r hadamard-test-grandine, echo=FALSE, fig.cap="Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_8.svg")
-```
-
 Kvantinės grandinės, realizuojančios Hadamardo,
 modifikuotą Hadamardo ir SWAP testus panaudoja ancila 1 kubito registrą
 bei papildomą registrą (ar registrus) koduojančius būsenas, kurių
@@ -948,6 +944,11 @@ identiška loginių vartų seka: Hadamardo vartai yra pritaikomi ancila
 kubitui prieš ir po sąlyginių loginių vartų $cU$, kontroliuojamų ancila
 kubito būsenų, taip pat išmatuojama ancila kubito būsena. Hadamardo
 testą realizuojanti grandinė yra iliustruota \@ref(fig:hadamard-test-grandine) pav.
+
+
+```{r hadamard-test-grandine, echo=FALSE, fig.cap="Hadamardo testą atliekanti loginė grandinė", out.width='55%', fig.align='center'}
+knitr::include_graphics("media/image6_8.svg")
+```
 
 Matome ancila kubitą pradinėje $|0\rangle$ būsenoje ir
 antrą kubitas bendroje $|\psi\rangle$ būsenoje, tad
@@ -1082,10 +1083,6 @@ būsenų vidinės sandaugos reikšmė yra bendrai kompleksinis skaičius, o
 modulis
 $|\langle\psi |\phi\rangle |\leq 1$.
 
-```{r modifikuoto-hadamard-grandine, echo=FALSE, fig.cap="Modifikuotą Hadamardo testą atliekanti loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_9.svg")
-```
-
 Turime du registrus, kurių pradinė būsena
 yra $|0\rangle\otimes|0\rangle$.
 Pirmasis registras yra 1 kubito ancila, o štai antrasis registras turi
@@ -1099,6 +1096,10 @@ $B|0\rangle = |\phi\rangle$. Šis
 algoritmas skiriasi nuo Hadamardo testo tuo, kad $cU$ tarp Hadamardo
 vartų yra pakeičiamas dvejais sąlyginiais loginiais vartais $cA$ ir $cB$
 (žr. \@ref(fig:modifikuoto-hadamard-grandine) pav.).
+
+```{r modifikuoto-hadamard-grandine, echo=FALSE, fig.cap="Modifikuotą Hadamardo testą atliekanti loginė grandinė", out.width='62%', fig.align='center'}
+knitr::include_graphics("media/image6_9.svg")
+```
 
 Pirmiausiai atliekame Hadamardo vartus ancila kubitui:
 \begin{equation}
@@ -1141,10 +1142,6 @@ kubitui papildomus vartus $S^{\dagger}$.
 
 ###  SWAP testas
 
-```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image6_10.svg")
-```
-
 Šis testas (žr. \@ref(fig:swap-testo-grandine) pav.) leidžia apskaičiuoti dviejų $n$ kubitų
 kvantinių būsenų,
 $\{|\psi\rangle , |\phi\rangle\} \in V$,
@@ -1162,6 +1159,10 @@ kvantiniu ryšiu. Tad pradinė faktorizuojama 3 kubitų būsena yra
 $|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle$.
 Be šių skirtumų tarp Hadamardo testo, $cU$ čia yra sąlyginiai SWAP
 (*Fredkin*) loginiai vartai, $cW$, kontroliuojami ancila kubito.
+
+```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė", out.width='51%', fig.align='center'}
+knitr::include_graphics("media/image6_10.svg")
+```
 
 Pirmiausiai, atlikę Hadamardo vartus ancila kubitui, turime:
 \begin{equation}
