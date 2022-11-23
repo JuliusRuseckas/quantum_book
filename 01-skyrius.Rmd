@@ -72,9 +72,9 @@ tik vienas šios pažangos vaisius, tačiau potencialiai turintis esminę
 rolę paveikti žmonių kasdienybei. Rašydami šią knygą esame vadinamojoje
 **triukšmingų tarpinės skalės kvantinių technologijų** etape
 (angl. *noisy intermediate-scale quantum*, trumpinys NISQ). NISQ
-kvantiniai procesoriai turi ribotą (50--100) kubitų skaičių, pasižymi
+kvantiniai procesoriai turi itin ribotą kubitų skaičių, pasižymi
 sparčiai atsirandančiomis klaidomis ir nenaudoja klaidų taisymo
-algoritmų. Tai neleidžia atlikti ilgų ir labai tikslių skaičiavimų.
+algoritmų. Tai neleidžia atlikti ilgų ir tikslių skaičiavimų.
 Didėjant kvantinių kompiuterių skaičiuojamajai galiai, verta tikėtis
 proveržių srityse, kuriose reikalingi intensyvūs skaičiavimai. Šios
 sritys apima medikamentų ir technologinių medžiagų kūrimą, branduolinę
@@ -129,11 +129,10 @@ metu keletu skirtingų dažnių, o tai savo ruožtu nusakys stovinčiųjų
 bangų (virpesių) superpoziciją. Taip pat ir bangos, keliaujančios
 sužadintu vandens paviršiumi skirtingomis kryptimis, yra būsenų
 superpozicija bei demonstruoja tokius reiškinius kaip interferencija,
-kada persiklojusių bangų amplitudė vietomis padidėja ir sumažėja. Vis
-dėlto panašumai tarp klasikinių ir kvantinių sistemų čia ir baigiasi.
+kada persiklojusių bangų amplitudė vietomis padidėja ir sumažėja. 
 
-Įsivaizduokime instrumento stygą, kuri gali vibruoti tik dviem
-skirtingais dažniais, vadinsime juos $|0\rangle$ ir
+Norint pamatyti skirtumus tarp klasikinių ir kvantinių sistemų įsivaizduokime instrumento stygą, kuri gali vibruoti tik dviem
+skirtingais dažniais. Vadinsime juos $|0\rangle$ ir
 $|1\rangle$. Stygos būseną galime užrašyti kaip šių
 virpesių sumą: $|S\rangle = a|0\rangle + b|1\rangle$;
 čia $a$ ir $b$ nusako atitinkamų virpesių amplitudę, tai yra garsumą.
@@ -259,13 +258,9 @@ didelio laisvės laipsnių skaičiaus net ir sąlygiškai mažoje molekulėje.
 Antroji priežastis slypi neįveikiamų klasikinių užduočių skaičiavimuose
 kvantiniu kompiuteriu. Jau dabar yra atrasta eksponentiškai laiko
 išteklių atžvilgiu greitesnių kvantinių algoritmų už geriausius žinomus
-klasikinius tam tikroms problemoms spręsti. Tarp jų yra Šoro pirminių
-skaičių faktorizavimas ir diskrečiojo algoritmo apskaičiavimas. Tai
-padaro klasikiniams kompiuteriams neįveikiamas problemas įveikiamas
-kvantiniams. Taip pat yra atrasta esminių paspartinimų duomenų bazių
-paieškos algoritmuose, tiesinių lygčių sprendinių paieškose; jie savo
-ruožtu atveria platų problemų spektrą, kuriam galima taikyti kvantinę
-kompiuteriją.
+klasikinius tam tikroms problemoms spręsti ir naujų algoritmų skaičius sparčiai auga. Tai
+padaro klasikiniams kompiuteriams fundamentiškai neįveikiamas problemas įveikiamas
+kvantiniams. 
 
 Galiausiai **skaičiavimų sudėtingumo** (angl. *computational
 complexity*) teorijos argumentai teigia, kad kvantiniu kompiuteriu
@@ -353,7 +348,7 @@ ją išlaikyti. Tačiau jeigu šie irkluotojų atliekami judesiai nepastoviai
 kinta, tai lems nekoherentinį plaukimą ir tiesiog valties sukinėjimąsi
 vietoje. Viena iš esminių užduočių išlaikant kvantinių sistemų
 koherenciją -- užtikrinti jų izoliavimą nuo nepageidaujamų sąveikų su
-aplinkos kvantinėmis sistemomis, kurios klaidingai keičia jų santykines
+aplinkos kvantinėmis sistemomis, kurios nenuspėjamai keičia jų santykines
 fazes ir priveda prie **dekoherencijos** (angl. *decoherence*).
 Dekoherencija yra didžiausias kvantinių kompiuterių priešas, jos efektai
 pasireiškia atsitiktiniais būsenų pokyčiais, sistemos triukšmu, ir dėl
@@ -375,9 +370,7 @@ neįveikiamos. Kadangi pirminių skaičių faktorizavimu yra pagrįsta
 didžioji dalis globaliai taikomos kriptografijos, tai indikuoja
 akivaizdžią praktinę svarbą ir kartu potencialiai egzistencinę krizę
 komunikacijų saugumui. Ne mažiau svarbūs buvo pirmieji kvantinių klaidų
-taisymo principai ir algoritmai. Nors kvantiniai skaičiavimai turi
-analoginį pobūdį, klaidos šiose sistemose gali būti skaitmeninamos ir
-ištaisomos. Klaidų prevencijos ir taisymo metodai yra neatsiejama dalis
+taisymo principai. Klaidų prevencijos ir taisymo algoritmai yra neatsiejama dalis
 praktinės svarbos skaičiavimuose.
 
 Kubitais pagrįstas modelis buvo pastūmėtas itin sėkmingo skaitmeninio
