@@ -1243,7 +1243,9 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-```{r klaidoms-atspari-versija, echo=FALSE, fig.cap="Iliustracijoje \\@ref(fig:klaidoms-neatspari-grandine) pav. parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai.", out.width='100%', fig.align='center'}
+(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai.
+
+```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='100%', fig.align='center'}
 knitr::include_graphics("media/image9_8.svg")
 ```
 
