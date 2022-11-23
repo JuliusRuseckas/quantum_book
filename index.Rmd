@@ -9,12 +9,16 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography_books: books.bib
 bibliography_articles: articles.bib
+biblio-style: authoryear
+biblio-title: Literatūra
+biblatexoptions:
+  - backend=biber
+  - sorting=ynt
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: "Kvantinė kompiuterija: Įvadas"
 link-citations: yes
-nocite: |
-  @*
+nocite: '@*'
 github-repo: JuliusRuseckas/quantum_book
 ---
 
