@@ -6,6 +6,10 @@
 %% Lithuanian language
 \usepackage[lithuanian]{babel}
 
+\usepackage{csquotes}
+\DeclareQuoteAlias{german}{lithuanian}
+\MakeOuterQuote{"}
+
 %% Roman chapter numbers
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
@@ -19,4 +23,3 @@
 
 %% Fix running heads
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter\ \chaptername.\ #1}}{}}
-
