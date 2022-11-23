@@ -9,6 +9,7 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography_books: books.bib
 bibliography_articles: articles.bib
+bibliography: ["books.bib", "articles.bib"]
 biblio-style: authoryear
 biblio-title: Literatūra
 biblatexoptions:
