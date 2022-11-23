@@ -343,7 +343,7 @@ $|\psi\rangle$ būsenoje ir dviejų papildomų kubitų
 $|00\rangle$ būsenoje atliekant dvejus $CNOT$ loginius
 vartus.
 
-```{r loginio-kubito-paruosimas, echo=FALSE, fig.cap='Loginio kubito būsenos $|\\psi\\rangle_L$ paruošimas naudojant 3 fizinius kubitus.', out.width='80%', fig.align='center'}
+```{r loginio-kubito-paruosimas, echo=FALSE, fig.cap='Loginio kubito būsenos $|\\psi\\rangle_L$ paruošimas naudojant 3 fizinius kubitus', out.width='40%', fig.align='center'}
 knitr::include_graphics("media/image9_1.svg")
 ```
 
@@ -397,7 +397,7 @@ indikuoja klaidą antrajame ir trečiajame kubite, atitinkamai. Kvantinė
 grandinė \@ref(fig:bito-apvertimo-taisymo-grandine) pav. iliustruoja bito
 apvertimo klaidos aptikimą ir taisymą.
 
-```{r bito-apvertimo-taisymo-grandine, echo=FALSE, fig.cap="Bito apvertimo klaidos aptikimą ir taisymą atliekanti grandinė.", out.width='80%', fig.align='center'}
+```{r bito-apvertimo-taisymo-grandine, echo=FALSE, fig.cap="Bito apvertimo klaidos aptikimą ir taisymą atliekanti grandinė", out.width='81%', fig.align='center'}
 knitr::include_graphics("media/image9_2.svg")
 ```
 
@@ -529,7 +529,7 @@ trijų kubitų:
 \@ref(fig:grandine-loginio-paruosimui) pav. pateikiame grandinę,
 iliustruojančią šio loginio kubito paruošimą.
 
-```{r grandine-loginio-paruosimui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti loginį kubitą, skirtą taisyti fazės klaidai.", out.width='80%', fig.align='center'}
+```{r grandine-loginio-paruosimui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti loginį kubitą, skirtą taisyti fazės klaidai", out.width='31%', fig.align='center'}
 knitr::include_graphics("media/image9_4.svg")
 ```
 
@@ -812,7 +812,7 @@ blokus pervadinome atitinkamai $|+\rangle$ ir
 $|-\rangle$. Grandinė atliekant kodo paruošimą pateikta
 \@ref(fig:grandine-shoro-loginiam-kubitui) pav.
 
-```{r grandine-shoro-loginiam-kubitui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą.", out.width='80%', fig.align='center'}
+```{r grandine-shoro-loginiam-kubitui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą", out.width='58%', fig.align='center'}
 knitr::include_graphics("media/image9_5.svg")
 ```
 
@@ -1217,12 +1217,8 @@ pavyzdį \@ref(fig:klaidoms-neatspari-grandine) pav. parodytą kvantinę
 grandinę, sudarytą iš klaidoms neatsparių loginių elementų, atliekančią
 2 kubitų supynimą ir jų matavimus.
 
-```{r klaidoms-neatspari-grandine, echo=FALSE, fig.cap="Klaidoms neatspari loginė grandinė, atliekanti kubitų supynimą ir jų matavimą.", out.width='80%', fig.align='center'}
+```{r klaidoms-neatspari-grandine, echo=FALSE, fig.cap="Klaidoms neatspari loginė grandinė, atliekanti kubitų supynimą ir jų matavimą", out.width='49%', fig.align='center'}
 knitr::include_graphics("media/image9_6.svg")
-```
-
-```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus.", out.width='80%', fig.align='center'}
-knitr::include_graphics("media/image9_7.svg")
 ```
 
 \@ref(fig:klaidoms-atsparus-loginiai-elementai) pav. pateikiame klaidoms atsparius
@@ -1243,18 +1239,20 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai.
-
-```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='100%', fig.align='center'}
-knitr::include_graphics("media/image9_8.svg")
+```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus", out.width='73%', fig.align='center'}
+knitr::include_graphics("media/image9_7.svg")
 ```
-
 Klaidoms atspari kvantinė grandinė
 pakeičia loginius vartus $H$ ir $CNOT$, taip pat matavimų operacijas
 klaidoms atspariais loginiais elementais. Be to, loginių kubitų
 $\overline{|0\rangle}_L$ paruošimas turi būti taip
 pat atliekamas naudojant klaidoms atsparius loginius vartus, o kubitų
 būsenos yra periodiškai patikrinamos ir prireikus ištaisomos.
+
+```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='88%', fig.align='center'}
+knitr::include_graphics("media/image9_8.svg")
+```
+(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
 
 Toliau aptarkime, kaip realizuoti klaidoms atsparų būsenų matavimą. Jam
 taikome Hadamardo testu pagrįstą minėtą kodo būsenų paruošimo metodą
@@ -1295,7 +1293,7 @@ principas nustatant galutinio matavimo rezultatą, klaidingo atsakymo
 tikimybė sumažėja nuo $p$ iki $O(p^2)$. Čia $p$ yra tikimybė, kad
 atsiras klaida bet kuriame grandinės elemente.
 
-```{r klaidoms-atsparus-matavimai, echo=FALSE, fig.cap="Klaidoms atsparūs 3 kubitų loginio kubito būsenos $|psi\\rangle$ bendrojo tipo matavimai.", out.width='80%', fig.align='center'}
+```{r klaidoms-atsparus-matavimai, echo=FALSE, fig.cap="Klaidoms atsparūs 3 kubitų kodo loginio kubito būsenos bendrojo tipo matavimai", out.width='97%', fig.align='center'}
 knitr::include_graphics("media/image9_9.svg")
 ```
 
@@ -1307,7 +1305,7 @@ kodavimo metodo ir bendrai nusako skaičių skirtingų vietų loginiame
 atsparioje kvantinėje grandinėje įvykdomos sėkmingai su tikimybe
 $1 - cp^2$ ir toliau įgaunamas pranašumas mažėjant $p$.
 
-```{r kodu-konkatenacijos-schema, echo=FALSE, fig.cap="Kodų konkatenacijos schema. Nurodytos nepataisomos klaidos tikimybė kiekviename kodavimo lygyje.", out.width='80%', fig.align='center'}
+```{r kodu-konkatenacijos-schema, echo=FALSE, fig.cap="Kodų konkatenacijos schema. Nurodytos nepataisomos klaidos tikimybė kiekviename kodavimo lygyje", out.width='70%', fig.align='center'}
 knitr::include_graphics("media/image9_10.svg")
 ```
 
@@ -1420,7 +1418,7 @@ parinkimui iš lygiai pasiskirsčiusių skaičių rinkinio. Kvantinio tūrio
 protokolą atliekanti grandinė yra
 parodyta \@ref(fig:kvantinio-turio-protokolo-grandine) pav.
 
-```{r kvantinio-turio-protokolo-grandine, echo=FALSE, fig.cap="Kvadratinėmis $(d \\times d)$ grandinėmis pagrįstas kvantinio tūrio nustatymo protokolas.", out.width='80%', fig.align='center'}
+```{r kvantinio-turio-protokolo-grandine, echo=FALSE, fig.cap="Kvadratinėmis $(d \\times d)$ grandinėmis pagrįstas kvantinio tūrio nustatymo protokolas", out.width='85%', fig.align='center'}
 knitr::include_graphics("media/image9_11.svg")
 ```
 
@@ -1483,7 +1481,7 @@ tokio tipo architektūra turi akivaizdų pranašumą prieš IBM *Falcon*, nes
 potencialiai sumažina reikalaujamą loginių vartų skaičių atlikti tam
 pačiam algoritmui.
 
-```{r dvi-kv-procesoriaus-architekturos, echo=FALSE, fig.cap="Dvi kvantinio procesoriaus architektūros, pasitelkiančios skirtingą kubitų tarpusavio jungimą. Tai nulemia, tarp kurių kubitų galima atlikti 2 ar daugiau kubitų sąlyginius loginius vartus.", out.width='45%', fig.align='center', fig.show='hold'}
+```{r dvi-kv-procesoriaus-architekturos, echo=FALSE, fig.cap="Dvi kvantinio procesoriaus architektūros, pasitelkiančios skirtingą kubitų tarpusavio jungimą. Tai nulemia, tarp kurių kubitų galima atlikti 2 ar daugiau kubitų sąlyginius loginius vartus", out.width='41%', fig.align='center', fig.show='hold'}
 knitr::include_graphics(c("media/image9_12.svg", "media/image9_13.svg"))
 ```
 
