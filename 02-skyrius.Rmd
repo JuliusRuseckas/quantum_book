@@ -508,7 +508,7 @@ raide virš vektoriaus $|\psi\rangle^T$. Elementai
 stulpelyje iš viršaus į apačią yra pergrupuojami eilutėje iš kairės į
 dešinę:
 \begin{equation}
-|\psi\rangle^T = \lbrack a_1, a_2, a_3, a_4\rbrack\,.
+|\psi\rangle^T = \lbrack a_1\: a_2\: a_3\: a_4\rbrack\,.
 (\#eq:transpozicijos-pvz)
 \end{equation}
 Galiausiai, *bra* vektorius yra gaunamas atlikus transponuotajam
@@ -517,7 +517,7 @@ $\big(|\psi\rangle^T\big)^{*}= |\psi\rangle^{\dagger} = \langle\psi|$.
 Ši dviguba operacija yra vadinama ermitine jungtimi, kuriai nurodyti
 vartojamas durklo formos ženklas $\dagger$. Tad galiausiai randame:
 \begin{equation}
-|\psi\rangle^{\dagger} = \langle\psi|  = \lbrack a_1^{*}, a_2^{*}, a_3^{*}, a_4^{*}\rbrack\,.
+|\psi\rangle^{\dagger} = \langle\psi|  = \lbrack a_1^{*}\: a_2^{*}\: a_3^{*}\: a_4^{*}\rbrack\,.
 (\#eq:ermitine-jungtis-pvz)
 \end{equation}
 *Bra* vektoriai yra **dualūs** *ket* vektoriams (angl. *dual vector*) --
@@ -537,7 +537,7 @@ $\langle\psi|\psi\rangle$. Rašant
 vektoriaus elementais, vidinė sandauga formaliai išreiškiama:
 \begin{equation}
 \begin{aligned}
-\langle\psi|\psi\rangle = & \lbrack a_1^{*}, a_2^{*}, a_3^{*}, a_4^{*} \rbrack \begin{bmatrix}
+\langle\psi|\psi\rangle = & \lbrack a_1^{*}\: a_2^{*}\: a_3^{*}\: a_4^{*} \rbrack \begin{bmatrix}
 a_1 \\
 a_2 \\
 a_3 \\
@@ -568,7 +568,7 @@ Dviejų skirtingų tos pačios vektorių erdvės vektorių
 $|\psi\rangle$ ir $|\phi\rangle$ vidinė
 sandauga $\langle\psi|\phi\rangle$ yra:
 \begin{equation}
-\langle\psi |\phi\rangle = \lbrack a_1^{*}, a_2^{*}, a_3^{*}, a_4^{*}\rbrack\ \begin{bmatrix}
+\langle\psi |\phi\rangle = \lbrack a_1^{*}\: a_2^{*}\: a_3^{*}\: a_4^{*}\rbrack\ \begin{bmatrix}
 b_1 \\
 b_2 \\
 b_3 \\
@@ -1124,10 +1124,10 @@ X|0\rangle = & \begin{bmatrix}
 0 \\
 1 \\
 \end{bmatrix} = |1\rangle\,;(\#eq:x-0-pvz)\\
-\langle 0| X = & \lbrack 1, 0 \rbrack\begin{bmatrix}
+\langle 0| X = & \lbrack 1\: 0 \rbrack\begin{bmatrix}
 0 & 1 \\
 1 & 0 \\
-\end{bmatrix} = \lbrack 1 \cdot 0 + 0 \cdot 1,  1 \cdot 1 + 0 \cdot 0  \rbrack = \lbrack 0, 1 \rbrack = \langle 1|\,.
+\end{bmatrix} = \lbrack 1 \cdot 0 + 0 \cdot 1,  1 \cdot 1 + 0 \cdot 0  \rbrack = \lbrack 0\: 1 \rbrack = \langle 1|\,.
 (\#eq:0-x-pvz)
 \end{align}
 Pamename, kad
@@ -1396,7 +1396,7 @@ yra antra matrica:
 \begin{bmatrix}
 1 \\
 0 \\
-\end{bmatrix}\lbrack 0, 1\rbrack = \begin{bmatrix}
+\end{bmatrix}\lbrack 0\: 1\rbrack = \begin{bmatrix}
 1 \cdot 0\  & 1 \cdot 1 \\
 0 \cdot 0 & 0 \cdot 1 \\
 \end{bmatrix} = \begin{bmatrix}
