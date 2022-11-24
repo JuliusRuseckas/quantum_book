@@ -70,16 +70,12 @@ skaičių. Vektorius galima sudėti tik tuo atveju, jeigu jie priklauso tai
 pačiai vektorių erdvei. Apsistojant ties viena reprezentatyvia vektorių
 erdve $V$, joje yra apibrėžtos vektorių sudėties operacijos,
 tenkinančios šias savybes:
-
-\begin{equation}
-|v_1 \rangle + |v_2 \rangle = |v_2 \rangle + |v_1 \rangle\,;
-(\#eq:sudeties-savybe-1)
-\end{equation}
-\begin{equation}
-|v_1 \rangle + \big( |v_2\rangle + |v_3 \rangle \big) = \big( |v_1 \rangle + |v_2 \rangle \big) + |v_3\rangle\,.
+\begin{align}
+|v_1 \rangle + |v_2 \rangle = & |v_2 \rangle + |v_1 \rangle\,;
+(\#eq:sudeties-savybe-1) \\
+|v_1 \rangle + \big( |v_2\rangle + |v_3 \rangle \big) = & \big( |v_1 \rangle + |v_2 \rangle \big) + |v_3\rangle\,.
 (\#eq:sudeties-savybe-2)
-\end{equation}
-
+\end{align}
 Tai bendrai parodo, kad eiliškumas vektorių sudėčiai nėra svarbus.
 Vektorių erdvėje taip pat egzistuoja nulinis vektorius, analogiškas
 nuliniam skaičiui. Kvantinėje kompiuterijoje $|0 \rangle$
@@ -90,20 +86,14 @@ gauname $|v\rangle - |v\rangle = 0$.
 
 Kompleksinio skaičiaus $z_i$ daugyba su vektoriais tenkina šias
 savybes:
-
-\begin{equation}
-z\big( |v_1 \rangle + |v_2 \rangle \big) = z |v_1\rangle + z |v_2\rangle\,;
-(\#eq:daugybos-savybe-1)
-\end{equation}
-\begin{equation}
-( z_1 + z_2 ) |v \rangle = z_1 |v \rangle + z_2 |v \rangle\,;
-(\#eq:daugybos-savybe-2)
-\end{equation}
-\begin{equation}
-( z_1 z_2 ) |v \rangle = z_1 \big(z_2 |v \rangle\big)\,.
+\begin{align}
+z\big( |v_1 \rangle + |v_2 \rangle \big) = & z |v_1\rangle + z |v_2\rangle\,;
+(\#eq:daugybos-savybe-1) \\
+( z_1 + z_2 ) |v \rangle = & z_1 |v \rangle + z_2 |v \rangle\,;
+(\#eq:daugybos-savybe-2) \\
+( z_1 z_2 ) |v \rangle = & z_1 \big(z_2 |v \rangle\big)\,.
 (\#eq:daugybos-savybe-3)
-\end{equation}
-
+\end{align}
 Atkreipiame dėmesį, kad sandaugose praleidžiame daugybos simbolį, tad du
 vienas šalia kito raidėmis nusakyti skaičiai (ar skaičius su vektoriumi)
 reiškia, kad jie yra sudauginami. Skaičių daugybai nesvarbu eiliškumas
