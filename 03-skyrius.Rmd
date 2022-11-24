@@ -166,7 +166,7 @@ antrąjį postulatą (net ir išplėtus tai, ką vadiname uždara sistema), nes
 jos dinamika tampa nedeterministinė. Trečiasis postulatas nusako, kaip
 kvantinė sistema keičiasi atlikus jos būsenos matavimą.
 
-***II(b) postulatas -- būsenų evoliucija laike.*** *Kiekvienam stebimam kvantinės
+***III postulatas -- fizikinių dydžių matavimai.*** *Kiekvienam stebimam kvantinės
 sistemos fizikiniam dydžiui egzistuoja ermitinis operatorius $P$,
 veikiantis tos sistemos Hilberto erdvėje. Atlikus fizikinio dydžio
 matavimą galimi rezultatai yra viena iš $P$ operatoriaus tikrinių verčių
