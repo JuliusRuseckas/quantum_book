@@ -44,8 +44,8 @@ informaciją komunikacijos kanalais ir ją užrašant į atmintį. Klaidų
 atsiradimas daugeliu atvejų yra nenuspėjamas (formaliau -- stochastinis)
 ir šnekamojoje kalboje vadinamas **triukšmu** (angl. *noise*).
 Pagrindinis principas norint užtikrinti, kad esant triukšmui informacija
-nebus prarasta, yra pasitelkti papildomą, vadinamąją **perteklinę**,
-**informaciją** (angl. *redundant information*). Jeigu dalis
+nebus prarasta, yra pasitelkti papildomą, vadinamąją perteklinę
+informaciją. Jeigu dalis
 informacijos ir yra prarandama, perteklinė informacija padeda
 užtikrinti, kad informacijos turinys bus sėkmingai atstatytas. Šį
 principą taiko ir žmonės tarpusavio komunikacijoje, kai paprašoma
@@ -122,8 +122,8 @@ toleruotinos, nes tikimybė rasti klaidingą būseną bus itin maža. Tačiau
 dideliuose algoritmuose, tokiuose kaip atliekant Šoro pirminių skaičių
 faktorizavimą, loginių vartų skaičius gali siekti $\sim 10^{10}$ ir daugiau.
 Loginių vartų paklaida $\varepsilon$ atitinkamai turi būti mažesnė nei
-$\sim 10^{-10}$. Šios knygos rašymo metu **loginių vartų tikslumas**
-(angl. *gate fidelity*) siekia $\sim 10^{-4}$, tad klaidų taisymo algoritmai
+$\sim 10^{-10}$. Šios knygos rašymo metu loginių vartų tikslumas
+siekia $\sim 10^{-4}$, tad klaidų taisymo algoritmai
 yra pageidautini.
 
 Kvantinis supynimas ir su juo įvedamos koreliacijos klaidų taisymo
@@ -1187,8 +1187,8 @@ $|1\rangle_L$, $\bar{X}|0\rangle_L = |1\rangle_L$.
 Iki šiol pristatytuose klaidų protokoluose darėme prielaidą, kad klaidos
 atsiranda tik tada, kai nėra atliekami loginiai vartai ar kubitų
 matavimai, ancilų kubitai patys nepatiria klaidų, ir kad loginiai vartai
-yra absoliučiai tikslūs. Šios prielaidos nėra realistinės. **Klaidoms
-atsparus skaičiavimas** (angl. *fault-tolerant computation*) yra
+yra absoliučiai tikslūs. Šios prielaidos nėra realistinės. Klaidoms
+atsparus skaičiavimas yra
 kvantinių grandinių dizaino metodologija, kuri kartu su klaidų taisymo
 algoritmais leidžia sėkmingai įvykdyti skaičiavimus, kai visi
 skaičiavimo elementai ir atmintyje laikomi kubitai gali patirti klaidas.
@@ -1222,14 +1222,14 @@ knitr::include_graphics("media/image9_6.svg")
 ```
 
 \@ref(fig:klaidoms-atsparus-loginiai-elementai) pav. pateikiame klaidoms atsparius
-$\bar{H}$ ir $\overline{CNOT}$ loginius elementus (žymimi su
+$H$ ir $cX$ loginius elementus (įprastai žymimi su
 brūkšniuku) kodui, kuriame $k_1$ ir $k_2$ loginiai kubitai koduojami
 3 fiziniais kubitais. Šiuos tris fizinius kubitus, priklausančius
 $k_1$ arba $k_2$, vadinkime kubitų blokais. Matome, kad jeigu vienam
 iš fizinių kubitų $k_1$ bloke pritaikomi netikslūs $H$ loginiai
 vartai, ši klaida gali paveikti tik šį kubitą $k_1$ bloke. Loginiai
-vartai $\overline{CNOT}$, veikiantys tarp atskirų kubitų kiekviename
-bloke, užtikrina, kad klaida $H$ $k_1$ bloke paveiks daugiausiai vieną
+vartai $\overline{cX}$, veikiantys tarp atskirų kubitų kiekviename
+bloke, užtikrina, kad $H$ vartų klaida $k_1$ bloke paveiks daugiausiai vieną
 papildomą kubitą $k_2$ bloke. Tą patį galima pasakyti ir apie pačius
 $\overline{CNOT}$, kurių klaidingas atlikimas paveikia tik po vieną
 kubitą kiekviename bloke. Loginiai vartai, veikiantys tarp fizinių
@@ -1243,7 +1243,7 @@ bloke.
 knitr::include_graphics("media/image9_7.svg")
 ```
 Klaidoms atspari kvantinė grandinė
-pakeičia loginius vartus $H$ ir $CNOT$, taip pat matavimų operacijas
+pakeičia loginius vartus $H$ ir $cX$, taip pat matavimų operacijas
 klaidoms atspariais loginiais elementais. Be to, loginių kubitų
 $\overline{|0\rangle}_L$ paruošimas turi būti taip
 pat atliekamas naudojant klaidoms atsparius loginius vartus, o kubitų
@@ -1252,7 +1252,7 @@ būsenos yra periodiškai patikrinamos ir prireikus ištaisomos.
 ```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='88%', fig.align='center'}
 knitr::include_graphics("media/image9_8.svg")
 ```
-(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiniai klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
+(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiškai atliekami klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
 
 Toliau aptarkime, kaip realizuoti klaidoms atsparų būsenų matavimą. Jam
 taikome Hadamardo testu pagrįstą minėtą kodo būsenų paruošimo metodą
@@ -1270,7 +1270,7 @@ $|a_1 a_2 a_3 \rangle = |000\rangle$
 yra paruošiami į superpoziciją
 $|\varphi\rangle = \big(|000\rangle + |111\rangle\big)1/\sqrt{2}$,
 panašią į 3 kubitų loginį kubitą. Kodavimo žingsnis nėra klaidoms
-atsparus, nes naudojami klaidoms neatsparūs $H$ ir $CNOT$ loginiai
+atsparus, nes naudojami klaidoms neatsparūs $H$ ir $cX$ loginiai
 vartai. Tačiau po kodo paruošimo kitais trim ancilų kubitais
 $(a_4, a_5, a_6)$ kodas yra patikrinamas (atliekama kodavimo
 patikra). Patikra yra pagrįsta jau mums žinomu būsenų lyginumo matavimu.
@@ -1321,8 +1321,8 @@ logines operacijas šiems 2 lygio loginiams kubitams atitinkamai
 pasitelkiami jiems pritaikyti klaidoms atsparūs elementai, neleidžiantys
 klaidoms plisti. Pirmo lygio kodavime klaidos tikimybė yra $cp^2$,
 antro lygio $c(cp^2)^2$, ir jeigu konkatenacija yra atliekama
-$k$ kartų, loginiame $k$­lygio kubite -- $(cp)^{2^k}/c$. Dėl
-eksponentės $2^k$ klaidingo atsakymo tikimybė gali būti padaroma
+$k$ kartų, loginiame $k$ lygio kubite -- $(cp)^{2^k}/c$. Dėl
+eksponentės, klaidingo atsakymo tikimybė gali būti padaroma
 pageidaujamai maža didinant konkatenacijų skaičių $k$, jeigu $cp < 1$.
 
 Sakykime, kad norima atlikti skaičiavimą su ne didesne negu
@@ -1362,11 +1362,11 @@ nepriklausomai nuo jų fizinio realizavimo. Galima įvardyti svarbiausius
 fizinius parametrus, kurie nulemia ankstyvosios NISQ raidos kvantinių
 kompiuterių skaičiuojamąją galią:
 
-1)  kubitų skaičius;
-2)  2 kubitų (arba $n$ kubitų) loginių vartų realizavimo architektūra procesoriuje;
-3)  loginių grandinių gylis, kurį galima pasiekti, kol rezultatų neužmaskuoja klaidos;
-4)  pasiekiamas loginių vartų rinkinys;
-5)  operacijų skaičius, kurį galima vykdyti lygiagrečiai.
+1.  *kubitų skaičius;*
+2.  2 *kubitų (arba $n$ kubitų) loginių vartų realizavimo architektūra procesoriuje;*
+3.  *loginių grandinių gylis, kurį galima pasiekti, kol rezultatų neužmaskuoja klaidos;*
+4.  *pasiekiamas loginių vartų rinkinys;*
+5.  *operacijų skaičius, kurį galima vykdyti lygiagrečiai;*
 
 Siekdami apimti visus šiuos parametrus, panagrinėkime **kvantiniu
 tūriu** (angl. *quantum volume*) vadinamą rodiklį. Kvantinis tūris
@@ -1374,10 +1374,10 @@ randamas nustačius didžiausią skaičių procesoriaus kubitų, kurie gali
 patikimai įvykdyti pateikto gylio specifinę grandinę. Kvantinio tūrio
 rodiklis yra paremtas **kvadratinėmis grandinėmis** (angl. *square
 circuits*), susidedančiomis iš $d$ skaičiaus loginių vartų sluoksnių,
-nusakančių grandinės gylį, ir veikia tokiam pačiam $d$­skaičiui kubitų,
+nusakančių grandinės gylį, ir veikia tokiam pačiam $d$ skaičiui kubitų,
 vadinamam **grandinės pločiu** (angl. *circuit width*). Imkime
 procesorių, sudarytą iš $n$ kubitų. Pradėdami protokolą bandytume
-įvykdyti kvadratinę $2 \times 2$ grandinę, sudarytą iš 2 gylio su pasirinktais
+įvykdyti kvadratinę $2 \times 2$ grandinę, sudarytą iš $d=2$ gylio su pasirinktais
 2 kubitais. Čia turime laisvę pasirinkti geriausiai funkcionuojančius
 kubitus procesoriuje. Jeigu, pagal formaliai nustatytus rodiklius,
 grandinė atliekama sėkmingai, tada tęstume toliau: $3 \times 3, 4 \times 4, \ldots$,
@@ -1434,15 +1434,15 @@ atliekant modeliavimą klasikiniu kompiuteriu. Sunkiosios išvesties
 kubitų būsenos yra tos, kurių tikimybės jas rasti yra didesnės nei visų
 galimų būsenų tikimybių mediana, $p_U(x) > p_{\mathrm{med}}$. Taikant
 Haar-atsitiktinumą galima apskaičiuoti, kad tikimybė rasti būsenas
-$|x\rangle$ aukščiau medianos yra \~85 % ir
-asimptotiškai artėja prie 50 % tikimybės, jeigu įrenginys veikia itin
+$|x\rangle$ aukščiau medianos yra $p=0.85$ ir
+asimptotiškai artėja prie $p=0.5$ tikimybės, jeigu įrenginys veikia itin
 blogai. Kvadratinės grandinės testas yra laikomas įvykdytu, jeigu bent
 2/3 visų sugeneruotų būsenų atitinka būsenas su didesnėmis tikimybėmis
 nei tikimybių mediana.
 
 Didesnis kvantinis tūris gali būti pasiektas procesoriuose, kurie turi
 daugiau kubitų su ilgomis koherencijos trukmėmis ir mažomis loginių
-vartų klaidomis. Taip pat svarbu, kad protokolo pateikti SWAP bei SU(4)
+vartų klaidomis. Taip pat svarbu, kad protokolo pateikti $SWAP$ bei SU(4)
 loginiai vartai galėtų būti efektyviai išreikšti kvantinio procesoriaus
 loginių vartų rinkiniu. Svarbu yra ir kubitų maksimalus tarpusavio
 jungimas, loginių operacijų paralelizavimo galimybės, taip pat
@@ -1464,7 +1464,7 @@ paremtas heksagonine simetrija. Čia kubitas, pagal savo poziciją, gali
 turėti nuo vienos iki trijų jungčių su **artimiausiai esančiais kubitais
 kaimynais** (angl. *nearest-neighbor connectivity*). Tai reiškia, kad
 tiktai tarp šių kubitų įmanomi 2 kubitų loginiai vartai, tokie kaip
-*CNOT*. Pavyzdžiui, atlikti *CNOT* tarp kubitų #1 ir #15 tiesiogiai
+*cX*. Pavyzdžiui, atlikti *cX* tarp kubitų #1 ir #15 tiesiogiai
 neįmanoma. Tam būtina įvykdyti seką *SWAP* loginių operacijų tarp
 tarpinių kubitų, šitaip realizuojant norimą operaciją šiems dviem
 kubitams.
