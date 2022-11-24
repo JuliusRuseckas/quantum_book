@@ -1,7 +1,5 @@
 # Kvantinės mechanikos pagrindai {#kvantines-mechanikos-pagrindai}
 
-## Kvantinės mechanikos postulatai
-
 Kvantinė mechanika yra šiuo metu bendriausia fizikinė teorija ir iš
 principo pritaikoma nuo subatominio lygio iki kasdieninių daiktų skalės.
 Siekiant paaiškinti kvantinius reiškinius ši teorija buvo suformuluota
@@ -12,9 +10,11 @@ abstraktų šios teorijos matematinį formalizmą su stebimu fiziniu
 pasauliu ir suteikia pagrindines taisykles, kuriomis remiantis
 perteikiami skaičiavimai kvantiniame kompiuteryje.
 
-**I postulatas -- kvantinės būsenos.** Uždaros kvantinės sistemos būsena
+## Kvantinės mechanikos postulatai
+
+***I postulatas -- kvantinės būsenos.*** *Uždaros kvantinės sistemos būsena
 yra visiškai nusakoma normuotuoju vektoriumi
-$|\psi\rangle$ Hilberto vektorių erdvėje.
+$|\psi\rangle$ Hilberto vektorių erdvėje.*
 
 Kvantinė būsena, aprašyta $|\psi\rangle$ vektoriumi,
 atspindi visą informaciją, kurią galima sužinoti apie kvantinę sistemą.
@@ -76,7 +76,7 @@ Akivaizdu, kad šios dvi būsenos yra skirtingos, o tiksliau --
 ortogonalios, nes
 $\langle 0_x |1_x \rangle = 0$.
 
-**II(a) postulatas -- būsenų evoliucija laike.** Kvantinės sistemos,
+***II(a) postulatas -- būsenų evoliucija laike.*** *Kvantinės sistemos,
 izoliuotos nuo išorinių sąveikų, evoliucija laike yra nusakoma unitarine
 transformacija. Sistemos būsena $|\psi(t_0)\rangle$
 laiku $t_0$ yra susiejama su būsena
@@ -85,7 +85,8 @@ transformacija $U(t_0, t_1)$:
 \begin{equation}
 |\psi(t_1)\rangle = U(t_0, t_1)|\psi(t_0)\rangle\,.
 (\#eq:evoliucija-laike)
-\end{equation}
+\end{equation}*
+
 Antrasis postulatas nusako, kad žinant pradinę uždaros sistemos būseną
 laiku $t_0$, galima tiksliai ir unikaliai pasakyti, kokia bus sistemos
 būsena laiku $t_1$, $|\psi(t_1)\rangle$. Matematiškai
@@ -165,7 +166,7 @@ antrąjį postulatą (net ir išplėtus tai, ką vadiname uždara sistema), nes
 jos dinamika tampa nedeterministinė. Trečiasis postulatas nusako, kaip
 kvantinė sistema keičiasi atlikus jos būsenos matavimą.
 
-**III postulatas -- būsenų matavimas.** Kiekvienam stebimam kvantinės
+***II(b) postulatas -- būsenų evoliucija laike.*** *Kiekvienam stebimam kvantinės
 sistemos fizikiniam dydžiui egzistuoja ermitinis operatorius $P$,
 veikiantis tos sistemos Hilberto erdvėje. Atlikus fizikinio dydžio
 matavimą galimi rezultatai yra viena iš $P$ operatoriaus tikrinių verčių
@@ -177,7 +178,7 @@ $p(\lambda_k) = \langle\psi|P_k |\psi\rangle =
 $P_k = |k\rangle\langle k|$. Kvantinės
 sistemos būsena iš karto po matavimo yra $P$ operatoriaus tikrinis
 vektorius $|k\rangle$, susietas su rasta tikrine verte
-$\lambda_k$.
+$\lambda_k$.*
 
 Šiame postulate nurodomas būdas apskaičiuoti tikimybes yra dar žinomas
 kvantinėje mechanikoje kaip **Borno taisyklė** (angl. *Born rule*).
@@ -377,7 +378,7 @@ tikrinėmis vertėmis $\lambda_k$. Tai identiška išraiška tai, kurią
 naudojome aprašyti eksperimente apskaičiuojamą 1 kubito
 $\langle\psi |Z|\psi\rangle$.
 
-**IV postulatas -- sudėtinės sistemos.** Sudėtinės kvantinės sistemos
+***IV postulatas -- sudėtinės sistemos.*** *Sudėtinės kvantinės sistemos
 būsenų erdvė yra nusakoma ją sudarančių individualių posistemės erdvių
 tenzorių sandauga,
 $\mathcal{H}^{\otimes n} =
@@ -388,7 +389,7 @@ $|\psi\rangle = |\phi_1 \rangle\otimes|\phi_2 \rangle\otimes\cdots\otimes
 Vektorių, išreikštų tenzorinėmis sandaugomis superpozicija, pavyzdžiui,
 $|\psi\rangle = a|\phi_1 \rangle\otimes\cdots\otimes|\phi_n \rangle
 + b|\phi_1 \rangle\otimes\cdots\otimes|\phi_n \rangle$,
-yra kita galima būsena $\mathcal{H}^{\otimes n}$ erdvėje.
+yra kita galima būsena $\mathcal{H}^{\otimes n}$ erdvėje.*
 
 Ketvirtasis postulatas praplečia pirmąjį postulatą ir formaliai nusako,
 kaip matematiškai aprašyti sudėtinės sistemos būsenas. Sistemos,
