@@ -18,4 +18,4 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book:
   epub_version: epub3
-  pandoc_args: ["--filter", "gladtex"]
+  pandoc_args: ["--lua-filter", "filters/multiple-bibliographies.lua", "--mathml"]
