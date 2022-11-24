@@ -864,7 +864,7 @@ M|\psi\rangle \rightarrow &|11 \rangle\,,\qquad p = |d|^2\,. (\#eq:dvieju-matavi
 Galiausiai kvantinio registro, sudaryto iš $n$ kubitų, būsena yra
 įvardijama visų $2^n$ bazinių vektorių kombinacija ir nusakoma $2^n$
 dimensijų vektorių erdvėje. Ši superpozicijos būsena glaustai užrašoma
-pasitelkiant suminį simbolį:
+pasitelkiant sumos simbolį:
 \begin{equation}
 |\psi\rangle = \sum_{x = 0}^{2^n - 1}c_x |x\rangle\,.
 (\#eq:n-kubitu-superpozicija-1)
