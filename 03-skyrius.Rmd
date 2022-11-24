@@ -81,11 +81,11 @@ izoliuotos nuo išorinių sąveikų, evoliucija laike yra nusakoma unitarine
 transformacija. Sistemos būsena $|\psi(t_0)\rangle$
 laiku $t_0$ yra susiejama su būsena
 $|\psi(t_1)\rangle$ vėlesniu laiku $t_1$ unitarine
-transformacija $U(t_0, t_1)$:
+transformacija $U(t_0, t_1)$:*
 \begin{equation}
 |\psi(t_1)\rangle = U(t_0, t_1)|\psi(t_0)\rangle\,.
 (\#eq:evoliucija-laike)
-\end{equation}*
+\end{equation}
 
 Antrasis postulatas nusako, kad žinant pradinę uždaros sistemos būseną
 laiku $t_0$, galima tiksliai ir unikaliai pasakyti, kokia bus sistemos
