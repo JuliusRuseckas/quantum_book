@@ -1,7 +1,5 @@
 # Furjė transformacija ir jos taikymai
 
-## Kvantinė Furjė transformacija
-
 Šiame skyriuje toliau tęsiame kvantinių skaičiavimų apžvalgą
 pristatydami **Furjė transformaciją** (angl. *Fourier transform*) ir ja
 pagrįstus algoritmus. Klasikinė Furjė transformacija yra plačiai
@@ -17,6 +15,8 @@ užmaskuoti šias amplitudes dažnio srities funkcijoje $f(v)$. Atlikę
 atvirkštinę $f(v)$ funkcijos Furjė transformaciją, žymimą
 ${\mathrm{FT}}^{-1}\lbrack f(v)\rbrack = f(t)$, grąžiname ją atgal
 į laiko sritį, taip atstatydami modifikuotą garso įrašą.
+
+## Kvantinė Furjė transformacija
 
 **Kvantinė Furjė transformacija** (angl. *quantum Fourier transform*)
 yra klasikinės Furjė transformacijos kvantinis realizavimas. Palyginus
@@ -190,10 +190,6 @@ atstato juos atgal į standartinę $\{k_1, k_2, k_3\}$ seką. Aišku,
 nebūtina to daryti, jeigu toliau atliekami loginiai vartai atsižvelgiant
 į indeksavimo pasikeitimą.
 
-```{r atvirkstine-3-kubitu-ft, echo=FALSE, fig.cap="Atvirkštinė 3 kubitų kvantinė Furjė transformacija", out.width='73%', fig.align='center'}
-knitr::include_graphics("media/image7_2.svg")
-```
-
 Atvirkštinė Furjė transformacija $\mathrm{FT}^{\dagger}$ yra realizuojama atvirkštine
 loginių vartų seka panaudojant atvirkštinius loginius vartus. Hadamardo
 bei SWAP loginiai vartai yra patys sau atvirkštiniai, o štai
@@ -201,16 +197,19 @@ atvirkštiniai $cP_k$ vartai yra jų ermitinė jungtis
 ${cP}_k^{\dagger}$. Atvirkštinę 3 kubitų transformaciją $\mathrm{FT}^{\dagger}$
 atliekanti grandinė yra pateikta \@ref(fig:atvirkstine-3-kubitu-ft) pav.
 
-```{r kvantine-ft-grandine-n-kubitu, echo=FALSE, fig.cap="Loginė grandinė, atliekanti kvantinę Furjė transformaciją $n$ kubitų registrui", out.width='94%', fig.align='center'}
-knitr::include_graphics("media/image7_3.svg")
+```{r atvirkstine-3-kubitu-ft, echo=FALSE, fig.cap="Atvirkštinė 3 kubitų kvantinė Furjė transformacija", out.width='73%', fig.align='center'}
+knitr::include_graphics("media/image7_2.svg")
 ```
 
-Furjė transformacija, atliekama $n$-kubitų registrui,
-paremta \@ref(fig:atvirkstine-3-kubitu-ft) pav. jau
-įžvelgiama loginių vartų struktūra. Pradedant nuo viršutinio kubito
+Furjė transformacijoje, atliekamoje $n$-kubitų registrui,
+galime įžvelgti loginių vartų seką. Pradedant nuo viršutinio kubito
 $k_1$, jam atliekami $H$ bei sąlyginiai $cP_k$ vartai poromis su
 visais $n-1$ likusiais kubitais. Tai kartojama su $k_2, k_3, \ldots$ ir
 likusiais kubitais, paskutiniajam atliekant tik $H$.
+
+```{r kvantine-ft-grandine-n-kubitu, echo=FALSE, fig.cap="Loginė grandinė, atliekanti kvantinę Furjė transformaciją $n$ kubitų registrui", out.width='94%', fig.align='center'}
+knitr::include_graphics("media/image7_3.svg")
+```
 
 Kaip minėjome, galima FT užbaigti $W$ loginiais vartais siekiant
 atstatyti visų kubitų indeksavimo eiliškumą. Apibendrinus, norint
@@ -352,7 +351,7 @@ knitr::include_graphics("media/image7_4.svg")
 ## Kvantinis fazės nustatymo algoritmas {#kvantinis-fazes-nustatymas}
 
 Šis algoritmas (angl. *quantum phase estimation*) pasitelkia kvantinę
-Furjė transformaciją ir yra naudojamas kaip modulis kituose
+Furjė transformaciją ir aptinkamas kaip modulis kituose
 algoritmuose. Tarp jų yra kvantinis tiesinių lygčių sprendimo
 algoritmas, kurį pristatome kitame poskyryje. Fazės nustatymo algoritmo
 sudėtingumas yra nulemtas FT modulio, kuriam prireiks $O(n^2)$
@@ -370,7 +369,7 @@ $|u\rangle$ (darome prielaidą, kad tikriniai vektoriai
 yra neišsigimę). Parametras, įvardijantis $U$ skirtingas tikrines vertes
 $\lambda_u$, yra fazė $\theta_u$ (realusis skaičius) ir
 $0\leq\theta_u < 1/2\pi$ dėl periodiškumo. Literatūroje galima
-aptikti pervadintą $\theta_u$ automatiškai įkomponuojant $2\pi$, tada
+rasti pervadintą $\theta_u$ įkomponuojant $2\pi$, tada
 $\lambda_{u} = \mathrm{e}^{\mathrm{i}\theta_u}$ ir
 $\theta_u \rightarrow\theta_u/2\pi$.
 
@@ -450,13 +449,7 @@ būsenai. Galutinę $|\psi\rangle$ galima užrašyti:
 Todėl pirmojo registro būsenos matavimas su didele tikimybe grąžins
 $|2^n \theta_u\rangle$ būseną. Fazė yra randama
 $\theta_u = x/2^n$, čia $x$ nusako pirmojo registro matavimo
-rezultatą. Jeigu $2^n \theta_u$ ir nėra sveikasis skaičius, šis
-algoritmas vis tiek grąžina ieškomąją fazę su didesne nei $p = 0.4$
-tikimybe. Tikimybė rasti ieškomą rezultatą ir $\theta$ skaičiaus
-tikslumas gali būti padidinti pasitelkus daugiau $n$ kubitų pirmajame
-registre. Galima formaliai parodyti, kad $\theta_u$ randamas su
-$n - log(2 + 1/2\epsilon)$ bitų tikslumu ir tikimybe
-$p\geq 1 -\epsilon$.
+rezultatą. 
 
 Atvirkštinės $\mathrm{FT}^{\dagger}$ naudojimo reikšmę šiame algoritme galima pamatyti,
 jeigu fazę perteiksime dvejetainės trupmenos forma,
@@ -500,6 +493,13 @@ $|u\rangle$, pakanka pradinę būseną
 $|\phi\rangle$ padaryti kuo panašesnę į norimą
 $|u\rangle$ maksimizuojant jų persiklojimą
 $|\langle u |\phi\rangle|$.
+
+Jeigu $2^n \theta_u$ ir nėra sveikasis skaičius, šis
+algoritmas vis tiek grąžina ieškomąją fazę su didesne nei $p = 0.4$
+tikimybe. Tikimybė rasti ieškomą rezultatą ir $\theta$ skaičiaus
+tikslumas gali būti padidinti pasitelkus daugiau $n$ kubitų pirmajame
+registre. Galima formaliai parodyti, kad kubitų skaičius $n$ grandinėje auga kaip $O(\log(1/\epsilon))$ siekant $\epsilon$ paklaidos 
+bei reikalauja $O(1/\epsilon)$ sąlyginių loginių vartų $cU$.
 
 ## Tiesinių lygčių sprendimas HHL algoritmu
 
