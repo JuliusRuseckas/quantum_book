@@ -33,7 +33,7 @@ kurių būsenos matematiškai aprašomos identiškai kubitams, natūraliai
 tinka kvantinės kompiuterijos taikymams. Tai iš principo atstoja gerai
 kontroliuojamą eksperimentą su šiomis sistemomis. Tarp jų yra medžiagų
 magnetizmą nulemiančios elementariosios bei sudėtinės dalelės
-(elektronai, protonai, neutronai), turinčios $1/2$ **sūkį** (angl. *spin*).
+(elektronai, protonai, neutronai), turinčios $1/2$ **sūkį** (angl. *$1/2$ spin*).
 Šios dalelės magnetiniame lauke elgiasi panašiai kaip magnetiniai
 dipoliai. Blocho vektorius, orientuotas į ortogonaliąsias
 $|0\rangle$ arba $|1\rangle$ būsenas,
@@ -621,9 +621,9 @@ $p(x') = \psi^{*}(x')\psi(x')dx = |\psi(x)|^2 dx$.
 Pakartoję algoritmą daug kartų ir atlikę tokį matavimą, apytikriai
 rasime visą **tikimybių tankio funkciją** $|\psi(x)|^2$
 (angl. *probability density function*), kuri nusako tikimybes rasti
-kvantinę sistemą pozicijos intervale.
+kvantinę sistemą kiekviename erdvės taške $x$.
 
-Vietoj šio matavimo galima apskaičiuoti ir globalius banginės funkcijos
+Vietoj šio matavimo galima apskaičiuoti globalius banginės funkcijos
 parametrus, $\langle\psi |M|\psi\rangle$;
 čia $M$ yra kvantinis operatorius. Pavyzdžiui, $M$ gali būti
 hamiltonianas arba judesio kiekio momento operatorius. Tai suteiks
@@ -797,7 +797,7 @@ klasikinius duomenis, iš pradžių reikia duomenis užkoduoti į kvantinę
 būseną. Dažniausiai taikomi kodavimo būdai yra bitų kodavimas ir
 amplitudžių kodavimas (žr. 6.4 poskyrį). Bitų kodavime $l$-tasis įrašas
 yra $N$ bitų seka
-$b^{(l)} = (b_1 , b_2, \ldots , b_{N})$, $b_i \in \{ 0, 1\}$.
+$b^{(l)} = {b_1 , b_2, \ldots , b_{N}}$, $b_i \in \{ 0, 1\}$.
 Operatorius $O$, dar vadinamas kvantiniu orakulu arba kvantine
 atmintimi, yra naudojamas iškviesti $l$-tajį įrašą iš duomenų bazės
 kvantinėje būsenoje:
@@ -836,9 +836,9 @@ Kaip ir dauguma prižiūrimųjų mašininio mokymosi algoritmų, šis
 hibridinis algoritmas išmoko modelį, formaliai perteikiamą funkcija
 $f(x, \theta) = y$, pateikiant duomenis $x$ ir pažymint juos $y$.
 Binariosios klasifikacijos atveju duomenys priklauso grupei $a$ arba
-$b$,$y \in a,b$. Tam yra optimizuojamas modelio parametrų rinkinys $\theta$.
+$b$,$y \in {a,b}$. Tam yra optimizuojamas modelio parametrų rinkinys $\theta$.
 Gerai apmokytas modelis $f(x, \theta)$ turėtų gebėti teisingai priskirti
-nematytus duomenis $x$ grupei $y \in a,b$.
+nematytus duomenis $x$ grupei $y \in {a,b}$.
 Kvantinėmis grandinėmis paremtas klasifikatorius yra
 pavaizduotas \@ref(fig:kvantiniu-grandiniu-klasifikatorius) pav.
 
@@ -858,7 +858,7 @@ rezultatas atitiktų treniravimo duomenyse pateiktą teisingą žymę.
 Duomenų klasifikavimo rezultatas $f(x, \theta)$ yra nuskaitomas iš
 būsenos $U(\theta)|\varphi(x)\rangle$ atliekant kubitų matavimą. Jeigu
 klasifikacija yra binarioji, pakanka išmatuoti tik vieną kubitą,
-pavyzdžiui, 8.5 pav. grandinėje parodytą pirmąjį, kurio būsena
+pavyzdžiui, grandinėje parodytą pirmąjį, kurio būsena
 $|1\rangle$ indikuoja teisingą pateiktų duomenų
 klasifikavimą. Ši būsena bus randama su tam tikra tikimybe, kurią norima
 modeliu maksimizuoti. Visgi, norint šią statistiką pamatyti, visą
@@ -879,7 +879,7 @@ knitr::include_graphics("media/image8_6.svg")
 
 Panagrinėkime algoritmą išsamiau. Įvesties duomenys $x$ yra
 pavaizduojami į ­$n$ kubitų pradinę būseną taiknt amplitudžių kodavimą.
-Duomenų įrašas $x = (x_1 , x_2 , \ldots, x_N )$,
+Duomenų įrašas $x = {x_1 , x_2 , \ldots, x_N }$,
 $x\in\mathbb{R}$, turintis $N = 2^n$ elementų, yra pavaizduojamas
 bazinių vektorių $|i\rangle$ superpozicijos amplitudėse
 $x_i$:
@@ -922,7 +922,7 @@ užrašyti taip:
 (\#eq:tikslo-funkcija-binary)
 \end{equation}
 Vidines sandaugas galima efektyviai apskaičiuoti pasitelkiant papildomą
-ancila kubitą, kaip aprašyta Hadamardo teste (žr. 6.7 poskyrį). Tikslo
+ancila kubitą, kaip aprašyta Hadamardo teste. Tikslo
 funkcija $\mathcal{L}(\theta)$ yra maksimizuojama taikant klasikinį
 gradientinio nusileidimo algoritmą. Kvantinė grandinė, realizuojanti
 $U(\theta)$, konstruojama taip, kad sparčiai sukurtų kvantinį supynimą ir
@@ -953,7 +953,7 @@ $(j + r)\mod(n)$-tas kubitas kontroliuojantis („control"). Trijų kubitų
 atveju, kai $r = 1$, toks blokas pavaizduotas \@ref(fig:triju-kubitu-blokas) pav.
 
 
-```{r triju-kubitu-blokas, echo=FALSE, fig.cap="3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$ yra 1 kubito loginiai vartai", out.width='80%', fig.align='center'}
+```{r triju-kubitu-blokas, echo=FALSE, fig.cap="3 kubitų kvantinį supynimą sudarančios grandinės blokas. $G_j$ yra 1 kubito loginiai vartai", out.width='58%', fig.align='center'}
 knitr::include_graphics("media/image8_7.svg")
 ```
 
@@ -988,7 +988,7 @@ kvantinės būsenos, apibūdinamos tankio matrica $\rho$, tikrinius
 vektorius, atitinkančius didžiausias tikrines vertes. Tankio matrica
 $\rho$ yra išskaidoma tikriniais vektoriais:
 \begin{equation}
-\rho = \sum_{k = 1}^N \lambda_k|a_k\rangle\langle a_k|\,.
+\rho = \sum_{k = 1}^N \lambda_k|a_k\rangle\langle a_k|\,,
 (\#eq:tankio-matrica-tikriniais-vektoriais)
 \end{equation}
 čia $N$ -- erdvės dydis; $|a_k \rangle$ -- tikriniai
@@ -997,15 +997,15 @@ pagrindinių komponentų analizės tikslas -- išrinkti
 $|a_k\rangle$ atitinkančius didžiausius $\lambda_k$.
 Kadangi tankio matrica $\rho$ yra ermitinė, operatorius
 $U = \mathrm{e}^{-\mathrm{i}\rho t}$
-yra unitarusis. Tikrinių vektorių nustatymui su kvantiniais
-kompiuteriais galima pritaikyti hamiltoniano kodavimą, aprašytą
-\@ref(ising-hamiltonian-coding) skyriuje. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ galima nustatyti
+yra unitarusis. Tikrinių vektorių nustatymui kvantiniu
+kompiuteriu galima pritaikyti hamiltoniano kodavimą, aprašytą
+\@ref(ising-hamiltonian-coding) skyriuje. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ randamos
 panaudojant kvantinį fazės nustatymo algoritmą,
 aprašytą \@ref(kvantinis-fazes-nustatymas) poskyryje.
 
-Šiuose alogritmuose reikia skaičiuoti matricos $\rho$ eksponentę. Šį skaičiavimą paspartina
-paprastas matematinis triukas. Tegu turime pagalbinę
-bet kokią tankio matricą $\sigma$. Laiką $t$ padalijame į $s$ dalių, $t =
+Šiuose alogritmuose reikia apskaičiuoti matricos $\rho$ eksponentę. Šį skaičiavimą paspartina
+paprastas matematinis triukas pasitelkiant bet kokią pagalbinę
+tankio matricą $\sigma$. Laiką $t$ padalijame į $s$ dalių, $t =
 s\Delta t$, ir darome prielaidą, kad turime daug būsenos $\rho$ kopijų.
 Galima pastebėti, kad galioja tokia lygybė:
 \begin{equation}
@@ -1015,7 +1015,7 @@ Galima pastebėti, kad galioja tokia lygybė:
 \mathrm{e}^{\mathrm{i}\rho\Delta t} + O(\Delta t^2)\,,
 (\#eq:swap-eksponente-pca)
 \end{equation}
-kur $\mathrm{Tr}_P$ -- dalinis pėdsakas per pirmą kintamąjį, o $W$ -- SWAP
+kur $\mathrm{Tr}_P$ yra dalinis pėdsakas per pirmą kintamąjį, o $W$ -- SWAP
 operatorius. SWAP operatoriaus eksponentė gali būti efektyviai realizuota
 kvantinėse grandinėse, todėl, naudojantis \@ref(eq:swap-eksponente-pca) lygtimi,
 galima efektyviai realizuoti ir tankio matricos eksponentės skaičiavimą.
