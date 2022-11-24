@@ -294,7 +294,7 @@ Trys Pauli bei Hadamardo loginiai vartai yra ermitiniai operatoriai
 operatorius vieną po kito anuliuojamas jų efektas, pavyzdžiui, $ZZ = I$,
 $HH = I$. Kitaip nei Pauli ir Hadamardo vartai, dauguma kitų kvantinių
 loginių vartų nėra sau atvirkštiniai. Pavyzdžiui, jau minėti $S$ ir $T$
-nėra ermitiniai operatoriai, nes $S\ne S^{\dagger}$ ir $T\ne ≠ T^{\dagger}$.
+nėra ermitiniai operatoriai, nes $S\ne S^{\dagger}$ ir $T\ne T^{\dagger}$.
 Tačiau, kaip
 ir visi unitariniai operatoriai, jie turi sau atvirkštinius operatorius.
 Tai yra jų ermitinės jungties operatoriai, žymimi su durklu, pavyzdžiui
