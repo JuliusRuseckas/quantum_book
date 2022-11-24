@@ -4,13 +4,13 @@
 kompiuteriu ir parodome keletą žymių kvantinių algoritmų. Šie algoritmai
 leidžia geriau suprasti kvantinį skaičiavimo modelį ir naudojamus
 triukus bei ugdyti „kvantinę intuiciją" sudėtingesnėms užduotims
-spręsti. Pirmiausiai pristatysime nomenklatūras, naudojamas numeruoti
-­*n-*kubitų registro baziniams vektoriams, ir jų konvertavimą tarp
-dvejetainės ir dešimtainės skaičių sistemų.
+spręsti. 
 
 ## Bazinių vektorių numeracija 
 
-Kvantinio registro, sudaryto iš $n$ kubitų, bendra būsena
+Pirmiausiai pristatysime nomenklatūras, naudojamas numeruoti
+*n* kubitų registro baziniams vektoriams, ir jų konvertavimą tarp
+dvejetainės ir dešimtainės skaičių sistemų. Kvantinio registro, sudaryto iš $n$ kubitų, bendra būsena
 $|\psi\rangle$ yra $2^n$ ortogonaliųjų bazinių vektorių
 superpozicija. Praeitų skyrių pavyzdžiuose dažnai naudojome 2 kubitų
 skaičiuojamąjį rinkinį {$|00\rangle$,
@@ -87,7 +87,7 @@ išreiškiami:
 \begin{gather}
 |\psi\rangle = c_0|0\rangle + c_1|1\rangle + c_2|2\rangle + \cdots + c_{2^{n} - 1}|2^n - 1\rangle
 = \sum_{x = 0}^{2^{n} - 1} c_x|x\rangle\,;(\#eq:bendra-busena-n-kubitu)\\
-\langle x'|x\rangle = \delta_{x',x}\,;(\#eq:ortogonalumas-desimtaine-busena)\\
+\langle x'|x\rangle = \delta_{x'x}\,;(\#eq:ortogonalumas-desimtaine-busena)\\
 |c_0|^2 + |c_1|^2 + |c_2|^2 + \cdots + |c_{2^{n} - 1}|^2
 = \sum_{x = 0}^{2^{n} - 1} |c_x|^2 = 1\,.(\#eq:normavimas-desimtaine-busena)
 \end{gather}
@@ -256,7 +256,7 @@ kuriuos mašininio mokymosi metodus, kvantinių klaidų taisymo kodus.
 Skaičiavimo procesą kvantiniame kompiuteryje galima apibūdinti trimis
 žingsniais:
 
-Duomenų kodavimas $\rightarrow$ Duomenų apdorojimas $\rightarrow$ Būsenų matavimas
+*Duomenų kodavimas $\rightarrow$ Duomenų apdorojimas $\rightarrow$ Būsenų matavimas*
 
 Norint pateikti duomenis pirmiausia reikia juos koduoti kubitais. Tai
 nusako specifinį kubitų registro **būsenos paruošimo procesą**
@@ -276,7 +276,7 @@ taikomi yra **bazinių vektorių kodavimas** (angl. *basis encoding*) ir
 metodas tinka koduoti informaciją dvejetainėje formoje. Visa klasikinė
 duomenų bazė $D$, kurioje kiekvienas atskiras įrašas $l$ yra $N$-bitų
 seka
-$b^{(l)} = (b_1 ,b_2 , \ldots , b_N )$, $b_i \in \{0, 1\}$,
+$b^{(l)} = {b_1 ,b_2 , \ldots , b_N }$, $b_i \in \{0, 1\}$,
 tiesiogiai perteikiama normuota skaičiuojamųjų bazinių vektorių
 $b^{(l)} \rightarrow |b^{(l)}\rangle$ lygia
 superpozicija:
@@ -304,7 +304,7 @@ transformacija, Šoro pirminių skaičių faktorizavimas.
 
 Kaip pavadinimas indikuoja, amplitudžių kodavimo metode duomenys yra
 koduojami bazinių vektorių amplitudėse. Imkime vieną klasikinį duomenų
-bazės įrašą $x^{(l)} = (x_1 , x_2 , \ldots , x_N )$
+bazės įrašą $x^{(l)} = {x_1 , x_2 , \ldots , x_N }$
 turintį $N$ elementų. Bendrai toks įrašas nusako $N$ dimensijų vektorių
 ar duomenis su $N$ skaičiumi savybių. Kiekvienas elementas $x_i$ gali
 būti bet kokios formos skaičiai -- dešimtainėje formoje realieji ar
@@ -319,7 +319,7 @@ $|i\rangle$ superpozicijos amplitudėse $x_i$:
 Šis kodavimo būdas yra kubitų skaičiaus atžvilgiu efektyvus, nes
 $N$ elementų įrašas reikalauja tik $\log_2 (N)$ kubitų. Duomenų bazę
 $D$, turinčią $M$ skaičių su $N$ elementų ilgio įrašais $x^{(l)}$,
-$D = (x^{(1)} , x^{(2)} , \ldots , x^{(M)})$, galima
+$D = {x^{(1)} , x^{(2)} , \ldots , x^{(M)}}$, galima
 perteikti $(M\times N)$ dimensijų vektoriumi kubitų registre:
 \begin{equation}
 |D\rangle = \sum_{i = 1}^{MN} x_i |i\rangle\,.
@@ -465,7 +465,7 @@ Jeigu imsime, kad duomenų bazė turi $N$ įrašų, klasikiniu algoritmu nėra
 kito būdo, kaip tik tikrinti visus įrašus, tad blogiausiu atveju gali
 prireikti $N - 1$ patikrų, o tikimybė rasti įrašą po $k$-skaičiaus
 bandymų yra $k/N$. Bet štai kvantiniu kompiuteriu pakanka $\sqrt{N}$
-įrašų patikrinimų norint rasti norimą su praktiškai 100 % tikimybe. Šis
+įrašų patikrinimų norint rasti norimą su praktiškai 100% tikimybe. Šis
 kvadratinis paspartinimas gali suteikti esminį pranašumą didėjant įrašų
 skaičiui duomenų bazėje.
 
@@ -638,7 +638,7 @@ baziniais vektoriais $\{|x\rangle\}$,
 indeksuotais $x'$ ir $x$, atitinkamai. Kadangi
 $\{|x\rangle\}$ yra ortogonaliųjų normuotųjų vektorių
 rinkinys,
-$\langle x'|x\rangle = \delta_{x,x'}$,
+$\langle x'|x\rangle = \delta_{xx'}$,
 panaikinamas vienas suminis indeksas. Antroje dalyje identifikavome
 $\bar{c}_x$, nusakantį visų $2^n$ amplitudžių $c_x$ vidurkį:
 \begin{equation}
@@ -761,8 +761,7 @@ $-\theta$ su ašimi, nusakyta $|d_{\bot}\rangle$, tad ši
 transformacija pasuko $|\psi\rangle$ kampu $2\theta$
 pagal laikrodžio rodyklę. Jeigu pradinis kampas būtų $-\theta$, $V$
 pasuktų $|\psi\rangle$ kampu $2\theta$ prieš laikrodžio
-rodyklę. Toks simetriškas vektoriaus pasukimas apie ašį (ar plokštumą)
-yra dar vadinamas **atspindžiu** (angl. *reflection*). Pritaikius $V$
+rodyklę. Toks simetriškas vektoriaus pasukimas apie ašį yra vadinamas **atspindžiu** (angl. *reflection*). Pritaikius $V$
 bendrai būsenai $|\phi\rangle$, kurią galima išreikšti
 vektoriais $|d\rangle$ ir
 $|d_{\bot}\rangle$, $V|\phi\rangle$
@@ -986,7 +985,7 @@ pergrupuoti taip:
 Sekant parodytą kvantinę grandinę, išmatuojame ancila kubito būseną.
 Toliau apskaičiuosime neselektyvaus būsenų matavimo rezultatą,
 suteikiantį ancila kubito tikrinių verčių $\lambda_k \in \{ 1, -1\}$
-**vidurkį** (angl. *expectation value*). Tam formaliai naudojame
+vidurkį. Tam formaliai naudojame
 operatorių $Z\otimes I$, tad turėsime apskaičiuoti
 $\langle\chi |Z\otimes I|\chi\rangle$.
 Taikant projekcinę dekompoziciją:

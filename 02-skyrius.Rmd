@@ -5,8 +5,7 @@
 Tiesinė algebra yra kvantinės kompiuterijos matematinė kalba. Šiame
 skyriuje pateikiame jos pagrindinius konceptus bei kitus matematinius
 įrankius, kurių naudojimą bus galima aptikti įvairiose knygos vietose.
-Tai jokiu būdu nėra pilnutinis tiesinės algebros ir kitų matematinių
-objektų išdėstymas -- išsamesnį pristatymą, esant poreikiui, galima
+Tai jokiu būdu nėra pilnutinis tiesinės algebros išdėstymas -- išsamesnį pristatymą, esant poreikiui, galima
 rasti matematikos ir fizikos sričių literatūros šaltiniuose, kurių dalis
 yra pateikta knygos pabaigoje.
 
@@ -43,10 +42,10 @@ $|v\rangle$ arba $- |v\rangle$
 vektoriais, yra fiziškai identiška, nors tai ir reikštų skirtingus
 euklidinius vektorius, orientuotus antiparaleliai.
 
-Kvantinėje kompiuterijoje mus daugiausia domina kompleksinių vektorių
-baigtinio dydžio $d$ dimensijų erdvės, kurias žymėsime simboliu $V^d$.
+Kvantinėje kompiuterijoje kompleksinių vektorių
+baigtinio dydžio $d$ dimensijų erdvę žymėsime simboliu $V^d$.
 Viršuje užrašome erdvės dimensiją $d$ (natūralusis teigiamasis
-skaičius) jeigu yra poreikis specifinėje situacijoje ją įvardyti.
+skaičius), jeigu yra poreikis specifinėje situacijoje ją įvardyti.
 Vektorių erdvės elementai yra vektoriai, kuriuos visada galime išreikšti
 sugrupuotų kompleksinių skaičių stulpeliu:
 \begin{equation}
@@ -783,7 +782,7 @@ $\langle 0_y |1_y \rangle = 0$.
 
 Trumpam grįžkime prie to, kodėl Blocho sferos reprezentacijoje atsiranda
 pusiniai kampai $\theta/2$. Kvantiniai 1 kubito loginiai vartai yra
-visiškai nusakomi unitariniais operatoriais, **priklausančiais SU(2)
+visiškai nusakomi unitariniais operatoriais, priklausančiais **SU(2)
 grupei** (angl. *special unitary group*), kurie atlieka vektoriaus
 rotaciją 2 kompleksinių dimensijų erdvėje. Tačiau Blocho sferoje vartų
 efektą iliustruojame kaip vektoriaus rotacijas 3 dimensijų Euklido
@@ -1127,7 +1126,7 @@ X|0\rangle = & \begin{bmatrix}
 \langle 0| X = & \lbrack 1\: 0 \rbrack\begin{bmatrix}
 0 & 1 \\
 1 & 0 \\
-\end{bmatrix} = \lbrack 1 \cdot 0 + 0 \cdot 1,  1 \cdot 1 + 0 \cdot 0  \rbrack = \lbrack 0\: 1 \rbrack = \langle 1|\,.
+\end{bmatrix} = \lbrack 1 \cdot 0 + 0 \cdot 1 + 1 \cdot 1 + 0 \cdot 0  \rbrack = \lbrack 0\: 1 \rbrack = \langle 1|\,.
 (\#eq:0-x-pvz)
 \end{align}
 Pamename, kad
@@ -1159,7 +1158,7 @@ $|v\rangle$.
 
 ## Unitariniai ir ermitiniai operatoriai
 
-**Unitariniai operatoriai** (angl. *unitary operators*) yra plačiausiai
+Unitariniai operatoriai yra plačiausiai
 naudojama ir aptinkama operatorių klasė kvantinėje kompiuterijoje. Šie
 operatoriai matematiškai apibūdina kvantinių loginių vartų efektą -- jie
 transformuoja vektoriais nusakomas kubitų būsenas į kitas būsenas.
@@ -1188,8 +1187,7 @@ Jeigu $|v\rangle$ yra
 normuotasis vektorius, $U$ išlaiko normuotumą
 $\langle v|U^{\dagger}U |v\rangle = 1$. Tad
 unitarinių operatorių efektas gali būti apibūdintas kaip vektorių
-posūkis vektorių erdvėje. Jeigu $U$ veikia visą rinkinį bazinių
-vektorių, tada naujai gauti vektoriai nusako kitą **transformuotą
+posūkis vektorių erdvėje. Jeigu $U$ veikia visus bazinius vektorius jų rinkinyje, tada naujai gauti vektoriai nusako kitą **transformuotą
 bazinių vektorių rinkinį** (angl. *basis transformation*).
 
 Kita svarbi operatorių klasė kvantinėje kompiuterijoje yra **ermitiniai

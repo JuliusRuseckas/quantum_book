@@ -1,16 +1,12 @@
 # Kvantiniai loginiai vartai ir grandinės {#kvantiniai-loginiai-vartai-grandines}
 
-## Vieno kubito loginiai vartai {#vieno-kubito-vartai}
-
 Šiame skyriuje pateikiame įprastinių kvantinių loginių elementų
 arsenalą. Juos pasitelkus formuojami žemiausio loginio lygio kvantiniai
 algoritmai. Matysime, kaip loginės registro būsenų operacijos yra
 pavaizduojamos grafiškai ir kaip iš jų sekų formuojamos kvantinės
 grandinės.
 
-```{r loginiu-vartu-veikimas-kubita, echo=FALSE, fig.cap="Loginių vartų $U$ veiksmas kubito būsenai $|\\psi\\rangle$.", out.width='42%', fig.align='center'}
-knitr::include_graphics("media/image4_1.svg")
-```
+## Vieno kubito loginiai vartai {#vieno-kubito-vartai}
 
 Pradėkime nuo paprasčiausių loginių
 elementų, atliekančių 1 kubito būsenų transformacijas. Kaip pamename,
@@ -18,9 +14,10 @@ kvantiniai loginiai vartai yra nusakomi unitariniais operatoriais. Tokio
 operatoriaus veiksmas būsenai $|\psi\rangle$ yra
 pavaizduojamas grafiškai (žr. \@ref(fig:loginiu-vartu-veikimas-kubita) pav.).
 
-```{r dvieju-kubitu-grandine, echo=FALSE, fig.cap="2 kubitų registro kvantinė grandinė. Matomi individualius kubitus veikiantys loginiai vartai ir abu kubitus vienu metu veikiantys $U_3$", out.width='60%', fig.align='center'}
-knitr::include_graphics("media/image4_2.svg")
+```{r loginiu-vartu-veikimas-kubita, echo=FALSE, fig.cap="Loginių vartų $U$ veiksmas kubito būsenai $|\\psi\\rangle$.", out.width='41%', fig.align='center'}
+knitr::include_graphics("media/image4_1.svg")
 ```
+
 Kiekvienam kubitui yra priskiriama atskira
 grandis -- horizontali linija. Kvantinė grandis pati nedaro įtakos
 kubito būsenai ir nusako jo laisvą evoliuciją laike. Grandys yra
@@ -30,8 +27,33 @@ $|\psi\rangle$, jai atliekami loginiai vartai $U$ ir
 dešinėje išvedama pakitusi būsena $U|\psi\rangle$. Visi
 1 kubito loginiai vartai turi vieną įvedimą ir vieną išvedimą, o bendras
 kubitų skaičius algoritmo metu nesikeičia. Žinoma, ne visi kubitai
-registre turi būti panaudojami. \@ref(fig:dvieju-kubitu-grandine) pav. matome dviejų kubitų registro
+registre turi būti panaudojami.
+
+Čia pateikiame loginius vartus ir jų efektą skaičiuojamiesiems baziniams
+vektoriams $|0\rangle$ ir $|1\rangle$.
+Norint nusakyti, kaip loginiai vartai keičia kubito būseną, esančią
+superpozicijoje, pakanka žinoti, kaip loginiai vartai keičia
+$|0\rangle$ ir $|1\rangle$ atskirai, nes
+operatoriai veikia tiesiniu būdu kiekvieną vektorių superpozicijoje:
+\begin{equation}
+U\big(|0\rangle + |1\rangle\big) = U|0\rangle + U|1\rangle\,.
+(\#eq:loginiai-vartai-superpozicija)
+\end{equation}
+Skaičiavimuose galima atlikti bazinių vektorių transformaciją ir naudoti
+kitų bazinių vektorių rinkinį, pavyzdžiui Pauli-$X$ tikrinius vektorius
+$|0_x\rangle$ ir $|1_x\rangle$.
+Svarbu prisiminti, kad loginių vartų efektas, pateiktas
+$|0\rangle$ ir $|1\rangle$ baziniams
+vektoriams, bus bendrai kitoks, jeigu tie patys vartai pritaikomi,
+pavyzdžiui, $|0_x\rangle$ ir
+$|1_x\rangle$ ir jais išreikštoms būsenoms.
+
+\@ref(fig:dvieju-kubitu-grandine) pav. matome dviejų kubitų registro
 kvantinės grandinės pavyzdį.
+
+```{r dvieju-kubitu-grandine, echo=FALSE, fig.cap="2 kubitų registro kvantinė grandinė. Matomi individualius kubitus veikiantys loginiai vartai ir abu kubitus vienu metu veikiantys $U_3$", out.width='57%', fig.align='center'}
+knitr::include_graphics("media/image4_2.svg")
+```
 
 Standartiškai algoritmo pradžioje kubitai yra inicijuojami į
 $|0\rangle$ būsenas (nurodome *ket* juodame fone), o
@@ -55,36 +77,13 @@ Operatorius $U_3$ veikia abu kubitus, o $U_2$ atlikimo metu kubitui
 $k_2$ nepritaikoma jokia loginė operacija (laukimo stadija) -- tai
 nusakoma vienetiniu operatoriumi $I$.
 
-Čia pateikiame loginius vartus ir jų efektą skaičiuojamiesiems baziniams
-vektoriams $|0\rangle$ ir $|1\rangle$.
-Norint nusakyti, kaip loginiai vartai keičia kubito būseną, esančią
-superpozicijoje, pakanka žinoti, kaip loginiai vartai keičia
-$|0\rangle$ ir $|1\rangle$ atskirai, nes
-operatoriai veikia tiesiniu būdu kiekvieną vektorių superpozicijoje:
-\begin{equation}
-U\big(|0\rangle + |1\rangle\big) = U|0\rangle + U|1\rangle\,.
-(\#eq:loginiai-vartai-superpozicija)
-\end{equation}
-Skaičiavimuose galima atlikti bazinių vektorių transformaciją ir naudoti
-kitų bazinių vektorių rinkinį, pavyzdžiui Pauli-$X$ tikrinius vektorius
-$|0_x\rangle$ ir $|1_x\rangle$.
-Svarbu prisiminti, kad loginių vartų efektas, pateiktas
-$|0\rangle$ ir $|1\rangle$ baziniams
-vektoriams, bus bendrai kitoks, jeigu tie patys vartai pritaikomi,
-pavyzdžiui, $|0_x\rangle$ ir
-$|1_x\rangle$ ir jais išreikštoms būsenoms.
-
-```{r pauli-x-vartai, echo=FALSE, fig.cap="Pauli-$X$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='37%', fig.align='center'}
-knitr::include_graphics("media/image4_3.svg")
-```
-
 Pradėsime nuo Pauli-$X$, $Y$ ir $Z$
 loginių vartų, kurių matematinės išraiškos ir savybės buvo pristatytos
 II skyriuje. Pauli-$X$ loginiai vartai yra klasikinių NE loginių vartų
 atitikmuo, jie sukeičia 0 ir 1 vertes (žr. \@ref(fig:pauli-x-vartai) pav.)
 
-```{r pauli-y-vartai, echo=FALSE, fig.cap="Pauli-$Y$ loginių vartų efektas", out.width='40%', fig.align='center'}
-knitr::include_graphics("media/image4_4.svg")
+```{r pauli-x-vartai, echo=FALSE, fig.cap="Pauli-$X$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='37%', fig.align='center'}
+knitr::include_graphics("media/image4_3.svg")
 ```
 
 Pauli-$Y$ vartai taip pat sukeičia 0 ir 1
@@ -92,21 +91,24 @@ vertes, tačiau dar prideda $\pm \pi/2$ fazę
 ($\mathrm{e}^{\pm\mathrm{i}\pi/2} = \pm\mathrm{i}$), nusakomą menamuoju skaičiumi
 $\mathrm{i}$ (žr. \@ref(fig:pauli-y-vartai) pav.)
 
-```{r pauli-z-vartai, echo=FALSE, fig.cap="Pauli-$Z$ loginių vartų efektas", out.width='40%', fig.align='center'}
-knitr::include_graphics("media/image4_5.svg")
+```{r pauli-y-vartai, echo=FALSE, fig.cap="Pauli-$Y$ loginių vartų efektas", out.width='40%', fig.align='center'}
+knitr::include_graphics("media/image4_4.svg")
 ```
-
 Pauli-$Z$ vartai (žr. \@ref(fig:pauli-z-vartai) pav.) nekeičia
 įvedamos $|0\rangle$ būsenos, tačiau prideda $\pi$ fazę
 $|1\rangle$ būsenai ($\mathrm{e}^{\mathrm{i}\pi} = -1$).
 
-```{r hadamardo-vartai, echo=FALSE, fig.cap="Hadamardo loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='51%', fig.align='center'}
-knitr::include_graphics("media/image4_6.svg")
+```{r pauli-z-vartai, echo=FALSE, fig.cap="Pauli-$Z$ loginių vartų efektas", out.width='39%', fig.align='center'}
+knitr::include_graphics("media/image4_5.svg")
 ```
 
 Hadamardo vartai (žr. \@ref(fig:hadamardo-vartai) pav.) suformuoja
 lygią $|0\rangle$ ir $|1\rangle$ bazinių
 vektorių superpoziciją.
+
+```{r hadamardo-vartai, echo=FALSE, fig.cap="Hadamardo loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='51%', fig.align='center'}
+knitr::include_graphics("media/image4_6.svg")
+```
 
 Kaip pamename, Blocho sferoje 1 kubito būsena yra parametrizuojama dviem
 kampais $\theta$ ir $\varphi$. Čia $\theta$ nusako kampą su
@@ -137,13 +139,15 @@ R_z(\theta) \equiv & \mathrm{e}^{-\frac{\mathrm{i}\theta Z}{2}} =
 \end{bmatrix}\,.(\#eq:posukis-z)
 \end{align}
 
-```{r posukis-blocho-z, echo=FALSE, fig.cap="Posūkio apie Blocho sferos $z$ ašį $R_z(\\theta)$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='43%', fig.align='center'}
-knitr::include_graphics("media/image4_7.svg")
-```
-
 Panagrinėkime šiek tiek plačiau
 $R_z(\theta)$ loginius vartus (žr. \@ref(fig:posukis-blocho-z) pav.), kuriuos kvantinėje
 grandinėje ir supaprastinta matricos bei diadų forma išreiškiame:
+
+
+```{r posukis-blocho-z, echo=FALSE, fig.cap="Posūkio apie Blocho sferos $z$ ašį $R_z(\\theta)$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='42%', fig.align='center'}
+knitr::include_graphics("media/image4_7.svg")
+```
+
 \begin{align}
 R_z(\theta) \equiv & \begin{bmatrix}
 1 & 0 \\
@@ -341,7 +345,7 @@ tikrinė vertė yra -1. Tai nusako vieną klasikinį bitą informacijos, o
 atlikus matavimą gautas rezultatas yra įrašomas klaisikiniame bitų
 registre.
 
-```{r grandine-bito-matavimas, echo=FALSE, fig.cap="Loginė grandinė sukuria kubito $k_1$ lygią superpoziciją ir atlieka jo būsenos matavimą. Rezultatas įrašomas klasikiniame registre $c$", out.width='40%', fig.align='center'}
+```{r grandine-bito-matavimas, echo=FALSE, fig.cap="Loginė grandinė sukuria kubito $k_1$ lygią superpoziciją ir atlieka jo būsenos matavimą. Rezultatas įrašomas klasikiniame registre $c$", out.width='39%', fig.align='center'}
 knitr::include_graphics("media/image4_9.svg")
 ```
 
@@ -508,13 +512,18 @@ cX|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes
 (\#eq:cx-belo)
 \end{equation}
 
-```{r ghz-grandine, echo=FALSE, fig.cap="Kvantinį 2 kubitų supynimą atliekanti grandinė", out.width='50%', fig.align='center'}
+```{r ghz-grandine, echo=FALSE, fig.cap="Kvantinį 2 kubitų supynimą atliekanti grandinė", out.width='49%', fig.align='center'}
 knitr::include_graphics("media/image4_12.svg")
 ```
 
 Kita gerai žinoma visiškai supinta
 3 kubitų GHZ būseną (angl. *Greenberger-Horne-Zeilinger*) galima gauti
 atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę:
+
+```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
+knitr::include_graphics("media/image4_13.svg")
+```
+
 \begin{equation}
 |\mathrm{GHZ}\rangle = \frac{1}{\sqrt{2}}\big(|000\rangle +|111\rangle\big)\,.
 (\#eq:ghz-busena)
@@ -530,15 +539,15 @@ cX_0 = |0\rangle\langle 0|\otimes X + |1\rangle\langle 1|\otimes I\,.
 (\#eq:cx0-israiska)
 \end{equation}
 
-```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
-knitr::include_graphics("media/image4_13.svg")
-```
-
 Kvantinėje grandinėje $cX_0$ vartai yra
 žymimi su tuščiu apskritimu kontroliniame kubite, bei gali būti
 paprastai konvertuojami iš standartinio $cX$ pasitelkiant dvejus Pauli-$X$
 vartus (žr. \@ref(fig:cx0-grandine) pav.). Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
 $|0\rangle \leftrightarrow |1\rangle$, o antrieji atstato jas atgal po atliktų standartinių $cX$.
+
+```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
+knitr::include_graphics("media/image4_13.svg")
+```
 
 ## Tofoli loginiai vartai
 
@@ -677,7 +686,7 @@ Todėl jį 1-kubito transformacijose ignoruojame. Tačiau sąlyginiuose
 pritaikoma adresatiniam kubitui, gali priklausyti $U \in \mathrm{U}(2)$, o ne
 $U \in \mathrm{SU}(2)$ grupei. Pabrėždami šį aspektą toliau pateikiame sąlyginius
 posūkio apie $z$ ašį vartus $cR_z(\theta)$ bei fazės vartus
-$\mathbf{cP(\theta)}$ (angl. *controlled phase gate*).
+$\cP(\theta)$ (angl. *controlled phase gate*).
 
 ```{r salyginia-2-kubitu-vartai, echo=FALSE, fig.cap="Salyginiai 2 kubitų loginiai vartai $cR_z(\\theta)$", out.width='34%', fig.align='center'}
 knitr::include_graphics("media/image4_19.svg")
