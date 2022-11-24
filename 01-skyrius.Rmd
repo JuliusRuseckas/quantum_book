@@ -1029,7 +1029,7 @@ antrojo kubito būseną, jeigu pirmojo kubito būsena yra
 $|1\rangle$, ir palieka ją nepakeistą, jeigu pirmasis yra
 $|0\rangle$. Fiziškai tai apibūdina sąveikas tarp dviejų
 kubitų. Vienas pavyzdys $\mathrm{cX}$, veikiančių 2-kubitų būseną
-$11\rangle$ tiesinėje algebroje:
+$|11\rangle$ tiesinėje algebroje:
 \begin{equation}
 \mathrm{cX}|11\rangle = \begin{bmatrix}
 \begin{matrix}
