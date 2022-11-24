@@ -727,7 +727,7 @@ skirtingą vektoriaus orientaciją, tačiau išlaiko vienetinį jo ilgį.
 Pavyzdžiui, būsenos $|0\rangle$ ir
 $|1\rangle$ yra Blocho vektoriaus pozicijos išilgai $z$
 ašies ir nukreiptos į viršų arba į apačią ($\theta = 0^{\circ}\,,180^{\circ}$), atitinkamai.
-Sferos pusiaujas ($θ=90^{\circ}$) nusako visas $|0\rangle$ ir
+Sferos pusiaujas ($\theta = 90^{\circ}$) nusako visas $|0\rangle$ ir
 $|1\rangle$ būsenų superpozicijas, kurios skiriasi viena
 nuo kitos tik santykiniu $\mathrm{e}^{\mathrm{i}\varphi}$ fazės nariu, parametrizuojamu
 azimutiniu kampu $\varphi$. Visi įmanomi vektoriai nuo centro iki bet
