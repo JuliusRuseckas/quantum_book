@@ -309,10 +309,6 @@ Belo būsenos, atliekančios svarbią rolę kvantiniuose ryšiuose, jų
 generatorius įprasta vadinti EPR šaltiniais (angl. *EPR source*,
 trumpinys nuo *Einstein-Podolsky-Rosen*).
 
-```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$", out.width='55%', fig.align='center'}
-knitr::include_graphics("media/image5_3.svg")
-```
-
 Kvantinio supynimo sukeitimas praktiškai
 pritaikomas kvantiniuose tinkluose, nes gali atlikti **signalo kartotuvo
 funkciją** (angl. *quantum repeater*). Norint išvengti signalo sumenkimo
@@ -322,6 +318,10 @@ supintus kubitus iš nutolusių EPR šaltinių kartotuvai atlieka supynimo
 sukeitimą (žr. \@ref(fig:kvantinio-supynimo-sukeitimas) pav.). Tai leidžia efektyviai padidinti kvantinio
 ryšio atstumą ir realizuoti teleportaciją ar kitus protokolus,
 naudojančius supintąsias būsenas.
+
+```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$", out.width='55%', fig.align='center'}
+knitr::include_graphics("media/image5_3.svg")
+```
 
 Supynimo sukeitimo scenarijuje dalyvauja Agnė, Benas ir Cita. Panašiai
 kaip ir kvantinėje teleportacijoje, Agnė ir Benas turi pasidaliję po
@@ -667,6 +667,10 @@ $a_A = a_B$. Galiausiai jiedu atsitiktinai pasirenka iš turimų $2n$
 rakto bitų $n$ bitų ir palygina, ar jie sutampa, siekdami įvertinti, ar
 ryšys patikimas.
 
+```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija", out.width='65%', fig.align='center'}
+knitr::include_graphics("media/image5_6.svg")
+```
+
 Šiuo atveju Evelina gali pabandyti įsiterpti perimdama abu kubitus
 poroje, skirtus Agnei ir Benui. Evelina atlieka kubitų būsenų matavimą
 ir toliau jiems persiunčia jau nebesupintus, o klasiškai koreliuotus
@@ -688,16 +692,13 @@ poskyriuose smulkiau panagrinėsime supintųjų kubitų savybes ir
 aptarsime, kaip įmanoma patikrinti būsenų tikslumą, taip pat ar jos
 pasižymi ryšiuose pageidaujamomis kvantinėmis koreliacijomis.
 
-```{r epr-rakto-iliustracija, echo=FALSE, fig.cap="EPR protokolo iliustracija", out.width='65%', fig.align='center'}
-knitr::include_graphics("media/image5_6.svg")
-```
 
 ## Lokalios operacijos ir klasikiniai ryšiai
 
 EPR šaltiniai kvantiniuose tinkluose yra nepamainomi, ir dėl to svarbu
 įvertinti jų tikslumą. Jeigu yra galimybė tai atlikti kubitams vos
-palikus EPR šaltinį, tada galime apskaičiuoti **tikslumą**
-(angl. *fidelity*) palygindami sugeneruotą 2-kubitų būseną su grynąja
+palikus EPR šaltinį, tada galime apskaičiuoti **būsenų tikslumą**
+(angl. *state fidelity*) palygindami sugeneruotą 2-kubitų būseną su grynąja
 Belo būsena $|\psi\rangle$, kuri, tikimasi, turėtų būti
 ir EPR šaltinio sugeneruota. Vienas būdas tai apskaičiuoti:
 \begin{equation}
@@ -881,7 +882,7 @@ matavimo abiem kubitams.
 ## Belo nelygybės testas
 
 A. Einšteinas nepasidavė idėjai, kad gamtoje fundamentaliai gali
-egzistuoti **nedeterminizmas ir nuotolinė įtaka** (angl. *spooky action
+egzistuoti nedeterminizmas ir **nuotolinė įtaka** (angl. *spooky action
 at a distance*), apsireiškiantys supintų kvantinių būsenų matavimuose.
 Dėl to jis laikėsi pozicijos, kad kvantinė mechanika nors ir teisinga,
 bet vis dėlto negali būti išsami teorija. Siekdamas patikrinti, ar
@@ -999,7 +1000,7 @@ būdu pasirenka kampą $\alpha_1$ arba $\alpha_2$, o Benas $\beta_1$
 arba $\beta_2$. \@ref(fig:pasukti-detektoriai) pav. iliustruojame dvi tokias detektorių
 konfigūracijas, pasuktas kampu $\alpha$ ir $\beta$:
 
-```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis", out.width='38%', fig.align='center'}
+```{r pasukti-detektoriai, echo=FALSE, fig.cap="Koordinačių sistemos pasukimas kampais $\\alpha$ ir $\\beta$ pradinės koordinačių sistemos atžvilgiu.  Pradinė koordinačių sistema apibrėžia horizontaliosios ir vertikaliosios poliarizacijos kryptis", out.width='37%', fig.align='center'}
 knitr::include_graphics("media/image5_7.svg")
 ```
 
