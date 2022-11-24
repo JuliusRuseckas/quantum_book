@@ -16,4 +16,6 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: biblatex
   keep_tex: yes
-bookdown::epub_book: default
+bookdown::epub_book:
+  epub_version: epub3
+  pandoc_args: ["--filter", "gladtex"]
