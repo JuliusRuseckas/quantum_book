@@ -1338,8 +1338,7 @@ tikslą, randamas iš nelygybės:
 \end{equation}
 Iš to išplaukia, kad konkatenacijų skaičius turi būti:
 \begin{equation}
-k \geq \left\{1 + \frac{\log\left\lbrack\frac{p(n)}{\varepsilon}\right\rbrack}{
-\log\left\lbrack\frac{1}{cp}\right\rbrack}\right\}\,.
+k \geq \left\{1 + \frac{\log\left\lbrack\frac{p(n)}{\varepsilon}\right\rbrack}{\log\left\lbrack\frac{1}{cp}\right\rbrack}\right\}\,.
 (\#eq:konkatenaciju-skaiciaus-ivertinimas)
 \end{equation}
 Iš anksčiau pateiktų argumentų matome, kad kvantinės grandinės ilgis ir
