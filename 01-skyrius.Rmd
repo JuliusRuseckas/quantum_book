@@ -69,13 +69,15 @@ skaičiavimus, itin keblu. Šiuo požiūriu technologinėje raidoje kvantinė
 kompiuterija žymi pradžią, kai įspūdingu tikslumu gebama kontroliuoti
 fundamentalių gamtos ingredientų kitimą laike. Kvantinė kompiuterija yra
 tik vienas šios pažangos vaisius, tačiau potencialiai turintis esminę
-rolę paveikti žmonių kasdienybei. Rašydami šią knygą esame vadinamojoje
+rolę paveikti žmonių kasdienybei.
+
+Rašydami šią knygą esame vadinamojoje
 **triukšmingų tarpinės skalės kvantinių technologijų** etape
 (angl. *noisy intermediate-scale quantum*, trumpinys NISQ). NISQ
-kvantiniai procesoriai turi itin ribotą kubitų skaičių, pasižymi
+kvantiniai procesoriai turi 50-100 kubitų skaičių, pasižymi
 sparčiai atsirandančiomis klaidomis ir nenaudoja klaidų taisymo
-algoritmų. Tai neleidžia atlikti ilgų ir tikslių skaičiavimų.
-Didėjant kvantinių kompiuterių skaičiuojamajai galiai, verta tikėtis
+algoritmų. Tai neleidžia atlikti ilgų ir tikslių praktinės svarbos skaičiavimų.  
+Didėjant kvantinių kompiuterių skaičiuojamajai galiai verta tikėtis
 proveržių srityse, kuriose reikalingi intensyvūs skaičiavimai. Šios
 sritys apima medikamentų ir technologinių medžiagų kūrimą, branduolinę
 energetiką, fundamentinius mokslinius tyrimus, dirbtinio intelekto
@@ -890,7 +892,7 @@ gali atlikti skirtingas elementariąsias bitų transformacijas.
 Pavyzdžiui, loginiai vartai, kurie turi po vieną įvesties ir išvesties
 bitą, gali būti tik dviejų rūšių. Pirma iš jų palieka išvesties bito
 vertę tokią pačią, kaip ir įvesties $0\rightarrow 0$, $1\rightarrow 1$ ir nusako trivialų
-identitetą. Antrojo tipo vartai išvestyje apverčia įvesties bito vertę
+identitetą, dar vadinama **tapatybės transformacija** (angl. *identity*). Antrojo tipo vartai išvestyje apverčia įvesties bito vertę
 $0\rightarrow 1$, $1\rightarrow0$ ir yra žinomi kaip *NOT*. Kiti elementarūs loginiai vartai *AND,
 OR, NAND* turi įvestį dviem bitams ir vieną išvesties bitą. Norint
 atlikti visus įmanomus klasikinius skaičiavimus, tai yra pasiekti
@@ -909,8 +911,7 @@ Kaip ir klasikinis procesorius, kvantinis procesorius vykdo pateiktas
 logines grandines, sudarytas iš loginių vartų sekų. Vieno kubito atveju
 kvantinių loginių vartų efektą galima iliustruoti kaip Blocho vektoriaus
 krypties keitimą Blocho sferoje. Kitaip nei klasikiniame procesoriuje,
-kuriame vieno bito galimos transformacijos yra tik **tapatybės
-transformacija** (angl. *identity*) ir *NOT* loginiai vartai, skirtingų
+kuriame vieno bito galimos transformacijos yra tik tapatybės transformacija ir *NOT* loginiai vartai, skirtingų
 1 kubito transformacijų iš principo yra begalybė. Tai yra dėl to, kad
 amplitudės, nusakančios kubito būseną, gali kisti tolydžiai, tad Blocho
 vektoriaus pasukimas apie tam tikrą Blocho sferos ašį skirtingais
@@ -1229,7 +1230,7 @@ apytikriai MHz dažniu) nei klasikinių procesorių (veikiančių GHz
 dažniu). Pavyzdžiui, transmonais pagrįstuose IBM procesoriuose šios
 knygos rašymo metu 2 kubitų *CNOT* loginiai vartai, ribojantys bendrą
 loginių operacijų atlikimo trukmę, užtrunka maždaug 200 nanosekundžių. O
-štai jonų gardelėmis pagrįstuose procesoriuose *IonQ* 2-kubitų loginiai
+štai jonų gardelėmis pagrįstuose procesoriuose *IonQ* 2 kubitų loginiai
 vartai atliekami žymiai lėčiau, apytikriai 200 mikrosekundžių per
 operaciją. Darant prielaidas, kad tiek užtrunka atlikti ir 3 kubitų
 Tofoli loginius vartus bei kad kvantinės grandinės gylis abiejose
@@ -1316,4 +1317,4 @@ vykdyti klaidų taisymo algoritmus ir pasiekti klaidoms atsparią
 skaičiavimų ribą, reikalingas tam tikras minimalus loginių vartų
 tikslumas. Įprastai kvantiniame procesoriuje tikslumą riboja 2 kubitų
 loginiai vartai, kuriuos yra fiziškai sudėtingiau realizuoti negu
-1-kubito loginius vartus.
+1 kubito loginius vartus.
