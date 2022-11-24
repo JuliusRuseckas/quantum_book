@@ -1086,7 +1086,7 @@ vartus (žali); loginiai vartai, veikiantys du ar daugiau kubitų, turi
 vertikalią kubitų grandines jungiančią liniją. Tarp jų yra 2 kubitų
 fazės vartai (oranžiniai) ir 3 kubitų vadinamieji Tofoli loginiai vartai
 (mėlyni). Parodyta kvantinė grandinė pritaiko jau paruoštai trijų kubitų
-($k_1$, $k_2$, $k_3$) būsenai $\psi\rangle$ santykinę
+($k_1$, $k_2$, $k_3$) būsenai $|\psi\rangle$ santykinę
 fazę. Kubitai $a_1$ ir $a_2$ pradinėse $|0\rangle$
 būsenose čia atlieka juodraščio funkciją, į kurį užrašomi tarpiniai
 skaičiavimo rezultatai. Nuo jų būsenų priklauso, kuriam iš
