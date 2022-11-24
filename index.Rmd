@@ -25,28 +25,70 @@ github-repo: JuliusRuseckas/quantum_book
 
 # Pratarmė {-}
 
-Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo Covid-19 pandemijos metu. Dėl laboratorijų uždarymo ir sulėtėjusių mokslinių tyrimų atsirado galimybė daugiau laiko skirti šiai sparčiai besivystančiai sričiai. Knyga prasidėjo veikiau kaip autorių sukauptų teorinių žinių susisteminimas į vieną dokumentą asmeniniams tolimesniems darbams. Perorientuoti dokumentą į platesnei auditorijai skirtą knygą buvo nutarta atsižvelgiant į tai, kad jos rašymo metu dar neegzistavo nė viena lietuviška knyga apie kvantinę kompiuteriją. Tikimės, kad knyga padės geriau susipažinti su šia technologija ir paskatins ne vien platesnį susidomėjimą, bet ir jos plėtrą Lietuvoje.
+Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo Covid-19
+pandemijos metu. Dėl laboratorijų uždarymo ir sulėtėjusių mokslinių tyrimų
+atsirado galimybė daugiau laiko skirti šiai sparčiai besivystančiai sričiai.
+Knyga prasidėjo veikiau kaip autorių sukauptų teorinių žinių susisteminimas į
+vieną dokumentą asmeniniams tolimesniems darbams. Perorientuoti dokumentą į
+platesnei auditorijai skirtą knygą buvo nutarta atsižvelgiant į tai, kad jos
+rašymo metu dar neegzistavo nė viena lietuviška knyga apie kvantinę
+kompiuteriją. Tikimės, kad knyga padės geriau susipažinti su šia technologija
+ir paskatins ne vien platesnį susidomėjimą, bet ir jos plėtrą Lietuvoje.
 
-Kvantinė kompiuterija bendrai susijusi su keliomis mokslo sritimis – fizika, kompiuterių mokslu, grynąja matematika, inžineriniais mokslais. Knyga koncentruota į kompiuterių mokslo priartėjimą prie šios srities ir apibūdina informacijos apdorojimą kvantiniame procesoriuje abstrakčiu lygmeniu. To turėtų pakakti norint atsispirti nuo pradinio taško ir toliau plėsti žinias norima kryptimi.
+Kvantinė kompiuterija bendrai susijusi su keliomis mokslo sritimis – fizika,
+kompiuterių mokslu, grynąja matematika, inžineriniais mokslais. Knyga
+koncentruota į kompiuterių mokslo priartėjimą prie šios srities ir apibūdina
+informacijos apdorojimą kvantiniame procesoriuje abstrakčiu lygmeniu. To turėtų
+pakakti norint atsispirti nuo pradinio taško ir toliau plėsti žinias norima
+kryptimi.
 
-Ši knyga buvo parašyta remiantis svarbiausiomis esamomis knygomis ir moksliniais straipsniais apie kvantinę kompiuteriją. Tarp naudotų knygų yra šios srities „biblija“ tapusi autorių Nielsen ir Chuang „Quantum Computation and Quantum Information“ [@Nielsen2000],
-Nakahara ir Ohmi „Quantum Computing – From Linear Algebra to Physical Realizations“ [@Nakahara2008],
-ir kitos. Išsamus literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos taip pat naudota iš Tado Paulausko doktorantūros metu klausyto kurso „Quantum computing“, kurį dėstė profesorius Friedland Shmuel, užrašų. 
+Ši knyga buvo parašyta remiantis svarbiausiomis esamomis knygomis ir
+moksliniais straipsniais apie kvantinę kompiuteriją. Tarp naudotų knygų yra
+šios srities „biblija“ tapusi autorių Nielsen ir Chuang „Quantum Computation
+and Quantum Information“ [@Nielsen2000], Nakahara ir Ohmi „Quantum Computing –
+From Linear Algebra to Physical Realizations“ [@Nakahara2008], ir kitos.
+Išsamus literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos
+taip pat naudota iš Tado Paulausko doktorantūros metu klausyto kurso „Quantum
+computing“, kurį dėstė profesorius Friedland Shmuel, užrašų. 
 
-Išleisdami atvirai prieinamą internetinę knygą norime paskatinti kitus tyrėjus prisijungti ją gerinant ir papildant naujais skyriais.
+Išleisdami atvirai prieinamą internetinę knygą norime paskatinti kitus tyrėjus
+prisijungti ją gerinant ir papildant naujais skyriais.
 
 ## Kaip skaityti šią knygą {-}
 
-Knyga skirta skaitytojams, kurie nėra anksčiau susipažinę su kvantine kompiuterija. Jos tikslas – pristatyti šią sritį pradedant nuo elementariausių savokų, skiriant daugiau dėmesio konceptualiam supratimui. Nors knyga nebuvo specialiai orientuojama į vadovėlio formatą, tačiau skyrių seka turi progresiją, kuri gali būti panaudota vieno semestro bakalauro ar magistrantūros studentų kursui. 
+Knyga skirta skaitytojams, kurie nėra anksčiau susipažinę su kvantine
+kompiuterija. Jos tikslas – pristatyti šią sritį pradedant nuo elementariausių
+savokų, skiriant daugiau dėmesio konceptualiam supratimui. Nors knyga nebuvo
+specialiai orientuojama į vadovėlio formatą, tačiau skyrių seka turi
+progresiją, kuri gali būti panaudota vieno semestro bakalauro ar magistrantūros
+studentų kursui. 
 
-Jeigu skaitytojas nėra turėjęs tikslinių mokslų žinių ir nori patenkinti savo smalsumą, tada rekomenduojame skaityti tik pirmąjį ir penktąjį skyrius. Pirmajame skyriuje glaustai apžvelgiama kvantinė kompiuterija ir palyginama su klasikine kompiuterija. Kituose skyriuose iš esmės sugrįžtama prie pirmajame skyriuje minėtų savokų bei algoritmų ir jie parodomi išsamiau. Penktajame skyriuje apžvelgiami kvantinės informacijos aspektai, tokie kaip kriptografija ir kvantinės informacijos siuntimas pasitelkiant teleportacijos metodą. Šie taikymai perteikia kvantinių bitų elgsenos keistenybes ir jų siūlomus privalumus. Kituose skyriuose po visų matematinių išraiškų pateikti konceptualūs paaiškinimai. Tad net ir neskaitant lygčių įmanoma susidaryti bendrą idėją apie pateiktų kvantinių algoritmų veikimo principą. 
+Jeigu skaitytojas nėra turėjęs tikslinių mokslų žinių ir nori patenkinti savo
+smalsumą, tada rekomenduojame skaityti tik pirmąjį ir penktąjį skyrius.
+Pirmajame skyriuje glaustai apžvelgiama kvantinė kompiuterija ir palyginama su
+klasikine kompiuterija. Kituose skyriuose iš esmės sugrįžtama prie pirmajame
+skyriuje minėtų savokų bei algoritmų ir jie parodomi išsamiau. Penktajame
+skyriuje apžvelgiami kvantinės informacijos aspektai, tokie kaip kriptografija
+ir kvantinės informacijos siuntimas pasitelkiant teleportacijos metodą. Šie
+taikymai perteikia kvantinių bitų elgsenos keistenybes ir jų siūlomus
+privalumus. Kituose skyriuose po visų matematinių išraiškų pateikti
+konceptualūs paaiškinimai. Tad net ir neskaitant lygčių įmanoma susidaryti
+bendrą idėją apie pateiktų kvantinių algoritmų veikimo principą. 
 
-Norint įsisavinti visą pateiktą knygoje medžiagą, rekomenduotina turėti bent bakalauro lygio tiesinės algebros žinių. Kvantinės mechanikos žinios, be abejo, praverstų, tačiau nėra būtinos. Reikalingi matematiniai įrankiai ir kvantinės mechanikos taisyklės, taikomos kvantinėje kompiuterijoje, yra pateikiamos šioje knygoje. Jeigu turite pakankamai žinių minėtose srityse, tada antrąjį skyrių, kuris skirtas matematikos žinioms atgaivinti, galite atsiversti esant poreikiui.
+Norint įsisavinti visą pateiktą knygoje medžiagą, rekomenduotina turėti bent
+bakalauro lygio tiesinės algebros žinių. Kvantinės mechanikos žinios, be abejo,
+praverstų, tačiau nėra būtinos. Reikalingi matematiniai įrankiai ir kvantinės
+mechanikos taisyklės, taikomos kvantinėje kompiuterijoje, yra pateikiamos šioje
+knygoje. Jeigu turite pakankamai žinių minėtose srityse, tada antrąjį skyrių,
+kuris skirtas matematikos žinioms atgaivinti, galite atsiversti esant
+poreikiui.
 
 
 ## Padėka {-}
 
-Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą bei palaikymą rengiant šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei, Karoliui Jankauskui, Artūrui Pupšiui už vertingus patarimus.
+Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą bei palaikymą
+rengiant šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei,
+Karoliui Jankauskui, Artūrui Pupšiui už vertingus patarimus.
 
 Iliustracijos – Jovita Jankauskienė
 
@@ -55,9 +97,17 @@ Kalbos redaktorė – Rozita Znamenskaitė (KTU leidykla „Technologija“)
 
 ## Apie autorius {-}
 
-Tadas Paulauskas įgijo fizikos mokslų daktaro laipsnį Ilinojaus universitete Čikagoje. Vėliau atliko tyrimus Monašo universitete Melburne. Šios knygos rašymo metu dirba Fizinių ir technologijos mokslų centre (FTMC), Optoelektronikos skyriuje. Mokslinių tyrimų sritis apima puslaidininkių fiziką, nanotechnologijas, medžiagų inžineriją.
+Tadas Paulauskas įgijo fizikos mokslų daktaro laipsnį Ilinojaus universitete
+Čikagoje. Vėliau atliko tyrimus Monašo universitete Melburne. Šios knygos
+rašymo metu dirba Fizinių ir technologijos mokslų centre (FTMC),
+Optoelektronikos skyriuje. Mokslinių tyrimų sritis apima puslaidininkių fiziką,
+nanotechnologijas, medžiagų inžineriją.
 
-Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete. Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis – kvantinė optika ir labai šaltos atominės dujos. Šios knygos rašymo metu dirba Baltijos pažangių technologijų institute (BPTI).
+Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete.
+Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės
+fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis –
+kvantinė optika ir labai šaltos atominės dujos. Šios knygos rašymo metu dirba
+Baltijos pažangių technologijų institute (BPTI).
 
 
 ## Licencija {-}
@@ -68,5 +118,6 @@ Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete. V
 ![](media/cc-by-nc-sa.svg)
 '`
 
-Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją [Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)
+Internete pateikiama knygos versija gali būti naudojama pagal Creative Commons licenciją
+[Priskyrimas - Nekomercinis naudojimas - Analogiškas platinimas 4.0 Tarptautinė (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.lt)
 
