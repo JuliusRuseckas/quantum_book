@@ -1107,17 +1107,17 @@ $d = 13$.
 Apibendrinus, norint atlikti skaičiavimą kvantiniame procesoriuje
 reikalingi trys pagrindiniai elementai:
 
-1. Kvantinių bitų registras. Registras -- tai kubitų rinkinys, kuriame
+1. *kvantinių bitų registras. Registras -- tai kubitų rinkinys, kuriame
 koduojama ir apdorojama informacija. Registrą galima inicializuoti į
 mums žinomą pradinę būseną, standartiškai $|0\rangle$
-visiems kubitams.
+visiems kubitams;*
 
-2. Universalių kvantinių loginių vartų rinkinys. Loginiai vartai atlieka
+2. *universalių kvantinių loginių vartų rinkinys. Loginiai vartai atlieka
 registro būsenų keitimo operacijas, leidžiančias koduoti ir apdoroti
-informaciją.
+informaciją;*
 
-3. Kubitų būsenų matavimai. Norint nuskaityti registre apdorotą
-informaciją, kubitų būsenos turi būti išmatuojamos.
+3. *kubitų būsenų matavimai. Norint nuskaityti registre apdorotą
+informaciją, kubitų būsenos turi būti išmatuojamos.*
 
 Šie trys elementai yra traktuojami, kaip esantys loginiame lygmenyje.
 Kubitų skaičius bei skaičiavimo klaidų efektyvus nebuvimas loginiame
@@ -1173,11 +1173,9 @@ Programos yra toliau nukreipiamos į žemesnį kvantinių loginių grandinių
 lygį, kuriame algoritmai yra išreiškiami loginiais vartais. Kvantinio
 loginio lygmens programavimas yra nauja paradigma. Nors 10--20 kubitų
 dydžio procesoriui pateikiamo algoritmo loginių vartų sekas galima iš
-principo sudėlioti ir optimizuoti „rankomis", tačiau to fiziškai tampa
+principo sudėlioti ir optimizuoti „rankomis", tačiau to tampa
 nebeįmanoma padaryti procesoriui, turinčiam 1000 kubitų. Todėl
-neišvengiamai teks automatizuoti kvantinių grandinių kompiliavimą. Tam
-reikia atsižvelgti į esančius kvantinio kompiuterio suvaržymus norint
-kuo efektyviau realizuoti norimą algoritmą. Artimuoju kvantinių
+neišvengiamai teks automatizuoti kvantinių grandinių kompiliavimą ir optimizavimą. Artimuoju kvantinių
 kompiuterių raidos laikotarpiu tai gali lemti, ar tam tikrus algoritmus
 apskritai įmanoma atlikti. Pavyzdžiui, Šoro algoritmą galima realizuoti
 renkantis panaudoti daugiau kubitų ir mažiau loginių operacijų, arba
@@ -1228,7 +1226,7 @@ vartų. Loginių vartų atlikimo trukmė skiriasi tarp fizinių kvantinio
 procesoriaus realizacijų, tačiau bendrai yra žymiai ilgesnė (veikia
 apytikriai MHz dažniu) nei klasikinių procesorių (veikiančių GHz
 dažniu). Pavyzdžiui, transmonais pagrįstuose IBM procesoriuose šios
-knygos rašymo metu 2 kubitų *CNOT* loginiai vartai, ribojantys bendrą
+knygos rašymo metu 2 kubitų *cX* loginiai vartai, ribojantys bendrą
 loginių operacijų atlikimo trukmę, užtrunka maždaug 200 nanosekundžių. O
 štai jonų gardelėmis pagrįstuose procesoriuose *IonQ* 2 kubitų loginiai
 vartai atliekami žymiai lėčiau, apytikriai 200 mikrosekundžių per
