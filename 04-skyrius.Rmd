@@ -518,7 +518,7 @@ knitr::include_graphics("media/image4_12.svg")
 
 Kita gerai žinoma visiškai supinta
 3 kubitų GHZ būseną (angl. *Greenberger-Horne-Zeilinger*) galima gauti
-atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę:
+atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę.
 
 ```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
 knitr::include_graphics("media/image4_13.svg")
@@ -544,10 +544,6 @@ Kvantinėje grandinėje $cX_0$ vartai yra
 paprastai konvertuojami iš standartinio $cX$ pasitelkiant dvejus Pauli-$X$
 vartus (žr. \@ref(fig:cx0-grandine) pav.). Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
 $|0\rangle \leftrightarrow |1\rangle$, o antrieji atstato jas atgal po atliktų standartinių $cX$.
-
-```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
-knitr::include_graphics("media/image4_13.svg")
-```
 
 ## Tofoli loginiai vartai
 
@@ -686,7 +682,7 @@ Todėl jį 1-kubito transformacijose ignoruojame. Tačiau sąlyginiuose
 pritaikoma adresatiniam kubitui, gali priklausyti $U \in \mathrm{U}(2)$, o ne
 $U \in \mathrm{SU}(2)$ grupei. Pabrėždami šį aspektą toliau pateikiame sąlyginius
 posūkio apie $z$ ašį vartus $cR_z(\theta)$ bei fazės vartus
-$\cP(\theta)$ (angl. *controlled phase gate*).
+$cP(\theta)$ (angl. *controlled phase gate*).
 
 ```{r salyginia-2-kubitu-vartai, echo=FALSE, fig.cap="Salyginiai 2 kubitų loginiai vartai $cR_z(\\theta)$", out.width='34%', fig.align='center'}
 knitr::include_graphics("media/image4_19.svg")
