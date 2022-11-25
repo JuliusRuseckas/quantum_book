@@ -894,7 +894,7 @@ yra:
 \end{equation}
 Paskutiniai du kubitai yra minėtos ancilos, atskirtos tenzorių daugybos
 ženklu dėl aiškumo. Tolesniuose žingsniuose pritaikysime dvejus Tofoli
-loginius $ccX$ vartus. Pirmas $ccX_1$ naudoja įvesties registro
+loginius $ccX$ vartus. Pirmasis, vadinsime jį $ccX_1$, naudoja įvesties registro
 kubitus $k_1$ ir $k_2$ kaip kontrolinius, o adresatinis yra pirmasis
 ancila kubitas $a_1$. Iš to randame:
 \begin{equation}
