@@ -797,7 +797,7 @@ klasikinius duomenis, iš pradžių reikia duomenis užkoduoti į kvantinę
 būseną. Dažniausiai taikomi kodavimo būdai yra bitų kodavimas ir
 amplitudžių kodavimas (žr. 6.4 poskyrį). Bitų kodavime $l$-tasis įrašas
 yra $N$ bitų seka
-$b^{(l)} = {b_1 , b_2, \ldots , b_{N}}$, $b_i \in \{ 0, 1\}$.
+$b^{(l)} = \{b_1 , b_2, \ldots , b_{N} \}$, $b_i \in \{ 0, 1\}$.
 Operatorius $O$, dar vadinamas kvantiniu orakulu arba kvantine
 atmintimi, yra naudojamas iškviesti $l$-tajį įrašą iš duomenų bazės
 kvantinėje būsenoje:
@@ -878,8 +878,8 @@ knitr::include_graphics("media/image8_6.svg")
 ```
 
 Panagrinėkime algoritmą išsamiau. Įvesties duomenys $x$ yra
-pavaizduojami į ­$n$ kubitų pradinę būseną taiknt amplitudžių kodavimą.
-Duomenų įrašas $x = {x_1 , x_2 , \ldots, x_N }$,
+pavaizduojami į $n$ kubitų pradinę būseną taiknt amplitudžių kodavimą.
+Duomenų įrašas $x = \{x_1 , x_2 , \ldots, x_N \}$,
 $x\in\mathbb{R}$, turintis $N = 2^n$ elementų, yra pavaizduojamas
 bazinių vektorių $|i\rangle$ superpozicijos amplitudėse
 $x_i$:
@@ -948,8 +948,8 @@ cG = |0\rangle\langle 0|\otimes I + |1\rangle\langle 1|\otimes G\,.
 Sąlyginiai vartai čia sudaro ciklinį kodą,
 kuris yra charakterizuojamas artumo parametru $r$ ($0 < r < n$).
 Kiekvienam kubitui, kurio numeris $j$, pritaikomi sąlyginiai loginiai
-vartai, kuriuose $j$-tasis kubitas yra adresatas („target"), o
-$(j + r)\mod(n)$-tas kubitas kontroliuojantis („control"). Trijų kubitų
+vartai, kuriuose $j$-tasis kubitas yra adresatas, o
+$(j + r)\mod(n)$-tas kubitas kontroliuojantis. Trijų kubitų
 atveju, kai $r = 1$, toks blokas pavaizduotas \@ref(fig:triju-kubitu-blokas) pav.
 
 
