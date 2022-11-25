@@ -1022,16 +1022,16 @@ būsenų transformacijas. Kaip tik galėjimas panaudoti visą eksponentiškai
 didelę būsenų erdvę suteikia kvantiniams kompiuteriams pranašumą prieš
 klasikinius įrenginius.
 
-Sąlyginiai 2 kubitų loginiai vartai CNOT (angl. *controlled
-NOT*, trumpinys $\mathrm{cX}$) kartu su bendro tipo 1 kubito vartais leidžia
-realizuoti vieną galimą universalų rinkinį. Vartai $\mathrm{cX}$ apverčia
+Sąlyginiai 2 kubitų loginiai vartai $CNOT$ (angl. *controlled
+NOT*, trumpinys $cX$) kartu su bendro tipo 1 kubito vartais leidžia
+realizuoti vieną galimą universalų rinkinį. Vartai $cX$ apverčia
 antrojo kubito būseną, jeigu pirmojo kubito būsena yra
 $|1\rangle$, ir palieka ją nepakeistą, jeigu pirmasis yra
 $|0\rangle$. Fiziškai tai apibūdina sąveikas tarp dviejų
-kubitų. Vienas pavyzdys $\mathrm{cX}$, veikiančių 2-kubitų būseną
+kubitų. Vienas pavyzdys $cX$, veikiančių 2-kubitų būseną
 $|11\rangle$ tiesinėje algebroje:
 \begin{equation}
-\mathrm{cX}|11\rangle = \begin{bmatrix}
+cX|11\rangle = \begin{bmatrix}
 \begin{matrix}
 1 & 0 \\
 0 & 1 \\
@@ -1059,13 +1059,13 @@ $|11\rangle$ tiesinėje algebroje:
 \end{bmatrix} = |10\rangle\,.
 (\#eq:cX-matrica)
 \end{equation}
-Tačiau kvantinėje kompiuterijoje galime pritaikyti $\mathrm{cX}$, kai
+Tačiau kvantinėje kompiuterijoje galime pritaikyti $cX$, kai
 pirmas kubitas yra $|0\rangle$ ir
 $|1\rangle$ būsenų superpozicijoje. Tai nusako
 klasikinėje kompiuterijoje analogo neturinčią deterministinę
 operaciją -- kvantinį supynimą:
 \begin{equation}
-\mathrm{cX}(a|0\rangle + b|1\rangle)\otimes |0\rangle = a|00\rangle + b|11\rangle\,.
+cX(a|0\rangle + b|1\rangle)\otimes |0\rangle = a|00\rangle + b|11\rangle\,.
 (\#eq:supynimas)
 \end{equation}
 Kubitų būsenų transformacijas galima itin paprastai ir intuityviai
