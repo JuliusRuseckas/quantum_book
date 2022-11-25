@@ -430,7 +430,7 @@ programavimo kalbos gali būti pavartojamos tam pačiam algoritmui
 Hilbertas pats tikėjosi, kad visada galima rasti tokius algoritmus ir
 todėl iš principo įmanoma išspręsti visas problemas matematikoje.
 Įrodymas, kad matematikoje egzistuoja neišsprendžiamų problemų, dar tais
-pačiais metais buvo pateiktas **Kurto Gödelio** (angl. *Kurt Gödel*) jo
+pačiais metais buvo pateiktas **Kurto Godelio** (angl. *Kurt Gödel*) jo
 dviejose žymiose **nepilnumo teoremose** (angl. *Gödel's*
 *incompleteness theorems*). Šios teoremos tvirtina, kad aksiomomis
 pagrįstose loginėse sistemose visada bus galima rasti teiginių, kurių
