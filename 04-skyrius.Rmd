@@ -568,7 +568,7 @@ tačiau sukompiliuojami iš 1 kubito ir 2 kubitų loginių vartų sekų.
 knitr::include_graphics("media/image4_14.svg")
 ```
 
-## *SWAP* ir *Fredkin* loginiai vartai
+## SWAP ir Fredkin loginiai vartai
 
 Loginiai vartai SWAP, grandinėse žymimi sutrumpintai $W$, veikdami tarp
 dviejų kubitų $k_1$ ir $k_2$ sukeičia jų būsenas vietomis:
@@ -615,8 +615,8 @@ knitr::include_graphics("media/image4_15.svg")
 ```
 
 SWAP taip pat galima įkomponuoti į sąlyginius loginius vartus, kurie yra
-vadinami *Fredkin* vartais. Lygtyse juos žymėsime $cW$. \@ref(fig:fredkin-vartai) pav.
-pavaizduoti *Fredkin* vartai sukeičia kubitų $k_2$ ir $k_3$ būsenas,
+vadinami Fredkin vartais. Lygtyse juos žymėsime $cW$. \@ref(fig:fredkin-vartai) pav.
+pavaizduoti Fredkin vartai sukeičia kubitų $k_2$ ir $k_3$ būsenas,
 jeigu kontrolinis kubitas $k_1$ yra būsenoje
 $|1\rangle$.
 \begin{equation}
@@ -624,12 +624,12 @@ cW = |0\rangle\langle 0|\otimes I\otimes I + |1\rangle\langle 1|\otimes W\,.
 (\#eq:fredkin-vartai)
 \end{equation}
 
-```{r fredkin-vartai, echo=FALSE, fig.cap="*Fredkin*, arba kontroliuojami SWAP, loginiai vartai", out.width='30%', fig.align='center'}
+```{r fredkin-vartai, echo=FALSE, fig.cap="Fredkin, arba kontroliuojami SWAP, loginiai vartai", out.width='30%', fig.align='center'}
 knitr::include_graphics("media/image4_16.svg")
 ```
 
 Kaip ir Tofoli loginiai vartai, SWAP bei
-*Fredkin* paprastai nėra elementarios kubitų transformacijos fiziniame
+Fredkin paprastai nėra elementarios kubitų transformacijos fiziniame
 lygmenyje, tačiau yra konstruojami iš 1 kubito ir 2 kubitų loginių vartų
 sekų. Vienas būdas atlikti SWAP 2 kubitų būsenai naudojant $cX$ vartus
 parodytas \@ref(fig:swap-realizavimas) pav.:
