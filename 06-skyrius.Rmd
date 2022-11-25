@@ -1161,7 +1161,7 @@ atlikto skaičiavimo, arba iš trečiosios šalies, pavyzdžiui, atsiųstos
 kvantiniu ryšiu. Tad pradinė faktorizuojama 3 kubitų būsena yra
 $|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle$.
 Be šių skirtumų tarp Hadamardo testo, $cU$ čia yra sąlyginiai SWAP
-(*Fredkin*) loginiai vartai, $cW$, kontroliuojami ancila kubito.
+(Fredkin) loginiai vartai, $cW$, kontroliuojami ancila kubito.
 
 ```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė", out.width='51%', fig.align='center'}
 knitr::include_graphics("media/image6_10.svg")
@@ -1173,7 +1173,7 @@ Pirmiausiai, atlikę Hadamardo vartus ancila kubitui, turime:
 + |1\rangle\otimes|\phi\rangle\otimes|\psi\rangle\big)\,.
 (\#eq:h-ancilla-swap)
 \end{equation}
-Toliau atliekami *Fredkin* loginiai vartai, sukeičiantys antrojo ir
+Toliau atliekami Fredkin loginiai vartai, sukeičiantys antrojo ir
 trečiojo registro būsenas vietomis:
 \begin{equation}
 \begin{split}
