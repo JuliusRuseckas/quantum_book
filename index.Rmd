@@ -25,7 +25,7 @@ github-repo: JuliusRuseckas/quantum_book
 
 # Pratarmė {-}
 
-Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo Covid-19
+Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo *Covid*-19
 pandemijos metu. Dėl laboratorijų uždarymo ir sulėtėjusių mokslinių tyrimų
 atsirado galimybė daugiau laiko skirti šiai sparčiai besivystančiai sričiai.
 Knyga prasidėjo veikiau kaip autorių sukauptų teorinių žinių susisteminimas į
@@ -35,8 +35,8 @@ rašymo metu dar neegzistavo nė viena lietuviška knyga apie kvantinę
 kompiuteriją. Tikimės, kad knyga padės geriau susipažinti su šia technologija
 ir paskatins ne vien platesnį susidomėjimą, bet ir jos plėtrą Lietuvoje.
 
-Kvantinė kompiuterija bendrai susijusi su keliomis mokslo sritimis – fizika,
-kompiuterių mokslu, grynąja matematika, inžineriniais mokslais. Knyga
+Kvantinė kompiuterija apjungia keletą mokslo sričių – fiziką,
+kompiuterių mokslą, grynąją matematiką, inžinerinius mokslus. Knyga
 koncentruota į kompiuterių mokslo priartėjimą prie šios srities ir apibūdina
 informacijos apdorojimą kvantiniame procesoriuje abstrakčiu lygmeniu. To turėtų
 pakakti norint atsispirti nuo pradinio taško ir toliau plėsti žinias norima
