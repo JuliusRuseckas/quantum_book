@@ -1222,7 +1222,7 @@ knitr::include_graphics("media/image9_6.svg")
 ```
 
 \@ref(fig:klaidoms-atsparus-loginiai-elementai) pav. pateikiame klaidoms atsparius
-$H$ ir $cX$ loginius elementus (įprastai žymimi su
+$\overline{H}$ ir $\overline{cX}$ loginius elementus (vėlgi žymime su
 brūkšniuku) kodui, kuriame $k_1$ ir $k_2$ loginiai kubitai koduojami
 3 fiziniais kubitais. Šiuos tris fizinius kubitus, priklausančius
 $k_1$ arba $k_2$, vadinkime kubitų blokais. Matome, kad jeigu vienam
@@ -1231,7 +1231,7 @@ vartai, ši klaida gali paveikti tik šį kubitą $k_1$ bloke. Loginiai
 vartai $\overline{cX}$, veikiantys tarp atskirų kubitų kiekviename
 bloke, užtikrina, kad $H$ vartų klaida $k_1$ bloke paveiks daugiausiai vieną
 papildomą kubitą $k_2$ bloke. Tą patį galima pasakyti ir apie pačius
-$\overline{CNOT}$, kurių klaidingas atlikimas paveikia tik po vieną
+$\overline{cX}$, kurių klaidingas atlikimas paveikia tik po vieną
 kubitą kiekviename bloke. Loginiai vartai, veikiantys tarp fizinių
 kubitų blokuose nepriklausomai nuo kitų kubitų, yra vadinami
 **skersiniais** (angl. *transversal gates*). Klaidoms atspari loginė
@@ -1239,26 +1239,26 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Loginė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius Hadamardo ir sąlyginius $cX$ loginius vartus", out.width='73%', fig.align='center'}
+```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Kvantinė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius Hadamardo $\overline{H}$ ir sąlyginius $\overline{cX}$ loginius vartus", out.width='73%', fig.align='center'}
 knitr::include_graphics("media/image9_7.svg")
 ```
 Klaidoms atspari kvantinė grandinė
 pakeičia loginius vartus $H$ ir $cX$, taip pat matavimų operacijas
 klaidoms atspariais loginiais elementais. Be to, loginių kubitų
-$\overline{|0\rangle}_L$ paruošimas turi būti taip
+paruošimas $\overline{|0\rangle}_L$ turi būti taip
 pat atliekamas naudojant klaidoms atsparius loginius vartus, o kubitų
 būsenos yra periodiškai patikrinamos ir prireikus ištaisomos.
 
 ```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='88%', fig.align='center'}
 knitr::include_graphics("media/image9_8.svg")
 ```
-(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia bendrai koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $H$; matomi dar du periodiškai atliekami klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $cX$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
+(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $\overline{H}$; matomi dar du periodiškai atliekami klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $\overline{cX}$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
 
 Toliau aptarkime, kaip realizuoti klaidoms atsparų būsenų matavimą. Jam
 taikome Hadamardo testu pagrįstą minėtą kodo būsenų paruošimo metodą
-(žr. \@ref(kodu-stabilizatoriai-poskyris) poskyrį), kuris čia pritaikomas 3 kubitų būsenos
+(žr. \@ref(hadamardo-testas-poskyris) poskyrį), kuris čia pritaikomas 3 kubitų būsenos
 $|\psi\rangle$ matavimui. Šiuo metodu galima atlikti
-loginio Pauli-$Z$ ar bet kokio kito $n$ kubitų ermitinio operatoriaus
+loginio Pauli-$\overline{Z}$ ar bet kokio kito $n$ kubitų ermitinio operatoriaus
 $U$, išreiškiamo skersiniais loginiais vartais, projekcinį matavimą į jo
 +1 ir -1 poerdvius. Tai atliekanti kvantinė grandinė
 pateikta \@ref(fig:klaidoms-atsparus-matavimai) pav.
@@ -1472,7 +1472,7 @@ kubitams.
 Antroji (\@ref(fig:dvi-kv-procesoriaus-architekturos) pav., b)
 pateikta kvantinio procesoriaus architektūra
 leidžia 2 kubitų loginius vartus atlikti tiesiogiai tarp bet kurių
-kubitų. Tai vadinamasis **„visų su visais" jungimasis**
+kubitų. Tai vadinamasis **visų su visais" jungimasis**
 (angl. *all-to-all connectivity*). Jonų gardelėmis pagrįsti kvantiniai
 procesoriai pasižymi galimybėmis realizuoti „visų su visais"
 architektūrą. Neatsižvelgiant į kitus procesoriaus veikimo faktorius,
