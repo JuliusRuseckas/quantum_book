@@ -276,7 +276,7 @@ taikomi yra **bazinių vektorių kodavimas** (angl. *basis encoding*) ir
 metodas tinka koduoti informaciją dvejetainėje formoje. Visa klasikinė
 duomenų bazė $D$, kurioje kiekvienas atskiras įrašas $l$ yra $N$-bitų
 seka
-$b^{(l)} = {b_1 ,b_2 , \ldots , b_N }$, $b_i \in \{0, 1\}$,
+$b^{(l)} = \{b_1 ,b_2 , \ldots , b_N \}$, $b_i \in \{0, 1\}$,
 tiesiogiai perteikiama normuota skaičiuojamųjų bazinių vektorių
 $b^{(l)} \rightarrow |b^{(l)}\rangle$ lygia
 superpozicija:
@@ -289,7 +289,7 @@ bazėje $|D\rangle$. Kubitų skaičius $n$ turi būti ne
 mažesnis nei ilgiausios duomenų bazės įrašo $b^{(l)}$ bitų skaičius $N$,
 tad $L \leq 2^N$. Visų kitų galimai nekoduojančių $2^N - L$ bazinių
 vektorių amplitudės lygios nuliui. Pavyzdžiui, duomenų bazę, turinčią du
-įrašus {00110, 10100}, perteiktume 5 kubitų būsena
+įrašus $\{00110, 10100\}$, perteiktume 5 kubitų būsena
 $|D \rangle$:
 \begin{equation}
 |D\rangle = \frac{|00110\rangle + |10100\rangle}{\sqrt{2}}\,.
@@ -304,7 +304,7 @@ transformacija, Šoro pirminių skaičių faktorizavimas.
 
 Kaip pavadinimas indikuoja, amplitudžių kodavimo metode duomenys yra
 koduojami bazinių vektorių amplitudėse. Imkime vieną klasikinį duomenų
-bazės įrašą $x^{(l)} = {x_1 , x_2 , \ldots , x_N }$
+bazės įrašą $x^{(l)} = \{x_1 , x_2 , \ldots , x_N \}$
 turintį $N$ elementų. Bendrai toks įrašas nusako $N$ dimensijų vektorių
 ar duomenis su $N$ skaičiumi savybių. Kiekvienas elementas $x_i$ gali
 būti bet kokios formos skaičiai -- dešimtainėje formoje realieji ar
@@ -319,7 +319,7 @@ $|i\rangle$ superpozicijos amplitudėse $x_i$:
 Šis kodavimo būdas yra kubitų skaičiaus atžvilgiu efektyvus, nes
 $N$ elementų įrašas reikalauja tik $\log_2 (N)$ kubitų. Duomenų bazę
 $D$, turinčią $M$ skaičių su $N$ elementų ilgio įrašais $x^{(l)}$,
-$D = {x^{(1)} , x^{(2)} , \ldots , x^{(M)}}$, galima
+$D = \{x^{(1)} , x^{(2)} , \ldots , x^{(M)}\}$, galima
 perteikti $(M\times N)$ dimensijų vektoriumi kubitų registre:
 \begin{equation}
 |D\rangle = \sum_{i = 1}^{MN} x_i |i\rangle\,.
