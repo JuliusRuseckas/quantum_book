@@ -15,7 +15,7 @@ biblio-title: Literatūra
 biblatexoptions:
   - backend=biber
   - sorting=ynt
-# url: your book url like https://bookdown.org/yihui/bookdown
+url: https://kvantinekompiuterija.lt/
 # cover-image: path to the social sharing image like images/cover.jpg
 description: "Kvantinė kompiuterija"
 link-citations: yes
