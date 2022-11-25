@@ -448,7 +448,7 @@ kuriuose antras kubitas yra kontrolinis, o pirmas adresatinis.
 Norint aiškiau pateikti matematines lygtis gali būti pravartu indikuoti
 operatoriuose kontrolinį ir adresatinį kubitus. Šioje knygoje, kai bus
 tą pravartu daryti, *CNOT* vartuose nurodysime kaip pirmą skaičių
-kontrolinį kubitą, kaip antrą adresatinį, pavyzdžiui $cX_{12}$.
+kontrolinį kubitą, antrą adresatinį, pavyzdžiui $cX_{12}$.
 Formulėse \@ref(eq:cnot-diada)--\@ref(eq:cnot-matrica) pateikėme diadų ir matricų formas $cX_{12}$,
 sukeitus juos vietomis, $cX_{21}$, atitinkamai pasikeistų ir matematinės
 išraiškos:
