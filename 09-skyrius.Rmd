@@ -1198,11 +1198,11 @@ Galime įvardyti du pagrindinius šaltinius, kurie leidžia pasklisti
 klaidoms kvantinėse grandinėse. Pirmasis -- tai loginiai vartai.
 Akivaizdu, kad loginiai vartai, veikiantys tik vieną kubitą, nesugeba
 leisti klaidoms daugintis ir propaguoti neteisingą informaciją. Tačiau,
-jeigu 2 kubitų $CNOT$ loginiuose vartuose kontrolinis kubitas patyrė
+jeigu 2 kubitų $cX$ loginiuose vartuose kontrolinis kubitas patyrė
 klaidą, tada ši klaida bus perteikta į adresatinį kubitą ir kaskados
 principu gali sklisti toliau. Taip pat galimas ir grynai kvantinis
-efektas klaidų sklidime dėl VI skyriuje minėtos fazės atatrankos. Jeigu,
-prieš atliekant $CNOT$ loginius vartus, įvyksta fazės klaida
+efektas klaidų sklidime dėl 6 skyriuje minėtos fazės atatrankos. Jeigu,
+prieš atliekant $cX$ loginius vartus, įvyksta fazės klaida
 adresatiniame kubite, tada ši klaida perneš fazės klaidą ir į kontrolinį
 kubitą. Antrasis klaidų sklidimo šaltinis yra kubitų būsenų matavimo
 procesas, kurio rezultatas naudojamas kaip sąlyga pritaikyti loginius
