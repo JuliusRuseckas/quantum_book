@@ -43,7 +43,7 @@ iškrenta iš lygybės ir randame
 $\langle u|u\rangle = |a|^2 + |b|^2$.
 
 Pirmąjį postulatą galima matematiškai tiksliau perfrazuoti sakant, kad
-kvantinės būsenos yra nusakomos **spinduliu** (angl. *ray*). Spindulys
+kvantinės būsenos yra nusakomos spinduliu. Spindulys
 čia reiškia klasę vektorių, kurie vienas nuo kito skiriasi tik globalia
 faze $\mathrm{e}^{\mathrm{i}\theta}$. Kadangi globali fazė nėra stebima matavimuose, visos
 kvantinės būsenos, besiskiriančios tik fazės nariu, yra tarpusavyje
@@ -99,12 +99,12 @@ būsenų kitimų. Toliau pateikiame antrojo postulato versiją, naudojančią
 Šriodingerio lygtį (angl. *Schrodinger equation*), kuri yra labiau
 tinkama apibūdinti fizikinėms sąveikoms.
 
-**II(b) postulatas --** Uždaros kvantinės sistemos būsena laike yra
+***II(b) postulatas --*** *Uždaros kvantinės sistemos būsena laike yra
 nusakoma Šriodingerio lygtimi:
 \begin{equation}
 \mathrm{i}\hbar\frac{d|\psi(t)\rangle}{dt} = H|\psi(t)\rangle\,.
 (\#eq:schroedingerio-lygtis)
-\end{equation}
+\end{equation}*
 Šriodingerio diferencialinėje lygtyje $\hbar$ yra Planko konstanta,
 $\mathrm{i}$ -- menamasis vienetas, $H$ -- uždaros sistemos hamiltonianas (deja,
 čia vartojame tą pačia raidę, kaip ir Hadamardo transformacijai).
