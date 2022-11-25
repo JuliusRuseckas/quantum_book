@@ -897,51 +897,59 @@ Paskutiniai du kubitai yra minėtos ancilos, atskirtos tenzorių daugybos
 loginius $ccX$ vartus. Pirmas $ccX_1$ naudoja įvesties registro
 kubitus $k_1$ ir $k_2$ kaip kontrolinius, o adresatinis yra pirmasis
 ancila kubitas $a_1$. Iš to randame:
-\begin{multline}
-ccX_1|\psi\rangle =
+\begin{equation}
+\begin{split}
+ccX_1|\psi\rangle = &
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle + |011\rangle +
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
-+ \frac{1}{\sqrt{8}}\big(|110\rangle + |111\rangle\big)\otimes|10\rangle\,.
+& + \frac{1}{\sqrt{8}}\big(|110\rangle + |111\rangle\big)\otimes|10\rangle\,.
+\end{split}
 (\#eq:tofoli-3-superpozicija)
-\end{multline}
+\end{equation}
 Šie vartai parenka būsenas $|11k_3\rangle$ ir jas
 supina su pirmu ancila kubitu, kuriam būsena pakeičiama į
 $|1\rangle$. Tolesnis $ccX_2$ naudoja įvesties
 registro kubitą $k_3$ ir ancilą $a_1$ kaip kontrolinį kubitą, o
 adresatinis yra antrasis ancila kubitas $a_2$:
-\begin{multline}
-(ccX_2)(ccX_1)|\psi\rangle =
+\begin{equation}
+\begin{split}
+(ccX_2)(ccX_1)|\psi\rangle = &
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle + |011\rangle +
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
-+ \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
+& + \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
 + \frac{1}{\sqrt{8}}|111\rangle\otimes|11\rangle\,.
+\end{split}
 (\#eq:2-tofoli-3-superpozicija)
-\end{multline}
+\end{equation}
 Šie vartai supina $|111\rangle$ būseną su ancilų
 $|11\rangle$ būsena. Trečiame žingsnyje pritaikome
 kontroliuojamuosius fazės vartus $cP(\theta)$, kuriuose kontrolinis
 kubitas yra antra ancila $a_2$, o adresatinis šiuo atveju gali būti
 bet kuris iš trijų įvesties kubitų, sakysime, $k_3$:
-\begin{multline}
-cP(\theta)(ccX_2)(ccX_1)|\psi\rangle =
+\begin{equation}
+\begin{split}
+cP(\theta)(ccX_2)(ccX_1)|\psi\rangle = &
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle + |011\rangle +
 |100\rangle + |101\rangle\big)\otimes|00\rangle \\
-+ \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
+& + \frac{1}{\sqrt{8}}|110\rangle\otimes|10\rangle
 + \frac{\mathrm{e}^{\mathrm{i}\theta}}{\sqrt{8}}|111\rangle\otimes|11\rangle\,.
+\end{split}
 (\#eq:faze-tofoli-tofoli-superpozicija)
-\end{multline}
+\end{equation}
 Šie trys loginiai žingsniai efektyviai pritaikė fazę $\mathrm{e}^{\mathrm{i}\theta}$
 būsenai $|111\rangle$. Tolesniuose dviejuose žingsniuose
 pritaikome Tofoli vartus atbuline tvarka siekdami atstatyti abiejų
 ancila kubitų būsenas atgal į $|00\rangle$, taip
 paruošiant jas potencialiai tolimesniems skaičiavimams:
-\begin{multline}
-(ccX_1)(ccX_2)(cP(\theta))(ccX_2)(ccX_1)|\psi\rangle =
+\begin{equation}
+\begin{split}
+(ccX_1)(ccX_2)(cP(\theta))(ccX_2) & (ccX_1)|\psi\rangle = 
 \frac{1}{\sqrt{8}}\big(|000\rangle + |001\rangle + |010\rangle \\
-+ |011\rangle + |100\rangle + |101\rangle + |110\rangle +
+& + |011\rangle + |100\rangle + |101\rangle + |110\rangle +
 \mathrm{e}^{\mathrm{i}\theta}|111\rangle\big)\otimes|00\rangle\,.
+\end{split}
 (\#eq:tofoli-atbuline-tvarka)
-\end{multline}
+\end{equation}
 Bet kokia ­$k$ kontroliuojamų sąlyginių loginių vartų $c^{k}U$
 dekompozicija, pagrįsta Tofoli vartais $ccX$, paremta iliustruotu
 kaskadų principu. Šiam metodui reikalingi $2(k - 1)$ skaičius Tofoli

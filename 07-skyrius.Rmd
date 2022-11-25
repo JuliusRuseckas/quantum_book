@@ -150,13 +150,15 @@ apribrėžimą:
 Keletas dvejetainių trupmenų pavyzdžių: 0.1=1/2, 0.001=1/8, 0.011=3/8.
 Viską sudėjus kartu, $U_{\mathrm{FT}}|x\rangle$ dvejetaine forma
 yra:
-\begin{multline}
-U_{\mathrm{FT}}|k_1 k_2\cdots k_n\rangle =\big(|0\rangle + \mathrm{e}^{\mathrm{i}2\pi 0.k_{n}}|1\rangle\big)
+\begin{equation}
+\begin{split}
+U_{\mathrm{FT}}|k_1 k_2\cdots k_n\rangle = & \big(|0\rangle + \mathrm{e}^{\mathrm{i}2\pi 0.k_{n}}|1\rangle\big)
 \otimes\big(|0\rangle + \mathrm{e}^{\mathrm{i}2\pi 0.k_{n - 1}k_n}|1\rangle\big)
 \otimes\cdots \\
-\otimes\big(|0\rangle + \mathrm{e}^{\mathrm{i}2\pi 0.k_1 k_2 \cdots k_n}|1\rangle\big)\,.
+ & \otimes\big(|0\rangle + \mathrm{e}^{\mathrm{i}2\pi 0.k_1 k_2 \cdots k_n}|1\rangle\big)\,.
+\end{split}
 (\#eq:u-ft-dvejetaine-forma)
-\end{multline}
+\end{equation}
 
 ## Furjė transformacijos realizavimas kvantinėje grandinėje
 
@@ -273,17 +275,19 @@ Atliekame Furjė transformaciją įvesties registrui:
 narius ir laikant $y$ fiksuotus, nes norime išnaudoti supaprastinimą,
 atsirandantį dėl $f(x)$ periodiškumo. Vadindami šioje stadijoje bendrą
 būseną $|\psi_2\rangle$ randame:
-\begin{multline}
-|\psi_2\rangle =\frac{1}{8}\sum_{y = 0}^7 |y\rangle\otimes\big(|f(0)\rangle
+\begin{equation}
+\begin{split}
+|\psi_2\rangle = & \frac{1}{8}\sum_{y = 0}^7 |y\rangle\otimes\big(|f(0)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y}{4}}|f(1)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y}{2}}|f(2)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y3}{4}}|f(3)\rangle \\
-+ \mathrm{e}^{\mathrm{i}\pi y}|f(4)\rangle
+& + \mathrm{e}^{\mathrm{i}\pi y}|f(4)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y5}{4}}|f(5)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y3}{2}}|f(6)\rangle
 + \mathrm{e}^{\frac{\mathrm{i}\pi y7}{4}}|f(7)\rangle\big)\,.
+\end{split}
 (\#eq:psi-2-periodiskumas)
-\end{multline}
+\end{equation}
 Toliau panaudojame $f(x)$ periodiškumą identifikuodami anksčiau minėtas
 vertes $y'$ ir $y''$ ir sugrupuojame šiuos narius:
 \begin{equation}

@@ -212,13 +212,15 @@ $|\psi\rangle$ kubitui Hadamardo transformaciją:
 \end{equation}
 Nedarant jokių kitų transformacijų, šią būseną galima pergrupuoti
 atskiriant Agnės ir Beno kubitus tenzorių ženklu:
-\begin{multline}
-|\Psi''\rangle = \frac{1}{2}\Big\lbrack |00\rangle\otimes\big(a|0\rangle + b|1\rangle\big)
+\begin{equation}
+\begin{split}
+|\Psi''\rangle = & \frac{1}{2}\Big\lbrack |00\rangle\otimes\big(a|0\rangle + b|1\rangle\big)
 + |10\rangle\otimes\big(a|0\rangle - b|1\rangle\big) \\
-+ |01\rangle\otimes\big(b|0\rangle + a|1\rangle\big)
+& + |01\rangle\otimes\big(b|0\rangle + a|1\rangle\big)
 + |11\rangle\otimes\big( -b|0\rangle + a|1\rangle\big)\Big\rbrack\,.
+\end{split}
 (\#eq:busena-pergrupavimas)
-\end{multline}
+\end{equation}
 Tai leidžia lengviau pamatyti, kad Agnei atlikus dvi minėtas
 transformacijas Beno kubito $k_3$ būsena šioje trijų kubitų
 superpozicijoje jau primena $|\psi\rangle$. Toliau Agnė
@@ -359,17 +361,19 @@ $k_2$:
 \end{equation}
 Norėdami lengviau pamatyti rezultatą, sugrupuosime narius
 $|\Psi''\rangle$ skliausteliuose:
-\begin{multline}
-|\Psi''\rangle = \frac{1}{\sqrt{8}}\Big\lbrack\big(|0\rangle\otimes |00\rangle\otimes |0\rangle
+\begin{equation}
+\begin{split}
+|\Psi''\rangle = & \frac{1}{\sqrt{8}}\Big\lbrack\big(|0\rangle\otimes |00\rangle\otimes |0\rangle
 + |1\rangle\otimes |00\rangle\otimes |1\rangle\big) \\
-+ \big(|0\rangle\otimes |01\rangle\otimes |1\rangle
+& + \big(|0\rangle\otimes |01\rangle\otimes |1\rangle
 + |1\rangle\otimes |01\rangle\otimes |0\rangle\big) \\
-+ \big(|0\rangle\otimes |10\rangle\otimes |0\rangle
+& + \big(|0\rangle\otimes |10\rangle\otimes |0\rangle
 - |1\rangle\otimes |10\rangle\otimes |1\rangle\big) \\
-+ \big(|0\rangle\otimes |11\rangle\otimes |1\rangle
+& + \big(|0\rangle\otimes |11\rangle\otimes |1\rangle
 - |1\rangle\otimes |11\rangle\otimes |0\rangle\big)\Big\rbrack\,.
+\end{split}
 (\#eq:busena-sugrupavimas-4)
-\end{multline}
+\end{equation}
 Kiekvienoje šios superpozicijos būsenoje 4 kubitai yra užrašyti šia
 forma
 $|k_1 \rangle\otimes |k_2 k_3 \rangle\otimes |k_4 \rangle$.
