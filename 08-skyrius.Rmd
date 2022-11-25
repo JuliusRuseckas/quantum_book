@@ -16,7 +16,7 @@ toleruotinus paklaidos dydžius, kuriuos dažnai galima tiksliai
 įvertinti. Modeliuojamos sistemos dydis ir jos dinamikos tikslumas bus
 nulemti prieinamų skaičiavimo išteklių.
 
-Pavienių ir sudėtinių kvantinių sistemų dinamiką apibūdina III skyriuje
+Pavienių ir sudėtinių kvantinių sistemų dinamiką apibūdina 3 skyriuje
 minėta Šriodingerio lygtis:
 \begin{equation}
 \mathrm{i}\hbar\frac{d|\psi(t)\rangle}{dt} = H|\psi(t)\rangle\,.
@@ -152,7 +152,7 @@ realizuoti 2 kubitų loginius vartus, nusakytus operatoriumi
 $\mathrm{e}^{\frac{-\mathrm{i}H_1 t}{\hbar}}
 = \mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$. Čia
 $\theta = \frac{j\Delta t}{\hbar}$, o $Z_k\otimes Z_l$
-veikia $k$ ir $l$­kubitus kiekviename žingsnyje. Dėl paprastumo
+veikia $k$ ir $l$ kubitus kiekviename žingsnyje. Dėl paprastumo
 praleidžiame identitetus, $\otimes I$, kurie veikia likusius kubitus.
 Tam galime panaudoti \@ref(matematikos-skyrius) skyriuje
 pateiktą tenzorinės operatorių
@@ -175,13 +175,11 @@ $\lambda_k\lambda_l \in (1, -1)$. Atkreipiame dėmesį, kad lyginį
 lyginumą turinčioms 2 kubitų būsenoms ($|00\rangle$ ir
 $|11\rangle$) yra pritaikoma fazė $\mathrm{e}^{\mathrm{i}\theta}$, o štai
 nelyginio lyginumo būsenos ($|01\rangle$ ir
-$|10\rangle$) įgauna $\mathrm{e}^{-\mathrm{i}\theta}$.
-
-\@ref(fig:z-times-z-grandine) pav. parodyta grandinė,
+$|10\rangle$) įgauna $\mathrm{e}^{-\mathrm{i}\theta}$. \@ref(fig:z-times-z-grandine) pav. parodyta grandinė,
 realizuojanti $\mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$ operatorių kubitams
 $k_1$ ir $k_2$ pasitelkiant ancilą $a_1$.
 
-```{r z-times-z-grandine, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti $\\mathrm{e}^{\\mathrm{i}\\theta Z_1\\otimes Z_2}$ operatorių tarp dviejų kubitų. Ancila kubitui pritaikomi $R_z$ posūkio loginiai vartai", out.width='52%', fig.align='center'}
+```{r z-times-z-grandine, echo=FALSE, fig.cap="Loginė grandinė, realizuojanti $\\mathrm{e}^{\\mathrm{i}\\theta Z_1\\otimes Z_2}$ operatorių. Ancila kubitui pritaikomi $R_z$ posūkio loginiai vartai", out.width='52%', fig.align='center'}
 knitr::include_graphics("media/image8_1.svg")
 ```
 
@@ -189,16 +187,15 @@ Pirma kvantinės grandinės užduotis yra atskirti būsenų lyginumą. Tam
 iškviečiami dveji $cX$ vartai, supinantys ancilą kubitą $a_1$ su $k_1$
 ir $k_2$ kubitais. Norėdami tai aiškiau pamatyti, imkime, kad $k_1$ ir
 $k_2$ kubitai yra lygioje 2 kubitų skaičiuojamųjų bazinių vektorių
-superpozicijoje. Tad bendra pradinė būsena forma
+superpozicijoje. Tad bendra pradinė būsena yra
 $|\psi\rangle = |k_1 k_2\rangle\otimes|a_1\rangle$:
 \begin{equation}
 |\psi\rangle = \frac{1}{2}\big(|00\rangle + |10\rangle + |01\rangle + |11\rangle\big)\otimes|0\rangle\,.
 (\#eq:bendra-pradine-busena-ising)
 \end{equation}
-Pritaikius pirmus dvejus $cX$ vartus su ancila „rezultatiniu" kubitu
-$|a_1\rangle$ randame:
+Pritaikius pirmus dvejus $cX$ vartus su ancila adresatiniu kubitu, skaičiumi nurodant kontroliuojantį $k$ kubitą, randame:
 \begin{equation}
-cXcX|\psi\rangle = \frac{1}{2}\big(|00\rangle + |11\rangle\big)\otimes|0\rangle
+cX_{2}cX_{1}|\psi\rangle = \frac{1}{2}\big(|00\rangle + |11\rangle\big)\otimes|0\rangle
 + \frac{1}{2}\big(|10\rangle + |01\rangle\big)\otimes|1\rangle\,.
 (\#eq:busena-po-dvieju-cx)
 \end{equation}
@@ -207,13 +204,13 @@ su lyginio lyginumo $k_1$ ir $k_2$ kubitų būsenomis, o
 $|1\rangle$ yra supinama su nelyginėmis. Atskyrę
 lyginumo būsenas, kitame žingsnyje pritaikome grandinėje parodytus
 $R_z(\theta) = \mathrm{e}^{\mathrm{i}\theta Z}$ posūkio aplink $z$ ašį loginius vartus
-ancila kubitui. Pagal IV skyriuje apibūdintus posūkio vartus
+ancila kubitui. Pagal 4 skyriuje apibūdintus posūkio vartus
 $R_z(\varphi) = \mathrm{e}^{-\mathrm{i}\varphi Z/2}$, kampas čia yra
 $\theta = -\varphi/2$. Dėl kvantinio supynimo $R_z(\varphi)$
 efektyviai suteikia skirtingas fazes skirtingo lyginumo būsenoms:
 \begin{equation}
 \begin{aligned}
-(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})&cXcX|\psi\rangle \\
+(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})&cX_2cX_1|\psi\rangle \\
 = &\frac{1}{2}\big(|00\rangle + |11\rangle\big)
 \otimes\mathrm{e}^{\mathrm{i}\theta}|0\rangle
 + \frac{1}{2}\big(|10\rangle + |01\rangle\big)
@@ -231,7 +228,7 @@ panaikindami supynimą su $k_1$ ir $k_2$ kubitais. Gauname galutinę
 $\mathrm{e}^{\frac{-\mathrm{i}H_1 t}{\hbar}}
 = \mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$:
 \begin{equation}
-cXcX(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})cXcX|\psi\rangle
+cX_1cX_2(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})cX_2cX_1|\psi\rangle
 = \frac{1}{2}\big(\mathrm{e}^{\mathrm{i}\theta}|00\rangle
 + \mathrm{e}^{-\mathrm{i}\theta}|10\rangle
 + \mathrm{e}^{-\mathrm{i}\theta}|01\rangle
