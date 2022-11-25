@@ -96,7 +96,7 @@ vektoriaus $|\psi(t_0)\rangle$. Kitaip tariant, uždarų
 kvantinių sistemų, kaip ir klasikinių, evoliucija laike yra
 deterministinė. Unitarinėse evoliucijose nėra tikimybėmis nusakomų
 būsenų kitimų. Toliau pateikiame antrojo postulato versiją, naudojančią
-Šriodingerio lygtį (angl. *Schrodinger equation*), kuri yra labiau
+Šriodingerio lygtį (angl. *Schrödinger equation*), kuri yra labiau
 tinkama apibūdinti fizikinėms sąveikoms.
 
 ***II(b) postulatas --*** *Uždaros kvantinės sistemos būsena laike yra
