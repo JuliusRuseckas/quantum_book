@@ -684,14 +684,15 @@ $U \in \mathrm{SU}(2)$ grupei. Pabrėždami šį aspektą toliau pateikiame sąl
 posūkio apie $z$ ašį vartus $cR_z(\theta)$ bei fazės vartus
 $cP(\theta)$ (angl. *controlled phase gate*).
 
-```{r salyginia-2-kubitu-vartai, echo=FALSE, fig.cap="Salyginiai 2 kubitų loginiai vartai $cR_z(\\theta)$", out.width='34%', fig.align='center'}
-knitr::include_graphics("media/image4_19.svg")
-```
-
 Vartai $cR_z(\theta)$ pritaiko antram
 kubitui posūkio operatorių $R_z(\theta)$, jeigu pirmojo būsena yra
 $|1\rangle$. Grandinėje, diadų ir matricos formoje
 $cR_{z}(\theta)$ atrodo taip (žr. \@ref(fig:salyginia-2-kubitu-vartai) pav.):
+
+```{r salyginia-2-kubitu-vartai, echo=FALSE, fig.cap="Salyginiai 2 kubitų loginiai vartai $cR_z(\\theta)$", out.width='34%', fig.align='center'}
+knitr::include_graphics("media/image4_19.svg")
+```
+
 \begin{align}
 cR_z(\theta) = & |0\rangle\langle 0|\otimes I
 + |1\rangle\langle 1|\otimes R_z(\theta)\,; (\#eq:salyginiai-z-diadom) \\
