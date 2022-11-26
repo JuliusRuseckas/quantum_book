@@ -836,18 +836,12 @@ $ABC|\psi\rangle = I|\psi\rangle$ ir
 todėl nepakeičia jo būsenos. O štai jeigu kontrolinis kubitas yra
 $|1\rangle$ būsenoje,
 $AXBXC|\psi\rangle = U|\psi\rangle$,
-kaip ir norima.
-
-Taip pat, jeigu sąlyginiuose vartuose $cU$ unitarusis operatorius
+kaip ir norima. Taip pat, jeigu sąlyginiuose vartuose $cU$ unitarusis operatorius
 $U \in \mathrm{U}(2)$, tada
 $(D\otimes I)AXBXC|\psi\rangle = U|\psi\rangle$.
 Papildomi fazės vartai $D$, veikiantys kontrolinį kubitą šios grandinės
 pabaigoje, leidžia teisingai perteikti norimą santykinę 2 kubitų būsenos
 fazę.
-
-```{r ccu-realizavimas, echo=FALSE, fig.cap="3 kubitų sąlyginių loginių vartų $ccU$ realizavimas", out.width='82%', fig.align='center'}
-knitr::include_graphics("media/image4_21.svg")
-```
 
 Loginiuose vartuose gali būti daugiau nei
 vienas kontrolinis kubitas. Ši aukštesnio lygio operacijų abstrakcija
@@ -857,6 +851,7 @@ pat reikia dekompozicijos į elementarius loginius vartus jai realizuoti.
 naudojant elementarius $cX$, 1 kubito loginius vartus $V$ ir
 atvirkštinius $V^{\dagger}$, $V^{\dagger}V = I$. Jie yra parenkami, kad
 tenkintų lygybę $VV = U$.
+
 
 ```{r ccu-realizavimas-tofoli, echo=FALSE, fig.cap="3-kubitų sąlyginių loginių vartų *ccU* realizavimas pasitelkiant Tofoli loginius vartus", out.width='84%', fig.align='center'}
 knitr::include_graphics("media/image4_22.svg")
@@ -869,7 +864,12 @@ grandinėse ir juos pasitelkus galima lengvai išreikšti $k$ skaičiumi
 kubitais kontroliuojamus $c^{k}U$ loginius vartus. \@ref(fig:ccu-realizavimas-tofoli) pav. parodyta
 $ccU$ dekompozicija, naudojanti Tofoli sekas.
 
-Tofoli vartais pagrįstu metodu naudojami papildomi kubitai, vadinami
+
+```{r ccu-realizavimas, echo=FALSE, fig.cap="3 kubitų sąlyginių loginių vartų $ccU$ realizavimas", out.width='82%', fig.align='center'}
+knitr::include_graphics("media/image4_21.svg")
+```
+
+Tofoli vartais pagrįstas metodas naudoja papildomus kubitus, vadinamus
 **ancilomis** (angl. *ancilla qubits*), kurios atlieka juodraščio
 funkciją kvantinėse grandinėse. Ancilos yra inicijuojamos į
 $|a_1 a_2 \rangle = |00\rangle$
@@ -880,9 +880,7 @@ sąlyginius 3 kubitų fazės vartus. Tad pritaikius $ccP(\theta)$ 3-kubitų
 registrui būsena
 $|k_1 k_2 k_3\rangle = |111\rangle$
 įgauna fazę, $\mathrm{e}^{\mathrm{i}\theta}|111\rangle$, o štai visi kiti
-baziniai vektoriai nėra paveikiami.
-
-Sakysime, kad 3 kubitų registras yra pradinėje lygioje visų bazinių
+baziniai vektoriai nėra paveikiami. Sakysime, kad 3 kubitų registras yra pradinėje lygioje visų bazinių
 vektorių superpozicijoje, tad kartu su dviem ancilomis (kubitais) jų
 būsena formoje
 $|k_1 k_2 k_3 \rangle\otimes|a_1 a_2 \rangle$
@@ -924,7 +922,7 @@ adresatinis yra antrasis ancila kubitas $a_2$:
 \end{equation}
 Šie vartai supina $|111\rangle$ būseną su ancilų
 $|11\rangle$ būsena. Trečiame žingsnyje pritaikome
-kontroliuojamuosius fazės vartus $cP(\theta)$, kuriuose kontrolinis
+sąlyginius fazės vartus $cP(\theta)$, kuriuose kontrolinis
 kubitas yra antra ancila $a_2$, o adresatinis šiuo atveju gali būti
 bet kuris iš trijų įvesties kubitų, sakysime, $k_3$:
 \begin{equation}
@@ -959,7 +957,7 @@ vartų ir papildomų $k - 1$ ancila kubitų.
 Kvantinių ryšių protokoluose, klaidų
 taisymo ir kituose algoritmuose galima aptikti mišrių
 kvantinių-klasikinių loginių operacijų. \@ref(fig:misri-grandine) pav. parodytas grandinės
-pavyzdys, kuriame $cU = cX$ yra kontroliuojami klasikinio registro
+pavyzdys, kuriame $cX$ yra kontroliuojami klasikinio registro $c$
 būsenos.
 
 ```{r misri-grandine, echo=FALSE, fig.cap="Mišri kvantinė-klasikinė loginė grandinė, kurioje $k_2$ kubitui pritaikomi Pauli-$X$, kontroliuojami klasikiniu registru", out.width='48%', fig.align='center'}
