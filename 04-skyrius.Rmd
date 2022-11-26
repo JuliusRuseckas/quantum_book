@@ -850,23 +850,22 @@ pat reikia dekompozicijos į elementarius loginius vartus jai realizuoti.
 \@ref(fig:ccu-realizavimas) pav. pateikti 3 kubitų bendro tipo $ccU$ ir jų dekompozicija
 naudojant elementarius $cX$, 1 kubito loginius vartus $V$ ir
 atvirkštinius $V^{\dagger}$, $V^{\dagger}V = I$. Jie yra parenkami, kad
-tenkintų lygybę $VV = U$.
+tenkintų lygybę $VV = U$. Pavyzdžiui, Tofoli loginiai vartai gali
+būti išreikšti šia dekompozicija pasirinkus $V = (1 - \mathrm{i})(I + \mathrm{i}X)/2$, nes
+$VV = X$. 
+
+```{r ccu-realizavimas, echo=FALSE, fig.cap="3 kubitų sąlyginių loginių vartų $ccU$ realizavimas", out.width='82%', fig.align='center'}
+knitr::include_graphics("media/image4_21.svg")
+```
+
+Tofoli loginiai vartai $ccX$ yra plačiai naudojami kvantinėse
+grandinėse ir juos pasitelkus galima lengvai išreikšti $k$ skaičiumi
+kubitais kontroliuojamus loginius vartus $c^{k}U$. Iliustracijai, \@ref(fig:ccu-realizavimas-tofoli) pav. parodyta
+$ccU$ dekompozicija, naudojanti Tofoli sekas. Šį metodą panagrinėsemi detaliau .
 
 
 ```{r ccu-realizavimas-tofoli, echo=FALSE, fig.cap="3-kubitų sąlyginių loginių vartų *ccU* realizavimas pasitelkiant Tofoli loginius vartus", out.width='84%', fig.align='center'}
 knitr::include_graphics("media/image4_22.svg")
-```
-
-Pavyzdžiui, Tofoli loginiai vartai gali
-būti išreikšti šia dekompozicija pasirinkus $V = (1 - \mathrm{i})(I + \mathrm{i}X)/2$, nes
-$VV = X$. Tofoli loginiai vartai $ccX$ yra plačiai naudojami kvantinėse
-grandinėse ir juos pasitelkus galima lengvai išreikšti $k$ skaičiumi
-kubitais kontroliuojamus $c^{k}U$ loginius vartus. \@ref(fig:ccu-realizavimas-tofoli) pav. parodyta
-$ccU$ dekompozicija, naudojanti Tofoli sekas.
-
-
-```{r ccu-realizavimas, echo=FALSE, fig.cap="3 kubitų sąlyginių loginių vartų $ccU$ realizavimas", out.width='82%', fig.align='center'}
-knitr::include_graphics("media/image4_21.svg")
 ```
 
 Tofoli vartais pagrįstas metodas naudoja papildomus kubitus, vadinamus
@@ -876,7 +875,7 @@ $|a_1 a_2 \rangle = |00\rangle$
 būsenas, o atlikus norimą operaciją vėl grąžinamos į pradines
 $|00\rangle$. Imkime konkretų pavyzdį, kuriame
 $ccU = ccP(\theta)$ nusako minėtus, tačiau dvigubai kontroliuojamus,
-sąlyginius 3 kubitų fazės vartus. Tad pritaikius $ccP(\theta)$ 3-kubitų
+sąlyginius 3 kubitų fazės vartus. Pritaikius $ccP(\theta)$ 3-kubitų
 registrui būsena
 $|k_1 k_2 k_3\rangle = |111\rangle$
 įgauna fazę, $\mathrm{e}^{\mathrm{i}\theta}|111\rangle$, o štai visi kiti
@@ -949,7 +948,7 @@ paruošiant jas potencialiai tolimesniems skaičiavimams:
 \end{split}
 (\#eq:tofoli-atbuline-tvarka)
 \end{equation}
-Bet kokia ­$k$ kontroliuojamų sąlyginių loginių vartų $c^{k}U$
+Bet kokia $k$ kontroliuojamų sąlyginių loginių vartų $c^{k}U$
 dekompozicija, pagrįsta Tofoli vartais $ccX$, paremta iliustruotu
 kaskadų principu. Šiam metodui reikalingi $2(k - 1)$ skaičius Tofoli
 vartų ir papildomų $k - 1$ ancila kubitų.
