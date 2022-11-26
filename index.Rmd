@@ -29,7 +29,7 @@ Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo *Covid*
 pandemijos metu. Dėl laboratorijų uždarymo ir sulėtėjusių mokslinių tyrimų
 atsirado galimybė daugiau laiko skirti šiai sparčiai besivystančiai sričiai.
 Knyga prasidėjo veikiau kaip autorių sukauptų teorinių žinių susisteminimas į
-vieną dokumentą asmeniniams tolimesniems darbams. Perorientuoti dokumentą į
+vieną dokumentą asmeniniams darbams. Perorientuoti dokumentą į
 platesnei auditorijai skirtą knygą buvo nutarta atsižvelgiant į tai, kad jos
 rašymo metu dar neegzistavo nė viena lietuviška knyga apie kvantinę
 kompiuteriją. Tikimės, kad knyga padės geriau susipažinti su šia technologija
@@ -48,7 +48,7 @@ moksliniais straipsniais apie kvantinę kompiuteriją. Tarp naudotų knygų yra
 and Quantum Information“ [@Nielsen2000], Nakahara ir Ohmi „Quantum Computing –
 From Linear Algebra to Physical Realizations“ [@Nakahara2008], ir kitos.
 Išsamus literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos
-taip pat naudota iš Tado Paulausko doktorantūros metu klausyto kurso „Quantum
+taip pat naudota iš T.P. doktorantūros metu klausyto kurso „Quantum
 computing“, kurį dėstė profesorius Friedland Shmuel, užrašų. 
 
 Išleisdami atvirai prieinamą internetinę knygą norime paskatinti kitus tyrėjus
@@ -86,8 +86,7 @@ poreikiui.
 
 ## Padėka {-}
 
-Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą bei palaikymą
-rengiant šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei,
+Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą rengiant šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei,
 Karoliui Jankauskui, Artūrui Pupšiui už vertingus patarimus.
 
 Iliustracijos – Jovita Jankauskienė
