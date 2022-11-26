@@ -1,7 +1,8 @@
 # Įvadas į kvantinę kompiuteriją
 
-Išleisdami atvirai prieinamą internetinę knygą norime paskatinti kitus tyrėjus prisijungti ją
-gerinant ir papildant naujais skyriais.
+Norite prisidėti prie knygos turinio kūrimo, redagavimo ir apipavidalinimo? Visada ieškome gabių žmonių, kurie papildytų knygos kūrėjų gretas!
+
+Dėl turinio pasiūlymų ir kitais su knyga susijusiais klausimais rašykite į el. paštą info@kvantinekompiuterija.lt. 
 
 ![](media/cc-by-nc-sa.svg)
 
