@@ -1404,7 +1404,7 @@ indeksavimo sukeitimas (angl. *permutation*) ir atsitiktinės 2 kubitų
 unitariosios transformacijos, atliekamos kiekvienai porai vienas šalia
 kito esančių (ar atsiradusių po sukeitimo) kubitų. Kubitų indeksavimo
 sukeitimas kvantinėje grandinėje bendrai žymimas raide $\pi$ ir
-pasitelkia SWAP loginius vartus. O štai kiekviena iš 2 kubitų operacijų
+pasitelkia $SWAP$ loginius vartus. O štai kiekviena iš 2 kubitų operacijų
 yra parenkama **Haar-atsitiktinai** (angl. *Haar random*) iš $(4 \times 4)$
 matricų, nusakančių bendro tipo unitariąsias 2 kubitų transformacijas.
 Šių transformacijų asortimentas yra formaliai vadinamas **SU(4) grupe**
