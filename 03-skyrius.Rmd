@@ -974,12 +974,12 @@ pavyzdžiui, ši:
 (\#eq:supinta-busena-6)
 \end{equation}
 Pirmas fizinis kubitas paliekamas Žemėje, o antras nusiunčiamas į tolimą
-planetą pavadinimu $Y$. Nors šių supintųjų kubitų būsena yra grynoji ir
+planetą pavadinimu $W$. Nors šių supintųjų kubitų būsena yra grynoji ir
 tiksliai žinoma, tačiau pavienių kubitų būsenos neapibrėžtos. Atlikus
 matavimą yra lygios tikimybės rasti pirmą kubitą
 $|0\rangle$ arba $|1\rangle$ būsenoje.
 Tačiau pamatavus pirmą kubitą Žemėje ir radus, pavyzdžiui,
-$|1\rangle$ būseną, antro kubito būsena planetoje $Y$
+$|1\rangle$ būseną, antro kubito būsena planetoje $W$
 bus taip pat užtikrintai rasta $|1\rangle$,
 ($|\chi^{+}\rangle \rightarrow |11\rangle$).
 Einšteinas su kolegomis čia įžvelgė potencialų prieštaravimą reliatyvumo
@@ -995,7 +995,7 @@ kad Benas turi dvi identiškas dėžutes ir vienoje iš jų paslepia raudoną
 kamuolį, o kitoje -- mėlyną. Agnė ir Benas žino, kad dėžutėse yra dviejų
 skirtingų spalvų kamuoliai, tačiau tik Benas žino, kuriose jie paslėpti.
 Agnės požiūriu, tikimybė atidarius pasirinktą dėžutę rasti vieną ar kitą
-kamuolį yra 0.5. Tačiau atidariusi vieną dėžutę ji automatiškai žinos,
+kamuolį yra $p=0.5$. Tačiau atidariusi vieną dėžutę ji automatiškai žinos,
 kokios spalvos kamuolys yra kitoje. Šiuo atveju Agnės nežinojimas apie
 išankstinį Beno kamuolių išdėstymą jai suteikė koreliacijos pagrindą,
 panašų į atsirandantį dėl kubitų supynimo.
@@ -1050,7 +1050,7 @@ Arba:
 (\#eq:galutine-busena-po-matavimo-2)
 \end{equation}
 Tai, kokį matavimo būdą pasirinksime pirmam kubitui Žemėje, nulems,
-kokia bus antro kubito būsena planetoje $Y$. Jeigu renkamės Pauli-$Z$
+kokia bus antro kubito būsena planetoje $W$. Jeigu renkamės Pauli-$Z$
 operatoriaus matavimus, tada antro kubito būsenos galimi variantai bus
 $|0\rangle$ arba $|1\rangle$, o jeigu
 renkamės Pauli-$X$, jie bus $|0_x \rangle$ arba
@@ -1076,9 +1076,9 @@ paradoksas neprieštarauja reliatyvumo teorijai, nes neįmanoma nuspėti,
 kokie bus pirmo kubito individualių matavimų rezultatai, žinomos tik
 tikimybės rasti $|0\rangle$ arba
 $|1\rangle$. Todėl nusiųsti informaciją, užkoduotą
-kubitų būsenose, greičiau už šviesos greitį į planetą $Y$ neįmanoma, nes
+kubitų būsenose, greičiau už šviesos greitį į planetą $W$ neįmanoma, nes
 tiesiog negalime suformuluoti žinutės -- jos turinys bus atsitiktinis.
-Tik patikrinę Žemėje ir planetoje $Y$ atliktų rezultatų statistiką
+Tik patikrinę Žemėje ir planetoje $W$ atliktų rezultatų statistiką
 matysime koreliaciją tarp matavimo rezultatų. Na, o norint palyginti
 rezultatus, tektų komunikuoti šviesos greičiu arba lėčiau, jeigu
-keliautume į planetą $Y$.
+keliautume į planetą $W$.
