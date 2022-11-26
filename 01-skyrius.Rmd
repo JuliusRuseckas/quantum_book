@@ -1243,7 +1243,7 @@ pesimistinis įvertinimas -- kvantinės technologijos itin sparčiai
 tobulėja ir tikėtina, kad atsiras sumanesni būdai, kaip sumažinti
 kvantinių skaičiavimų išteklius.
 
-## Dekoherencijos trukmė ir loginių vartų tikslumas
+## Dekoherencijos trukmė ir loginių vartų tikslumas {#dekoherencija-poskyris}
 
 Artimuoju kvantinių kompiuterių raidos laikotarpiu yra svarbiau
 atsižvelgti į skaičiavimų trukmę ir tikslumą ribojančius faktorius.
