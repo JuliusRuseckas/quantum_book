@@ -1,6 +1,6 @@
 # Įvadas į kvantinę kompiuteriją
 
-Norite prisidėti prie knygos turinio kūrimo, redagavimo ir apipavidalinimo? Visada ieškome gabių žmonių, kurie papildytų knygos kūrėjų gretas!
+Norite prisidėti prie knygos turinio kūrimo, redagavimo ar apipavidalinimo? Visada ieškome gabių žmonių ir tyrėjų, kurie papildytų knygos kūrėjų gretas!
 
 Dėl turinio pasiūlymų ir kitais su knyga susijusiais klausimais rašykite į el. paštą info@kvantinekompiuterija.lt. 
 
