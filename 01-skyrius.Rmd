@@ -1151,7 +1151,7 @@ skaitmeninis pavidalas rodo, kad kvantinis kompiuteris yra veikiau
 dualus analoginis--skaitmeninis įrenginys, ir galbūt tiksliausiai --
 tiesiog kvantinis.
 
-```{r kvantinio-skaiciavimo-procesas, echo=FALSE, fig.cap="Kvantinio skaičiavimo procesas", out.width='67%', fig.align='center'}
+```{r kvantinio-skaiciavimo-procesas, echo=FALSE, fig.cap="Kvantinio skaičiavimo procesas", out.width='69%', fig.align='center'}
 knitr::include_graphics("media/image1_5.svg")
 ```
 
