@@ -306,8 +306,7 @@ o $p(1) = |a|^2$.
 Viršuje atliktas matavimas bendrai kubito būsenai, esančiai
 $|0\rangle$ ir $|1\rangle$
 superpozicijoje parodo, kad po matavimo ši superpozicija yra
-sugriaunama. Tai literatūroje dar vadinama **kvantinės būsenos kolapsu**
-(angl. *quantum state collapse*). Po superpozicijos kolapso būsena tampa
+sugriaunama. Tai literatūroje dar vadinama kvantinės būsenos suirimu. Po superpozicijos suirimo būsena tampa
 $|0\rangle$ su tikimybe $|a|^2$, arba
 $|1\rangle$ su tikimybe $|b|^2$. Tai reiškia, kad
 jeigu daug kartų pakartosime šį eksperimentą atlikdami kubito paruošimą
