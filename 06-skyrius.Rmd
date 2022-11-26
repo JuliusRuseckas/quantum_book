@@ -1160,8 +1160,8 @@ daryti prielaidą, kad šios dvi būsenos yra mums pateikiamos po prieš tai
 atlikto skaičiavimo, arba iš trečiosios šalies, pavyzdžiui, atsiųstos
 kvantiniu ryšiu. Tad pradinė faktorizuojama 3 kubitų būsena yra
 $|0\rangle\otimes|\psi\rangle\otimes|\phi\rangle$.
-Be šių skirtumų tarp Hadamardo testo, $cU$ čia yra sąlyginiai SWAP
-(Fredkin) loginiai vartai, $cW$, kontroliuojami ancila kubito.
+Be šių skirtumų tarp Hadamardo testo, $cU$ čia yra sąlyginiai $SWAP$
+($Fredkin$) loginiai vartai, $cW$, kontroliuojami ancila kubito.
 
 ```{r swap-testo-grandine, echo=FALSE, fig.cap="SWAP testo loginė grandinė", out.width='51%', fig.align='center'}
 knitr::include_graphics("media/image6_10.svg")
