@@ -51,8 +51,18 @@ Išsamus literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos
 taip pat naudota iš T.P. doktorantūros metu klausyto kurso „Quantum
 computing“, kurį dėstė profesorius Friedland Shmuel, užrašų. 
 
+### Prisidėti prie knygos {-}
+
 Išleisdami atvirai prieinamą internetinę knygą norime paskatinti kitus tyrėjus
 prisijungti ją gerinant ir papildant naujais skyriais.
+
+Norite prisidėti prie knygos turinio kūrimo, redagavimo ar apipavidalinimo?
+Visada ieškome gabių žmonių, kurie papildytų knygos kūrėjų gretas!
+
+Rašykite mums į el. paštą info@kvantinekompiuterija.lt. 
+
+Visą knygos turinį [bookdown](https://bookdown.org/) formate galite pasiekti
+[GitHub paskyroje](https://github.com/JuliusRuseckas/quantum_book). 
 
 ## Kaip skaityti šią knygą {-}
 
@@ -110,13 +120,6 @@ Baltijos pažangių technologijų institute (BPTI).
 
 
 ## Licencija {-}
-
-Norite prisidėti prie knygos turinio kūrimo, redagavimo ar apipavidalinimo? Visada ieškome gabių žmonių, kurie papildytų knygos kūrėjų gretas!
-
-Rašykite mums į el. paštą info@kvantinekompiuterija.lt. 
-
-Visą knygos turinį bookdown formate galite pasiekti [GitHub paskyroje](https://github.com/JuliusRuseckas/quantum_book). 
-
 
 `r if (knitr::is_latex_output()) '
 ![](media/cc-by-nc-sa.pdf)
