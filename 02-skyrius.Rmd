@@ -254,7 +254,7 @@ lygybę, yra $a = b = c = 0$. Vienas svarbus skirtumas tarp šio bazinio
 vektorių rinkinio ir parodyto anksčiau yra tai, kad ankstesniame
 rinkinyje visi vektoriai tarpusavyje sudaro stačiuosius kampus.
 Kompleksinėje vektorių erdvėje statmenumo konceptas yra vadinamas
-ortogonalumu. Dviejų vektorių ortogonalumą, kaip matysime vėliau, galima
+ortogonalumu (angl. *orthogonality*). Dviejų vektorių ortogonalumą, kaip matysime vėliau, galima
 nustatyti atlikus jų vidinę sandaugą,
 $\langle v_m |v_n \rangle$. Jeigu du
 (nenuliniai) vektoriai yra ortogonalieji, jų vidinė sandauga visada bus
