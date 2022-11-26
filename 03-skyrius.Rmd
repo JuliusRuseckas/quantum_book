@@ -650,17 +650,17 @@ kvantinėse sistemose.
 
 ## Tankio operatorius
 
-Praktikoje kvantinių sistemų pakartotinis būsenų paruošimas nėra itin
-tikslus dėl įrangos netikslumų ar kitų (klasikinių) atsitiktinių
+Praktikoje kvantinių sistemų pakartotinis būsenų paruošimas gali būti ne itin
+tikslus dėl įrangos netikslumų ar klasikinių atsitiktinių
 procesų. Pavyzdžiui, **termioninėje elektronų emisijoje**
 (angl.* thermionic electron emission*) volframo metalas yra pakaitinamas
 iki itin didelės temperatūros, kuri suteikia elektronams pakankamai
-kinetinės energijos, kad šie galėtų pasprukti iš medžiagos. Tačiau nėra
-tiksliai žinoma kiekvieno pasprukusio elektrono galutinė kinetinė
-energija, galime nusakyti tik jų statistinį pasiskirstymą. Šiuo atveju,
+kinetinės energijos, kad šie galėtų pasprukti iš medžiagos. Tačiau neįmanoma iš anksto
+tiksliai nuspėti kiekvieno pasprukusio elektrono galutinę kinetinę
+energiją, galime nusakyti tik jų statistinį pasiskirstymą. Šiuo atveju,
 mūsų informacija apie elektronų energijos būseną yra neišsami; galime
 tik pasakyti, kad su klasikine tikimybe $p_i$ (realusis skaičius,
-$0 \leq p_i \leq 1)$ elektronas bus rastas būsenoje
+$0 \leq p_i \leq 1)$ elektronas $i$ bus rastas būsenoje
 $|\psi_i \rangle$.
 
 Jeigu užtikrintai žinoma, kad kvantinė sistema yra tam tikroje būsenoje
