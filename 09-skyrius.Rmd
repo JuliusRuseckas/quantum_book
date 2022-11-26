@@ -1450,8 +1450,7 @@ tikimybė ją sėkmingai įvykdyti mažės.
 
 Siekdami iliustruoti kubitų tarpusavio jungimo įtaką
 skaičiavimams, \@ref(fig:dvi-kv-procesoriaus-architekturos) pav. pateikiame dvi skirtingas kvantinio procesoriaus kubitų jungčių
-schemas. Pirmoje (\@ref(fig:dvi-kv-procesoriaus-architekturos) pav., a)
-pavaizduota IBM superlaidininkais
+schemas. Pirmoje pavaizduota IBM superlaidininkais
 pagrįstų grupės *Falcon* procesorių architektūra, kurioje kubitų
 išdėstymas paremtas heksagonine simetrija. Toks kubitų išdėstymas yra
 specialiai gamintojų pritaikytas atlikti jų parinktiems klaidų taisymo
@@ -1466,8 +1465,7 @@ neįmanoma. Tam būtina įvykdyti seką *SWAP* loginių operacijų tarp
 tarpinių kubitų, šitaip realizuojant norimą operaciją šiems dviem
 kubitams.
 
-Antroji (\@ref(fig:dvi-kv-procesoriaus-architekturos) pav., b)
-pateikta kvantinio procesoriaus architektūra
+Antroji pateikta kvantinio procesoriaus architektūra
 leidžia 2 kubitų loginius vartus atlikti tiesiogiai tarp bet kurių
 kubitų. Tai vadinamasis **visų su visais" jungimasis**
 (angl. *all-to-all connectivity*). Jonų gardelėmis pagrįsti kvantiniai
