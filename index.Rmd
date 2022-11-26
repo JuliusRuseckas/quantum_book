@@ -106,7 +106,7 @@ fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis –
 kvantinė optika ir labai šaltos atominės dujos. Šios knygos rašymo metu dirba
 Baltijos pažangių technologijų institute (BPTI).
 
-### Prisidėti prie knygos {-}
+## Prisidėti prie knygos {-}
 
 Norite prisidėti prie šios atvirai prieinamos knygos turinio kūrimo, redagavimo ar apipavidalinimo?
 Visada ieškome gabių žmonių ir tyrėjų, kurie papildytų knygos kūrėjų gretas!
