@@ -51,15 +51,6 @@ Išsamus literatūros sąrašas yra pateiktas knygos pabaigoje. Dalis medžiagos
 taip pat naudota iš T.P. doktorantūros metu klausyto kurso „Quantum
 computing“, kurį dėstė profesorius Friedland Shmuel, užrašų. 
 
-### Prisidėti prie knygos {-}
-
-Norite prisidėti prie šios atvirai prieinamos knygos turinio kūrimo, redagavimo ar apipavidalinimo?
-Visada ieškome gabių žmonių ir tyrėjų, kurie papildytų knygos kūrėjų gretas!
-
-Rašykite mums į el. paštą info@kvantinekompiuterija.lt. 
-
-Visą knygos turinį [bookdown](https://bookdown.org/) formate galite pasiekti
-[GitHub paskyroje](https://github.com/JuliusRuseckas/quantum_book). 
 
 ## Kaip skaityti šią knygą {-}
 
@@ -114,6 +105,16 @@ Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės
 fizikos ir astronomijos institute. Pagrindinė mokslinių tyrimų sritis –
 kvantinė optika ir labai šaltos atominės dujos. Šios knygos rašymo metu dirba
 Baltijos pažangių technologijų institute (BPTI).
+
+### Prisidėti prie knygos {-}
+
+Norite prisidėti prie šios atvirai prieinamos knygos turinio kūrimo, redagavimo ar apipavidalinimo?
+Visada ieškome gabių žmonių ir tyrėjų, kurie papildytų knygos kūrėjų gretas!
+
+Rašykite mums į el. paštą info@kvantinekompiuterija.lt. 
+
+Visą knygos turinį [bookdown](https://bookdown.org/) formate galite pasiekti
+[GitHub paskyroje](https://github.com/JuliusRuseckas/quantum_book). 
 
 
 ## Licencija {-}
