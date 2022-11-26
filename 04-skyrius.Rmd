@@ -861,7 +861,7 @@ knitr::include_graphics("media/image4_21.svg")
 Tofoli loginiai vartai $ccX$ yra plačiai naudojami kvantinėse
 grandinėse ir juos pasitelkus galima lengvai išreikšti $k$ skaičiumi
 kubitais kontroliuojamus loginius vartus $c^{k}U$. Iliustracijai, \@ref(fig:ccu-realizavimas-tofoli) pav. parodyta
-$ccU$ dekompozicija, naudojanti Tofoli sekas. Šį metodą panagrinėsemi detaliau .
+$ccU$ dekompozicija, naudojanti Tofoli sekas. Šį metodą panagrinėsime detaliau.
 
 
 ```{r ccu-realizavimas-tofoli, echo=FALSE, fig.cap="3-kubitų sąlyginių loginių vartų *ccU* realizavimas pasitelkiant Tofoli loginius vartus", out.width='84%', fig.align='center'}
