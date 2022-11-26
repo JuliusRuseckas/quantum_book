@@ -112,6 +112,13 @@ Baltijos pažangių technologijų institute (BPTI).
 
 ## Licencija {-}
 
+Norite prisidėti prie knygos turinio kūrimo, redagavimo ir apipavidalinimo? Visada ieškome gabių žmonių, kurie papildytų knygos kūrėjų gretas!
+
+Rašykite mums į el. paštą info@kvantinekompiuterija.lt. 
+
+Visą knygos turinį bookdown formate galite pasiekti [GitHub paskyroje](https://github.com/JuliusRuseckas/quantum_book). 
+
+
 `r if (knitr::is_latex_output()) '
 ![](media/cc-by-nc-sa.pdf)
 ' else '
