@@ -923,7 +923,7 @@ ieškomosios $|d\rangle$ būsenos ir ją amplifikuoti.
 ## Hadamardo ir SWAP testai {#hadamardo-swap-testai}
 
 Šioje dalyje pristatome plačiai žinomus ir algoritmuose aptinkamus
-Hadamardo ir *SWAP* testus (angl. *Hadamard, SWAP tests*). Jie yra
+Hadamardo ir SWAP testus (angl. *Hadamard, SWAP tests*). Jie yra
 naudojami kaip moduliai ir procedūros kvantiniuose algoritmuose,
 leidžiantys apytikriai apskaičiuoti tokių narių reikšmes: unitariojo
 operatoriaus $U$ tikrinių verčių vidurkį
