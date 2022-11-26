@@ -809,10 +809,10 @@ baziniai vektoriai yra:
 \end{align}
 Kubitus sugrupavome į tris blokus ir, siekdami supaprastinti simboliką,
 blokus pervadinome atitinkamai $|+\rangle$ ir
-$|-\rangle$. Grandinė atliekant kodo paruošimą pateikta
+$|-\rangle$. Grandinė atliekanti kodo paruošimą pateikta
 \@ref(fig:grandine-shoro-loginiam-kubitui) pav.
 
-```{r grandine-shoro-loginiam-kubitui, echo=FALSE, fig.cap="Loginė grandinė, paruošianti Šoro 9 kubitų kodo loginį kubitą", out.width='58%', fig.align='center'}
+```{r grandine-shoro-loginiam-kubitui, echo=FALSE, fig.cap="Šoro 9 kubitų kodo loginio kubito paruošimas", out.width='58%', fig.align='center'}
 knitr::include_graphics("media/image9_5.svg")
 ```
 
@@ -993,7 +993,7 @@ Pauli elementų rinkinys (Pauli operatoriai kartu su juos dauginančiais
 skaičiais {$\pm 1$, $\pm \mathrm{i}$}) formuoja grupę operatorių sandaugos
 operacijų atžvilgiu. Pauli grupė pratesiama $n$ kubitų sistemoms
 naudojant jos elementų $n$ tenzorių sandaugą,
-$\mathcal{P} = \mathcal{P}^{\otimes n}$. Galima parodyti, kad visi Pauli grupės
+$\mathcal{P}^{\otimes n}$. Galima parodyti, kad visi Pauli grupės
 elementai yra tarpusavyje arba komutatyvūs, arba antikomutatyvūs.
 Primename, kad du komutatyvūs operatoriai $A$ ir $B$ tenkina $AB=BA$, ir
 tai standartiškai užrašoma $\lbrack A,B\rbrack = 0$. Tačiau $A$ ir $B$
@@ -1127,7 +1127,7 @@ jų pilnumo savybę $P(1) + P(-1) = I$, randame:
 P(1) = \frac{I + K}{2}\,,\quad P(-1) = \frac{I - K}{2}\,.
 (\#eq:projekciniu-op-israiska-k)
 \end{equation}
-Neprarandant bendrumo, bet kokią $n$ kubitų būseną
+Bet kokią $n$ kubitų būseną
 $|\psi\rangle$ galima išreikšti jos projekcijų į $\pm 1$
 stabilizatoriaus $K$ poerdvių būsenas superpozicija:
 \begin{equation}
@@ -1137,7 +1137,7 @@ stabilizatoriaus $K$ poerdvių būsenas superpozicija:
 Norint paruošti stabilizatorių rinkinio kodo būseną
 $|0\rangle_L$, užduotis yra atlikti pradinės registro
 būsenos, standartiškai $|0\rangle^{\otimes n}$,
-projekciją į visų $n$ stabilizatorių bendrą +1 poerdvį bei +1 loginio
+projekciją į $h$ skaičiaus stabilizatorių rinkinio bendrą +1 poerdvį bei +1 loginio
 Pauli-$Z$. Jeigu, sakykime, turime tris tarpusavyje komutatyvius
 ermitinius operatorius $K_1, K_2, K_3$, tada projekcinis operatorius
 į jų bendrą +1 poerdvį, nusakytą $P(1)$, bus atitinkamai trijų
@@ -1154,9 +1154,7 @@ randame atlikdami projekciją į bendrą keturių stabilizatorių +1 poerdvį:
 |0\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|00000\rangle\,;(\#eq:5-1-1-kodo-busena-0)\\
 |1\rangle_L = & \frac{1}{4}(I + K_1)\otimes(I + K_2)\otimes(I + K_3)\otimes(I + K_4)|11111\rangle\,.(\#eq:5-1-1-kodo-busena-1)
 \end{align}
-Hadamardo testo kvantinė grandinė (žr. \@ref(hadamard-testas-poskyris) poskyrį) su
-$U \rightarrow K$ gali atlikti norimą projekciją taikant anksčiau minėtą
-principą. Atkreipiame dėmesį, kad galutinė Hadamardo testo būsena
+Hadamardo testo kvantinė grandinė (žr. \@ref(hadamard-testas-poskyris) poskyrį) gali atlikti norimą projekciją. Atkreipiame dėmesį, kad galutinė Hadamardo testo būsena
 $|\chi\rangle$ turi ieškomąją formą:
 \begin{equation}
 \begin{aligned}
@@ -1252,15 +1250,14 @@ būsenos yra periodiškai patikrinamos ir prireikus ištaisomos.
 ```{r klaidoms-atspari-versija, echo=FALSE, fig.cap='(ref:fig97caption)', out.width='88%', fig.align='center'}
 knitr::include_graphics("media/image9_8.svg")
 ```
-(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav.  parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $\overline{H}$; matomi dar du periodiškai atliekami klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $\overline{cX}$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
+(ref:fig97caption) Iliustracijoje \@ref(fig:klaidoms-neatspari-grandine) pav. parodytos loginės grandinės klaidoms atspari versija. Du loginiai kubitai čia koduojami $n$ kubitais, toliau patikrinama, ar koduojant neįvyko klaidų, ir atitinkamai atliekamas taisymas.  Pirmam loginiam kubitui pritaikomi klaidoms atsparūs $\overline{H}$; matomi dar du periodiškai atliekami klaidų nustatymai ir 2 loginių kubitų klaidoms atsparūs $\overline{cX}$; galiausiai atliekami klaidoms atsparūs kubitų būsenos matavimai
 
-Toliau aptarkime, kaip realizuoti klaidoms atsparų būsenų matavimą. Jam
-taikome Hadamardo testu pagrįstą minėtą kodo būsenų paruošimo metodą
-(žr. \@ref(hadamardo-testas-poskyris) poskyrį), kuris čia pritaikomas 3 kubitų būsenos
-$|\psi\rangle$ matavimui. Šiuo metodu galima atlikti
+Siekiant realizuoti klaidoms atsparų būsenų matavimą, vėlgi pasitelkiame Hadamardo testu pagrįstą metodą
+(žr. \@ref(hadamard-testas-poskyris) poskyrį). Šiuo metodu galima atlikti
 loginio Pauli-$\overline{Z}$ ar bet kokio kito $n$ kubitų ermitinio operatoriaus
 $U$, išreiškiamo skersiniais loginiais vartais, projekcinį matavimą į jo
-+1 ir -1 poerdvius. Tai atliekanti kvantinė grandinė
++1 ir -1 poerdvius. Iliustracijai, čia jį pritaikome 3 kubitų būsenos
+$|\psi\rangle$ matavimui. Tai atliekanti kvantinė grandinė
 pateikta \@ref(fig:klaidoms-atsparus-matavimai) pav.
 
 Kiekvienam $|\psi\rangle$ būsenos kubitui yra
@@ -1354,7 +1351,7 @@ $p_{\mathrm{th}} \approx 10^{-4}–10^{-6}$.
 ## Kvantinis tūris 
 
 Dekoherencijos trukmės bei loginių vartų tikslumas įvardija du esminius
-klaidų šaltinius. Tačiau didėjant kubitų skaičiui ir mažėjant šioms
+klaidų šaltinius (žr. \@ref(#dekoherencija-poskyris) poskyrį). Tačiau didėjant kubitų skaičiui ir mažėjant šioms
 klaidoms atsiranda poreikis tiksliau įvertinti skaičiuojamąją galią. Tam
 idealiai norėtume suformuluoti rodiklį ar keletą rodiklių, kurie taikant
 standartinį protokolą leistų palyginti skirtingus įrenginius
