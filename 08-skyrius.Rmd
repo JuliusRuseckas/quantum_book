@@ -991,7 +991,7 @@ kompiuteriu galima pritaikyti hamiltoniano kodavimą, aprašytą
 panaudojant kvantinį fazės nustatymo algoritmą,
 aprašytą \@ref(kvantinis-fazes-nustatymas) poskyryje.
 
-Šiuose alogritmuose reikia apskaičiuoti matricos $\rho$ eksponentę. Šį skaičiavimą paspartina
+Algoritme reikia apskaičiuoti matricos $\rho$ eksponentę. Šį skaičiavimą paspartina
 paprastas matematinis triukas pasitelkiant bet kokią pagalbinę
 tankio matricą $\sigma$. Laiką $t$ padalijame į $s$ dalių, $t =
 s\Delta t$, ir darome prielaidą, kad turime daug būsenos $\rho$ kopijų.
