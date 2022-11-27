@@ -1332,7 +1332,7 @@ atitinkamais koeficientais:
 U = c_I I + c_x X + c_y Y + c_z Z\,.
 (\#eq:2-2-unitarinio-dekompozicija)
 \end{equation}
-Čia $c_I$ yra realusis skaičius, $(c_x$, $c_y$, $c_z$ --
+Čia $c_I$ yra realusis skaičius, $c_x$, $c_y$, $c_z$ --
 kompleksiniai skaičiai, kurie kartu tenkina lygybę:
 \begin{equation}
 |c_I|^2 + |c_x|^2 + |c_y|^2 + |c_z|^2 = 1\,.
