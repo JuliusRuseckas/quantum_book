@@ -457,7 +457,7 @@ rezultatą.
 
 Atvirkštinės $\mathrm{FT}^{\dagger}$ naudojimo reikšmę šiame algoritme galima pamatyti,
 jeigu fazę perteiksime dvejetainės trupmenos forma,
-$\theta_u = 0.k_1 k_2 \cdots k_n$ su $n$­bitų tikslumu. Tada,
+$\theta_u = 0.k_1 k_2 \cdots k_n$ su $n$ bitų tikslumu. Tada,
 pritaikius $H^{\otimes n}$ ir $cU^{2^n}$ sekas, būsena
 $|\psi\rangle$ įgauna formą dvejetainėje sistemoje, kuri
 yra identiškai nusakoma FT atlikimu
@@ -511,18 +511,9 @@ bei reikalauja $O(1/\epsilon)$ sąlyginių loginių vartų $cU$.
 pavardžių trumpinys) leidžia spręsti tiesinių lygčių sistemas ir
 suteikia žymų paspartinimą prieš klasikinius algoritmus: **Gauso
 pašalinimą** (angl. *Gauss elimination*) ir **konjuguotojo gradiento
-metodą** (angl. *conjugate gradient method*). Vadinamasis **matricos
-sąlygos skaičius** (angl. *condition number*) nusako didžiausios ir
-mažiausios matricos $A$ tikrinių verčių santykį,
-$\kappa =\lambda_{\max}/\lambda_{\min}$. Didėjant $\kappa$ tampa
-sunkiau invertuoti matricą $A$, ir todėl mažėja HHL algoritmo
-stabilumas. HHL algoritmo laiko vykdymo trukmė auga kaip
-$O(\kappa^2\log 2^m)$ ir suteikia eksponentinį paspartinimą sistemos
-dydžio atžvilgiu $2^m$ prieš klasikinius algoritmus, kurie pasižymi
-$O(\kappa 2^m)$. HHL algoritmas yra aptinkamas kaip modulis kituose
-kvantiniuose algoritmuose, įskaitant mašininio mokymosi ir kvantinių
-sistemų modeliavimo, savo ruožtu leidžia paspartinti šiuos skaičiavimus.
-Pirmiausiai apžvelgsime šio algoritmo bendruosius veikimo principus ir
+metodą** (angl. *conjugate gradient method*). HHL algoritmas yra aptinkamas kaip modulis kituose
+kvantiniuose algoritmuose, įskaitant mašininio mokymosi. 
+Apžvelgsime šio algoritmo bendruosius veikimo principus ir
 pateiksime jo realizaciją kvantinėje grandinėje.
 
 Tiesinių lygčių sistema yra išreiškiama lygtimi:
@@ -551,7 +542,7 @@ yra ermitinė:
 B =\begin{pmatrix}
 0 & A\\
 A^{\dagger} & 0
-\end{pmatrix}\,.
+\end{pmatrix}\,,
 (\#eq:ermitines-matricos-sukonstravimas)
 \end{equation}
 ir išspręsti susijusią lygčių sistemą:
@@ -601,8 +592,7 @@ Atkreipiame dėmesį, kad būsenų matavimas galiausiai yra
 atliekamas Pauli-$Z$ tikrinių vektorių bazėje
 {$|0\rangle, |1\rangle$}, o ne
 {$|a_k\rangle$}. Tačiau galima matematiškai
-patikrinti, kad šiuo atveju vis tiek bus gautos teisingos amplitudės
-tarp šių bazinių vektorių rinkinių saryšio, jeigu kubitai nėra
+patikrinti, kad šiuo atveju vis tiek bus gautos teisingos amplitudės, jeigu kubitai nėra
 supintieji.
 
 HHL algoritmo pagrindinis tikslas yra perteikti būseną
@@ -612,7 +602,7 @@ $\lambda_k$. Kadangi $A$ yra ermitinis operatorius, jo eksponentė
 nusako unitarinį operatorių, ir todėl galime panaudoti kvantinį fazės
 nustatymo algoritmą rasti norimoms vertėms. **Hamiltoniano kodavimo
 metodas** (angl. *hamiltonian encoding*) leidžia simuliuoti matricą $A$
-unitariuoju operatoriumi ir todėl išreikšti loginiais vartais:
+unitariuoju operatoriumi ir išreikšti loginiais vartais:
 \begin{equation}
 U = \mathrm{e}^{\mathrm{i}At}\,.
 (\#eq:a-kaip-unitarusis-op)
@@ -644,7 +634,7 @@ verčių apibrėžimus ir lyginant su šiuo,
 $\mathrm{e}^{\mathrm{i}2\pi\theta_k} \rightarrow \mathrm{e}^{\mathrm{i}\lambda_k t}$,
 ermitinio operatoriaus $A$ tikrinė vertė susieta su faze
 $\theta_k =\lambda_k t/2\pi$. Tai yra visi reikalingi matematiniai
-įrankiai, naudojami HHL algoritme. Toliau apibūdinkime jo žingsnius,
+įrankiai, naudojami HHL algoritme. Toliau apibūdinsime jo žingsnius,
 parodytus kvantinėje grandinėje \@ref(fig:hhl-grandine) pav.
 
 ```{r hhl-grandine, echo=FALSE, fig.cap="HHL algoritmo realizavimas loginėje grandinėje.  Daroma prielaida, kad būsena $|b\\rangle$ jau yra paruošta antrajame registre. Sąlyginiai $m + 1$ kubitų loginiai vartai $cR_y(\\theta)$ yra kontroliuojami $m$ kubitais ir keičia adresato ancila kubito būseną. Kartu su parodytomis Furjė transformacijomis ir ancila kubito matavimu ši algoritmo dalis yra kartojama, kol ancila kubitas randamas $|1\\rangle$ būsenoje", out.width='80%', fig.align='center'}
@@ -733,4 +723,14 @@ sprendinių erdvėje. Pasitelkdami Hadamardo testą (žr. 6.7 poskyrį) ar
 kitą panašų metodą, galime apskaičiuoti sprendinio
 funkciją $f(x) =\langle x|M|x\rangle$,
 realizuojant ją atitinkamai suformuluotu kvantiniu operatoriumi $M$.
+
+Vadinamasis **matricos
+sąlygos skaičius** (angl. *condition number*) nusako didžiausios ir
+mažiausios matricos $A$ tikrinių verčių santykį,
+$\kappa =\lambda_{\max}/\lambda_{\min}$. Didėjant $\kappa$ tampa
+sunkiau invertuoti matricą $A$ ir mažėja HHL algoritmo
+stabilumas. HHL algoritmo laiko vykdymo trukmė auga kaip
+$O(\kappa^2\log 2^m)$ ir suteikia eksponentinį paspartinimą sistemos
+dydžio $2^m$ atžvilgiu prieš klasikinius algoritmus, kurie pasižymi
+$O(\kappa 2^m)$. 
 
