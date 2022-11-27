@@ -609,15 +609,18 @@ U = \mathrm{e}^{\mathrm{i}At}\,.
 \end{equation}
 Kodavimo pavadinime žodis „hamiltonianas" atsiranda dėl to, kad $A$ yra
 ermitinis operatorius ir todėl iš principo nusako tam tikros kvantinės
-sistemos energijos lygius. Tad iš $A$ suformuotas unitariusis
+sistemos energijos lygius. Tad iš $A$ suformuotas unitarusis
 operatorius $U$ nusako šios sistemos laiko evoliuciją
 (žr. \@ref(kvantines-mechanikos-pagrindai) skyrių),
-\@ref(eq:a-kaip-unitarusis-op) lygybėje matome laiko kintamąjį $t$. Ermitinio operatoriaus $A$
+\@ref(eq:a-kaip-unitarusis-op) lygybėje matome laiko kintamąjį $t$. Pavyzdžiui, mašininio
+mokymosi algoritmuose operatorių realizuojanti matrica $A$ gali nusakyti
+mokymosi duomenis, o hamiltoniano kodavimas suteikia vieną būdą duomenis
+pateikti kvantiniam kompiuteriui. Ermitinio operatoriaus $A$
 matematinė išraiška nusakys, kaip galima realizuoti eksponentę
 $\mathrm{e}^{\mathrm{i}At}$. Tai gali būti itin paprasta diagonalioji matrica, kurią
 galima išreikšti be aproksimacijų, arba gali prireikti kitų metodų.
 Vieną bendrojo tipo aproksimacijos metodą, vadinamą „troterizacija",
-pristatome \@ref(sistemu-modeliavimas-ir-qml) skyriuje.
+pristatome \@ref(sistemu-modeliavimas-ir-qml) skyriuje. 
 
 Tęsiant algoritmo apibūdinimą, išreiškus $U$ spektrine dekompozicija:
 \begin{equation}
@@ -719,8 +722,7 @@ Kadangi taikomas amplitudžių kodavimas, atsakymo
 $|x\rangle$ tiesiogiai nuskaityti nepavyks. Vis dėlto
 dažnai yra svarbiau sužinoti ne patį atsakymą, bet jo tam tikras
 savybes, vidutines vertes, momentus, santykinę būsenos orientaciją
-sprendinių erdvėje. Pasitelkdami Hadamardo testą (žr. 6.7 poskyrį) ar
-kitą panašų metodą, galime apskaičiuoti sprendinio
+sprendinių erdvėje. Pasitelkdami Hadamardo testą (\@ref(hadamard-testas-poskyris) poskyrį) galime apskaičiuoti sprendinio
 funkciją $f(x) =\langle x|M|x\rangle$,
 realizuojant ją atitinkamai suformuluotu kvantiniu operatoriumi $M$.
 
