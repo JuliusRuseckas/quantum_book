@@ -84,8 +84,7 @@ poreikiui.
 
 ## Padėka {-}
 
-Autoriai dėkoja Vaidui Pačebutui ir Arūnui Krotkui už paramą rengiant šią knygą, taip pat Audriui Alkauskui, Maženai Mackoit Sinkevičienei,
-Karoliui Jankauskui, Artūrui Pupšiui už vertingus patarimus.
+Autoriai dėkoja Vaidui Pačebutui, Arūnui Krotkui, Audriui Alkauskui, Maženai Mackoit Sinkevičienei ir Artūrui Pupšiui už paramą, teksto skaitymą ir vertingus patarimus rengiant šią knygą.
 
 Iliustracijos – Jovita Jankauskienė
 
