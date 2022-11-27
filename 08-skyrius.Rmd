@@ -26,7 +26,7 @@ minėta Šriodingerio lygtis:
 yra nereikšmingi arba gali būti aproksimuojami efektyviu hamiltonianu
 $H$. Tokio tipo sistemas čia ir aptarsime.
 
-### Aizingo modelis ir hamiltoniano kodavimas {#ising-hamiltonian-coding}
+### Aizingo modelis {#ising-hamiltonian-coding}
 
 Pirmiausia pradėkime nuo teiginio, kad sudėtinės kvantinės sistemos,
 kurių būsenos matematiškai aprašomos identiškai kubitams, natūraliai
@@ -68,16 +68,7 @@ unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
 (\#eq:evoliucija-8)
 \end{equation}
 Čia pradinė būsena $|\psi(0) \rangle$ laiku $t = 0$ yra
-bendrai $n$ kubitų superpozicija. Unitariojo operatoriaus formavimas iš
-ermitinio operatoriaus, šiuo atveju hamiltoniano $H$, kvantinėje
-kompiuterijoje vadinamas **hamiltoniano kodavimu** (angl. *hamiltonian
-encoding*). Mat iš bet kokio ermitinio operatoriaus $A$ galime
-suformuoti unitarųjį operatorių $U$ imdami jo ekponentę
-$\mathrm{e}^{\mathrm{i}At}$, ir šį
-unitarųjį operatorių realizuoti loginiais vartais. Pavyzdžiui, mašininio
-mokymosi algoritmuose operatorių realizuojanti matrica $A$ gali nusakyti
-mokymosi duomenis, o hamiltoniano kodavimas suteikia vieną būdą duomenis
-pateikti kvantiniam kompiuteriui.
+bendrai $n$ kubitų superpozicija. Sekančiame poskyryje matysime vieną universalų metodą, kaip apskaičiuoti operatoriaus $U$ veiksmą.
 
 ### Troterizacija
 
@@ -996,7 +987,7 @@ Kadangi tankio matrica $\rho$ yra ermitinė, operatorius
 $U = \mathrm{e}^{-\mathrm{i}\rho t}$
 yra unitarusis. Tikrinių vektorių nustatymui kvantiniu
 kompiuteriu galima pritaikyti hamiltoniano kodavimą, aprašytą
-\@ref(ising-hamiltonian-coding) skyriuje. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ randamos
+(eq:a-kaip-unitarusis-op) lygtimi. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ randamos
 panaudojant kvantinį fazės nustatymo algoritmą,
 aprašytą \@ref(kvantinis-fazes-nustatymas) poskyryje.
 
@@ -1012,7 +1003,7 @@ Galima pastebėti, kad galioja tokia lygybė:
 \mathrm{e}^{\mathrm{i}\rho\Delta t} + O(\Delta t^2)\,,
 (\#eq:swap-eksponente-pca)
 \end{equation}
-kur $\mathrm{Tr}_P$ yra dalinis pėdsakas per pirmą kintamąjį, o $W$ -- SWAP
-operatorius. SWAP operatoriaus eksponentė gali būti efektyviai realizuota
+kur $\mathrm{Tr}_P$ yra dalinis pėdsakas per pirmą kintamąjį, o $W$ -- $SWAP$
+loginiai vartai. $SWAP$ operatoriaus eksponentė gali būti efektyviai realizuota
 kvantinėse grandinėse, todėl, naudojantis \@ref(eq:swap-eksponente-pca) lygtimi,
 galima efektyviai realizuoti ir tankio matricos eksponentės skaičiavimą.
