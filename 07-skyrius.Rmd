@@ -514,7 +514,7 @@ pašalinimą** (angl. *Gauss elimination*) ir **konjuguotojo gradiento
 metodą** (angl. *conjugate gradient method*). HHL algoritmo laiko vykdymo trukmė auga kaip
 $O(\kappa^2\log 2^m)$ ir suteikia eksponentinį paspartinimą sistemos
 dydžio $2^m$ atžvilgiu prieš klasikinius algoritmus, kurie pasižymi
-$O(\kappa 2^m)$. Čia $\kappa 2^m$ yra **matricos
+$O(\kappa 2^m)$. Čia $\kappa$ yra **matricos
 sąlygos skaičius** (angl. *condition number*), kuris nusako didžiausios ir
 mažiausios matricos $A$ tikrinių verčių santykį,
 $\kappa =\lambda_{\max}/\lambda_{\min}$. Algoritmo stabilumas mažėja, kai $\lambda_{\min} \rightarrow 0$. Apžvelgsime HHL algoritmo bendruosius veikimo principus ir pateiksime jo realizaciją kvantinėje grandinėje.
