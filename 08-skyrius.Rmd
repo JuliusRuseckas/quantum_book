@@ -987,7 +987,7 @@ Kadangi tankio matrica $\rho$ yra ermitinė, operatorius
 $U = \mathrm{e}^{-\mathrm{i}\rho t}$
 yra unitarusis. Tikrinių vektorių nustatymui kvantiniu
 kompiuteriu galima pritaikyti hamiltoniano kodavimą, aprašytą
-(eq:a-kaip-unitarusis-op) lygtimi. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ randamos
+\@ref(eq:a-kaip-unitarusis-op) lygtimi. Operatoriaus $U$ tikrines vertes $\mathrm{e}^{\mathrm{i}\lambda_k t}$ randamos
 panaudojant kvantinį fazės nustatymo algoritmą,
 aprašytą \@ref(kvantinis-fazes-nustatymas) poskyryje.
 
