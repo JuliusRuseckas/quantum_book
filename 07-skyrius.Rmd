@@ -511,10 +511,13 @@ bei reikalauja $O(1/\epsilon)$ sąlyginių loginių vartų $cU$.
 pavardžių trumpinys) leidžia spręsti tiesinių lygčių sistemas ir
 suteikia žymų paspartinimą prieš klasikinius algoritmus: **Gauso
 pašalinimą** (angl. *Gauss elimination*) ir **konjuguotojo gradiento
-metodą** (angl. *conjugate gradient method*). HHL algoritmas yra aptinkamas kaip modulis kituose
-kvantiniuose algoritmuose, įskaitant mašininio mokymosi. 
-Apžvelgsime šio algoritmo bendruosius veikimo principus ir
-pateiksime jo realizaciją kvantinėje grandinėje.
+metodą** (angl. *conjugate gradient method*). HHL algoritmo laiko vykdymo trukmė auga kaip
+$O(\kappa^2\log 2^m)$ ir suteikia eksponentinį paspartinimą sistemos
+dydžio $2^m$ atžvilgiu prieš klasikinius algoritmus, kurie pasižymi
+$O(\kappa 2^m)$. Čia $\kappa 2^m$ yra **matricos
+sąlygos skaičius** (angl. *condition number*), kuris nusako didžiausios ir
+mažiausios matricos $A$ tikrinių verčių santykį,
+$\kappa =\lambda_{\max}/\lambda_{\min}$. Algoritmo stabilumas mažėja, kai $\lambda_{\min} \rightarrow 0$. Apžvelgsime HHL algoritmo bendruosius veikimo principus ir pateiksime jo realizaciją kvantinėje grandinėje.
 
 Tiesinių lygčių sistema yra išreiškiama lygtimi:
 \begin{equation}
@@ -711,7 +714,7 @@ matomas antrajame registre:
 = \frac{1}{\sqrt{N}}\sum_k |0\rangle\otimes b_k \lambda_k^{-1}|a_k\rangle\otimes|1\rangle\,.
 (\#eq:sprendinys-hhl)
 \end{equation}
-Su būsenos normavimo konstanta $N$:
+Su būsenos normavimo koeficientu $N$:
 \begin{equation}
 N =\sum_k |b_k \lambda_k^{-1}|^2\,.
 (\#eq:normavimas-hhl)
@@ -726,13 +729,5 @@ sprendinių erdvėje. Pasitelkdami Hadamardo testą (\@ref(hadamard-testas-posky
 funkciją $f(x) =\langle x|M|x\rangle$,
 realizuojant ją atitinkamai suformuluotu kvantiniu operatoriumi $M$.
 
-Vadinamasis **matricos
-sąlygos skaičius** (angl. *condition number*) nusako didžiausios ir
-mažiausios matricos $A$ tikrinių verčių santykį,
-$\kappa =\lambda_{\max}/\lambda_{\min}$. Didėjant $\kappa$ tampa
-sunkiau invertuoti matricą $A$ ir mažėja HHL algoritmo
-stabilumas. HHL algoritmo laiko vykdymo trukmė auga kaip
-$O(\kappa^2\log 2^m)$ ir suteikia eksponentinį paspartinimą sistemos
-dydžio $2^m$ atžvilgiu prieš klasikinius algoritmus, kurie pasižymi
-$O(\kappa 2^m)$. 
+
 
