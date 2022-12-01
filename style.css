@@ -28,18 +28,24 @@ pre code {
 }
 
 /* Logo in TOC */
-.toc-logo {
-  width: 200px !important;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
-}
-
 .toc-logo img {
-  max-width: 100%;
-  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.summary > li:first-child {
-  height: auto !important; 
+/* TOC entries */
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+    margin: 5px 5px 5px 5px;
+    display: block;
+}
+
+.book .book-summary ul.summary li.active>a,
+.book .book-summary ul.summary li a:hover {
+    color: #000;
+    background: #aaaaaa;
 }
