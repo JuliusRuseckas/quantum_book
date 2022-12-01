@@ -13,14 +13,33 @@ pre code {
   white-space: inherit;
 }
 
-/* Make the horizontal line go straight across in top navbar */
-
-.summary > li:first-child {
-    height: 50px;
-    padding-top: 10px;
-    border-bottom: 1px solid rgba(0,0,0,.07);
+/* Larger title */
+.title {
+  font-size: 3em !important;
 }
 
-.book .book-summary ul.summary li.divider {
-    height: 0px;
+/* Bold chapter names in TOC */
+.chapter>a {
+  font-weight: bold;
+}
+
+.chapter>ul>li a {
+  font-weight: normal;
+}
+
+/* Logo in TOC */
+.toc-logo {
+  width: 200px !important;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.toc-logo img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.summary > li:first-child {
+  height: auto !important; 
 }
