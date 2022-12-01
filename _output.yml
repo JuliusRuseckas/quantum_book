@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li class="toc-logo"><img src="media/logo-toc.svg" alt="logo"></li>
+        <li class="toc-logo"><a href="./"><img src="media/logo-toc.svg" alt="logo"></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub"]
