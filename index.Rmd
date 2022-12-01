@@ -17,6 +17,7 @@ biblatexoptions:
   - sorting=ynt
 url: https://kvantinekompiuterija.lt/
 # cover-image: path to the social sharing image like images/cover.jpg
+favicon: media/favicon.ico
 description: "Kvantinė kompiuterija"
 link-citations: yes
 nocite: '@*'
