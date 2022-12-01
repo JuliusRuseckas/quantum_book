@@ -1351,7 +1351,7 @@ $p_{\mathrm{th}} \approx 10^{-4}–10^{-6}$.
 ## Kvantinis tūris 
 
 Dekoherencijos trukmės bei loginių vartų tikslumas įvardija du esminius
-klaidų šaltinius (žr. \@ref(#dekoherencija-poskyris) poskyrį). Tačiau didėjant kubitų skaičiui ir mažėjant šioms
+klaidų šaltinius (žr. \@ref(dekoherencija-poskyris) poskyrį). Tačiau didėjant kubitų skaičiui ir mažėjant šioms
 klaidoms atsiranda poreikis tiksliau įvertinti skaičiuojamąją galią. Tam
 idealiai norėtume suformuluoti rodiklį ar keletą rodiklių, kurie taikant
 standartinį protokolą leistų palyginti skirtingus įrenginius
