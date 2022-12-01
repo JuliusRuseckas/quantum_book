@@ -1237,7 +1237,7 @@ operacija yra formaliai tokia, kurios metu vieno loginio komponento
 klaidingas veikimas paveikia ne daugiau negu vieną kubitą kiekviename
 bloke.
 
-```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Kvantinė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti klaidoms atsparius loginius vartus", out.width='73%', fig.align='center'}
+```{r klaidoms-atsparus-loginiai-elementai, echo=FALSE, fig.cap="Kvantinė grandinė, dviem 3 kubitų kodo loginiams kubitams atliekanti jų supynimą klaidoms atspariais loginiais vartais", out.width='73%', fig.align='center'}
 knitr::include_graphics("media/image9_7.svg")
 ```
 Klaidoms atspari kvantinė grandinė
