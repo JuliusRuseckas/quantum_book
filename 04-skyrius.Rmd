@@ -79,7 +79,7 @@ nusakoma vienetiniu operatoriumi $I$.
 
 Pradėsime nuo Pauli-$X$, $Y$ ir $Z$
 loginių vartų, kurių matematinės išraiškos ir savybės buvo pristatytos
-II skyriuje. Pauli-$X$ loginiai vartai yra klasikinių NE loginių vartų
+2 skyriuje. Pauli-$X$ loginiai vartai yra klasikinių NE loginių vartų
 atitikmuo, jie sukeičia 0 ir 1 vertes (žr. \@ref(fig:pauli-x-vartai) pav.)
 
 ```{r pauli-x-vartai, echo=FALSE, fig.cap="Pauli-$X$ loginių vartų efektas skaičiuojamiesiems baziniams vektoriams", out.width='37%', fig.align='center'}
@@ -169,8 +169,7 @@ Pavyzdžiui, jeigu ši būsena būtų
 $|\psi\rangle = a|0\rangle + \mathrm{e}^{\mathrm{i}\alpha}b|1\rangle$,
 tada
 $R_z(\theta)|\psi\rangle = a|0\rangle + \mathrm{e}^{\mathrm{i}(\alpha + \theta)}
-b|1\rangle$,
-tai yra $\alpha \rightarrow \alpha + \theta$. Dėl šios savybės
+b|1\rangle$. Dėl šios savybės
 $R_z(\theta)$ yra dažnai vadinami 1 kubito **fazės vartais**
 (angl. *phase gate*). Pauli-$Z$ loginiai vartai yra ne kas kita, kaip
 $R_z(\theta)$ su $\theta=\pi$ (iki globalios fazės). Algoritmuose
@@ -245,19 +244,17 @@ SXS^{\dagger} = & Y\,,\quad SYS^{\dagger} = -X\,,\quad SZS^{\dagger} = Z\,.(\#eq
 \end{align}
 Kaip galime pastebėti, viršuje pateikiamos tokios operatorių sekos:
 $KPK^{\dagger} = P'$. Čia $P$ ir $P'$ yra Pauli operatoriai {$X$, $Y$, $Z$},
-o $K$ ir ermitinė jungtis $K^{\dagger}$ yra parenkama iš vadinamosios
-**Klifordo grupės** (angl. *Clifford group*) operatorių. Įprasti
-1 kubito Klifordo grupės operatoriai yra Pauli {$I$, $X$, $Y$, $Z$}, taip
-pat $H$ ir $S$. Viena iš Klifordo grupės savybių yra ta, kad jie
-transformuoja vieną Pauli operatorių į kitą ir gali pridėti tik fazę
-$\pm 1$. Ši operatorių grupė yra itin svarbi kvantiniuose algoritmuose
-bei klaidų taisymo koduose, pagrįstuose būsenų stabilizatoriais.
-Atkreipiame dėmesį, kad vien Klifordo vartais $H$ ir $S$ galima
-realizuoti Pauli operatorius {$X$, $Y$, $Z$}:
+o $K$ yra parenkamas iš 1 kubito
+**Klifordo grupės** (angl. *Clifford group*) operatorių. 
+Klifordo grupę generuojančiais $H$ ir $S$ galima
+realizuoti ir Pauli operatorius {$X$, $Y$, $Z$}:
 \begin{equation}
 HSSH = X\,,\quad SXS^{\dagger} = Y\,,\quad SS = Z\,.
 (\#eq:pauli-per-h-s)
 \end{equation}
+Viena Klifordo grupės savybių yra ta, kad jie
+transformuoja vieną Pauli operatorių į kitą iki $\pm 1$ faktoriaus. 
+
 Norėdami patikrinti, ar lygybės egzistuoja tarp skirtingų vartų sekų,
 galime jas nusakančias matricas papračiausiai sudauginti ir palyginti,
 ar jos vienodos, pavyzdžiui:
@@ -330,15 +327,14 @@ seka.
 ## Kubitų būsenų matavimas
 
 Norint sužinoti kubito būseną, algoritmo vykdymo metu ar jo pabaigoje
-atliekamas matavimas. Matavimo operacija yra žymima pusapskritimiu su
+atliekamas matavimas. Šioje knygoje matavimo operacija yra žymima pusapskritimiu su
 rodyklyte, nukreipta į klasikinį registrą, žymimą brūkšniuota linija ir
-raide $c$. Taip pat taikomas principas, kad algoritmo gale visi kubitai
+raide $c$. Praktikoje dažnai taikomas principas, kad algoritmo gale visi kubitai
 yra pamatuojami, net jeigu tai nėra parodoma simboliais kvantinės
 grandinės pabaigoje. Matavimai standartiškai atliekami santykinai su
 Pauli-$Z$ operatoriaus tikriniais vektoriais, tai yra skaičiuojamaisiais
 baziniais vektoriais $|0\rangle$ ir
-$|1\rangle$. Esant šių bazinių vektorių superpozicijos
-būsenai, galimi matavimo rezultatai yra Pauli-$Z$ tikrinės vertės +1
+$|1\rangle$. Kubitui esant šių bazinių vektorių superpozicijoje, galimi matavimo rezultatai yra Pauli-$Z$ tikrinės vertės +1
 arba -1. Radus +1 indikuojama, kad būsena yra
 $|0\rangle$, bei $|1\rangle$, jeigu
 tikrinė vertė yra -1. Tai nusako vieną klasikinį bitą informacijos, o
@@ -363,7 +359,7 @@ $|1\rangle$ yra lygios:
 \big|\langle 0|\psi\rangle\big|^2 = \big|\langle 1|\psi\rangle\big|^2 = \frac{1}{2}\,.
 (\#eq:matavimas-lygios-tikimybes)
 \end{equation}
-Tad po kiekvieno šio algoritmo įvykdymo yra sugeneruojama atsitiktinė
+Tad po pakartotinio šio algoritmo įvykdymo yra sugeneruojama atsitiktinė
 dvejetainė 0 ir 1 skaičių seka. Dėl kvantinio atsitiktinumo matavimo
 procese, šios sekos fundamentaliai neįmanoma nuspėti.
 
