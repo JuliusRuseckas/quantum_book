@@ -37,10 +37,9 @@ Būsenų normuotumas naudojant amplitudes išreiškiamas
 $\langle u|u\rangle = |a|^2 + |b|^2 + 2\mathrm{Re}(a^{*}b\langle\psi|\phi\rangle) = 1$.
 Jeigu $|\psi\rangle$ ir $|\phi\rangle$
 yra ortogonalieji vektoriai, tada trečiasis narys, nusakantis
-interferenciją tarp būsenų
-$2\mathrm{Re}(a^{*}b\langle\psi |\phi\rangle) = 0$,
-iškrenta iš lygybės ir randame
-$\langle u|u\rangle = |a|^2 + |b|^2$.
+interferenciją tarp būsenų iškrenta iš lygybės,
+$2\mathrm{Re}(a^{*}b\langle\psi |\phi\rangle) = 0$, ir randame
+$|a|^2 + |b|^2 = 1$.
 
 Pirmąjį postulatą galima matematiškai tiksliau perfrazuoti sakant, kad
 kvantinės būsenos yra nusakomos spinduliu. Spindulys
