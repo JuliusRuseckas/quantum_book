@@ -39,8 +39,9 @@ dipoliai. Blocho vektorius, orientuotas į ortogonaliąsias
 $|0\rangle$ arba $|1\rangle$ būsenas,
 yra atitinkamai magnetinė „šiaurė" arba „pietūs". Vienas pavyzdys --
 periodiškai išsidėlioję atomai kristaluose, kuriuose kiekvienoje atomo
-pozicijoje yra po vieną nesuporuotą elektroną (kubitą). **Aizingo
-modelio** (angl. *Ising model*) hamiltonianas apibūdina sistemos,
+pozicijoje yra po vieną nesuporuotą elektroną (kubitą).
+
+**Aizingo modelio** (angl. *Ising model*) hamiltonianas leidžia apibūdinti sistemos,
 sudarytos iš $1/2$ sukinių, dinamiką. **Skersinio lauko Aizingo modelio**
 versija (angl. *transverse-field Ising model*) turi šią formą:
 \begin{equation}
@@ -48,16 +49,16 @@ H = - j\sum_{i = 1}^n Z_i\otimes Z_{i + 1} - g\sum_{i = 1}^n X_i\,.
 (\#eq:transverse-field-Ising)
 \end{equation}
 Hamiltonianas apibūdina $n$ kubitų, išrikiuotų eilėje. Nariai pirmoje
-sumoje nusako magnetines sąveikas tarp vienas šalia kito ($i$, $i + 1$)
+suminėje dedamojoje nusako magnetines sąveikas tarp vienas šalia kito ($i$, $i + 1$)
 esančių kubitų išilgai $z$ ašies, apibūdintas Pauli-$Z$ operatoriais ir
 sąveikos stiprumu $j$. Pavyzdžiui, vienas toks narys, veikiantis tarp
 antrojo ir trečiojo kubito 4 kubitų sistemoje būtų
-$-jI\otimes Z\otimes Z\otimes I$. Antra suma hamiltoniane
+$-jI\otimes Z\otimes Z\otimes I$. Antra dedamoji hamiltoniane
 apibūdina išorinio magnetinio lauko išilgai $x$ ašies efektą kiekvienam
-iš $n$ kubitų. Pavyzdžiui, veikdamas trečią kubitą 4 kubitų sistemoje
+iš $n$ kubitų; veikdamas trečią kubitą 4 kubitų sistemoje
 jis būtų $-gI\otimes I\otimes X\otimes I$. Nepaisant paprastos
-išraiškos, bendras kubitų elgesys šiame Aizingo modelyje pasižymi
-fenomenų gausa.
+išraiškos, kubitų elgesys Aizingo modelyje ir jo variacijose pasižymi
+fenomenų gausa. Pavyzdžiui, taip vadinamas laiko kristalas (angl. *time crystal*) buvo realizuotas kvantiniuose kompiuteriuose naudojant Aizingo modelį su periodinėmis išorinio lauko perturbacijomis ir lokaliomis netvarkos dedamosiomis. 2 dimensijose šis modelis leidžia apibūdinti feroelektrinį tvarkos-netvarkos fazinį virsmą (angl. *ferroelectric order-disorder phase transition*).
 
 Norėdami apskaičiuoti kubitų evoliuciją laike turime įvertinti
 unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
@@ -68,7 +69,7 @@ unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
 (\#eq:evoliucija-8)
 \end{equation}
 Čia pradinė būsena $|\psi(0) \rangle$ laiku $t = 0$ yra
-bendrai $n$ kubitų superpozicija. Sekančiame poskyryje matysime vieną universalų metodą, kaip apskaičiuoti operatoriaus $U$ veiksmą.
+bendrai $n$ kubitų superpozicija. Toliau matysime vieną universalų metodą, kaip apskaičiuoti būsenos |\psi(t) \rangle laiko evoliuciją kvantiniame kompiuteryje.
 
 ### Troterizacija
 
@@ -93,7 +94,7 @@ laike, nes:
 Vadinamoji **troterizacija** (angl. *Suzuki-Trotter approximation*)
 leidžia apeiti iškilusią kliūtį ir apytikriai realizuoti norimą
 operatorių. Ši aproksimacija diskretizuoja laiko intervalą $t$ į
-$s$ žingsnių, kai kiekvienas laiko intervalas trunka
+$s$ žingsnių, kuriame kiekvienas laiko intervalas trunka
 $\Delta t = t/s$. Unitarusis operatorius tampa:
 \begin{equation}
 U = \mathrm{e}^{\frac{-\mathrm{i}(H_1 + H_2)t}{\hbar}} \cong
@@ -102,8 +103,8 @@ U = \mathrm{e}^{\frac{-\mathrm{i}(H_1 + H_2)t}{\hbar}} \cong
 (\#eq:laiko-diskretizacija-8)
 \end{equation}
 Naudodami pasirinktinai mažą žingsnį $\Delta t$ ir atlikdami
-iteraciją $s$ kartų, apskaičiuokime norimą sistemos laiko evoliuciją
-visame laiko intervale $t$. 8.6 lygybėje parodyta pirmosios eilės
+iteraciją $s$ kartų, apskaičiuosime norimą sistemos laiko evoliuciją
+visame laiko intervale $t$. Viršuje parodyta pirmosios eilės $U$
 aproksimacija, joje įterpiamos klaidos yra ne didesnės nei žingsnio
 dydžio kvadratas $O(\Delta t^2)$. Troterizacija taip pat
 išsaugo laiko evoliucijos operatoriaus unitarumą ir todėl užtikrina, kad
@@ -120,13 +121,12 @@ $|\psi(t)\rangle \cong |\psi(s\Delta t)\rangle$:
 \end{equation}
 Troterizacija natūraliai tinka realizuoti ir hamiltonianus, kurie kinta
 laike. Tai gali nusakyti, pavyzdžiui, periodines sistemos
-perturbacijas ar simuliuoti atsitiktinai jaučiamas išorines sąveikas.
-Čia taip pat pasirenkamas diskretizuotas laiko žingsnis
-$\Delta t$, pagal kurį laiko evoliucijos operatorius $U(t)$
-yra strobuojamas, taip pateikiant efektyvią seką:
+perturbacijas ar kintančio stiprumo ir krypties išorines sąveikas.
+Tam vėlgi pasirenkamas diskretizuotas laiko žingsnis
+$\Delta t$, pagal kurį laiko evoliucija yra strobuojama, taip pateikiant efektyvią seką:
 \begin{equation}
 |\psi(s\Delta t)\rangle
-= U_s(\Delta t)\cdots U_2(\Delta t)U_1(\Delta t)|\psi(0)\rangle\,.
+= U_s(\Delta t)\cdots U_3(\Delta t)U_2(\Delta t)U_1(\Delta t)|\psi(0)\rangle\,.
 (\#eq:nuo-laiko-priklausantis-u-trot)
 \end{equation}
 
