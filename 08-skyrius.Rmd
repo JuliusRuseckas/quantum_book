@@ -604,14 +604,14 @@ kiekvieno kubito standartinį Pauli-$Z$ matavimą, formaliai toks
 $n$ kubitų matavimas nusakomas apskaičiuojant
 $\langle\psi |Z^{\otimes n}|\psi\rangle$.
 Dešimtainėje sistemoje rasime vieną iš galimų pozicijos būsenų
-$|x'\rangle$ su tikimybe
-$p(x') = \psi^{*}(x')\psi(x')dx = |\psi(x)|^2 dx$.
+$|x\rangle$ su tikimybe
+$p(x) = \psi^{*}(x)\psi(x)dx = |\psi(x)|^2 dx$.
 Pakartoję algoritmą daug kartų ir atlikę tokį matavimą, apytikriai
 rasime visą **tikimybių tankio funkciją** $|\psi(x)|^2$
 (angl. *probability density function*), kuri nusako tikimybes rasti
 kvantinę sistemą kiekviename erdvės taške $x$.
 
-Vietoj šio matavimo galima apskaičiuoti globalius banginės funkcijos
+Vietoj šio matavimo, pasitelkiant Hadamardo testą (žr. \@ref(hadamard-testas-poskyris) poskyrį), galima apskaičiuoti globalius banginės funkcijos
 parametrus, $\langle\psi |M|\psi\rangle$;
 čia $M$ yra kvantinis operatorius. Pavyzdžiui, $M$ gali būti
 hamiltonianas arba judesio kiekio momento operatorius. Tai suteiks
@@ -813,7 +813,7 @@ hibridinis klasikinis-kvantinis algoritmas, pristatytas Shuld, Wiebe ir
 bendraautorių iš *Microsoft* nereikalauja didelio kubitų skaičiaus bei
 gilių grandinių ir todėl yra tinkamas ankstyvosios raidos kvantiniams
 procesoriams. Algoritme yra panaudojamas duomenų amplitudžių kodavimas
-(žr. 6.4 poskyrį), tad $N = 2^n$ dydžio duomenų bazė perteikiama tik
+(žr. \@ref(duomenu-kodavimas) poskyrį), tad $N = 2^n$ dydžio duomenų bazė perteikiama tik
 su $n$ kubitų. Darant prielaidą, kad duomenis galima efektyviai užrašyti
 į kvantinę registro būseną, kvantinis paralelizmas leidžia sparčią šios
 būsenos transformaciją ir rezultatų apskaičiavimą. Be to, dėl unitariųjų
