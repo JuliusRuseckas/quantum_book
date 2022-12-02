@@ -69,7 +69,7 @@ unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
 (\#eq:evoliucija-8)
 \end{equation}
 Čia pradinė būsena $|\psi(0) \rangle$ laiku $t = 0$ yra
-bendrai $n$ kubitų superpozicija. Toliau matysime vieną universalų metodą, kaip apskaičiuoti būsenos |\psi(t) \rangle laiko evoliuciją kvantiniame kompiuteryje.
+bendrai $n$ kubitų superpozicija. Toliau matysime vieną universalų metodą, kaip apskaičiuoti kubitų būsenos laiko evoliuciją kvantiniame kompiuteryje.
 
 ### Troterizacija
 
@@ -215,8 +215,7 @@ efektyviai suteikia skirtingas fazes skirtingo lyginumo būsenoms:
 \end{equation}
 Ancilos kubito būseną atstatome atgal su dviem $cX$ vartais kartu
 panaikindami supynimą su $k_1$ ir $k_2$ kubitais. Gauname galutinę
-2 kubitų būseną, realizuojamą operatoriumi
-$\mathrm{e}^{\frac{-\mathrm{i}H_1 t}{\hbar}}
+2 kubitų būseną, veikiamą laiko evoliucijos operatoriumi $\mathrm{e}^{\frac{-\mathrm{i}H_1 t}{\hbar}}
 = \mathrm{e}^{\mathrm{i}\theta Z_k\otimes Z_l}$:
 \begin{equation}
 cX_1cX_2(I\otimes I\otimes \mathrm{e}^{\mathrm{i}\theta Z})cX_2cX_1|\psi\rangle
