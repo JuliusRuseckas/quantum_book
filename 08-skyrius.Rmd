@@ -2,14 +2,13 @@
 
 ## Dinaminių sistemų modeliavimas
 
-Klasikinių bei kvantinių sistemų modeliavimas yra pagrįstas
-diferencialinių lygčių sprendinių paieška. Diferencialinės lygtys nusako
-sistemos dinamiką laike bei erdvėje ir atspindi dėsnius, kuriais šios
+Klasikinių bei kvantinių sistemų modeliavimas fizikoje yra pagrįstas
+diferencialinių lygčių sprendinių paieška. Jie apibūdina
+dinamiką laike bei erdvėje ir atspindi dėsnius, kuriais šios
 sistemos pagrįstos. Klasikinėje fizikoje dažnai aptinkamos Niutono,
 Maksvelo ir Einšteino diferencialinės lygtys. Jos apibūdina sistemos
-pozicijų konfigūracijas, elektromagnetinių ir gravitacinių laukų kitimą,
-atitinkamai. Įprastai kompiuteriniai skaičiavimai diskretizuoja
-diferencialinės lygties kintamuosius, tokius kaip laiko ir erdvės. Tada
+pozicijų, elektromagnetinių ir gravitacinių laukų, atitinkamai, konfigūracijas bei kitimą. Tik itin speficinėse situacijose sprendinius galima rasti ir užrašyti žinomomis funkcijomis, tad yra pasitelkiami kompiuteriniai skaičiavimai. Įprastai, kompiuteriniai skaičiavimai diskretizuoja
+diferencialinės lygties kintamuosius, tokius kaip laiko ir erdvės. Tuomet
 iteracinė procedūra pradinę sistemos būseną nuveda prie ieškomosios
 galutinės. Diskretizavimo žingsnių dydis pasirenkamas atsižvelgiant į
 toleruotinus paklaidos dydžius, kuriuos dažnai galima tiksliai
