@@ -251,7 +251,7 @@ parametrus taikant interferenciją ar koreliacijas tarp kvantinių būsenų.
 algoritmus, Hadamardo ir SWAP testus, fazės nustatymo algoritmą, kai
 kuriuos mašininio mokymosi metodus, kvantinių klaidų taisymo kodus.
 
-## Duomenų kodavimo būdai
+## Duomenų kodavimo būdai {#duomenu-kodavimas}
 
 Skaičiavimo procesą kvantiniame kompiuteryje galima apibūdinti trimis
 žingsniais:
