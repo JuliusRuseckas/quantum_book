@@ -763,8 +763,8 @@ Klasikiniai neuroniniai tinklai turi netiesines aktyvacijos funkcijas, o
 lygtimis. Kyla klausimas, kaip padaryti kvantinį klasikinio neuroninio
 tinklo analogą? Vienas iš sprendimo būdų -- naudoti hibridinius (iš
 dalies kvantinius, iš dalies klasikinius) algoritmus. Juose netiesiškumą
-į evoliuciją įveda kvantinės sistemos matavimas ir su juo susijęs
-būsenos vektoriaus kolapsas.
+į evoliuciją įveda kvantinės sistemos matavimas ir su juo susijęs superpozicijos
+būsenos suirimas.
 
 Nemažai kvantinio mašininio mokymosi metodų naudoja hibridinius
 algoritmus: parametrizuotos kvantinės grandinės yra treniruojamos
