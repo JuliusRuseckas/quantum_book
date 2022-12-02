@@ -189,7 +189,7 @@ Vartai $W$ panaudojami grandinės pabaigoje, kadangi FT algoritmas
 sukeičia kubitų indeksavimą aplink centrinius kubitus. Šiuo atveju
 $k_1$ sukeičiamas su $k_3$, tad $W$, panaudoti grandinės pabaigoje,
 atstato juos atgal į standartinę $\{k_1, k_2, k_3\}$ seką. Aišku,
-nebūtina to daryti, jeigu toliau atliekami loginiai vartai atsižvelgiant
+nebūtina to daryti, jeigu toliau atliekami loginiai vartai atsižvelgia
 į indeksavimo pasikeitimą.
 
 Atvirkštinė Furjė transformacija $\mathrm{FT}^{\dagger}$ yra realizuojama atvirkštine
@@ -215,7 +215,7 @@ knitr::include_graphics("media/image7_3.svg")
 
 Kaip minėjome, galima FT užbaigti $W$ loginiais vartais siekiant
 atstatyti visų kubitų indeksavimo eiliškumą. Apibendrinus, norint
-atlikti FT $n$ kubitų registrui yra panaudojami $n$ $H$ vartų,
+atlikti FT $n$ kubitų registrui yra panaudojami $n$ skaičius $H$ vartų,
 $n(n - 1)/2$ sąlyginių $cP_k$, ir ne daugiau nei $n/2$ $W$
 vartų. Šie vartai gali būti realizuojami trimis $cX$, o $cP_k$ galima
 realizuoti pasitelkus ne daugiau negu 6 elementariuosius loginius
@@ -230,7 +230,7 @@ mažėja su didėjančiu $k$. Todėl FT atliekama registrui, sudarytam iš
 didelio skaičiaus kubitų, nuo tam tikro $k$ skaičiaus galima
 atitinkamiems kubitams nebetaikyti $cP_k$, nes $\theta$ bus
 nereikšmingai maža. Tai leidžia dar labiau sumažinti loginių vartų
-skaičių, atkreipiant dėmesį, kad didėjantis $k$ nusako atliekamus
+skaičių, atkreipiant dėmesį dar ir į tai, kad didėjantis $k$ nusako atliekamus
 $cP_k$ tarp vis toliau vienas nuo kito esančių kubitų.
 
 ## Funkcijos periodiškumo paieška 
@@ -325,7 +325,7 @@ Kadangi $\langle y'|y''\rangle =\delta_{y'y''}$,
 pamatavę įvesties registrą rasime būsenas $|0\rangle$
 arba $|4\rangle$ su $p(0) = p(4) = 0.5$ tikimybe. Būsena
 $|0\rangle$ nepriklauso nuo periodo, tad radus ją nėra
-suteikiama informacijos, tad teks kartoti žingsnius kol, šiuo atveju,
+suteikiama informacijos ir teks kartoti žingsnius kol, šiuo atveju,
 bus rasta $|4\rangle$. Tai prisideda prie algoritmo
 laiko sudėtingumo. Būsena $|4\rangle$ tiesiogiai
 atspindi $P = 2$ periodiškumą, nes pritaikius šį algoritmą $n$ kubitų
@@ -415,7 +415,7 @@ knitr::include_graphics("media/image7_5.svg")
 Pirmasis registras yra sudarytas iš $n$ kubitų, čia skaičius $n$ yra
 parenkamas pagal tai, kokį norima pasiekti fazės $\theta$ tikslumą
 bitais. Atkreipiame dėmesį, kad naudojamas bazinių vektorių kodavimo
-metodas (žr. 6.4 poskyrį). Antrasis registras sudarytas iš $m$ kubitų,
+metodas (žr. \@ref(duomenu-kodavimas) poskyrį). Antrasis registras sudarytas iš $m$ kubitų,
 reikalingų $U$ operatoriaus tikriniam vektoriui
 $|u\rangle$ perteikti. Pritaikę $H^{\otimes n}$ bei
 $cU^{2^n}$ vartų sekas, randame šią bendrą būseną:
