@@ -37,7 +37,7 @@ kompiuteriją. Tikimės, kad knyga padės geriau susipažinti su šia technologi
 ir paskatins ne vien platesnį susidomėjimą, bet ir jos plėtrą Lietuvoje.
 
 Kvantinė kompiuterija apjungia keletą mokslo sričių – fiziką,
-kompiuterių mokslą, grynąją matematiką, inžinerinius mokslus. Knyga
+kompiuterių mokslą, matematiką, inžinerinius mokslus. Knyga
 koncentruota į kompiuterių mokslo priartėjimą prie šios srities ir apibūdina
 informacijos apdorojimą kvantiniame procesoriuje abstrakčiu lygmeniu. To turėtų
 pakakti norint atsispirti nuo pradinio taško ir toliau plėsti žinias norima
