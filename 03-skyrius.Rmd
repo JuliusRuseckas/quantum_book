@@ -87,10 +87,10 @@ transformacija $U(t_0, t_1)$:*
 \end{equation}
 
 Antrasis postulatas nusako, kad žinant pradinę uždaros sistemos būseną
-laiku $t_0$, galima tiksliai ir unikaliai pasakyti, kokia bus sistemos
+laiku $t_0$, galima apskaičiuoti, kokia bus sistemos
 būsena laiku $t_1$, $|\psi(t_1)\rangle$. Matematiškai
-tai yra sandauga tarp unitariojo operatoriaus $U(t_0, t_1)$,
-nulemiančio laiko evoliuciją, ir būseną laiku $t_0$ nusakančio
+tai yra sandauga tarp unitariosios matricos $U(t_0, t_1)$,
+nulemiančios laiko evoliuciją, ir būseną laiku $t_0$ nusakančio
 vektoriaus $|\psi(t_0)\rangle$. Kitaip tariant, uždarų
 kvantinių sistemų, kaip ir klasikinių, evoliucija laike yra
 deterministinė. Unitarinėse evoliucijose nėra tikimybėmis nusakomų
@@ -137,7 +137,7 @@ $|\psi\rangle = a|0\rangle + b|1\rangle$
 laike nekinta, tad $U(t) = I$ efektyviai nusako vienetinį operatorių.
 Kvantiniai loginiai vartai fiziniame lygmenyje yra laike atliekama
 kubito būsenos transformacija. Hamiltonianas tuo laiko intervalu yra
-„įjungiamas" pridedant sąveikas, nusakančius narius, vadinamąsias
+„įjungiamas" pridedant sąveikas nusakančius narius, vadinamąsias
 sistemos perturbacijas. Algoritmas nusako seką sistemos perturbacijų,
 trunkančių tam tikrus laiko intervalus $\Delta t$. Pavyzdžiui,
 laiko intervale $\Delta t= t_1 - t_0$ gali būti
