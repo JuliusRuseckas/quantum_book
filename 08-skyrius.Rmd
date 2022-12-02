@@ -27,17 +27,14 @@ $H$. Tokio tipo sistemas čia ir aptarsime.
 
 ### Aizingo modelis {#ising-hamiltonian-coding}
 
-Pirmiausia pradėkime nuo teiginio, kad sudėtinės kvantinės sistemos,
-kurių būsenos matematiškai aprašomos identiškai kubitams, natūraliai
+Pirmiausia pradėkime nuo pastebėjimo, kad sudėtinių kvantinių sistemų modeliavimas,
+kurių posistemės būsenos aprašomos identiškai kubitams, natūraliai
 tinka kvantinės kompiuterijos taikymams. Tai iš principo atstoja gerai
-kontroliuojamą eksperimentą su šiomis sistemomis. Tarp jų yra medžiagų
-magnetizmą nulemiančios elementariosios bei sudėtinės dalelės
-(elektronai, protonai, neutronai), turinčios $1/2$ **sūkį** (angl. *$1/2$ spin*).
-Šios dalelės magnetiniame lauke elgiasi panašiai kaip magnetiniai
+kontroliuojamą eksperimentą su šiomis sistemomis. Tarp tokių yra elektronas, protonas ir neutronas, turintys $1/2$ **sūkį** (angl. *$1/2$ spin*). Šios dalelės magnetiniame lauke elgiasi panašiai kaip magnetiniai
 dipoliai. Blocho vektorius, orientuotas į ortogonaliąsias
 $|0\rangle$ arba $|1\rangle$ būsenas,
 yra atitinkamai magnetinė „šiaurė" arba „pietūs". Vienas pavyzdys --
-periodiškai išsidėlioję atomai kristaluose, kuriuose kiekvienoje atomo
+periodiškai išsidėlioję atomai kristale, kuriame kiekvienoje atomo
 pozicijoje yra po vieną nesuporuotą elektroną (kubitą).
 
 **Aizingo modelio** (angl. *Ising model*) hamiltonianas leidžia apibūdinti sistemos,
@@ -57,7 +54,7 @@ apibūdina išorinio magnetinio lauko išilgai $x$ ašies efektą kiekvienam
 iš $n$ kubitų; veikdamas trečią kubitą 4 kubitų sistemoje
 jis būtų $-gI\otimes I\otimes X\otimes I$. Nepaisant paprastos
 išraiškos, kubitų elgesys Aizingo modelyje ir jo variacijose pasižymi
-fenomenų gausa. Pavyzdžiui, taip vadinamas laiko kristalas (angl. *time crystal*) buvo realizuotas kvantiniuose kompiuteriuose naudojant Aizingo modelį su periodinėmis išorinio lauko perturbacijomis ir lokaliomis netvarkos dedamosiomis. 2 dimensijose šis modelis leidžia apibūdinti feroelektrinį tvarkos-netvarkos fazinį virsmą (angl. *ferroelectric order-disorder phase transition*).
+fenomenų gausa. Pavyzdžiui, taip vadinamas laiko kristalas (angl. *time crystal*) gali būti realizuojamas kvantiniame procesoriuje naudojant Aizingo hamiltonianą su periodinėmis išorinio lauko perturbacijomis ir lokaliomis netvarkos dedamosiomis. Aizingo modelis 2 dimensijose leidžia stebėti feroelektrinį tvarkos-netvarkos fazinį virsmą (angl. *ferroelectric order-disorder phase transition*).
 
 Norėdami apskaičiuoti kubitų evoliuciją laike turime įvertinti
 unitariojo operatoriaus $U = \mathrm{e}^{\frac{-\mathrm{i}Ht}{\hbar}}$ veiksmą
