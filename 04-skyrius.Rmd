@@ -254,7 +254,7 @@ HSSH = X\,,\quad SS = Z\,.
 
 Norėdami patikrinti, ar lygybės egzistuoja tarp skirtingų vartų sekų,
 galime jas nusakančias matricas tiesiog sudauginti ir palyginti,
-ar jos vienodos, pavyzdžiui:
+ar jos vienodos. Iliustracijai:
 \begin{equation}
 HXH = \frac{1}{2}\begin{bmatrix}
 1 & 1 \\
@@ -272,7 +272,7 @@ HXH = \frac{1}{2}\begin{bmatrix}
 (\#eq:patikrinimas-hxh)
 \end{equation}
 Klifordo vartais taip pat galima tarpusavyje transformuoti tolydžiai
-parametrizuotus loginius vartus $R_z(\theta)$ ir $R_x(\theta)$:
+parametrizuotus posūkio loginius vartus, pavyzdžiui $R_z(\theta)$ ir $R_x(\theta)$:
 \begin{equation}
 HR_z(\theta)H = R_x(\theta)\,.
 (\#eq:hrzh)
@@ -332,10 +332,10 @@ yra pamatuojami, net jeigu tai nėra parodoma simboliais kvantinės
 grandinės pabaigoje. Matavimai standartiškai atliekami santykinai su
 Pauli-$Z$ operatoriaus tikriniais vektoriais, tai yra skaičiuojamaisiais
 baziniais vektoriais $|0\rangle$ ir
-$|1\rangle$. Kubitui esant šių bazinių vektorių superpozicijoje, galimi matavimo rezultatai yra Pauli-$Z$ tikrinės vertės +1
-arba -1. Radus +1 indikuojama, kad būsena yra
+$|1\rangle$. Kubitui esant šių bazinių vektorių superpozicijoje, galimi matavimo rezultatai yra Pauli-$Z$ tikrinės vertės $+1$
+arba $-1$. Radus $+1$ indikuojama, kad būsena yra
 $|0\rangle$, bei $|1\rangle$, jeigu
-tikrinė vertė yra -1. Tai nusako vieną klasikinį bitą informacijos, o
+tikrinė vertė yra $-1$. Tai nusako vieną klasikinį bitą informacijos, o
 atlikus matavimą gautas rezultatas yra įrašomas klaisikiniame bitų
 registre.
 
@@ -366,13 +366,13 @@ procese, šios sekos fundamentaliai neįmanoma nuspėti.
 Dviejų kubitų vartai, veikdami
 $|k_1\rangle\otimes |k_2\rangle$
 būseną, atlieka sąlygines logines operacijas: „Jeigu kubitas $k_1$ yra
-būsenoje $|x\rangle$, tada su kubitu $k_2$ atliekama
+būsenoje $|x\rangle$, tada kubitui $k_2$ atliekama
 operacija $U$". Čia $U$ gali būti bet kokia 1 kubito būsenos unitarioji
 transformacija. Vienas iš plačiausiai naudojamų 2 kubitų vartų yra
 *CNOT* (angl. *controlled not,* trumpinys *CNOT*), kuriuos grandinėse
 vadinsime $cX$. Pasirinktas pirmas kubitas yra naudojamas kaip
 **kontrolinis** (angl. *control*), nuo kurio būsenos priklauso ar
-antram, adresatiniam kubitui, bus taikomi Pauli-$X$ loginiai vartai.
+antram, **adresatiniam** (angl. *target*) kubitui, bus taikomi Pauli-$X$ loginiai vartai.
 Vartai $cX$ yra iliustruojami \@ref(fig:cnot-vartai) pav.
 
 ```{r cnot-vartai, echo=FALSE, fig.cap="2 kubitų sąlyginiai loginiai vartai $cX$ (arba *CNOT*)", out.width='33%', fig.align='center'}
@@ -429,8 +429,7 @@ pamatyti žvelgiant į diadų formą, kurioje Pauli-$X$ vartai veikia kartu
 tik su pirmo kubito $|1\rangle$ būsena. $cX$ vartų
 efektą baziniams vektoriams galima interpretuoti ir kaip modulio(2) bitų
 sudėtį ($0 + 0 = 0$, $0 + 1 = 1$, $1 + 0 = 1$, $1 + 1 = 0$), naudojančią simbolį
-$\oplus$. Pritaikius $cX$ tarp kubitų $k_1$ ir $k_2$, kurių vertės
-yra bet kuri iš 0 ir 1 kombinacijų, tada mod(2) sudėtis yra užrašoma
+$\oplus$. Pritaikius $cX$ tarp kubitų $k_1$ ir $k_2$, mod(2) sudėtis yra užrašoma
 antro kubito būsenoje:
 \begin{equation}
 cX|k_1 \rangle\otimes |k_2 \rangle = |k_1 \rangle\otimes |k_1 \oplus k_2 \rangle\,.
