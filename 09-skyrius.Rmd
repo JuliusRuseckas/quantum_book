@@ -25,7 +25,7 @@ didelė klaidų tikimybė. Dekoherencija nėra vienintelis klaidų
 šaltinis -- atliekamų loginių vartų netikslumai taip pat praktiškai
 neišvengiami. Unitariosios operacijos yra nusakomos tolydžiai
 kintančiais parametrais, todėl praktikoje atsiremiama į ribotą loginių
-vartų tikslumą. Nepaisant šių klaidų šaltinių, pageidaujamo tikslumo bei
+vartų tikslumą. Nepaisant šių klaidų šaltinių, praktinės svarbos pageidaujamo
 ilgumo kvantiniai skaičiavimai gali būti atlikti pasitelkiant klaidų
 taisymo algoritmus. Tam yra reikalaujama, kad dekoherencijos trukmės
 nebūtų per daug trumpos, o loginių vartų netikslumai -- per daug dideli.
