@@ -119,7 +119,7 @@ $-x$). Dėl šių priežasčių kvantinėje kompiuterijoje funkciniams
 skaičiavimams atlikti yra dažnai pasitelkiami du kubitų registrai,
 vadinami **įvesties** (angl. *input register*) ir **išvesties**
 (angl. *output register*) registrais. Kvantinis skaičiavimas, naudojant
-du registrus, dažnai turi tokią formą:
+du registrus, turi tokią formą:
 \begin{equation}
 U_f|x\rangle\otimes|0\rangle = |x\rangle\otimes|f(x)\rangle\,.
 (\#eq:skaiciavimas-du-registrai)
@@ -138,7 +138,7 @@ U_f|x\rangle\otimes|y\rangle = |x\rangle\otimes|y\oplus f(x)\rangle\,.
 Šiuo atveju naudojame dvejetainę formą, tad išvesties
 registre yra atliekama $y$ ir $f(x)$ mod(2) bitų sudėtis, žymima ženklu
 $\oplus$. Paprasčiausią funkcinio skaičiavimo pavyzdį matėme
-IV skyriuje naudojant $U_f = cX$, kuris atlieka mod(2) bitų sudėtį.
+4 skyriuje naudojant $U_f = cX$, kuris atlieka mod(2) bitų sudėtį.
 \@ref(fig:kvantine-grandine-u-f) pav. iliustruojame šį bendrą skaičiavimo principą kvantine grandine.
 
 ```{r kvantine-grandine-u-f, echo=FALSE, fig.cap="Kvantinė grandinė, realizuojanti funkcinį skaičiavimą $U_f|x\\rangle\\otimes|y\\rangle = |x\\rangle\\otimes|y\\oplus f(x)\\rangle$", out.width='45%', fig.align='center'}
@@ -147,13 +147,11 @@ knitr::include_graphics("media/image6_1.svg")
 
 ## Kvantinis paralelizmas
 
-Norint klasikiniu kompiuteriu apskaičiuoti funkcijos $f(x)$ reikšmes
-$n$ skirtingų argumentų $x_1 , x_2 , \ldots , x_n$, reikia šią
-funkciją pateikti ir įvertinti $n$ kartų. Kvantinis kompiuteris leidžia
+Norint klasikiniu kompiuteriu apskaičiuoti $n$ skirtingų argumentų $x_1 , x_2 , \ldots , x_n$ funkcijos $f(x)$ reikšmes, įprastgai reikia šią funkciją pateikti ir įvertinti $n$ kartų. Kvantinis kompiuteris leidžia
 $f(x)$ įvertinti lygiagrečiai visuose $n$-argumentuose vienu funkcijos
 iškvietimu. Norėdami tai pamatyti, pradėkime vėl nuo 2 kubitų sistemos,
 turinčios po vieną kubitą įvesties ir išvesties registre siekiant
-apskaičiuoti funkciją argumentuose $f(0)$ ir $f(1)$. Unitarusis
+apskaičiuoti funkciją argumentuose $f(0)$ ir $f(1)$. Nelokalus unitarusis
 operatorius $U_f$ atlieka funkcijos $f$ įvertinimą, randame:
 \begin{equation}
 U_f\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle
@@ -163,11 +161,12 @@ U_f\frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes|0\rangle
 Matome, kad jeigu įvesties registras yra paruoštas į
 $|0\rangle$ ir $|1\rangle$
 superpoziciją, tada dėl operatorių tiesiškumo yra lygiagrečiai
-įvertinamos $f(0)$ ir $f(1)$ vertės vienu funkcijos $f$ pritaikymu. Šį
-principą galima praplėsti ir atlikti funkcijos įvertinimą $2^n$
-argumentų paruošiant pradinę įvesties registro būseną į lygią visų
-$n$-kubitų $2^n$ skaičiuojamųjų bazinių vektorių superpoziciją. Tai
-atliekama kiekvienam kubitui registre pritaikius Hadamardo loginius
+įvertinamos $f(0)$ ir $f(1)$ vertės vienu funkcijos $f$ pritaikymu. 
+
+Šį principą galima praplėsti ir atlikti funkcijos įvertinimą $2^n$
+argumentuose paruošiant pradinę įvesties registro būseną į lygią visų
+$n$-kubitų $2^n$ skaičiuojamųjų bazinių vektorių superpoziciją. Superpozicija paruošiama
+atliekant kiekvienam kubitui Hadamardo loginius
 vartus. Pavyzdžiui, registre sudarytame iš 2-kubitų
 $H\otimes H|00\rangle$:
 \begin{equation}
@@ -178,9 +177,7 @@ $H\otimes H|00\rangle$:
 \end{aligned}
 (\#eq:2-kubitu-superpozicija)
 \end{equation}
-Lokaliomis $H$ transformacijomis paruoštos būsenos superpozicijoje yra
-faktorizuojamos, tad galime išmatuoti kiekvieną kubitą nepaveikdami kitų
-būsenos. Jeigu rašysime
+Jeigu rašysime
 $H^{\otimes n} = H\otimes H\otimes\cdots\otimes H$
 nusakyti Hadamardo transformaciją kiekvienam iš $n$-kubitų, kurių bendra
 pradinė būsena dešimtainėje sistemoje yra $|0\rangle$,
@@ -227,29 +224,19 @@ nėra svarbu, kurį registrą pasirinksime matuoti pirmą. Pavyzdžiui,
 pirmiausia išmatavus išvesties registro kubitus ir radus
 $|f(x_0)\rangle$, bendra būsena tampa
 $\big(|x_m\rangle + \cdots + |x_l\rangle\big)\otimes|f(x_0)\rangle$.
-Matome įvesties registrą, esantį būsenų superpozicijoje, kurios nusako
+Matome įvesties registrą esantį būsenų superpozicijoje, kurios nusako
 argumentus su vienodomis funkcijos reikšmėmis $f(x_0)$. Tikimybė rasti
-bet kurią vieną būseną yra lygi kitoms. Tad šiame procese atsitiktiniu
+bet kurią vieną būseną yra lygi kitoms. Šiame procese atsitiktiniu
 būdu randame vieną iš $f(x)$ reikšmių, negalėdami pasirinkti, kuriame
-argumente $x$ norime įvertinti $f$.
+argumente $x$ norime įvertinti $f$. 
 
-Pirmiausiai atkreipiame dėmesį, kad atliekant funkcinius skaičiavimus
-retai yra būtinybė nuskaityti visas funkcijos reikšmes. Praktiškai
-įrašyti minėtų $\sim 10^{30}$ bitų informacijos, kurias saugo superpozicijoje
-100 kubitų, nepakaktų visos pasiekiamos klasikinės kompiuterių
-atminties. Dažnai yra svarbiau nustatyti tam tikras funkcijos savybes --
+Kvantiniai algoritmai pasitelkia papildomus triukus ir turi būti formuluojami kitaip ne klasikiniai. Viena tokia algoritminė strategija, vadinama **amplitudės amplifikacija**
+(angl. *amplitude amplification*), leidžia padidinti
+registro būsenų, koduojančių ieškomus atsakymus, amplitudes. To pavyzdį matysime šiame skyriuje Groverio paieškos
+algoritme. Kitas būdas yra tiesiogiai nustatyti tam tikras funkcijos savybes --
 jos globalius parametrus, minimalias ar maksimalias vertes, periodiškumą
-ir panašiai. Kvantinių skaičiavimų užduotis yra išnaudoti jų
-fundamentalų masišką paralelizmą bei papildomais algoritminiais triukais
-padidinti tikimybę rasti būsenas, koduojančias ieškomus atsakymus. Viena
-tokia algoritminė strategija yra vadinama **amplitudės amplifikacija**
-(angl. *amplitude amplification*), kuri leidžia padidinti dominančių
-registro būsenų amplitudes. To pavyzdį matysime Groverio paieškos
-algoritme. Kitas būdas yra tiesiogiai įvertinti globalius funkcijos
-parametrus taikant interferenciją ar koreliacijas tarp kvantinių būsenų.
-Šią strategiją taiko nemaža dalis algoritmų, įskaitant Doičo bei Šoro
-algoritmus, Hadamardo ir SWAP testus, fazės nustatymo algoritmą, kai
-kuriuos mašininio mokymosi metodus, kvantinių klaidų taisymo kodus.
+ir panašiai. Ši strategija išnaudoja interferenciją ar koreliacijas tarp kvantinių būsenų. Ją taiko nemaža dalis algoritmų, įskaitant Doičo bei Šoro algoritmus, Hadamardo ir SWAP testai, fazės nustatymo algoritmas, kai
+kurie mašininio mokymosi metodai ir kvantinių klaidų taisymo kodai.
 
 ## Duomenų kodavimo būdai {#duomenu-kodavimas}
 
@@ -265,9 +252,7 @@ sudėtingumą tenka atsižvelgti į tai, kad būsenos paruošimo žingsniai
 gali savaime pareikalauti daug resursų. Blogiausiu atveju, perteikti
 bendrai $n$ kubitų būsenai gali prireikti eksponentiškai didelio
 $O(2^n)$ loginių operacijų skaičiaus nustatant visiems $2^n$
-skaičiuojamiesiems baziniams vektoriams skirtingas amplitudes. Koduojant
-yra pageidautinas tiesiškai arba logaritmiškai su kubitų skaičiumi
-augantis operacijų skaičius.
+skaičiuojamiesiems baziniams vektoriams skirtingas amplitudes. 
 
 Duomenų tipas bei kodavimo metodas nulemia kodavimo žingsnio
 sudėtingumą. Egzistuoja ne vienas kodavimo metodas -- plačiausiai
@@ -345,8 +330,10 @@ Doičo algoritmas (angl. *Deutsch algorithm*) yra vienas iš pirmųjų ir
 paprasčiausių pavyzdžių, iliustruojantis kvantinio algoritmo pranašumą
 prieš klasikinį. Doičo algoritmas nėra savaime ypač naudingas, tačiau
 parodo esminį būsenų superpozicijos ir interferencijos panaudojimą
-kvantiniuose skaičiavimuose. Įsivaizduokime scenarijų, kuriame Agnė turi
-juodąją dėžę, atliekančią vieno bito manipuliacijas. Ši dėžė
+kvantiniuose skaičiavimuose. 
+
+Įsivaizduokime scenarijų, kuriame Agnė turi
+juodąją dėžę (angl. *black box*), atliekančią vieno bito manipuliacijas. Ši dėžė
 apskaičiuoja funkciją $f$, kuriai pateikus bitą su verte 0 arba 1, ji
 išveda kitą bitą, taip pat 0 arba 1. Egzistuoja iš viso keturios
 skirtingos 1 bito funkcijos $f:\{0, 1\}\rightarrow\{0, 1\}$:
@@ -467,15 +454,10 @@ prireikti $N - 1$ patikrų, o tikimybė rasti įrašą po $k$-skaičiaus
 bandymų yra $k/N$. Bet štai kvantiniu kompiuteriu pakanka $\sqrt{N}$
 įrašų patikrinimų norint rasti norimą su praktiškai 100% tikimybe. Šis
 kvadratinis paspartinimas gali suteikti esminį pranašumą didėjant įrašų
-skaičiui duomenų bazėje.
-
-Įrodyta, kad Groverio algoritmas yra optimaliausias kvantinės paieškos
+skaičiui duomenų bazėje. Įrodyta, kad Groverio algoritmas yra optimaliausias kvantinės paieškos
 nestruktūrizuotoje duomenų bazėje algoritmas. Bet koks kitas gali nebent
 pakeisti $O(\sqrt{N})$ algoritmo laiko sudėtingumą bendrąja
-konstanta. Groverio paieškoje naudojamas amplitudžių amplifikacijos
-metodas yra taikomas kaip modulis įvarios paskirties kvantiniuose
-algoritmuose, įskaitant mašininio mokymosi, ir kvantinėje
-kriptografijoje.
+konstanta.
 
 Paieškos problemą galima formaliai apibūdinti Būlio funkcija
 $f:\{0, 1\}^n \rightarrow\{0, 1\}$, kuriai pateikus $n$-bitų
