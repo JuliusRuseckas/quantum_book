@@ -242,21 +242,18 @@ HXH = & Z\,,\quad HYH = -Y\,,\quad HZH = X\,; (\#eq:1-kubito-lygybes-1)\\
 ZXZ = & -X\,,\quad ZYZ = -Y\,,\quad ZZZ = Z\,;(\#eq:1-kubito-lygybes-2) \\
 SXS^{\dagger} = & Y\,,\quad SYS^{\dagger} = -X\,,\quad SZS^{\dagger} = Z\,.(\#eq:1-kubito-lygybes-3)
 \end{align}
-Kaip galime pastebėti, viršuje pateikiamos tokios operatorių sekos:
-$KPK^{\dagger} = P'$. Čia $P$ ir $P'$ yra Pauli operatoriai {$X$, $Y$, $Z$},
+Kaip galime pastebėti, viršuje pateikiamos tokios loginių vartų sekos:
+$KPK^{\dagger} = P'$. Čia $P$ ir $P'$ yra Pauli operatoriai,
 o $K$ yra parenkamas iš 1 kubito
 **Klifordo grupės** (angl. *Clifford group*) operatorių. 
-Klifordo grupę generuojančiais $H$ ir $S$ galima
-realizuoti ir Pauli operatorius {$X$, $Y$, $Z$}:
+Šiai grupei priklausančius 1 kubito loginius vartus, tarp kurių yra ir Pauli-{$X$, $Y$, $Z$}, galima sugeneruoti vien tik $H$ ir $S$ loginių vartų sekomis. Viršuje matėme kaip realizuoti Pauli-$Y$, na o $X$ ir $Z$ gaunami:
 \begin{equation}
-HSSH = X\,,\quad SXS^{\dagger} = Y\,,\quad SS = Z\,.
+HSSH = X\,,\quad SS = Z\,.
 (\#eq:pauli-per-h-s)
 \end{equation}
-Viena Klifordo grupės savybių yra ta, kad jie
-transformuoja vieną Pauli operatorių į kitą iki $\pm 1$ faktoriaus. 
 
 Norėdami patikrinti, ar lygybės egzistuoja tarp skirtingų vartų sekų,
-galime jas nusakančias matricas papračiausiai sudauginti ir palyginti,
+galime jas nusakančias matricas tiesiog sudauginti ir palyginti,
 ar jos vienodos, pavyzdžiui:
 \begin{equation}
 HXH = \frac{1}{2}\begin{bmatrix}
@@ -290,6 +287,7 @@ H\big\lbrack \cos(\theta/2)I - \mathrm{i}\sin(\theta/2)Z \big\rbrack H
 \end{aligned}
 (\#eq:patikrinimas-hrzh)
 \end{equation}
+
 Trys Pauli bei Hadamardo loginiai vartai yra ermitiniai operatoriai
 ($U=U^{\dagger}$) ir todėl patys sau atvirkštiniai. Atliekant du ermitinius
 operatorius vieną po kito anuliuojamas jų efektas, pavyzdžiui, $ZZ = I$,
