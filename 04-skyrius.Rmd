@@ -246,7 +246,7 @@ Kaip galime pastebėti, viršuje pateikiamos tokios loginių vartų sekos:
 $KPK^{\dagger} = P'$. Čia $P$ ir $P'$ yra Pauli operatoriai,
 o $K$ yra parenkamas iš 1 kubito
 **Klifordo grupės** (angl. *Clifford group*) operatorių. 
-Šiai grupei priklausančius 1 kubito loginius vartus, tarp kurių yra ir Pauli-{$X$, $Y$, $Z$}, galima sugeneruoti vien tik $H$ ir $S$ loginių vartų sekomis. Viršuje matėme kaip realizuoti Pauli-$Y$, na o $X$ ir $Z$ gaunami:
+Šiai grupei priklausančius 1 kubito loginius vartus, tarp kurių yra ir Pauli-{$X$, $Y$, $Z$}, galima sugeneruoti vien tik $H$ ir $S$ loginių vartų sekomis. Viršuje matėme kaip realizuoti Pauli-$Y$, na o $X$ ir $Z$ randami:
 \begin{equation}
 HSSH = X\,,\quad SS = Z\,.
 (\#eq:pauli-per-h-s)
@@ -1117,20 +1117,19 @@ interferencijos loginėse Belo matavimo operacijose.
 ## Universalių loginių vartų rinkinys
 
 Skirtingų loginių vartų rinkinys, leidžiantis įvykdyti bet kokią
-*n *kubitų registro būsenų transformaciją norimu tikslumu, yra vadinamas
+*n* kubitų registro būsenų transformaciją norimu tikslumu, yra vadinamas
 universaliu. Barenko teorema (angl. *Barenco theorem*) teigia, kad
 kvantinių loginių vartų rinkinys
-$\big\{ U_3(\theta,\gamma,\varphi), cX\big\}$ yra universalus. Todėl
+$\big\{ U_3(\theta,\gamma,\varphi), cX\big\}$ yra universalus. Todėl vien tik
 1 kubito $U_3(\theta,\gamma,\varphi)$ bei 2 kubitų $cX$ loginių vartų
-kombinacijomis galima įvykdyti bet kokį suformuluojamą algoritmą
+kombinacijomis galima įvykdyti visus algoritmus
 kvantiniame kompiuteryje. Matematiškai tai reiškia, kad bet kokią
 $(2^n\times 2^n)$ dydžio unitarinę matricą $U$, nusakančią vektoriaus
-transformaciją kompleksinėje $d = 2^n$ dimensijų vektorių erdvėje
-$V^d$, galima išskaidyti į paprastesnes $(2^n \times 2^n)$ matricas,
+transformaciją $d = 2^n$ dimensijų Hilberto erdvėje, galima išskaidyti į paprastesnes $(2^n \times 2^n)$ matricas,
 kurių kiekviena netrivialiai veikia tik 1 kubito (2 dimensijų) ir
 2 kubitų (4 dimensijų) poerdvius. Jos yra vadinamos **dviejų lygių
 unitariosiomis matricomis** (angl. *two-level unitary matrix*).
-Tiksliau, $U$ galima išskaidyti į $U = U_1 U_2\cdots U_N$, čia
+Tiksliau, galima išskaidyti $U = U_1 U_2\cdots U_N$, čia
 $U_i$ yra 2 lygių unitariosios matricos, atlikti dekompozicijai
 reikalingas jų skaičius $N$ tenkina $N \leq d(d - 1)/2$.
 
@@ -1138,14 +1137,13 @@ Norint įvykdyti visas įmanomas 1 kubito unitarines transformacijas
 $U_3(\theta,\gamma,\varphi)$ reikia, kad parametrizuoti loginiai
 vartai galėtų tolydžiai pasukti Blocho vektorių. Tačiau nėra žinoma,
 kaip atlikti tolydžiąsias transformacijas su begaliniu tikslumu turint
-ribotus išteklius. Tai yra viena iš priežasčių, kodėl klaidų taisymo
-algoritmai tokie svarbūs kvantinei kompiuterijai. Praktiškai yra
-naudingiau pakeisti riboto tikslumo tolydžiai parametrizuotas
-transformacijas diskrečiosiomis, bet tiksliau sukalibruotomis
-transformacijomis. Solovėjaus-Kitaevo teorema (angl. *Solovay-Kitaev
+ribotus išteklius. Tam tikrose situacijose gali būti
+naudingiau pakeisti riboto tikslumo tolydžiai parametrizuotus
+loginius vartus diskrečiaisiais, bet tiksliau veikiančiais
+loginiais vartais. Solovėjaus-Kitaevo teorema (angl. *Solovay-Kitaev
 theorem*) teigia, kad tolydžias 1 kubito transformacijas galima
 apytikriai pakeisti naudojant vien tik $H$, $S$, ir $T$ loginių vartų
-kombinacijas. Pageidaujamai mažo dydžio 1 kubito loginių vartų paklaida
+kombinacijas. Pageidaujamai mažo dydžio bet kokių 1 kubito loginių vartų paklaida
 $\varepsilon$ (angl. *arbitrarily small error*) gali būti pasiekta su
 $O\big(\log^2(1/\varepsilon)\big)$ skaičiumi loginių vartų iš šio rinkinio.
 Tai bendrai yra priimtinas loginių vartų skaičiaus padidėjimas. Keturių
@@ -1154,13 +1152,11 @@ loginių vartų rinkinys {$H$, $S$, $T$, $cX$}, vadinamas **Klifordo-*T* grupe**
 praktikoje. Egzistuoja ir kitų universaliųjų rinkinių, pavyzdžiui, {$H$,
 $ccX$} ir {$H$, $S$, $cX$, $ccX$}.
 
-Svarbi Gotsmano-Nilo teorema (angl. *Gottesman-Knill theorem*) teigia,
-kad kvantiniai algoritmai, naudojantys vien tik Klifordo grupės 1 ir
-2 kubitų loginius vartus {$H$, $S$, $cX$} gali būti efektyviai modeliuojami
-klasikiniu kompiuteriu su polinominiu laiko kompleksiškumu. Nors
-Klifordo grupe pagrįsti kvantiniai algoritmai gali sukurti daug įvairių
-supintųjų registro būsenų, tačiau šie algoritmai nesuteikia pranašumo
-prieš klasikinius algoritmus. Yra gerai žinoma, kad Klifordo grupė
+Šiame skyriuje trumpai paminėjome Klifordo loginių vartų grupę. Klifordo grupės 1 ir
+2 kubitų loginių vartų rinkinys yra sudarytas iš {$H$, $S$, $cX$}. Ši grupė yra plačiai naudojama kvantinių klaidų taisymo algoritmuose. Nors jais pagrįsti kvantiniai algoritmai gali sukurti daug įvairių
+supintųjų registro būsenų, tačiau Klifordo grupė
 nesudaro universalaus loginių vartų rinkinio. Būtent $T$ loginiai
 vartai, įtraukti Klifordo-*T* grupėje, negali būti pageidaujamai
-tiksliai išreikšti vien su {$H$, $S$, $cX$}.
+tiksliai išreikšti vien su {$H$, $S$, $cX$}. Gotsmano-Nilo teorema (angl. *Gottesman-Knill theorem*) teigia,
+kad Klifordo grupe pagrįsti kvantiniai algoritmai gali būti efektyviai modeliuojami
+klasikiniu kompiuteriu su polinominiu laiko kompleksiškumu. 
