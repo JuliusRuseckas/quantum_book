@@ -615,7 +615,7 @@ Ją galimą pergrupuoti taip:
 \end{equation}
 Matome, kad atlikę antro kubito matavimą, rasime
 $|0\rangle$ arba $|1\rangle$ su lygiomis
-1/2 tikimybėmis. Tačiau pirmo kubito būsena lieka superpozicijoje
+$p = 0.5$ tikimybėmis. Tačiau pirmo kubito būsena lieka superpozicijoje
 $1/\sqrt{2}\big(|0\rangle + |1\rangle\big)$,
 jeigu antro būsena randama $|0\rangle$, arba
 $1/\sqrt{2}\big(|0\rangle - |1\rangle\big)$,
