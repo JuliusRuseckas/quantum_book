@@ -896,7 +896,7 @@ Johnas Bellas 1970-aisiais išvedė vadinamąją **Belo nelygybę**
 (angl. *Bell inequality*).
 
 Be fundamentaliųjų tyrimų srities, Belo nelygybių klasės testai yra
-taikomi praktiškai siekiant patikrinti, ar sugeneruotos 2 kubitų būsenos
+taikomi praktikoje siekiant patikrinti, ar sugeneruotos 2 kubitų būsenos
 yra supintosios. Eksperimentuose standartiškai naudojama Belo nelygybės
 versija, vadinama CHSH (angl. *J. Clauser, M. Horne, A. Shimony,
 R. Holt*), kuri labiau tinka atlikti testams su šviesos nešėjais
@@ -905,7 +905,7 @@ testo protokolą, naudojantį supintuosius fotoninius kubitus.
 
 Įsivaizduokime scenarijų, kuriame Cita paruošia dvi sistemas ir
 neatskleisdama paruošimo būdo pateikia vieną Agnei, o kitą Benui. Šioje
-stadijoje nedarome jokių prielaidų, kokios tai sistemos ir kokiaiss
+stadijoje nedarome jokių prielaidų, kokios tai sistemos ir kokiais
 gamtos dėsniais jos paremtos. Agnė ir Benas, abu gavę po vieną sistemą,
 atsitiktiniu būdu renkasi pamatuoti šių sistemų vieną iš savybių. Šitos
 savybės yra objektyvios ir gali būti atskleistos atlikus matavimus.
@@ -949,7 +949,7 @@ C = A_1 B_1 + A_2 B_1 + A_1 B_2 - A_2 B_2 = (A_1 + A_2)B_1 + (A_1 - A_2)B_2\,.
 Matome, kad jeigu $A_1$ ir $A_2$ vertės yra skirtingos, gausime
 $A_1 + A_2 = 0$ ir $A_1 - A_2 = \pm 2$. Tačiau, jeigu jos yra
 vienodos, $A_1 + A_2 = \pm 2$ ir $A_1 - A_2 = 0$. Todėl,
-priklauso nuo rastų $A_1$ ir $A_2$ verčių, $C$ gali būti tik +2 arba
+priklausomai nuo rastų $A_1$ ir $A_2$ verčių, $C$ gali būti tik +2 arba
 -2. Akivaizdu, kad atskirų $C$ serijų vidurkio absoliučioji vertė
 $|\langle C\rangle|$ gali būti ir mažiau nei 2, tad bendrai
 $|\langle C\rangle| \leq 2$. Panaudodami vidurkių
@@ -965,18 +965,17 @@ Agnė ir Benas, po daugelio matavimų radę individualius vidurkius
 $\langle A_i B_j \rangle,$ gali įvertinti, ar koreliacijos
 tarp jų matuojamų sistemų savybių tenkina CHSH nelygybę.
 
-CHSH nelygybė buvo išvesta darant dvi prielaidas apie sistemas, kurių
-koreliacijas ji analizuoja. Pirmoji prielaida, vadinama **realizmu**
-(angl. *realism*), įvardija, kad sistemos savybės yra tiksliai
+CHSH nelygybė buvo išvesta atsižvelgiant į sistemos savybių paruošimo metodą ir jų matavimo konfigūraciją. Savybės paruošimas veda prie pirmosios prielaidos, vadinamos **realizmu**
+(angl. *realism*). Realizmas įvardija, kad sistemos savybės yra tiksliai
 apibrėžtos ir egzistuoja nepriklausomai nuo to, ar jos yra stebimos, ar
-ne. Tai matome iš prielaidos, kad visos keturios savybės
+ne. Tai matome iš to, kad visos keturios savybės
 $\{A_1 , A_2 , B_1 , B_2 \}$ jau prieš Agnei ir Benui jas
 atskleidžiant turi deterministines vertes +1 arba -1, nustatytas iš
 anksto Citos. Antra, vadinamoji **lokalumo** (angl. *locality*),
 prielaida įvardija, kad tik artimoji sistemos aplinka gali daryti įtaką
-jos būsenai ( to reikalauja reliatyvumo teorija). Dėl didelio atstumo
+jos būsenai. Dėl įvardinto didelio atstumo
 tarp Agnės ir Beno lokacijų, kuriose jiedu atlieka sistemos savybių
-matavimus, jų rasti rezultatai negali paveikti vienas kito. Antraip
+matavimus, jų rasti rezultatai neturėtų akimirksniu paveikti vienas kito. Antraip,
 reliatyvumo teorijos pamatinė aksioma, tvirtinanti, kad niekas negali
 sklisti greičiau už šviesos greitį, būtų pažeista. Priimant realizmą bei
 lokalumą, visos gamtoje egzistuojančios sistemos turėtų tenkinti CHSH
@@ -1014,7 +1013,7 @@ lygiagrečios $|V\rangle$ atžvilgiu, išlaikant statųjį
 kampą tarp naujų $|V\rangle$ ir
 $|H\rangle$ ašių. Naujos vertikali ir horizontali
 poliarizacijos būsenos, pasuktos kampu $\alpha$ pradinių būsenų
-$|V\rangle$ ir $|H\rangle$ atžvilgiu yra
+$|V\rangle$ ir $|H\rangle$ atžvilgiu, yra
 lengvai randamos:
 \begin{align}
 |V^{\alpha}\rangle = &  \cos(\alpha)|V\rangle + \sin(\alpha)|H\rangle\,;(\#eq:vertikali-alpha) \\
