@@ -883,7 +883,7 @@ Belo būsenų matavimai atliekami kombinacija, susidedančia iš nelokalios
 unitarinės transformacijos $cX$, lokalių $H$ bei įprastinio Pauli-$Z$
 matavimo abiem kubitams.
 
-## Belo nelygybės testas
+## Belo nelygybė
 
 A. Einšteinas nepasidavė idėjai, kad gamtoje fundamentaliai gali
 egzistuoti nedeterminizmas ir **nuotolinė įtaka** (angl. *spooky action
