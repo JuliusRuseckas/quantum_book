@@ -567,10 +567,11 @@ pavyzdį:
 \end{equation}
 
 Jau žinome, kaip kvantinėje grandinėje
-loginiais vartais perteikti visus čia matomus narius. Šriodingerio
-lygties sprendime turime paruošti pradinę banginę funkciją $\psi(x,0)$.
+loginiais vartais perteikti visus čia matomus narius. 
+
+Šriodingerio lygties sprendime turime paruošti pradinę banginę funkciją $\psi(x,0)$.
 Pageidautina, kad šis žingsnis nereikalautų itin didelio loginių
-operacijų skaičiaus. Banginės funkcijos, pasižyminčios simetrijomis,
+operacijų skaičiaus. Vėlgi, funkcijos, pasižyminčios simetrijomis,
 įprastai gali būti efektyviai koduojamos. Pavyzdžiui, dažnai **Gauso
 funkcija** (angl. *Gaussian* *function*) yra išreiškiama polinominiu
 skaičiumi loginių vartų $O(\mathrm{pol}(n+1/\Delta))$; čia $\Delta$ nusako erdvinę
