@@ -307,10 +307,9 @@ chromodinamika, apibūdinančios šviesos (fotonų) sąveiką su elektros
 krūvį turinčia materija (elektronai, protonai, miuonai) ir branduolyje
 stipriąsias sąveikas tarp kvarkų bei gliuonų atitinkamai. Kitaip nei
 klasikinėje fizikoje, kvantinės sistemos būsena ir su ja susietos
-savybės, tokios kaip jos padėtis, judėjimo greitis ar energija, negali
-būti tiesiogiai stebimi nepaveikiant pačios sistemos būsenos. Tai savo
-ruožtu apibūdina tarsi paslėptą pasaulį, kurio nei tiesiogiai, nei
-tiksliai pasiekti negalime. Kiek žinoma, gamta yra fundamentaliai
+savybės, tokios kaip jos padėtis ir judėjimo kryptis, negali
+būti stebimi nepaveikiant pačios sistemos būsenos. Tai savo
+ruožtu apibūdina tarsi paslėptą pasaulį, kurio tiesiogiai pasiekti negalime. Kiek žinoma, gamta yra fundamentaliai
 kvantinė, nors keistosios jos savybės atsiskleidžia tik esant
 specifinėms sąlygoms.
 
