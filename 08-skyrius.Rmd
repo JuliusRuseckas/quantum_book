@@ -385,7 +385,7 @@ intervalą $t$ į $s$ skaičių žingsnių:
 \mathrm{e}^{\frac{-\mathrm{i}(K + V)t}{\hbar}}
 \cong & \left(\mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\right)^s\,;(\#eq:e-h-dt-approx)\\
-\psi(x,t) = & \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
+\psi(x,s\Delta t) = & \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\cdots
 \mathrm{e}^{\frac{-\mathrm{i}K\Delta t}{\hbar}}
 \mathrm{e}^{\frac{-\mathrm{i}V\Delta t}{\hbar}}\psi(x,0)\,.(\#eq:psi-x-t-approx)
