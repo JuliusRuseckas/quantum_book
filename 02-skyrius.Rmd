@@ -794,7 +794,7 @@ Operatoriai, veikdami vektoriais nusakytas kvantines būsenas, apibūdina
 šių vektorių transformacijas. Pavyzdžiui, 1 kubito Blocho sferos
 reprezentacijoje operatoriaus veiksmas yra keisti Blocho vektoriaus
 orientaciją sferoje. Formaliai, operatorius $A$ (vartojame didžiąsias
-raides žymėti operatoriams) transformuoja kiekvieną vektorių
+raides žymėti operatoriams) transformuoja vektorių
 $|v\rangle \in V$ į kitą vektorių
 $|u\rangle$, priklausantį tai pačiai vektorių erdvei,
 $|u\rangle \in V$:
