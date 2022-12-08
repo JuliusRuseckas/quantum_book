@@ -998,15 +998,14 @@ kokios spalvos kamuolys yra kitoje. Šiuo atveju Agnės nežinojimas apie
 išankstinį Beno kamuolių išdėstymą jai suteikė koreliacijos pagrindą,
 panašų į atsirandantį dėl kubitų supynimo.
 
-Sekant Pagal šį klasikinį pavyzdį vienas argumentas paaiškinti EPR
+Sekant šį klasikinį pavyzdį vienas argumentas paaiškinti EPR
 paradoksą būtų agituojant, kad kubitai kažkaip susimokė nuo pat pradžių
 ir jų būsena vis dėlto buvo $|00\rangle$ arba
 $|11\rangle$, tačiau mes šios informacijos neturėjome.
 Norėdami patikrinti tokį argumentą, galime žvelgti į EPR paradoksą kitu
 būdu. Kaip pamename, kvantinę būseną visada galima išreikšti bet kuriais
-kitais pageidaujamais baziniais vektoriais, nieko ypatingo nėra
-išraiškoje $\{|0\rangle , |1\rangle\}$.
-Vietoj anksčiau naudotų Pauli-$Z$, imkime Pauli-$X$ bazinius vektorius
+kitais pageidaujamais baziniais vektoriais.
+Vietoj Pauli-$Z$, imkime Pauli-$X$ bazinius vektorius
 $\{|0_x\rangle , |1_x\rangle\}$.
 Perteikę jais $|\chi^{+}\rangle$ randame:
 \begin{equation}
@@ -1016,7 +1015,7 @@ Perteikę jais $|\chi^{+}\rangle$ randame:
 \end{equation}
 Šiuo atveju, $|\chi^{+}\rangle$ turi identišką formą,
 kaip ir naudojant Pauli-$Z$ bazinius vektorius. Taip pat galime
-pasirinkti skirtingą matavimo būdą. Su pirmu kubitu būsenoje
+pasirinkti skirtingą matavimo būdą. Pirmam kubitui būsenoje
 $|\chi^{+}\rangle$ galime atlikti ne standartinius
 Pauli-$Z$ operatoriaus matavimus:
 $P_0^1 = |0\rangle\langle 0|\otimes I$
@@ -1037,10 +1036,10 @@ būsenos po tokio matavimo tampa:
 \begin{equation}
 |\chi^{+}\rangle \rightarrow \frac{P_{0x}^1|\chi^{+}\rangle}{\sqrt{
 \langle\chi^{+}|P_{0x}^1 |\chi^{+}\rangle}}
-= |0_x \rangle\otimes |0_x \rangle\,.
+= |0_x \rangle\otimes |0_x \rangle\,,
 (\#eq:galutine-busena-po-matavimo)
 \end{equation}
-Arba:
+arba:
 \begin{equation}
 |\chi^{+}\rangle \rightarrow \frac{P_{1x}^1|\chi^{+}\rangle}{\sqrt{
 \langle\chi^{+}|P_{1x}^1 |\chi^{+}\rangle}}
@@ -1073,7 +1072,7 @@ dėžutėse vienu metu. Tad pagal standartinę interpretaciją, EPR
 paradoksas neprieštarauja reliatyvumo teorijai, nes neįmanoma nuspėti,
 kokie bus pirmo kubito individualių matavimų rezultatai, žinomos tik
 tikimybės rasti $|0\rangle$ arba
-$|1\rangle$. Todėl nusiųsti informaciją, užkoduotą
+$|1\rangle$. Nusiųsti informaciją, užkoduotą
 kubitų būsenose, greičiau už šviesos greitį į planetą $W$ neįmanoma, nes
 tiesiog negalime suformuluoti žinutės -- jos turinys bus atsitiktinis.
 Tik patikrinę Žemėje ir planetoje $W$ atliktų rezultatų statistiką
