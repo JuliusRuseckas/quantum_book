@@ -26,6 +26,11 @@ github-repo: JuliusRuseckas/quantum_book
 
 # Pratarmė {-}
 
+Ši atviros prieigos knyga yra įvadas į kvantinę kompiuteriją. Ji skirta skaitytojams
+kurie nėra anksčiau susipažinę su šia įdomia sritimi. Knygos skyriuose pasakojama,
+kaip informacija yra koduojama kvantiniuose bituose ir kaip ji apdorojama
+kvantiniame procesoriuje.
+
 Idėja parengti knygą apie kvantinę kompiuteriją lietuvių kalba kilo *Covid*-19
 pandemijos metu. Dėl laboratorijų uždarymo ir sulėtėjusių mokslinių tyrimų
 atsirado galimybė daugiau laiko skirti šiai sparčiai besivystančiai sričiai.
@@ -60,7 +65,7 @@ kompiuterija. Jos tikslas – pristatyti šią sritį pradedant nuo elementariau
 savokų, skiriant daugiau dėmesio konceptualiam supratimui. Nors knyga nebuvo
 specialiai orientuojama į vadovėlio formatą, tačiau skyrių seka turi
 progresiją, kuri gali būti panaudota vieno semestro bakalauro ar magistrantūros
-studentų kursui. 
+studentų kursui.
 
 Jeigu skaitytojas nėra turėjęs tikslinių mokslų žinių ir nori patenkinti savo
 smalsumą, tada rekomenduojame skaityti tik pirmąjį ir penktąjį skyrius.
