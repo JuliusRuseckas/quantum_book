@@ -26,7 +26,7 @@ github-repo: JuliusRuseckas/quantum_book
 
 # Pratarmė {-}
 
-Ši atviros prieigos knyga yra įvadas į kvantinę kompiuteriją. Ji skirta skaitytojams
+Ši atviros prieigos knyga yra įvadas į kvantinę kompiuteriją. Ji skirta skaitytojams,
 kurie nėra anksčiau susipažinę su šia įdomia sritimi. Knygos skyriuose pasakojama,
 kaip informacija yra koduojama kvantiniuose bituose ir kaip ji apdorojama
 kvantiniame procesoriuje.
@@ -60,15 +60,8 @@ computing“, kurį dėstė profesorius Friedland Shmuel, užrašų.
 
 ## Kaip skaityti šią knygą {-}
 
-Knyga skirta skaitytojams, kurie nėra anksčiau susipažinę su kvantine
-kompiuterija. Jos tikslas – pristatyti šią sritį pradedant nuo elementariausių
-savokų, skiriant daugiau dėmesio konceptualiam supratimui. Nors knyga nebuvo
-specialiai orientuojama į vadovėlio formatą, tačiau skyrių seka turi
-progresiją, kuri gali būti panaudota vieno semestro bakalauro ar magistrantūros
-studentų kursui.
-
-Jeigu skaitytojas nėra turėjęs tikslinių mokslų žinių ir nori patenkinti savo
-smalsumą, tada rekomenduojame skaityti tik pirmąjį ir penktąjį skyrius.
+Skaitytojams, kurie nėra turėję tikslinių mokslų žinių ir nori patenkinti savo
+smalsumą - rekomenduojame skaityti tik pirmąjį ir penktąjį skyrius.
 Pirmajame skyriuje glaustai apžvelgiama kvantinė kompiuterija ir palyginama su
 klasikine kompiuterija. Kituose skyriuose iš esmės sugrįžtama prie pirmajame
 skyriuje minėtų savokų bei algoritmų ir jie parodomi išsamiau. Penktajame
@@ -85,7 +78,9 @@ praverstų, tačiau nėra būtinos. Reikalingi matematiniai įrankiai ir kvantin
 mechanikos taisyklės, taikomos kvantinėje kompiuterijoje, yra pateikiamos šioje
 knygoje. Jeigu turite pakankamai žinių minėtose srityse, tada antrąjį skyrių,
 kuris skirtas matematikos žinioms atgaivinti, galite atsiversti esant
-poreikiui.
+poreikiui. Knyga nebuvo specialiai orientuojama į vadovėlio formatą, tačiau skyrių seka turi
+progresiją, kuri gali būti panaudota vieno semestro bakalauro ar magistrantūros
+studentų kursui. 
 
 
 ## Padėka {-}
