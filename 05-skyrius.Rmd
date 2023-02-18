@@ -321,7 +321,7 @@ sukeitimą (žr. \@ref(fig:kvantinio-supynimo-sukeitimas) pav.). Tai leidžia 
 ryšio atstumą ir realizuoti teleportaciją ar kitus protokolus,
 naudojančius supintąsias būsenas.
 
-```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija.  Supintosios Belo būsenos kubitų porose $(k_1 , k_2)$", out.width='55%', fig.align='center'}
+```{r kvantinio-supynimo-sukeitimas, echo=FALSE, fig.cap="Kvantinio supynimo sukeitimo protokolo iliustracija", out.width='55%', fig.align='center'}
 knitr::include_graphics("media/image5_3.svg")
 ```
 
