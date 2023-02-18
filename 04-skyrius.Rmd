@@ -621,15 +621,23 @@ cW = |0\rangle\langle 0|\otimes I\otimes I + |1\rangle\langle 1|\otimes W\,.
 knitr::include_graphics("media/image4_16.svg")
 ```
 
-Kaip ir Tofoli loginiai vartai, SWAP bei
-Fredkin paprastai nėra elementarios kubitų transformacijos fiziniame
-lygmenyje, tačiau yra konstruojami iš 1 kubito ir 2 kubitų loginių vartų
+SWAP bei Fredkin paprastai nėra elementarios kubitų transformacijos fiziniame
+lygmenyje, tačiau gali būti realizuojamas iš 1 kubito ir 2 kubitų loginių vartų
 sekų. Vienas būdas atlikti SWAP 2 kubitų būsenai naudojant $cX$ vartus
 parodytas \@ref(fig:swap-realizavimas) pav.:
 
 ```{r swap-realizavimas, echo=FALSE, fig.cap="SWAP loginių vartų realizavimas pasitelkiant tris *cX* loginius vartus", out.width='65%', fig.align='center'}
 knitr::include_graphics("media/image4_17.svg")
 ```
+Loginiai vartai iSWAP, sutrumpintai juos vadinsime $iW$, yra tiesiogiai realizuojami kai kuriuose kvantinių procesorių architektūruose, tarp jų - grįstuose superlaidžiomis grandinėmis. Loginius vartus $iW$ galime išreikšti diadų forma taip: 
+
+\begin{align}
+iW = |00\rangle\langle 00| + i(|01\rangle\langle 10| + |10\rangle\langle 01|)
++ |11\rangle\langle 11|\,.
+\end{equation}
+
+Lyginant su $W$ matome, kad būsenoms $|01rangle$ ir $|10rangle$ papildomai pritaikoma  $i$ fazė.
+
 
 ## Bendro tipo sąlyginiai loginiai vartai $\boldsymbol{cU}$ {#bendro-tipo-salyginiai-vartai}
 
