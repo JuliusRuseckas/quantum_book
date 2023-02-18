@@ -383,14 +383,14 @@ atlikti. Pavyzdžiui, **jonų gaudyklėmis** (angl. *ion traps*) pagrįsti
 kvantiniai procesoriai išnaudoja dalį pagautų jonų elektroninių ir
 vibracinių energijos lygmenų. Ne vien išimtinai atominio lygmens
 sistemos demonstruoja kvantinius reiškinius. Makroskopinio skaičiaus
-elektronų bendrosios krūvio kvantinės būsenos, vadinamos **transmonais**
-(angl. *transmon*), stabilizuojasi superlaidininkuose esant itin mažoms
-temperatūroms ir yra naudojamos šios architektūros kvantiniuose
+elektronų bendrosios krūvio kvantinės būsenos stabilizuojasi superlaidininkuose esant itin mažoms
+temperatūroms ir yra naudojamos sukurti kubitus, vadinamus **transmonais**
+(angl. *transmon*), šios architektūros kvantiniuose
 kompiuteriuose. Kitos technologijos, galinčios tapti svarbios ateityje,
 yra grindžiamos fotonika ir atominiais defektais puslaidininkiuose.
 Verta išskirti fotoninius įrenginius, kurie turi natūralų privalumą, nes
 gali būti paprasčiau integruojami į kvantinius tinklus išnaudojant
-egzistuojančius šviesolaidinius tinklus ir palydovus. Kvantiniai tinklai
+egzistuojančius šviesolaidinius tinklus ar palydovus. Kvantiniai tinklai
 suteikia galimybes taikyti **išskaidytą skaičiavimų modelį**
 (angl. *distributed computing*) tarp ne itin galingų ankstyvosios raidos
 kvantinių kompiuterių, tačiau juos kartu sujungus galima efektyviai
