@@ -16,7 +16,7 @@ biblatexoptions:
   - backend=biber
   - sorting=ynt
 url: https://kvantinekompiuterija.lt/
-# cover-image: path to the social sharing image like images/cover.jpg
+cover-image: "media/cover.png"
 favicon: media/favicon.ico
 description: "Kvantinė kompiuterija"
 link-citations: yes
@@ -25,6 +25,10 @@ github-repo: JuliusRuseckas/quantum_book
 ---
 
 # Pratarmė {-}
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), out.width='60%'}
+knitr::include_graphics("media/cover.png", dpi=NA)
+```
 
 Ši atviros prieigos knyga yra įvadas į kvantinę kompiuteriją. Ji skirta skaitytojams,
 kurie nėra anksčiau susipažinę su šia įdomia sritimi. Knygos skyriuose pasakojama,
