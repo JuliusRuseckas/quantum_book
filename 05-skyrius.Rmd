@@ -144,7 +144,7 @@ savybes tokias kaip krūvis, masė ar sukinys, yra **identiškos**
 Elektronai gali būti atskirti nuo pozitronų, nes pirmieji turi
 neigiamąjį, o antrieji -- teigiamąjį krūvį; tačiau elektronai negali
 būti atskirti vienas nuo kito. Tad, jeigu turime du elektronus
-skirtingose lokacijose, tačiau identiškose sukinio būsenose, sukeitus
+skirtingose lokacijose, tačiau identiškose sūkinio būsenose, sukeitus
 juos vietomis fundamentaliai neįmanoma pasakyti, kad jie buvo sukeisti.
 Teleportacijos pavyzdys būtų, jeigu pradėdami nuo dviejų elektronų
 skirtingose lokacijose ir sukinio būsenose identiškai atkurtume pirmojo
