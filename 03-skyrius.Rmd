@@ -7,8 +7,8 @@ naudojant tiesinės algebros matematinę struktūrą, kurios elementus
 pristatėme ankstesniame skyriuje. Šiame skyriuje pateikiame kvantinės
 mechanikos postulatus. Postulatai yra taikomi siekiant sujungti
 abstraktų šios teorijos matematinį formalizmą su stebimu fiziniu
-pasauliu ir suteikia pagrindines taisykles, kuriomis remiantis
-perteikiami skaičiavimai kvantiniame kompiuteryje.
+pasauliu ir suteikia pagrindines taisykles, kuriomis
+remiasi skaičiavimai kvantiniame kompiuteryje.
 
 ## Kvantinės mechanikos postulatai
 
