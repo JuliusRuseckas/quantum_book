@@ -4,15 +4,15 @@
 
 Klasikinių bei kvantinių sistemų modeliavimas fizikoje yra pagrįstas
 diferencialinių lygčių sprendinių paieška. Jie apibūdina
-dinamiką laike bei erdvėje ir atspindi dėsnius, kuriais šios
-sistemos pagrįstos. Klasikinėje fizikoje dažnai aptinkamos Niutono,
+dinamiką laike bei erdvėje ir atspindi dėsnius, kuriuos šios
+sistemos seka. Klasikinėje fizikoje dažnai aptinkamos Niutono,
 Maksvelo ir Einšteino diferencialinės lygtys. Jos apibūdina sistemos
-pozicijų, elektromagnetinių ir gravitacinių laukų, atitinkamai, konfigūracijas bei kitimą. Tik itin speficinėse situacijose sprendinius galima rasti ir užrašyti žinomomis funkcijomis, tad yra pasitelkiami kompiuteriniai skaičiavimai. Įprastai, kompiuteriniai skaičiavimai diskretizuoja
+pozicijų, elektromagnetinių ir gravitacinių laukų, atitinkamai, konfigūracijas bei kitimą. Tik itin speficinėse situacijose sprendinius galima rasti ir užrašyti žinomomis funkcijomis, tad dažnai yra pasitelkiami kompiuteriniai skaičiavimai. Įprastai, kompiuteriniai skaičiavimai diskretizuoja
 diferencialinės lygties kintamuosius, tokius kaip laiko ir erdvės. Tuomet
 iteracinė procedūra pradinę sistemos būseną nuveda prie ieškomosios
 galutinės. Diskretizavimo žingsnių dydis pasirenkamas atsižvelgiant į
 toleruotinus paklaidos dydžius, kuriuos dažnai galima tiksliai
-įvertinti. Modeliuojamos sistemos dydis ir jos dinamikos tikslumas bus
+įvertinti. Modeliuojamos sistemos dydis ir jos sprendinių tikslumas bus
 nulemti prieinamų skaičiavimo išteklių.
 
 Pavienių ir sudėtinių kvantinių sistemų dinamiką apibūdina 3 skyriuje
