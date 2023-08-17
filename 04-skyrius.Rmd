@@ -11,10 +11,10 @@ grandinės.
 Pradėkime nuo paprasčiausių loginių
 elementų, atliekančių 1 kubito būsenų transformacijas. Kaip pamename,
 kvantiniai loginiai vartai yra nusakomi unitariniais operatoriais. Tokio
-operatoriaus veiksmas būsenai $|\psi\rangle$ yra
+operatoriaus veikimas į būseną $|\psi\rangle$ yra
 pavaizduojamas grafiškai (žr. \@ref(fig:loginiu-vartu-veikimas-kubita) pav.).
 
-```{r loginiu-vartu-veikimas-kubita, echo=FALSE, fig.cap="Loginių vartų $U$ veiksmas kubito būsenai $|\\psi\\rangle$.", out.width='41%', fig.align='center'}
+```{r loginiu-vartu-veikimas-kubita, echo=FALSE, fig.cap="Loginiai vartai $U$ veikiantys būsenos $|\\psi\\rangle$ kubitą.", out.width='41%', fig.align='center'}
 knitr::include_graphics("media/image4_1.svg")
 ```
 
