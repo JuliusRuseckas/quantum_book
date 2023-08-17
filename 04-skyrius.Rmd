@@ -505,18 +505,13 @@ cX|\chi^{+}\rangle = \frac{1}{\sqrt{2}}\big(|0\rangle + |1\rangle\big)\otimes
 (\#eq:cx-belo)
 \end{equation}
 
+Kitą visiškai supintą 3 kubitų vadinamą
+GHZ būseną (angl. *Greenberger-Horne-Zeilinger*) galima gauti
+atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę.
+
 ```{r ghz-grandine, echo=FALSE, fig.cap="Kvantinį 2 kubitų supynimą atliekanti grandinė", out.width='49%', fig.align='center'}
 knitr::include_graphics("media/image4_12.svg")
 ```
-
-Kita gerai žinoma visiškai supinta
-3 kubitų GHZ būseną (angl. *Greenberger-Horne-Zeilinger*) galima gauti
-atlikę \@ref(fig:ghz-grandine) pav. parodytą grandinę.
-
-```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
-knitr::include_graphics("media/image4_13.svg")
-```
-
 \begin{equation}
 |\mathrm{GHZ}\rangle = \frac{1}{\sqrt{2}}\big(|000\rangle +|111\rangle\big)\,.
 (\#eq:ghz-busena)
@@ -537,6 +532,10 @@ Kvantinėje grandinėje $cX_0$ vartai yra
 paprastai konvertuojami iš standartinio $cX$ pasitelkiant dvejus Pauli-$X$
 vartus (žr. \@ref(fig:cx0-grandine) pav.). Pirmieji Pauli-$X$ sukeičia kontrolinio kubito būsenas
 $|0\rangle \leftrightarrow |1\rangle$, o antrieji atstato jas atgal po atliktų standartinių $cX$.
+
+```{r cx0-grandine, echo=FALSE, fig.cap="2 kubitų salyginių loginių vartų $cX$ variacija, kurioje antro kubito būsena keičiama, jeigu pirmojo būsena $|0\\rangle$", out.width='72%', fig.align='center'}
+knitr::include_graphics("media/image4_13.svg")
+```
 
 ## Tofoli loginiai vartai
 
@@ -629,7 +628,7 @@ parodytas \@ref(fig:swap-realizavimas) pav.:
 ```{r swap-realizavimas, echo=FALSE, fig.cap="SWAP loginių vartų realizavimas pasitelkiant tris *cX* loginius vartus", out.width='65%', fig.align='center'}
 knitr::include_graphics("media/image4_17.svg")
 ```
-Loginiai vartai iSWAP, sutrumpintai juos vadinsime $iW$, yra tiesiogiai
+Loginiai vartai iSWAP, sutrumpintai $iW$, yra tiesiogiai
 realizuojami kai kuriuose kvantinių procesorių architektūruose, tarp jų -
 grįstuose superlaidžiomis grandinėmis. Loginius vartus $iW$ galime išreikšti
 diadų forma taip: 
@@ -638,7 +637,7 @@ iW = |00\rangle\langle 00| + \mathrm{i}(|01\rangle\langle 10| + |10\rangle\langl
 + |11\rangle\langle 11|\,.
 (\#eq:iswap-vartai)
 \end{equation}
-Lyginant su $W$ matome, kad būsenoms $|01rangle$ ir $|10rangle$ papildomai pritaikoma $\mathrm{i}$ fazė.
+Lyginant su $W$ matome, kad būsenoms $|01\rangle$ ir $|10\rangle$ papildomai pritaikoma $\mathrm{i}$ fazė.
 
 
 ## Bendro tipo sąlyginiai loginiai vartai $\boldsymbol{cU}$ {#bendro-tipo-salyginiai-vartai}
