@@ -10,6 +10,9 @@ bookdown::gitbook:
     edit:
       link: https://github.com/JuliusRuseckas/quantum_book/edit/main/%s
       text: "Siūlyti turinį"
+    sharing:
+        facebook: false
+        twitter: false
   pandoc_args: ["--lua-filter", "filters/multiple-bibliographies.lua"]
   split_bib: false
 bookdown::pdf_book:
