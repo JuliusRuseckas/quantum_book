@@ -233,7 +233,7 @@ išreiškiame:
 \begin{equation}
 X = \sum_k \lambda_k P_k =
 \lambda_0|0_x\rangle\langle 0_x| + \lambda_1 |1_x\rangle\langle 1_x|
-= |0_x \rangle\langle 0_x| - |0_x \rangle\langle 0_x|\,.
+= |0_x \rangle\langle 0_x| - |1_x \rangle\langle 1_x|\,.
 (\#eq:pauli-x-4)
 \end{equation}
 Čia $\big\{|0_x \rangle, |1_x \rangle\big\}$
