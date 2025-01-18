@@ -1214,7 +1214,7 @@ vartai atliekami žymiai lėčiau, apytikriai 200 mikrosekundžių per
 operaciją. Darant prielaidas, kad tiek užtrunka atlikti ir 3 kubitų
 Tofoli loginius vartus bei kad kvantinės grandinės gylis abiejose
 architektūrose yra toks pat kaip ir loginių vartų skaičius,
-apytikriai $10^{10}$ loginių vartų užtruktų apytikriai 1 ir apytikriai
+$10^{10}$ loginių vartų užtruktų apytikriai 1 ir 
 $5\times 10^2$ valandų, atitinkamai.
 
 Aktreipiame dėmesį, kad čia naudojome loginių kubitų skaičių. Vienam
