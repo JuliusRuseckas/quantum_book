@@ -1291,9 +1291,9 @@ knitr::include_graphics("media/image9_9.svg")
 ```
 
 Galima parodyti, kad tikimybė, jog klaidoms atspariose grandinėse
-atsiras daugiau nei viena klaida kubitų bloke, yra $cp^2$. Čia
-proporcingumo konstanta $c$ priklauso nuo loginės operacijos bei
-kodavimo metodo ir bendrai nusako skaičių skirtingų vietų loginiame
+atsiras daugiau nei viena klaida kubitų bloke, yra $cp^2$. Čia $p$ yra klaidos tikimybė vienam kubitui, o 
+koeficientas $c$ priklauso nuo loginės operacijos,
+kodavimo metodo bei skirtingų vietų skaičiaus loginiame
 žingsnyje, kuriose gali įvykti klaida. Tad loginės operacijos klaidoms
 atsparioje kvantinėje grandinėje įvykdomos sėkmingai su tikimybe
 $1 - cp^2$ ir toliau įgaunamas pranašumas mažėjant $p$.
