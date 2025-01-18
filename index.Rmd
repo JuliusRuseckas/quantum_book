@@ -89,7 +89,7 @@ studentų kursui.
 
 ## Padėka {-}
 
-Autoriai dėkoja Vaidui Pačebutui, Arūnui Krotkui, Audriui Alkauskui, Maženai Mackoit Sinkevičienei ir Artūrui Pupšiui už paramą, teksto skaitymą ir vertingus patarimus rengiant šią knygą.
+Autoriai dėkoja Vaidui Pačebutui, Arūnui Krotkui, Maženai Mackoit-Sinkevičienei ir Audriui Alkauskui už paramą, teksto skaitymą ir vertingus patarimus rengiant šią knygą.
 
 Iliustracijos – Jovita Jankauskienė
 
@@ -100,9 +100,7 @@ Kalbos redaktorė – Rozita Znamenskaitė (KTU leidykla „Technologija“)
 
 Tadas Paulauskas įgijo fizikos mokslų daktaro laipsnį Ilinojaus universitete
 Čikagoje. Vėliau atliko tyrimus Monašo universitete Melburne. Šios knygos
-rašymo metu dirba Fizinių ir technologijos mokslų centre (FTMC),
-Optoelektronikos skyriuje. Mokslinių tyrimų sritis apima puslaidininkių fiziką,
-nanotechnologijas, medžiagų inžineriją.
+rašymo metu dirba Fizinių ir technologijos mokslų centre (FTMC), vadovauja kvantinių technologijų tyrimų laboratorijai.
 
 Julius Ruseckas įgijo fizikos mokslų daktaro laipsnį Vilniaus universitete.
 Vėliau dirbo mokslinį darbą Vilniaus universiteto Fizikos fakulteto teorinės
