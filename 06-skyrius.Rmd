@@ -230,7 +230,7 @@ bet kurią vieną būseną yra lygi kitoms. Šiame procese atsitiktiniu
 būdu randame vieną iš $f(x)$ reikšmių, negalėdami pasirinkti, kuriame
 argumente $x$ norime įvertinti $f$. 
 
-Kvantiniai algoritmai pasitelkia papildomus triukus ir turi būti formuluojami kitaip ne klasikiniai. Viena tokia algoritminė strategija, vadinama **amplitudės amplifikacija**
+Kvantiniai algoritmai pasitelkia papildomus triukus ir turi būti formuluojami kitaip nei klasikiniai. Viena tokia algoritminė strategija, vadinama **amplitudės amplifikacija**
 (angl. *amplitude amplification*), leidžia padidinti
 registro būsenų, koduojančių ieškomus atsakymus, amplitudes. To pavyzdį matysime šiame skyriuje Groverio paieškos
 algoritme. Kitas būdas yra tiesiogiai nustatyti tam tikras funkcijos savybes --
@@ -717,7 +717,7 @@ todėl tikslas yra pasiekti kampą $\theta$, kuo artimesnį
 $\frac{\pi}{2}$, padarant $p \approx 1$. Kadangi
 $\langle\psi |d\rangle = \frac{1}{\sqrt{2^n}}$
 yra artimas nuliui kai $2^n \gg 1$, $|\psi\rangle$ ir
-$|d\rangle$ yra beveik lygiagretieji vektoriai. Kampas
+$|d\rangle$ yra beveik statmenieji vektoriai. Kampas
 $\theta$ tokiu atveju yra labai mažas ir todėl
 $\langle\psi | d\rangle = \sin(\theta)\approx\theta$.
 Taip randame pradinį kampą $\theta$ tarp $|\psi\rangle$
