@@ -200,7 +200,7 @@ rezultatą. Būseną po $P_k$ projekcinio matavimo, vadinsime ją bendrai
 $|\varphi\rangle$, galima formaliai rasti:
 \begin{equation}
 |\varphi\rangle =
-\frac{P_k|\psi\rangle}{\sqrt{\langle\psi |P|\psi\rangle}}
+\frac{P_k|\psi\rangle}{\sqrt{\langle\psi |P_k|\psi\rangle}}
 = \frac{|k\rangle\langle k|\psi\rangle}{\sqrt{p(\lambda_k)}} =
 \frac{a_k |k\rangle}{\sqrt{p(\lambda_k)}}\,.
 (\#eq:busena-po-matavimo)
