@@ -258,7 +258,7 @@ $k_1$ ir $k_2$, esantys viename iš skaičiuojamųjų bazinių vektorių.
 Todėl $|\psi\rangle$ būsenos kopijavimas neįvyksta ir
 Agnė nesužino $|\psi\rangle$ būsenos $a$ ir $b$
 amplitudžių, taip patvirtinama uždraustojo kopijavimo teorema.
-Teleportacijoje pagrindinį vaidmenį atlieka supintoji kubitų pora, kuria
+Teleportacijoje pagrindinį vaidmenį atlieka supintoji kubitų pora, kurią
 Agnė ir Benas pasidalijo proceso pradžioje. Agnės atliekama $cX$
 transformacija tarp jos supinto kubito $k_2$ bei teleportuojamo $k_1$
 supina ir šiuos kubitus. Taip sukuriama trijų kubitų supintoji būsena.
@@ -586,9 +586,9 @@ transformaciją:
 \begin{equation}
 \begin{aligned}
 (H\otimes I)|\psi_{01}\rangle
-= & \frac{1}{\sqrt{2}}\Big\lbrack\big(|0\rangle + |1\rangle\big)\otimes |0\rangle
+= & \frac{1}{\2}\Big\lbrack\big(|0\rangle + |1\rangle\big)\otimes |0\rangle
 + \big(|0\rangle - |1\rangle\big)\otimes |1\rangle\Big\rbrack \\
-= & \frac{1}{\sqrt{2}}\Big\lbrack |0\rangle\otimes\big(|0\rangle + |1\rangle)
+= & \frac{1}{\2}\Big\lbrack |0\rangle\otimes\big(|0\rangle + |1\rangle)
 + |1\rangle\otimes\big(|0\rangle - |1\rangle\big)\Big\rbrack\,.
 \end{aligned}
 (\#eq:h-psi01-bb84)
