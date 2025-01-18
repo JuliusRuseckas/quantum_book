@@ -685,7 +685,7 @@ $E_i^{\dagger}E_i|\psi\rangle = |\psi\rangle$.
 
 ## Kvantinė Hamingo riba
 
-Siekdami ištaisyti vieno tipo klaidą 1 kubito registre naudojome
+Siekdami ištaisyti vieno tipo klaidą 1 loginio kubito registre naudojome
 3 kubitų kodą. Kyla natūralus klausimas, ar galima rasti kriterijų,
 pasakantį, kiek minimaliai reikia fizinių kubitų siekiant ištaisyti
 $n$ kubitų dydžio registrą, kuriame atsiranda daugiausia $t$ skaičius
@@ -906,7 +906,7 @@ operatoriaus $\pm 1$ tikrines vertes. Tas pats procesas atliekamas su
 pirmojo ir trečiojo bloko matavimais naudojant
 $Z_1\otimes Z_2\otimes Z_3\otimes Z_7\otimes Z_8\otimes Z_9$.
 Abiejų matavimų rezultatas užrašomas į dviejų ancilų kubitų būsenas
-$|a_1 a_2 \rangle$, o standartinis Pauli-$Z$ matavimas
+$|a_1 a_2 \rangle$, o Pauli-$Z$ matavimas
 leidžia unikaliai nusakyti, kuriame bloke įvyko fazės klaida.
 Pavyzdžiui, fazės klaida loginio kubito pirmame bloke bus nusakyta šia
 bendra būsena:
@@ -1030,7 +1030,7 @@ vieną loginį kubitą:
 |1\rangle_L = \frac{1}{\sqrt{2}}\big(|01\rangle + |10\rangle\big)\,.
 (\#eq:poerdvis-stabilizuotas-x-x)
 \end{equation}
-Taip 4 dimensijų erdvę sumažinome iki 2 dimensijų, kuri nusako vieno
+Taip 4 dimensijų erdvę sumažinome iki 2 dimensijų, kuri nusako vieno loginio
 kubito būsenas. Šioje erdvėje operatorius $Z\otimes Z$ leidžia
 atskirti $|0\rangle_L$ ir
 $|1\rangle_L$ vieną nuo kitos, nes
